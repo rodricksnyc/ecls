@@ -860,11 +860,25 @@ h1.white.sentMessage {
   background:#108340;
   /* display: flex;
   justify-content: space-between; */
-  padding:1em;
+  padding:1.4em 0em .6em 0em;
 }
 
+
+
 .status {
-  min-width:80px;
+  min-width:50px;
+  max-width:80px;
+}
+.rel {
+  position: relative;
+}
+
+h6.white {
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    margin:10px 0px 10px 0px;
+    font-size: 16px;
 }
 
 .guide-list {
