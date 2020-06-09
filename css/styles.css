@@ -911,13 +911,13 @@ h6.gray {
   font-family: 'Public Sans', sans-serif;
   font-weight: 500;
   margin:10px 0px 20px 0px;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .teacher {
   margin-bottom:1em;
   background: white;
-  padding:1em 1em 1em 2em;
+padding: 1em .5em 1em .5em;
   -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
@@ -936,11 +936,11 @@ h6.gray {
   font-size:35px;
 }
 
- p.black:nth-of-type(1) {
+ /* p.black:nth-of-type(1) {
   width:15%
-}
+} */
 
- h6.gray:nth-of-type(1) {
+ /* h6.gray:nth-of-type(1) {
   width: 12%;
   padding-left: 4%;
 }
@@ -958,10 +958,10 @@ h6.gray:nth-of-type(3) {
  h6.gray:nth-of-type(7) {
   width: 9%;
 
-}
+} */
 
 
- p.black:nth-of-type(2) {
+ /* p.black:nth-of-type(2) {
   width:17%
 }
 
@@ -976,7 +976,7 @@ h6.gray:nth-of-type(3) {
 
 p.black:nth-of-type(5) {
   width:20%
-}
+} */
 
 
 

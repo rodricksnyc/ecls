@@ -61,7 +61,7 @@ var teacher = {"teachers": [{
 
 for(var j in teacher.teachers) {
 
-$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center'><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p><p class="black" id="teacherName">${teacher.teachers[j].name}</p><p class="black" id="teacherType">${teacher.teachers[j].type}</p><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p><span class="percentageCircle"><p class="black" id="teacherComplete">${teacher.teachers[j].percentage}%</p></span><p class="black" id="teacherDate">${teacher.teachers[j].date}</p><div id="launchStatus">${teacher.teachers[j].launch}</div><div class='progressBar'></div></div>`)
+$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-1"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="teacherComplete">${teacher.teachers[j].percentage}%</p></div></div><div class="col-lg-2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBar'></div></div>`)
 
 
 
