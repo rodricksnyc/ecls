@@ -1,0 +1,23 @@
+{
+  "name": "ecls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodricksnyc/ecls.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodricksnyc/ecls/issues"
+  },
+  "homepage": "https://github.com/rodricksnyc/ecls#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "require": "^2.4.20"
+  }
+}

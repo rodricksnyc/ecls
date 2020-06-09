@@ -744,7 +744,7 @@ height: 30px;
   position: fixed;
   right: -56px;
   top: 335px;
-  background-color: #f7ed3f;
+  background-color: #f8ef22;
   padding: 10px 15px 25px 15px;
   transform: rotate(270deg);
   border-radius: 5px 5px 0px 0px;
@@ -866,14 +866,20 @@ h1.white.sentMessage {
 }
 
 .greenBar .rel p {
-      font-family: 'PublicoText';
-    position:absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 33px;
-    top:21px;
+  font-family: 'PublicoText';
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 33px;
+  top:21px;
+}
+.smaller {
+  font-size:22px !important
 }
 
+.darkBlue {
+  color:#0a559d
+}
 
 .status {
   min-width:90px;
@@ -885,11 +891,92 @@ h1.white.sentMessage {
 }
 
 h6.white {
-    color: white;
+  color: white;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  margin:10px 0px 10px 0px;
+  font-size: 16px;
+}
+
+h6.gray {
+  color:#586f7e;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  margin:10px 0px 20px 0px;
+  font-size: 14px;
+}
+
+.teacher {
+  margin-bottom:1em;
+  background: white;
+  padding:1em 1em 1em 2em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+}
+
+.teacher p.black {
+    color: black;
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
-    margin:10px 0px 10px 0px;
+    line-height: 30px;
     font-size: 16px;
+    margin-bottom: 0em;
+}
+
+.teacher i {
+  font-size:35px;
+}
+
+.teacher p.black:nth-of-type(1) {
+  width:15%
+}
+
+.teacherAttr h6.gray:nth-of-type(1) {
+  width: 11%;
+  padding-left: 3%;
+}
+
+.teacherAttr h6.gray:nth-of-type(7) {
+  width: 10%;
+
+}
+
+
+.teacher p.black:nth-of-type(2) {
+  width:17%
+}
+
+.teacher p.black:nth-of-type(3) {
+  width:10%
+}
+
+.teacher p.black:nth-of-type(4) {
+  width:15%
+}
+
+
+.teacher p.black:nth-of-type(5) {
+  width:16%
+}
+
+
+
+.teacher .percentageCircle  p.black:nth-of-type(1) {
+  width:100%;
+}
+
+.percentageCircle {
+ position: relative;
+  background: pink;
+  height:70px;
+  width:70px;
+  border-radius: 50%;
+  margin-right:10%
+}
+
+#teacherComplete {
+  position: absolute;
 }
 
 .guide-list {
@@ -1127,14 +1214,14 @@ h6.white {
 }
 
 .menu-buttons-floating {
-  visibility: hidden;
+  /* visibility: hidden; */
   position: fixed;
-  bottom: 90px;
-  right: 30px;
+  bottom: 200px;
+  left: 30px;
   z-index: 1;
   transform: scale(0.9);
   /* transition: all 0.5s; */
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .guide-list-T.text--blue {
@@ -3835,7 +3922,7 @@ body{
 
 .contactUs, .resourcesInfo {
   width: 420px;
-  background-color: #f7ed3f;
+  background-color: #f8ef22;
   padding: 3rem 2rem 1rem;
   color: white;
   position: fixed;
@@ -3859,7 +3946,7 @@ body{
   position: absolute;
   right: 20px;
   top: 10px;
-  color: #ffffff;
+  color: #242a52;
   font-size: 22px;
   cursor: pointer;
 }
@@ -3869,7 +3956,7 @@ body{
   width: 100%;
   border-radius: 5px;
   border: 1px solid white;
-  background: #141e79;
+  background: #242a52;
   color: inherit;
   margin-top: -2px;
   margin-bottom: 15px;
@@ -3881,11 +3968,12 @@ body{
 .contactUs input:focus,
 .contactUs textarea:focus {
   background: #FFFFFF;
-  color: #141e79;
+  color: #242a52;
 }
 
 .contactUs label {
   font-size: 18px;
+  color:#242a52
 }
 
 .contactUs textarea {
@@ -3894,11 +3982,13 @@ body{
 
 .contactUs_h2 {
   text-align: center;
-  font-size: 22px;
-  color: inherit;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid white;
+      font-size: 22px;
+      color: inherit;
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #242a52;
+      color: #242a52;
+      text-shadow: none !important;
 }
 
 .contactUs_p {
@@ -3906,6 +3996,7 @@ body{
   font-size: 16px;
   color: inherit;
   line-height: 20px;
+  color:#242a52;
 }
 
 .contactUs_radio {
@@ -3981,10 +4072,10 @@ body{
   font-weight: 600;
   cursor: pointer;
   /* transition: background-color 0.2s, box-shadow 0.2s; */
-  background-color: #fea821 !important;
+  background-color: white !important;
   border: 1px solid transparent !important;
   border-radius: 4px !important;
-  color: #141e79 !important;
+  color: #242a52 !important;
   width: 90px !important;
   background-image: url(/assets/envelope-regular.svg) !important;
   background-repeat: no-repeat !important;
@@ -4007,7 +4098,7 @@ body{
 .contactUs_p1 {
   font-size: 14px;
   padding-top: 5px;
-  border-top: 1px solid white;
+  border-top: 1px solid #242a52;
 }
 
 .contactUs_p a {
