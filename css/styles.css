@@ -766,6 +766,14 @@ p.black {
   font-size: 16px;
 }
 
+p.charcoal {
+  color: black;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 16px;
+}
+
 .btnContact span.plum {
   font-family: 'Public Sans', sans-serif;
   font-weight:300;
@@ -928,41 +936,51 @@ h6.gray {
   font-size:35px;
 }
 
-.teacher p.black:nth-of-type(1) {
+ p.black:nth-of-type(1) {
   width:15%
 }
 
-.teacherAttr h6.gray:nth-of-type(1) {
-  width: 11%;
-  padding-left: 3%;
+ h6.gray:nth-of-type(1) {
+  width: 12%;
+  padding-left: 4%;
 }
 
-.teacherAttr h6.gray:nth-of-type(7) {
-  width: 10%;
+h6.gray:nth-of-type(2) {
+ width: 11%;
+
+}
+
+h6.gray:nth-of-type(3) {
+ width: 4%;
+
+}
+
+ h6.gray:nth-of-type(7) {
+  width: 9%;
 
 }
 
 
-.teacher p.black:nth-of-type(2) {
+ p.black:nth-of-type(2) {
   width:17%
 }
 
-.teacher p.black:nth-of-type(3) {
+ p.black:nth-of-type(3) {
   width:10%
 }
 
-.teacher p.black:nth-of-type(4) {
+ p.black:nth-of-type(4) {
   width:15%
 }
 
 
-.teacher p.black:nth-of-type(5) {
-  width:16%
+p.black:nth-of-type(5) {
+  width:20%
 }
 
 
 
-.teacher .percentageCircle  p.black:nth-of-type(1) {
+ .percentageCircle  p.black:nth-of-type(1) {
   width:100%;
 }
 
@@ -977,6 +995,14 @@ h6.gray {
 
 #teacherComplete {
   position: absolute;
+  display: flex;
+justify-content: center;
+align-items: center;
+top: 21px;
+vertical-align: middle;
+
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 .guide-list {
@@ -1488,7 +1514,7 @@ label.togglePassword {
 }
 
 .lime {
-  color:#a5e371 !important;
+  color:#71d82e !important;
 }
 
 hr.lime {

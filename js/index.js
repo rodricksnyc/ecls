@@ -1,12 +1,6 @@
 $(document).ready(function () {
 
-
-const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-if (prefersColorSchemeDark.matches) {
-
-}
-
-//append teacher divs
+//create and append teacher divs with objects
 
 
 var teacher = {"teachers": [{
@@ -36,14 +30,14 @@ var teacher = {"teachers": [{
 	"status": "Complete",
 	"percentage": 100,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-check lime'></i>"
 },
 
 {
 	"teacherId": '9676994-S01',
 	"name": 'John Smith',
 	"type": "Primary",
-	"status": "Complete",
+	"status": "In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
 	"launch": "<i class='fas fa-file-export darkBlue'></i>"
@@ -111,7 +105,10 @@ $('.teacherBlocks').append(`<div class='teacher d-flex align-items-center'><p cl
 
 
 
+const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
+if (prefersColorSchemeDark.matches) {
 
+}
 
 
 $('.radio-inline input').on('keyup', function(e) {
