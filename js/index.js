@@ -554,24 +554,29 @@ $('.tooltips-elements')
 	 });
 
 
-	 $('.seeLess').on('click', function() {
+var slideIt = function() {
 
   if($(".toggleDiv").is(':visible')) {
 		$('.tooltips-elements').attr("data-original-title", "see more" );
 
-    console.log('slide up')
     $(".toggleDiv").slideUp();
-
 
   }
 
   else if ($(".toggleDiv").is(':hidden')){
   $('.tooltips-elements').attr("data-original-title", "see less" );
-    console.log('slide no')
+
     $(".toggleDiv").slideDown();
   }
 
-});
+}
+
+$('.seeLess').keypress(
+slideIt
+
+).click(
+	slideIt
+);
 
 
 })
