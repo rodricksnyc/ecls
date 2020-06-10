@@ -16,7 +16,7 @@ var teacher = {"teachers": [{
 {
 	"teacherId": '7999994-S01',
 	"name": 'Jack De Sena',
-	"type": "Primary",
+	"type": "Special Ed",
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "3/15/20",
@@ -36,7 +36,7 @@ var teacher = {"teachers": [{
 {
 	"teacherId": '9676994-S01',
 	"name": 'John Smith',
-	"type": "Primary",
+	"type": "Special Ed",
 	"status": "In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
@@ -61,7 +61,7 @@ var teacher = {"teachers": [{
 
 for(var j in teacher.teachers) {
 
-$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-1"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="teacherComplete">${teacher.teachers[j].percentage}%</p></div></div><div class="col-lg-2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBar'></div></div>`)
+$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="teacherComplete">${teacher.teachers[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBar'></div></div>`)
 
 
 
@@ -101,6 +101,7 @@ $('.teacherBlocks').append(`<div class='teacher d-flex align-items-center'><div 
 //
 //
 // })
+
 
 
 
