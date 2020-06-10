@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
-  $('[data-toggle=tooltip]').tooltip();
+	$('[data-toggle=tooltip]').tooltip();
 
 	function scrollfn(e) {
 		let $target = $(e),
-		offSet = e === "#Home" ? 0 : $target.offset().top;
+		offSet = e === "#overview" ? 0 : $target.offset().top;
 		$('html, body').stop().animate({
 			'scrollTop': offSet
 		}, 1200, 'swing');
@@ -12,7 +12,7 @@ $(document).ready(function () {
 	}
 
 	$('.back-to-top').click(() => {
-		scrollfn("#home");
+		scrollfn("#overview");
 	})
 
 	$(window).scroll(function () {
@@ -33,8 +33,8 @@ $(document).ready(function () {
 	});
 
 	$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+		$('[data-toggle="tooltip"]').tooltip()
+	})
 
 
 	// $('.reason input').change(function () {
@@ -73,47 +73,47 @@ $(document).ready(function () {
 			// })
 		}
 	});
-//create and append teacher divs with objects
+	//create and append teacher divs with objects
 
-var teacher = {"teachers": [{
-	"teacherId": '9999992-S01',
-	"name": 'Zach Tyler',
-	"type": "Primary",
-	"status": "<i class='fal fa-spinner'></i>In Progress",
-	"percentage": 50,
-	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
-},
+	var teacher = {"teachers": [{
+		"teacherId": '9999992-S01',
+		"name": 'Zach Tyler',
+		"type": "Primary",
+		"status": "<i class='fal fa-spinner'></i>In Progress",
+		"percentage": 50,
+		"date": "3/15/20",
+		"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	},
 
-{
-	"teacherId": '7999994-S01',
-	"name": 'Jack De Sena',
-	"type": "Special Ed",
-	"status": "Not Started",
-	"percentage": 0,
-	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
-},
+	{
+		"teacherId": '7999994-S01',
+		"name": 'Jack De Sena',
+		"type": "Special Ed",
+		"status": "Not Started",
+		"percentage": 0,
+		"date": "3/15/20",
+		"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	},
 
-{
-	"teacherId": '9676994-S01',
-	"name": 'Mae Whitman',
-	"type": "Primary",
-	"status": "Complete",
-	"percentage": 100,
-	"date": "3/15/20",
-	"launch": "<i class='fas fa-check lime'></i>"
-},
+	{
+		"teacherId": '9676994-S01',
+		"name": 'Mae Whitman',
+		"type": "Primary",
+		"status": "Complete",
+		"percentage": 100,
+		"date": "3/15/20",
+		"launch": "<i class='fas fa-check lime'></i>"
+	},
 
-{
-	"teacherId": '9676994-S01',
-	"name": 'John Smith',
-	"type": "Special Ed",
-	"status": "<i class='fal fa-spinner'></i>In Progress",
-	"percentage": 75,
-	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
-}
+	{
+		"teacherId": '9676994-S01',
+		"name": 'John Smith',
+		"type": "Special Ed",
+		"status": "<i class='fal fa-spinner'></i>In Progress",
+		"percentage": 75,
+		"date": "3/15/20",
+		"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	}
 
 ]
 
@@ -133,27 +133,27 @@ var teacher = {"teachers": [{
 
 for(var j in teacher.teachers) {
 
-$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="teacherComplete">${teacher.teachers[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBar'></div></div>`)
+	$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="teacherComplete">${teacher.teachers[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBar'></div></div>`)
 
 
 
-// if (teacher.teachers[j].percentage > 50 && teacher.teachers[j].percentage <= 75 ) {
-//
-// $('.percentageCircle').css('background', 'f9af48')
-//
-//
-// }
-//
-//
-//
-		 $(teacher.teachers[j].percentage).each(function() {
-				var thing = $(this)
+	// if (teacher.teachers[j].percentage > 50 && teacher.teachers[j].percentage <= 75 ) {
+	//
+	// $('.percentageCircle').css('background', 'f9af48')
+	//
+	//
+	// }
+	//
+	//
+	//
+	$(teacher.teachers[j].percentage).each(function() {
+		var thing = $(this)
 
-			if ($(thing).text() > 50 && $(thing).text() <= 75 ) {
-				alert("ergiub")
-			}
+		if ($(thing).text() > 50 && $(thing).text() <= 75 ) {
+			alert("ergiub")
+		}
 
-		})
+	})
 
 
 }
@@ -237,27 +237,27 @@ var child = {"children": [{
 
 for(var j in child.children) {
 
-$('.childBlocks').append(`<div class='child d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="childComplete">${child.children[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBar'></div></div>`)
+	$('.childBlocks').append(`<div class='child d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="childComplete">${child.children[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBar'></div></div>`)
 
 
 
-// if (teacher.teachers[j].percentage > 50 && teacher.teachers[j].percentage <= 75 ) {
-//
-// $('.percentageCircle').css('background', 'f9af48')
-//
-//
-// }
-//
-//
-//
-		 $(teacher.teachers[j].percentage).each(function() {
-				var thing = $(this)
+	// if (teacher.teachers[j].percentage > 50 && teacher.teachers[j].percentage <= 75 ) {
+	//
+	// $('.percentageCircle').css('background', 'f9af48')
+	//
+	//
+	// }
+	//
+	//
+	//
+	$(teacher.teachers[j].percentage).each(function() {
+		var thing = $(this)
 
-			if ($(thing).text() > 50 && $(thing).text() <= 75 ) {
-				alert("ergiub")
-			}
+		if ($(thing).text() > 50 && $(thing).text() <= 75 ) {
+			alert("ergiub")
+		}
 
-		})
+	})
 
 
 }
@@ -313,7 +313,7 @@ function setReasonActive() {
 
 setReasonActive()
 
-
+$('.menu-buttons-floating-list li:eq(0)').addClass('activated')
 
 if ($(document).innerWidth() >= 768) {
 	$(window).on('scroll', function() {
@@ -324,7 +324,7 @@ if ($(document).innerWidth() >= 768) {
 			var elementTop = $(this).offset().top;
 			var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 2 )) && (screenTop < elementBottom)) {
+			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 5 )) && (screenTop < elementBottom)) {
 				$('section').removeClass('active')
 				$(this).addClass('active')
 			}
@@ -334,15 +334,15 @@ if ($(document).innerWidth() >= 768) {
 		})
 
 
-		// if ($('.block10').hasClass('active')) {
-		// 	$('.menu-buttons-floating-list li:eq(1)').addClass('activated')
-		// 	$('.menu-buttons-768-list li:eq(0)').addClass('activated')
-		// }
-		//
-		// else {
-		// 	$('.menu-buttons-floating-list li:eq(1)').removeClass('activated')
-		// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-		// }
+		if ($('.block10').hasClass('active')) {
+			$('.menu-buttons-floating-list li:eq(0)').addClass('activated')
+			$('.menu-buttons-768-list li:eq(0)').addClass('activated')
+		}
+
+		else {
+			$('.menu-buttons-floating-list li:eq(0)').removeClass('activated')
+			$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+		}
 
 
 		if ($('.block5').hasClass('active')) {
@@ -356,16 +356,16 @@ if ($(document).innerWidth() >= 768) {
 		}
 
 
-		// if ($('.block50').hasClass('active')) {
-		// 	$('.menu-buttons-floating-list li:eq(3)').addClass('activated')
-		// 	$('.menu-buttons-768-list li:eq(2)').addClass('activated')
-		// }
-		//
-		// else {
-		// 	$('.menu-buttons-floating-list li:eq(3)').removeClass('activated')
-		// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-		// }
-		//
+		if ($('.block50').hasClass('active')) {
+			$('.menu-buttons-floating-list li:eq(3)').addClass('activated')
+			$('.menu-buttons-768-list li:eq(2)').addClass('activated')
+		}
+
+		else {
+			$('.menu-buttons-floating-list li:eq(3)').removeClass('activated')
+			$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+		}
+
 		// if ($('.block0').hasClass('active')) {
 		// 	$('.menu-buttons-floating-list li:eq(0)').removeClass('activated')
 		// 	$('.menu-buttons-floating-list li:eq(1)').removeClass('activated')
@@ -500,16 +500,6 @@ if ($(document).innerWidth() <= 767) {
 }
 
 
-function scrollfn(e) {
-	let $target = $(e),
-	offSet = e === "#Home" ? 0 : $target.offset().top;
-	$('html, body').stop().animate({
-		'scrollTop': offSet
-	}, 1200, 'swing');
-
-}
-
-
 
 $('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
 
@@ -532,51 +522,206 @@ $('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list
 
 
 $('.tooltips-elements')
-	 .tooltip()
-	 .each(function() {
-			 var color = $(this).data('color');
-			 $(this).hover(function(){
-				 var aria = $(this).attr('aria-describedby');
-				 $('#' + aria).find('.tooltip-inner').css({
-					 "background": color,
-					 "color" : "black",
+.tooltip()
+.each(function() {
+	var color = $(this).data('color');
+	$(this).hover(function(){
+		var aria = $(this).attr('aria-describedby');
+		$('#' + aria).find('.tooltip-inner').css({
+			"background": color,
+			"color" : "black",
 
-					 "box-shadow" : "0px 0px 19px -1px rgba(175,175,175,0.67)",
+			"box-shadow" : "0px 0px 19px -1px rgba(175,175,175,0.67)",
 
-				 });
-				 $('#' + aria).find('.tooltip-arrow').css({
-					 "border-top-color" : color,
-					  "border-bottom-color" : color,
-					 	"background": color,
+		});
+		$('#' + aria).find('.tooltip-arrow').css({
+			"border-top-color" : color,
+			"border-bottom-color" : color,
+			"background": color,
 
-				 });
-			 });
-	 });
+		});
+	});
+});
 
 
 var slideIt = function() {
 
-  if($(".toggleDiv").is(':visible')) {
+	if($(".toggleDiv").is(':visible')) {
 		$('.tooltips-elements').attr("data-original-title", "see more" );
 
-    $(".toggleDiv").slideUp();
+		$(".toggleDiv").slideUp();
 
-  }
+	}
 
-  else if ($(".toggleDiv").is(':hidden')){
-  $('.tooltips-elements').attr("data-original-title", "see less" );
+	else if ($(".toggleDiv").is(':hidden')){
+		$('.tooltips-elements').attr("data-original-title", "see less" );
 
-    $(".toggleDiv").slideDown();
-  }
+		$(".toggleDiv").slideDown();
+	}
 
 }
 
 $('.seeLess').keypress(
-slideIt
+	slideIt
 
 ).click(
 	slideIt
 );
+
+$("input").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$("input").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
+$(".form-check").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$('.form-check').each(function() {
+			$(this).addClass('focusClass')
+		});
+
+	}
+
+})
+
+
+$("button").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$("button").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
+$("a").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$("a").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
+$('.tooltips-elements').on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$('.tooltips-elements').on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
+
+
+ var open = function() {
+
+	$('#theform input').each(function () {
+		$(this).attr('tabindex', '0');
+	});
+	$('.radio-inline input').each(function () {
+		$(this).attr('tabindex', '0');
+	});
+
+	$('.form-control').attr('tabindex', '0');
+
+	$('#closeThisPlease').attr('tabindex', '0');
+
+	$('.dial').attr('tabindex', '0');
+	$('#send').attr('tabindex', '0');
+
+	$('.modal-content').addClass('opened')
+	$("#slideOut").addClass('showSlideOut');
+
+}
+$('#one').keypress(
+	open
+
+).click(
+	open
+);
+
+
+
+var close = function() {
+    $('#theform input').each(function () {
+      $(this).attr('tabindex', '-1');
+    });
+
+    $('.radio-inline input').each(function () {
+      $(this).attr('tabindex', '-1');
+    });
+
+    $('.form-control').attr('tabindex', '-1');
+
+    $('#closeThisPlease').attr('tabindex', '-1');
+
+    $('.dial').attr('tabindex', '-1');
+    $('#send').attr('tabindex', '-1');
+
+    $('.firstBlock').addClass('unset');
+
+    $("#slideOut").removeClass('showSlideOut');
+
+
+	}
+
+		$('#close').keypress(
+			close
+
+		).click(
+			close
+		);
+
+
+$("#one").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$("#one").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
+$("#closeThisPlease").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$("#closeThisPlease").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
+
 
 
 })

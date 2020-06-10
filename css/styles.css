@@ -81,6 +81,14 @@
   position:relative;
 }
 
+header a:hover {
+  text-decoration: none;
+}
+
+*:focus {
+outline: none;
+}
+
 .stop {
   background-color: white;
   min-height: 10%;
@@ -137,12 +145,24 @@ body  {
 }
 
 .logo {
-  max-width: 20em;
-  padding-left: 1em;
-  padding-top: .6em;
-  padding-bottom: .6em;
-  padding-right: 1em;
+  min-width: 15em;
+
 }
+header .logos a {
+  margin-left: 2em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-right: 1em;
+  margin-top:.5em;
+  margin-bottom:.5em
+}
+
+a.slate {
+  color:#576f7f;
+  padding:0
+}
+
+
 i{
   transition: none !important;
 }
@@ -1403,6 +1423,10 @@ footer {
     color: #071D49 !important
 }
 
+.menu-buttons-floating-list .activated:after {
+    color: #071D49 !important
+}
+
 
 .menu-buttons-floating-list li[data-target="#survey"]:after {
       content: "SURVEYS";
@@ -1551,8 +1575,8 @@ color: #0071ba;
 .activated
 {
   font-weight: 800;
-  background: #fbb03b;
-  color: #071D49;
+  background: #fbb03b !important;
+    color: #071D49 !important;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
   opacity: 1;
 
@@ -1628,10 +1652,100 @@ color: #0071ba;
   font-weight:900
 }
 
+.circCont {
+    display: inline-block;
+}
+.circleClose {
+    width: 38px;
+    height: 38px;
+    background: transparent;
+    border: 2px solid white;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+.circleClose:before {
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -1px;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    content: "";
+    position: absolute;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.circleClose:after {
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    content: "";
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -1px;
+    position: absolute;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.circleClose[data-animation="magnify"]:not(.magnify) {
+    -moz-transition: ease-in-out 100ms;
+    -o-transition: ease-in-out 100ms;
+    -webkit-transition: ease-in-out 100ms;
+    transition: ease-in-out 100ms;
+}
+.circleClose[data-animation="magnify"]:not(.magnify):hover {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.openTab {
+    background-color: #f8ef22;
+    color: #071D49;
+    position: fixed;
+    right: -1.8rem;
+    top: 9rem;
+    transform: rotate(-90deg);
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-radius: 0px;
+    z-index: 100;
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif;
+}
+.openTab p{
+    font-family: 'Public Sans', sans-serif;
+    font-weight:500;
+    font-size:16px;
+  }
+
+  #one {
+    text-align: center;
+    /* position: relative;
+    right: 25px; */
+    top: 335px;
+    position: fixed;
+    right: -60px;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+  }
+
+
 #slideOut {
   position: absolute;
   z-index: 102;
-  left: -500px;
+  right: -500px;
   transition-property: all;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -1658,7 +1772,7 @@ label.togglePassword {
 
 
 .showSlideOut {
-  left: 0px !important;
+  right: 0px !important;
 }
 
 .modal-content {
