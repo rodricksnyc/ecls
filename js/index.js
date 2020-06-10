@@ -2,12 +2,11 @@ $(document).ready(function () {
 
 //create and append teacher divs with objects
 
-
 var teacher = {"teachers": [{
 	"teacherId": '9999992-S01',
 	"name": 'Zach Tyler',
 	"type": "Primary",
-	"status": "In Progress",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
 	"launch": "<i class='fas fa-file-export darkBlue'></i>"
@@ -37,7 +36,7 @@ var teacher = {"teachers": [{
 	"teacherId": '9676994-S01',
 	"name": 'John Smith',
 	"type": "Special Ed",
-	"status": "In Progress",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
 	"launch": "<i class='fas fa-file-export darkBlue'></i>"
@@ -101,6 +100,94 @@ $('.teacherBlocks').append(`<div class='teacher d-flex align-items-center flex-w
 //
 //
 // })
+
+
+
+//create and append child divs with objects
+
+
+var child = {"children": [{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check lime'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+}
+
+]
+
+};
+
+// var percentageProperty = "percentage";
+// var percentage = teacher[percentageProperty];
+//
+//
+//
+// if ($(percentage).length > 1) {
+// 	alert('yes')
+// }
+
+// f9af48
+
+
+for(var j in child.children) {
+
+$('.childBlocks').append(`<div class='child d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="childComplete">${child.children[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBar'></div></div>`)
+
+
+
+// if (teacher.teachers[j].percentage > 50 && teacher.teachers[j].percentage <= 75 ) {
+//
+// $('.percentageCircle').css('background', 'f9af48')
+//
+//
+// }
+//
+//
+//
+		 $(teacher.teachers[j].percentage).each(function() {
+				var thing = $(this)
+
+			if ($(thing).text() > 50 && $(thing).text() <= 75 ) {
+				alert("ergiub")
+			}
+
+		})
+
+
+}
 
 
 new WOW().init();

@@ -965,6 +965,12 @@ h6.gray {
 
 }
 
+.fa-spinner {
+  font-size:15px !important;
+  padding-right:5px;
+  margin-left:-15px;
+}
+
 /* p.black:nth-of-type(1) {
 width:15%
 } */
