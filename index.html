@@ -25,7 +25,7 @@
 
 	<div class="container-fluid overflow-hidden position-relative">
 		<section class="block0">
-			<div id="Home" class="heros">
+			<div class="heros">
 				<header class="landing">
 
 					<img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo">
@@ -41,43 +41,17 @@
 
 							<p class="slate">my ECLSHome<p>
 								<p class="slate borderLeft">Logout<p>
-
 								</div>
 							</div>
-
-
 						</header>
 						<div class="greenBanner"><h1 class="white title">Welcome to your ECLS Teacher Portal!</h1></div>
-
-					</div>
-
-				</section>
-
-
-				<section class="block10">
-					<div id="Guide" class="landing-sec container-fluid heros">
-
-						<div class="guide-overlay container">
-							<h2 class="landing-sec-H">ECLS Overview</h2>
-							<p class="charcoal">Your school has agreed to participate in the Early Childhood Longitudinal Study (ECLS), a nation-wide study of elementary-aged children, their schools, teachers, and parents. As part of the study, we are asking teachers at your school to complete web-based surveys. You have been asked to complete surveys because one or more of the children you serve are participants in this study. The teacher survey contains questions about you and your classroom practices. There are also brief surveys for each of the sampled children that you teach. These surveys contain questions about the children’s skills and abilites. The table below displays the list of participating children in your classroom and the surveys we are asking you to complete. First, please confirm that you teach each of these children. If not, please let {{   }} know.</p>
-							<p class="charcoal">As a thank-you for completing these surveys, you have received $20 for the teacher survey and $7 for each of the child surveys.</p>
-							<p class="charcoal">The ECLS collects information from teachers of children who are in the study to investigate the relationship between children’s academic progress and various school, classroom, teacher, and home characteristics.</p>
-							<p class="charcoal">Taking part in the study is voluntary. You may stop at any time or choose not to answer a question you do not want to answer. However, only you can provide this information. Although we realize you are very busy, we urge you to complete these surveys as completely and accurately as possible.</p>
-
-							<div class="blueLine">
-
-								<i class="fas fa-minus-circle"></i>
-
-							</div>
-
-						</div>
-
 					</div>
 
 				</section>
 
 				<button class="btnContact" role="button" onclick="btnContact()" onkeypress="btnContact()">
-					<i class="fas fa-envelope plum"></i>&nbsp;&nbsp;<span class="plum">Contact Us</span></button>
+					<i class="fas fa-envelope plum"></i>&nbsp;&nbsp;<span class="plum">Contact Us</span>
+				</button>
 
 					<div class="contactUs">
 
@@ -120,12 +94,41 @@
 						</div>
 					</div>
 
+
+				<section class="block10">
+					<div id="overview" class="container-fluid heros">
+
+						<div class="guide-overlay container">
+							<h2 class="landing-sec-H">ECLS Overview</h2>
+							<div class="toggleDiv">
+							<p class="charcoal">Your school has agreed to participate in the Early Childhood Longitudinal Study (ECLS), a nation-wide study of elementary-aged children, their schools, teachers, and parents. As part of the study, we are asking teachers at your school to complete web-based surveys. You have been asked to complete surveys because one or more of the children you serve are participants in this study.  The teacher survey contains questions abour you and your classroom practices. There are also brief surveys for each of the sampled children that you teach. These surveys contain questions about the children’s skills and abilitites. The table below displays the list of participating children in your classroom and the surveys we are asking you to complete.  First, please confirm that you teach each of these children. If not, please let {{ }} know.”</p>
+							<p class="charcoal">As a thank-you for completing these surveys, you have received $20 for the teacher survey and $7 for each of the child surveys.</p>
+							<p class="charcoal">The ECLS collects information from teachers of children who are in the study to investigate the relationship between children’s academic progress and various school, classroom, teacher, and home characteristics.</p>
+							<p class="charcoal">Taking part in the study is voluntary. You may stop at any time or choose not to answer a question you do not want to answer. However, only you can provide this information. Although we realize you are very busy, we urge you to complete these surveys as completely and accurately as possible.</p>
+						</div>
+
+							<div class="blueLine">
+
+								<i class="fas fa-minus-circle tooltips-elements seeLess" type="button" data-color="white" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="see less" aria-describedby="Shows Less" aria-label="Shows Less"></i>
+
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+
+
 <section class="block5">
-	<div id="surveys" class="landing-sec container-fluid heros">
+	<div id="survey" class="landing-sec container-fluid heros">
 
 		<div class="guide-overlay container">
 			<h2 class="landing-sec-H">All Surveys</h2>
 			<p class="charcoal">To begin each survey, select the Launch Survey icon <span class="rel">"<i class="fas fa-file-export darkBlue"></i>"</span> in the table below. Some of these questions, or the timeframe of the school year referred to, may not directly apply to your classroom or students, but just answer the best you can. Some questions in the survey have additional information and definitions that can be used if needed. To view the additional information for those questions, select the blue <span class="rel">"<i class="fas fa-info-circle darkBlue"></i>”</span> icon.</p>
+
 
 
 			<div class="greenBar d-flex justify-content-around align-items-center">
@@ -279,7 +282,7 @@
 
 
 </section>
-<section class="block50" id="MoreInfo">
+<section class="block50" id="info">
 
 	<div class="lightGreen d-flex flex-column align-items-center heros">
 		<h2 class="landing-sec-H">To learn more about the ECLS, please download the following documents:</h2>
@@ -294,10 +297,10 @@
 
 <div class="menu-buttons-floating wow slideInUp">
 	<ul class="menu-buttons-floating-list">
-		<li tabindex="0" data-target="#Home"><i class="fas fa-info-circle"></i></li>
-		<li tabindex="0" data-target="#Guide"><i class="fas fa-info-circle"></i></li>
-		<li tabindex="0" data-target="#FAQ"><i class="fas fa-question"></i></li>
-		<li tabindex="0" data-target="#Contact"><i class="fas fa-envelope"></i></li>
+		<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
+		<li tabindex="0" data-target="#survey"><i class="fal fa-server"></i></li>
+		<li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li>
+		<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
 	</ul>
 </div>
 
@@ -336,6 +339,8 @@
 <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 
 <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
@@ -372,76 +377,7 @@ function closeContact() {
 	$('body').css({overflow: 'visible'});
 }
 
-function scrollfn(e) {
-	let $target = $(e),
-	offSet = e === "#Home" ? 0 : $target.offset().top;
-	$('html, body').stop().animate({
-		'scrollTop': offSet
-	}, 1200, 'swing');
 
-	setTimeout(function(){
-		$(':focus').blur();
-	}, 1300);
-}
-
-$('.back-to-top').click(() => {
-	scrollfn("#home");
-})
-
-$(window).scroll(function () {
-	((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
-});
-
-$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
-
-	closeContact();
-	e.preventDefault();
-	scrollfn($(this).attr('data-target'));
-});
-
-$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('keypress', function (e) {
-	closeContact();
-	e.preventDefault();
-	scrollfn($(this).attr('data-target'));
-});
-
-
-// $('.reason input').change(function () {
-// 	setReasonActive();
-// })
-//
-// function setReasonActive() {
-// 	$('.reason input').each(function () {
-// 		if ($(this).prop('checked')) {
-// 			$(this).parent().css({ backgroundColor: '#141e79' })
-// 		} else {
-// 			$(this).parent().css({ backgroundColor: 'transparent' })
-// 		}
-// 	})
-// }
-//
-// setReasonActive()
-
-$(window).scroll(function () {
-	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-	if (distanceY > 555) {
-		$('.btnContact').css({
-			top: "92px"
-		})
-		// $('.menu-buttons-floating').css({
-		// 	opacity: '1',
-		// 	visibility: 'visible'
-		// })
-	} else {
-		$('.btnContact').css({
-			top: "335px"
-		})
-		// $('.menu-buttons-floating').css({
-		// 	opacity: '0',
-		// 	visibility: 'hidden'
-		// })
-	}
-});
 </script>
 </body>
 
