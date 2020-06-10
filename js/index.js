@@ -103,7 +103,7 @@ $('.teacherBlocks').append(`<div class='teacher d-flex align-items-center flex-w
 // })
 
 
-
+new WOW().init();
 
 
 const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');

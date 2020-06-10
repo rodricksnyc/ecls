@@ -3,25 +3,21 @@
 
 <head>
 	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
-
-
-	<link rel="icon" href="images/favicon.svg" id="light-scheme-icon" media="(prefers-color-scheme:light)">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
 	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-	<title>ECLS</title>
 
+	<title>ECLS</title>
+  <link rel="shortcut icon" href="images/sunshine.png">
 	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
@@ -285,14 +281,18 @@
 </section>
 <section class="block50" id="MoreInfo">
 
-	<div class="lightGreen">
+	<div class="lightGreen d-flex flex-column align-items-center heros">
+		<h2 class="landing-sec-H">To learn more about the ECLS, please download the following documents:</h2>
+
+			<div class="infoBar d-flex align-items-center"></div>
+			<div class="infoBar d-flex align-items-center"></div>
 
 	</div>
 
 
 </section>
 
-<div class="menu-buttons-floating">
+<div class="menu-buttons-floating wow slideInUp">
 	<ul class="menu-buttons-floating-list">
 		<li tabindex="0" data-target="#Home"><i class="fal fa-angle-up"></i></li>
 		<li tabindex="0" data-target="#Guide"><i class="fas fa-info-circle"></i></li>
@@ -311,9 +311,27 @@
 		<li tabindex="0" data-target="#Home"><i class="fas fa-angle-up"></i></li>
 	</ul>
 </div>
+<!-- <div class="rel">
+	<div class="abso">
+		<img src="images/sunshine.png" class="img-responsive">
+	</div>
 
+
+</div> -->
+
+<div class="back-to-top">
+	<i class="far fa-angle-up"></i>
+</div>
 
 </div>
+<footer>
+	<div class="footer-wrapper">
+		<div class="abso">
+			<img src="images/sunshine.png" class="img-responsive">
+		</div>
+
+	</div>
+</footer>
 
 <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 
@@ -365,6 +383,14 @@ function scrollfn(e) {
 		$(':focus').blur();
 	}, 1300);
 }
+
+$('.back-to-top').click(() => {
+	scrollfn("#home");
+})
+
+$(window).scroll(function () {
+	((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
+});
 
 $('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
 
