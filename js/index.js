@@ -146,7 +146,405 @@ var child = {"children": [{
 	"percentage": 75,
 	"date": "3/15/20",
 	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check lime'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check lime'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check lime'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check lime'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'John Smith',
+	"type": "Special Ed",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 50,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+},
+{
+	"childId": '7999994-S01',
+	"name": 'Jack De Sena',
+	"type": "Special Ed",
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "--",
+	"launch": "<i class='fas fa-file-export darkBlue'></i>"
 }
+
+
+
+
 
 ]
 
