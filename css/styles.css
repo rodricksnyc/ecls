@@ -992,12 +992,19 @@ h6.gray {
   margin-left:-15px;
 }
 
-.progressBar {
+.progressBarEmpty {
   position: absolute;
   bottom:0;
   height:5px;
   width:100%;
   background:#E0E0E0;
+  left:0
+}
+
+.progressBarFull {
+  position: absolute;
+  bottom:0;
+  height:5px;
   left:0
 }
 

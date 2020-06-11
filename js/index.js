@@ -67,7 +67,7 @@ $(document).ready(function () {
 		"type": "Special Ed",
 		"status": "Not Started",
 		"percentage": 0,
-		"date": "3/15/20",
+		"date": "--",
 		"launch": "<i class='fas fa-file-export darkBlue'></i>"
 	},
 
@@ -99,7 +99,7 @@ $(document).ready(function () {
 
 for(var j in teacher.teachers) {
 
-	$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black teacherComplete">${teacher.teachers[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBar'></div></div>`)
+	$('.teacherBlocks').append(`<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black teacherComplete">${teacher.teachers[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
 
 
 }
@@ -124,7 +124,7 @@ var child = {"children": [{
 	"type": "Special Ed",
 	"status": "Not Started",
 	"percentage": 0,
-	"date": "3/15/20",
+	"date": "--",
 	"launch": "<i class='fas fa-file-export darkBlue'></i>"
 },
 
@@ -155,7 +155,7 @@ var child = {"children": [{
 
 for(var j in child.children) {
 
-	$('.childBlocks').append(`<div class='child d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black childComplete">${child.children[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBar'></div></div>`)
+	$('.childBlocks').append(`<div class='child newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black childComplete">${child.children[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
 
 }
 
@@ -165,14 +165,26 @@ $('.teacherComplete , .childComplete').each(function() {
 
 if ($(this).html() == 75) {
 	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fbb03b')
+	$(this).closest('.newBlocks').find('.progressBarFull').css({
+		'background' : '#fbb03b',
+		'width': '75%'
+	})
 }
 
 if ($(this).html() == 100) {
 	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#71d82e')
+	$(this).closest('.newBlocks').find('.progressBarFull').css({
+		'background' : '#71d82e',
+		'width': '100%'
+	})
 }
 
 if ($(this).html() == 50) {
 	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fc7b75')
+	$(this).closest('.newBlocks').find('.progressBarFull').css({
+		'background' : '#fc7b75',
+		'width': '50%'
+	})
 }
 
 if ($(this).html() == 0) {
