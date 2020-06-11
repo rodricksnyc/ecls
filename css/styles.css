@@ -941,13 +941,14 @@ h6.gray {
   font-size: .88em;
 }
 
-.teacher, .child, .infoBar {
+.teacher, .child {
   margin-bottom:1em;
   background: white;
   padding: 1em .5em 1em .5em;
   -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
 }
 
  p.black {
@@ -989,6 +990,15 @@ h6.gray {
   font-size:15px !important;
   padding-right:5px;
   margin-left:-15px;
+}
+
+.progressBar {
+  position: absolute;
+  bottom:0;
+  height:5px;
+  width:100%;
+  background:#E0E0E0;
+  left:0
 }
 
 /* p.black:nth-of-type(1) {
@@ -1048,7 +1058,7 @@ width:20%
   /* margin-right:10% */
 }
 
-#teacherComplete, #childComplete {
+.teacherComplete, .childComplete {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -1060,11 +1070,48 @@ width:20%
   transform: translateX(-50%); */
 }
 
+.percentageSign {
+  position: absolute;
+  color:black;
+  top: 35px;
+  vertical-align: middle;
+  font-size:12px !important;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
 .lightGreen {
   background: #e9f4ee;
-  /* padding:1em; */
+  padding-bottom:10em;
 
 }
+
+.infoBar {
+  position: relative;
+}
+
+
+.mb1 {
+  margin-bottom:1em;
+}
+
+h6.plum {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 0em;
+    padding: 0em;
+}
+
+.infoBar {
+  margin-bottom:1em;
+  background: white;
+  padding: 1.2em .5em 1.2em .5em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+}
+
 
 .footer-wrapper {
     width: 100%;
@@ -1367,7 +1414,7 @@ footer {
 .menu-buttons-floating {
   /* visibility: hidden; */
   position: fixed;
-  bottom: 13%;
+  bottom: 25%;
   left: 40px;
   z-index: 1;
   transform: scale(1);
@@ -1571,6 +1618,10 @@ outline: none;
 background: #a5e371;
 color: #0071ba;
 } */
+
+.mb100 {
+  margin-bottom:100px;
+}
 
 .activated
 {

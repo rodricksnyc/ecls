@@ -95,61 +95,14 @@ $(document).ready(function () {
 
 };
 
-// var percentageProperty = "percentage";
-// var percentage = teacher[percentageProperty];
-//
-//
-//
-// if ($(percentage).length > 1) {
-// 	alert('yes')
-// }
-
-// f9af48
 
 
 for(var j in teacher.teachers) {
 
-	$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="teacherComplete">${teacher.teachers[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBar'></div></div>`)
-
-
-
-	// if (teacher.teachers[j].percentage > 50 && teacher.teachers[j].percentage <= 75 ) {
-	//
-	// $('.percentageCircle').css('background', 'f9af48')
-	//
-	//
-	// }
-	//
-	//
-	//
-	$(teacher.teachers[j].percentage).each(function() {
-		var thing = $(this)
-
-		if ($(thing).text() > 50 && $(thing).text() <= 75 ) {
-			alert("ergiub")
-		}
-
-	})
+	$('.teacherBlocks').append(`<div class='teacher d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black teacherComplete">${teacher.teachers[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBar'></div></div>`)
 
 
 }
-
-// var num = document.getElementById('teacherComplete').innerHTML;
-// var amount = parseInt(num);
-//
-// $(amount).each(function() {
-// console.log(amount)
-//
-// if ($(amount).val() == 50 ) {
-//
-// $('.percentageCircle').css('background', 'f9af48')
-// alert("ergiyb")
-//
-// }
-//
-//
-// })
-
 
 
 //create and append child divs with objects
@@ -202,9 +155,35 @@ var child = {"children": [{
 
 for(var j in child.children) {
 
-	$('.childBlocks').append(`<div class='child d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="childComplete">${child.children[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBar'></div></div>`)
+	$('.childBlocks').append(`<div class='child d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black childComplete">${child.children[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBar'></div></div>`)
 
 }
+
+var Opt01 = "";
+$('.teacherComplete , .childComplete').each(function() {
+	Opt01 = $(this).html();
+
+if ($(this).html() == 75) {
+	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fbb03b')
+}
+
+if ($(this).html() == 100) {
+	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#71d82e')
+}
+
+if ($(this).html() == 50) {
+	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fc7b75')
+}
+
+if ($(this).html() == 0) {
+	$(this).closest('.col-lg-2').find('.percentageCircle').css( {
+		'background': '#f7ebe7',
+		'border': '2px solid #fc7b75'
+	})
+}
+
+});
+
 
 
 new WOW().init();
@@ -214,11 +193,6 @@ $(function () {
 })
 
 
-
-// const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-// if (prefersColorSchemeDark.matches) {
-//
-// }
 
 
 $('.radio-inline input').on('keyup', function(e) {
