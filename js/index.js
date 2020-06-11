@@ -33,26 +33,7 @@ $(document).ready(function () {
 		scrollfn($(this).attr('data-target'));
 	});
 
-	$(function () {
-		$('[data-toggle="tooltip"]').tooltip()
-	})
 
-
-	// $('.reason input').change(function () {
-	// 	setReasonActive();
-	// })
-	//
-	// function setReasonActive() {
-	// 	$('.reason input').each(function () {
-	// 		if ($(this).prop('checked')) {
-	// 			$(this).parent().css({ backgroundColor: '#141e79' })
-	// 		} else {
-	// 			$(this).parent().css({ backgroundColor: 'transparent' })
-	// 		}
-	// 	})
-	// }
-	//
-	// setReasonActive()
 
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
@@ -60,18 +41,12 @@ $(document).ready(function () {
 			$('.btnContact').css({
 				top: "92px"
 			})
-			// $('.menu-buttons-floating').css({
-			// 	opacity: '1',
-			// 	visibility: 'visible'
-			// })
+
 		} else {
 			$('.btnContact').css({
 				top: "335px"
 			})
-			// $('.menu-buttons-floating').css({
-			// 	opacity: '0',
-			// 	visibility: 'hidden'
-			// })
+
 		}
 	});
 	//create and append teacher divs with objects
@@ -224,53 +199,26 @@ var child = {"children": [{
 
 };
 
-// var percentageProperty = "percentage";
-// var percentage = teacher[percentageProperty];
-//
-//
-//
-// if ($(percentage).length > 1) {
-// 	alert('yes')
-// }
-
-// f9af48
-
 
 for(var j in child.children) {
 
 	$('.childBlocks').append(`<div class='child d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black" id="childComplete">${child.children[j].percentage}%</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBar'></div></div>`)
-
-
-
-	// if (teacher.teachers[j].percentage > 50 && teacher.teachers[j].percentage <= 75 ) {
-	//
-	// $('.percentageCircle').css('background', 'f9af48')
-	//
-	//
-	// }
-	//
-	//
-	//
-	$(teacher.teachers[j].percentage).each(function() {
-		var thing = $(this)
-
-		if ($(thing).text() > 50 && $(thing).text() <= 75 ) {
-			alert("ergiub")
-		}
-
-	})
-
 
 }
 
 
 new WOW().init();
 
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
 
-const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-if (prefersColorSchemeDark.matches) {
 
-}
+
+// const prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
+// if (prefersColorSchemeDark.matches) {
+//
+// }
 
 
 $('.radio-inline input').on('keyup', function(e) {
@@ -462,14 +410,6 @@ if ($(document).innerWidth() <= 767) {
 		return false;
 	});
 
-
-
-	$('.pin').attr('src',"images/pin-mobile.svg")
-	$('.reward').attr('src',"images/Reward-mobile.svg")
-
-	$('.select').attr('src',"images/Select-answer-mobile.svg")
-	$('.next').attr('src',"images/Next-back-mobile.svg")
-	$('.submit').attr('src',"images/Submit-mobile.svg")
 
 	$("#slideOut").css("left" , 0);
 

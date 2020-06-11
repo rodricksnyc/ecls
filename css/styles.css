@@ -1748,9 +1748,9 @@ color: #0071ba;
 
 
 #slideOut {
-  position: absolute;
+  position: fixed;
   z-index: 102;
-  right: -500px;
+  right: -505px;
   transition-property: all;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -1758,7 +1758,7 @@ color: #0071ba;
   margin: 0;
   height: 100%;
   top: 0;
-  /* overflow: auto; */
+  overflow: auto;
 }
 
 label.togglePassword {
@@ -1782,7 +1782,7 @@ label.togglePassword {
 
 .modal-content {
   position: relative;
-  background-color: #00559b;
+  background-color: #576f7f;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #999;
@@ -1798,7 +1798,8 @@ label.togglePassword {
   margin: 0;
   padding-left: 2em;
   padding-right: 2em;
-  opacity:.85
+  font-family: 'Public Sans' !important;
+
 }
 
 .secondBlock {
