@@ -4539,8 +4539,17 @@ body{
 
 
 
-@media (max-width:1500px) {
+@media (max-width:1500px) and (min-width:1400px) {
   h6.gray {
 font-size:.8em;
+  }
+}
+@media (min-width:1078px) and (max-width:1399px) {
+  h6.gray {
+    font-size: .7em;
+}
+p.black {
+
+    font-size: .8em;
   }
 }
