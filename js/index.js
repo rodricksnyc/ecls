@@ -1083,5 +1083,52 @@ $("#closeThisPlease").on('focusout', function() {
 
 
 
+var showToaster = function() {
+	$('#theform input').each(function () {
+		$(this).attr('tabindex', '-1');
+	});
+
+	$('.radio-inline input').each(function () {
+		$(this).attr('tabindex', '-1');
+	});
+
+	$('.form-control').attr('tabindex', '-1');
+
+	$('#closeThisPlease').attr('tabindex', '-1');
+
+	$('.dial').attr('tabindex', '-1');
+	$('#send').attr('tabindex', '-1');
+
+	$('.firstBlock').addClass('unset');
+
+	$("#slideOut").removeClass('showSlideOut');
+
+		e.preventDefault()
+		setTimeout(function () {
+			$('.toast').css('right', '0px')
+			$('.toast').removeClass('transparent-opacity').addClass('animated slideInRight')
+		}, 300)
+
+		setTimeout(function () {
+			$('.toast').removeClass('transparent-opacity').removeClass('animated slideInRight')
+			$('.toast').addClass('transparent-opacity');
+			$('.toast').removeClass('animated slideOutRight')
+
+		}, 5000)
+		setTimeout(function () {
+			$('.toast').css('right', '-325px')
+			$('.toast').addClass('animated slideOutRight')
+		}, 4900)
+
+	}
+		$('#sendMessage').keypress(
+		showToaster
+
+		).click(
+			showToaster
+		);
+
+
+
 
 })

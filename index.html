@@ -121,22 +121,29 @@
 	                </div>
 	                <div class="form-group">
 	                  <label for="formControl4">Message</label>
-	                  <textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message" required="true" rows="4" data-form-field="Message"></textarea>
+	                  <textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
 	                </div>
 									<center>
-	                  <button type="submit" class="btn btn-info button-outlined" id="send" tabindex="-1" aria-hidden="false">Submit</button>
+	                  <button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
 									</center>
+									<div class="emailInfo">
 									<h6 class="white pt1">Email</h6>
-
+									<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
+								</div>
 	              </form>
 
 	            </div>
 	            <div class="modal-footer">
 
 	            </div>
+
 	          </div>
 
 	        </div>
+
+					<div class="toast transparent-opacity" aria-live="polite" role="alert">
+			&#x2713; Thank you for contacting PRO-CTCAE.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+		</div>
 
 				<section class="block10">
 					<div id="overview" class="container-fluid heros">
@@ -365,7 +372,7 @@
 	<ul class="menu-buttons-floating-list">
 		<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
 		<li tabindex="0" data-target="#survey"><i class="fal fa-server"></i></li>
-		<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
+		<li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li>
 		<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
 	</ul>
 </div>
@@ -404,7 +411,7 @@
 
 <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 
-<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
