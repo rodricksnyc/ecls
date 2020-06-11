@@ -1114,12 +1114,74 @@ h6.plum {
 .infoBar {
   margin-bottom:1em;
   background: white;
-  padding: 1.2em .5em 1.2em .5em;
+  padding: 2em .5em 2em 1.5em;
   -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
 }
 
+.feedbackBar {
+  margin-bottom:1em;
+  background: white;
+  padding: 2em .5em 2em 1.5em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
+}
+.greenLeftBar {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width:12px;
+  background: #00843D
+}
+
+.blueLeftBar {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width:12px;
+  background: #00539f
+}
+
+h6.darkBlue {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 0em;
+    padding: 0em;
+    color: #00539f;
+}
+
+.blueCircle {
+      position: absolute;
+      border-radius: 41px 33px 56px;
+      background: #00539f;
+      height: 4rem;
+      width: 4rem;
+      right: 4%;
+}
+
+.greenCircle {
+      position: absolute;
+      border-radius: 50%;
+      background: #00843D;
+      height: 4rem;
+      width: 4rem;
+      right: -2rem;
+}
+
+.blueCircle i {
+  position: absolute;
+    top: 26%;
+    left: 28%;
+    font-size: 31px;
+
+}
 
 .footer-wrapper {
   width: 100%;
@@ -4608,7 +4670,7 @@ body{
 }
 
 .m1 {
-  margin:3em 0em;
+  margin:3em 0em 0em 0em;
 }
 
 .showBlocks a {
@@ -4634,8 +4696,15 @@ body{
   h6.gray {
     font-size:.8em;
   }
+  .guide-overlay {
+    padding: 0em 2em;
+}
 }
 @media (min-width:1078px) and (max-width:1399px) {
+
+  .guide-overlay {
+    padding: 0em 6em;
+}
   h6.gray {
     font-size: .7em;
   }
