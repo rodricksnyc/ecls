@@ -1119,7 +1119,10 @@ h6.plum {
   -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   position: relative;
+
 }
+
+
 
 .feedbackBar {
   margin-bottom:1em;
@@ -1175,10 +1178,30 @@ h6.darkBlue {
       right: -2rem;
 }
 
-.blueCircle i {
+.lightGreenCircle {
   position: absolute;
+  border-radius: 50%;
+    background: #e9f4ee;
+    height: 4rem;
+    width: 4rem;
+    right: -2rem;
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+    -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+    box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+}
+
+.blueCircle i {
+    position: absolute;
     top: 26%;
     left: 28%;
+    font-size: 31px;
+
+}
+
+.greenCircle i {
+    position: absolute;
+    top: 26%;
+    left: 33%;
     font-size: 31px;
 
 }
