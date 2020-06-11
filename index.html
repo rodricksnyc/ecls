@@ -56,6 +56,7 @@
 
 
 					<div id="slideOut" class="content-top">
+
 	          <div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
  						<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
 
@@ -75,56 +76,58 @@
 	                </button>
 	              </div>
 	              <br>
-	              <center class="pt1">
-	                <p class="whiteLarge p1" id="smaller">If you need assistance,<br>you can contact the PRO-CTCAE<br>team by phone at<br><a class="dial" href="tel:185595460868" tabindex="-1" aria-hidden="false" aria-label="1-855-954-0868">1-855-954-0868</a></p>
-	              </center>
+
+	                <p class="whiteLarge">How to Contact Us</p>
+
 	            </div>
 	            <div class="modal-body">
 
 	              <form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
-	                <p class="modalFooter">*Required Field</p>
+	                <!-- <p class="modalFooter">*Required Field</p> -->
 	                <div class="form-group">
-	                  <label for="formControl1">Name*</label>
-	                  <input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required/>
+	                  <label for="formControl1">Name</label>
+	                  <input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name">
 	                </div>
 	                <div class="form-group">
-	                  <label for="formControl2">Email*</label>
-	                  <input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required/>
+	                  <label for="formControl2">Email</label>
+	                  <input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email">
 	                </div>
 
 	                <div class="form-group">
 	                  <fieldset>
-	                    <label for="general-inquiry">Reason for Contact*</label>
+	                    <label for="general-inquiry">Reason for Contact</label>
 	                    <div class="around">
 	                      <div class="vertical">
-	                        <img src="images/General_Inquiry_icon.svg" class="img-responsive formIcon" alt="">
+	                      <i class="fas fa-info-circle plum"></i>
 	                        <legend>Reason for Contact</legend>
 	                        <label class="radio-inline">
-	                          <input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" required checked>General Inquiry
+	                          <input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General Inquiry
 	                        </label>
 	                      </div>
 	                      <div class="vertical">
-	                        <img src="images/technical.svg" class="img-responsive formIcon" alt="">
+	                      <i class="fas fa-home-heart plum"></i>
 	                        <label class="radio-inline">
-	                          <input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" required/>Technical Issue
+	                          <input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
 	                        </label>
 	                      </div>
 	                      <div class="vertical">
-	                        <img src="images/Other_icon.svg" class="img-responsive formIcon" alt="">
+	                        <i class="fas fa-headset plum"></i>
 	                        <label class="radio-inline">
-	                          <input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" required/>Other
+	                          <input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical Issues
 	                        </label>
 	                      </div>
 	                    </div>
 	                  </fieldset>
 	                </div>
 	                <div class="form-group">
-	                  <label for="formControl4">Message*</label>
-	                  <textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message" required="true" rows="7" data-form-field="Message" required/></textarea>
+	                  <label for="formControl4">Message</label>
+	                  <textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message" required="true" rows="4" data-form-field="Message"></textarea>
 	                </div>
-	                <div class="bottomLine">
-	                  <button type="submit" class="btn btn-info button-outlined" id="send" tabindex="-1" aria-hidden="false"><i class="fa fa-envelope-o"></i>Send</button>
-	                </div>
+									<center>
+	                  <button type="submit" class="btn btn-info button-outlined" id="send" tabindex="-1" aria-hidden="false">Submit</button>
+									</center>
+									<h6 class="white pt1">Email</h6>
+
 	              </form>
 
 	            </div>
@@ -315,7 +318,7 @@
 
 
 				</div>
-			<div class="d-flex justify-content-center m1">
+			<div class="d-flex justify-content-center m1 showBlocks">
 				<div class="loadMore">
 					<a href="" type="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more"><p class="darkBlue">show 10 more</p></a>
 				</div>

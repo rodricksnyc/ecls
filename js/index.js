@@ -595,17 +595,35 @@ if ($(this).html() == 0) {
 });
 
 
-  $('.childBlocks .newBlocks').addClass('hidden')
+$('.newBlocks').addClass('hidden')
 $(function () {
-		x=5;
-    $('.childBlocks .newBlocks').slice(0, 10).removeClass('hidden')
+		x=10
+    $('.newBlocks').slice(0, 14).removeClass('hidden')
     $('.loadMore').on('click', function (e) {
         e.preventDefault();
 
-        x = x+5;
-        $('.childBlocks .newBlocks').slice(0, x).slideDown().removeClass('hidden');
+        x = x+14;
+        $('.newBlocks').slice(0, x).slideDown('slow').removeClass('hidden');
     });
+
+		$('.loadAll').on('click', function (e) {
+				e.preventDefault();
+				$('.newBlocks').slideDown('slow').removeClass('hidden');
+				$('.loadMore, .flip').hide()
+				$('.loadAll p').addClass('all').html('show less')
+		});
+
+		$('.loadAll p').click(function() {
+			if ($(this).hasClass('all')) {
+
+				  $('.newBlocks').slideUp().addClass('hidden');
+					$('.loadAll p').removeClass('all')
+			}
+
+		})
+
 });
+
 
 
 
@@ -625,7 +643,7 @@ $('.radio-inline input').on('keyup', function(e) {
 		function setReasonActive() {
 			$('.radio-inline input').each(function () {
 				if ($(this).prop('checked')) {
-					$(this).parents('.vertical').css('background' ,'#166da1');
+						$(this).parents('.vertical').css('background' ,'#fbb03b');
 				} else {
 					$(this).parents('.vertical').css( 'background' ,'transparent')
 				}
@@ -644,12 +662,19 @@ $('.radio-inline input').change(function (e) {
 function setReasonActive() {
 	$('.radio-inline input').each(function () {
 		if ($(this).prop('checked')) {
-			$(this).closest('.vertical').find('.fas').css('color', '#7bc043')
-			$(this).parents('.vertical').css('background' ,'#166da1');
+			$(this).closest('.vertical').find('.fas , label').css({
+				'color':'#071D49',
+				'font-weight': '600'
+			})
+			$(this).parents('.vertical').css('background' ,'#fbb03b');
 
 		} else {
 			$(this).parents('.vertical').css( 'background' ,'transparent')
-			$(this).closest('.vertical').find('.fas').css('color', 'white')
+			$(this).closest('.vertical').find('label').css({
+				'color': 'white',
+				'font-weight': '100'
+			})
+			$(this).closest('.vertical').find('.fas').css('color', '#fbb03b')
 		}
 	})
 }
