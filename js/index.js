@@ -543,9 +543,6 @@ var child = {"children": [{
 }
 
 
-
-
-
 ]
 
 };
@@ -556,6 +553,9 @@ for(var j in child.children) {
 	$('.childBlocks').append(`<div class='child newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.children[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.children[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.children[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.children[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black childComplete">${child.children[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.children[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.children[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
 
 }
+
+
+//change colors of the percentage circles and progress bars
 
 var Opt01 = "";
 $('.teacherComplete , .childComplete').each(function() {
@@ -595,15 +595,25 @@ if ($(this).html() == 0) {
 });
 
 
+  $('.childBlocks .newBlocks').addClass('hidden')
+$(function () {
+		x=5;
+    $('.childBlocks .newBlocks').slice(0, 10).removeClass('hidden')
+    $('.loadMore').on('click', function (e) {
+        e.preventDefault();
+
+        x = x+5;
+        $('.childBlocks .newBlocks').slice(0, x).slideDown().removeClass('hidden');
+    });
+});
+
+
 
 new WOW().init();
 
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
 })
-
-
-
 
 $('.radio-inline input').on('keyup', function(e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
