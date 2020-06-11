@@ -4,12 +4,14 @@ $(document).ready(function () {
 
 	function scrollfn(e) {
 		let $target = $(e),
-		offSet = e === "#overview" ? 0 : $target.offset().top;
+			offSet = e === "#home" ? 0 : $target.offset().top;
 		$('html, body').stop().animate({
 			'scrollTop': offSet
 		}, 1200, 'swing');
 
+
 	}
+
 
 	$('.back-to-top').click(() => {
 		scrollfn("#overview");
@@ -21,13 +23,12 @@ $(document).ready(function () {
 
 	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
 
-		closeContact();
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
 	});
 
 	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('keypress', function (e) {
-		closeContact();
+
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
 	});
