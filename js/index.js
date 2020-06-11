@@ -980,6 +980,19 @@ $("a").on('focusout', function() {
 	$(this).css('outline', 'none')
 })
 
+$("button").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$("button").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
 $('.tooltips-elements').on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
@@ -1008,8 +1021,8 @@ $('.tooltips-elements').on('focusout', function() {
 
 	$('#closeThisPlease').attr('tabindex', '0');
 
-	$('.dial').attr('tabindex', '0');
-	$('#send').attr('tabindex', '0');
+	$('#sendMessage').attr('tabindex', '0');
+
 
 	$('.modal-content').addClass('opened')
 	$("#slideOut").addClass('showSlideOut');
@@ -1037,10 +1050,7 @@ var close = function() {
 
     $('#closeThisPlease').attr('tabindex', '-1');
 
-    $('.dial').attr('tabindex', '-1');
-    $('#send').attr('tabindex', '-1');
-
-    $('.firstBlock').addClass('unset');
+    $('#sendMessage').attr('tabindex', '-1');
 
     $("#slideOut").removeClass('showSlideOut');
 
@@ -1085,10 +1095,22 @@ $("#closeThisPlease").on('focusout', function() {
 
 $('#sendMessage').click(function (e) {
 
+	$('#theform input').each(function () {
+		$(this).attr('tabindex', '-1');
+	});
 
-		$("#slideOut").removeClass('showSlideOut');
-		// $('.blueTab').show();
+	$('.radio-inline input').each(function () {
+		$(this).attr('tabindex', '-1');
+	});
 
+	$('.form-control').attr('tabindex', '-1');
+
+	$('#closeThisPlease').attr('tabindex', '-1');
+
+	$('#sendMessage').attr('tabindex', '-1');
+
+
+	$("#slideOut").removeClass('showSlideOut');
 		e.preventDefault()
 
 		setTimeout(function () {
