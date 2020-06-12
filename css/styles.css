@@ -3448,8 +3448,12 @@ h6.black {
 }
 
 #feedbackModal label {
-  margin-bottom:0rem
+  margin-bottom:0rem;
+
 }
+
+
+
 
 #feedbackModal fieldset {
   margin:0rem;
@@ -3683,8 +3687,11 @@ label.card-cc {
   margin: 0em;
   padding: 0em;
   margin-bottom: 1em;
-  margin-top: 0em
+  margin-top: 0em;
+  font-size: 0px;
 }
+
+/* fix on Monday elizabeth */
 
 .card-cc{
   cursor:pointer;
