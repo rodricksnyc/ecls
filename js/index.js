@@ -1209,7 +1209,7 @@ $('#sendMessage').click(function (e) {
 			$('.toast').addClass('transparent-opacity');
 			$('.toast').removeClass('animated slideOutRight')
 
-		}, 5000)
+		}, 5000) 
 		setTimeout(function () {
 			$('.toast').css('right', '-335px')
 			$('.toast').addClass('animated slideOutRight')
@@ -1224,6 +1224,16 @@ $('.carousel').carousel();
 
 
 
+$('.one input:checkbox').keypress(function (e) {
+	e.preventDefault();
+	if ((e.keyCode ? e.keyCode : e.which) == 13) {
+		$(this).trigger('click');
+	}
+});
+
+$('.form-check-input').on('change', function () {
+	$(this).parent().find('label').addClass('blueBox')
+});
 
 
 })

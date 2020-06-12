@@ -3320,9 +3320,9 @@ font-family: 'PublicoText';
   width:100%;
 }
 
-#feedbackModal .carousel-inner {
+/* #feedbackModal .carousel-inner {
     padding: 8px 20px;
-}
+} */
 
 /* #feedbackModal .modal-body{
 padding-top:2em;
@@ -3362,7 +3362,7 @@ padding-top:2em;
 }
 
 #feedbackModal .modal-body {
-    padding-top: 0rem !important;
+    padding: 0rem 2em 2em 2em !important;
 }
 
 
@@ -3396,6 +3396,10 @@ h6.black {
     color: #00843D;
     text-transform: uppercase;
 }
+
+.carousel-control-prev:focus, .carousel-control-prev:hover {
+    color:  #00843D;
+  }
 
 .next:hover
  {
@@ -3527,6 +3531,16 @@ h6.black {
 .one{
   margin-bottom:1em;
 }
+
+.form-check-input:focus + label:before {
+  outline:dashed 3px #4599ff
+}
+
+#listResults .one input[type="checkbox"] + label.blueBox::before {
+  outline: none !important;
+}
+
+
 /* .modal-content{
 padding: 36px 24px 60px;
 background-color: #ffffff;
@@ -3596,7 +3610,7 @@ button.close {
 }
 
 .carousel-inner{
-  padding: 8px 12px 0px;
+  /* padding: 8px 12px 0px; */
   width: auto;
   transition: none !important;
 }
