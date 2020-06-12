@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 	function scrollfn(e) {
 		let $target = $(e),
-			offSet = e === "#overview" ? 0 : $target.offset().top;
+		offSet = e === "#overview" ? 0 : $target.offset().top;
 		$('html, body').stop().animate({
 			'scrollTop': offSet
 		}, 1200, 'swing');
@@ -540,14 +540,14 @@ for(var j in child.children) {
 
 var child = {"childrenComplete": [{
 
-		"childId": '9676994-S01',
-		"name": 'Mae Whitman',
-		"type": "Primary",
-		"status": "Complete",
-		"percentage": 100,
-		"date": "3/15/20",
-		"launch": "<i class='fas fa-check limeCheck'></i>"
-	},
+	"childId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check limeCheck'></i>"
+},
 
 {
 	"childId": '9676994-S01',
@@ -597,7 +597,7 @@ var teacher = {"teachersComplete": [{
 
 for(var j in teacher.teachersComplete) {
 
-$('.teacherBlocksComplete').append(`<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><p class="black" id="teacherId">${teacher.teachersComplete[j].teacherId}</p></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><p class="black" id="teacherName">${teacher.teachersComplete[j].name}</p></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><p class="black" id="teacherType">${teacher.teachersComplete[j].type}</p></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><p class="black" id="teacherStatus">${teacher.teachersComplete[j].status}</p></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><div class="percentageCircle"><p class="black teacherComplete">${teacher.teachersComplete[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachersComplete[j].date}</p></div><div class="col-lg-1 col-md-1 col-sm-6 col-xs-6"><div id="launchStatus">${teacher.teachersComplete[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
+	$('.teacherBlocksComplete').append(`<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><p class="black" id="teacherId">${teacher.teachersComplete[j].teacherId}</p></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><p class="black" id="teacherName">${teacher.teachersComplete[j].name}</p></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><p class="black" id="teacherType">${teacher.teachersComplete[j].type}</p></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><p class="black" id="teacherStatus">${teacher.teachersComplete[j].status}</p></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><div class="percentageCircle"><p class="black teacherComplete">${teacher.teachersComplete[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachersComplete[j].date}</p></div><div class="col-lg-1 col-md-1 col-sm-6 col-xs-6"><div id="launchStatus">${teacher.teachersComplete[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
 
 }
 
@@ -609,66 +609,66 @@ var Opt01 = "";
 $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete').each(function() {
 	Opt01 = $(this).html();
 
-if ($(this).html() == 75) {
-	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fbb03b')
-	$(this).closest('.newBlocks').find('.progressBarFull').css({
-		'background' : '#fbb03b',
-		'width': '75%'
-	})
-}
+	if ($(this).html() == 75) {
+		$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fbb03b')
+		$(this).closest('.newBlocks').find('.progressBarFull').css({
+			'background' : '#fbb03b',
+			'width': '75%'
+		})
+	}
 
-if ($(this).html() == 100) {
-	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#71d82e')
-	$(this).closest('.newBlocks').find('.progressBarFull').css({
-		'background' : '#71d82e',
-		'width': '100%'
-	})
-}
+	if ($(this).html() == 100) {
+		$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#71d82e')
+		$(this).closest('.newBlocks').find('.progressBarFull').css({
+			'background' : '#71d82e',
+			'width': '100%'
+		})
+	}
 
-if ($(this).html() == 50) {
-	$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fc7b75')
-	$(this).closest('.newBlocks').find('.progressBarFull').css({
-		'background' : '#fc7b75',
-		'width': '50%'
-	})
-}
+	if ($(this).html() == 50) {
+		$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fc7b75')
+		$(this).closest('.newBlocks').find('.progressBarFull').css({
+			'background' : '#fc7b75',
+			'width': '50%'
+		})
+	}
 
-if ($(this).html() == 0) {
-	$(this).closest('.col-lg-2').find('.percentageCircle').css( {
-		'background': '#f7ebe7',
-		'border': '2px solid #fc7b75'
-	})
-}
+	if ($(this).html() == 0) {
+		$(this).closest('.col-lg-2').find('.percentageCircle').css( {
+			'background': '#f7ebe7',
+			'border': '2px solid #fc7b75'
+		})
+	}
 
 });
 
 
 $('.newBlocks').addClass('hidden')
 $(function () {
-		x=10
-    $('.newBlocks').slice(0, 14).removeClass('hidden')
-    $('.loadMore').on('click', function (e) {
-        e.preventDefault();
+	x=10
+	$('.newBlocks').slice(0, 14).removeClass('hidden')
+	$('.loadMore').on('click', function (e) {
+		e.preventDefault();
 
-        x = x+14;
-        $('.newBlocks').slice(0, x).slideDown('slow').removeClass('hidden');
-    });
+		x = x+14;
+		$('.newBlocks').slice(0, x).slideDown('slow').removeClass('hidden');
+	});
 
-		$('.loadAll').on('click', function (e) {
-				e.preventDefault();
-				$('.newBlocks').slideDown('slow').removeClass('hidden');
-				$('.loadMore, .flip').hide()
-				$('.loadAll p').addClass('all').hide()
-		});
+	$('.loadAll').on('click', function (e) {
+		e.preventDefault();
+		$('.newBlocks').slideDown('slow').removeClass('hidden');
+		$('.loadMore, .flip').hide()
+		$('.loadAll p').addClass('all').hide()
+	});
 
-		// $('.loadAll p').click(function() {
-		// 	if ($(this).hasClass('all')) {
-		//
-		// 		  $('.newBlocks').slideUp().addClass('hidden');
-		// 			$('.loadAll p').removeClass('all')
-		// 	}
-		//
-		// })
+	// $('.loadAll p').click(function() {
+	// 	if ($(this).hasClass('all')) {
+	//
+	// 		  $('.newBlocks').slideUp().addClass('hidden');
+	// 			$('.loadAll p').removeClass('all')
+	// 	}
+	//
+	// })
 
 });
 
@@ -691,7 +691,7 @@ $('.radio-inline input').on('keyup', function(e) {
 		function setReasonActive() {
 			$('.radio-inline input').each(function () {
 				if ($(this).prop('checked')) {
-						$(this).parents('.vertical').css('background' ,'#fbb03b');
+					$(this).parents('.vertical').css('background' ,'#fbb03b');
 				} else {
 					$(this).parents('.vertical').css( 'background' ,'transparent')
 				}
@@ -827,7 +827,7 @@ if ($('.newBlocks').length < 10) {
 }
 
 else {
-		$('.showBlocks').children().show()
+	$('.showBlocks').children().show()
 }
 
 if ($(document).innerWidth() <= 767) {
@@ -1087,7 +1087,7 @@ $('.tooltips-elements').on('focusout', function() {
 
 
 
- var open = function() {
+var open = function() {
 
 	$('#theform input').each(function () {
 		$(this).attr('tabindex', '0');
@@ -1117,31 +1117,31 @@ $('#one').keypress(
 
 
 var close = function() {
-    $('#theform input').each(function () {
-      $(this).attr('tabindex', '-1');
-    });
+	$('#theform input').each(function () {
+		$(this).attr('tabindex', '-1');
+	});
 
-    $('.radio-inline input').each(function () {
-      $(this).attr('tabindex', '-1');
-    });
+	$('.radio-inline input').each(function () {
+		$(this).attr('tabindex', '-1');
+	});
 
-    $('.form-control').attr('tabindex', '-1');
+	$('.form-control').attr('tabindex', '-1');
 
-    $('#closeThisPlease').attr('tabindex', '-1');
+	$('#closeThisPlease').attr('tabindex', '-1');
 
-    $('#sendMessage').attr('tabindex', '-1');
+	$('#sendMessage').attr('tabindex', '-1');
 
-    $("#slideOut").removeClass('showSlideOut');
+	$("#slideOut").removeClass('showSlideOut');
 
 
-	}
+}
 
-		$('#close').keypress(
-			close
+$('#close').keypress(
+	close
 
-		).click(
-			close
-		);
+).click(
+	close
+);
 
 
 $("#one").on("keyup", function (e) {
@@ -1176,7 +1176,7 @@ $('.feedbackBar').on("keyup", function (e) {
 	if (code == 13) {
 
 		$('#feedbackModal').modal('show')
-  }
+	}
 });
 
 $('.privacy').on("keyup", function (e) {
@@ -1185,7 +1185,7 @@ $('.privacy').on("keyup", function (e) {
 	if (code == 13) {
 
 		$('#privacyModal').modal('show')
-  }
+	}
 });
 
 $('#sendMessage').click(function (e) {
@@ -1206,23 +1206,23 @@ $('#sendMessage').click(function (e) {
 
 
 	$("#slideOut").removeClass('showSlideOut');
-		e.preventDefault()
+	e.preventDefault()
 
-		setTimeout(function () {
-			$('.toast').css('right', '0px')
-			$('.toast').removeClass('transparent-opacity').addClass('animated slideInRight')
-		}, 300)
+	setTimeout(function () {
+		$('.toast').css('right', '0px')
+		$('.toast').removeClass('transparent-opacity').addClass('animated slideInRight')
+	}, 300)
 
-		setTimeout(function () {
-			$('.toast').removeClass('transparent-opacity').removeClass('animated slideInRight')
-			$('.toast').addClass('transparent-opacity');
-			$('.toast').removeClass('animated slideOutRight')
+	setTimeout(function () {
+		$('.toast').removeClass('transparent-opacity').removeClass('animated slideInRight')
+		$('.toast').addClass('transparent-opacity');
+		$('.toast').removeClass('animated slideOutRight')
 
-		}, 5000)
-		setTimeout(function () {
-			$('.toast').css('right', '-335px')
-			$('.toast').addClass('animated slideOutRight')
-		}, 4900)
+	}, 5000)
+	setTimeout(function () {
+		$('.toast').css('right', '-335px')
+		$('.toast').addClass('animated slideOutRight')
+	}, 4900)
 
 
 });

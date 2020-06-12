@@ -1091,7 +1091,7 @@ width:20%
 .lightGreen {
   background: #e9f4ee;
   padding-bottom:10em;
-
+  margin-top: 2em;
 }
 
 .infoBar {
@@ -3677,13 +3677,13 @@ h6.green{
 
 label.card-cc {
   color: black;
-font-family: 'Public Sans', sans-serif;
-font-weight: 300;
-font-size: 1.1em;
-margin: 0em;
-padding: 0em;
-margin-bottom: 1em;
-margin-top: 0em
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin: 0em;
+  padding: 0em;
+  margin-bottom: 1em;
+  margin-top: 0em
 }
 
 .card-cc{
@@ -4103,7 +4103,7 @@ h6.blue {
 }
 
 /* #slideOut {
-  width: 100%;
+width: 100%;
 } */
 
 #slideOut {
