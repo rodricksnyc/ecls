@@ -1243,6 +1243,10 @@ footer a.white:hover {
 
 }
 
+#privacyModal {
+  top:10%;
+}
+
 .abso {
   position: absolute;
   left:2%;
