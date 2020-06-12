@@ -3337,6 +3337,12 @@ padding-top:2em;
     height: 420px !important;
 }
 
+#feedbackModal .carousel-inner {
+    position: relative;
+    height: 420px !important;
+}
+
+
 #feedbackModal .carousel-item {
   height:400px !important;
   margin:0em !important;
@@ -3364,11 +3370,14 @@ h6.black {
   color: black;
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 0em;
     padding: 0em;
     margin-bottom:1em;
+    margin-top:0em;
 }
+
+
 
 .next{
     background: #00843D !important;
@@ -3419,6 +3428,13 @@ h6.black {
     font-family: 'Public Sans', sans-serif;
 }
 
+#feedbackModal label {
+  margin-bottom:0rem
+}
+
+#feedbackModal fieldset {
+  margin:0rem;
+}
 
 
 #feedbackModal .carousel-control-prev {
@@ -3439,6 +3455,78 @@ h6.black {
     font-family: 'Public Sans', sans-serif;
 }
 
+#listResults .one label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 30px;
+}
+#listResults .one input[type="checkbox"] {
+    opacity: 0;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+}
+
+.one label {
+  color: black;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin: 0em;
+    padding: 0em;
+
+    margin-top:0em;
+}
+#listResults .one input[type="checkbox"] + label.blueBox::before {
+    outline: none !important;
+}
+#listResults .one input[type="checkbox"] + label::before {
+    border-color: black;
+    background: white;
+    border-radius: 0;
+}
+#listResults .one label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    margin-left: 0px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    top: 2px;
+
+}
+#listResults .one input[type="checkbox"]:checked + label::after, #listResults .one input[type="checkbox"]:checked + label::after {
+    color: black;
+}
+#listResults .one input[type="checkbox"]:checked + label::after {
+    content: '\2713';
+}
+#listResults .one label::after {
+  display: inline-block;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 3px;
+      top: -2px;
+      /* margin-left: -17px; */
+      padding-left: 0px;
+      padding-top: 0px;
+      font-size: 20px;
+      color: black;
+      font-weight: 100;
+      padding: 0px;
+}
+.one{
+  margin-bottom:1em;
+}
 /* .modal-content{
 padding: 36px 24px 60px;
 background-color: #ffffff;
