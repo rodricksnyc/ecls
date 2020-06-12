@@ -2,16 +2,6 @@ $(document).ready(function () {
 
 	$('[data-toggle=tooltip]').tooltip();
 
-	function scrollfn(e) {
-		let $target = $(e),
-			offSet = e === "#home" ? 0 : $target.offset().top;
-		$('html, body').stop().animate({
-			'scrollTop': offSet
-		}, 1200, 'swing');
-
-
-	}
-
 
 	$('.back-to-top').click(() => {
 		scrollfn("#overview");
@@ -21,7 +11,18 @@ $(document).ready(function () {
 		((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
 	});
 
+	function scrollfn(e) {
+		let $target = $(e),
+			offSet = e === "#overview" ? 0 : $target.offset().top;
+		$('html, body').stop().animate({
+			'scrollTop': offSet
+		}, 1200, 'swing');
+
+
+	}
+
 	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
+
 
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
@@ -34,21 +35,6 @@ $(document).ready(function () {
 	});
 
 
-
-	$(window).scroll(function () {
-		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 555) {
-			$('.btnContact').css({
-				top: "92px"
-			})
-
-		} else {
-			$('.btnContact').css({
-				top: "335px"
-			})
-
-		}
-	});
 	//create and append teacher divs with objects
 
 	var teacher = {"teachers": [{
@@ -95,18 +81,13 @@ $(document).ready(function () {
 
 };
 
-
-
 for(var j in teacher.teachers) {
 
 	$('.teacherBlocks').append(`<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachers[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachers[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachers[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachers[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black teacherComplete">${teacher.teachers[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachers[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachers[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
 
-
 }
 
-
 //create and append child divs with objects
-
 
 var child = {"children": [{
 	"childId": '9999992-S01',
@@ -555,10 +536,77 @@ for(var j in child.children) {
 }
 
 
+//create and append child divs with objects
+
+var child = {"childrenComplete": [{
+
+		"childId": '9676994-S01',
+		"name": 'Mae Whitman',
+		"type": "Primary",
+		"status": "Complete",
+		"percentage": 100,
+		"date": "3/15/20",
+		"launch": "<i class='fas fa-check lime'></i>"
+	},
+
+{
+	"childId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check lime'></i>"
+},
+
+{
+	"childId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check lime'></i>"
+}
+
+
+]}
+
+for(var j in child.childrenComplete) {
+
+	$('.childBlocksComplete').append(`<div class='child newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="childId">${child.childrenComplete[j].childId}</p></div><div class="col-lg-2"><p class="black" id="childName">${child.childrenComplete[j].name}</p></div><div class="col-lg-2"><p class="black" id="childType">${child.childrenComplete[j].type}</p></div><div class="col-lg-2"><p class="black" id="childStatus">${child.childrenComplete[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black childComplete">${child.childrenComplete[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="childDate">${child.childrenComplete[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${child.childrenComplete[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
+
+}
+
+
+
+var teacher = {"teachersComplete": [{
+
+	"teacherId": '9676994-S01',
+	"name": 'Mae Whitman',
+	"type": "Primary",
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-check lime'></i>"
+}
+
+]
+
+};
+
+for(var j in teacher.teachersComplete) {
+
+$('.teacherBlocksComplete').append(`<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2"><p class="black" id="teacherId">${teacher.teachersComplete[j].teacherId}</p></div><div class="col-lg-2"><p class="black" id="teacherName">${teacher.teachersComplete[j].name}</p></div><div class="col-lg-2"><p class="black" id="teacherType">${teacher.teachersComplete[j].type}</p></div><div class="col-lg-2"><p class="black" id="teacherStatus">${teacher.teachersComplete[j].status}</p></div><div class="col-lg-2"><div class="percentageCircle"><p class="black teacherComplete">${teacher.teachersComplete[j].percentage}</p></div></div><div class="col-lg-1 margin2"><p class="black" id="teacherDate">${teacher.teachersComplete[j].date}</p></div><div class="col-lg-1"><div id="launchStatus">${teacher.teachersComplete[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
+
+}
+
+
+
 //change colors of the percentage circles and progress bars
 
 var Opt01 = "";
-$('.teacherComplete , .childComplete').each(function() {
+$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete').each(function() {
 	Opt01 = $(this).html();
 
 if ($(this).html() == 75) {
@@ -703,45 +751,45 @@ if ($(document).innerWidth() >= 768) {
 
 
 		if ($('.block10').hasClass('active')) {
-			$('.menu-buttons-floating-list li:eq(0)').addClass('activated')
-			$('.menu-buttons-768-list li:eq(0)').addClass('activated')
+			$('li[data-target="#overview"]').addClass('activated')
+			$('li[data-target="#overview"]').addClass('activated')
 		}
 
 		else {
-			$('.menu-buttons-floating-list li:eq(0)').removeClass('activated')
-			$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+			$('li[data-target="#overview"]').removeClass('activated')
+			$('li[data-target="#overview"]').removeClass('activated')
 		}
 
 
 		if ($('.block5').hasClass('active')) {
-			$('.menu-buttons-floating-list li:eq(1)').addClass('activated')
-			$('.menu-buttons-768-list li:eq(1)').addClass('activated')
+			$('li[data-target="#survey"]').addClass('activated')
+			$('li[data-target="#survey"]').addClass('activated')
 		}
 
 		else {
-			$('.menu-buttons-floating-list li:eq(1)').removeClass('activated')
-			$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+			$('li[data-target="#survey"]').removeClass('activated')
+			$('li[data-target="#survey"]').removeClass('activated')
 		}
 
 		if ($('.block20').hasClass('active')) {
-			$('.menu-buttons-floating-list li:eq(2)').addClass('activated')
-			$('.menu-buttons-768-list li:eq(2)').addClass('activated')
+			$('li[data-target="#feedback"]').addClass('activated')
+			$('li[data-target="#feedback"]').addClass('activated')
 		}
 
 		else {
-			$('.menu-buttons-floating-list li:eq(2)').removeClass('activated')
-			$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+			$('li[data-target="#feedback"]').removeClass('activated')
+			$('li[data-target="#feedback"]').removeClass('activated')
 		}
 
 
 		if ($('.block50').hasClass('active')) {
-			$('.menu-buttons-floating-list li:eq(3)').addClass('activated')
-			$('.menu-buttons-768-list li:eq(2)').addClass('activated')
+			$('li[data-target="#info"]').addClass('activated')
+			$('li[data-target="#info"]').addClass('activated')
 		}
 
 		else {
-			$('.menu-buttons-floating-list li:eq(3)').removeClass('activated')
-			$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+			$('li[data-target="#info"]').removeClass('activated')
+			$('li[data-target="#info"]').removeClass('activated')
 		}
 
 		// if ($('.block0').hasClass('active')) {
@@ -794,36 +842,35 @@ if ($(document).innerWidth() <= 767) {
 				$(this).removeClass('active')
 			}
 		})
-		if ($('.block10').hasClass('active')) {
-
-			$('.menu-buttons-768-list li:eq(0)').addClass('activated')
-		}
-
-		else {
-
-			$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-		}
-
-
 		if ($('.block5').hasClass('active')) {
-
-			$('.menu-buttons-768-list li:eq(1)').addClass('activated')
+			$('li[data-target="#survey"]').addClass('activated')
+			$('li[data-target="#survey"]').addClass('activated')
 		}
 
 		else {
+			$('li[data-target="#survey"]').removeClass('activated')
+			$('li[data-target="#survey"]').removeClass('activated')
+		}
 
-			$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+		if ($('.block20').hasClass('active')) {
+			$('li[data-target="#feedback"]').addClass('activated')
+			$('li[data-target="#feedback"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#feedback"]').removeClass('activated')
+			$('li[data-target="#feedback"]').removeClass('activated')
 		}
 
 
 		if ($('.block50').hasClass('active')) {
-
-			$('.menu-buttons-768-list li:eq(2)').addClass('activated')
+			$('li[data-target="#info"]').addClass('activated')
+			$('li[data-target="#info"]').addClass('activated')
 		}
 
 		else {
-
-			$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+			$('li[data-target="#info"]').removeClass('activated')
+			$('li[data-target="#info"]').removeClass('activated')
 		}
 
 		if ($('.block0').hasClass('active')) {
@@ -842,32 +889,32 @@ if ($(document).innerWidth() <= 767) {
 		return false;
 	});
 
-
-	$("#slideOut").css("left" , 0);
-
-	$('#slideOut').removeClass('showSlideOut')
-
-	$("#slideOut").css("bottom" , -$('#slideOut').height() );
-
-	var overlay = document.getElementById('whiteBlock');
-
-	$(window).on("scroll", function() {
-		var docHeight = $(document).height();
-		var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
-		if ((docHeight - winScrolled) > 1) {
-
-			var setHeight = $("#contact").height() + 25;
-
-			$("#slideOut").animate({
-				bottom:'75',
-				top: setHeight
-
-			}, 10);
-
-		}
-
-
-	});
+	//
+	// $("#slideOut").css("left" , 0);
+	//
+	// $('#slideOut').removeClass('showSlideOut')
+	//
+	// $("#slideOut").css("bottom" , -$('#slideOut').height() );
+	//
+	// var overlay = document.getElementById('whiteBlock');
+	//
+	// $(window).on("scroll", function() {
+	// 	var docHeight = $(document).height();
+	// 	var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
+	// 	if ((docHeight - winScrolled) > 1) {
+	//
+	// 		var setHeight = $("#contact").height() + 25;
+	//
+	// 		$("#slideOut").animate({
+	// 			bottom:'75',
+	// 			top: setHeight
+	//
+	// 		}, 10);
+	//
+	// 	}
+	//
+	//
+	// });
 
 
 }

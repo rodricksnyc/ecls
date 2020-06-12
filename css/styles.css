@@ -3629,7 +3629,7 @@ h6.blue {
 
 #slideOut {
   height: auto;
-  left: 0;
+  /* right: 0; */
 
 }
 
