@@ -1234,6 +1234,15 @@ footer {
   background: #00843D;
 }
 
+footer a.white:hover {
+  text-decoration: none;
+  cursor:grab
+}
+#privacyModal .modal-dialog {
+  max-width: 700px !important;
+
+}
+
 .abso {
   position: absolute;
   left:2%;

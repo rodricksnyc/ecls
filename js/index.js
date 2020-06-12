@@ -1179,6 +1179,15 @@ $('.feedbackBar').on("keyup", function (e) {
   }
 });
 
+$('.privacy').on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+
+		$('#privacyModal').modal('show')
+  }
+});
+
 $('#sendMessage').click(function (e) {
 
 	$('#theform input').each(function () {
@@ -1216,12 +1225,10 @@ $('#sendMessage').click(function (e) {
 		}, 4900)
 
 
-
 });
 
 
 $('.carousel').carousel();
-
 
 
 $('.one input:checkbox').keypress(function (e) {
