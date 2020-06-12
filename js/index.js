@@ -773,6 +773,9 @@ if ($(document).innerWidth() >= 768) {
 
 }
 
+
+
+
 if ($(document).innerWidth() <= 767) {
 
 	$(window).on('scroll', function() {
