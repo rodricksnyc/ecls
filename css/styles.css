@@ -122,9 +122,9 @@ header a:hover {
   font-size:15px;
 }
 
-/* .ques:focus {
-border:1px solid blue;
-} */
+.light {
+  font-weight: 100;
+}
 
 .form-signin label {
   font-weight:700;
@@ -1925,7 +1925,7 @@ text-transform: uppercase;
     line-height: 1.5;
     margin-bottom: 1em;
     padding: 1.25em;
-    position: absolute;
+    position: fixed;
     right: -335px;
     top: 1em;
     transition: 0.15s ease-in-out;
@@ -1934,6 +1934,7 @@ text-transform: uppercase;
     font-size: 17px;
     background: #fbb03b;
     color:#071D49;
+    z-index: 99999999999
 }
 
 

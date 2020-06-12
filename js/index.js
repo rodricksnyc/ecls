@@ -822,7 +822,13 @@ if ($(document).innerWidth() >= 768) {
 }
 
 
+if ($('.newBlocks').length < 10) {
+	$('.showBlocks').children().hide()
+}
 
+else {
+		$('.showBlocks').children().show()
+}
 
 if ($(document).innerWidth() <= 767) {
 
@@ -1185,7 +1191,7 @@ $('#sendMessage').click(function (e) {
 
 		}, 5000)
 		setTimeout(function () {
-			$('.toast').css('right', '-325px')
+			$('.toast').css('right', '-335px')
 			$('.toast').addClass('animated slideOutRight')
 		}, 4900)
 
