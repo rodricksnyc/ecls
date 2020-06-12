@@ -1720,7 +1720,53 @@ color: #0071ba;
   outline: none;
 
 }
+.filter-attr-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.mt5 {
+  margin-top:4.6em;
+}
+
+.ml0 {
+      margin-left: 0em;
+}
+
+.filter-attr-list li.allResults, .filter-attr-list li .tag-value {
+    padding: 0.3rem 1rem;
+  margin: 0rem .5rem;
+    background: #00843D;
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.filter-attr-list {
+  margin:0;
+  padding:0;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.filter-attr-list li{
+  font-size:14px;
+  list-style-type: none;
+  font-family: 'Public Sans', sans-serif;
+  margin: 0rem .5rem;
+}
+
+.allResults i {
+  font-weight:600;
+}
 
 
 .hero-img-container.secondOne {
