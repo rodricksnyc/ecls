@@ -1059,6 +1059,19 @@ $("button").on('focusout', function() {
 	$(this).css('outline', 'none')
 })
 
+$(".feedbackBar").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$(".feedbackBar").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
 $('.tooltips-elements').on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
@@ -1157,7 +1170,14 @@ $("#closeThisPlease").on('focusout', function() {
 	$(this).css('outline', 'none')
 })
 
+$('.feedbackBar').on("keyup", function (e) {
 
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+
+		$('#feedbackModal').modal('show')
+  }
+});
 
 $('#sendMessage').click(function (e) {
 
@@ -1199,9 +1219,8 @@ $('#sendMessage').click(function (e) {
 
 });
 
-// 
-// $('.carousel').carousel();
-// $('#myModal').modal()
+
+$('.carousel').carousel();
 
 
 

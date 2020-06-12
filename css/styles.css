@@ -3296,6 +3296,10 @@ html, body{
   z-index: 999;
 }
 
+#feedback .modal {
+    top: 10%;
+}
+
 #feedbackModal .modal-dialog {
   max-width:700px !important
 }
@@ -3312,9 +3316,17 @@ padding-top:1em;
 font-family: 'PublicoText';
 }
 
-#feedbackModal .modal-body{
-padding-top:2em;
+#feedbackModal textarea {
+  width:100%;
 }
+
+#feedbackModal .carousel-inner {
+    padding: 8px 20px;
+}
+
+/* #feedbackModal .modal-body{
+padding-top:2em;
+} */
 
 #feedbackModal .carousel-control-next, .carousel-control-prev  {
   z-index:99999
@@ -3322,8 +3334,31 @@ padding-top:2em;
 
 #feedbackModal .carousel {
     position: relative;
-    height: 400px;
+    height: 420px !important;
 }
+
+#feedbackModal .carousel-item {
+  height:400px !important;
+  margin:0em !important;
+  padding:0em !important;
+}
+
+#feedbackModal .carousel-item.active {
+  height:400px !important;
+  margin:0em !important;
+  padding:0em !important;
+}
+#feedbackModal ::placeholder {
+    font-family: 'Public Sans', sans-serif;
+    font-weight:100;
+
+    font-size:15px !important;
+}
+
+#feedbackModal .modal-body {
+    padding-top: 0rem !important;
+}
+
 
 h6.black {
   color: black;
@@ -3331,7 +3366,8 @@ h6.black {
     font-weight: 300;
     font-size: 1.2em;
     margin: 0em;
-    padding: 0em
+    padding: 0em;
+    margin-bottom:1em;
 }
 
 .next{
@@ -3352,8 +3388,21 @@ h6.black {
     text-transform: uppercase;
 }
 
+.next:hover
+ {
+  border-color: #00843D !important;
+  background: white  !important;
+  color:#00843D;
+}
+
+.back:hover {
+  border-color: #00843D !important;
+  background: #00843D !important;
+  color:white;
+}
+
 #feedbackModal .carousel-control-next {
-    right: 40%;
+    right: 30%;
     position: absolute;
     top: 90%;
     bottom: 0;
@@ -3363,16 +3412,17 @@ h6.black {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 15%;
-    color: #fff;
+    /* width: 15%;
+    color: #fff; */
     text-align: center;
     opacity: 1;
     font-family: 'Public Sans', sans-serif;
 }
 
 
+
 #feedbackModal .carousel-control-prev {
-    left: 22%;
+    left: 28%;
     position: absolute;
     top: 90%;
     bottom: 0;
@@ -3382,8 +3432,8 @@ h6.black {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 15%;
-    color: #fff;
+    /* width: 15%;
+    color: #fff; */
     text-align: center;
     opacity: 1;
     font-family: 'Public Sans', sans-serif;
