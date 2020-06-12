@@ -1199,6 +1199,11 @@ $('#sendMessage').click(function (e) {
 
 });
 
+// 
+// $('.carousel').carousel();
+// $('#myModal').modal()
+
+
 
 
 
