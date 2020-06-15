@@ -3388,7 +3388,7 @@ h6.black {
   margin: 0em;
   padding: 0em;
   margin-bottom:1em;
-  margin-top:0em;
+  margin-top:1em;
 }
 
 
@@ -3681,15 +3681,17 @@ h6.green{
 }
 
 label.card-cc {
-  color: black;
-  font-family: 'Public Sans', sans-serif;
-  font-weight: 300;
-  font-size: 1.1em;
-  margin: 0em;
-  padding: 0em;
-  margin-bottom: 1em;
-  margin-top: 0em;
-  font-size: 0px;
+      color: black;
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      margin: 0em;
+      padding: 0em;
+      margin-bottom: 1em;
+      margin-top: 0em;
+      /* font-size: 0px; */
+      padding-top: 7em;
+      text-align: center;
 }
 
 /* fix on Monday elizabeth */
