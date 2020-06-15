@@ -3366,7 +3366,7 @@ padding-top:2em;
 #feedbackModal .carousel-item.active {
   height:400px !important;
   margin:0em !important;
-  padding:0em !important;
+  padding:0em 1em !important;
 }
 #feedbackModal ::placeholder {
   font-family: 'Public Sans', sans-serif;
@@ -3710,10 +3710,24 @@ label.card-cc {
   -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
   filter: brightness(1.8) grayscale(1) opacity(.7); */
 }
-.card-cc:hover{
+/* .card-cc:hover{
   -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
   -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
   filter: brightness(1.2) grayscale(.5) opacity(.9);
+} */
+
+.card-cc-checked {
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      border-radius: 10px;
+}
+
+.card-cc-checked:focus {
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      border-radius: 10px;
 }
 
 .cc-selector  {

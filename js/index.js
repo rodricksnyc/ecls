@@ -1257,4 +1257,30 @@ $('.form-check-input').on('change', function () {
 });
 
 
+$(".cc-selector input").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+
+
+
+
+	$(".card-cc").on("click", function (e) {
+					 $(".card-cc-checked").each(function(i){
+							 $(this).removeClass("card-cc-checked");
+					 });
+					 $(this).toggleClass("card-cc-checked");
+					 e.preventDefault();
+
+			 });
+
+
+
+
+
 })
