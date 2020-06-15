@@ -21,14 +21,14 @@ $(document).ready(function () {
 
 	}
 
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('click', function (e) {
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
 
 
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
 	});
 
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li:not(:last-child)').on('keypress', function (e) {
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
 
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
@@ -1069,6 +1069,20 @@ $(".feedbackBar").on("keyup", function (e) {
 
 })
 $(".feedbackBar").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
+
+$('li').attr('tabindex', '0').on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$('li').attr('tabindex','0').on('focusout', function() {
 	$(this).css('outline', 'none')
 })
 
