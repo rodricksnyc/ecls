@@ -3673,11 +3673,14 @@ h6.green{
 }
 
 
-.card-cc, .cc-selector input:active +.card-cc{opacity: .9;}
+.card-cc, .cc-selector input:active +.card-cc{
+  /* -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      border-radius: 10px; */
+}
 .card-cc, .cc-selector input:checked +.card-cc{
-  -webkit-filter: none;
-  -moz-filter: none;
-  filter: none;
+
 }
 
 label.card-cc {
@@ -3692,6 +3695,14 @@ label.card-cc {
       /* font-size: 0px; */
       padding-top: 7em;
       text-align: center;
+}
+
+.cc-selector input[type="radio"]:checked+label {
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+      border-radius: 10px; */
+
 }
 
 /* fix on Monday elizabeth */
@@ -3723,7 +3734,7 @@ label.card-cc {
       border-radius: 10px;
 }
 
-.card-cc-checked:focus {
+.card-cc:focus {
   -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
       -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
       box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
