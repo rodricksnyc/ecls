@@ -1360,19 +1360,18 @@ function checkitem(){
 	var $this = $('.carousel');
 
 	if ($('.carousel-inner .carousel-item:first').hasClass('active')) {
-		// $('.back').off('click');
+		$('.back').css('pointer-events', 'none');
 
 	}
 
 
 	else if ($('.carousel-inner .carousel-item:last').hasClass('active')) {
-		// $('.next').off('click');
-		// $('.skip').off('click');
+		$('.next').css('pointer-events', 'none');
+		$('.skip').css('pointer-events', 'none');
 
 	}
 	else {
-		// $('.next, .back, .skip').on('click');
-
+		$('.next, .back, .skip').css('pointer-events', 'auto');
 	}
 
 
