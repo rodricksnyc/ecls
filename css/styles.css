@@ -3320,7 +3320,8 @@ html, body{
 }
 
 #feedbackModal .modal-dialog {
-  max-width:780px !important
+  max-width: none;
+  width: 778px !important;
 }
 
 .small {
@@ -3513,7 +3514,7 @@ margin-top:1em;
     position: absolute;
     bottom: 0;
     height: 9px;
-    width: 100%;
+    width: 776px;
     background: #E0E0E0;
     left: 0;
 }

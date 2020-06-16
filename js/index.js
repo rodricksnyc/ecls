@@ -1258,6 +1258,67 @@ $('#sendMessage').click(function (e) {
 $('.carousel').carousel();
 
 
+
+
+var items = $('.carousel-item').length
+
+
+console.log($('.modalProgressBar').width())
+
+var total = $('.modalProgressBar').width()
+
+var color = total / items
+
+
+
+console.log(total)
+console.log(color)
+
+var l = 0
+
+console.log(l)
+$('.next , .skip').click(function () {
+
+	function increase(){
+			l = l + color
+	}
+	increase()
+
+	console.log(l)
+
+	$('.modalProgressBar').css({
+		'background' : '#71d82e',
+		'width' : l
+	})
+
+
+})
+
+
+$('.back').click(function () {
+
+
+	function decrease(){
+		l = l - color
+	}
+	decrease()
+console.log(l)
+
+		$('.modalProgressBar').css({
+			'background' : '#71d82e',
+			'width' : l
+		})
+})
+
+
+
+
+
+
+
+
+
+
 $('.skip').keypress(function (e) {
 
 	if ((e.keyCode ? e.keyCode : e.which) == 13) {
