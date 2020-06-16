@@ -1166,7 +1166,7 @@ h6.darkBlue {
 
 .blueCircle {
   position: absolute;
-  border-radius: 41px 38px 51px;
+  border-radius: 41px 34px 51px;
   background: #00539f;
   height: 4rem;
   width: 4rem;
@@ -3341,6 +3341,8 @@ html, body{
 
 #feedbackModal textarea {
   width:100%;
+  font-family: 'Public Sans', sans-serif;
+  font-weight:100;
 }
 
 /* #feedbackModal .carousel-inner {
@@ -3357,12 +3359,12 @@ padding-top:2em;
 
 #feedbackModal .carousel {
   position: relative;
-  height: 420px !important;
+  height: 440px !important;
 }
 
 #feedbackModal .carousel-inner {
   position: relative;
-  height: 420px !important;
+  height: 440px !important;
 }
 
 
@@ -3440,7 +3442,7 @@ h6.black {
 }
 
 #feedbackModal .carousel-control-next {
-  right: 28%;
+  right: 30%;
   position: absolute;
   top: 94%;
   bottom: 0;
@@ -3457,9 +3459,11 @@ h6.black {
   font-family: 'Public Sans', sans-serif;
 }
 
-#feedbackModal label {
-  margin-bottom:0rem;
+#feedbackModal label p {
+margin-bottom:0rem;
 line-height: normal;
+font-size:17px;
+margin-top:1em;
 }
 
 #feedbackModal fieldset {
@@ -3468,7 +3472,7 @@ line-height: normal;
 
 
 #feedbackModal .carousel-control-prev {
-  left: 28%;
+  left: 30%;
   position: absolute;
   top: 94%;
   bottom: 0;
@@ -3488,6 +3492,16 @@ line-height: normal;
 .carousel-item,
 .carousel-item.active {
   padding: 0em 1em !important;
+}
+
+
+.modalProgressBar {
+    position: absolute;
+    bottom: 0;
+    height: 9px;
+    width: 100%;
+    background: #E0E0E0;
+    left: 0;
 }
 
 #listResults .one label {
@@ -3706,17 +3720,10 @@ label.card-cc {
       /* font-size: 0px; */
       padding-top: 7em;
       text-align: center;
+      position: relative;
 }
 
-.cc-selector input[type="radio"]:checked+label {
-  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      border-radius: 10px; */
 
-}
-
-/* fix on Monday elizabeth */
 
 .card-cc{
   cursor:pointer;
@@ -3728,18 +3735,12 @@ label.card-cc {
   -webkit-transition: all 100ms ease-in;
   -moz-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
-  background-position: right 0px top 7px;
-    border: inset 4px transparent;
+  background-position: right 0px top 8px;
+    border: inset 5px transparent;
 
 }
 
 
-.card-cc-checked {
-  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      border-radius: 10px;
-}
 
 .card-cc:focus,
 .card-cc:hover {
@@ -3750,15 +3751,31 @@ label.card-cc {
 }
 
 .cc-selector  {
-  margin-top:4em;
+  margin-top:5%;
   position: relative;
 }
 
 input[type="radio"]:checked + label {
   -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      border-radius: 10px;
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  border-radius: 10px;
+}
+
+input[type="radio"]:checked + label:after {
+
+content: "\f058";
+font-size:21px;
+color:#00843D;
+
+content: '\f058';
+font-family: "Font Awesome 5 Free";
+font-style: normal;
+font-weight: 900;
+text-decoration: inherit;
+position: absolute;
+top: -11px;
+right: -12px;
 }
 
 .modal-open {
