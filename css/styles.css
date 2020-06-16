@@ -3343,7 +3343,13 @@ html, body{
   font-size:.9em !important
 }
 
-.modal-header {
+#feedbackModal .modal-header {
+  background: #e6eaec;
+  padding-top:1em;
+
+}
+
+#privacyModal .modal-header {
   background: #e6eaec;
   padding-top:1em;
 
