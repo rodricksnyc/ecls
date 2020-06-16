@@ -3503,20 +3503,29 @@ margin-top:1em;
   opacity: 1;
   font-family: 'Public Sans', sans-serif;
 }
-
+#feedbackModal  .modal-content {
+overflow: hidden;
+}
 .carousel-item,
 .carousel-item.active {
   padding: 0em 1em !important;
 }
 
-
-.modalProgressBar {
+.modalGreyProgressBar {
     position: absolute;
     bottom: 0;
     height: 9px;
-    width: 776px;
+    width: 100%;
     background: #E0E0E0;
     left: 0;
+}
+.modalProgressBar {
+  position: absolute;
+  bottom: 0;
+  height: 9px;
+  width: 100%;
+margin-left: 0rem !important;
+  left: 0;
 }
 
 #listResults .one label {

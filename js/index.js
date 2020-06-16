@@ -1263,13 +1263,11 @@ $('.carousel').carousel();
 var items = $('.carousel-item').length
 
 
-console.log($('.modalProgressBar').width())
+console.log($('#feedbackModal .modal-dialog').width())
 
-var total = $('.modalProgressBar').width()
+var total = $('#feedbackModal .modal-dialog').width()
 
 var color = total / items
-
-
 
 console.log(total)
 console.log(color)
@@ -1277,6 +1275,8 @@ console.log(color)
 var l = 0
 
 console.log(l)
+
+
 $('.next , .skip').click(function () {
 
 	function increase(){
@@ -1291,12 +1291,12 @@ $('.next , .skip').click(function () {
 		'width' : l
 	})
 
-
 })
 
 
-$('.back').click(function () {
 
+
+$('.back').click(function () {
 
 	function decrease(){
 		l = l - color
