@@ -369,7 +369,6 @@
 	</div>
 
 
-
  <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -379,11 +378,6 @@
 				</div>
 				<div class="modal-body">
 					<div id="carouselExampleControls" class="carousel slide" data-interval="false">
-						<button class="btn back carousel-control-prev" aria-hidden="true" href="#carouselExampleControls" role="button" data-slide="prev">Back
-						</button>
-
-						<button aria-hidden="true" class="carousel-control-next btn next" href="#carouselExampleControls" role="button" data-slide="next">Next
-						</button>
 
 						<div class="carousel-inner">
 							<form>
@@ -393,18 +387,19 @@
 										<h6 class="black">Overall, how would you rate your experience with the ECLS?</h6>
 
 										<div class="cc-selector d-flex justify-content-between align-items-center">
-											<input id="red" type="radio" name="faces" value="" tabindex="1">
-											<label class="card-cc red" for="red">Not easy to use at all</label>
-											<input id="orange" type="radio" name="faces" value=""/>
+											<input id="red" type="radio" name="effort" value="Not at all easy to use">
+											<label class="card-cc red" for="red">Not at all easy to use</label>
+
+											<input id="orange" type="radio" name="effort" value="Not very easy to use<">
 											<label class="card-cc orange"for="orange"></label>
 
-											<input id="gold" type="radio" name="faces" value="" />
+											<input id="gold" type="radio" name="effort" value="Somewhat easy to use<">
 											<label class="card-cc gold" for="gold"></label>
 
-											<input id="lime" type="radio" name="faces" value=""/>
+											<input id="lime" type="radio" name="effort" value="Easy to use">
 											<label class="card-cc lime"for="lime"></label>
 
-											<input id="jellybean" type="radio" name="faces" value="" />
+											<input id="jellybean" type="radio" name="effort" value="Very easy to use<">
 											<label class="card-cc jellybean" for="jellybean">Very easy to use</label>
 
 										</div>
@@ -505,18 +500,19 @@
 										<h6 class="black">Please rate your experience with using this website, the MyECLS.</h6>
 										<h6 class="black">How easy to use was the website?</h6>
 										<div class="cc-selector d-flex justify-content-between align-items-center">
-											<input checked="checked" id="red2" type="radio" name="faces" value="" />
-											<label class="card-cc red" for="red2">Not easy to use at all</label>
-											<input id="orange2" type="radio" name="faces" value=""/>
+											<input id="red2" type="radio" name="effort" value="Not at all easy to use">
+											<label class="card-cc red" for="red2">Not at all easy to use</label>
+
+											<input id="orange2" type="radio" name="effort" value="Not very easy to use<">
 											<label class="card-cc orange"for="orange2"></label>
 
-											<input checked="checked" id="gold2" type="radio" name="faces" value="" />
+											<input id="gold2" type="radio" name="effort" value="Somewhat easy to use<">
 											<label class="card-cc gold" for="gold2"></label>
 
-											<input id="lime2" type="radio" name="faces" value=""/>
-											<label class="card-cc lime" for="lime2"></label>
+											<input id="lime2" type="radio" name="effort" value="Easy to use">
+											<label class="card-cc lime"for="lime2"></label>
 
-											<input checked="checked" id="jellybean2" type="radio" name="faces" value="" />
+											<input id="jellybean2" type="radio" name="effort" value="Very easy to use<">
 											<label class="card-cc jellybean" for="jellybean2">Very easy to use</label>
 
 										</div>
@@ -530,18 +526,19 @@
 										<h6 class="black">Please rate your experience with using this website, the MyECLS.</h6>
 										<h6 class="black">How clear was the website in directing you to complete the surveys and any other needed tasks?</h6>
 										<div class="cc-selector d-flex justify-content-between align-items-center">
-											<input checked="checked" id="red3" type="radio" name="faces" value="" />
-											<label class="card-cc red" for="red3">Not easy to use at all</label>
-											<input id="orange3" type="radio" name="faces" value=""/>
+											<input id="red3" type="radio" name="effort" value="Not at all easy to use">
+											<label class="card-cc red" for="red3">Not at all easy to use</label>
+
+											<input id="orange3" type="radio" name="effort" value="Not very easy to use<">
 											<label class="card-cc orange" for="orange3"></label>
 
-											<input checked="checked" id="gold3" type="radio" name="faces" value="" />
+											<input id="gold3" type="radio" name="effort" value="Somewhat easy to use<">
 											<label class="card-cc gold" for="gold3"></label>
 
-											<input id="lime3" type="radio" name="faces" value=""/>
-											<label class="card-cc lime"for="lime3"></label>
+											<input id="lime3" type="radio" name="effort" value="Easy to use">
+											<label class="card-cc lime" for="lime3"></label>
 
-											<input checked="checked" id="jellybean3" type="radio" name="faces" value="" />
+											<input id="jellybean3" type="radio" name="effort" value="Very easy to use<">
 											<label class="card-cc jellybean" for="jellybean3">Very easy to use</label>
 
 										</div>
@@ -553,25 +550,24 @@
 									<fieldset>
 
 										<h6 class="black">Please rate your experience with using this website, the MyECLS.</h6>
-										<h6 class="black">How informative was the website when you were learning about the study or
-											searching for additional details about the study?</h6>
+										<h6 class="black">How informative was the website when you were learning about the study or searching for additional details about the study?</h6>
 											<div class="cc-selector d-flex justify-content-between align-items-center">
-												<input checked="checked" id="red4" type="radio" name="faces" value="" />
-												<label class="card-cc red" for="red4">Not easy to use at all</label>
-												<input id="orange4" type="radio" name="faces" value=""/>
-												<label class="card-cc orange"for="orange4"></label>
+												<input id="red4" type="radio" name="effort" value="Not at all easy to use">
+												<label class="card-cc red" for="red4">Not at all easy to use</label>
 
-												<input checked="checked" id="gold4" type="radio" name="faces" value="" />
+												<input id="orange4" type="radio" name="effort" value="Not very easy to use<">
+												<label class="card-cc orange" for="orange4"></label>
+
+												<input id="gold4" type="radio" name="effort" value="Somewhat easy to use<">
 												<label class="card-cc gold" for="gold4"></label>
 
-												<input id="lime4" type="radio" name="faces" value=""/>
+												<input id="lime4" type="radio" name="effort" value="Easy to use">
 												<label class="card-cc lime" for="lime4"></label>
 
-												<input checked="checked" id="jellybean4" type="radio" name="faces" value="" />
+												<input id="jellybean4" type="radio" name="effort" value="Very easy to use">
 												<label class="card-cc jellybean" for="jellybean4">Very easy to use</label>
 
 											</div>
-
 											I never used the website to learn more about the study.
 
 										</fieldset>
@@ -613,6 +609,13 @@
 
 										</form>
 									</div>
+
+									<button class="btn back carousel-control-prev" aria-hidden="true" href="#carouselExampleControls" role="button" data-slide="prev">Back
+									</button>
+
+									<button aria-hidden="true" class="carousel-control-next btn next" href="#carouselExampleControls" role="button" data-slide="next">Next
+									</button>
+
 
 
 								</div>

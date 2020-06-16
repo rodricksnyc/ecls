@@ -1281,7 +1281,12 @@ $("label.card-cc").click(function(e){
     //console.log($check.prop("checked"));
   });
 
-
+	// $('#carousel').on('slide.bs.carousel', function(e) {
+	// 	$('input').each(function () {
+  //     $(this).attr('tabindex', '0');
+  //   });
+	//
+  //  });
 
 
 

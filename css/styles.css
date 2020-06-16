@@ -3316,7 +3316,7 @@ html, body{
 }
 
 #feedbackModal .modal-dialog {
-  max-width:760px !important
+  max-width:780px !important
 }
 
 #feedbackModal .modal-header{
@@ -3361,13 +3361,13 @@ padding-top:2em;
 #feedbackModal .carousel-item {
   height:400px !important;
   margin:0em !important;
-  padding:0em !important;
+  /* padding:0em !important; */
 }
 
 #feedbackModal .carousel-item.active {
   height:400px !important;
   margin:0em !important;
-  padding:0em !important;
+  /* padding:0em !important; */
 }
 #feedbackModal ::placeholder {
   font-family: 'Public Sans', sans-serif;
@@ -3454,9 +3454,6 @@ h6.black {
 
 }
 
-
-
-
 #feedbackModal fieldset {
   margin:0rem;
 }
@@ -3478,6 +3475,11 @@ h6.black {
   text-align: center;
   opacity: 1;
   font-family: 'Public Sans', sans-serif;
+}
+
+.carousel-item,
+.carousel-item.active {
+  padding: 0em 1em !important;
 }
 
 #listResults .one label {
