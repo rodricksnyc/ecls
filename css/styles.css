@@ -3770,7 +3770,7 @@ margin-left: 0rem !important;
 .done {
   background: #696969 !important;
   border-color:#696969 !important;
-  left:42% !important
+  left:41% !important
 }
 
 .range-container {
@@ -3847,13 +3847,12 @@ margin-left: 0rem !important;
 
 .lightGreenShape {
 
-   background-color: #e9f4ee;
+   background-color: #f1fbeb;
    position: relative;
-   border-radius: 41px 34px 51px;
-   width: 220px;
-   height: 220px;
-
-   padding-top: 2em;
+   border-radius: 41% 35% 50%;
+       width: 230px;
+       height: 230px;
+       padding-top: 2.4em;
 
 }
 

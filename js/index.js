@@ -1356,6 +1356,24 @@ $('.cc-selector input').css('-webkit-appearance', 'radio')
 
 
 
+$('.next, .skip').on("keyup", function (e) {
+
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13 && $('.next').hasClass('done')) {
+
+			$('#feedbackModal').modal('hide')
+		}
+
+
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
+
+			$('#feedbackModal .close').focus().css('outline', 'dashed 3px #4599ff')
+		}
+
+})
+
+
 function checkitem(){
 	var $this = $('.carousel');
 
