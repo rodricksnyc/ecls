@@ -1281,7 +1281,7 @@ console.log(l)
 $('.next , .skip').click(function () {
 
 	function increase(){
-			l = l + color
+		l = l + color
 	}
 	increase()
 
@@ -1301,12 +1301,12 @@ $('.back').click(function () {
 		l = l - color
 	}
 	decrease()
-console.log(l)
+	console.log(l)
 
-		$('.modalProgressBar').css({
-			'background' : '#71d82e',
-			'width' : l
-		})
+	$('.modalProgressBar').css({
+		'background' : '#71d82e',
+		'width' : l
+	})
 })
 
 
@@ -1334,8 +1334,8 @@ $('.form-check-input').on("keyup", function (e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 9) {
 
-	$(this).parent().find('label').addClass('activate')
-}
+		$(this).parent().find('label').addClass('activate')
+	}
 
 })
 
@@ -1349,8 +1349,8 @@ $('.cc-selector input').on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 9) {
-$('.cc-selector input').css('-webkit-appearance', 'radio')
-}
+		$('.cc-selector input').css('-webkit-appearance', 'radio')
+	}
 
 })
 
@@ -1358,18 +1358,18 @@ $('.cc-selector input').css('-webkit-appearance', 'radio')
 
 $('.next, .skip').on("keyup", function (e) {
 
-		var code = (e.keyCode ? e.keyCode : e.which);
-		if (code == 13 && $('.next').hasClass('done')) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13 && $('.next').hasClass('done')) {
 
-			$('#feedbackModal').modal('hide')
-		}
+		$('#feedbackModal').modal('hide')
+	}
 
 
-		var code = (e.keyCode ? e.keyCode : e.which);
-		if (code == 13) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
 
-			$('#feedbackModal .close').focus().css('outline', 'dashed 3px #4599ff')
-		}
+		$('#feedbackModal .close').focus().css('outline', 'dashed 3px #4599ff')
+	}
 
 })
 
@@ -1415,25 +1415,25 @@ $('.carousel').on('slid.bs.carousel', '', checkitem); // on carousel move
 
 
 $("label.card-cc").click(function(e){
-    e.preventDefault();
-    $check = $(this).prev();
-    if($check.prop('checked'))
-      $check.prop( "checked", false );
+	e.preventDefault();
+	$check = $(this).prev();
+	if($check.prop('checked'))
+	$check.prop( "checked", false );
 
-    else
-      $check.prop( "checked", true );
+	else
+	$check.prop( "checked", true );
 
-  });
+});
 
 
-	$(".card-cc").on("click", function (e) {
-					 $(".card-cc-checked").each(function(i){
-							 $(this).removeClass("card-cc-checked");
-					 });
-					 $(this).toggleClass("card-cc-checked");
-					 e.preventDefault();
+$(".card-cc").on("click", function (e) {
+	$(".card-cc-checked").each(function(i){
+		$(this).removeClass("card-cc-checked");
+	});
+	$(this).toggleClass("card-cc-checked");
+	e.preventDefault();
 
-			 });
+});
 
 
 })

@@ -1152,7 +1152,7 @@ h6.plum {
 }
 
 .feedbackBar h6.darkBlue {
-      max-width: 90%;
+  max-width: 90%;
 }
 
 h6.darkBlue {
@@ -3328,13 +3328,13 @@ html, body{
   font-size:.9em !important
 }
 
- .modal-header {
+.modal-header {
   background: #e6eaec;
   padding-top:1em;
 
 }
 
- .modal-title {
+.modal-title {
   font-weight:600 !important;
   color: #071D49;
   font-family: 'PublicoText';
@@ -3355,10 +3355,10 @@ html, body{
   font-size: 19px !important;
   border: none !important;
 
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    line-height: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
 }
 .skip:hover {
   cursor:grab;
@@ -3464,38 +3464,38 @@ h6.black {
 }
 
 #feedbackModal .form-check {
-    position: relative;
-    margin-left: 0em;
-    margin-bottom: .2em;
+  position: relative;
+  margin-left: 0em;
+  margin-bottom: .2em;
 }
 
 #feedbackModal .form-check input {
-    height: 18px;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: 18px;
+  height: 18px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 18px;
 }
 
 #feedbackModal  .form-check label {
-    padding: 0px 0px 0px 0px;
-    font-size: 17px !important;
-    font-weight: 400 !important;
+  padding: 0px 0px 0px 0px;
+  font-size: 17px !important;
+  font-weight: 400 !important;
 
 }
 
 #feedbackModal .form-check input + label::before {
-    border: 1px solid #00539f;
-    content: "";
-    height: 18px;
-    left: 0;
-    position: absolute;
-    top: 3px;
-    width: 18px;
-    border-radius: 50%;
-    padding:6px;
-    background: white;
+  border: 1px solid #00539f;
+  content: "";
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+  border-radius: 50%;
+  padding:6px;
+  background: white;
 }
 
 
@@ -3519,84 +3519,84 @@ h6.black {
 
 #feedbackModal .rangeButtons:after {
   content: '';
-      width: 100%;
-      height: 18px;
-      border-radius: 10px;
-      box-shadow: 0 0 0 4px white;
-      background: linear-gradient(to right, #fc7b75, #f9893d, #fbb03b, #71d82e);
-      width: 100%;
-      height: 18px;
-      position: absolute;
-      top: 3px;
-      left: 0;
+  width: 100%;
+  height: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px white;
+  background: linear-gradient(to right, #fc7b75, #f9893d, #fbb03b, #71d82e);
+  width: 100%;
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  left: 0;
 
-      z-index: -1;
+  z-index: -1;
 
 }
 
 .rangeButtons .form-check:nth-of-type(1) p {
   margin-top: 0;
-    margin-bottom: 0rem;
-    position: absolute;
-    left: 0;
-    width: auto;
-    min-width: max-content;
-    font-size: 14px;
-    font-family: 'Public Sans', sans-serif;
+  margin-bottom: 0rem;
+  position: absolute;
+  left: 0;
+  width: auto;
+  min-width: max-content;
+  font-size: 14px;
+  font-family: 'Public Sans', sans-serif;
 }
 
 
 .rangeButtons .form-check:nth-of-type(2) p {
   margin-top: 0;
-    margin-bottom: 0rem;
-    position: absolute;
-    left: 0;
-    width: auto;
-    min-width: max-content;
-    font-size: 14px;
-    font-family: 'Public Sans', sans-serif;
+  margin-bottom: 0rem;
+  position: absolute;
+  left: 0;
+  width: auto;
+  min-width: max-content;
+  font-size: 14px;
+  font-family: 'Public Sans', sans-serif;
 }
 
 .rangeButtons .form-check:nth-of-type(3) p {
   margin-top: 0;
-    margin-bottom: 0rem;
-    position: absolute;
-    left: 0;
-    width: auto;
-    min-width: max-content;
-    font-size: 14px;
-    font-family: 'Public Sans', sans-serif;
+  margin-bottom: 0rem;
+  position: absolute;
+  left: 0;
+  width: auto;
+  min-width: max-content;
+  font-size: 14px;
+  font-family: 'Public Sans', sans-serif;
 }
 
 .rangeButtons .form-check:nth-of-type(4) p {
   margin-top: 0;
-    margin-bottom: 0rem;
-    position: absolute;
-    right: 0;
-    width: auto;
-    min-width: max-content;
-    font-size: 14px;
-    font-family: 'Public Sans', sans-serif;
+  margin-bottom: 0rem;
+  position: absolute;
+  right: 0;
+  width: auto;
+  min-width: max-content;
+  font-size: 14px;
+  font-family: 'Public Sans', sans-serif;
 }
 
 .rangeButtons .form-check:nth-of-type(5) p {
-    margin-top: 0;
-    margin-bottom: 0rem;
-    position: absolute;
-    right: 0;
-    width: auto;
-    min-width: max-content;
-    font-size: 14px;
-    font-family: 'Public Sans', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  position: absolute;
+  right: 0;
+  width: auto;
+  min-width: max-content;
+  font-size: 14px;
+  font-family: 'Public Sans', sans-serif;
 }
 
 .rangeButtons .form-check {
-    padding-left: 1rem !important;
+  padding-left: 1rem !important;
 }
 
 .bulbs {
-margin-bottom: 3em !important;
-margin-top: 2% !important;
+  margin-bottom: 3em !important;
+  margin-top: 2% !important;
 }
 
 
@@ -3606,11 +3606,11 @@ margin-top: 2% !important;
 }
 
 #feedbackModal .form-check input:checked + label::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 #feedbackModal .form-check.oneQuestion input:checked + label::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 #feedbackModal .carousel-control-next {
@@ -3632,10 +3632,10 @@ margin-top: 2% !important;
 }
 
 #feedbackModal label p {
-margin-bottom:0rem;
-line-height: normal;
-font-size:17px;
-margin-top:1em;
+  margin-bottom:0rem;
+  line-height: normal;
+  font-size:17px;
+  margin-top:1em;
 }
 
 #feedbackModal fieldset {
@@ -3661,7 +3661,7 @@ margin-top:1em;
   font-family: 'Public Sans', sans-serif;
 }
 #feedbackModal  .modal-content {
-overflow: hidden;
+  overflow: hidden;
 }
 .carousel-item,
 .carousel-item.active {
@@ -3669,19 +3669,19 @@ overflow: hidden;
 }
 
 .modalGreyProgressBar {
-    position: absolute;
-    bottom: 0;
-    height: 9px;
-    width: 100%;
-    background: #E0E0E0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  height: 9px;
+  width: 100%;
+  background: #E0E0E0;
+  left: 0;
 }
 .modalProgressBar {
   position: absolute;
   bottom: 0;
   height: 9px;
   width: 100%;
-margin-left: 0rem !important;
+  margin-left: 0rem !important;
   left: 0;
 }
 
@@ -3847,12 +3847,12 @@ margin-left: 0rem !important;
 
 .lightGreenShape {
 
-   background-color: #f1fbeb;
-   position: relative;
-   border-radius: 41% 35% 50%;
-       width: 230px;
-       height: 230px;
-       padding-top: 2.4em;
+  background-color: #f1fbeb;
+  position: relative;
+  border-radius: 41% 35% 50%;
+  width: 230px;
+  height: 230px;
+  padding-top: 2.4em;
 
 }
 
@@ -3917,27 +3917,27 @@ h6.green{
 
 .card-cc, .cc-selector input:active +.card-cc{
   /* -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      border-radius: 10px; */
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  border-radius: 10px; */
 }
 .card-cc, .cc-selector input:checked +.card-cc{
 
 }
 
 label.card-cc {
-      color: black;
-      font-family: 'Public Sans', sans-serif;
-      font-weight: 300;
-      font-size: 18px;
-      margin: 0em;
-      padding: 0em;
-      margin-bottom: 1em;
-      margin-top: 0em;
-      /* font-size: 0px; */
-      padding-top: 7em;
-      text-align: center;
-      position: relative;
+  color: black;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0em;
+  padding: 0em;
+  margin-bottom: 1em;
+  margin-top: 0em;
+  /* font-size: 0px; */
+  padding-top: 7em;
+  text-align: center;
+  position: relative;
 }
 
 
@@ -3953,7 +3953,7 @@ label.card-cc {
   -moz-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
   background-position: right 0px top 8px;
-    border: inset 5px transparent;
+  border: inset 5px transparent;
 
 }
 
@@ -3962,9 +3962,9 @@ label.card-cc {
 .card-cc:focus,
 .card-cc:hover {
   -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-      border-radius: 10px;
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  border-radius: 10px;
 }
 
 .cc-selector  {
@@ -3981,18 +3981,18 @@ input[type="radio"]:checked + label {
 
 input[type="radio"]:checked + label:after {
 
-content: "\f058";
-font-size:21px;
-color:#00843D;
+  content: "\f058";
+  font-size:21px;
+  color:#00843D;
 
-content: '\f058';
-font-family: "Font Awesome 5 Free";
-font-style: normal;
-font-weight: 900;
-text-decoration: inherit;
-position: absolute;
-top: -11px;
-right: -12px;
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  text-decoration: inherit;
+  position: absolute;
+  top: -11px;
+  right: -12px;
 }
 
 .modal-open {
@@ -4004,83 +4004,83 @@ right: -12px;
 
 
 .bulbs .card-cc {
-    cursor: pointer;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 150px;
-    height: 130px;
-    -webkit-transition: all 100ms ease-in;
-    -moz-transition: all 100ms ease-in;
-    transition: all 100ms ease-in;
-    background-position: right 6px top -10px;
-    border: inset 14px transparent;
-    overflow: visible;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 150px;
+  height: 130px;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  background-position: right 6px top -10px;
+  border: inset 14px transparent;
+  overflow: visible;
 }
 
 .bulbs input[type="radio"]:checked + label {
-    -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  border-radius: 10px;
 }
 .bulbs input[type="radio"]:checked + label:after {
-    content: "\f058";
-    font-size: 21px;
-    color: #00843D;
-    content: '\f058';
-    font-family: "Font Awesome 5 Free";
-    font-style: normal;
-    font-weight: 900;
-    text-decoration: inherit;
-    position: absolute;
-    top: -23px;
-    right: -16px;
+  content: "\f058";
+  font-size: 21px;
+  color: #00843D;
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  text-decoration: inherit;
+  position: absolute;
+  top: -23px;
+  right: -16px;
 }
 
 p.oneBlack {
-    color: black;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1.1em;
-    margin: 0em;
-    padding: 0em;
-    margin-top: 0em !important;
+  color: black;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin: 0em;
+  padding: 0em;
+  margin-top: 0em !important;
   margin-left: .5em;
   font-size: 17px !important;
-    line-height: inherit;
+  line-height: inherit;
 }
 
 .oneQuestion input[type="radio"]:checked + label {
   -webkit-box-shadow:none !important;
-    -moz-box-shadow: none !important;
-   box-shadow: none !important
+  -moz-box-shadow: none !important;
+  box-shadow: none !important
 }
 
 #feedbackModal .form-check.oneQuestion input + label::after {
-    content: "";
-    opacity: 0;
-    border: 7px solid black;
-    border-radius: 50%;
-    position: absolute;
-    left: 2px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    transition: opacity 0.2s ease-in-out;
+  content: "";
+  opacity: 0;
+  border: 7px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  transition: opacity 0.2s ease-in-out;
 }
 
 #feedbackModal .form-check.oneQuestion input + label::before {
-    border: 1px solid black;
-    content: "";
-    height: 18px;
-    left: 0;
-    position: absolute;
-    top: 3px;
-    width: 18px;
-    border-radius: 50%;
-    padding: 6px;
-    background: white;
+  border: 1px solid black;
+  content: "";
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+  border-radius: 50%;
+  padding: 6px;
+  background: white;
 }
 
 
