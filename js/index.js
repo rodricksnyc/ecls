@@ -1279,13 +1279,6 @@ $("label.card-cc").click(function(e){
     //console.log($check.prop("checked"));
   });
 
-	$("input[name='faces']").on('keydown', function(e){
-	if (e.keyCode == 9){
-		alert("weviub")
-	}
-
-})
-
 
 
 
