@@ -1260,7 +1260,7 @@ $('.carousel').carousel();
 
 
 
-var items = $('.carousel-item').length
+var items = $('.carousel-item').length - 1
 
 
 console.log($('#feedbackModal .modal-dialog').width())
@@ -1269,6 +1269,7 @@ var total = $('#feedbackModal .modal-dialog').width()
 
 var color = total / items
 
+console.log(items)
 console.log(total)
 console.log(color)
 
@@ -1352,6 +1353,35 @@ $('.cc-selector input').css('-webkit-appearance', 'radio')
 }
 
 })
+
+
+
+function checkitem(){
+	var $this = $('.carousel');
+
+	if ($('.carousel-inner .carousel-item:first').hasClass('active')) {
+		// $('.back').off('click');
+
+	}
+
+
+	else if ($('.carousel-inner .carousel-item:last').hasClass('active')) {
+		// $('.next').off('click');
+		// $('.skip').off('click');
+
+	}
+	else {
+		// $('.next, .back, .skip').on('click');
+
+	}
+
+
+}
+
+checkitem()
+
+$('.carousel').on('slid', '', checkitem);  // on caroussel move
+$('.carousel').on('slid.bs.carousel', '', checkitem); // on carousel move
 
 
 
