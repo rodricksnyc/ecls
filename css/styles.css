@@ -3792,10 +3792,14 @@ h6.black {
 }
 
 
-.done {
+.done,
+.done:focus,
+.done:active,
+.done:visited {
   background: #696969 !important;
   border-color:#696969 !important;
-  left:41% !important
+  left:41% !important;
+  color:white;
 }
 
 .range-container {

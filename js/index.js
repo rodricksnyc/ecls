@@ -1354,8 +1354,11 @@ $('.cc-selector input').on("keyup", function (e) {
 
 })
 
-
-
+$('.next').click(function() {
+	if ($('.next').hasClass('done')) {
+		$('#feedbackModal').modal('hide')
+	}
+})
 $('.next, .skip').on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
@@ -1384,7 +1387,7 @@ function checkitem(){
 
 
 	else if ($('.carousel-inner .carousel-item:last').hasClass('active')) {
-		$('.next').css('pointer-events', 'none');
+		// $('.next').css('pointer-events', 'none');
 		$('.back, .skip').hide();
 		$('.skip').css('pointer-events', 'none');
 		$('.next').html("Done")
