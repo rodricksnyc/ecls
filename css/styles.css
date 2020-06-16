@@ -1133,6 +1133,10 @@ h6.plum {
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   position: relative;
 }
+
+.feedbackBar:hover {
+  cursor: grab;
+}
 .greenLeftBar {
   position: absolute;
   top:0;
