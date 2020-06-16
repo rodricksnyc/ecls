@@ -740,7 +740,7 @@ if ($(document).innerWidth() >= 768) {
 			var elementTop = $(this).offset().top;
 			var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 5 )) && (screenTop < elementBottom)) {
+			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 3 )) && (screenTop < elementBottom)) {
 				$('section').removeClass('active')
 				$(this).addClass('active')
 			}
@@ -1250,6 +1250,7 @@ $('.one input:checkbox').keypress(function (e) {
 	if ((e.keyCode ? e.keyCode : e.which) == 13) {
 		$(this).trigger('click');
 	}
+
 });
 
 
@@ -1258,6 +1259,7 @@ $('.form-check-input').on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 9) {
+
 	$(this).parent().find('label').addClass('activate')
 }
 
@@ -1265,6 +1267,17 @@ $('.form-check-input').on("keyup", function (e) {
 
 $('.form-check-input').on('focusout', function() {
 	$(this).parent().find('label').removeClass('activate')
+})
+
+
+
+$('.cc-selector input').on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+$('.cc-selector input').css('-webkit-appearance', 'radio')
+}
+
 })
 
 
@@ -1278,16 +1291,7 @@ $("label.card-cc").click(function(e){
     else
       $check.prop( "checked", true );
 
-    //console.log($check.prop("checked"));
   });
-
-	// $('#carousel').on('slide.bs.carousel', function(e) {
-	// 	$('input').each(function () {
-  //     $(this).attr('tabindex', '0');
-  //   });
-	//
-  //  });
-
 
 
 	$(".card-cc").on("click", function (e) {
@@ -1298,9 +1302,6 @@ $("label.card-cc").click(function(e){
 					 e.preventDefault();
 
 			 });
-
-
-
 
 
 })

@@ -1151,6 +1151,10 @@ h6.plum {
   background: #00539f
 }
 
+.feedbackBar h6.darkBlue {
+      max-width: 90%;
+}
+
 h6.darkBlue {
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
@@ -3319,13 +3323,17 @@ html, body{
   max-width:780px !important
 }
 
-#feedbackModal .modal-header{
+.small {
+  font-size:.9em !important
+}
+
+ .modal-header {
   background: #e6eaec;
   padding-top:1em;
 
 }
 
-#feedbackModal .modal-title{
+ .modal-title {
   font-weight:600 !important;
   color: #071D49;
   font-family: 'PublicoText';
@@ -3451,7 +3459,7 @@ h6.black {
 
 #feedbackModal label {
   margin-bottom:0rem;
-
+line-height: normal;
 }
 
 #feedbackModal fieldset {
@@ -3720,15 +3728,11 @@ label.card-cc {
   -webkit-transition: all 100ms ease-in;
   -moz-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
-  /* -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-  -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-  filter: brightness(1.8) grayscale(1) opacity(.7); */
+  background-position: right 0px top 7px;
+    border: inset 4px transparent;
+
 }
-/* .card-cc:hover{
-  -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-  -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-  filter: brightness(1.2) grayscale(.5) opacity(.9);
-} */
+
 
 .card-cc-checked {
   -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
@@ -3757,7 +3761,9 @@ input[type="radio"]:checked + label {
       border-radius: 10px;
 }
 
-
+.modal-open {
+  padding-right:0px !important;
+}
 /* .modal-content{
 padding: 36px 24px 60px;
 background-color: #ffffff;
