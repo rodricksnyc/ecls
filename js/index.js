@@ -1252,20 +1252,22 @@ $('.one input:checkbox').keypress(function (e) {
 	}
 });
 
-$('.form-check-input').on('change', function () {
-	$(this).parent().find('label').addClass('blueBox')
-});
 
 
-// $("input").on("keyup", function (e) {
-//
-// 	var code = (e.keyCode ? e.keyCode : e.which);
-// 	if (code == 9) {
-// 		$(this).parent().find('label').css('outline', 'dashed 3px #4599ff')
-//
-// 	}
-//
-// })
+$('.form-check-input').on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+	$(this).parent().find('label').addClass('activate')
+}
+
+})
+
+$('.form-check-input').on('focusout', function() {
+	$(this).parent().find('label').removeClass('activate')
+})
+
+
 
 $("label.card-cc").click(function(e){
     e.preventDefault();

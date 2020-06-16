@@ -3553,7 +3553,7 @@ h6.black {
   margin-bottom:1em;
 }
 
-.form-check-input:focus + label:before {
+.form-check-input + label.activate:before {
   outline:dashed 3px #4599ff
 }
 
