@@ -3767,6 +3767,12 @@ margin-left: 0rem !important;
 }
 
 
+.done {
+  background: #696969 !important;
+  border-color:#696969 !important;
+  left:42% !important
+}
+
 .range-container {
   width: 100%;
   position: relative;
@@ -3836,7 +3842,19 @@ margin-left: 0rem !important;
 }
 
 .checkedImg {
-  max-height:180px;
+  max-height:140px;
+}
+
+.lightGreenShape {
+
+   background-color: #e9f4ee;
+   position: relative;
+   border-radius: 41px 34px 51px;
+   width: 220px;
+   height: 220px;
+
+   padding-top: 2em;
+
 }
 
 h6.green{

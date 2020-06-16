@@ -1367,11 +1367,23 @@ function checkitem(){
 
 	else if ($('.carousel-inner .carousel-item:last').hasClass('active')) {
 		$('.next').css('pointer-events', 'none');
+		$('.back, .skip').hide();
 		$('.skip').css('pointer-events', 'none');
+		$('.next').html("Done")
+		$('.next').addClass('done')
 
 	}
+	else if ($('.carousel-inner .carousel-item:last').prev().hasClass('active')) {
+		$('.next').html('Submit')
+
+	}
+
 	else {
 		$('.next, .back, .skip').css('pointer-events', 'auto');
+		$('.next').html('Next');
+		$('.back, .skip').show();
+		$('.next').removeClass('done')
+
 	}
 
 
