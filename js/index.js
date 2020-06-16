@@ -1412,12 +1412,6 @@ checkitem()
 $('.carousel').on('slid', '', checkitem);  // on caroussel move
 $('.carousel').on('slid.bs.carousel', '', checkitem); // on carousel move
 
-
-
-
-
-
-
 $("label.card-cc").click(function(e){
 	e.preventDefault();
 	$check = $(this).prev();

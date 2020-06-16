@@ -1243,12 +1243,27 @@ footer a.white:hover {
   cursor:grab
 }
 #privacyModal .modal-dialog {
-  max-width: 700px !important;
+  max-width: 900px !important;
 
 }
 
 #privacyModal {
   top:10%;
+}
+#privacyModal .modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeIt {
+  font-family: 'Public Sans', sans-serif;
+  background: #696969 !important;
+  border-color: #696969 !important;
+  width: 8rem;
+  border-radius: 2rem;
+  color: white;
+  text-transform: uppercase;
+  height: 2.4rem;
 }
 
 .abso {
