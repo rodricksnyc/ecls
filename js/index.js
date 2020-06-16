@@ -1294,8 +1294,6 @@ $('.next , .skip').click(function () {
 })
 
 
-
-
 $('.back').click(function () {
 
 	function decrease(){
@@ -1309,13 +1307,6 @@ console.log(l)
 			'width' : l
 		})
 })
-
-
-
-
-
-
-
 
 
 

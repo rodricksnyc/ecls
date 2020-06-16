@@ -3353,6 +3353,13 @@ html, body{
   align-items: flex-end;
   font-weight: 600 !important;
   font-size: 19px !important;
+  border: none !important;
+
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  
+    line-height: inherit;
 }
 .skip:hover {
   cursor:grab;
@@ -3454,6 +3461,60 @@ h6.black {
   border-color: #00843D !important;
   background: #00843D !important;
   color:white;
+}
+
+#feedbackModal .form-check {
+    position: relative;
+    margin-left: 2em;
+    margin-bottom: .2em;
+}
+
+#feedbackModal .form-check input {
+    height: 18px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 18px;
+}
+
+#feedbackModal  .form-check label {
+    padding: 0px 0px 0px 24px;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+
+}
+
+#feedbackModal .form-check input + label::before {
+    border: 1px solid black;
+    content: "";
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 18px;
+    border-radius: 50%;
+    padding:6px;
+}
+
+
+#feedbackModal .form-check input + label::after {
+  content: "";
+  opacity: 0;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  color: black;
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+
+#feedbackModal .form-check input:checked + label::after {
+    opacity: 1;
 }
 
 #feedbackModal .carousel-control-next {

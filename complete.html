@@ -436,19 +436,44 @@
 
 										<h6 class="black">Teachers that participate in the ECLS will be provided with a certificate signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank you for your help in furthering the research efforts undertaken by the Department of Education.</h6>
 										<h6 class="black">How likely will you be to display the certificate?</h6>
-										<div class="range-container">
-											<div class="bar"></div>
-											<input id="val-10" type="radio" name="slider"/>
-											<label for="val-10">Not at all likely</label>
-											<input id="val-20" type="radio" name="slider"/>
-											<label for="val-20"></label>
-											<input id="val-30" type="radio" name="slider"/>
-											<label for="val-30"></label>
-											<input id="val-40" type="radio" name="slider"/>
-											<label for="val-40"></label>
-											<input id="val-50" type="radio" name="slider"/>
-											<label for="val-50">Very Likely</label>
-											<div class="dial"></div>
+										<div class="rangeButtons d-flex justify-content-between align-items-center">
+											<div class="form-check">
+											<input id="hot" type="radio" name="likeliness" value="Not at all likely" class="form-check-input">
+											<label class="rainbow form-check-label" for="hot">
+												<!-- <p>Not at all likely</p> -->
+											</label>
+										</div>
+
+
+											<div class="form-check">
+
+											<input id="warm" type="radio" name="likeliness" value="Not likely" class="form-check-input">
+											<label class="rainbow form-check-label" for="warm"></label>
+
+											</div>
+
+											<div class="form-check">
+
+											<input id="neutral" type="radio" name="likeliness" value="Somewhat likely" class="form-check-input">
+											<label class="rainbow form-check-label" for="neutral"></label>
+
+											</div>
+
+											<div class="form-check">
+
+											<input id="cool" type="radio" name="likeliness" value="Likely" class="form-check-input">
+											<label class="rainbow form-check-label" for="cool" ></label>
+
+											</div>
+											<div class="form-check">
+
+											<input id="cooler" type="radio" name="likeliness" value="Very Likely" class="form-check-input">
+											<label class="rainbow form-check-label" for="cooler">
+												<!-- <p>Very Likely</p> -->
+											</label>
+
+										</div>
+
 										</div>
 									</fieldset>
 								</div>
@@ -620,12 +645,12 @@
 									<button aria-hidden="true" class="carousel-control-next btn next" href="#carouselExampleControls" role="button" data-slide="next">Next
 									</button>
 
-									<div class="skip" role="button" tabindex="0" aria-describedby="Skip question" aria-label="Skip question" data-slide="next" href="#carouselExampleControls">
+									<button class="skip" role="button" aria-describedby="Skip question" aria-label="Skip question" data-slide="next" href="#carouselExampleControls">
 										<h6 class="darkBlue small strong">Skip</h6>&nbsp;
 											<i class="fas fa-caret-right darkBlue"></i>
 											<i class="fas fa-caret-right darkBlue"></i>
 
-									</div>
+									</button>
 
 								</div>
 							</div>
