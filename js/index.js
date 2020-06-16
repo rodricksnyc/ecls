@@ -1171,6 +1171,19 @@ $("#one").on('focusout', function() {
 	$(this).css('outline', 'none')
 })
 
+$(".skip").on("keyup", function (e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).css('outline', 'dashed 3px #4599ff')
+
+	}
+
+})
+$(".skip").on('focusout', function() {
+	$(this).css('outline', 'none')
+})
+
 $("#closeThisPlease").on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
@@ -1244,6 +1257,14 @@ $('#sendMessage').click(function (e) {
 
 $('.carousel').carousel();
 
+
+$('.skip').keypress(function (e) {
+
+	if ((e.keyCode ? e.keyCode : e.which) == 13) {
+		$(".carousel").carousel("next")
+	}
+
+});
 
 $('.one input:checkbox').keypress(function (e) {
 	e.preventDefault();

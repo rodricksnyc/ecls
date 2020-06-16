@@ -3344,7 +3344,21 @@ html, body{
   font-family: 'Public Sans', sans-serif;
   font-weight:100;
 }
-
+.skip {
+  position: absolute;
+  top:94%;
+  right:0;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600 !important;
+  font-size: 19px !important;
+}
+.skip:hover {
+  cursor:grab;
+}
+.strong {
+  font-weight:600 !important;
+}
 /* #feedbackModal .carousel-inner {
 padding: 8px 20px;
 } */
