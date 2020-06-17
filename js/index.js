@@ -3,7 +3,7 @@ $(document).ready(function () {
 	$('[data-toggle=tooltip]').tooltip();
 
 
-	$('.back-to-top').click(() => {
+	$('.back-to-top').click(function() {
 		scrollfn("#overview");
 	})
 
@@ -22,7 +22,6 @@ $(document).ready(function () {
 	}
 
 	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
-
 
 		e.preventDefault();
 		scrollfn($(this).attr('data-target'));
