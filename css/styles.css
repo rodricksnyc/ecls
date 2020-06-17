@@ -52,12 +52,6 @@
   z-index: 888;
 }
 
-@media (max-width: 1199.98px) and (min-width: 992px) {
-  #menu {
-    width: 100px;
-  }
-
-}
 
 .line {
   background: #e5eef5;
@@ -139,6 +133,7 @@ h2 {
 
 
 body  {
+ font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   word-break: break-word;
   transition: 0.4s all; */ */
@@ -237,6 +232,7 @@ span.heading {
 }
 
 .plum {
+  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   font-weight:900;
   color:#071D49;
@@ -248,6 +244,7 @@ span.heading {
 }
 
 .slate {
+  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   font-weight:700;
   color:#576f7f;
@@ -898,6 +895,7 @@ h1.white.sentMessage {
 }
 
 .greenBar .rel p {
+  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   position:absolute;
   left: 50%;
@@ -909,6 +907,7 @@ h1.white.sentMessage {
 
 
 .greenBar .rel p.last {
+  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   position: absolute;
   left: 94%;
@@ -2139,6 +2138,7 @@ hr.lime {
   color: white;
   margin: 0;
   text-align: left;
+  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   font-size:1.8em;
   font-weight: 600;
@@ -3386,6 +3386,7 @@ html, body{
 .modal-title {
   font-weight:600 !important;
   color: #071D49;
+  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
 }
 
@@ -4278,6 +4279,13 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,0.1);
 
   .mobile {
     display:inline-flex;
+  }
+
+}
+
+@media (max-width: 1199.98px) and (min-width: 992px) {
+  #menu {
+    width: 100px;
   }
 
 }
@@ -5654,6 +5662,7 @@ body{
     height: 82px;
   }
   .greenBar .rel p.last {
+    font-family: "Times New Roman", Times, serif;
     font-family: 'PublicoText';
     position: absolute;
     left: 90%;
@@ -5751,6 +5760,7 @@ body{
     height: 82px;
   }
   .greenBar .rel p.last {
+    font-family: "Times New Roman", Times, serif;
     font-family: 'PublicoText';
     position: absolute;
     left: 90%;
