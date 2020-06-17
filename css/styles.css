@@ -3368,7 +3368,7 @@ html, body{
 #feedbackModal textarea {
   width:100%;
   font-family: 'Public Sans', sans-serif;
-  font-weight:100;
+  font-weight:300;
 }
 .skip {
   position: absolute;
