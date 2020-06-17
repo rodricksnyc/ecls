@@ -973,21 +973,24 @@ $('.tooltips-elements')
 var slideIt = function() {
 
 	if($(".toggleDiv").is(':visible')) {
-		$('.tooltips-elements').attr("data-original-title", "see more" );
+
+		$('.blueLine span').html('expand')
+		// $('.tooltips-elements').attr("data-original-title", "see more" );
 
 		$(".toggleDiv").slideUp();
 
 	}
 
 	else if ($(".toggleDiv").is(':hidden')){
-		$('.tooltips-elements').attr("data-original-title", "see less" );
+		$('.blueLine span').html('collapse')
+		// $('.tooltips-elements').attr("data-original-title", "see less" );
 
 		$(".toggleDiv").slideDown();
 	}
 
 }
 
-$('.seeLess').keypress(
+$('.blueLine').keypress(
 	slideIt
 
 ).click(

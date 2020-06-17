@@ -28,7 +28,7 @@
 	<div class="container-fluid overflow-hidden position-relative">
 		<section class="block0">
 			<div class="heros" id="home">
-				<header class="landing">
+				<header class="landing d-flex flex-wrap">
 					<div class="logos d-flex justify-content-start align-items-center">
 						<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
 
@@ -161,7 +161,9 @@
 
 						<div class="blueLine">
 
-							<i class="fas fa-minus-circle tooltips-elements seeLess" type="tooltip" data-color="white" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="see less" aria-describedby="Shows Less" aria-label="Shows Less"></i>
+							<i class="fas fa-minus-circle tooltips-elements seeLess" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse</span></i>
+
+							<!-- <i class="fas fa-minus-circle tooltips-elements seeLess" type="tooltip" data-color="white" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="see less" aria-describedby="Shows Less" aria-label="Shows Less">&nbsp;Collapse</i> -->
 
 
 						</div>
@@ -183,7 +185,7 @@
 
 
 
-						<div class="greenBar d-flex justify-content-around align-items-center">
+						<div class="greenBar d-flex justify-content-around align-items-center flex-wrap">
 							<div class="totalSurveys d-flex flex-column align-items-center">
 								<span class="rel">
 									<p class="white totalSurveyCount">31</p>
