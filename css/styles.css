@@ -903,6 +903,8 @@ h1.white.sentMessage {
   font-size: 33px;
   top:21px;
   font-weight:600;
+  max-width: 40px;
+    min-width: 10px;
 }
 
 
@@ -915,6 +917,8 @@ h1.white.sentMessage {
   font-size: 30px;
   top: 21px;
   width:100%;
+  max-width: 90px;
+  min-width: 10px;
 }
 
 .smaller {
