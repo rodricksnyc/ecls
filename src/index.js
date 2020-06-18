@@ -756,10 +756,20 @@ function setReasonActive() {
 
 setReasonActive()
 
-$('.menu-buttons-floating-list li:eq(0)').addClass('activated')
 
-if ($(document).innerWidth() >= 768) {
+if ($('.menu-buttons-768-list li').length > 3) {
+	$(this).css('width', '25%')
+}
+
+else {
+		$(this).css('width', '33.33%')
+}
+
+$('li[data-target="#overview"]').addClass('activated')
+
+// if ($(document).innerWidth() >= 768) {
 	$(window).on('scroll', function() {
+
 		var screenTop = $(window).scrollTop();
 		var screenBottom = $(window).scrollTop() + window.innerHeight;
 
@@ -778,6 +788,111 @@ if ($(document).innerWidth() >= 768) {
 
 
 		if ($('.block10').hasClass('active')) {
+
+
+			$('li[data-target="#overview"]').addClass('activated')
+			$('li[data-target="#overview"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#overview"]').removeClass('activated')
+			$('li[data-target="#overview"]').removeClass('activated')
+		}
+
+
+		if ($('.block5').hasClass('active')) {
+
+			$('li[data-target="#survey"]').addClass('activated')
+			$('li[data-target="#survey"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#survey"]').removeClass('activated')
+			$('li[data-target="#survey"]').removeClass('activated')
+		}
+
+		if ($('.block20').hasClass('active')) {
+			$('li[data-target="#feedback"]').addClass('activated')
+			$('li[data-target="#feedback"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#feedback"]').removeClass('activated')
+			$('li[data-target="#feedback"]').removeClass('activated')
+		}
+
+
+		if ($('.block50').hasClass('active')) {
+			$('li[data-target="#info"]').addClass('activated')
+			$('li[data-target="#info"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#info"]').removeClass('activated')
+			$('li[data-target="#info"]').removeClass('activated')
+		}
+
+		// if ($('.block0').hasClass('active')) {
+		// 	$('.menu-buttons-floating-list li:eq(0)').removeClass('activated')
+		// 	$('.menu-buttons-floating-list li:eq(1)').removeClass('activated')
+		// 	$('.menu-buttons-floating-list li:eq(2)').removeClass('activated')
+		// 	$('.menu-buttons-floating-list li:eq(3)').removeClass('activated')
+		//
+		//
+		// 	$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
+		// 	$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
+		// 	$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
+		// 	$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
+		// }
+		//
+		// if ($('.block50').hasClass('active')) {
+		//
+		// 	$('#slideOut').addClass('showSlideOut');
+		//
+		// }
+		//
+		// if (!$('.block50').hasClass('active') || $('.block5').hasClass('active')) {
+		//
+		// 	$('#slideOut').removeClass('showSlideOut')
+		// }
+
+	})
+
+
+// }
+
+
+if ($('.newBlocks').length < 10) {
+	$('.showBlocks').children().hide()
+}
+
+else {
+	$('.showBlocks').children().show()
+}
+
+if ($(document).innerWidth() <= 767) {
+
+	$(window).on('scroll', function() {
+
+		var screenTop = $(window).scrollTop();
+		var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+		$('section').each(function() {
+			var elementTop = $(this).offset().top;
+			var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 10 )) && (screenTop < elementBottom)) {
+				$('section').removeClass('active')
+				$(this).addClass('active')
+			}
+			else {
+				$(this).removeClass('active')
+			}
+		})
+
+
+		if ($('.block10').hasClass('active')) {
+
 			$('li[data-target="#overview"]').addClass('activated')
 			$('li[data-target="#overview"]').addClass('activated')
 		}
@@ -844,110 +959,6 @@ if ($(document).innerWidth() >= 768) {
 		// }
 
 	})
-
-
-}
-
-
-if ($('.newBlocks').length < 10) {
-	$('.showBlocks').children().hide()
-}
-
-else {
-	$('.showBlocks').children().show()
-}
-
-if ($(document).innerWidth() <= 767) {
-
-	$(window).on('scroll', function() {
-		var screenTop = $(window).scrollTop();
-		var screenBottom = $(window).scrollTop() + window.innerHeight;
-
-		$('section').each(function() {
-			var elementTop = $(this).offset().top;
-			var elementBottom = $(this).offset().top + $(this).outerHeight();
-
-			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 3 )) && (screenTop < elementBottom)) {
-				$('section').removeClass('active')
-				$(this).addClass('active')
-			}
-			else {
-				$(this).removeClass('active')
-			}
-		})
-		if ($('.block5').hasClass('active')) {
-			$('li[data-target="#survey"]').addClass('activated')
-			$('li[data-target="#survey"]').addClass('activated')
-		}
-
-		else {
-			$('li[data-target="#survey"]').removeClass('activated')
-			$('li[data-target="#survey"]').removeClass('activated')
-		}
-
-		if ($('.block20').hasClass('active')) {
-			$('li[data-target="#feedback"]').addClass('activated')
-			$('li[data-target="#feedback"]').addClass('activated')
-		}
-
-		else {
-			$('li[data-target="#feedback"]').removeClass('activated')
-			$('li[data-target="#feedback"]').removeClass('activated')
-		}
-
-
-		if ($('.block50').hasClass('active')) {
-			$('li[data-target="#info"]').addClass('activated')
-			$('li[data-target="#info"]').addClass('activated')
-		}
-
-		else {
-			$('li[data-target="#info"]').removeClass('activated')
-			$('li[data-target="#info"]').removeClass('activated')
-		}
-
-		if ($('.block0').hasClass('active')) {
-
-			$('.menu-buttons-768-list li:eq(0)').removeClass('activated')
-			$('.menu-buttons-768-list li:eq(1)').removeClass('activated')
-			$('.menu-buttons-768-list li:eq(2)').removeClass('activated')
-			$('.menu-buttons-768-list li:eq(3)').removeClass('activated')
-		}
-
-
-	})
-
-	$('.landing-panel .form-control.access').focus(function () {
-		$('html, body').animate({ scrollTop: ($('.landing-panel .form-control.access').offset().top - 40) }, 600);
-		return false;
-	});
-
-	//
-	// $("#slideOut").css("left" , 0);
-	//
-	// $('#slideOut').removeClass('showSlideOut')
-	//
-	// $("#slideOut").css("bottom" , -$('#slideOut').height() );
-	//
-	// var overlay = document.getElementById('whiteBlock');
-	//
-	// $(window).on("scroll", function() {
-	// 	var docHeight = $(document).height();
-	// 	var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
-	// 	if ((docHeight - winScrolled) > 1) {
-	//
-	// 		var setHeight = $("#contact").height() + 25;
-	//
-	// 		$("#slideOut").animate({
-	// 			bottom:'75',
-	// 			top: setHeight
-	//
-	// 		}, 10);
-	//
-	// 	}
-	//
-	//
-	// });
 
 
 }
