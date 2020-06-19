@@ -767,7 +767,7 @@ else {
 
 $('li[data-target="#overview"]').addClass('activated')
 
-// if ($(document).innerWidth() >= 768) {
+if ($(document).innerWidth() >= 768) {
 	$(window).on('scroll', function() {
 
 		var screenTop = $(window).scrollTop();
@@ -859,7 +859,7 @@ $('li[data-target="#overview"]').addClass('activated')
 	})
 
 
-// }
+}
 
 
 if ($('.newBlocks').length < 10) {
@@ -871,6 +871,13 @@ else {
 }
 
 if ($(document).innerWidth() <= 767) {
+
+
+
+
+	$('.openTab .plum').html('<i class="fas fa-bars"></i>')
+	$('#one').css('right', '-20px')
+
 
 	$(window).on('scroll', function() {
 
