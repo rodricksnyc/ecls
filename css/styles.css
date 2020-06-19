@@ -905,6 +905,7 @@ h1.white.sentMessage {
   font-weight:600;
   max-width: 40px;
   min-width: 10px;
+  display: inline-flex !important;
 }
 
 
@@ -912,13 +913,14 @@ h1.white.sentMessage {
   font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   position: absolute;
-  left: 94%;
+  left: 84%;
   transform: translateX(-20%);
   font-size: 30px;
-  top: 21px;
+  top: 35px;
   width:100%;
   max-width: 90px;
   min-width: 10px;
+    display: inline-flex !important;
 }
 
 .smaller {
@@ -6029,6 +6031,15 @@ body{
 }
 #sendMessage{
   font-size: 14px;
+}
+
+.landing .fas.plum {
+  color:#071D49 !important;
+  font-size:14px !important;
+}
+.slate.borderLeft {
+    padding-left: 1em;
+    border-left: none;
 }
 
 }

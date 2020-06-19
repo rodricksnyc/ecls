@@ -878,6 +878,10 @@ if ($(document).innerWidth() <= 767) {
 	$('.openTab .plum').html('<i class="fas fa-bars"></i>')
 	$('#one').css('right', '-20px')
 
+	$('.tangerineBox .plum').html('<i class="fas fa-user plum"></i>')
+		$('.whiteBox .slate:eq(0)').html('<i class="fas fa-home plum"></i>')
+			$('.whiteBox .slate:eq(1)').html('<i class="fas fa-sign-out-alt plum"></i>')
+
 
 	$(window).on('scroll', function() {
 
