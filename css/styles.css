@@ -904,7 +904,7 @@ h1.white.sentMessage {
   font-size: 33px;
   top:21px;
   font-weight:600;
-  max-width: 40px;
+  max-width: 70px;
   min-width: 10px;
   display: inline-flex !important;
 }
