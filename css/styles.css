@@ -5784,7 +5784,7 @@ body{
   }
   .status {
     min-width: 50px;
-    max-width: 71px;
+    max-width: 100px;
     height: 82px;
   }
   .greenBar .rel p.last {
@@ -5891,12 +5891,13 @@ body{
 
   .whiteBox, .tangerineBox {
     background: none;
+    padding:0em;
   }
 
 
   .greenBar {
     background: #00843D;
-    padding: 1.4em 1em .6em 1em;
+    padding: 1.4em 2em .6em 2em;
     margin-top: 3em;
     font-family: 'Public Sans', sans-serif;
   }
