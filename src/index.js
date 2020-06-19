@@ -879,9 +879,10 @@ if ($(document).innerWidth() <= 767) {
 	$('#one').css('right', '-20px')
 
 	$('.tangerineBox .plum').html('<i class="fas fa-user plum"></i>')
-		$('.whiteBox .slate:eq(0)').html('<i class="fas fa-home plum"></i>')
-			$('.whiteBox .slate:eq(1)').html('<i class="fas fa-sign-out-alt plum"></i>')
-
+	$('.whiteBox .slate:eq(0)').html('<i class="fas fa-home plum"></i>')
+	$('.whiteBox .slate:eq(1)').html('<i class="fas fa-sign-out-alt plum"></i>')
+	$('.logo:eq(0)').attr('src', "images/ies-mobile.svg");
+	$('.logo:eq(1)').attr('src', "images/ed-mobile.svg");
 
 	$(window).on('scroll', function() {
 
