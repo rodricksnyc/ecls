@@ -6166,6 +6166,13 @@ body{
   .landing .fas.slate {
     color:#576f7f !important;
     font-size:18px !important;
+    padding: 5px;
+    margin:0em !important
+  }
+
+.landing .fas.slate:active {
+   background: #fbb03b !important;
+    color: #071D49 !important;
   }
   /* .slate.borderLeft {
   padding-left: 0em;
