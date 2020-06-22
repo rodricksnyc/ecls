@@ -20,6 +20,9 @@
   padding-top:25px;
 }
 
+
+
+
 .form-login-a {
 
   color: #00559b;
@@ -1573,12 +1576,39 @@ footer a.white:hover {
   position: fixed;
   top:14em;
   /* bottom: 230px; */
-  left: 3%;
+  /* left: 3%; */
   z-index: 1;
   transform: scale(1);
+  max-width:180px;
+
   /* transition: all 0.5s; */
   /* opacity: 0; */
 }
+
+@media (min-width:1025px) {
+.menu-buttons-floating {
+  margin-left:1.75em;
+}
+
+.container_0, .container_1 {
+    max-width: 1400px!important;
+    margin: 0 auto;
+}
+}
+
+.greenBottom {
+  background: #e9f4ee;
+  width:100%;
+  position: absolute;
+  left:0;
+  right:0;
+
+  bottom: 0em;
+    height: 531px;
+    z-index: -1;
+
+}
+
 
 .guide-list-T.text--blue {
   color:#00559b;
