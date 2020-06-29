@@ -1,11 +1,13 @@
-
-
 @font-face {
   font-family: 'PublicoText';
-  src: url('font/PublicoText-Bold.otf') format('otf'),
-  url('font/PublicoText-Semibold.otf') format('otf'),
-  url('font/PublicoText-Roman.otf') format('otf');
+  src: local('PublicoText'), url('fonts/PublicoText-Bold.otf') format('opentype'),
+  url('fonts/PublicoText-Semibold.otf') format('opentype'),
+  url('fonts/PublicoText-Roman.otf') format('opentype'),
+  url('fonts/PublicoText-BoldItalic.otf') format('opentype'),
+  url('fonts/PublicoText-Italic.otf') format('opentype'),
+  url('fonts/PublicoText-SemiboldItalic.otf') format('opentype');
 }
+
 
 .white {
   color:white;
@@ -136,7 +138,6 @@ h2 {
 
 
 body  {
-  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   word-break: break-word;
   transition: 0.4s all; */ */
@@ -235,7 +236,6 @@ span.heading {
 }
 
 .plum {
-  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   font-weight:900;
   color:#071D49;
@@ -247,7 +247,6 @@ span.heading {
 }
 
 .slate {
-  font-family: "Times New Roman", Times, serif;
   font-family: 'PublicoText';
   font-weight:700;
   color:#576f7f;
@@ -899,7 +898,7 @@ h1.white.sentMessage {
 }
 
 .greenBar .rel p {
-  font-family: "Times New Roman", Times, serif;
+
   font-family: 'PublicoText';
   position:absolute;
   left: 50%;
@@ -914,7 +913,7 @@ h1.white.sentMessage {
 
 
 .greenBar .rel p.last {
-  font-family: "Times New Roman", Times, serif;
+
   font-family: 'PublicoText';
   position: absolute;
   left: 84%;
@@ -2176,7 +2175,7 @@ hr.lime {
   color: white;
   margin: 0;
   text-align: left;
-  font-family: "Times New Roman", Times, serif;
+
   font-family: 'PublicoText';
   font-size:1.8em;
   font-weight: 600;
@@ -3426,7 +3425,7 @@ html, body{
 .modal-title {
   font-weight:600 !important;
   color: #071D49;
-  font-family: "Times New Roman", Times, serif;
+
   font-family: 'PublicoText';
 }
 
@@ -5755,7 +5754,7 @@ body{
     height: 82px;
   }
   .greenBar .rel p.last {
-    font-family: "Times New Roman", Times, serif;
+
     font-family: 'PublicoText';
     position: absolute;
     left: 90%;
@@ -5942,7 +5941,7 @@ body{
     height: 82px;
   }
   .greenBar .rel p.last {
-    font-family: "Times New Roman", Times, serif;
+
     font-family: 'PublicoText';
     position: absolute;
     left: 90%;
