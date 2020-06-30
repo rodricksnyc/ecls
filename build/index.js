@@ -973,8 +973,36 @@ $(document).ready(function () {
 
 		$('.modal-content').addClass('opened');
 		$("#slideOut").addClass('showSlideOut');
+		setTimeout(function () {
+			$('body').addClass('showContact');
+		}, 300);
 	};
 	$('#one').keypress(open).click(open);
+
+	$('body').on('click', function () {
+		if ($('body').hasClass('showContact')) {
+
+			$('#theform input').each(function () {
+				$(this).attr('tabindex', '-1');
+			});
+
+			$('.radio-inline input').each(function () {
+				$(this).attr('tabindex', '-1');
+			});
+
+			$('.form-control').attr('tabindex', '-1');
+
+			$('#closeThisPlease').attr('tabindex', '-1');
+
+			$('#sendMessage').attr('tabindex', '-1');
+
+			$("#slideOut").removeClass('showSlideOut');
+
+			setTimeout(function () {
+				$('body').removeClass('showContact');
+			}, 300);
+		}
+	});
 
 	var close = function close() {
 		$('#theform input').each(function () {
