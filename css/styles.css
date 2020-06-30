@@ -5899,7 +5899,12 @@ font-size: 50px;
 }
 
 .openTab {
-  padding: 0.3rem 1rem;
+  padding: 0.2rem 1rem;
+  border-radius: 10px !important
+}
+
+.openTab p {
+  font-size:20px;
 }
 
 /* .newBlocks .col-xs-6 {
@@ -6263,6 +6268,9 @@ border-left: none;
     align-items: center;
     margin-bottom: -1em;
   }
+
+
+
 
   /* .newBlocks .col-xs-6:nth-of-type(7) {
   order:6;
