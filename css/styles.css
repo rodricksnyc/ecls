@@ -1,16 +1,16 @@
 /* @font-face {
-  font-family: 'PublicoText';
-  src: local('PublicoText'), url('fonts/PublicoText-Bold.otf') format('opentype'),
-  url('fonts/PublicoText-Semibold.otf') format('opentype'),
-  url('fonts/PublicoText-Roman.otf') format('opentype'),
-  url('fonts/PublicoText-BoldItalic.otf') format('opentype'),
-  url('fonts/PublicoText-Italic.otf') format('opentype'),
-  url('fonts/PublicoText-SemiboldItalic.otf') format('opentype');
-  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41,
-    U+FB50-FDFF, U+FE80-FEFC;
+font-family: 'PublicoText';
+src: local('PublicoText'), url('fonts/PublicoText-Bold.otf') format('opentype'),
+url('fonts/PublicoText-Semibold.otf') format('opentype'),
+url('fonts/PublicoText-Roman.otf') format('opentype'),
+url('fonts/PublicoText-BoldItalic.otf') format('opentype'),
+url('fonts/PublicoText-Italic.otf') format('opentype'),
+url('fonts/PublicoText-SemiboldItalic.otf') format('opentype');
+unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41,
+U+FB50-FDFF, U+FE80-FEFC;
 }
 
- */
+*/
 
 
 .white {
@@ -24,6 +24,8 @@
   font-size: 40px;
   font-weight: 700;
   padding-top:25px;
+  font-family: kepler-std, serif;
+  font-weight: 700;
 }
 
 
@@ -142,10 +144,13 @@ h2 {
 
 
 body  {
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   /* font-family: 'PublicoText'; */
   word-break: break-word;
-  transition: 0.4s all; */ */
+  transition: 0.4s all;
+  font-family: kepler-std, serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 
@@ -241,7 +246,8 @@ span.heading {
 }
 
 .plum {
-  font-family: "Times New Roman", Times, serif;
+  font-family: kepler-std, serif;
+  font-weight: 500;
   /* font-family: 'PublicoText'; */
   font-weight:900;
   color:#071D49;
@@ -253,7 +259,8 @@ span.heading {
 }
 
 .slate {
-    font-family: "Times New Roman", Times, serif;
+  font-family: kepler-std, serif;
+  font-weight: 500;
   /* font-family: 'PublicoText'; */
   font-weight:700;
   color:#576f7f;
@@ -830,6 +837,11 @@ p.charcoal {
   /* width: 280px; */
   margin: 0 auto;
   text-align: left;
+  font-family: kepler-std, serif;
+
+  font-weight: 700;
+
+  font-style: normal;
 
 }
 
@@ -905,8 +917,9 @@ h1.white.sentMessage {
 }
 
 .greenBar .rel p {
-  font-family: "Times New Roman", Times, serif;
-  /* font-family: 'PublicoText'; */
+  font-family: kepler-std, serif;
+
+  font-weight: 700;
   position:absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -920,8 +933,9 @@ h1.white.sentMessage {
 
 
 .greenBar .rel p.last {
-  font-family: "Times New Roman", Times, serif;
-  /* font-family: 'PublicoText'; */
+  font-family: kepler-std, serif;
+
+  font-weight: 700;
   position: absolute;
   left: 84%;
   transform: translateX(-20%);
@@ -2182,8 +2196,9 @@ hr.lime {
   color: white;
   margin: 0;
   text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  /* font-family: 'PublicoText'; */
+  font-family: kepler-std, serif;
+
+  font-weight: 700;
   font-size:1.8em;
   font-weight: 600;
   border-bottom: 4px solid #fbb03b;
@@ -3432,7 +3447,9 @@ html, body{
 .modal-title {
   font-weight:600 !important;
   color: #071D49;
-  font-family: "Times New Roman", Times, serif;
+  font-family: kepler-std, serif;
+
+  font-weight: 500;
   /* font-family: 'PublicoText'; */
 }
 
@@ -5761,7 +5778,7 @@ body{
     height: 82px;
   }
   .greenBar .rel p.last {
-    font-family: "Times New Roman", Times, serif;
+
     /* font-family: 'PublicoText'; */
     position: absolute;
     left: 90%;
@@ -5948,7 +5965,7 @@ body{
     height: 82px;
   }
   .greenBar .rel p.last {
-    font-family: "Times New Roman", Times, serif;
+
     /* font-family: 'PublicoText'; */
     position: absolute;
     left: 90%;
