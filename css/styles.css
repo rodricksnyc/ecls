@@ -5835,6 +5835,10 @@ body{
 }
 
 @media  (max-width:767px)  {
+
+  #privacyModal {
+    top: 0%;
+}
   .mobile {
     display: inline-block;
     color: #576f7f;
