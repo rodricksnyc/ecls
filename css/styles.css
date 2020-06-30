@@ -5851,13 +5851,13 @@ body{
 
   .percentageCircle p {
     font-weight: 500;
-    font-size: 30px;
-    margin-top: .2em;
+    font-size: 1em;
+    margin-top: -.25em;
   }
 
   .percentageCircle {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
   }
 
   /* .child i {
@@ -6252,7 +6252,7 @@ border-left: none;
   .margin2 {
     margin-left: 0em;
     margin-right: 0em;
-    margin-top: -3.6em;
+    margin-top: -2.6em;
   }
   .newBlocks .col-xs-6:nth-of-type(7) {
     width:100%;
@@ -6294,7 +6294,7 @@ align-items: center;
 
 @media (max-width:375px) {
   .margin2 {
-    margin-top: -2.6em;
+    margin-top: -1.6em;
   }
 }
 
