@@ -5741,13 +5741,20 @@ body{
 
 }
 
-@media (min-width:1024px) and (max-width:1366px)  {
+@media (max-width:1024px) and (max-height:1366px)  {
 .guide-overlay  {
   padding:0em 6em;
 }
 .container_0, .container_1 {
   max-width: 920px!important;
   margin: 0 auto;
+}
+
+}
+@media (max-width:1366px) and (max-height:1024px)  {
+.container_0, .container_1 {
+    max-width: 1220px!important;
+    margin: 0 auto;
 }
 
 }
