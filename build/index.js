@@ -584,6 +584,10 @@ $(document).ready(function () {
 	// })
 
 
+	$('.logo:eq(1)').css({
+		'max-width': '4em'
+	});
+
 	new WOW().init();
 
 	$(function () {

@@ -5836,9 +5836,10 @@ body{
 
 @media  (max-width:767px)  {
 
+
   #privacyModal {
     top: 0%;
-}
+  }
   .mobile {
     display: inline-block;
     color: #576f7f;
@@ -6059,11 +6060,11 @@ h6.plum {
 }
 header .logos a {
   margin-left: .5em;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: .2em;
+  padding-bottom: .2em;
   padding-right: .5em;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: .2em;
+  margin-bottom: .2em;
 }
 .greenBanner {
   margin-top:-1em;
@@ -6081,6 +6082,8 @@ header .logos a {
   padding-bottom: 0em;
   padding-right: 1em;
 }
+
+
 
 .whiteBox, .tangerineBox {
   background: none;
