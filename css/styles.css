@@ -6337,6 +6337,12 @@ align-items: center;
     font-size: .8em;
   }
 
+  footer .abso {
+    position: absolute;
+    left: 2%;
+    bottom: 78%;
+}
+
   .margin2 {
     /* margin-top: -3em; */
   }
