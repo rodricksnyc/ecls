@@ -584,10 +584,6 @@ $(document).ready(function () {
 	// })
 
 
-	$('.logo:eq(1)').css({
-		'max-width': '4em'
-	});
-
 	new WOW().init();
 
 	$(function () {
@@ -739,6 +735,11 @@ $(document).ready(function () {
 
 	if ($(document).innerWidth() <= 767) {
 
+		$('.logo:eq(1)').css({
+			'max-width': '3em',
+			'margin-left': '-.7em'
+		});
+
 		$('.openTab .plum').html('<i class="fas fa-envelope"></i>');
 		$('#one').css('right', '-20px');
 
@@ -821,6 +822,14 @@ $(document).ready(function () {
 			//
 			// 	$('#slideOut').removeClass('showSlideOut')
 			// }
+		});
+	}
+
+	if ($(document).innerWidth() <= 320) {
+
+		$('.logo:eq(1)').css({
+			'max-width': '3em',
+			'margin-left': '-.3em'
 		});
 	}
 
