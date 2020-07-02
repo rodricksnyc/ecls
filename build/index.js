@@ -600,9 +600,9 @@ $(document).ready(function () {
 			var _setReasonActive = function _setReasonActive() {
 				$('.radio-inline input').each(function () {
 					if ($(this).prop('checked')) {
-						$(this).parents('.vertical').css('background', '#fbb03b');
+						$(this).parents('.vertical').css('border', '3px solid #fbb03b');
 					} else {
-						$(this).parents('.vertical').css('background', 'transparent');
+						$(this).parents('.vertical').css('border', 'none');
 					}
 				});
 			};
@@ -622,13 +622,18 @@ $(document).ready(function () {
 	function setReasonActive() {
 		$('.radio-inline input').each(function () {
 			if ($(this).prop('checked')) {
-				$(this).closest('.vertical').find('.fas , label').css({
-					'color': '#071D49',
-					'font-weight': '600'
+				$(this).closest('.vertical').find('label').css({
+					'color': 'white',
+					'font-weight': '300'
 				});
-				$(this).parents('.vertical').css('background', '#fbb03b');
+				$(this).closest('.vertical').find('.fas').css({
+					'color': '	#fed439',
+					'font-weight': '700'
+				});
+
+				$(this).parents('.vertical').css('border', '3px solid #fbb03b');
 			} else {
-				$(this).parents('.vertical').css('background', 'transparent');
+				$(this).parents('.vertical').css('border', 'none');
 				$(this).closest('.vertical').find('label').css({
 					'color': 'white',
 					'font-weight': '100'
@@ -962,6 +967,8 @@ $(document).ready(function () {
 
 	var open = function open() {
 
+		$('.contactUsOverlay').show();
+
 		$('#theform input').each(function () {
 			$(this).attr('tabindex', '0');
 		});
@@ -983,7 +990,8 @@ $(document).ready(function () {
 	};
 	$('#one').keypress(open).click(open);
 
-	$('body').on('click', function () {
+	$('.contactUsOverlay').on('click', function (e) {
+
 		if ($('body').hasClass('showContact')) {
 
 			$('#theform input').each(function () {
@@ -1009,6 +1017,8 @@ $(document).ready(function () {
 	});
 
 	var close = function close() {
+
+		$('.contactUsOverlay').hide();
 		$('#theform input').each(function () {
 			$(this).attr('tabindex', '-1');
 		});
