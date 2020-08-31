@@ -195,7 +195,7 @@ h2 {
   padding: 7% 0;
   text-align: center;
   font-size: 38px;
-  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+  /* text-shadow: 2px 2px 5px rgb(255, 255, 255); */
 }
 
 
@@ -219,8 +219,8 @@ header .logos a {
   padding-top: .5em;
   padding-bottom: .5em;
   padding-right: 1em;
-  margin-top:.5em;
-  margin-bottom:.5em
+  margin-top:0em;
+  margin-bottom:0em
 }
 
 a.slate {
@@ -367,17 +367,18 @@ span.heading {
   background: #f8f4ed;
   margin-bottom:0em !important;
   padding-bottom:0em !important;
-  /* justify-content: flex-start; */
+  z-index:9998;
+  opacity:.9
 }
 
 .end {
   position: absolute;
-  right: 15px;
+  right: 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: auto;
-  min-width: 12em;
+  min-width: auto;
 }
 
 .landing .fas {
@@ -396,14 +397,14 @@ span.heading {
       z-index: 22;
       border: 2px solid #00559b;
       width: auto;
-      padding: .1em .6em;
+      padding: .1em .5em;
       right:-1em;
 }
 
 .language {
   font-family: 'Public Sans', sans-serif;
   margin:0;
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 .activeDot:hover {
@@ -431,7 +432,7 @@ span.heading {
   z-index: 2;
   border: 2px solid #00539f;
   width: auto;
-  padding: .1em .6em .1em 1.2em;
+  padding: .1em .5em .1em 1em;
 }
 
 
@@ -450,6 +451,8 @@ span.heading {
     align-items: center;
     min-height: 44rem;
     max-height: 78rem;
+    z-index:999;
+    top:-5rem
 }
 
 .hero-img {
@@ -461,7 +464,7 @@ span.heading {
     min-height: inherit;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px 100%;
+    background-position: top;
 }
 
 /*
@@ -1674,7 +1677,7 @@ footer a.white:hover {
 .menu-buttons-floating {
   /* visibility: hidden; */
   position: fixed;
-  top:14em;
+  top:54%;
   /* bottom: 230px; */
   /* left: 3%; */
   z-index: 1;

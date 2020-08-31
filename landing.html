@@ -14,10 +14,38 @@
 	<title>ECLS</title>
 	<link rel="shortcut icon" href="images/sunshine.png">
 	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/landing.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+	 <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'ro',
+	includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
+	layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+	autoDisplay: false}, 'google_translate_element');
+}
+
+function loadGoogleTranslate() {
+	var googleTranslateScript = document.createElement('script');
+	googleTranslateScript.type = 'text/javascript';
+	googleTranslateScript.async = true;
+	googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
+}
+$('.lang-select').click(function() {
+	var theLang = jQuery(this).attr('data-lang');
+	$('.goog-te-combo').val(theLang);
+
+	window.location = jQuery(this).attr('href');
+	location.reload();
+
+});
+</script>
 </head>
 
 <body>
@@ -33,9 +61,22 @@
 					</div>
 
 					<div class="end">
-						<div class="whiteBox d-flex justify-content-between align-items-center">
+						<div class="d-flex justify-content-between align-items-center">
 
-							<a class="slate" href="" role="button" tabindex="0" aria-describedby="Access ECLS home" aria-label="Access ECLS home">
+
+							<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
+
+								<p class="language notranslate" translate="no">English</p>
+
+							</a>
+
+						<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+							<p class="language">Espa&ntilde;ol</p>
+
+						</a>
+
+							<!-- <a class="slate" href="" role="button" tabindex="0" aria-describedby="Access ECLS home" aria-label="Access ECLS home">
 								<p class="slate">my ECLSHome</p>
 							</a>
 							<a href="" role="button" tabindex="0" aria-describedby="Access portal" aria-label="Access portal">
@@ -46,15 +87,26 @@
 
 							<a class="slate" href="" role="button" tabindex="0" aria-describedby="Logout" aria-label="Logout">
 								<p class="slate borderLeft">Logout<p>
-								</a>
+								</a> -->
 
 							</div>
 						</div>
 					</header>
-					<div class="greenBanner"><h1 class="white title">Welcome to your ECLS Teacher Portal!</h1></div>
+					<div class="hero-img-container">
+						<div class="hero-img">
+
+						</div>
+
+
+					</div>
+
+					<!-- <div class="greenBanner"><h1 class="white title">Welcome to your ECLS Teacher Portal!</h1></div> -->
+
 				</div>
 
 			</section>
+
+
 
 
 			<div id="slideOut" class="content-top">
@@ -151,11 +203,14 @@
 
 			<div class="container_0">
 				<section class="block10">
+
 					<div id="overview" class="container-fluid heros">
+
+
 
 						<div class="guide-overlay container">
 
-							<h2 class="landing-sec-H">ECLS Overview</h2>
+							<h2 class="landing-sec-H">What is the ECLS?</h2>
 
 							<div class="toggleDiv">
 								<p class="charcoal">Your school has agreed to participate in the Early Childhood Longitudinal Study (ECLS), a nation-wide study of elementary-aged children, their schools, teachers, and parents. As part of the study, we are asking teachers at your school to complete web-based surveys. You have been asked to complete surveys because one or more of the children you serve are participants in this study.  The teacher survey contains questions abour you and your classroom practices. There are also brief surveys for each of the sampled children that you teach. These surveys contain questions about the children’s skills and abilitites. The table below displays the list of participating children in your classroom and the surveys we are asking you to complete.  First, please confirm that you teach each of these children. If not, please let {{ }} know.”</p>
@@ -458,10 +513,10 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
  <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script type="text/javascript" src="build/index.js"></script>
 

@@ -604,7 +604,6 @@ for(var j in teacher.teachersComplete) {
 }
 
 
-
 //change colors of the percentage circles and progress bars
 
 var Opt01 = "";
@@ -1567,6 +1566,98 @@ $(".card-cc").on("click", function (e) {
 	e.preventDefault();
 
 });
+
+
+//spanish english
+
+var mainURL = window.location.href;
+
+
+$('#ingles').attr('href' , mainURL)
+
+$(window).on('load', function() {
+	if(mainURL.includes('googtrans(en|es)')) {
+
+		$('#espanol').removeClass('inactiveDot').addClass('activeDot')
+		$('#ingles').removeClass('activeDot').addClass('inactiveDot')
+
+		$('#espanol').on('keyup', function(e) {
+
+			var code = (e.keyCode ? e.keyCode : e.which);
+			if (code == 13 ) {
+				$(this).removeClass('inactiveDot').addClass('activeDot')
+				$('.english').removeClass('activeDot').addClass('inactiveDot')
+
+			}
+
+		})
+
+	}
+
+})
+
+
+// $(window).on('load', function() {
+// 			$('a').not('#espanol').prop('hash','#googtrans(en|en)');
+// })
+
+
+
+$('.spanish').on('click', function(e) {
+	// e.preventDefault()
+
+	$(this).removeClass('inactiveDot').addClass('activeDot')
+	$('.english').removeClass('activeDot').addClass('inactiveDot')
+
+})
+
+$('.english').on('click', function(e) {
+	// e.preventDefault()
+	$(this).removeClass('inactiveDot').addClass('activeDot')
+	$('.spanish').removeClass('activeDot').addClass('inactiveDot')
+
+})
+
+$('.spanish').on('keyup', function(e) {
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13 ) {
+		$(this).removeClass('inactiveDot').addClass('activeDot')
+		$('.english').removeClass('activeDot').addClass('inactiveDot')
+
+	}
+
+})
+
+
+$('.english').on('keyup', function(e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13 ) {
+		$(this).removeClass('inactiveDot').addClass('activeDot')
+		$('.spanish').removeClass('activeDot').addClass('inactiveDot')
+
+	}
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 })
