@@ -1455,7 +1455,8 @@ $(document).ready(function () {
 	//
 	// if($('#accessCode1').val() == '')    {
 	//
-	// 	  $('#accessCode2').attr('disabled','disabled');
+	//
+	// 	  // $('#accessCode2').attr('disabled','disabled');
 	//
 	// }
 	//
@@ -1463,6 +1464,21 @@ $(document).ready(function () {
 	//
 	// 		  $('#accessCode2').removAttr('disabled','disabled');
 	// }
-	//
 
+
+	$('#accessCode1').keydown(function (event) {
+		$('#returning').css({
+			'background': '#00843D',
+			'color': 'white'
+
+		});
+	});
+
+	$('#accessCode2').keydown(function (event) {
+		$('#new-user').css({
+			'background': '#00843D',
+			'color': 'white'
+
+		});
+	});
 });

@@ -1437,8 +1437,8 @@ font-size: 15px;
 
 
 #new-user, #returning {
-    background: #d1d3d4 !important;
-    border-color: #d1d3d4 !important;
+    background: #d1d3d4;
+    border-color: transparent !important;
     width:auto;
     padding:.2rem 1.6rem;
     border-radius: 2rem;
