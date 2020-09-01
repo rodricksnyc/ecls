@@ -259,11 +259,11 @@
 									<br>
 									<div class="form-group">
 
-										<label for="pin">PIN</label>
+										<label for="accessCode1" class="togglePassword">PIN</label>
 
-											<input id="pin" type="text" name="pin" class="form-control" required maxlength="">
+											<input id="accessCode1" type="password" name="pin" class="form-control" required maxlength="">
 
-											<i class="fas fa-eye darkBlue"></i>
+										<div id="eye" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
 									</div>
 									<div class="d-flex justify-content-center mt-4 mb-3">
 									<button type="submit" class="btn btn-info button-outlined" id="returning" tabindex="0" aria-hidden="false">Submit</button>
@@ -281,15 +281,15 @@
 									<br>
 								<div class="form-group">
 
-									<label for="lastName">Username</label>
-									<input type="text" class="form-control" id="lastName" aria-label="searchLastName" placeholder="">
+									<label for="name">Username</label>
+									<input type="text" class="form-control" id="name" placeholder="">
 
 								</div>
 
 								<div class="form-group">
-									<label for="firstName">Password</label>
-									<input type="text" class="form-control" id="firstName" aria-label="searchFirstName" placeholder="">
-										<i class="fas fa-eye darkBlue"></i>
+									<label for="accessCode2">Password</label>
+									<input id="accessCode2" type="password" class="form-control"  placeholder="">
+									<div id="eye2" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
 
 								</div>
 									<div class="d-flex justify-content-center mt-4 mb-3">
@@ -324,7 +324,27 @@
 	</div>
 
 
+
 	</section>
+
+</div>
+
+
+<div class="container-fluid lightGreen">
+	<div class="row padding-0">
+
+<h2 class="landing-sec-H">Why Should I Particpate?</h2>
+</div>
+<div class="guide-overlay container">
+		<div class="row">
+	<div class="col-md-12 col-sm-12 mt-2">
+<p class="charcoal smallFont">The ECLS explores how different factors—at home and at school—relate to children’s development and learning over time. This is your opportunity to contribute to research that can lead to changes, helping your school, teachers, and students, as well as the broader educational community. Your participation in the study allows us to answer the following types of questions:</p>
+</div>
+</div>
+</div>
+
+</div>
+
 
 
 
@@ -502,7 +522,7 @@
 </div> -->
 
 </div>
-<div class="greenBottom"></div>
+<!-- <div class="greenBottom"></div> -->
 <div class="back-to-top">
 	<i class="far fa-angle-up"></i>
 </div>

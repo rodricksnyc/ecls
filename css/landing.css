@@ -556,6 +556,8 @@ span.heading {
 
 }
 
+
+
 /*
 .survey-container {
 width: 100%;
@@ -1014,12 +1016,18 @@ p.charcoal {
   font-weight: 700;
 
   font-style: normal;
+  padding-top:2%;
 
 }
 #overview .landing-sec-H {
   margin-top: 0em;
   padding-top: 0em;
 
+}
+
+.smallFont {
+  font-size:15px !important;
+      line-height: 1.5 !important;
 }
 
 .guide-overlay{
@@ -1341,6 +1349,10 @@ h6.plum {
 
 }
 
+.padding-0{
+  padding:0
+}
+
 .embed-responsive-item {
 margin-right:25%;
 margin-left: 25%;
@@ -1402,10 +1414,12 @@ width:100% !important;
 
 .whiteBox .form-control {
   height: auto;
-  padding: .4em 1em;
-  font-size: 14px;
+  padding: .5em 1em;
+font-size: 15px;
   border-radius: 0;
   border: 1px solid black;
+  color:black;
+    font-family: 'Public Sans' !important;
 }
 
 .whiteBox .form-group label {
@@ -1413,7 +1427,7 @@ width:100% !important;
   font-family: 'Public Sans' !important;
   position: absolute;
   background: white;
-  top: -10px;
+  top: -15px;
     left: 10px;
     padding: 0px 8px;
 }
@@ -1434,10 +1448,10 @@ width:100% !important;
       font-family: 'Public Sans' !important;
 }
 
-.whiteBox i {
-    margin-bottom: 0em !important;
+#eye, #eye2{
+  margin-bottom: 0em !important;
     position: absolute;
-    top: 9px;
+    top: 11px;
     right: 9px;
 }
 
@@ -2359,9 +2373,9 @@ label.togglePassword {
   align-items: center;
 }
 
-#eye, #eye2 {
+/* #eye, #eye2 {
   margin-right:4px;
-}
+} */
 
 .around .vertical .fas {
   color: white;
@@ -2827,6 +2841,10 @@ background: #7bc043;
   font-size: 30px;
   font-weight: 900;
 }
+
+
+
+
 
 .contactUs_radio .reason_1:before {
   content: "\f0ad";

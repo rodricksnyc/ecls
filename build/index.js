@@ -1378,4 +1378,91 @@ $(document).ready(function () {
 			}
 		}
 	});
+
+	function show() {
+		var p = $('#accessCode1');
+		p.attr('type', 'text');
+	}
+
+	function hide() {
+		var p = $('#accessCode1');
+		p.attr('type', 'password');
+	}
+
+	var pwShown = 0;
+
+	var clickEye = function clickEye() {
+
+		if (pwShown == 0) {
+			pwShown = 1;
+			show();
+
+			$("#eye i").replaceWith('<i class="fas fa-eye-slash darkBlue"></i>');
+		} else {
+			pwShown = 0;
+			hide();
+
+			$("#eye i").replaceWith('<i class="fas fa-eye darkBlue"></i>');
+		}
+	};
+
+	$("#eye").keypress(clickEye).click(clickEye);
+
+	function show2() {
+
+		var s = $('#accessCode2');
+
+		s.attr('type', 'text');
+	}
+
+	function hide2() {
+
+		var s = $('#accessCode2');
+
+		s.attr('type', 'password');
+	}
+
+	var pwShown2 = 0;
+
+	var clickEye2 = function clickEye2() {
+
+		if (pwShown2 == 0) {
+			pwShown2 = 1;
+			show2();
+
+			$("#eye2 i").replaceWith('<i class="fas fa-eye-slash darkBlue"></i>');
+		} else {
+			pwShown2 = 0;
+			hide2();
+
+			$("#eye2 i").replaceWith('<i class="fas fa-eye darkBlue"></i>');
+		}
+	};
+
+	$("#eye2").keypress(clickEye2).click(clickEye2);
+
+	$("#eye, #eye2").on("keyup", function (e) {
+		var code = e.keyCode ? e.keyCode : e.which;
+		if (code == 9) {
+			$(this).css('outline', 'dashed 3px #4599ff');
+		}
+	});
+
+	$('#eye, #eye2').on('focusout', function () {
+		$(this).css('outline', 'none');
+	});
+
+	//
+	// if($('#accessCode1').val() == '')    {
+	//
+	// 	  $('#accessCode2').attr('disabled','disabled');
+	//
+	// }
+	//
+	// if(!$('#accessCode1').val() == '')    {
+	//
+	// 		  $('#accessCode2').removAttr('disabled','disabled');
+	// }
+	//
+
 });
