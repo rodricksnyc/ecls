@@ -19,56 +19,74 @@
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-	 <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-function googleTranslateElementInit() {
-	new google.translate.TranslateElement({pageLanguage: 'ro',
-	includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
-	layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-	autoDisplay: false}, 'google_translate_element');
-}
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({
+			// pageLanguage: 'ro',
+			includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
+			layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+			autoDisplay: false}, 'google_translate_element');
+		}
 
-function loadGoogleTranslate() {
-	var googleTranslateScript = document.createElement('script');
-	googleTranslateScript.type = 'text/javascript';
-	googleTranslateScript.async = true;
-	googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
-}
-$('.lang-select').click(function() {
-	var theLang = jQuery(this).attr('data-lang');
-	$('.goog-te-combo').val(theLang);
+		function loadGoogleTranslate() {
+			var googleTranslateScript = document.createElement('script');
+			googleTranslateScript.type = 'text/javascript';
+			googleTranslateScript.async = true;
+			googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
+		}
+		$('.lang-select').click(function() {
+			var theLang = jQuery(this).attr('data-lang');
+			$('.goog-te-combo').val(theLang);
 
-	window.location = jQuery(this).attr('href');
-	location.reload();
+			window.location = jQuery(this).attr('href');
+			location.reload();
 
-});
-</script>
-</head>
-
-<body>
-
-	<div class="container-fluid overflow-hidden position-relative">
-		<section class="block0">
-			<div class="heros" id="home">
-				<header class="landing d-flex">
-					<div class="logos d-flex justify-content-start align-items-center">
-						<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
-
-						<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
-					</div>
-
-					<div class="end">
-						<div class="d-flex justify-content-between align-items-center">
+		});
 
 
-							<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no">
+		$(window).scroll(function () {
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+			if (distanceY > 485) {
 
-								<p class="language notranslate" translate="no">English</p>
+				$('.menu-buttons-floating').css({
+					opacity: '1',
+					visibility: 'visible'
+				})
+			} else {
 
-							</a>
+				$('.menu-buttons-floating').css({
+					opacity: '0',
+					visibility: 'hidden'
+				})
+			}
+		});
+		</script>
+	</head>
+
+	<body data-spy="scroll">
+
+		<div class="container-fluid overflow-hidden position-relative">
+
+			<header class="landing d-flex" id="page-top">
+				<div class="logos d-flex justify-content-start align-items-center">
+					<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
+
+					<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
+				</div>
+
+				<div class="end">
+					<div class="d-flex justify-content-between align-items-center">
+
+
+						<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no" onclick="loadGoogleTranslate()">
+
+							<p class="language notranslate" translate="no">English</p>
+
+						</a>
 
 						<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
 
@@ -76,38 +94,42 @@ $('.lang-select').click(function() {
 
 						</a>
 
-							<!-- <a class="slate" href="" role="button" tabindex="0" aria-describedby="Access ECLS home" aria-label="Access ECLS home">
-								<p class="slate">my ECLSHome</p>
-							</a>
-							<a href="" role="button" tabindex="0" aria-describedby="Access portal" aria-label="Access portal">
-								<div class="tangerineBox">
-									<p class="plum">Portal</p>
+					</div>
+				</div>
+			</header>
+
+			<div class="container-fluid" id="participation">
+				<div class="hero-img-container">
+					<div class="hero-img">
+						<h4 class="white title1">Welcome</h4>
+						<h4 class="white title2">to the Early Childhood Longitudinal Study</h4>
+					</div>
+				</div>
+
+
+				<section class="block0">
+					<div class="heros" id="home">
+						<div class="greenBar top">
+
+							<nav class="navbar navbar-expand-lg navbar-light">
+								<div class="guide-overlay container">
+
+									<a class="nav-item nav-link scrollIt active" href="#page-top">OVERVIEW</a>
+									<a class="nav-item nav-link scrollIt" href="#participation">PARTICIPATION STEPS</a>
+									<a class="nav-item nav-link scrollIt" href="#two">FINDINGS</a>
+
+									<a class="nav-item nav-link scrollIt" href="#three">MORE INFORMATION</a>
+
 								</div>
-							</a>
-
-							<a class="slate" href="" role="button" tabindex="0" aria-describedby="Logout" aria-label="Logout">
-								<p class="slate borderLeft">Logout<p>
-								</a> -->
-
-							</div>
-						</div>
-					</header>
-					<div class="hero-img-container">
-						<div class="hero-img">
+							</nav>
 
 						</div>
 
 
 					</div>
+				</section>
 
-					<!-- <div class="greenBanner"><h1 class="white title">Welcome to your ECLS Teacher Portal!</h1></div> -->
-
-				</div>
-
-			</section>
-
-
-
+			</div>
 
 			<div id="slideOut" class="content-top">
 
@@ -159,13 +181,13 @@ $('.lang-select').click(function() {
 											</label>
 										</div>
 										<div class="vertical">
-										<i class="fas fa-question-circle"></i>
+											<i class="fas fa-question-circle"></i>
 											<label class="radio-inline">
 												<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
 											</label>
 										</div>
 										<div class="vertical">
-										<i class="fas fa-user-headset"></i>
+											<i class="fas fa-user-headset"></i>
 											<label class="radio-inline">
 												<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
 											</label>
@@ -206,258 +228,274 @@ $('.lang-select').click(function() {
 
 					<div id="overview" class="container-fluid heros">
 
+						<div class="guide-overlay2 container-fluid">
+							<div class="row">
 
+								<div class="col-lg-7 col-md-auto col-md-12 col-sm-12">
+									<!-- <div class="toggleDiv"> -->
+									<h2 class="landing-sec-H">What is the ECLS?</h2>
+									<p class="charcoal">The Early Childhood Longitudinal Study (ECLS) program gives families, educators, and policymakers important information about children’s knowledge and skills. For more than 20 years, the study has helped improve education for children from birth through elementary school.</p>
+									<p class="charcoal">The ECLS is conducted by the <span class="darkBlue">National Center for Education Statistics (NCES)</span>, within the <span class="darkBlue">U.S. Department of Education’s Institute of Education Sciences (IES)</span></p>
+									<p class="charcoal">The ECLS gathers information from children, parents/guardians, teachers, and school administrators to provide a complete picture of children’s learning experiences. The upcoming study—the ECLS-K:2023—will focus on the kindergarten class of 2022-23. This study will be informed by a series of field tests, including one in the fall of 2021. These <span class="darkBlue">field tests</span> are small-scale trial runs of the study to test the study instruments with children, parents, teachers, and school administrators.</p>
+									<p class="charcoal">The ECLS-K:2023 will provide information that can be used at the local, state, and national levels to guide practice and policies that increase children’s chances of doing well in school. It is important that selected children, parents, teachers, and schools participate to ensure that the  findings are accurate.</p>
+									<p class="charcoal">Students, families, teachers, and schools will not be identified in any ECLS reports. Information will be combined from all participants to produce reports for the nation as a whole.</p>
+									<p class="charcoal">All of the information provided by children, families, teachers, and principals may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151). All staff working on the study have signed an affidavit of non-disclosure where they swear to abide by this law.</p>
+									<!-- </div> -->
 
-						<div class="guide-overlay container">
+									<!-- <div class="blueLine">
+									<i class="fas fa-minus-circle tooltips-elements seeLess" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse</span></i>
 
-							<h2 class="landing-sec-H">What is the ECLS?</h2>
-
-							<div class="toggleDiv">
-								<p class="charcoal">Your school has agreed to participate in the Early Childhood Longitudinal Study (ECLS), a nation-wide study of elementary-aged children, their schools, teachers, and parents. As part of the study, we are asking teachers at your school to complete web-based surveys. You have been asked to complete surveys because one or more of the children you serve are participants in this study.  The teacher survey contains questions abour you and your classroom practices. There are also brief surveys for each of the sampled children that you teach. These surveys contain questions about the children’s skills and abilitites. The table below displays the list of participating children in your classroom and the surveys we are asking you to complete.  First, please confirm that you teach each of these children. If not, please let {{ }} know.”</p>
-								<p class="charcoal">As a thank-you for completing these surveys, you have received $20 for the teacher survey and $7 for each of the child surveys.</p>
-								<p class="charcoal">The ECLS collects information from teachers of children who are in the study to investigate the relationship between children’s academic progress and various school, classroom, teacher, and home characteristics.</p>
-								<p class="charcoal">Taking part in the study is voluntary. You may stop at any time or choose not to answer a question you do not want to answer. However, only you can provide this information. Although we realize you are very busy, we urge you to complete these surveys as completely and accurately as possible.</p>
+								</div> -->
 							</div>
 
-							<div class="blueLine">
-								<i class="fas fa-minus-circle tooltips-elements seeLess" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse</span></i>
+							<div class="col-lg-4 offset-md-1 col-md-12 col-sm-12 grayBackground">
+								<div class="whiteBox">
+									<form>
+										<legend>
+											<p class="darkGreen text-center">New Visitors</p>
+										</p>
+									</legend>
+									<p class="small charcoal">Did you receive a post card or an email about the Early Childhood Longitudinal Study? If this is your first time visiting this site, please enter the PIN from the post card or email.</p>
+									<br>
+									<div class="form-group">
 
-								<!-- <i class="fas fa-minus-circle tooltips-elements seeLess" type="tooltip" data-color="white" tabindex="0" data-toggle="tooltip" data-placement="bottom" title="see less" aria-describedby="Shows Less" aria-label="Shows Less"></i> -->
+										<label for="pin">PIN</label>
 
+											<input id="pin" type="text" name="pin" class="form-control" required maxlength="">
 
+											<i class="fas fa-eye darkBlue"></i>
+									</div>
+									<div class="d-flex justify-content-center mt-4 mb-3">
+									<button type="submit" class="btn btn-info button-outlined" id="returning" tabindex="0" aria-hidden="false">Submit</button>
+								</div>
+								</form>
 							</div>
 
+							<div class="whiteBox">
+								<form>
+									<legend>
+										<p class="darkGreen text-center">Returning Visitors</p>
+									</p>
+								</legend>
+								<p class="small charcoal">For returning visitors, please enter your username and password.</p>
+									<br>
+								<div class="form-group">
+
+									<label for="lastName">Username</label>
+									<input type="text" class="form-control" id="lastName" aria-label="searchLastName" placeholder="">
+
+								</div>
+
+								<div class="form-group">
+									<label for="firstName">Password</label>
+									<input type="text" class="form-control" id="firstName" aria-label="searchFirstName" placeholder="">
+										<i class="fas fa-eye darkBlue"></i>
+
+								</div>
+									<div class="d-flex justify-content-center mt-4 mb-3">
+								<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false">Submit</button>
+							</div>
+							</form>
 						</div>
 
+						<p class="purple">Technical and Security Recommendations</p>
+						<p class="dark">We recommend using a desktop or laptop computer to complete the study activities. For the best experience, use Chrome, Edge, Safari, or Firefox.</p>
+						<p class="dark">When you have finished or if you need to stop before finishing, please LOG OUT of the survey system by selecting "Logout" and CLOSE ALL browser windows or screens to keep your responses secure. For example, if you used Chrome or Safari to open the website, make sure no Chrome or Safari windows or screens are open after you end the session. Not closing all browsers may allow someone else to see your responses.</p>
+
 					</div>
-
-				</section>
-
-
-
-				<section class="block5">
-					<div id="survey" class="container-fluid heros">
-
-						<div class="guide-overlay container">
-							<h2 class="landing-sec-H">All Surveys</h2>
-							<p class="charcoal">To begin each survey, select the Launch Survey icon <span class="rel">"<i class="fas fa-file-export darkBlue"></i>"</span> in the table below. Some of these questions, or the timeframe of the school year referred to, may not directly apply to your classroom or students, but just answer the best you can. Some questions in the survey have additional information and definitions that can be used if needed. To view the additional information for those questions, select the blue <span class="rel">"<i class="fas fa-info-circle darkBlue"></i>”</span> icon.</p>
-
-
-
-							<div class="greenBar d-flex justify-content-around align-items-center flex-wrap">
-								<div class="totalSurveys d-flex flex-column align-items-center">
-									<span class="rel">
-										<p class="white totalSurveyCount">5</p>
-										<img src="images/total.svg" class="img-responsive status">
-									</span>
-									<h6 class="white">TOTAL SURVEYS</h6>
-
-								</div>
-
-								<div class="notStarted d-flex flex-column align-items-center rel">
-									<p class="white notStartedCount">10</p>
-									<img src="images/not.svg" class="img-responsive status">
-									<h6 class="white">NOT STARTED</h6>
-
-								</div>
-
-								<div class="inProgress d-flex flex-column align-items-center rel">
-									<p class="white inProgressCount">6</p>
-									<img src="images/progress.svg" class="img-responsive status">
-									<h6 class="white">IN PROGRESS</h6>
-								</div>
-
-								<div class="completed d-flex flex-column align-items-center rel">
-									<p class="white completedCount">3</p>
-									<img src="images/completed.svg" class="img-responsive status">
-									<h6 class="white">COMPLETED</h6>
-								</div>
-
-								<div class="totalComplete d-flex flex-column align-items-center rel">
-									<p class="white totalCompletedCount last">12%</p>
-									<img src="images/25.svg" class="img-responsive status">
-									<h6 class="white">TOTAL % COMPLETE</h6>
-								</div>
-
-							</div>
-
-							<div class="teacherBackground">
-								<h2 class="landing-sec-H smaller">Teacher Background</h2>
-							</div>
-							<div class="teacherAttr d-flex align-items-center">
-								<div class="col-lg-2">
-									<h6 class="gray">TEACHER ID</h6>
-								</div>
-								<div class="col-lg-2">
-									<h6 class="gray">TEACHER NAME</h6>
-								</div>
-								<div class="col-lg-2">
-									<h6 class="gray">TYPE</h6>
-								</div>
-								<div class="col-lg-1">
-									<h6 class="gray">STATUS</h6>
-								</div>
-								<div class="col-lg-2 margin4">
-									<h6 class="gray">% COMPLETE</h6>
-								</div>
-								<div class="col-lg-2">
-									<h6 class="gray">DATE LAST ACCESSED</h6>
-								</div>
-								<div class="col-lg-1">
-									<h6 class="gray">LAUNCH</h6>
-								</div>
-							</div>
-
-							<div class="teacherBlocks">
-
-								<!-- <div class='teacher newBlocks d-flex align-items-center flex-wrap'>
-								<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-								<p class="black" id="teacherId">9676994-S01</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-							<p class="black" id="teacherName">Mae Whitman</p>
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-						<p class="black" id="teacherType">Primary</p>
-					</div>
-					<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-					<p class="black" id="teacherStatus">Complete</p>
 				</div>
-				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-				<div class="percentageCircle">
-				<p class="black teacherComplete">100</p>
+
+
+
 			</div>
+
 		</div>
-		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2">
-		<p class="black" id="teacherDate">3/15/20</p>
-	</div>
-	<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-	<div id="launchStatus"><i class='fas fa-check limeCheck'></i>
-</div>
-</div>
-<div class='progressBarEmpty'></div>
-<div class='progressBarFull'></div>
-</div> -->
 
-</div>
+		<div class="container">
+		<div class="row">
 
+			<div class="col-lg-12 col-sm-12 mt-5">
 
-<div class="childLevel">
-	<h2 class="landing-sec-H smaller">Child Level</h2>
-</div>
-<div class="childAttr d-flex align-items-center">
-	<div class="col-lg-2"><h6 class="gray">CHILD ID</h6></div>
-	<div class="col-lg-2"><h6 class="gray">CHILD NAME</h6></div>
-	<div class="col-lg-2"><h6 class="gray">TYPE</h6></div>
-	<div class="col-lg-1"><h6 class="gray">STATUS</h6></div>
-	<div class="col-lg-2 margin4"><h6 class="gray">% COMPLETE</h6></div>
-	<div class="col-lg-2"><h6 class="gray">DATE LAST ACCESSED</h6></div>
-	<div class="col-lg-1"><h6 class="gray">LAUNCH</h6></div>
-</div>
-
-<div class="childBlocks">
-
-	<!-- <div class='child newBlocks d-flex align-items-center flex-wrap'>
-	<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-	<p class="black" id="childId">9676994-S01</p>
-</div>
-<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-<p class="black" id="childName">Mae Whitman</p>
-</div>
-<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-<p class="black" id="childType">Primary</p>
-</div>
-<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-<p class="black" id="childStatus">Complete</p>
-</div>
-<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-<div class="percentageCircle">
-<p class="black childComplete">100</p>
-</div>
-</div>
-<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2">
-<p class="black" id="childDate">3/15/20</p>
-</div>
-<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-<div id="launchStatus"><i class='fas fa-check limeCheck'></i>
-</div>
-</div>
-<div class='progressBarEmpty'></div>
-<div class='progressBarFull'></div>
-</div> -->
-
-
-</div>
-<div class="d-flex justify-content-center m1 showBlocks">
-	<a class="loadMore" role="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more">
-
-		<p class="darkBlue">show 10 more</p>
-
-	</a>
-	<div class="flip"></div>
-	<a class="loadAll" role="button" tabindex="0" aria-describedby="Show all" aria-label="Show all">
-
-		<p class="darkBlue">all</p>
-
-	</a>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="block50" id="info">
-
-	<div class="lightGreen d-flex flex-column align-items-center heros">
-		<div class="guide-overlay container">
-			<h2 class="landing-sec-H mb1">To learn more about the ECLS, please download the following documents:</h2>
-
-			<div class="infoBar d-flex align-items-center">
-				<div class="greenLeftBar"></div>
-				<h6 class="plum"><i class="fas fa-book plum"></i>&nbsp;&nbsp;ECLS Teacher Fact Sheet</h6>
-				<div class="greenCircle"><i class="fas fa-file-download white"></i></div>
-			</div>
-			<div class="infoBar d-flex align-items-center">
-				<div class="greenLeftBar"></div>
-				<h6 class="plum">	<i class="fas fa-chalkboard-teacher plum"></i>&nbsp;&nbsp;Teacher Letter</h6>
-
-				<div class="greenCircle">
-					<i class="fas fa-file-download white"></i>
-				</div>
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zB4I68XVPzQ"></iframe>
 
 			</div>
 
 		</div>
 	</div>
 
-</section>
 
-<div class="menu-buttons-floating wow slideInUp">
-	<ul class="menu-buttons-floating-list">
-		<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
-		<li tabindex="0" data-target="#survey"><i class="fal fa-server"></i></li>
-		<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
-		<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
-	</ul>
-</div>
+	</section>
 
 
-<div class="menu-buttons-768">
-	<ul class="menu-buttons-768-list">
 
-		<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
-		<li tabindex="0" data-target="#survey"><i class="fal fa-server"></i></li>
-		<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
-		<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
-	</ul>
-</div>
-<!-- <div class="rel">
-<div class="abso">
-<img src="images/sunshine.png" class="img-responsive">
+
+
+	<section class="block5">
+		<div id="survey" class="container-fluid heros">
+
+			<div class="guide-overlay container">
+				<h2 class="landing-sec-H">All Surveys</h2>
+				<p class="charcoal">To begin each survey, select the Launch Survey icon <span class="rel">"<i class="fas fa-file-export darkBlue"></i>"</span> in the table below. Some of these questions, or the timeframe of the school year referred to, may not directly apply to your classroom or students, but just answer the best you can. Some questions in the survey have additional information and definitions that can be used if needed. To view the additional information for those questions, select the blue <span class="rel">"<i class="fas fa-info-circle darkBlue"></i>”</span> icon.</p>
+
+
+
+				<div class="greenBar d-flex justify-content-around align-items-center flex-wrap">
+					<div class="totalSurveys d-flex flex-column align-items-center">
+						<span class="rel">
+							<p class="white totalSurveyCount">5</p>
+							<img src="images/total.svg" class="img-responsive status">
+						</span>
+						<h6 class="white">TOTAL SURVEYS</h6>
+
+					</div>
+
+					<div class="notStarted d-flex flex-column align-items-center rel">
+						<p class="white notStartedCount">10</p>
+						<img src="images/not.svg" class="img-responsive status">
+						<h6 class="white">NOT STARTED</h6>
+
+					</div>
+
+					<div class="inProgress d-flex flex-column align-items-center rel">
+						<p class="white inProgressCount">6</p>
+						<img src="images/progress.svg" class="img-responsive status">
+						<h6 class="white">IN PROGRESS</h6>
+					</div>
+
+					<div class="completed d-flex flex-column align-items-center rel">
+						<p class="white completedCount">3</p>
+						<img src="images/completed.svg" class="img-responsive status">
+						<h6 class="white">COMPLETED</h6>
+					</div>
+
+					<div class="totalComplete d-flex flex-column align-items-center rel">
+						<p class="white totalCompletedCount last">12%</p>
+						<img src="images/25.svg" class="img-responsive status">
+						<h6 class="white">TOTAL % COMPLETE</h6>
+					</div>
+
+				</div>
+
+				<div class="teacherBackground">
+					<h2 class="landing-sec-H smaller">Teacher Background</h2>
+				</div>
+				<div class="teacherAttr d-flex align-items-center">
+					<div class="col-lg-2">
+						<h6 class="gray">TEACHER ID</h6>
+					</div>
+					<div class="col-lg-2">
+						<h6 class="gray">TEACHER NAME</h6>
+					</div>
+					<div class="col-lg-2">
+						<h6 class="gray">TYPE</h6>
+					</div>
+					<div class="col-lg-1">
+						<h6 class="gray">STATUS</h6>
+					</div>
+					<div class="col-lg-2 margin4">
+						<h6 class="gray">% COMPLETE</h6>
+					</div>
+					<div class="col-lg-2">
+						<h6 class="gray">DATE LAST ACCESSED</h6>
+					</div>
+					<div class="col-lg-1">
+						<h6 class="gray">LAUNCH</h6>
+					</div>
+				</div>
+
+				<div class="teacherBlocks">
+
+
+				</div>
+
+
+				<div class="childLevel">
+					<h2 class="landing-sec-H smaller">Child Level</h2>
+				</div>
+				<div class="childAttr d-flex align-items-center">
+					<div class="col-lg-2"><h6 class="gray">CHILD ID</h6></div>
+					<div class="col-lg-2"><h6 class="gray">CHILD NAME</h6></div>
+					<div class="col-lg-2"><h6 class="gray">TYPE</h6></div>
+					<div class="col-lg-1"><h6 class="gray">STATUS</h6></div>
+					<div class="col-lg-2 margin4"><h6 class="gray">% COMPLETE</h6></div>
+					<div class="col-lg-2"><h6 class="gray">DATE LAST ACCESSED</h6></div>
+					<div class="col-lg-1"><h6 class="gray">LAUNCH</h6></div>
+				</div>
+
+				<div class="childBlocks">
+
+
+				</div>
+				<div class="d-flex justify-content-center m1 showBlocks">
+					<a class="loadMore" role="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more">
+
+						<p class="darkBlue">show 10 more</p>
+
+					</a>
+					<div class="flip"></div>
+					<a class="loadAll" role="button" tabindex="0" aria-describedby="Show all" aria-label="Show all">
+
+						<p class="darkBlue">all</p>
+
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+	<section class="block50" id="info">
+
+		<div class="lightGreen d-flex flex-column align-items-center heros">
+			<div class="guide-overlay container">
+				<h2 class="landing-sec-H mb1">To learn more about the ECLS, please download the following documents:</h2>
+
+				<div class="infoBar d-flex align-items-center">
+					<div class="greenLeftBar"></div>
+					<h6 class="plum"><i class="fas fa-book plum"></i>&nbsp;&nbsp;ECLS Teacher Fact Sheet</h6>
+					<div class="greenCircle"><i class="fas fa-file-download white"></i></div>
+				</div>
+				<div class="infoBar d-flex align-items-center">
+					<div class="greenLeftBar"></div>
+					<h6 class="plum">	<i class="fas fa-chalkboard-teacher plum"></i>&nbsp;&nbsp;Teacher Letter</h6>
+
+					<div class="greenCircle">
+						<i class="fas fa-file-download white"></i>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<div class="menu-buttons-floating">
+		<ul class="menu-buttons-floating-list">
+			<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
+			<li tabindex="0" data-target="#survey"><i class="fal fa-server"></i></li>
+			<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
+			<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
+		</ul>
+	</div>
+
+
+	<div class="menu-buttons-768">
+		<ul class="menu-buttons-768-list">
+
+			<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
+			<li tabindex="0" data-target="#survey"><i class="fal fa-server"></i></li>
+			<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
+			<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
+		</ul>
+	</div>
+	<!-- <div class="rel">
+	<div class="abso">
+	<img src="images/sunshine.png" class="img-responsive">
 </div>
 
 
@@ -514,7 +552,7 @@ $('.lang-select').click(function() {
 </footer>
 
 <!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>

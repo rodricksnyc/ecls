@@ -12,6 +12,23 @@ U+FB50-FDFF, U+FE80-FEFC;
 
 */
 
+.inactiveDot.blue {
+  background-color: #00539f !important;
+  color:white;
+  z-index:999999999999;
+  padding: .1em .5em .1em .5em;
+}
+
+.activeDot.clear {
+  background-color: transparent !important;
+  color:#00539f;
+  z-index:999999999999
+}
+
+.activeDot.clear:hover {
+  color:#00539f;
+}
+
 .translate-toggle {
   display:none
 }
@@ -65,25 +82,93 @@ body {
   color:white;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
+.greenBar.top {
+  background: #00843D;
+  padding: 1.4em 0em 0em 0em;
+  margin-top: 3em;
+  font-family: 'Public Sans', sans-serif;
+  margin-top:-5em;
+  -webkit-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+  -moz-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+  box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+}
+
+.title2 {
+  font-size: 5rem;
   font-weight: 700;
-  padding-top:25px;
+  /* padding-top: 25px; */
   font-family: kepler-std, serif;
   font-weight: 700;
+  position: absolute;
+  bottom: .5em;
+  max-width:11em;
+  line-height: 1;
+  left:7%
+}
+
+.title1 {
+  font-size: 5rem;
+  font-weight: 700;
+  /* padding-top: 25px; */
+  font-family: kepler-std, serif;
+  font-weight: 700;
+  position: absolute;
+  bottom: 2.5em;
+  max-width:11em;
+  line-height: 1;
+  left:7%
+}
+
+.nav-link:after {
+  border-bottom: .35rem solid #fbb03b;
+  content: "";
+  height: .2rem;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  bottom: 0;
+}
+
+.nav-link:hover {
+  color:#fbb03b
+}
+
+.nav-link.active:after {
+  opacity: 1;
+}
+
+
+.nav-link {
+  padding-top: 0rem;
+  padding-bottom: 1.5rem;
+  border-bottom: none;
+  position: relative;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.nav-link.active {
+
+  color:#fbb03b;
+}
+
+
+.navbar{
+  padding-bottom:0rem
 }
 
 .contactUsOverlay{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 98;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
 }
 
 
@@ -368,7 +453,8 @@ span.heading {
   margin-bottom:0em !important;
   padding-bottom:0em !important;
   z-index:9998;
-  opacity:.9
+  opacity: .8;
+  backdrop-filter: blur(6px);
 }
 
 .end {
@@ -390,15 +476,15 @@ span.heading {
 
 .activeDot{
 
-      border-radius: 1rem;
-      background: #00539f;
-      color:white;
-      position: relative;
-      z-index: 22;
-      border: 2px solid #00559b;
-      width: auto;
-      padding: .1em .5em;
-      right:-1em;
+  border-radius: 1rem;
+  background: #00539f;
+  color:white;
+  position: relative;
+  z-index: 22;
+  border: 2px solid #00559b;
+  width: auto;
+  padding: .1em .5em;
+  right:-1em;
 }
 
 .language {
@@ -445,26 +531,29 @@ span.heading {
   font-weight: 600;
 }
 .hero-img-container {
-    height: calc(100vh - 23rem);
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 44rem;
-    max-height: 78rem;
-    z-index:999;
-    top:-5rem
+  /* height: calc(100vh - 23rem); */
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 44rem;
+  max-height: 78rem;
+  z-index:999;
+  top:-5rem
 }
 
 .hero-img {
-    width: 100%;
-    height: 600px;
-    padding-top: 5%;
-    background-image: url(../images/kids.jpg);
-    height: inherit;
-    min-height: inherit;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+  width: 100%;
+  height: 600px;
+  padding-top: 5%;
+  background-image: url(../images/kids.jpg);
+  height: inherit;
+  min-height: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 44rem;
+  max-height: 78rem;
+
 }
 
 /*
@@ -569,26 +658,26 @@ height: 30px;
 }
 
 /* .hero-img {
-  width: 100%;
-  height: 600px;
-  padding-top: 5%;
-  background-image: url(../images/landing.jpg);
-  height: inherit;
-  min-height: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px 100%;
+width: 100%;
+height: 600px;
+padding-top: 5%;
+background-image: url(../images/landing.jpg);
+height: inherit;
+min-height: inherit;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 0px 100%;
 
 }
 
 .hero-img-container {
-  height: calc(100vh - 23rem);
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 44rem;
+height: calc(100vh - 23rem);
+position: relative;
+display: flex;
+align-items: center;
+min-height: 44rem;
 
-  max-height: 78rem;
+max-height: 78rem;
 } */
 
 .landing-panel {
@@ -927,6 +1016,11 @@ p.charcoal {
   font-style: normal;
 
 }
+#overview .landing-sec-H {
+  margin-top: 0em;
+  padding-top: 0em;
+
+}
 
 .guide-overlay{
   position: relative;
@@ -1247,7 +1341,20 @@ h6.plum {
 
 }
 
+.embed-responsive-item {
+margin-right:25%;
+margin-left: 25%;
+  width: 50%;
 
+    height: auto;
+    min-height: 300px;
+}
+
+
+.guide-overlay2 {
+  position: relative;
+  padding:4em 2em 0em 10em;
+}
 
 .feedbackBar {
   margin-bottom:1em;
@@ -1258,6 +1365,105 @@ h6.plum {
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   position: relative;
 }
+
+.whiteBox {
+  padding: 1em 1.5em;
+  background-color: white !important;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+  -moz-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+  box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+  z-index: 25;
+  margin-bottom:1em;
+}
+
+.whiteBox legend {
+  font-size:22px !important;
+  width:100% !important;
+  text-align: center;
+}
+
+/* .whiteBox legend {
+display: flex;
+justify-content: center;
+width:100% !important;
+} */
+
+.whiteBox p.charcoal {
+  line-height: 1.2 !important;
+  font-size: 14px !important;
+  margin-top: -10px !important;
+  margin-bottom: 0px;
+}
+
+.darkGreen {
+  color:#00843D
+}
+
+.whiteBox .form-control {
+  height: auto;
+  padding: .4em 1em;
+  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.whiteBox .form-group label {
+  color: black;
+  font-family: 'Public Sans' !important;
+  position: absolute;
+  background: white;
+  top: -10px;
+    left: 10px;
+    padding: 0px 8px;
+}
+.whiteBox .form-group {
+  position: relative;
+}
+
+
+#new-user, #returning {
+    background: #d1d3d4 !important;
+    border-color: #d1d3d4 !important;
+    width:auto;
+    padding:.2rem 1.6rem;
+    border-radius: 2rem;
+    color: #6F6F6F;
+    text-transform: uppercase;
+    font-size:16px;
+      font-family: 'Public Sans' !important;
+}
+
+.whiteBox i {
+    margin-bottom: 0em !important;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+ p.dark {
+    line-height: 1.2 !important;
+    font-size: 13px !important;
+    margin-top: 5px !important;
+    margin-bottom: 0px;
+    font-weight:300;
+    font-family: 'Public Sans' !important;
+    padding: 5px 10px;
+}
+
+p.purple {
+  color: #071D49;
+    font-family: 'Public Sans' !important;
+    font-size:16px;
+    margin-bottom:5px;
+    padding: 0px 10px;
+}
+
+.grayBackground{
+  background: #e6e6e6;
+  padding:1em;
+}
+
 
 .feedbackBar:hover {
   cursor: grab;
@@ -1403,8 +1609,8 @@ footer a.white:hover {
 
 .back-to-top {
   position: fixed;
-  right: 3rem;
-  bottom: 9rem;
+  right: 1rem;
+  bottom: 2rem;
   z-index: 100;
   background: #fbb03b;
   color: #071D49;
@@ -1675,9 +1881,9 @@ footer a.white:hover {
 }
 
 .menu-buttons-floating {
-  /* visibility: hidden; */
+  visibility: hidden;
   position: fixed;
-  top:54%;
+  top:35%;
   /* bottom: 230px; */
   /* left: 3%; */
   z-index: 1;
@@ -1685,7 +1891,7 @@ footer a.white:hover {
   max-width:180px;
 
   /* transition: all 0.5s; */
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 @media (min-width:1025px) {
@@ -1696,6 +1902,7 @@ footer a.white:hover {
   .container_0, .container_1 {
     max-width: 1440px!important;
     margin: 0 auto;
+    position: relative;
   }
 }
 
@@ -2315,10 +2522,10 @@ span.blue {
   left: 0;
   position: relative;
   background-color: #fbb03b;
-      content: '';
-      display: inline-block;
-      visibility: visible;
-      border: 2px solid white;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
 }
 input[type="radio"], input[type="checkbox"] {
   margin: 4px 0 0;
@@ -2337,13 +2544,13 @@ fieldset {
 }
 
 .around .vertical {
-height: auto;
-min-height: 103px;
-border-radius: 0px;
-padding: 8px;
-padding-top: 1em;
-padding-left: 23px;
-width: 33%;
+  height: auto;
+  min-height: 103px;
+  border-radius: 0px;
+  padding: 8px;
+  padding-top: 1em;
+  padding-left: 23px;
+  width: 33%;
 
 }
 
