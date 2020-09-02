@@ -1478,6 +1478,21 @@ p.purple {
   padding:1em;
 }
 
+.stop {
+  background-color: white;
+  min-height: 10%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.verse3 {
+  background: url(../images/orange2.png) no-repeat center center;
+  min-height: 160px;
+  background-size: cover;
+  background-attachment: fixed;
+  width:100%;
+}
+
 
 .feedbackBar:hover {
   cursor: grab;
