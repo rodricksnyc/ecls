@@ -677,11 +677,23 @@ $(document).ready(function () {
 				}, 1200);
 
 				setTimeout(function () {
-					$('.text1').removeClass('transparent-opacity').addClass('animated fadeInLeft');
-				}, 2600);
+					$('.text1').removeClass('transparent-opacity').addClass('animated fadeInRight');
+				}, 2100);
 
 				setTimeout(function () {
 					$('.text2').removeClass('transparent-opacity').addClass('animated fadeInUp');
+				}, 2300);
+
+				setTimeout(function () {
+					$('.green-circle').removeClass('transparent-opacity').addClass('animated fadeIn');
+				}, 2500);
+
+				setTimeout(function () {
+					$('.flower').removeClass('transparent-opacity').addClass('animated fadeIn');
+				}, 2500);
+
+				setTimeout(function () {
+					$('.line3').removeClass('box-rotate');
 				}, 2900);
 			}
 

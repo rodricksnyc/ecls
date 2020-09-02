@@ -1,62 +1,4 @@
-.line1 {
-    background: #071D49;
-    width: auto;
-    height: 4px;
-    margin: 20px auto;
-    transition: transform 1s linear;
-    transform-origin: left;
-    transform-style: preserve-3D;
-    opacity: .8;
-    min-width: 21em;
-    border-radius: 1rem;
-    position: absolute;
-    right: 246px;
-}
 
-
-.text1 {
-    position: absolute;
-    right: 462px;
-    top: -5px;
-}
-
-.text2 {
-  position: absolute;
-  right: 210px;
-  max-width: 26em;
-  top: 25px;
-
-}
-
-.line2 {
-    background: #071D49;
-    width: auto;
-    width: 4px;
-    margin: 20px auto;
-    transition: transform 1s linear;
-    transform-origin: left;
-    transform-style: preserve-3D;
-    opacity: .8;
-    min-height: 35em;
-    border-radius: 1rem;
-    position: absolute;
-    right: 558px;
-    top: -20px;
-
-}
-
-.middle{
-
-  position: relative;
-}
-
-.box-rotate {
-  transform: scale(0);
-}
-
-.transparent-opacity {
-  opacity:0;
-}
 
 .inactiveDot.blue {
   background-color: #00539f !important;
@@ -1360,6 +1302,17 @@ p.black:nth-of-type(5) {
 width:20%
 } */
 
+p.dark {
+  line-height: 1.2 !important;
+  font-size: 13px !important;
+  margin-top: 5px !important;
+  margin-bottom: 0px;
+  font-weight:300;
+  font-family: 'Public Sans' !important;
+  padding: 5px 10px;
+}
+
+
 
 
 .percentageCircle  p.black:nth-of-type(1) {
@@ -1447,6 +1400,123 @@ h6.plum {
   height: auto;
   min-height: 300px;
 }
+
+/* line animations */
+
+.line1 {
+  background: #071D49;
+  width: auto;
+  height: 6px;
+  margin: 20px auto;
+  transition: transform 1s linear;
+  transform-origin: left;
+  transform-style: preserve-3D;
+  opacity: .8;
+  min-width: 25em;
+  border-radius: 1rem;
+  position: absolute;
+  right: 197px;
+
+}
+
+
+.line3 {
+    background: #071D49;
+    width: auto;
+    height: 6px;
+    margin: 20px auto;
+    transition: transform 1s linear;
+    transform-origin: left;
+    transform-style: preserve-3D;
+    opacity: .9;
+    min-width: 2em;
+    border-radius: 1rem;
+    position: absolute;
+    right: 34.05em;
+    top: 7em;
+    z-index: 9999;
+}
+
+.leftImg{
+  max-width:11em;
+}
+
+.flower {
+  position: absolute;
+  right: 600px;
+  max-width: 26em;
+  top: 25px;
+
+}
+
+
+.text1 {
+  position: absolute;
+  right: 427px;
+  top: -16px;
+  font-size: 23px;
+}
+
+.text2 {
+  position: absolute;
+
+right: 166px;
+max-width: 24em;
+  top: 25px;
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+
+    margin-top: 5px !important;
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-family: 'Public Sans' !important;
+    padding: 5px 10px;
+}
+
+.green-circle {
+  position: absolute;
+  right: 549px;
+  top: 10px;
+  z-index: 99;
+
+}
+
+.round {
+  max-width:1.5em;
+}
+
+.line2 {
+  background: #071D49;
+  width: auto;
+  width: 6px;
+  margin: 20px auto;
+  transition: transform 1s linear;
+  transform-origin: left;
+  transform-style: preserve-3D;
+  opacity: .8;
+  min-height: 44em;
+  border-radius: 1rem;
+  position: absolute;
+  right: 558px;
+  top: -29px;
+
+
+}
+
+.middle{
+
+  position: relative;
+}
+
+.box-rotate {
+  transform: scale(0);
+}
+
+.transparent-opacity {
+  opacity:0;
+}
+
+
 
 
 .guide-overlay2 {
@@ -1541,15 +1611,6 @@ width:100% !important;
   right: 9px;
 }
 
-p.dark {
-  line-height: 1.2 !important;
-  font-size: 13px !important;
-  margin-top: 5px !important;
-  margin-bottom: 0px;
-  font-weight:300;
-  font-family: 'Public Sans' !important;
-  padding: 5px 10px;
-}
 
 p.purple {
   color: #071D49;
