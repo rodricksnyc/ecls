@@ -976,7 +976,7 @@ p.charcoal {
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .btnContact span.plum {
@@ -1006,7 +1006,7 @@ p.charcoal {
 
 .landing-sec-H {
 
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 800;
   color: #071D49;
   padding-bottom: 5px;
@@ -1063,12 +1063,18 @@ p.charcoal {
   margin-top: 2em;
 }
 
+.lightGreen.second h2 {
+  padding-top:3%;
+}
+
 
 .guide-overlay{
   position: relative;
   padding:0
 }
-
+.content-spacer {
+  height:8vh;
+}
 
 h1.white.sentMessage {
   color: white;
@@ -1399,7 +1405,7 @@ h6.plum {
 
 .guide-overlay2 {
   position: relative;
-  padding:4em 2em 0em 10em;
+  padding:4em 2em 0em 8em;
 }
 
 .feedbackBar {
