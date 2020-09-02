@@ -1000,6 +1000,10 @@ p.charcoal {
   margin-bottom: 100px;
 }
 
+.smallImg {
+  max-width:4.5rem
+}
+
 .landing-sec-H {
 
   font-size: 32px;
@@ -1016,7 +1020,7 @@ p.charcoal {
   font-weight: 700;
 
   font-style: normal;
-  padding-top:2%;
+
 
 }
 #overview .landing-sec-H {
@@ -1025,10 +1029,40 @@ p.charcoal {
 
 }
 
+.rel {
+  position: relative;
+}
+
+
 .smallFont {
   font-size:15px !important;
-      line-height: 1.5 !important;
+  line-height: 1.5 !important;
 }
+
+.greenMiddle .smallFont {
+  font-size:14px !important;
+  margin-left:.6em;
+  margin-top:1.2em;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 9999999;
+  left: 15em;
+  top: -6em;
+
+}
+
+.absolute img {
+  max-width:20em;
+}
+
+.lightGreen.second {
+  background: #e9f4ee;
+  padding-bottom: 4em;
+  margin-top: 2em;
+}
+
 
 .guide-overlay{
   position: relative;
@@ -1354,12 +1388,12 @@ h6.plum {
 }
 
 .embed-responsive-item {
-margin-right:25%;
-margin-left: 25%;
+  margin-right:25%;
+  margin-left: 25%;
   width: 50%;
 
-    height: auto;
-    min-height: 300px;
+  height: auto;
+  min-height: 300px;
 }
 
 
@@ -1415,11 +1449,11 @@ width:100% !important;
 .whiteBox .form-control {
   height: auto;
   padding: .5em 1em;
-font-size: 15px;
+  font-size: 15px;
   border-radius: 0;
   border: 1px solid black;
   color:black;
-    font-family: 'Public Sans' !important;
+  font-family: 'Public Sans' !important;
 }
 
 .whiteBox .form-group label {
@@ -1428,8 +1462,8 @@ font-size: 15px;
   position: absolute;
   background: white;
   top: -15px;
-    left: 10px;
-    padding: 0px 8px;
+  left: 10px;
+  padding: 0px 8px;
 }
 .whiteBox .form-group {
   position: relative;
@@ -1437,40 +1471,40 @@ font-size: 15px;
 
 
 #new-user, #returning {
-    background: #d1d3d4;
-    border-color: transparent !important;
-    width:auto;
-    padding:.2rem 1.6rem;
-    border-radius: 2rem;
-    color: #6F6F6F;
-    text-transform: uppercase;
-    font-size:16px;
-      font-family: 'Public Sans' !important;
+  background: #d1d3d4;
+  border-color: transparent !important;
+  width:auto;
+  padding:.2rem 1.6rem;
+  border-radius: 2rem;
+  color: #6F6F6F;
+  text-transform: uppercase;
+  font-size:16px;
+  font-family: 'Public Sans' !important;
 }
 
 #eye, #eye2{
   margin-bottom: 0em !important;
-    position: absolute;
-    top: 11px;
-    right: 9px;
+  position: absolute;
+  top: 11px;
+  right: 9px;
 }
 
- p.dark {
-    line-height: 1.2 !important;
-    font-size: 13px !important;
-    margin-top: 5px !important;
-    margin-bottom: 0px;
-    font-weight:300;
-    font-family: 'Public Sans' !important;
-    padding: 5px 10px;
+p.dark {
+  line-height: 1.2 !important;
+  font-size: 13px !important;
+  margin-top: 5px !important;
+  margin-bottom: 0px;
+  font-weight:300;
+  font-family: 'Public Sans' !important;
+  padding: 5px 10px;
 }
 
 p.purple {
   color: #071D49;
-    font-family: 'Public Sans' !important;
-    font-size:16px;
-    margin-bottom:5px;
-    padding: 0px 10px;
+  font-family: 'Public Sans' !important;
+  font-size:16px;
+  margin-bottom:5px;
+  padding: 0px 10px;
 }
 
 .grayBackground{
@@ -1481,17 +1515,20 @@ p.purple {
 .stop {
   background-color: white;
   min-height: 10%;
-  background-size: cover;
+  /* background-size: cover; */
   background-attachment: fixed;
 }
 
 .verse3 {
-  background: url(../images/orange2.png) no-repeat center center;
-  min-height: 160px;
-  background-size: cover;
+  background: url(../images/000.png) no-repeat center center;
+  height: 100px;
+  background-size:cover;
   background-attachment: fixed;
   width:100%;
+  transform: scale(1.7);
 }
+
+
 
 
 .feedbackBar:hover {
@@ -2389,7 +2426,7 @@ label.togglePassword {
 }
 
 /* #eye, #eye2 {
-  margin-right:4px;
+margin-right:4px;
 } */
 
 .around .vertical .fas {
