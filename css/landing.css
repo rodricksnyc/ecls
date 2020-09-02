@@ -1066,7 +1066,10 @@ p.charcoal {
 .lightGreen.second h2 {
   padding-top:3%;
 }
+.lightGreen.second .description {
 
+margin: 1em 7em;
+}
 
 .guide-overlay{
   position: relative;
@@ -1678,6 +1681,14 @@ h6.plum {
   top: 26.6em;
   z-index: 99;
 
+}
+
+
+
+#two .nav-tabs .nav-link.active {
+    color: #00843D !important;
+    background-color: #fff;
+    border-color: none !important;
 }
 
 .guide-overlay2 {
