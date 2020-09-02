@@ -659,6 +659,39 @@ $(document).ready(function () {
 				var elementTop = $(this).offset().top;
 				var elementBottom = $(this).offset().top + $(this).outerHeight();
 
+				if (screenBottom > elementTop + ($(this).find('.heros3').height() + 500) && screenTop < elementBottom) {
+					$('section').removeClass('active');
+					$(this).addClass('active');
+				} else {
+					$(this).removeClass('active');
+				}
+			});
+
+			if ($('.block-3000').hasClass('active')) {
+
+				setTimeout(function () {
+					$('.line4').removeClass('box-rotate');
+				}, 600);
+
+				setTimeout(function () {
+					$('.text3').removeClass('transparent-opacity').addClass('animated fadeInLeft');
+				}, 1200);
+
+				setTimeout(function () {
+					$('.text4').removeClass('transparent-opacity').addClass('animated fadeInUp');
+				}, 1400);
+			}
+		});
+
+		$(window).on('scroll', function () {
+
+			var screenTop = $(window).scrollTop();
+			var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+			$('section').each(function () {
+				var elementTop = $(this).offset().top;
+				var elementBottom = $(this).offset().top + $(this).outerHeight();
+
 				if (screenBottom > elementTop + $(this).find('.heros').height() / 3 && screenTop < elementBottom) {
 					$('section').removeClass('active');
 					$(this).addClass('active');
@@ -678,11 +711,11 @@ $(document).ready(function () {
 
 				setTimeout(function () {
 					$('.text1').removeClass('transparent-opacity').addClass('animated fadeInRight');
-				}, 2100);
+				}, 1700);
 
 				setTimeout(function () {
 					$('.text2').removeClass('transparent-opacity').addClass('animated fadeInUp');
-				}, 2300);
+				}, 1900);
 
 				setTimeout(function () {
 					$('.green-circle').removeClass('transparent-opacity').addClass('animated fadeIn');
@@ -694,7 +727,7 @@ $(document).ready(function () {
 
 				setTimeout(function () {
 					$('.line3').removeClass('box-rotate');
-				}, 2900);
+				}, 3100);
 			}
 
 			if ($('.block10, .block-2000').hasClass('active')) {

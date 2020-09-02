@@ -1161,7 +1161,7 @@ h1.white.sentMessage {
 }
 
 .smaller {
-  font-size:26px !important
+  font-size:27px !important
 }
 
 .darkBlue {
@@ -1408,7 +1408,7 @@ h6.plum {
   width: auto;
   height: 6px;
   margin: 20px auto;
-  transition: transform 1s linear;
+  transition: transform .7s linear;
   transform-origin: left;
   transform-style: preserve-3D;
   opacity: .8;
@@ -1421,20 +1421,20 @@ h6.plum {
 
 
 .line3 {
-    background: #071D49;
-    width: auto;
-    height: 6px;
-    margin: 20px auto;
-    transition: transform 1s linear;
-    transform-origin: left;
-    transform-style: preserve-3D;
-    opacity: .9;
-    min-width: 2em;
-    border-radius: 1rem;
-    position: absolute;
-    right: 34.05em;
-    top: 7em;
-    z-index: 9999;
+  background: #071D49;
+  width: auto;
+  height: 6px;
+  margin: 20px auto;
+  transition: transform .7s linear;
+  transform-origin: left;
+  transform-style: preserve-3D;
+  opacity: .9;
+  min-width: 2em;
+  border-radius: 1rem;
+  position: absolute;
+  right: 34.05em;
+  top: 7em;
+  z-index: 9999;
 }
 
 .leftImg{
@@ -1460,17 +1460,17 @@ h6.plum {
 .text2 {
   position: absolute;
 
-right: 166px;
-max-width: 24em;
+  right: 166px;
+  max-width: 24em;
   top: 25px;
   font-size: 16px !important;
   line-height: 1.2 !important;
 
-    margin-top: 5px !important;
-    margin-bottom: 0px;
-    font-weight: 300;
-    font-family: 'Public Sans' !important;
-    padding: 5px 10px;
+  margin-top: 5px !important;
+  margin-bottom: 0px;
+  font-weight: 300;
+  font-family: 'Public Sans' !important;
+  padding: 5px 10px;
 }
 
 .green-circle {
@@ -1490,7 +1490,7 @@ max-width: 24em;
   width: auto;
   width: 6px;
   margin: 20px auto;
-  transition: transform 1s linear;
+  transition: transform .7s linear;
   transform-origin: left;
   transform-style: preserve-3D;
   opacity: .8;
@@ -1499,7 +1499,6 @@ max-width: 24em;
   position: absolute;
   right: 558px;
   top: -29px;
-
 
 }
 
@@ -1517,7 +1516,43 @@ max-width: 24em;
 }
 
 
+.line4 {
+    background: #071D49;
+    width: auto;
+    height: 6px;
+    margin: 20px auto;
+    transition: transform .7s linear;
+    transform-origin: left;
+    transform-style: preserve-3D;
+    opacity: .8;
+    min-width: 25em;
+    border-radius: 1rem;
+    position: absolute;
+    right: 533px;
+    top: 13em;
+}
 
+.text3 {
+    position: absolute;
+    right: 581px;
+    top: 8.5em;
+    font-size: 23px;
+}
+
+.text4 {
+    position: absolute;
+    right: 570px;
+    max-width: 24em;
+    top: 14.7em;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    margin-top: 5px !important;
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-family: 'Public Sans' !important;
+    padding: 5px 10px;
+    text-align: right;
+}
 
 .guide-overlay2 {
   position: relative;

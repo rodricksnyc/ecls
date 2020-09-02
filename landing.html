@@ -15,7 +15,7 @@
 	<link rel="shortcut icon" href="images/sunshine.png">
 	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/landing.css">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -264,61 +264,61 @@
 
 							<div class="col-lg-4  col-md-12 col-sm-12">
 								<div class="grayBackground">
+									<div class="whiteBox">
+										<form>
+											<legend>
+												<p class="darkGreen text-center">New Visitors</p>
+											</p>
+										</legend>
+										<p class="small charcoal">Did you receive a post card or an email about the Early Childhood Longitudinal Study? If this is your first time visiting this site, please enter the PIN from the post card or email.</p>
+										<br>
+										<div class="form-group">
+
+											<label for="accessCode1" class="togglePassword">PIN</label>
+
+											<input id="accessCode1" type="password" name="pin" class="form-control" required maxlength="">
+
+											<div id="eye" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
+										</div>
+										<div class="d-flex justify-content-center mt-4 mb-3">
+											<button type="submit" class="btn btn-info button-outlined" id="returning" tabindex="0" aria-hidden="false">Submit</button>
+										</div>
+									</form>
+								</div>
+
 								<div class="whiteBox">
 									<form>
 										<legend>
-											<p class="darkGreen text-center">New Visitors</p>
+											<p class="darkGreen text-center">Returning Visitors</p>
 										</p>
 									</legend>
-									<p class="small charcoal">Did you receive a post card or an email about the Early Childhood Longitudinal Study? If this is your first time visiting this site, please enter the PIN from the post card or email.</p>
+									<p class="small charcoal">For returning visitors, please enter your username and password.</p>
 									<br>
 									<div class="form-group">
 
-										<label for="accessCode1" class="togglePassword">PIN</label>
+										<label for="name">Username</label>
+										<input type="text" class="form-control" id="name" placeholder="">
 
-										<input id="accessCode1" type="password" name="pin" class="form-control" required maxlength="">
+									</div>
 
-										<div id="eye" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
+									<div class="form-group">
+										<label for="accessCode2">Password</label>
+										<input id="accessCode2" type="password" class="form-control"  placeholder="">
+										<div id="eye2" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
+
 									</div>
 									<div class="d-flex justify-content-center mt-4 mb-3">
-										<button type="submit" class="btn btn-info button-outlined" id="returning" tabindex="0" aria-hidden="false">Submit</button>
+										<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false">Submit</button>
 									</div>
 								</form>
 							</div>
 
-							<div class="whiteBox">
-								<form>
-									<legend>
-										<p class="darkGreen text-center">Returning Visitors</p>
-									</p>
-								</legend>
-								<p class="small charcoal">For returning visitors, please enter your username and password.</p>
-								<br>
-								<div class="form-group">
+							<p class="purple">Technical and Security Recommendations</p>
+							<p class="dark">We recommend using a desktop or laptop computer to complete the study activities. For the best experience, use Chrome, Edge, Safari, or Firefox.</p>
+							<p class="dark">When you have finished or if you need to stop before finishing, please LOG OUT of the survey system by selecting "Logout" and CLOSE ALL browser windows or screens to keep your responses secure. For example, if you used Chrome or Safari to open the website, make sure no Chrome or Safari windows or screens are open after you end the session. Not closing all browsers may allow someone else to see your responses.</p>
 
-									<label for="name">Username</label>
-									<input type="text" class="form-control" id="name" placeholder="">
-
-								</div>
-
-								<div class="form-group">
-									<label for="accessCode2">Password</label>
-									<input id="accessCode2" type="password" class="form-control"  placeholder="">
-									<div id="eye2" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
-
-								</div>
-								<div class="d-flex justify-content-center mt-4 mb-3">
-									<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false">Submit</button>
-								</div>
-							</form>
 						</div>
-
-						<p class="purple">Technical and Security Recommendations</p>
-						<p class="dark">We recommend using a desktop or laptop computer to complete the study activities. For the best experience, use Chrome, Edge, Safari, or Firefox.</p>
-						<p class="dark">When you have finished or if you need to stop before finishing, please LOG OUT of the survey system by selecting "Logout" and CLOSE ALL browser windows or screens to keep your responses secure. For example, if you used Chrome or Safari to open the website, make sure no Chrome or Safari windows or screens are open after you end the session. Not closing all browsers may allow someone else to see your responses.</p>
-
 					</div>
-				</div>
 				</div>
 
 
@@ -425,7 +425,7 @@
 
 <div class="content-spacer"></div>
 
-
+<div class="rel">
 <section class="block-2000">
 	<div class="d-flex flex-column align-items-center heros">
 		<div class="guide-overlay container">
@@ -436,37 +436,34 @@
 
 	</div>
 
-
-
-
 	<div class="heros">
 		<div class="container">
 			<div class="row">
 
 				<div class="col-lg-12 col-sm-12">
 
-		<div class="middle">
+					<div class="middle">
 
-			<p class="darkGreen text-center text1 transparent-opacity">Spring 2021</p>
-			<div class="line1 box-rotate"></div>
+						<p class="darkGreen text-center text1 transparent-opacity">Spring 2021</p>
+						<div class="line1 box-rotate"></div>
 
 
-			<p class="transparent-opacity text2">ECLS representatives will contact districts and schools to introduce the ECLS and to discuss study participation in a field test in the fall of the 2021–22 school year.</p>
-			<div class="green-circle transparent-opacity">
-				<img src="images/circle.svg" class="img-fluid round">
+						<p class="transparent-opacity text2">ECLS representatives will contact districts and schools to introduce the ECLS and to discuss study participation in a field test in the fall of the 2021–22 school year.</p>
+						<div class="green-circle transparent-opacity">
+							<img src="images/circle.svg" class="img-fluid round">
+						</div>
+
+						<div class="flower transparent-opacity">
+							<img src="images/flowers.svg" class="img-fluid leftImg">
+						</div>
+
+						<div class="line2 box-rotate"></div>
+
+						<div class="line3 box-rotate"></div>
+					</div>
+				</div>
+
 			</div>
-
-			<div class="flower transparent-opacity">
-				<img src="images/flowers.svg" class="img-fluid leftImg">
-			</div>
-
-			<div class="line2 box-rotate"></div>
-
-			<div class="line3 box-rotate"></div>
-		</div>
-	</div>
-
-		</div>
 
 		</div>
 
@@ -474,6 +471,47 @@
 	</div>
 </section>
 
+
+<section class="block-3000">
+
+
+	<div class="heros3">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-12 col-sm-12">
+
+					<div class="middle">
+
+						<p class="darkGreen text-center text3 transparent-opacity">Late summer/Early fall 2021</p>
+						<div class="line4 box-rotate"></div>
+						<p class="text4 transparent-opacity">ECLS representatives will contact participating schools to discuss the study activities and logistics in more detail. Study staff will work with the school staff to select a sample of children and begin notifying parents about the study.</p>
+
+<!--
+						<p class="text4">ECLS representatives will contact districts and schools to introduce the ECLS and to discuss study participation in a field test in the fall of the 2021–22 school year.</p>
+						<div class="green-circle2">
+							<img src="images/circle.svg" class="img-fluid round">
+						</div>
+
+						<div class="house">
+							<img src="images/flowers.svg" class="img-fluid leftImg">
+						</div>
+
+
+
+						<div class="line5"></div> -->
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+</section>
+
+</div>
 
 
 

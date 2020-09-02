@@ -784,6 +784,56 @@ if ($(document).innerWidth() >= 768) {
 			var elementTop = $(this).offset().top;
 			var elementBottom = $(this).offset().top + $(this).outerHeight();
 
+			if ((screenBottom > elementTop + ($(this).find('.heros3').height() + 500 )) && (screenTop < elementBottom)) {
+				$('section').removeClass('active')
+				$(this).addClass('active')
+			}
+			else {
+				$(this).removeClass('active')
+			}
+		})
+
+
+
+
+		if ($('.block-3000').hasClass('active')) {
+
+			setTimeout(function(){
+				$('.line4').removeClass('box-rotate')
+			},600)
+
+			setTimeout(function(){
+				$('.text3').removeClass('transparent-opacity').addClass('animated fadeInLeft')
+			}, 1200)
+
+			setTimeout(function(){
+				$('.text4').removeClass('transparent-opacity').addClass('animated fadeInUp')
+			}, 1400)
+
+		}
+
+
+
+
+
+
+	})
+
+
+
+
+
+
+
+	$(window).on('scroll', function() {
+
+		var screenTop = $(window).scrollTop();
+		var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+		$('section').each(function() {
+			var elementTop = $(this).offset().top;
+			var elementBottom = $(this).offset().top + $(this).outerHeight();
+
 			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 3 )) && (screenTop < elementBottom)) {
 				$('section').removeClass('active')
 				$(this).addClass('active')
@@ -797,23 +847,21 @@ if ($(document).innerWidth() >= 768) {
 
 		if ($('.block-2000').hasClass('active')) {
 
-		setTimeout(function(){
-			$('.line1').removeClass('box-rotate')
-		},600)
 			setTimeout(function(){
-					$('.line2').removeClass('box-rotate')
+				$('.line1').removeClass('box-rotate')
+			},600)
+			setTimeout(function(){
+				$('.line2').removeClass('box-rotate')
 			}, 1200)
-
-
 
 
 			setTimeout(function(){
 				$('.text1').removeClass('transparent-opacity').addClass('animated fadeInRight')
-			}, 2100)
+			}, 1700)
 
 			setTimeout(function(){
 				$('.text2').removeClass('transparent-opacity').addClass('animated fadeInUp')
-			}, 2300)
+			}, 1900)
 
 			setTimeout(function(){
 				$('.green-circle').removeClass('transparent-opacity').addClass('animated fadeIn')
@@ -825,10 +873,12 @@ if ($(document).innerWidth() >= 768) {
 
 			setTimeout(function(){
 				$('.line3').removeClass('box-rotate')
-			}, 2900)
+			}, 3100)
 
 
 		}
+
+
 
 
 
@@ -1220,7 +1270,7 @@ $('.tooltips-elements').on('focusout', function() {
 
 var open = function() {
 
-		$('.contactUsOverlay').show();
+	$('.contactUsOverlay').show();
 
 	$('#theform input').each(function () {
 		$(this).attr('tabindex', '0');
@@ -1619,9 +1669,9 @@ $('#ingles').attr('href' , mainURL)
 $(window).on('load', function() {
 	if(mainURL.includes('googtrans(en|es)')) {
 
-			//
-			// $(this).removeClass('inactiveDot').addClass('activeDot')
-			// $('.english').removeClass('activeDot').addClass('inactiveDot')
+		//
+		// $(this).removeClass('inactiveDot').addClass('activeDot')
+		// $('.english').removeClass('activeDot').addClass('inactiveDot')
 
 		// $('#ingles').removeClass('activeDot').addClass('inactiveDot')
 
@@ -1651,8 +1701,8 @@ $('#ingles').attr('href' , mainURL)
 // })
 
 $('.spanish').on('click', function(e) {
-$('.spanish').addClass('blue')
-$('.english').addClass('clear')
+	$('.spanish').addClass('blue')
+	$('.english').addClass('clear')
 })
 
 
@@ -1688,125 +1738,125 @@ $('.english').on('click', function(e) {
 
 
 $(".scrollIt").on("click", function(event) {
-    if (
-        location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
-        &&
-        location.hostname === this.hostname
-    ) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 1000, function() {
-                var $target = $(target);
-                $target.focus();
-                if ($target.is(":focus")) {
-                    return false;
-                } else {
-                    $target.attr('tabindex','-1');
-                    $target.focus();
-                }
-            });
-        }
-    }
-});
+	if (
+		location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+			&&
+			location.hostname === this.hostname
+		) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000, function() {
+					var $target = $(target);
+					$target.focus();
+					if ($target.is(":focus")) {
+						return false;
+					} else {
+						$target.attr('tabindex','-1');
+						$target.focus();
+					}
+				});
+			}
+		}
+	});
 
 
-function show() {
-	var p = $('#accessCode1');
-	p.attr('type', 'text');
-
-}
-
-function hide() {
-	var p = $('#accessCode1');
-	p.attr('type', 'password');
-
-}
-
-var pwShown = 0;
-
-var clickEye = function() {
-
-	if (pwShown == 0) {
-		pwShown = 1;
-		show();
-
-		$("#eye i").replaceWith('<i class="fas fa-eye-slash darkBlue"></i>')
-
-	} else {
-		pwShown = 0;
-		hide();
-
-		$("#eye i").replaceWith('<i class="fas fa-eye darkBlue"></i>')
+	function show() {
+		var p = $('#accessCode1');
+		p.attr('type', 'text');
 
 	}
 
-}
-
-$("#eye").keypress(
-	clickEye
-
-).click(
-	clickEye
-);
-
-function show2() {
-
-	var s = $('#accessCode2');
-
-	s.attr('type', 'text');
-}
-
-function hide2() {
-
-	var s = $('#accessCode2');
-
-	s.attr('type', 'password');
-}
-
-var pwShown2 = 0;
-
-var clickEye2 = function() {
-
-
-	if (pwShown2 == 0) {
-		pwShown2 = 1;
-		show2();
-
-		$("#eye2 i").replaceWith('<i class="fas fa-eye-slash darkBlue"></i>')
-
-	} else {
-		pwShown2 = 0;
-		hide2();
-
-		$("#eye2 i").replaceWith('<i class="fas fa-eye darkBlue"></i>')
+	function hide() {
+		var p = $('#accessCode1');
+		p.attr('type', 'password');
 
 	}
 
-}
+	var pwShown = 0;
 
-$("#eye2").keypress(
-	clickEye2
+	var clickEye = function() {
 
-).click(
-	clickEye2
-);
+		if (pwShown == 0) {
+			pwShown = 1;
+			show();
 
+			$("#eye i").replaceWith('<i class="fas fa-eye-slash darkBlue"></i>')
 
-$("#eye, #eye2").on("keyup", function (e) {
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).css('outline', 'dashed 3px #4599ff')
+		} else {
+			pwShown = 0;
+			hide();
+
+			$("#eye i").replaceWith('<i class="fas fa-eye darkBlue"></i>')
+
+		}
+
 	}
 
-})
+	$("#eye").keypress(
+		clickEye
 
-$('#eye, #eye2').on('focusout', function() {
-	$(this).css('outline', 'none')
-})
+	).click(
+		clickEye
+	);
+
+	function show2() {
+
+		var s = $('#accessCode2');
+
+		s.attr('type', 'text');
+	}
+
+	function hide2() {
+
+		var s = $('#accessCode2');
+
+		s.attr('type', 'password');
+	}
+
+	var pwShown2 = 0;
+
+	var clickEye2 = function() {
+
+
+		if (pwShown2 == 0) {
+			pwShown2 = 1;
+			show2();
+
+			$("#eye2 i").replaceWith('<i class="fas fa-eye-slash darkBlue"></i>')
+
+		} else {
+			pwShown2 = 0;
+			hide2();
+
+			$("#eye2 i").replaceWith('<i class="fas fa-eye darkBlue"></i>')
+
+		}
+
+	}
+
+	$("#eye2").keypress(
+		clickEye2
+
+	).click(
+		clickEye2
+	);
+
+
+	$("#eye, #eye2").on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).css('outline', 'dashed 3px #4599ff')
+		}
+
+	})
+
+	$('#eye, #eye2').on('focusout', function() {
+		$(this).css('outline', 'none')
+	})
 
 	//
 	// if($('#accessCode1').val() == '')    {
@@ -1823,13 +1873,13 @@ $('#eye, #eye2').on('focusout', function() {
 
 
 	$('#accessCode1').keydown(function (event) {
-    $('#returning').css({
+		$('#returning').css({
 			'background': '#00843D',
 			'color' :'white'
 
 		});
 
-  });
+	});
 
 	$('#accessCode2').keydown(function (event) {
 		$('#new-user').css({
