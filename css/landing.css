@@ -1968,13 +1968,14 @@ footer a.white:hover {
 
 @media (min-width:1025px) {
   .menu-buttons-floating {
-    margin-left:2em;
+    margin-left:0em;
   }
 
   .container_0, .container_1 {
-    max-width: 1440px!important;
+    max-width: 1600px!important;
     margin: 0 auto;
     position: relative;
+    padding-left:2em;
   }
 }
 
