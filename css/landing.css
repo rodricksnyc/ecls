@@ -277,7 +277,7 @@ header a:hover {
 }
 
 h2 {
-  padding: 7% 0;
+  padding: 7% 0 2% 0;
   text-align: center;
   font-size: 38px;
   /* text-shadow: 2px 2px 5px rgb(255, 255, 255); */
@@ -1047,8 +1047,8 @@ p.charcoal {
 
 .absolute {
   position: absolute;
-  z-index: 9999999;
-  left: 15em;
+  z-index: 9999;
+  left: 19.6%;
   top: -6em;
 
 }
