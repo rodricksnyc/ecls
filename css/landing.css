@@ -1408,7 +1408,7 @@ h6.plum {
   width: auto;
   height: 6px;
   margin: 20px auto;
-  transition: transform .7s linear;
+  transition: transform .5s linear;
   transform-origin: left;
   transform-style: preserve-3D;
   opacity: .8;
@@ -1425,20 +1425,26 @@ h6.plum {
   width: auto;
   height: 6px;
   margin: 20px auto;
-  transition: transform .7s linear;
+  transition: transform .3s linear;
   transform-origin: left;
   transform-style: preserve-3D;
   opacity: .9;
-  min-width: 2em;
+  min-width: 1.7em;
   border-radius: 1rem;
   position: absolute;
-  right: 34.05em;
+  right: 34.2em;
   top: 7em;
   z-index: 9999;
 }
 
+
+
 .leftImg{
   max-width:11em;
+}
+
+.rightImg{
+    max-width:14em;
 }
 
 .flower {
@@ -1446,6 +1452,23 @@ h6.plum {
   right: 600px;
   max-width: 26em;
   top: 25px;
+
+}
+
+
+.leaves {
+  position: absolute;
+  right: 600px;
+  max-width: 26em;
+  top: 29em;
+
+}
+
+.house {
+  position: absolute;
+  right: 300px;
+  max-width: 26em;
+  top: 14em;
 
 }
 
@@ -1473,6 +1496,21 @@ h6.plum {
   padding: 5px 10px;
 }
 
+.text6 {
+  position: absolute;
+  right: 120px;
+    max-width: 27em;
+  top: 28em;
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+
+  margin-top: 5px !important;
+  margin-bottom: 0px;
+  font-weight: 300;
+  font-family: 'Public Sans' !important;
+  padding: 5px 10px;
+}
+
 .green-circle {
   position: absolute;
   right: 549px;
@@ -1490,7 +1528,7 @@ h6.plum {
   width: auto;
   width: 6px;
   margin: 20px auto;
-  transition: transform .7s linear;
+  transition: transform .3s linear;
   transform-origin: left;
   transform-style: preserve-3D;
   opacity: .8;
@@ -1521,7 +1559,7 @@ h6.plum {
     width: auto;
     height: 6px;
     margin: 20px auto;
-    transition: transform .7s linear;
+    transition: transform .3s linear;
     transform-origin: left;
     transform-style: preserve-3D;
     opacity: .8;
@@ -1542,7 +1580,7 @@ h6.plum {
 .text4 {
     position: absolute;
     right: 570px;
-    max-width: 24em;
+    max-width: 20em;
     top: 14.7em;
     font-size: 16px !important;
     line-height: 1.2 !important;
@@ -1552,6 +1590,64 @@ h6.plum {
     font-family: 'Public Sans' !important;
     padding: 5px 10px;
     text-align: right;
+}
+
+.line5 {
+    background: #071D49;
+    width: auto;
+    height: 6px;
+    margin: 20px auto;
+    transition: transform .3s linear;
+    transform-origin: left;
+    transform-style: preserve-3D;
+    opacity: .9;
+    min-width: 1.7em;
+    border-radius: 1rem;
+    position: absolute;
+    right: 34.2em;
+    top: 20em;
+    z-index: 9999;
+}
+
+
+.line6 {
+    background: #071D49;
+    width: auto;
+    height: 6px;
+    margin: 20px auto;
+    transition: transform .3s linear;
+    transform-origin: left;
+    transform-style: preserve-3D;
+    opacity: .8;
+    min-width: 25em;
+    border-radius: 1rem;
+    position: absolute;
+    right: 197px;
+    top: 26em;
+}
+
+.text5 {
+    position: absolute;
+    right: 458px;
+    top: 17.5em;
+    font-size: 23px;
+}
+
+
+.green-circle2 {
+  position: absolute;
+  right: 549px;
+  top: 13.6em;
+  z-index: 99;
+
+}
+
+.green-circle3 {
+  position: absolute;
+  right: 549px;
+  top: 26.6em;
+  z-index: 99;
+
 }
 
 .guide-overlay2 {
