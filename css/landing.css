@@ -1759,7 +1759,7 @@ h6.plum {
 }
 
 #two .tab-pane {
-  padding:1em;
+  padding:2em 1em;
 }
 
 .guide-overlay2 {
@@ -1882,6 +1882,12 @@ width:100% !important;
     font-weight: 300;
     padding-right: .5em;
 
+}
+
+#two .darkGreen {
+    color: #00843D;
+    font-size: 34px;
+    line-height: 1.2;
 }
 
 
