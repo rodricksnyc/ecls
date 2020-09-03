@@ -5322,6 +5322,8 @@ transform: scale(0.8);
 
 }
 
+
+
 @media (max-width:991px) and (min-width:768px) {
   .pt13 {
     padding-top: 8em;
@@ -6646,13 +6648,26 @@ body{
   }
 
 }
+
 @media (max-width:1366px) and (max-height:1024px)  {
+.animation {
+    min-height: 105vh;
+}
+.greenBlocks img {
+    max-width: 14em;
+}
+.purpleBlocks img {
+    max-width: 14em;
+}
+
+}
+/* @media (max-width:1366px) and (max-height:1024px)  {
   .container_0, .container_1 {
     max-width: 1220px!important;
     margin: 0 auto;
   }
 
-}
+} */
 
 
 
@@ -6688,6 +6703,19 @@ body{
   .back-to-top{
     position: fixed;
   }
+}
+
+@media (max-width:1024px) and (max-height:768px) {
+  .animation {
+    min-height: 134vh;
+    margin-left: 10vw;
+}
+.absolute img {
+    max-width: 20em;
+}
+.absolute{
+  top:-7em
+}
 }
 
 
@@ -6951,6 +6979,32 @@ body{
 }
 
 @media  (max-width:767px)  {
+  #two .tab-pane {
+    padding: 2em 2em;
+}
+
+  .across {
+    flex-direction:column;
+  }
+  .block-list {
+
+    justify-content: center;
+
+  }
+  .whiteBox.new {
+    margin-right:0em
+  }
+  .greenBlocks p.white.small {
+    max-width:none;
+        margin-bottom: 1em;
+  }
+    .purpleBlocks, .greenBlocks {
+      margin: 1em 1em 0em 1em;
+}
+  .purpleBlocks p.white.small {
+    max-width:none;
+        margin-bottom: 1em;
+  }
 
   .block10 .content-spacer {
     height: 5vh;

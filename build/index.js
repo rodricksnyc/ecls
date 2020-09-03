@@ -649,6 +649,7 @@ $(document).ready(function () {
 
 	$('li[data-target="#overview"]').addClass('activated');
 
+	// if ($(document).innerWidth() >= 768) {
 	// 	$(window).on('scroll', function() {
 	//
 	// 		var screenTop = $(window).scrollTop();
@@ -1030,6 +1031,9 @@ $(document).ready(function () {
 		// 	$('#slideOut').removeClass('showSlideOut')
 		// }
 	});
+
+	// }
+
 
 	if ($('.newBlocks').length < 10) {
 		$('.showBlocks').children().hide();
