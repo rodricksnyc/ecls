@@ -774,7 +774,7 @@ else {
 
 $('li[data-target="#overview"]').addClass('activated')
 
-if ($(document).innerWidth() >= 768) {
+// if ($(document).innerWidth() >= 768) {
 	// 	$(window).on('scroll', function() {
 	//
 	// 		var screenTop = $(window).scrollTop();
@@ -1185,7 +1185,7 @@ if ($(document).innerWidth() >= 768) {
 	})
 
 
-}
+// }
 
 
 if ($('.newBlocks').length < 10) {
