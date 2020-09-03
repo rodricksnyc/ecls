@@ -1117,7 +1117,7 @@ if ($(document).innerWidth() >= 768) {
 
 
 
-if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')  ) {
+		if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')  ) {
 
 
 			$('li[data-target="#overview"]').addClass('activated')
