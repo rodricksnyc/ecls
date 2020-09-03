@@ -952,10 +952,6 @@ if ($(document).innerWidth() >= 768) {
 
 
 
-
-
-
-
 	$(window).on('scroll', function() {
 
 		var screenTop = $(window).scrollTop();
