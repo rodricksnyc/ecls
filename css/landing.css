@@ -1387,7 +1387,7 @@ p.dark {
 h6.plum {
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0em;
   padding: 0em;
 }
@@ -1814,11 +1814,12 @@ width:100% !important;
 }
 
 #two .whiteBox p.charcoal {
-  line-height: 1.2 !important;
-  font-size: 14px !important;
+  /* line-height: 1.2 !important;
+  font-size: 14px !important; */
   margin-top: 10px !important;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
+
 
 .whiteBox .form-control {
   height: auto;
@@ -1847,12 +1848,39 @@ width:100% !important;
   background: #00843D;
   height:auto;
 
-  padding:1em 1.5em;
-  max-width: 30em;
-  margin: 1em 1em 1em 0em;
-  min-height:12em
+  padding: 1.2em 1.6em;
+      max-width: 30em;
+      margin: 1em 1em 0em 0em;
+      min-height: 12em;
 }
 
+.purpleBlocks {
+  background:#3a4064;
+  height:auto;
+
+  padding: 1.2em 1.6em;
+      max-width: 30em;
+      margin: 1em 1em 0em 0em;
+      min-height: 12em;
+}
+
+.purpleBlocks img {
+  max-width:16em
+}
+
+.purpleBlocks .totalSurveyCount {
+    font-family: kepler-std, serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.purpleBlocks p.white.small {
+    font-family: 'Public Sans' !important;
+    margin: 0;
+    max-width: 11em;
+    font-weight: 300;
+    padding-right: .5em;
+}
 
 .greenBlocks img {
   max-width:16em
@@ -1866,7 +1894,8 @@ width:100% !important;
   align-items: center;
   list-style-type: none;
   margin-left:0em;
-  padding-left:0em
+  padding-left:0em;
+  margin-bottom:2em
 }
 
 .greenBlocks .totalSurveyCount {
@@ -1884,12 +1913,78 @@ width:100% !important;
 
 }
 
+a.darkBlue {
+  color:#00539f !important
+}
+
+.blueCircle2 {
+    position: absolute;
+    border-radius: 50%;
+    background: #00539f;
+    height: 4rem;
+    width: 4rem;
+    right: -2rem;
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,1);
+    -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,1);
+    box-shadow: 0px 0px 19px -1px rgba(175,175,175,1);
+}
+
+.blueCircle2 i {
+    position: absolute;
+    top: 25%;
+    left: 31%;
+    color:white;
+    font-size: 31px;
+}
+
+.goldLeftBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 12px;
+    background: #fbb03b;
+}
+
+.infoBar.larger{
+  min-height:153px
+}
+
+
+.videoBar {
+
+    min-width:220px;
+    height: auto;
+    max-height: 200px;
+
+}
+
+.absolute-video {
+  position: absolute;
+  right: 0px;
+    bottom: -9px;
+
+}
+
+
 #two .darkGreen {
     color: #00843D;
     font-size: 34px;
     line-height: 1.2;
 }
 
+#two .plum {
+    color: #071D49;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.lightGreen.bottom {
+    background: #e9f4ee;
+    padding-bottom: 10em;
+    margin-top: 0em;
+    padding-top:5em;
+}
 
 /* .greenBlocks .vertical{
   margin-right: 2em;
