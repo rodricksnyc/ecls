@@ -1683,13 +1683,58 @@ h6.plum {
 
 }
 
+.whiteBox.new {
+    padding: 0;
+    background-color: white !important;
+    position: relative;
+
+    z-index: 25;
+    margin-bottom: 1em;
+        margin-right: 4em;
+}
+
+
+#two .nav-tabs .nav-link{
+  color:#071D49;
+  font-family: 'Public Sans', sans-serif;
+width: 100%;
+border-color:transparent;
+font-weight: 400;
+padding-top: .6em;
+margin-bottom: 0em;
+padding-bottom: .7em;
+border-radius: 0rem;
+}
+
+#two .nav-tabs .nav-item {
+    margin-bottom: -1px;
+      width:33.33%;
+      background:#e6e6e6
+}
 
 
 #two .nav-tabs .nav-link.active {
     color: #00843D !important;
     background-color: #fff;
     border-color: none !important;
+      font-family: 'Public Sans', sans-serif;
+      background: white;
+      font-weight: 400;
+padding-top: .6em;
+margin-bottom: 0em;
+padding-bottom: .7em;
+border-radius: 0rem;
 }
+
+#two .nav-tabs {
+    border-bottom: none;
+    width: 100%;
+}
+
+#two .nav-link:after {
+    border-bottom: none;
+
+  }
 
 .guide-overlay2 {
   position: relative;
