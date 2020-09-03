@@ -6674,11 +6674,188 @@ body{
 .line4 {
   min-width:22em;
 }
+.embed-responsive-item {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    min-height:400px
+}
+.block10 .content-spacer {
+    height: 1vh;
+}
+
+.back-to-top{
+  position: fixed;
+}
 }
 
 
 
 @media (min-width:768px) and (max-width:991px)  {
+  .title2 {
+      font-size: 4rem;
+      position: relative;
+      left: 4%;
+
+      top: 446px;
+  }
+
+  .block10 .content-spacer {
+      height: 5vh;
+  }
+
+  .embed-responsive-item {
+    margin-right: 15%;
+    margin-left: 15%;
+    width: 70%;
+    height: auto;
+    min-height: 300px;
+}
+
+  .guide-overlay2 {
+    position: relative;
+    padding: 4em 4em 0em 7em;
+}
+
+  .title1 {
+      font-size: 4rem;
+      position: relative;
+      left: 4%;
+
+      top: 449px;
+  }
+
+.greenMiddle  .offset-md-1 {
+    margin-left: 0;
+}
+
+.greenMiddle  .offset-md-2 {
+    margin-left: 0;
+}
+
+.absolute img {
+    max-width: 17em;
+}
+
+.absolute {
+
+    top: -5em;
+}
+
+.animation {
+  min-height: 108vh;
+  margin-left: 0;
+  width: 141vw;
+}
+
+
+.animation .landing-sec-H {
+  left:-20.5vw
+}
+
+.text3 {
+    position: absolute;
+    right: 581px;
+    top: 6.7em;
+    font-size: 23px;
+    min-width: 7em;
+    text-align: right !important;
+    line-height: 1.1 !important
+}
+
+.text4 {
+ min-width: 14.5em;
+}
+.text6 {
+
+    right: 167px;
+
+    max-width: 24em;
+}
+
+#two .offset-md-3 {
+    margin-left: 12%;
+}
+
+#two .nav-tabs .nav-item,
+#two .nav-tabs .nav-item:focus,
+#two .nav-tabs .nav-item:hover {
+  height: 5em;
+}
+
+#two .nav-tabs .nav-item.active {
+  height: 5em;
+}
+#two .across {
+
+    flex-direction: column;
+}
+
+#two  .totalSurveyCount {
+  font-size:2em
+}
+
+#two p.white.small {
+    font-family: 'Public Sans' !important;
+    margin: 0;
+    max-width: 13em;
+    font-weight: 300;
+    padding-right: .5em;
+    font-size: 1.1em !important;
+    margin-bottom: 1em;
+}
+
+.greenBlocks img {
+    max-width: 14em;
+}
+
+.greenBlocks:last-of-type{
+  margin-left:25%;
+}
+#two .nav-tabs .nav-link {
+    font-size: 17px;
+}
+
+.purpleBlocks img {
+    max-width: 13em;
+}
+
+
+.whiteBox.new {
+  margin-right:0em
+}
+
+
+.animation .darkgreen{
+  line-height: 1;
+}
+.line4 {
+    min-width: 13em;
+}
+.leftImg {
+  max-width:9em
+}
+
+  .nav-link {
+
+    font-size: 1em;
+
+}
+
+.absolute2 {
+
+    top: -5em;
+}
+.absolute2 img {
+    max-width: 17em;
+}
+
+.lightGreen.second .description {
+    margin: 1em 0em;
+}
+
+
   .logo {
     min-width: 10em;
   }
