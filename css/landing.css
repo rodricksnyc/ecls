@@ -1068,7 +1068,7 @@ p.charcoal {
 }
 .lightGreen.second .description {
 
-margin: 1em 7em;
+  margin: 1em 7em;
 }
 
 .guide-overlay{
@@ -1684,57 +1684,83 @@ h6.plum {
 }
 
 .whiteBox.new {
-    padding: 0;
-    background-color: white !important;
-    position: relative;
+  padding: 0;
+  background-color: white !important;
+  position: relative;
 
-    z-index: 25;
-    margin-bottom: 1em;
-        margin-right: 4em;
+  z-index: 25;
+  margin-bottom: 1em;
+  margin-right: 4em;
+  box-shadow:none;
+
 }
 
 
 #two .nav-tabs .nav-link{
   color:#071D49;
   font-family: 'Public Sans', sans-serif;
-width: 100%;
-border-color:transparent;
-font-weight: 400;
-padding-top: .6em;
-margin-bottom: 0em;
-padding-bottom: .7em;
-border-radius: 0rem;
+  width: 100%;
+  border-color:transparent;
+  font-weight: 400;
+  padding-top: 1em;
+  margin-bottom: 0em;
+  padding-bottom: 1em;
+  border-radius: 0rem;
+  font-size:17px;
+  -webkit-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+  -moz-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+  box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
 }
 
 #two .nav-tabs .nav-item {
-    margin-bottom: -1px;
-      width:33.33%;
-      background:#e6e6e6
+  margin-bottom: -1px;
+  width:33.33%;
+  background:#e6e6e6
 }
 
 
 #two .nav-tabs .nav-link.active {
-    color: #00843D !important;
-    background-color: #fff;
-    border-color: none !important;
-      font-family: 'Public Sans', sans-serif;
-      background: white;
-      font-weight: 400;
-padding-top: .6em;
-margin-bottom: 0em;
-padding-bottom: .7em;
-border-radius: 0rem;
+  color: #00843D !important;
+  background-color: #fff;
+  border-color: none !important;
+  font-family: 'Public Sans', sans-serif;
+  background: white;
+  font-weight: 400;
+  padding-top: 1em;
+  margin-bottom: 0em;
+  padding-bottom: 1em;
+  font-size:17px;
+  border-radius: 0rem;
+  -webkit-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+  -moz-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+  box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+}
+
+
+#two .nav-tabs .nav-link.active:after {
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 15px;
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
 }
 
 #two .nav-tabs {
-    border-bottom: none;
-    width: 100%;
+  border-bottom: none;
+  width: 100%;
 }
 
 #two .nav-link:after {
-    border-bottom: none;
+  border-bottom: none;
 
-  }
+}
+
+#two .tab-pane {
+  padding:1em;
+}
 
 .guide-overlay2 {
   position: relative;
@@ -1782,7 +1808,16 @@ width:100% !important;
 }
 
 .darkGreen {
-  color:#00843D
+  color:#00843D;
+  font-size:23px;
+  margin:0em
+}
+
+#two .whiteBox p.charcoal {
+  line-height: 1.2 !important;
+  font-size: 14px !important;
+  margin-top: 10px !important;
+  margin-bottom: 0px;
 }
 
 .whiteBox .form-control {
@@ -1806,6 +1841,71 @@ width:100% !important;
 }
 .whiteBox .form-group {
   position: relative;
+}
+
+.greenBlocks {
+  background: #00843D;
+  height:auto;
+
+  padding:1em 1.5em;
+  max-width: 30em;
+  margin: 1em 1em 1em 0em;
+  min-height:12em
+}
+
+
+.greenBlocks img {
+  max-width:16em
+}
+
+.block-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  margin-left:0em;
+  padding-left:0em
+}
+
+.greenBlocks .totalSurveyCount {
+  font-family: kepler-std, serif;
+  font-size: 3em;
+  margin: 0;
+
+}
+.greenBlocks p.white.small {
+  font-family: 'Public Sans' !important;
+    margin: 0;
+    max-width: 11em;
+    font-weight: 300;
+    padding-right: .5em;
+
+}
+
+
+/* .greenBlocks .vertical{
+  margin-right: 2em;
+} */
+
+.vertical {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.across {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -2962,7 +3062,7 @@ width: 36%;
 width: 22%;
 } */
 
-.vertical {
+/* .vertical {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -2975,7 +3075,7 @@ width: 22%;
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-}
+} */
 legend {
   padding: 0 !important;
   width: 0% !important;
