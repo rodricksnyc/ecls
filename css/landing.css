@@ -1688,7 +1688,7 @@ h6.plum {
   background-color: white !important;
   position: relative;
 
-  z-index: 25;
+  z-index: 0;
   margin-bottom: 1em;
   margin-right: 4em;
   box-shadow:none;
@@ -6641,7 +6641,7 @@ body{
     padding:0em 6em;
   }
   .container_0, .container_1 {
-    max-width: 920px!important;
+    max-width: 960px!important;
     margin: 0 auto;
   }
 
@@ -6653,6 +6653,30 @@ body{
   }
 
 }
+
+
+
+@media (max-width:1024px) {
+  .greenMiddle .mb-5 {
+    margin-bottom: 1rem!important;
+}
+.animation {
+    min-height: 80vh;
+    margin-left: 10vw;
+}
+#two .nav-tabs .nav-link{
+  font-size:15px;
+}
+
+#two .nav-tabs {
+    margin-top: 1em;
+}
+.line4 {
+  min-width:22em;
+}
+}
+
+
 
 @media (min-width:768px) and (max-width:991px)  {
   .logo {
