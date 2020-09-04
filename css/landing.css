@@ -6724,7 +6724,7 @@ body{
   display:none !important
 }
 
-@media (max-width:1500px) and (min-width:1400px) {
+@media (max-width:1500px) and (min-width:1201px) {
   h6.gray {
     font-size:.8em;
   }
@@ -6733,7 +6733,7 @@ body{
   }
 
   .animation{
-    min-height:140vh
+    min-height:150vh
   }
 
 }
