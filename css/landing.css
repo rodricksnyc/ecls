@@ -3230,6 +3230,13 @@ fieldset {
   border: none !important;
 }
 
+.radio-inline input[type='radio'] {
+  width: 14px;
+  height: 14px;
+  border-radius: 0px;
+
+  }
+
 .around .vertical {
   height: auto;
   min-height: 103px;
@@ -3239,10 +3246,12 @@ fieldset {
   padding-left: 23px;
   width: 33%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
 }
+
+.around
 
 /* .around .vertical:nth-of-type(1) {
 width: 38%;
