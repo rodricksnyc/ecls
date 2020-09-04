@@ -767,6 +767,28 @@ $("#two .nav-link").click(function () {
 });
 
 
+
+
+
+// // var high = $('.block-2000').height() + $('.block-3000').height() + 170
+// //
+// // console.log(high)
+// // // $('.wrapper').css({
+// // // 	'height' : high
+// // // })
+// // //
+// // // if ($(document).height() >= 1100 && $(document).innerWidth() >= 1500) {
+// // // 	var highest = $('.whiteBox').height() + 380
+// // // 	$('.wrapper').css({
+// // // 		'height' : highest
+// // // 	})
+// // //
+// // // }
+// //
+// // $('.animation').css('height', high )
+//
+// console.log($('.animation').height())
+
 $(window).on('scroll', function() {
 
 	var screenTop = $(window).scrollTop();
@@ -985,21 +1007,6 @@ $(window).on('scroll', function() {
 
 
 
-// 
-// var high = $('.animation').height() + 340
-//
-// console.log(high)
-// $('.wrapper').css({
-// 	'height' : high
-// })
-//
-// if ($(document).height() >= 1100 && $(document).innerWidth() >= 1500) {
-// 	var highest = $('.whiteBox').height() + 380
-// 	$('.wrapper').css({
-// 		'height' : highest
-// 	})
-//
-// }
 
 
 
