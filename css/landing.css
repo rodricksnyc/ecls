@@ -5453,6 +5453,13 @@ transform: scale(0.8);
   .animation .landing-sec-H {
     left:-8vw
   }
+  .greenBlocks{
+    max-width:18em;
+  }
+
+  .purpleBlocks{
+    max-width:18em;
+  }
 
 }
 
@@ -5470,9 +5477,7 @@ transform: scale(0.8);
     width: 141vw;
   }
 
-  .greenBlocks, .purpleBlocks {
-    max-width:18em;
-  }
+
 
 
   .animation .landing-sec-H {
