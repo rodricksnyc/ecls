@@ -6736,6 +6736,13 @@ body{
 
 }
 
+@media (max-width:1024px) {
+  .animation {
+    min-height: 140vh
+}
+
+
+
 @media (width:1024px) and (height:1366px)  {
   .guide-overlay  {
     padding:0em 6em;
@@ -6752,9 +6759,9 @@ body{
   #two .offset-md-3 {
     margin-left: 12%;
   }
-  /* #two p.white.small {
-  max-width:8em
-  } */
+  .animation {
+    min-height: 80vh !important;
+  }
   .tab-content img.threeRow {
     max-width: 4em;
   }
@@ -6900,11 +6907,6 @@ body{
   .animation{
     min-height:155vh !important
   }
-}
-
-@media (max-width:1024px) {
-  .animation {
-    min-height: 140vh !important;
 }
 
 
