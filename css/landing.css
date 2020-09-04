@@ -6956,7 +6956,7 @@ body{
   }
 
   .animation {
-    min-height: 108vh;
+    /* min-height: 108vh; */
     margin-left: 0;
     width: 141vw;
   }
