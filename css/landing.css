@@ -6821,12 +6821,20 @@ body{
   .purpleBlocks, .greenBlocks {
     max-width: 22em;
   }
+
+
 }
 
 @media (width:1366px) and (height:1024px)  {
   .animation {
     min-height: 105vh;
   }
+
+  .hero-img {
+
+    min-height: 46rem;
+
+}
 
 }
 
@@ -7048,8 +7056,8 @@ body{
     height: auto
   }
 
-  .greenBlocks {
-    min-height: 16em;
+  .greenBlocks, .purpleBlocks {
+    min-height: 19em;
   }
   #two .across {
 
@@ -7074,9 +7082,9 @@ body{
     max-width: 14em;
   }
 
-  .greenBlocks:last-of-type{
+  /* .greenBlocks:last-of-type{
     margin-left:25%;
-  }
+  } */
   #two .nav-tabs .nav-link {
     font-size: 17px;
   }
