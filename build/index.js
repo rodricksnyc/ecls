@@ -669,7 +669,7 @@ $(document).ready(function () {
 			}, 600);
 			setTimeout(function () {
 				$('.line2').removeClass('box-rotate');
-			}, 1200);
+			}, 800);
 
 			setTimeout(function () {
 				$('.text1').removeClass('transparent-opacity').addClass('animated fadeInRight');

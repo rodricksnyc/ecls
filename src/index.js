@@ -794,7 +794,7 @@ $(window).on('scroll', function() {
 		},600)
 		setTimeout(function(){
 			$('.line2').removeClass('box-rotate')
-		}, 1200)
+		}, 800)
 
 
 		setTimeout(function(){

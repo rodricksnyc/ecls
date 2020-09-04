@@ -1543,7 +1543,7 @@ h6.plum {
   width: auto;
   width: 6px;
   margin: 20px auto;
-  transition: transform .3s linear;
+  transition: transform .2s linear;
   transform-origin: left;
   transform-style: preserve-3D;
   opacity: .8;
@@ -6730,6 +6730,10 @@ body{
   }
   .guide-overlay {
     padding: 0em 2em;
+  }
+
+  .animation{
+    min-height:140vh
   }
 
 }
