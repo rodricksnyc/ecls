@@ -6724,39 +6724,7 @@ body{
   display:none !important
 }
 
-@media (max-width:1500px) and (min-width:1201px) {
-  h6.gray {
-    font-size:.8em;
-  }
-  .guide-overlay {
-    padding: 0em 2em;
-  }
 
-  .animation{
-    min-height:150vh !important
-  }
-
-}
-@media (min-width:1025px) and (max-width:1399px) {
-
-  .guide-overlay {
-    padding: 0em 6em;
-  }
-  h6.gray {
-    font-size: .7em;
-  }
-  p.black {
-
-    font-size: .8em;
-  }
-  .margin4 {
-    margin-left: 3em;
-    margin-right: -2em;
-  }
-  .animation{
-    min-height:150vh !important
-  }
-}
 
 @media (min-width:992px) and (max-width:1024px)  {
   .margin4 {
@@ -6889,7 +6857,7 @@ body{
 
 @media (max-width:1024px) and (max-height:768px) {
   .animation {
-    min-height: 134vh;
+    min-height: 160vh;
     margin-left: 10vw;
   }
   .absolute img {
@@ -6897,6 +6865,40 @@ body{
   }
   .absolute{
     top:-7em
+  }
+}
+
+@media (max-width:1500px) and (min-width:1201px) {
+  h6.gray {
+    font-size:.8em;
+  }
+  .guide-overlay {
+    padding: 0em 2em;
+  }
+
+  .animation{
+    min-height:150vh !important
+  }
+
+}
+@media (min-width:1025px) and (max-width:1399px) {
+
+  .guide-overlay {
+    padding: 0em 6em;
+  }
+  h6.gray {
+    font-size: .7em;
+  }
+  p.black {
+
+    font-size: .8em;
+  }
+  .margin4 {
+    margin-left: 3em;
+    margin-right: -2em;
+  }
+  .animation{
+    min-height:150vh !important
   }
 }
 
