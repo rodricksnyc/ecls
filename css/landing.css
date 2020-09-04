@@ -6902,9 +6902,14 @@ body{
   }
 }
 
+@media (max-width:1024px) {
+  .animation {
+    min-height: 140vh !important;
+}
 
 
-@media (min-width:768px) and (max-width:991px)  {
+
+@media (min-width:768px) and (max-height:1024px)  {
   .title2 {
     font-size: 4rem;
     position: relative;
@@ -6956,7 +6961,7 @@ body{
   }
 
   .animation {
-    /* min-height: 108vh; */
+    min-height: 110vh;
     margin-left: 0;
     width: 141vw;
   }
