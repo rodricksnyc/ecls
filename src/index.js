@@ -984,6 +984,26 @@ $(window).on('scroll', function() {
 // }
 
 
+
+// 
+// var high = $('.animation').height() + 340
+//
+// console.log(high)
+// $('.wrapper').css({
+// 	'height' : high
+// })
+//
+// if ($(document).height() >= 1100 && $(document).innerWidth() >= 1500) {
+// 	var highest = $('.whiteBox').height() + 380
+// 	$('.wrapper').css({
+// 		'height' : highest
+// 	})
+//
+// }
+
+
+
+
 if ($('.newBlocks').length < 10) {
 	$('.showBlocks').children().hide()
 }
