@@ -6733,7 +6733,7 @@ body{
   }
 
   .animation{
-    min-height:150vh
+    min-height:150vh !important
   }
 
 }
@@ -6752,6 +6752,9 @@ body{
   .margin4 {
     margin-left: 3em;
     margin-right: -2em;
+  }
+  .animation{
+    min-height:150vh !important
   }
 }
 
