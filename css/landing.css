@@ -6775,7 +6775,7 @@ body{
 
 }
 
-@media (max-height:700px){
+@media (max-height:700px) and (min-width:768px){
   .animation{
     min-height:170vh !important
   }
