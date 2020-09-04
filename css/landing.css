@@ -7235,6 +7235,9 @@ body{
   #two .tab-pane {
     padding: 2em 2em;
   }
+  #two .offset-md-3 {
+    margin-left: 0;
+}
 
   .across {
     flex-direction:column;
