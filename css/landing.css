@@ -7065,9 +7065,9 @@ body{
     height: auto
   }
 
-  .greenBlocks, .purpleBlocks {
+  /* .greenBlocks, .purpleBlocks {
     min-height: 19em;
-  }
+  } */
   #two .across {
 
     flex-direction: column;
