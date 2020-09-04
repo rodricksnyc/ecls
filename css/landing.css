@@ -8015,7 +8015,7 @@ align-items: center;
 
 }
 
-@media (max-width:375px) {
+@media (max-width:400px) {
   .margin2 {
     margin-top: -1.6em;
   }
