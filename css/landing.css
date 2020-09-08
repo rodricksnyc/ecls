@@ -1989,6 +1989,7 @@ a.darkBlue {
   color: #071D49;
   font-size: 34px;
   line-height: 1.2;
+  /* margin-top:.6em; */
 }
 
 .lightGreen.bottom {
@@ -2010,6 +2011,15 @@ a.darkBlue {
   flex-direction: column;
 
   align-items: flex-start;
+}
+
+.horizontal {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .across {
@@ -5478,7 +5488,9 @@ transform: scale(0.8);
     width: 141vw;
   }
 
-
+.horizontal.three {
+  flex-direction: column;
+}
 
 
   .animation .landing-sec-H {
@@ -6850,7 +6862,7 @@ body{
 
 @media (max-width:1540px)  {
   .tab-content  img {
-    max-width: 15em;
+    max-width: 14em;
   }
   .tab-content img.threeRow {
     max-width: 4em;
