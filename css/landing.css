@@ -1,3 +1,23 @@
+.st132{
+fill:#D6D8DC;
+
+}
+.gold{
+fill:#fbb03b;
+
+}
+
+.st79{
+fill:#141F47;
+}
+
+
+
+
+ /* .top-svg{
+  max-width:16em;
+  position: relative;
+} */
 
 
 .inactiveDot.blue {
@@ -147,7 +167,7 @@ body {
 
 .navbar{
   padding-bottom:0rem;
-      z-index: 9999999999999;
+  z-index: 9999999;
 }
 
 .contactUsOverlay{
