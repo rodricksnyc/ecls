@@ -8109,7 +8109,7 @@ align-items: center;
 
 }
 
-@media (max-width:400px) {
+@media (max-width:412px) {
   .margin2 {
     margin-top: -1.6em;
   }
@@ -8118,7 +8118,8 @@ align-items: center;
     height: calc(100vh - 21rem);
   }
   .hero-img {
-    max-height: 19rem;
+    height:18rem;
+    min-height: 18rem;
   }
 }
 
@@ -8127,6 +8128,12 @@ align-items: center;
   .hero-img-container {
     margin-top: -1em;
     height: calc(100vh - 16rem);
+  }
+
+
+  .hero-img {
+    height:19rem;
+    min-height: 19rem;
   }
 
   .title2 {
