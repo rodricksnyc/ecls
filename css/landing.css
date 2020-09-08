@@ -2647,7 +2647,7 @@ li.spanishAfter[data-target="#home"]:after {
 }
 
 
-.menu-buttons-floating-list li[data-target="#overview"]:after {
+.menu-buttons-floating-list li[data-target="#participation"]:after {
   content: "PARTICIPATION";
   font-size: 11px;
 
@@ -2665,7 +2665,7 @@ li.spanishAfter[data-target="#home"]:after {
 
 }
 
-li.spanishAfter[data-target="#overview"]:after {
+li.spanishAfter[data-target="#participation"]:after {
   content: "participación";
   text-transform: uppercase;
   min-width: 12em;
