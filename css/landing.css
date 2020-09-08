@@ -1541,12 +1541,11 @@ h6.plum {
 
 .line2 {
   background: #071D49;
-  width: auto;
   width: 6px;
   margin: 20px auto;
-  transition: transform .2s linear;
+  /* transition: transform .2s linear;
   transform-origin: left;
-  transform-style: preserve-3D;
+  transform-style: preserve-3D; */
   opacity: .8;
   min-height: 44em;
   border-radius: 1rem;

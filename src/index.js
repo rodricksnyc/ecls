@@ -815,7 +815,7 @@ $(window).on('scroll', function() {
 			$('.line1').removeClass('box-rotate')
 		},600)
 		setTimeout(function(){
-			$('.line2').removeClass('box-rotate')
+			$('.line2').removeClass('transparent-opacity').addClass('animated fadeInUp')
 		}, 800)
 
 
