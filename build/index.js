@@ -771,13 +771,22 @@ $(document).ready(function () {
 			$('li[data-target="#home"]').removeClass('activated');
 		}
 
-		if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')) {
+		if ($('.block10').hasClass('active')) {
 
 			$('li[data-target="#overview"]').addClass('activated');
 			$('li[data-target="#overview"]').addClass('activated');
 		} else {
 			$('li[data-target="#overview"]').removeClass('activated');
 			$('li[data-target="#overview"]').removeClass('activated');
+		}
+
+		if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')) {
+
+			$('li[data-target="#participation"]').addClass('activated');
+			$('li[data-target="#participation"]').addClass('activated');
+		} else {
+			$('li[data-target="#participation"]').removeClass('activated');
+			$('li[data-target="#participation"]').removeClass('activated');
 		}
 
 		if ($('.block5').hasClass('active')) {
@@ -891,13 +900,22 @@ $(document).ready(function () {
 				}
 			});
 
-			if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')) {
+			if ($('.block10').hasClass('active')) {
 
 				$('li[data-target="#overview"]').addClass('activated');
 				$('li[data-target="#overview"]').addClass('activated');
 			} else {
 				$('li[data-target="#overview"]').removeClass('activated');
 				$('li[data-target="#overview"]').removeClass('activated');
+			}
+
+			if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')) {
+
+				$('li[data-target="#participation"]').addClass('activated');
+				$('li[data-target="#participation"]').addClass('activated');
+			} else {
+				$('li[data-target="#participation"]').removeClass('activated');
+				$('li[data-target="#participation"]').removeClass('activated');
 			}
 
 			if ($('.start').hasClass('active')) {

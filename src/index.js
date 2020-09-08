@@ -910,7 +910,7 @@ $(window).on('scroll', function() {
 
 
 
-	if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')  ) {
+	if ( $('.block10').hasClass('active')  ) {
 
 
 		$('li[data-target="#overview"]').addClass('activated')
@@ -921,6 +921,21 @@ $(window).on('scroll', function() {
 		$('li[data-target="#overview"]').removeClass('activated')
 		$('li[data-target="#overview"]').removeClass('activated')
 	}
+
+
+
+	if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')  ) {
+
+
+		$('li[data-target="#participation"]').addClass('activated')
+		$('li[data-target="#participation"]').addClass('activated')
+	}
+
+	else {
+		$('li[data-target="#participation"]').removeClass('activated')
+		$('li[data-target="#participation"]').removeClass('activated')
+	}
+
 
 
 	if ($('.block5').hasClass('active')) {
@@ -1021,8 +1036,8 @@ else {
 
 if ($(document).innerWidth() <= 767) {
 
-// $('li[data-target="#home"]').addClass('activated')
-$('li[data-target="#overview"]').removeClass('activated')
+	// $('li[data-target="#home"]').addClass('activated')
+	$('li[data-target="#overview"]').removeClass('activated')
 
 
 	$('.logo:eq(1)').css({
@@ -1058,7 +1073,7 @@ $('li[data-target="#overview"]').removeClass('activated')
 			}
 		})
 
-		if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')  ) {
+		if ( $('.block10').hasClass('active') ) {
 
 
 			$('li[data-target="#overview"]').addClass('activated')
@@ -1068,6 +1083,20 @@ $('li[data-target="#overview"]').removeClass('activated')
 		else {
 			$('li[data-target="#overview"]').removeClass('activated')
 			$('li[data-target="#overview"]').removeClass('activated')
+		}
+
+
+
+		if ($('.top-section').hasClass('active') || $('.block10').hasClass('active') || $('.block-2000').hasClass('active') || $('.block-3000').hasClass('active')  ) {
+
+
+			$('li[data-target="#participation"]').addClass('activated')
+			$('li[data-target="#participation"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#participation"]').removeClass('activated')
+			$('li[data-target="#participation"]').removeClass('activated')
 		}
 
 
