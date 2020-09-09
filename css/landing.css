@@ -11,7 +11,7 @@ fill:#fbb03b;
 fill:#141F47;
 }
 
-.flip-top {
+.flipTop {
 
       background: #00539f;
       writing-mode: tb-rl;
@@ -7281,6 +7281,10 @@ body{
   }
   #two .offset-md-3 {
     margin-left: 0;
+}
+
+.flipTop  {
+  display: none;
 }
 
 .absolute-video {
