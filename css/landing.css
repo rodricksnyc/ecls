@@ -7288,6 +7288,11 @@ body{
   display: none;
 }
 
+#three h2 {
+    padding-top: 4%;
+    margin-bottom: 1.5em;
+}
+
 .absolute-video {
     position: relative;
     right: 0px;
