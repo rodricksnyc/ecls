@@ -7288,6 +7288,7 @@ body{
   }
   .purpleBlocks, .greenBlocks {
     margin: 1em 1em 0em 1em;
+        min-width: 17em;
   }
   .purpleBlocks p.white.small {
     max-width:none;
@@ -7329,7 +7330,7 @@ body{
     height: calc(100vh - 28rem);
   }
   .greenBar.top {
-    margin-top:-11em
+  display: none;
   }
 
   .nav-link:after {
@@ -7372,9 +7373,9 @@ body{
 
   .verse3 {
 
-    height: 100px;
+    height: 80px !important;
 
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
   }
 
 
@@ -7850,6 +7851,7 @@ footer .white {
 
 h6.plum {
   font-size: 1em;
+  max-width:95%;
 }
 
 .filter-attr-list {
