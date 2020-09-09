@@ -7288,7 +7288,7 @@ body{
   }
   .purpleBlocks, .greenBlocks {
     margin: 1em 1em 0em 1em;
-    min-width: 19em;
+    min-width: 20em;
   }
   .purpleBlocks p.white.small {
     max-width:none;
