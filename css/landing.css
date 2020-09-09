@@ -7349,6 +7349,8 @@ body{
   .guide-overlay2 {
     position: relative;
     padding: 0em 2em;
+    margin-top: -9em;
+
   }
 
   .landing {
