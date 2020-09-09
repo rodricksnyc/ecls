@@ -7283,6 +7283,26 @@ body{
     margin-left: 0;
 }
 
+.absolute-video {
+    position: relative;
+    right: 0px;
+    bottom: -15px;
+    left: 0;
+}
+.infoBar.larger {
+  display: flex !important;
+  flex-direction: column !important;
+      align-items: center !important;
+}
+
+
+
+.videoBar {
+    min-width: 100px;
+    height: auto;
+    max-height: 200px;
+    max-width: 250px;
+}
   .across {
     flex-direction:column;
   }
@@ -7880,7 +7900,7 @@ footer .white {
 }
 
 .infoBar, .feedbackBar {
-  margin:2em 1em 0em 1em;
+    margin: 2em 0em 0em 0em;
 }
 
 .blueLine {
