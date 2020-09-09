@@ -7349,7 +7349,19 @@ header .logos a {
     top: 13px;
   } */
 
+  #newUserModal .modal-body {
+      padding: 1em 2em 0em 2em;
+  }
 
+  #newUserModal .form-group {
+    margin: 2em 0em 2em 0em;
+}
+
+#newUserModal .black {
+    line-height: 1.5 !important;
+    font-size: 16px !important;
+    margin: 1em 0em;
+}
 
   .videoBar {
     min-width: 100px;
