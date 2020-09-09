@@ -7296,7 +7296,7 @@ body{
   }
 
   .block10 .content-spacer {
-    height: 5vh;
+    height: 0vh;
   }
 
   .embed-responsive-item {
@@ -7451,7 +7451,7 @@ body{
     /* right: 0; */
     position: absolute;
     top: 15.5em;
-    left: 0;
+    left: -1em;
     min-width: 14em;
   }
   .text4 {
