@@ -1625,6 +1625,18 @@ $(document).ready(function () {
 	// }
 
 
+	$('body').keydown(function (event) {
+
+		if (!$('#email1').val() == '' && !$('#password1').val() == '' && !$('#password2').val() == '') {
+
+			$('.continue').css({
+				'background': '#00843D',
+				'color': 'white'
+
+			});
+		} else {}
+	});
+
 	$('#accessCode1').keydown(function (event) {
 		$('#returning').css({
 			'background': '#00843D',

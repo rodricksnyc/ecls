@@ -2,1113 +2,1193 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/iwp5gli.css">
-	<link rel="stylesheet" href="https://use.typekit.net/koi5ueb.css">
-	<title>ECLS</title>
-	<link rel="shortcut icon" href="images/sunshine.png">
-	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/landing.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
-	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
-	<script type="text/javascript">
-	function googleTranslateElementInit() {
-		new google.translate.TranslateElement({
-			// pageLanguage: 'ro',
-			includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
-			layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-			autoDisplay: false}, 'google_translate_element');
-		}
+<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/iwp5gli.css">
+<link rel="stylesheet" href="https://use.typekit.net/koi5ueb.css">
+<title>ECLS</title>
+<link rel="shortcut icon" href="images/sunshine.png">
+<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+// pageLanguage: 'ro',
+includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+autoDisplay: false}, 'google_translate_element');
+}
+
+function loadGoogleTranslate() {
+var googleTranslateScript = document.createElement('script');
+googleTranslateScript.type = 'text/javascript';
+googleTranslateScript.async = true;
+googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
+}
+$('.lang-select').click(function() {
+var theLang = jQuery(this).attr('data-lang');
+$('.goog-te-combo').val(theLang);
+
+window.location = jQuery(this).attr('href');
+location.reload();
+
+});
+
+
+$(window).scroll(function () {
+var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+if (distanceY > 485) {
+
+	$('.menu-buttons-floating').css({
+		opacity: '1',
+		visibility: 'visible'
+	})
+} else {
+
+	$('.menu-buttons-floating').css({
+		opacity: '0',
+		visibility: 'hidden'
+	})
+}
+});
+</script>
+</head>
+
+<body data-spy="scroll">
+
+<div class="container-fluid overflow-hidden position-relative">
+
+<header class="landing d-flex" id="page-top">
+	<div class="logos d-flex justify-content-start align-items-center">
+		<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
+
+		<div class="flipTop"></div>
+
+		<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="U.S. Department of Education seal"></a>
+	</div>
+
+	<div class="end">
+		<div class="d-flex justify-content-between align-items-center">
+
+
+			<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no" onclick="loadGoogleTranslate()">
+
+				<p class="language notranslate" translate="no">English</p>
+
+			</a>
+
+			<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+				<p class="language">Espa&ntilde;ol</p>
+
+			</a>
+
+		</div>
+	</div>
+</header>
+
+<div class="container-fluid" id="home">
+	<div class="hero-img-container">
+		<div class="hero-img">
+			<h4 class="white title1">Welcome</h4>
+			<h4 class="white title2">to the Early Childhood Longitudinal Study</h4>
+		</div>
+	</div>
 
-		function loadGoogleTranslate() {
-			var googleTranslateScript = document.createElement('script');
-			googleTranslateScript.type = 'text/javascript';
-			googleTranslateScript.async = true;
-			googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
-		}
-		$('.lang-select').click(function() {
-			var theLang = jQuery(this).attr('data-lang');
-			$('.goog-te-combo').val(theLang);
 
-			window.location = jQuery(this).attr('href');
-			location.reload();
+	<section class="block0">
+		<div class="heros">
+			<div class="greenBar top">
 
-		});
-
-
-		$(window).scroll(function () {
-			var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-			if (distanceY > 485) {
-
-				$('.menu-buttons-floating').css({
-					opacity: '1',
-					visibility: 'visible'
-				})
-			} else {
-
-				$('.menu-buttons-floating').css({
-					opacity: '0',
-					visibility: 'hidden'
-				})
-			}
-		});
-		</script>
-	</head>
-
-	<body data-spy="scroll">
-
-		<div class="container-fluid overflow-hidden position-relative">
-
-			<header class="landing d-flex" id="page-top">
-				<div class="logos d-flex justify-content-start align-items-center">
-					<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
-
-					<div class="flipTop"></div>
-
-					<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
-				</div>
-
-				<div class="end">
-					<div class="d-flex justify-content-between align-items-center">
-
-
-						<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no" onclick="loadGoogleTranslate()">
-
-							<p class="language notranslate" translate="no">English</p>
-
-						</a>
-
-						<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
-
-							<p class="language">Espa&ntilde;ol</p>
-
-						</a>
-
-					</div>
-				</div>
-			</header>
-
-			<div class="container-fluid" id="home">
-				<div class="hero-img-container">
-					<div class="hero-img">
-						<h4 class="white title1">Welcome</h4>
-						<h4 class="white title2">to the Early Childhood Longitudinal Study</h4>
-					</div>
-				</div>
-
-
-				<section class="block0">
-					<div class="heros">
-						<div class="greenBar top">
-
-							<nav class="navbar navbar-expand-lg navbar-light">
-								<div class="guide-overlay container">
-
-									<a class="nav-item nav-link scrollIt active" href="#page-top">OVERVIEW</a>
-									<a class="nav-item nav-link scrollIt" href="#participation">PARTICIPATION STEPS</a>
-									<a class="nav-item nav-link scrollIt" href="#two">FINDINGS</a>
-
-									<a class="nav-item nav-link scrollIt" href="#three">MORE INFORMATION</a>
-
-								</div>
-							</nav>
-
-						</div>
-
-
-					</div>
-				</section>
-
-			</div>
-
-			<div id="slideOut" class="content-top">
-
-				<div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
-					<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
-
-				</div>
-
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="closeThisPlease" id="close">
-							<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
-								<span aria-hidden="true">
-									<div class="circCont">
-										<div class="circleClose" data-animation="magnify" data-remove="3000">
-											<span></span>
-										</div>
-									</div>
-								</span>
-							</button>
-						</div>
-						<br>
-
-						<p class="whiteLarge">How to Contact Us</p>
-
-					</div>
-					<div class="modal-body">
-
-						<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
-
-							<div class="form-group">
-								<label for="formControl1">Name</label>
-								<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name">
-							</div>
-							<div class="form-group">
-								<label for="formControl2">Email</label>
-								<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email">
-							</div>
-
-							<div class="form-group">
-								<fieldset>
-									<label for="general-inquiry">Reason for Contact</label>
-									<div class="around">
-										<div class="vertical">
-											<i class="fas fa-info-circle"></i>
-											<legend>Reason for Contact</legend>
-											<label class="radio-inline">
-												<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
-											</label>
-										</div>
-										<div class="vertical">
-											<i class="fas fa-question-circle"></i>
-											<label class="radio-inline">
-												<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
-											</label>
-										</div>
-										<div class="vertical">
-											<i class="fas fa-user-headset"></i>
-											<label class="radio-inline">
-												<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
-											</label>
-										</div>
-									</div>
-								</fieldset>
-							</div>
-							<div class="form-group">
-								<label for="formControl4">Message</label>
-								<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
-							</div>
-							<center>
-								<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
-							</center>
-							<div class="emailInfo">
-								<h6 class="white pt1">Email</h6>
-								<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
-							</div>
-						</form>
-
-					</div>
-					<div class="modal-footer">
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
-				&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
-			</div>
-
-			<div class="contactUsOverlay"></div>
-
-
-			<section class="top-section">
-				<div class="heros">
-					<section class="block10">
-
-						<div class="container_0" id="home">
-
-							<div class="menu-buttons-floating">
-								<ul class="menu-buttons-floating-list">
-									<li tabindex="0" data-target="#home"><i class="fas fa-info-circle"></i>
-
-									</li>
-									<li tabindex="0" data-target="#participation"><i class="fas fa-list-ol"></i>
-
-									</li>
-									<li tabindex="0" data-target="#two"><i class="fas fa-lightbulb"></i>
-
-									</li>
-									<li tabindex="0" data-target="#three"><i class="fas fa-book-reader"></i>
-
-									</li>
-								</ul>
-							</div>
-
-							<div class="container-fluid heros">
-
-								<div class="guide-overlay2 container-fluid">
-
-									<section class="start">
-										<div class="heros">
-											<div class="row switch">
-
-												<div class="col-lg-8 col-md-auto col-md-12 col-sm-12 one">
-
-													<h2 class="landing-sec-H">What is the ECLS?</h2>
-													<p class="charcoal"><span class="strong">The Early Childhood Longitudinal Study</span> (ECLS) program gives families, educators, and policymakers important information about children’s knowledge and skills. For more than 20 years, the study has helped improve education for children from birth through elementary school.</p>
-													<p class="charcoal">The ECLS is conducted by the <span class="darkBlue strong">National Center for Education Statistics (NCES)</span>, within the <span class="darkBlue strong">U.S. Department of Education’s Institute of Education Sciences (IES)</span></p>
-													<p class="charcoal">The ECLS gathers information from children, parents/guardians, teachers, and school administrators to provide a complete picture of children’s learning experiences. The upcoming study—the ECLS-K:2023—will focus on the kindergarten class of 2022-23. This study will be informed by a series of <span class="darkBlue strong">field tests</span>, including one in the fall of 2021. These field tests are small-scale trial runs of the study to test the study instruments with children, parents, teachers, and school administrators.</p>
-													<p class="charcoal">The ECLS-K:2023 will provide information that can be used at the local, state, and national levels to guide practice and policies that increase children’s chances of doing well in school. It is important that selected children, parents, teachers, and schools participate to ensure that the  findings are accurate.</p>
-													<p class="charcoal">Students, families, teachers, and schools will not be identified in any ECLS reports. Information will be combined from all participants to produce reports for the nation as a whole.</p>
-													<p class="charcoal">All of the information provided by children, families, teachers, and principals may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151). All staff working on the study have signed an affidavit of non-disclosure where they swear to abide by this law.</p>
-
-												</div>
-
-												<div class="col-lg-4 col-md-12 col-sm-12 two">
-													<div class="grayBackground">
-														<div class="whiteBox">
-															<form>
-																<legend>
-																	<p class="darkGreen text-center">New Visitors</p>
-																</p>
-															</legend>
-															<p class="small charcoal">Did you receive a post card or an email about the Early Childhood Longitudinal Study? If this is your first time visiting this site, please enter the PIN from the post card or email.</p>
-															<br>
-															<div class="form-group">
-
-																<label for="accessCode1" class="togglePassword">PIN</label>
-
-																<input id="accessCode1" type="password" name="pin" class="form-control" required maxlength="">
-
-																<div id="eye" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
-															</div>
-															<div class="d-flex justify-content-center mt-4 mb-3">
-																<button type="submit" class="btn btn-info button-outlined" id="returning" tabindex="0" aria-hidden="false">Submit</button>
-															</div>
-														</form>
-													</div>
-
-													<div class="whiteBox">
-														<form>
-															<legend>
-																<p class="darkGreen text-center">Returning Visitors</p>
-															</p>
-														</legend>
-														<p class="small charcoal">For returning visitors, please enter your username and password.</p>
-														<br>
-														<div class="form-group">
-
-															<label for="name">Username</label>
-															<input type="text" class="form-control" id="name" placeholder="">
-
-														</div>
-
-														<div class="form-group">
-															<label for="accessCode2">Password</label>
-															<input id="accessCode2" type="password" class="form-control"  placeholder="">
-															<div id="eye2" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
-
-														</div>
-														<div class="d-flex justify-content-center mt-4 mb-3">
-															<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false">Submit</button>
-														</div>
-													</form>
-												</div>
-
-												<p class="purple">Technical and Security Recommendations</p>
-												<p class="dark">We recommend using a desktop or laptop computer to complete the study activities. For the best experience, use Chrome, Edge, Safari, or Firefox.</p>
-												<p class="dark">When you have finished or if you need to stop before finishing, please LOG OUT of the survey system by selecting "Logout" and CLOSE ALL browser windows or screens to keep your responses secure. For example, if you used Chrome or Safari to open the website, make sure no Chrome or Safari windows or screens are open after you end the session. Not closing all browsers may allow someone else to see your responses.</p>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-
-						</div>
-
-					</div>
-
-					<div class="content-spacer"></div>
-
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-12 col-sm-12">
-
-								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zB4I68XVPzQ"></iframe>
-
-							</div>
-
-						</div>
-					</div>
-
-
-				</div>
-
-
-				<div class="container-fluid lightGreen second" id="participation">
-					<div class="row padding-0">
-
-						<h2 class="landing-sec-H">Why Should I Participate?</h2>
-					</div>
+				<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="guide-overlay container">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 mt-2 mb-4">
-								<p class="charcoal smallFont description">The ECLS explores how different factors—at home and at school—relate to children’s development and learning over time. This is your opportunity to contribute to research that can lead to changes, helping your school, teachers, and students, as well as the broader educational community. Your participation in the study allows us to answer the following types of questions:</p>
-							</div>
-						</div>
 
+						<a class="nav-item nav-link scrollIt active" href="#page-top">OVERVIEW</a>
+						<a class="nav-item nav-link scrollIt" href="#participation">PARTICIPATION STEPS</a>
+						<a class="nav-item nav-link scrollIt" href="#two">FINDINGS</a>
 
-						<div class="row greenMiddle">
-							<div class="col-lg-4 col-md-6 offset-md-1 col-sm-12">
-								<div class="d-flex justify-content-between mb-5">
-									<img src="images/Lightbulb.svg" class="img-fluid smallImg">
+						<a class="nav-item nav-link scrollIt" href="#three">MORE INFORMATION</a>
 
-									<p class="charcoal smallFont">What knowledge and skills do children have when they start school?</p>
-								</div>
-								<div class="d-flex justify-content-between mb-5">
-									<img src="images/Apple.svg" class="img-fluid smallImg">
-
-									<p class="charcoal smallFont">How do educators help make the transition into kindergarten less difficult for children?</p>
-								</div>
-								<div class="d-flex justify-content-between mb-5">
-
-								</div>
-							</div>
-
-							<div class="col-lg-4 col-md-6 offset-md-2 col-sm-12">
-								<div class="d-flex justify-content-between mb-5">
-									<img src="images/Puzzles.svg" class="img-fluid smallImg">
-
-									<p class="charcoal smallFont">What educational activities do kindergartners do at home?</p>
-								</div>
-								<div class="d-flex justify-content-between mb-5">
-									<img src="images/Sprout.svg" class="img-fluid smallImg">
-
-									<p class="charcoal smallFont">How well can kindergartners pay attention and control their behaviors?</p>
-								</div>
-								<div class="d-flex justify-content-between mb-5">
-									<img src="images/Rocket.svg" class="img-fluid smallImg">
-
-									<p class="charcoal smallFont">How well do kindergarten programs prepare children for later grades?</p>
-								</div>
-
-							</div>
-
-
-						</div>
 					</div>
-
-				</div>
-			</section>
-			<section class="stop">
-
-			</section>
-
-			<div class="rel">
-				<section class="verse3">
-
-					<div class="absolute"><img src="images/img_kid-1.png" class="img-fluid"></div>
-
-				</section>
+				</nav>
 
 			</div>
 
-			<section class="stop">
-
-			</section>
-
-
-
-			<div class="content-spacer"></div>
-
-			<div class="rel animation">
-				<section class="block-2000">
-					<div class="d-flex flex-column align-items-center heros">
-						<div class="guide-overlay container">
-							<h2 class="landing-sec-H text-center mb-5">Field Test Participation Steps</h2>
-							<!-- <p class="landing-sec-H text-center smaller mb-5">Field Test</p> -->
-
-						</div>
-
-					</div>
-
-					<div class="heros">
-						<div class="container">
-							<div class="row">
-
-								<div class="col-lg-12 col-sm-12">
-
-									<div class="middle">
-
-										<p class="darkGreen text-center text1 transparent-opacity">Spring 2021</p>
-										<div class="line1 box-rotate"></div>
-
-
-										<p class="transparent-opacity text2">ECLS representatives will contact districts and schools to introduce the ECLS and to discuss study participation in a field test in the fall of the 2021–22 school year.</p>
-										<div class="green-circle transparent-opacity">
-											<img src="images/circle.svg" class="img-fluid round">
-										</div>
-
-										<div class="flower transparent-opacity">
-											<img src="images/flowers.svg" class="img-fluid leftImg">
-										</div>
-
-										<div class="line2 transparent-opacity"></div>
-
-										<div class="line3 box-rotate"></div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-
-					</div>
-				</section>
-
-
-				<section class="block-3000">
-
-					<div class="heros">
-						<div class="container">
-							<div class="row">
-
-								<div class="col-lg-12 col-sm-12">
-
-									<div class="middle">
-
-										<p class="darkGreen text-center text3 transparent-opacity">Late summer/Early fall 2021</p>
-										<div class="line4 box-rotate"></div>
-										<div class="green-circle2 transparent-opacity">
-											<img src="images/circle.svg" class="img-fluid round">
-										</div>
-
-										<p class="text4 transparent-opacity">ECLS representatives will contact participating schools to discuss the study activities and logistics in more detail. Study staff will work with the school staff to select a sample of children and begin notifying parents about the study.</p>
-
-
-										<div class="house transparent-opacity">
-											<img src="images/School-day.svg" class="img-fluid rightImg">
-										</div>
-
-										<div class="line5 box-rotate"></div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-
-						<div class="container">
-							<div class="row">
-
-								<div class="col-lg-12 col-sm-12">
-
-									<div class="middle">
-
-										<p class="darkGreen text-center text5 transparent-opacity">Fall 2021</p>
-										<div class="line6 box-rotate"></div>
-										<div class="green-circle3 transparent-opacity">
-											<img src="images/circle.svg" class="img-fluid round">
-										</div>
-
-										<p class="text6 transparent-opacity">Study staff will visit schools for approximately 4 days to conduct the study activities. Kindergarten, first-grade, and second-grade children will be asked to participate in reading and math assessments, which will be conducted by trained ECLS staff. The children’s parents, teachers, and principals will be asked to complete surveys. An ECLS representative will work closely with schools and their participating staff, and will arrange the assessment logistics. Every effort will be made to minimize the burden on school staff.</p>
-
-
-										<div class="leaves transparent-opacity">
-											<img src="images/Leaves.svg" class="img-fluid leftImg">
-										</div>
-
-										<div class="line7 box-rotate"></div>
-										<p class="text-last transparent-opacity">Data and operations from the field test will be analyzed in preparation for the national data collection in fall 2022.</p>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-
-					</div>
-
-				</section>
-
-			</div>
-
-
-			<section class="stop">
-
-			</section>
-
-			<div class="rel">
-				<section class="verse3 two">
-
-					<div class="absolute2">
-						<img src="images/img_kid-2.png" class="img-fluid">
-					</div>
-
-				</section>
-
-			</div>
-
-			<section class="stop">
-
-			</section>
 
 		</div>
-
 	</section>
 
-	<div class="content-spacer"></div>
+</div>
 
+<div id="slideOut" class="content-top">
 
-	<section class="block5" id="two">
+	<div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
+		<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
 
-		<div class="d-flex flex-column align-items-center heros">
-			<div class="guide-overlay container">
-				<h2 class="landing-sec-H text-center">Findings</h2>
-				<p class="charcoal text-center">What we learned from ECLS students, parents, and schools</p>
+	</div>
 
-			</div>
-		</div>
-
-		<div class="container-fluid">
-			<div class="row">
-
-				<div class="col-lg-9 col-md-10 offset-md-3">
-
-					<div class="whiteBox new">
-						<ul class="nav nav-tabs" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link selected active text-center" data-toggle="tab" href="#tabs-1" role="tab">Social & Academic Skills</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link  text-center" data-toggle="tab" href="#tabs-2" role="tab">Children Going to School</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link  text-center" data-toggle="tab" href="#tabs-3" role="tab">School Support of Families</a>
-							</li>
-
-						</ul>
-						<div class="tab-content">
-							<div class="tab-pane active" id="tabs-1" role="tabpanel">
-
-								<p class="darkGreen">What do we know about kindergartners in the United States?</p>
-								<p class="darkGreen">How do they interact with their classmates?</p>
-								<p class="charcoal">A lot of what we know about kindergartners in the U.S. comes from teachers who participated in the previous ECLS studies.</p>
-
-
-
-							<div class="block-list">
-								<!-- <div class="horizontal"> -->
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">77<span>%</span></p>
-												<p class="white small">of kindergartners often or very often <b>formed friendships</b></p>
-											</div>
-
-									 <img class="img-fluid top-svg" src="images/quote-gray.svg">
-										</div>
-
-									</div>
-
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">74<span>%</span></p>
-												<p class="white small">of kindergartners often or very often accepted peers’ <b>ideas</b></p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-									</div>
-
-								<!-- </div>
-	<div class="horizontal three"> -->
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">51<span>%</span></p>
-												<p class="white small"><b>often or</b> very often comforted <b>others</b></p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-									</div>
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">11<span>%</span></p>
-												<p class="white small">often or very <b>often argued</b> with others</p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-
-									</div>
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">10<span>%</span></p>
-												<p class="white small">often or very <b>often fought</b> with others</p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-									</div>
-								<!-- </div> -->
-
-							 </div>
-
-								<p class="plum">What kinds of things do kindergartners know?</p>
-								<p class="charcoal">The previous ECLS studies worked with kindergartners to learn about their knowledge and skills.</p>
-								<div class="block-list">
-
-									<div class="purpleBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">66<span>%</span></p>
-														<p class="white small">recognized their letters</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-
-									</div>
-
-
-									<div class="purpleBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">29<span>%</span></p>
-														<p class="white small">knew the first <b>sounds of</b> words</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-									</div>
-
-									<div class="purpleBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">58<span>%</span></p>
-												<p class="white small">understood size comparisons, such as big, bigger, and biggest</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-
-									</div>
-									<div class="purpleBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">94<span>%</span></p>
-												<p class="white small">recognized numbers and shapes and were able to count to 10</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-									</div>
-
-								</div>
-
-								<p class="charcoal small">SOURCE: West, J., Denton, K., and Germino-Hausken, E. (2000). America’s Kindergartners (NCES 2000-070).</p>
-								<p class="charcoal small">Retrieved July 31, 2020, from <a class="darkBlue" target="_blank">https://nces.ed.gov/pubs2000/2000070.pdf.</a></p>
-
+	<div class="modal-content">
+		<div class="modal-header">
+			<div class="closeThisPlease" id="close">
+				<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+					<span aria-hidden="true">
+						<div class="circCont">
+							<div class="circleClose" data-animation="magnify" data-remove="3000">
+								<span></span>
 							</div>
-
-							<div class="tab-pane" id="tabs-2" role="tabpanel">
-								<p class="darkGreen">How do kindergartners like school?</p>
-								<p class="charcoal">Most kindergartners are excited about going to school and like their teacher, as reported by parents in the last ECLS.</p>
-								<div class="block-list">
-
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">85<span>%</span></p>
-												<p class="white small">of children looked forward to going to school</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-									</div>
-
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">10<span>%</span></p>
-												<p class="white small">of children complained about going to school</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-									</div>
-
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">71<span>%</span></p>
-												<p class="white small">of children like their teacher</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-									</div>
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">85<span>%</span></p>
-												<p class="white small">of children said good things about the school</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-									</div>
-									<p class="charcoal small">SOURCE: U.S. Department of Education, National Center for Education Statistics. (2020). Early Childhood Longitudinal Study, Kindergarten Class of 2010-11 (ECLS-K:2011). Data retrieved July 31, 2020, from Table C1a, <a class="darkBlue" target="_blank">https://nces.ed.gov/ecls/tables.asp.</a></p>
-
-								</div>
-
-							</div>
-
-							<div class="tab-pane" id="tabs-3" role="tabpanel">
-
-								<p class="darkGreen">How do schools support their families?</p>
-								<p class="charcoal">In the last ECLS, the U.S. Department of Education asked school principals in schools with kindergartners about involvement opportunities for parents, like visiting the school or having home visits.</p>
-
-								<div class="block-list">
-
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">75<span>%</span></p>
-												<p class="white small">of schools offer PTA or other school meetings</p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-									</div>
-
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">62<span>%</span></p>
-												<p class="white small">of schools offer school performances to which parents are <b>invited</b></p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-									</div>
-
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">44<span>%</span></p>
-												<p class="white small">of schools offer classroom programs like class plays, book nights, or family <b>math nights</b></p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-
-									</div>
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">86<span>%</span></p>
-												<p class="white small">of schools offer teacher-parent conferences</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-
-									</div>
-									<div class="greenBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">20<span>%</span></p>
-												<p class="white small">of schools offer <b>home visits for</b> parent education</p>
-											</div>
-											<img class="img-fluid" src="images/School-day.svg">
-										</div>
-
-
-									</div>
-
-								</div>
-								<p class="charcoal small">SOURCE: U.S. Department of Education, National Center for Education Statistics. (2020). Early Childhood Longitudinal Study, Kindergarten Class of 2010-11 (ECLS-K:2011). Data retrieved July 31, 2020, from Table A2a, <a class="darkBlue" target="_blank">https://nces.ed.gov/ecls/tables.asp.</a></p>
-
-								<p class="plum">How do schools support their kindergarten families?</p>
-								<p class="charcoal">In the last ECLS, the U.S. Department of Education asked school principals about ways they support their kindergartners’ families, like sending home important information.</p>
-								<div class="block-list">
-
-									<div class="purpleBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">78<span>%</span></p>
-												<p class="white small">of kindergartners attend schools that <b>send home information</b> to help parents <span class="gold-font">prepare their child</span> for kindergarten</p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-
-									</div>
-
-
-									<div class="purpleBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">86<span>%</span></p>
-												<p class="white small">of kindergartners attend schools that <b>send home information on</b> <span class="gold-font">topics or skills</span> <b>that are part of the</b> kindergarten program</p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-
-									</div>
-
-									<div class="purpleBlocks">
-										<div class="across">
-											<div class="vertical">
-												<p class="white totalSurveyCount">96<span>%</span></p>
-												<p class="white small">of kindergartners attend schools that <b>send home information</b> on how to <span class="gold-font">get in touch</span> with the teacher</p>
-											</div>
-											<img class="img-fluid threeRow" src="images/Lightbulb.svg">
-										</div>
-
-
-									</div>
-
-
-								</div>
-
-								<p class="charcoal small">SOURCE: West, J., Denton, K., and Germino-Hausken, E. (2000). America’s Kindergartners (NCES 2000-070).</p>
-								<p class="charcoal small">Retrieved July 31, 2020, from <a class="darkBlue" target="_blank">https://nces.ed.gov/pubs2000/2000070.pdf.</a></p>
-
-
-
-							</div>
-
 						</div>
-					</div>
-
-				</div>
-
+					</span>
+				</button>
 			</div>
+			<br>
 
+			<p class="whiteLarge">How to Contact Us</p>
 
 		</div>
+		<div class="modal-body">
 
+			<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
 
-
-		<div class="content-spacer"></div>
-		<div class="content-spacer"></div>
-		<section class="stop">
-
-		</section>
-
-		<div class="rel">
-			<section class="verse3 three">
-
-				<div class="absolute"><img src="images/img_kid-3.png" class="img-fluid"></div>
-
-			</section>
-
-		</div>
-
-		<section class="stop">
-
-		</section>
-
-	</section>
-
-
-	<section class="block55" id="three">
-
-		<div class="lightGreen bottom d-flex flex-column align-items-center heros">
-			<div class="guide-overlay container">
-				<h2 class="landing-sec-H text-center mb1">More Information</h2>
-
-				<div class="infoBar d-flex align-items-center" tabindex="0">
-					<div class="blueLeftBar"></div>
-					<h6 class="plum"><i class="fas fa-globe plum"></i>&nbsp;&nbsp;U.S. Department of Education's ECLS website</h6>
-					<div class="blueCircle2"><i class="fas fa-external-link-square-alt"></i></div>
+				<div class="form-group">
+					<label for="formControl1">Name</label>
+					<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name">
+				</div>
+				<div class="form-group">
+					<label for="formControl2">Email</label>
+					<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email">
 				</div>
 
-				<div class="infoBar d-flex align-items-center" tabindex="0">
-					<div class="greenLeftBar"></div>
-					<h6 class="plum"><i class="fas fa-school plum"></i></i>&nbsp;&nbsp;District Welcome Letter</h6>
-					<div class="greenCircle"><i class="fas fa-file-download white"></i></div>
-				</div>
-				<div class="infoBar d-flex align-items-center" tabindex="0">
-					<div class="greenLeftBar"></div>
-					<h6 class="plum"><i class="fas fa-chalkboard-teacher plum"></i>&nbsp;&nbsp;School Welcome Letter</h6>
-					<div class="greenCircle"><i class="fas fa-file-download white"></i></div>
-				</div>
-				<div class="infoBar d-flex align-items-center" tabindex="0">
-					<div class="greenLeftBar"></div>
-					<h6 class="plum">	<i class="fas fa-book plum"></i>&nbsp;&nbsp;ECLS School Fact Sheet</h6>
-
-					<div class="greenCircle">
-						<i class="fas fa-file-download white"></i>
-					</div>
-
-				</div>
-
-				<div class="infoBar larger d-flex align-items-center" tabindex="0">
-					<div class="goldLeftBar"></div>
-					<h6 class="plum"><i class="fas fa-video plum"></i>&nbsp;&nbsp;ECLS Video</h6>
-
-					<div class="absolute-video">
-						<iframe class="videoBar" src="https://www.youtube.com/embed/zB4I68XVPzQ"></iframe>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-
-
-		<div class="container-fluid">
-			<div class="row padding-0">
-
-				<h2 class="landing-sec-H">Endorsing Organizations</h2>
-			</div>
-			<div class="guide-overlay container">
-				<div class="row">
-					<div class="col-md-12 col-sm-12 mt-3 mb-4">
-						<p class="charcoal smallFont description text-center">The ECLS-K:2023 is endorsed by the following education organizations:</p>
-						<div id="accordion">
-							<div class="card faq-list">
-								<a class="card-link card-header plum" data-toggle="collapse" href="#collapseOne" >
-									<i class="far fa-users-class"></i>&nbsp;&nbsp;Parent, Teacher, and Principal Organizations
-									<span class="caret-down"><i class="far fa-angle-down darkGreen"></i></span>
-								</a>
-								<div id="collapseOne" class="collapse" data-parent="#accordion">
-									<div class="card-body ans">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-									</div>
-								</div>
+				<div class="form-group">
+					<fieldset>
+						<label for="general-inquiry">Reason for Contact</label>
+						<div class="around">
+							<div class="vertical">
+								<i class="fas fa-info-circle"></i>
+								<legend>Reason for Contact</legend>
+								<label class="radio-inline">
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
+								</label>
 							</div>
-							<div class="card faq-list">
-								<a class="card-link card-header plum" data-toggle="collapse" href="#collapseTwo" aria-expanded="true">
-									<i class="fas fa-school"></i>&nbsp;&nbsp;Private and Religious Education Organizations
-									<span class="caret-down"><i class="far fa-angle-down darkGreen"></i></span>
-								</a>
-								<div id="collapseTwo" class="collapse show" data-parent="#accordion">
-									<div class="card-body ans">
-										<div class="row">
-											<div class="col-md-6">
-
-												<ul>
-													<li>Association of Christian Schools International</li>
-													<li>Association of Christian Teachers and Schools</li>
-													<li>Christian Schools International</li>
-													<li>Council of Islamic Schools in North America</li>
-													<li>Islamic Schools League of America</li>
-													<li>Lutheran Church-Missouri Synod</li>
-
-
-												</ul>
-											</div>
-											<div class="col-md-6">
-
-												<ul>
-													<li>National Alliance of Christian Schools</li>
-													<li>National Association of Independent Schools</li>
-													<li>National Catholic Educational Association</li>
-													<li>National Christian School Association</li>
-													<li>U.S. Conference of Catholic Bishops</li>
-													<li>WELS Commission on Lutheran Schools</li>
-
-												</ul>
-
-											</div>
-
-										</div>
-									</div>
-								</div>
+							<div class="vertical">
+								<i class="fas fa-question-circle"></i>
+								<label class="radio-inline">
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
+								</label>
 							</div>
-							<div class="card faq-list">
-								<a class="card-link card-header plum" data-toggle="collapse" href="#collapseThree">
-									<i class="fas fa-atlas"></i>&nbsp;&nbsp;Education Policy Organizations
-									<span class="caret-down"><i class="far fa-angle-down darkGreen"></i></span>
-								</a>
-								<div id="collapseThree" class="collapse" data-parent="#accordion">
-									<div class="card-body ans">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									</div>
-								</div>
+							<div class="vertical">
+								<i class="fas fa-user-headset"></i>
+								<label class="radio-inline">
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
+								</label>
 							</div>
-							<div class="card faq-list">
-								<a class="card-link card-header plum" data-toggle="collapse" href="#collapseFour">
-									<i class="fas fa-child"></i>&nbsp;&nbsp;Early Childhood Education Organizations
-									<span class="caret-down"><i class="far fa-angle-down darkGreen"></i></span>
-								</a>
-								<div id="collapseFour" class="collapse" data-parent="#accordion">
-									<div class="card-body ans">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									</div>
-								</div>
-							</div>
-
 						</div>
-
-						<p class="purple text-center greenUnderline">Privacy & Authorization</p>
-						<p class="dark">The National Center for Education Statistics (NCES) is authorized to conduct the Early Childhood Longitudinal Study (ECLS) by the Education Sciences Reform Act of 2002 (ESRA 2002, 20 U.S.C. §9543). The data are being collected for NCES by Westat, a U.S.-based research organization. All of the information you provide may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151). Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff.</p>
-						<p class="dark">According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
-						<p class="dark">OMB No. 1850-0750, Approval Expires XX/XX/XXXX</p>
-					</div>
+					</fieldset>
 				</div>
-
-			</div>
+				<div class="form-group">
+					<label for="formControl4">Message</label>
+					<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
+				</div>
+				<center>
+					<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+				</center>
+				<div class="emailInfo">
+					<h6 class="white pt1">Email</h6>
+					<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
+				</div>
+			</form>
 
 		</div>
+		<div class="modal-footer">
 
-
-
-		<div class="menu-buttons-768">
-			<ul class="menu-buttons-768-list">
-				<li tabindex="0" data-target="#home"><i class="fas fa-info-circle"></i>
-
-				</li>
-				<li tabindex="0" data-target="#participation"><i class="fas fa-list-ol"></i>
-
-				</li>
-				<li tabindex="0" data-target="#two"><i class="fas fa-lightbulb"></i>
-
-				</li>
-				<li tabindex="0" data-target="#three"><i class="fas fa-book-reader"></i>
-
-				</li>
-			</ul>
-		</div>
-		<div class="back-to-top">
-			<i class="far fa-angle-up"></i>
 		</div>
 
 	</div>
 
+</div>
+
+<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+	&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+</div>
+
+<div class="contactUsOverlay"></div>
 
 
- <!-- <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="show privacy and authorization" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-	<div class="modal-content">
-	<div class="modal-header">
-	<h4 class="modal-title">Privacy & Authorization</h4>
-	<button role="button" class="close" data-dismiss="modal" aria-label="Close">
-	<span aria-hidden="true">&times;</span>
+<section class="top-section">
+	<div class="heros">
+		<section class="block10">
+
+			<div class="container_0" id="home">
+
+				<div class="menu-buttons-floating">
+					<ul class="menu-buttons-floating-list">
+						<li tabindex="0" data-target="#home"><i class="fas fa-info-circle"></i>
+
+						</li>
+						<li tabindex="0" data-target="#participation"><i class="fas fa-list-ol"></i>
+
+						</li>
+						<li tabindex="0" data-target="#two"><i class="fas fa-lightbulb"></i>
+
+						</li>
+						<li tabindex="0" data-target="#three"><i class="fas fa-book-reader"></i>
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="container-fluid heros">
+
+					<div class="guide-overlay2 container-fluid">
+
+						<section class="start">
+							<div class="heros">
+								<div class="row switch">
+
+									<div class="col-lg-8 col-md-auto col-md-12 col-sm-12 one">
+
+										<h2 class="landing-sec-H">What is the ECLS?</h2>
+										<p class="charcoal"><span class="strong">The Early Childhood Longitudinal Study</span> (ECLS) program gives families, educators, and policymakers important information about children’s knowledge and skills. For more than 20 years, the study has helped improve education for children from birth through elementary school.</p>
+										<p class="charcoal">The ECLS is conducted by the <span class="darkBlue strong">National Center for Education Statistics (NCES)</span>, within the <span class="darkBlue strong">U.S. Department of Education’s Institute of Education Sciences (IES)</span></p>
+										<p class="charcoal">The ECLS gathers information from children, parents/guardians, teachers, and school administrators to provide a complete picture of children’s learning experiences. The upcoming study—the ECLS-K:2023—will focus on the kindergarten class of 2022-23. This study will be informed by a series of <span class="darkBlue strong">field tests</span>, including one in the fall of 2021. These field tests are small-scale trial runs of the study to test the study instruments with children, parents, teachers, and school administrators.</p>
+										<p class="charcoal">The ECLS-K:2023 will provide information that can be used at the local, state, and national levels to guide practice and policies that increase children’s chances of doing well in school. It is important that selected children, parents, teachers, and schools participate to ensure that the  findings are accurate.</p>
+										<p class="charcoal">Students, families, teachers, and schools will not be identified in any ECLS reports. Information will be combined from all participants to produce reports for the nation as a whole.</p>
+										<p class="charcoal">All of the information provided by children, families, teachers, and principals may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151). All staff working on the study have signed an affidavit of non-disclosure where they swear to abide by this law.</p>
+
+									</div>
+
+									<div class="col-lg-4 col-md-12 col-sm-12 two">
+										<div class="grayBackground">
+											<div class="whiteBox">
+												<form>
+													<legend>
+														<p class="darkGreen text-center">New Visitors</p>
+													</p>
+												</legend>
+												<p class="small charcoal">Did you receive a post card or an email about the Early Childhood Longitudinal Study? If this is your first time visiting this site, please enter the PIN from the post card or email.</p>
+												<br>
+												<div class="form-group">
+
+													<label for="accessCode1" class="togglePassword">PIN</label>
+
+													<input id="accessCode1" type="password" name="pin" class="form-control" required maxlength="">
+
+													<div id="eye" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
+												</div>
+												<div class="d-flex justify-content-center mt-4 mb-3">
+													<button type="submit" class="btn btn-info button-outlined" id="returning" tabindex="0" aria-hidden="false" role="button" data-toggle="modal" data-target="#newUserModal" tabindex="0" aria-describedby="New User" aria-label="New User">Submit</button>
+												</div>
+											</form>
+										</div>
+
+										<div class="whiteBox">
+											<form>
+												<legend>
+													<p class="darkGreen text-center">Returning Visitors</p>
+												</p>
+											</legend>
+											<p class="small charcoal">For returning visitors, please enter your username and password.</p>
+											<br>
+											<div class="form-group">
+
+												<label for="name">Username</label>
+												<input type="text" class="form-control" id="name" placeholder="">
+
+											</div>
+
+											<div class="form-group">
+												<label for="accessCode2">Password</label>
+												<input id="accessCode2" type="password" class="form-control"  placeholder="">
+												<div id="eye2" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
+
+											</div>
+											<div class="d-flex justify-content-center mt-4 mb-3">
+												<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false">Submit</button>
+											</div>
+										</form>
+									</div>
+
+									<p class="purple">Technical and Security Recommendations</p>
+									<p class="dark">We recommend using a desktop or laptop computer to complete the study activities. For the best experience, use Chrome, Edge, Safari, or Firefox.</p>
+									<p class="dark">When you have finished or if you need to stop before finishing, please LOG OUT of the survey system by selecting "Logout" and CLOSE ALL browser windows or screens to keep your responses secure. For example, if you used Chrome or Safari to open the website, make sure no Chrome or Safari windows or screens are open after you end the session. Not closing all browsers may allow someone else to see your responses.</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+		</div>
+
+
+		<div class="modal fade" id="newUserModal" tabindex="-1" role="dialog" aria-labelledby="New User Registration" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Create Account</h4>
+							<button role="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+
+								<form>
+						<div class="modal-body">
+
+							<legend>
+								Please create a username and password to use to access MyECLS.
+								Your username should be your email address.
+								Your password must be at least 8 characters in length, and must contain a combination of 3 of the following 4 types: upper case letters, lower case letters, numbers, or special characters.
+
+							</legend>
+							<h6 class="black">Please create a username and password to use to access MyECLS.<br>Your username should be your email address.</h6>
+
+							<div class="form-group">
+							 <label for="email1">Email address</label>
+							 <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+
+						 </div>
+
+
+							<h6 class="black">Your password must be at least 8 characters in length, and must contain a combination of 3 of the following 4 types: upper case letters, lower case letters, numbers, or special characters.</h6>
+
+
+	           <div class="form-group">
+	             <label for="password1">Password</label>
+	             <input type="password" class="form-control" id="password1" placeholder="Password">
+	           </div>
+	           <div class="form-group">
+	             <label for="password1">Confirm Password</label>
+	             <input type="password" class="form-control" id="password2" placeholder="Confirm Password">
+	           </div>
+
+						</div>
+						<div class="modal-footer">
+
+							  <button type="submit" class="btn continue">CONTINUE</button>
+<!-- 
+							<button type="submit" class="btn closeIt" data-dismiss="modal" id="continue">CONTINUE</button> -->
+
+						</div>
+							</form>
+					</div>
+
+			</div>
+		</div>
+
+		<div class="content-spacer"></div>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-12 col-sm-12">
+
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zB4I68XVPzQ" title="Select to play the ECLS video"></iframe>
+
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<div class="container-fluid lightGreen second" id="participation">
+		<div class="row padding-0">
+
+			<h2 class="landing-sec-H">Why Should I Participate?</h2>
+		</div>
+		<div class="guide-overlay container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 mt-2 mb-4">
+					<p class="charcoal smallFont description">The ECLS explores how different factors—at home and at school—relate to children’s development and learning over time. This is your opportunity to contribute to research that can lead to changes, helping your school, teachers, and students, as well as the broader educational community. Your participation in the study allows us to answer the following types of questions:</p>
+				</div>
+			</div>
+
+
+			<div class="row greenMiddle">
+				<div class="col-lg-4 col-md-6 offset-md-1 col-sm-12">
+					<div class="d-flex justify-content-between mb-5">
+						<img src="images/Lightbulb.svg" class="img-fluid smallImg">
+
+						<p class="charcoal smallFont">What knowledge and skills do children have when they start school?</p>
+					</div>
+					<div class="d-flex justify-content-between mb-5">
+						<img src="images/Apple.svg" class="img-fluid smallImg">
+
+						<p class="charcoal smallFont">How do educators help make the transition into kindergarten less difficult for children?</p>
+					</div>
+					<div class="d-flex justify-content-between mb-5">
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 offset-md-2 col-sm-12">
+					<div class="d-flex justify-content-between mb-5">
+						<img src="images/Puzzles.svg" class="img-fluid smallImg">
+
+						<p class="charcoal smallFont">What educational activities do kindergartners do at home?</p>
+					</div>
+					<div class="d-flex justify-content-between mb-5">
+						<img src="images/Sprout.svg" class="img-fluid smallImg">
+
+						<p class="charcoal smallFont">How well can kindergartners pay attention and control their behaviors?</p>
+					</div>
+					<div class="d-flex justify-content-between mb-5">
+						<img src="images/Rocket.svg" class="img-fluid smallImg">
+
+						<p class="charcoal smallFont">How well do kindergarten programs prepare children for later grades?</p>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+</section>
+<section class="stop">
+
+</section>
+
+<div class="rel">
+	<section class="verse3">
+
+		<div class="absolute">
+			<img src="images/img_kid-1.png" class="img-fluid" alt="A kindergarten-aged boy wearing a backpack, smiling, and hugging his father">
+		</div>
+
+	</section>
+
+</div>
+
+<section class="stop">
+
+</section>
+
+
+
+<div class="content-spacer"></div>
+
+<div class="rel animation">
+	<section class="block-2000">
+		<div class="d-flex flex-column align-items-center heros">
+			<div class="guide-overlay container">
+				<h2 class="landing-sec-H text-center mb-5">Field Test Participation Steps</h2>
+				<!-- <p class="landing-sec-H text-center smaller mb-5">Field Test</p> -->
+
+			</div>
+
+		</div>
+
+		<div class="heros">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-12 col-sm-12">
+
+						<div class="middle">
+
+							<p class="darkGreen text-center text1 transparent-opacity">Spring 2021</p>
+							<div class="line1 box-rotate"></div>
+
+
+							<p class="transparent-opacity text2">ECLS representatives will contact districts and schools to introduce the ECLS and to discuss study participation in a field test in the fall of the 2021–22 school year.</p>
+							<div class="green-circle transparent-opacity">
+								<img src="images/circle.svg" class="img-fluid round" alt="">
+							</div>
+
+							<div class="flower transparent-opacity">
+								<img src="images/flowers.svg" class="img-fluid leftImg" alt="">
+							</div>
+
+							<div class="line2 transparent-opacity"></div>
+
+							<div class="line3 box-rotate"></div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<section class="block-3000">
+
+		<div class="heros">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-12 col-sm-12">
+
+						<div class="middle">
+
+							<p class="darkGreen text-center text3 transparent-opacity">Late summer/Early fall 2021</p>
+							<div class="line4 box-rotate"></div>
+							<div class="green-circle2 transparent-opacity">
+								<img src="images/circle.svg" class="img-fluid round" alt="">
+							</div>
+
+							<p class="text4 transparent-opacity">ECLS representatives will contact participating schools to discuss the study activities and logistics in more detail. Study staff will work with the school staff to select a sample of children and begin notifying parents about the study.</p>
+
+
+							<div class="house transparent-opacity">
+								<img src="images/School-day.svg" class="img-fluid rightImg" alt="">
+							</div>
+
+							<div class="line5 box-rotate"></div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-12 col-sm-12">
+
+						<div class="middle">
+
+							<p class="darkGreen text-center text5 transparent-opacity">Fall 2021</p>
+							<div class="line6 box-rotate"></div>
+							<div class="green-circle3 transparent-opacity" alt="">
+								<img src="images/circle.svg" class="img-fluid round" alt="">
+							</div>
+
+							<p class="text6 transparent-opacity">Study staff will visit schools for approximately 4 days to conduct the study activities. Kindergarten, first-grade, and second-grade children will be asked to participate in reading and math assessments, which will be conducted by trained ECLS staff. The children’s parents, teachers, and principals will be asked to complete surveys. An ECLS representative will work closely with schools and their participating staff, and will arrange the assessment logistics. Every effort will be made to minimize the burden on school staff.</p>
+
+
+							<div class="leaves transparent-opacity">
+								<img src="images/Leaves.svg" class="img-fluid leftImg">
+							</div>
+
+							<div class="line7 box-rotate"></div>
+							<p class="text-last transparent-opacity">Data and operations from the field test will be analyzed in preparation for the national data collection in fall 2022.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</section>
+
+</div>
+
+
+<section class="stop">
+
+</section>
+
+<div class="rel">
+	<section class="verse3 two">
+
+		<div class="absolute2">
+			<img src="images/img_kid-2.png" class="img-fluid" alt="A kindergarten-aged girl at a desk, writing with a pencil on a piece of paper, as though she is working on an assignment at school">
+		</div>
+
+	</section>
+
+</div>
+
+<section class="stop">
+
+</section>
+
+</div>
+
+</section>
+
+<div class="content-spacer"></div>
+
+
+<section class="block5" id="two">
+
+<div class="d-flex flex-column align-items-center heros">
+<div class="guide-overlay container">
+	<h2 class="landing-sec-H text-center">Findings</h2>
+	<p class="charcoal text-center">What we learned from ECLS students, parents, and schools</p>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+	<div class="col-lg-9 col-md-10 offset-md-3">
+
+		<div class="whiteBox new">
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link selected active text-center" data-toggle="tab" href="#tabs-1" role="tab">Social & Academic Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link  text-center" data-toggle="tab" href="#tabs-2" role="tab">Children Going to School</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link  text-center" data-toggle="tab" href="#tabs-3" role="tab">School Support of Families</a>
+				</li>
+
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="tabs-1" role="tabpanel">
+
+					<p class="darkGreen">What do we know about kindergartners in the United States?</p>
+					<p class="darkGreen">How do they interact with their classmates?</p>
+					<p class="charcoal">A lot of what we know about kindergartners in the U.S. comes from teachers who participated in the previous ECLS studies.</p>
+
+
+
+					<div class="block-list">
+						<!-- <div class="horizontal"> -->
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">77<span>%</span></p>
+									<p class="white small">of kindergartners often or very often <b>formed friendships</b></p>
+								</div>
+
+								<img class="img-fluid top-svg" src="images/quote-gray.svg" alt="Seventy-seven percent of kindergartners often or very often formed friendships. Three puzzle pieces fill to be seventy-seven percent yellow">
+							</div>
+
+						</div>
+
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">74<span>%</span></p>
+									<p class="white small">of kindergartners often or very often accepted peers’ <b>ideas</b></p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Seventy-four percent of kindergartners often or very often accepted peers' ideas. A face, a light bulb, and a check mark fill to be seventy-four percent yellow">
+							</div>
+
+						</div>
+
+						<!-- </div>
+						<div class="horizontal three"> -->
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">51<span>%</span></p>
+									<p class="white small"><b>often or</b> very often comforted <b>others</b></p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Fifty-one percent of kindergartners often or very often comforted others. A heart fills to be fifty-one percent yellow">
+							</div>
+
+						</div>
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">11<span>%</span></p>
+									<p class="white small">often or very <b>often argued</b> with others</p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Eleven percent of kindergartners often or very often argued with others. Two stick figures with frowning faces fill to be eleven percent yellow.">
+							</div>
+
+
+						</div>
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">10<span>%</span></p>
+									<p class="white small">often or very <b>often fought</b> with others</p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Ten percent of kindergartners often or very often fought with others. Two lightning bolts fill to be eleven percent yellow.">
+							</div>
+
+						</div>
+						<!-- </div> -->
+
+					</div>
+
+					<p class="plum">What kinds of things do kindergartners know?</p>
+					<p class="charcoal">The previous ECLS studies worked with kindergartners to learn about their knowledge and skills.</p>
+					<div class="block-list">
+
+						<div class="purpleBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">66<span>%</span></p>
+									<p class="white small">recognized their letters</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Sixty-six percent of kindergartners recognized their letters. The letters A, B, and C fill to be sixty-six percent yellow.">
+							</div>
+
+
+						</div>
+
+
+						<div class="purpleBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">29<span>%</span></p>
+									<p class="white small">knew the first <b>sounds of</b> words</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Twenty-nine percent of kindergartners knew the first sounds of words. The letters C, A, and T fill to be twenty-nine percent yellow.">
+							</div>
+
+						</div>
+
+						<div class="purpleBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">58<span>%</span></p>
+									<p class="white small">understood size comparisons, such as big, bigger, and biggest</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Fifty-eight percent of kindergartners understood size comparisons, such as big, bigger, and biggest. Three squares fill to be fifty-eight percent yellow">
+							</div>
+
+
+						</div>
+						<div class="purpleBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">94<span>%</span></p>
+									<p class="white small">recognized numbers and shapes and were able to count to 10</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Ninety-four percent of kindergartners recognized numbers and shapes and were able to count to ten. The numbers 1, 2, and 3 fill to be ninety-four percent yellow.">
+							</div>
+
+						</div>
+
+					</div>
+
+					<p class="charcoal small">SOURCE: West, J., Denton, K., and Germino-Hausken, E. (2000). America’s Kindergartners (NCES 2000-070).</p>
+					<p class="charcoal small">Retrieved July 31, 2020, from <a class="darkBlue" target="_blank">https://nces.ed.gov/pubs2000/2000070.pdf.</a></p>
+
+				</div>
+
+				<div class="tab-pane" id="tabs-2" role="tabpanel">
+					<p class="darkGreen">How do kindergartners like school?</p>
+					<p class="charcoal">Most kindergartners are excited about going to school and like their teacher, as reported by parents in the last ECLS.</p>
+					<div class="block-list">
+
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">85<span>%</span></p>
+									<p class="white small">of children looked forward to going to school</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Eighty-five percent of children looked forward to going to school. TA smiling face fills to be eighty-five percent yellow">
+							</div>
+
+						</div>
+
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">10<span>%</span></p>
+									<p class="white small">of children complained about going to school</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Ten percent of children complained about going to school. A frowning face fills to be ten percent yellow.">
+							</div>
+
+						</div>
+
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">71<span>%</span></p>
+									<p class="white small">of children like their teacher</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Seventy-one percent of children like their teacher. A coffee mug displaying number one fills to be seventy-one percent yellow.">
+							</div>
+
+						</div>
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">85<span>%</span></p>
+									<p class="white small">of children said good things about the school</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Eighty-five percent of children said good things about the school. A thumb's up fills to be eighty-five percent yellow.">
+							</div>
+
+						</div>
+						<p class="charcoal small">SOURCE: U.S. Department of Education, National Center for Education Statistics. (2020). Early Childhood Longitudinal Study, Kindergarten Class of 2010-11 (ECLS-K:2011). Data retrieved July 31, 2020, from Table C1a, <a class="darkBlue" target="_blank">https://nces.ed.gov/ecls/tables.asp.</a></p>
+
+					</div>
+
+				</div>
+
+				<div class="tab-pane" id="tabs-3" role="tabpanel">
+
+					<p class="darkGreen">How do schools support their families?</p>
+					<p class="charcoal">In the last ECLS, the U.S. Department of Education asked school principals in schools with kindergartners about involvement opportunities for parents, like visiting the school or having home visits.</p>
+
+					<div class="block-list">
+
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">75<span>%</span></p>
+									<p class="white small">of schools offer PTA or other school meetings</p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Seventy-five percent of schools offer PTA or other school meetings.  An apple fills to be seventy-five percent yellow.">
+							</div>
+
+						</div>
+
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">62<span>%</span></p>
+									<p class="white small">of schools offer school performances to which parents are <b>invited</b></p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Sixty-two percent of schools offer school performances to which parents are invited. Two theater masks fill to be sixty-two percent yellow.">
+							</div>
+
+						</div>
+
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">44<span>%</span></p>
+									<p class="white small">of schools offer classroom programs like class plays, book nights, or family <b>math nights</b></p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Forty-four percent of schools offer classroom programs like class plays, book nights, or family math nights. A laptop computer fills to be forty-four percent yellow.">
+							</div>
+
+
+						</div>
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">86<span>%</span></p>
+									<p class="white small">of schools offer teacher-parent conferences</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Eighty-six percent of schools offer teacher-parent conferences. Two message bubbles fill to be eighty-six percent yellow.">
+							</div>
+
+
+						</div>
+						<div class="greenBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">20<span>%</span></p>
+									<p class="white small">of schools offer <b>home visits for</b> parent education</p>
+								</div>
+								<img class="img-fluid" src="images/School-day.svg" alt="Twenty percent of schools offer home visits for parent education. A house fills to be twenty percent yellow.">
+							</div>
+
+
+						</div>
+
+					</div>
+					<p class="charcoal small">SOURCE: U.S. Department of Education, National Center for Education Statistics. (2020). Early Childhood Longitudinal Study, Kindergarten Class of 2010-11 (ECLS-K:2011). Data retrieved July 31, 2020, from Table A2a, <a class="darkBlue" target="_blank">https://nces.ed.gov/ecls/tables.asp.</a></p>
+
+					<p class="plum">How do schools support their kindergarten families?</p>
+					<p class="charcoal">In the last ECLS, the U.S. Department of Education asked school principals about ways they support their kindergartners’ families, like sending home important information.</p>
+					<div class="block-list">
+
+						<div class="purpleBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">78<span>%</span></p>
+									<p class="white small">of kindergartners attend schools that <b>send home information</b> to help parents <span class="gold-font">prepare their child</span> for kindergarten</p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Seventy-eight percent of kindergartners attend schools that send home information to help parents prepare their child for kindergarten. A check mark fills to be seventy-eight percent yellow">
+							</div>
+
+
+						</div>
+
+
+						<div class="purpleBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">86<span>%</span></p>
+									<p class="white small">of kindergartners attend schools that <b>send home information on</b> <span class="gold-font">topics or skills</span> <b>that are part of the</b> kindergarten program</p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Eighty-six percent of kindergartners attend schools that send home information on topics or skills that are part of the kindergarten program. A light bulb fills to be eighty-six percent yellow.">
+							</div>
+
+
+						</div>
+
+						<div class="purpleBlocks">
+							<div class="across">
+								<div class="vertical">
+									<p class="white totalSurveyCount">96<span>%</span></p>
+									<p class="white small">of kindergartners attend schools that <b>send home information</b> on how to <span class="gold-font">get in touch</span> with the teacher</p>
+								</div>
+								<img class="img-fluid threeRow" src="images/Lightbulb.svg" alt="Ninety-six percent of kindergartners attend schools that send home information on how to get in touch with the teacher. A telephone fills to be ninety-six percent yellow.">
+							</div>
+
+
+						</div>
+
+
+					</div>
+
+					<p class="charcoal small">SOURCE: West, J., Denton, K., and Germino-Hausken, E. (2000). America’s Kindergartners (NCES 2000-070).</p>
+					<p class="charcoal small">Retrieved July 31, 2020, from <a class="darkBlue" target="_blank">https://nces.ed.gov/pubs2000/2000070.pdf.</a></p>
+
+
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="content-spacer"></div>
+<div class="content-spacer"></div>
+<section class="stop">
+
+</section>
+
+<div class="rel">
+<section class="verse3 three">
+
+	<div class="absolute"><img src="images/img_kid-3.png" class="img-fluid" alt="Four kindergarten-aged children playing with a plant-watering can"></div>
+
+</section>
+
+</div>
+
+<section class="stop">
+
+</section>
+
+</section>
+
+
+<section class="block55" id="three">
+
+<div class="lightGreen bottom d-flex flex-column align-items-center heros">
+<div class="guide-overlay container">
+	<h2 class="landing-sec-H text-center mb1">More Information</h2>
+
+	<div class="infoBar d-flex align-items-center" tabindex="0">
+		<div class="blueLeftBar"></div>
+		<h6 class="plum"><i class="fas fa-globe plum"></i> U.S. Department of Education's ECLS website</h6>
+		<div class="blueCircle2"><i class="fas fa-external-link-square-alt"></i></div>
+	</div>
+
+	<div class="infoBar d-flex align-items-center" tabindex="0">
+		<div class="greenLeftBar"></div>
+		<h6 class="plum"><i class="fas fa-school plum"></i></i> District Welcome Letter</h6>
+		<div class="greenCircle"><i class="fas fa-file-download white"></i></div>
+	</div>
+	<div class="infoBar d-flex align-items-center" tabindex="0">
+		<div class="greenLeftBar"></div>
+		<h6 class="plum"><i class="fas fa-chalkboard-teacher plum"></i> School Welcome Letter</h6>
+		<div class="greenCircle"><i class="fas fa-file-download white"></i></div>
+	</div>
+	<div class="infoBar d-flex align-items-center" tabindex="0">
+		<div class="greenLeftBar"></div>
+		<h6 class="plum">	<i class="fas fa-book plum"></i> ECLS School Fact Sheet</h6>
+
+		<div class="greenCircle">
+			<i class="fas fa-file-download white"></i>
+		</div>
+
+	</div>
+
+	<div class="infoBar larger d-flex align-items-center" tabindex="0">
+		<div class="goldLeftBar"></div>
+		<h6 class="plum"><i class="fas fa-video plum"></i>&nbsp;&nbsp;ECLS Video</h6>
+
+		<div class="absolute-video">
+			<iframe class="videoBar" src="https://www.youtube.com/embed/zB4I68XVPzQ" title="Select to play the ECLS video"></iframe>
+		</div>
+
+	</div>
+
+</div>
+</div>
+
+
+<div class="container-fluid">
+<div class="row padding-0">
+
+	<h2 class="landing-sec-H">Endorsing Organizations</h2>
+</div>
+<div class="guide-overlay container">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 mt-3 mb-4">
+			<p class="charcoal smallFont description text-center">The ECLS-K:2023 is endorsed by the following education organizations:</p>
+			<div id="accordion">
+				<div class="card faq-list">
+					<a class="card-link card-header plum" data-toggle="collapse" href="#collapseOne" >
+						<i class="far fa-users-class"></i>&nbsp;&nbsp;Parent, Teacher, and Principal Organizations
+						<span class="caret-down"><i class="far fa-angle-down darkGreen"></i></span>
+					</a>
+					<div id="collapseOne" class="collapse" data-parent="#accordion">
+						<div class="card-body ans">
+							<ul>
+								<li>American Federation of Teachers</li>
+								<li>Association for Middle Level Education</li>
+								<li>Council for Exceptional Children</li>
+								<li>International Literacy Association</li>
+								<li>National Association of Elementary School Principals</li>
+								<li>National Council of Teachers of Mathematics</li>
+								<li>National Parent Teacher Association</li>
+								<li>National Science Teaching Association</li>
+								<li>Texas State Teachers Association</li>
+
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<div class="card faq-list">
+					<a class="card-link card-header plum" data-toggle="collapse" href="#collapseTwo" aria-expanded="true">
+						<i class="fas fa-school"></i>&nbsp;&nbsp;Private and Religious Education Organizations
+						<span class="caret-down"><i class="far fa-angle-down darkGreen"></i></span>
+					</a>
+					<div id="collapseTwo" class="collapse show" data-parent="#accordion">
+						<div class="card-body ans">
+							<div class="row">
+								<div class="col-md-6">
+
+									<ul>
+										<li>Association of Christian Schools International</li>
+										<li>Association of Christian Teachers and Schools</li>
+										<li>Christian Schools International</li>
+										<li>Council of Islamic Schools in North America</li>
+										<li>Islamic Schools League of America</li>
+										<li>Lutheran Church-Missouri Synod</li>
+
+
+									</ul>
+								</div>
+								<div class="col-md-6">
+
+									<ul>
+										<li>National Alliance of Christian Schools</li>
+										<li>National Association of Independent Schools</li>
+										<li>National Catholic Educational Association</li>
+										<li>National Christian School Association</li>
+										<li>U.S. Conference of Catholic Bishops</li>
+										<li>WELS Commission on Lutheran Schools</li>
+
+									</ul>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card faq-list">
+					<a class="card-link card-header plum" data-toggle="collapse" href="#collapseThree">
+						<i class="fas fa-atlas"></i>&nbsp;&nbsp;Education Policy Organizations
+						<span class="caret-down"><i class="far fa-angle-down darkGreen"></i></span>
+					</a>
+					<div id="collapseThree" class="collapse" data-parent="#accordion">
+						<div class="card-body ans">
+							<ul>
+								<li>Alliance for Excellent Education</li>
+								<li>Council of Chief State School Officers</li>
+								<li>National School Boards Association</li>
+								<li>The School Superintendents Association</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<div class="card faq-list">
+					<a class="card-link card-header plum" data-toggle="collapse" href="#collapseFour">
+						<i class="fas fa-child"></i>&nbsp;&nbsp;Early Childhood Education Organizations
+						<span class="caret-down"><i class="far fa-angle-down darkGreen"></i></span>
+					</a>
+					<div id="collapseFour" class="collapse" data-parent="#accordion">
+						<div class="card-body ans">
+							<ul>
+								<li>American Montessori Society</li>
+								<li>Association Montessori International/USA</li>
+								<li>National Institute for Early Education Research</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<p class="purple text-center greenUnderline">Privacy & Authorization</p>
+			<p class="dark">The National Center for Education Statistics (NCES) is authorized to conduct the Early Childhood Longitudinal Study (ECLS) by the Education Sciences Reform Act of 2002 (ESRA 2002, 20 U.S.C. §9543). The data are being collected for NCES by Westat, a U.S.-based research organization. All of the information you provide may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151). Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff.</p>
+			<p class="dark">According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
+			<p class="dark">OMB No. 1850-0750, Approval Expires XX/XX/XXXX</p>
+		</div>
+	</div>
+
+</div>
+
+</div>
+
+
+
+<div class="menu-buttons-768">
+<ul class="menu-buttons-768-list">
+	<li tabindex="0" data-target="#home"><i class="fas fa-info-circle"></i>
+
+	</li>
+	<li tabindex="0" data-target="#participation"><i class="fas fa-list-ol"></i>
+
+	</li>
+	<li tabindex="0" data-target="#two"><i class="fas fa-lightbulb"></i>
+
+	</li>
+	<li tabindex="0" data-target="#three"><i class="fas fa-book-reader"></i>
+
+	</li>
+</ul>
+</div>
+<div class="back-to-top">
+<i class="far fa-angle-up"></i>
+</div>
+
+</div>
+
+
+
+<!-- <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="show privacy and authorization" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Privacy & Authorization</h4>
+<button role="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
 </button>
 </div>
 <div class="modal-body">
@@ -1128,19 +1208,19 @@
 
 </div>
 <footer>
-	<div class="footer-wrapper">
+<div class="footer-wrapper">
 
 
-		<div class="d-flex">
-			<!-- <a role="button" data-toggle="modal" data-target="#privacyModal" tabindex="0" aria-describedby="Privacy and Authorization" aria-label="Show Privacy and Authorization" class="white privacy"><p class="white">Privacy & Authorization</p>
-			</a>
-			<div class="flip white"></div> -->
-			<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
-			<i class="fas fa-external-link-square white"></i>
-		</div>
+<div class="d-flex">
+<!-- <a role="button" data-toggle="modal" data-target="#privacyModal" tabindex="0" aria-describedby="Privacy and Authorization" aria-label="Show Privacy and Authorization" class="white privacy"><p class="white">Privacy & Authorization</p>
+</a>
+<div class="flip white"></div>  -->
+<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
+<i class="fas fa-external-link-square white"></i>
+</div>
 
 
-	</div>
+</div>
 </footer>
 
 <!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
