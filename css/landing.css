@@ -2028,7 +2028,8 @@ a.darkBlue {
   padding-top:5em;
 }
 .gold-font{
-  color:#fbb03b
+  color:#fbb03b;
+  font-weight:500;
 }
 
 .vertical {
