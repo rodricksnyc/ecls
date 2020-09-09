@@ -11,7 +11,17 @@ fill:#fbb03b;
 fill:#141F47;
 }
 
+.flip-top {
 
+      background: #00539f;
+      writing-mode: tb-rl;
+      width: 1px;
+      height: 47px;
+      margin: 0em .5em 0em 1em;
+      /* margin-top: 2px; */
+      opacity: .8;
+
+}
 
 
  /* .top-svg{
