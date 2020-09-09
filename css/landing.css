@@ -7380,7 +7380,22 @@ body{
     transform: scale(1.1) !important;
   }
 
+  .switch {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .switch .one {
+    order:2
+  }
+
+  .switch .two {
+    order:1
+  }
+
+  .grayBackground {
+    margin-bottom: 1em;
+}
 
   .animation {
     min-height: 196vh;
