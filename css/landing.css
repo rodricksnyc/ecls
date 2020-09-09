@@ -7304,6 +7304,11 @@ body{
   flex-direction: column !important;
       align-items: center !important;
 }
+.infoBar.larger{
+position: absolute;
+left: 7%;
+top: 13px;
+}
 
 
 
