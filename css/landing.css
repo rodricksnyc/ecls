@@ -7397,6 +7397,15 @@ body{
     margin-bottom: 1em;
 }
 
+#three {
+    padding-bottom: 1em;
+}
+
+#three ul {
+
+    margin-left: -1em;
+}
+
   .animation {
     min-height: 196vh;
     margin-left: 0;
