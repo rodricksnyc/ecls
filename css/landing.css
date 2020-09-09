@@ -1915,7 +1915,7 @@ width:100% !important;
   font-family: 'Public Sans' !important;
   margin: 0;
   max-width: 12em;
-  font-weight: 300;
+  font-weight: 100;
   padding-right: .5em;
 }
 
@@ -1949,7 +1949,7 @@ width:100% !important;
   font-family: 'Public Sans' !important;
   margin: 0;
   max-width: 12em;
-  font-weight: 300;
+  font-weight: 100;
   padding-right: .5em;
 
 }
@@ -2027,7 +2027,9 @@ a.darkBlue {
   margin-top: 0em;
   padding-top:5em;
 }
-
+.gold-font{
+  color:#fbb03b
+}
 
 .vertical {
   display: -webkit-flex;
