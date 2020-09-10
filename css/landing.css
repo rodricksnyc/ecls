@@ -1960,7 +1960,7 @@ h6.plum {
   font-family: 'Public Sans' !important;
   margin: 0;
   max-width: 9em;
-  font-weight: 100;
+  font-weight: 300;
   /* padding-right: 1em; */
   margin-right: 1em;
 
@@ -1970,7 +1970,7 @@ h6.plum {
   font-family: 'Public Sans' !important;
   margin: 0;
   max-width: 12em;
-  font-weight: 100;
+  font-weight: 300;
   /* padding-right: 1em; */
   margin-right: 0em;
   min-height: 8em;
@@ -2009,7 +2009,7 @@ h6.plum {
   font-family: 'Public Sans' !important;
   margin: 0;
   max-width: 9em;
-  font-weight: 100;
+  font-weight: 300;
   padding-right: .5em;
   margin-right: 1em;
   min-height: 9em;
