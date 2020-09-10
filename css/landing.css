@@ -7723,17 +7723,21 @@ header .logos a {
   .round {
     max-width: 1.3em;
   }
+  .rightImg {
+    max-width: 17em;
+}
+
 
 
   .leftImg {
-    max-width: 8em;
+    max-width: 11em;
   }
 
   .house {
     position: absolute;
     right: 0;
     max-width: none;
-    top: 36em;
+    top: 33.5em;
     left: 5%;
   }
   .flower {
@@ -7741,7 +7745,7 @@ header .logos a {
     /* right: 0; */
     max-width: 26em;
     /* top: 11%; */
-    margin-top: 9em;
+    margin-top: 7em;
     left: 10%;
   }
 
