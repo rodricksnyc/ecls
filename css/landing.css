@@ -6899,7 +6899,7 @@ body{
 
 @media (max-height:720px) and (min-width:768px){
   .animation{
-    min-height:140vh !important
+    min-height:170vh !important
   }
 }
 
