@@ -1975,7 +1975,8 @@ width:100% !important;
 }
 
 .greenBlocks img.threeRow {
-  max-width:5.7em
+  /* max-width:5.7em */
+  max-width:6.6em
 }
 
 .block-list {
@@ -1987,7 +1988,8 @@ width:100% !important;
   list-style-type: none;
   margin-left:0em;
   padding-left:0em;
-  margin-bottom:2em
+  margin-bottom:2em;
+  max-width: 1000px;
 }
 
 .greenBlocks .totalSurveyCount {
@@ -6960,7 +6962,7 @@ min-height: 140vh
   }
 
   .tab-content img.threeRow {
-    max-width: 3em;
+    max-width: 5em;
   }
   /* .tab-content p.small.white {
   max-width: 11em;
@@ -7232,7 +7234,7 @@ min-height: 19em;
 }
 
 .greenBlocks img {
-  max-width: 14em;
+  max-width: 12em;
 }
 
 /* .greenBlocks:last-of-type{
