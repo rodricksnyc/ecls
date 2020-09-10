@@ -1948,7 +1948,7 @@ width:100% !important;
 }
 
 .purpleBlocks img {
-  max-width:17em
+  max-width:15.8em
 }
 
 
@@ -1964,14 +1964,27 @@ width:100% !important;
 
 .purpleBlocks p.white.small {
   font-family: 'Public Sans' !important;
-  margin: 0;
-  max-width: 12em;
-  font-weight: 100;
-  padding-right: .5em;
+      margin: 0;
+      max-width: 9em;
+      font-weight: 100;
+      /* padding-right: 1em; */
+      margin-right: 1em;
+
+}
+
+#tabs-3   .purpleBlocks p.white.small {
+    font-family: 'Public Sans' !important;
+    margin: 0;
+    max-width: 12em;
+    font-weight: 100;
+    /* padding-right: 1em; */
+    margin-right: 0em;
+    min-height: 8em;
+
 }
 
 .greenBlocks img {
-  max-width:17em
+  max-width:16.5em
 }
 
 .greenBlocks img.threeRow {
@@ -1999,12 +2012,13 @@ width:100% !important;
 
 }
 .greenBlocks p.white.small {
-  font-family: 'Public Sans' !important;
-  margin: 0;
-  max-width: 11em;
-  font-weight: 100;
-  padding-right: .5em;
-
+    font-family: 'Public Sans' !important;
+    margin: 0;
+    max-width: 9em;
+    font-weight: 100;
+    padding-right: .5em;
+    margin-right: 1em;
+    min-height: 9em;
 }
 
 a.darkBlue {
@@ -5557,6 +5571,9 @@ transform: scale(0.8);
   .purpleBlocks{
     max-width:18em;
   }
+  .greenBlocks p.white.small {
+    min-height:0em
+  }
 
 }
 
@@ -5572,6 +5589,10 @@ transform: scale(0.8);
     min-height: 110vh;
     margin-left: 0;
     width: 141vw;
+  }
+
+  .greenBlocks p.white.small {
+    min-height:0em
   }
 
   .horizontal.three {
@@ -5624,6 +5645,13 @@ transform: scale(0.8);
     transform: scale(1.2) !important;
     margin-bottom: 0px !important;
 
+  }
+  .greenBlocks p.white.small {
+    min-height:0em
+  }
+
+  .source {
+    width:100%
   }
 
   .slate.borderLeft:after {
@@ -6902,6 +6930,9 @@ min-height: 140vh
 
 
 @media (width:1024px) and (height:1366px)  {
+  .greenBlocks p.white.small {
+    min-height:0em
+  }
   .guide-overlay  {
     padding:0em 6em;
   }
