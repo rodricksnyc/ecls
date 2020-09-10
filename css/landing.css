@@ -6892,6 +6892,8 @@ body{
 
 
 
+
+
 @media (min-width:992px) and (max-width:1024px)  {
   .margin4 {
     margin-left: 3em;
@@ -6964,6 +6966,7 @@ min-height: 140vh
 
 }
 
+
 @media (width:1366px) and (height:1024px)  {
   .animation {
     min-height: 105vh;
@@ -6985,6 +6988,8 @@ min-height: 140vh
     max-width: 4em;
   }
 }
+
+
 
 @media (max-width:1440px)  {
 
@@ -8297,6 +8302,21 @@ left: 1%;
 
 
 }
+
+@media (min-width:1501px) {
+  #tabs-2 .greenBlocks {
+
+    padding: 1.2em 3.6em;
+
+}
+
+  #tabs-2 .greenBlocks img {
+    max-width: 16.5em;
+    margin-left: 4em;
+}
+
+}
+
 
 @media (max-width:375px){
 
