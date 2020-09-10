@@ -6893,7 +6893,6 @@ body{
 
 
 
-
 @media (min-width:992px) and (max-width:1024px)  {
   .margin4 {
     margin-left: 3em;
@@ -6904,9 +6903,15 @@ body{
 
 }
 
-@media (max-height:700px) and (min-width:768px){
+@media (max-height:720px) and (min-width:768px){
   .animation{
-    min-height:170vh !important
+    min-height:140vh !important
+  }
+}
+
+@media (max-height:600px) and (min-width:768px){
+  .animation{
+    min-height:180vh !important
   }
 }
 
