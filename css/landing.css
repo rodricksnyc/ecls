@@ -7076,28 +7076,28 @@ min-height: 140vh
 @media (width:800px) and (max-height:1280px){
   .menu-buttons-floating {
     left: 20px;
-}
-.content-spacer {
+  }
+  .content-spacer {
     height: 4vh;
-}
-.animation .landing-sec-H {
+  }
+  .animation .landing-sec-H {
     left: -11vw;
     margin-top: 1em;
-}
+  }
 
-.lightGreen.bottom {
+  .lightGreen.bottom {
 
     padding-bottom: 5em;
 
   }
-.absolute img, .absolute2 img  {
+  .absolute img, .absolute2 img  {
     max-width: 18em;
-}
-.absolute, .absolute2 {
+  }
+  .absolute, .absolute2 {
 
     top: -6em;
-}
-.animation {
+  }
+  .animation {
     min-height: 90vh;
   }
   .text3 {
@@ -7105,18 +7105,18 @@ min-height: 140vh
     right: 558px;
 
     min-width: 13em;
-}
-.text4 {
-      min-width: 15em;
-}
-.nav-link {
+  }
+  .text4 {
+    min-width: 15em;
+  }
+  .nav-link {
 
     font-size: 1em;
     font-weight: 600;
-}
-.title1, .title2 {
-  font-size:4rem
-}
+  }
+  .title1, .title2 {
+    font-size:4rem
+  }
 
 }
 
@@ -7725,7 +7725,7 @@ header .logos a {
   }
   .rightImg {
     max-width: 17em;
-}
+  }
 
 
 
@@ -8296,7 +8296,7 @@ left: 1%;
   .animation {
     min-height: 190vh;
     margin-left: 0;
-}
+  }
 }
 
 @media (max-width:576px){

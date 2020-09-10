@@ -1024,10 +1024,6 @@ $(window).on('scroll', function() {
 
 
 
-
-
-
-
 if ($('.newBlocks').length < 10) {
 	$('.showBlocks').children().hide()
 }
@@ -1963,18 +1959,6 @@ $(".scrollIt").on("click", function(event) {
 		$(this).css('outline', 'none')
 	})
 
-	//
-	// if($('#accessCode1').val() == '')    {
-	//
-	//
-	// 	  // $('#accessCode2').attr('disabled','disabled');
-	//
-	// }
-	//
-	// if(!$('#accessCode1').val() == '')    {
-	//
-	// 		  $('#accessCode2').removAttr('disabled','disabled');
-	// }
 
 
 	$('body').keydown(function (event) {

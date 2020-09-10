@@ -1611,20 +1611,6 @@ $(document).ready(function () {
 		$(this).css('outline', 'none');
 	});
 
-	//
-	// if($('#accessCode1').val() == '')    {
-	//
-	//
-	// 	  // $('#accessCode2').attr('disabled','disabled');
-	//
-	// }
-	//
-	// if(!$('#accessCode1').val() == '')    {
-	//
-	// 		  $('#accessCode2').removAttr('disabled','disabled');
-	// }
-
-
 	$('body').keydown(function (event) {
 
 		if (!$('#email1').val() == '' && !$('#password1').val() == '' && !$('#password2').val() == '') {
