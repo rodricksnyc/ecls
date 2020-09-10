@@ -8399,6 +8399,28 @@ left: 1%;
   }
 }
 
+@media (max-width:360px) and  (min-height:641px) {
+ .animation {
+   min-height: 212vh;
+   margin-left: 0;
+ }
+}
+
+
+@media (max-width:360px) and (max-height:640px) {
+ #feedbackModal .carousel-control-prev {
+   left: 21%;
+ }
+
+ #feedbackModal .carousel-control-next {
+   right: 21%;
+ }
+ .animation {
+   min-height: 247vh;
+   margin-left: 0;
+}
+}
+
 @media (max-width:320px) {
 
   .flipTop{
@@ -8581,26 +8603,4 @@ left: 1%;
   }
 
 
-}
-
-@media (max-width:360px) and (max-height:740px) and (min-height:641px) {
-  .animation {
-    min-height: 212vh;
-    margin-left: 0;
-  }
-}
-
-
-@media (max-width:360px) and (max-height:640px) {
-  #feedbackModal .carousel-control-prev {
-    left: 21%;
-  }
-
-  #feedbackModal .carousel-control-next {
-    right: 21%;
-  }
-  .animation {
-    min-height: 247vh;
-    margin-left: 0;
-}
 }
