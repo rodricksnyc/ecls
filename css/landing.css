@@ -2049,13 +2049,14 @@ a.darkBlue {
 
 #two .darkGreen {
   color: #00843D;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.2;
+  font-weight:900
 }
 
 #two .plum {
   color: #071D49;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.2;
   margin-top:1em;
 }
@@ -7325,6 +7326,10 @@ header .logos a {
 
   .flipTop  {
     display: none;
+  }
+
+  li.spanishAfter:after {
+    display: none
   }
 
   #three h2 {
