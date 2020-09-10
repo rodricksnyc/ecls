@@ -105,6 +105,24 @@
   margin: 0em 1em ;
 }
 
+.flipTop {
+    background: #00539f;
+    writing-mode: tb-rl;
+    width: 1px;
+    height: 47px;
+    margin: 0em .5em 0em 1em;
+    /* margin-top: 2px; */
+    opacity: .8;
+}
+
+.languageToggle{
+  float: right;
+    /* margin-top: -4em; */
+    position: relative;
+    top: -63%;
+    right: 1%;
+}
+
 .translate-toggle {
   display:none
 }

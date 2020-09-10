@@ -21,6 +21,55 @@
 
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript">
+	function googleTranslateElementInit() {
+	new google.translate.TranslateElement({
+	// pageLanguage: 'ro',
+	includedLanguages: 'af,ar,de,en,es,fr,hu,it,ja,no,ro,ru,tr,zh-CN',
+	layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+	autoDisplay: false}, 'google_translate_element');
+	}
+
+	function loadGoogleTranslate() {
+	var googleTranslateScript = document.createElement('script');
+	googleTranslateScript.type = 'text/javascript';
+	googleTranslateScript.async = true;
+	googleTranslateScript.src = 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(googleTranslateScript);
+	}
+	$('.lang-select').click(function() {
+	var theLang = jQuery(this).attr('data-lang');
+	$('.goog-te-combo').val(theLang);
+
+	window.location = jQuery(this).attr('href');
+	location.reload();
+
+	});
+
+
+	$(window).scroll(function () {
+	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+	if (distanceY > 485) {
+
+		$('.menu-buttons-floating').css({
+			opacity: '1',
+			visibility: 'visible'
+		})
+	} else {
+
+		$('.menu-buttons-floating').css({
+			opacity: '0',
+			visibility: 'hidden'
+		})
+	}
+	});
+	</script>
 </head>
 
 <body>
@@ -72,9 +121,10 @@
 						<div class="logos d-flex justify-content-start align-items-center">
 							<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
 
-							<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
-						</div>
+							<div class="flipTop"></div>
 
+							<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="U.S. Department of Education seal"></a>
+						</div>
 						<div class="end">
 							<div class="whiteBox d-flex justify-content-between align-items-center">
 
@@ -92,7 +142,27 @@
 								</div>
 							</div>
 						</header>
-						<div class="greenBanner"><h1 class="white title">Welcome to your ECLS Teacher Portal!</h1></div>
+						<div class="greenBanner">
+							<h1 class="white title">Welcome to your ECLS Teacher Portal!</h1>
+
+								<div class="d-flex align-items-center languageToggle">
+
+
+									<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no" onclick="loadGoogleTranslate()">
+
+										<p class="language notranslate" translate="no">English</p>
+
+									</a>
+
+									<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+										<p class="language">Espa&ntilde;ol</p>
+
+									</a>
+
+								</div>
+
+						</div>
 					</div>
 
 				</section>
@@ -888,11 +958,10 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 
-<!-- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script type="text/javascript" src="build/index.js"></script>
 

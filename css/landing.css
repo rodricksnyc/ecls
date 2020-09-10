@@ -1958,22 +1958,22 @@ h6.plum {
 
 .purpleBlocks p.white.small {
   font-family: 'Public Sans' !important;
-      margin: 0;
-      max-width: 9em;
-      font-weight: 100;
-      /* padding-right: 1em; */
-      margin-right: 1em;
+  margin: 0;
+  max-width: 9em;
+  font-weight: 100;
+  /* padding-right: 1em; */
+  margin-right: 1em;
 
 }
 
 #tabs-3   .purpleBlocks p.white.small {
-    font-family: 'Public Sans' !important;
-    margin: 0;
-    max-width: 12em;
-    font-weight: 100;
-    /* padding-right: 1em; */
-    margin-right: 0em;
-    min-height: 8em;
+  font-family: 'Public Sans' !important;
+  margin: 0;
+  max-width: 12em;
+  font-weight: 100;
+  /* padding-right: 1em; */
+  margin-right: 0em;
+  min-height: 8em;
 
 }
 
@@ -2006,13 +2006,13 @@ h6.plum {
 
 }
 .greenBlocks p.white.small {
-    font-family: 'Public Sans' !important;
-    margin: 0;
-    max-width: 9em;
-    font-weight: 100;
-    padding-right: .5em;
-    margin-right: 1em;
-    min-height: 9em;
+  font-family: 'Public Sans' !important;
+  margin: 0;
+  max-width: 9em;
+  font-weight: 100;
+  padding-right: .5em;
+  margin-right: 1em;
+  min-height: 9em;
 }
 
 a.darkBlue {
@@ -8307,12 +8307,12 @@ left: 1%;
 
     padding: 1.2em 3.6em;
 
-}
+  }
 
   #tabs-2 .greenBlocks img {
     max-width: 16.5em;
     margin-left: 4em;
-}
+  }
 
 }
 
