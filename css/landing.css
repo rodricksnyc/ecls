@@ -1872,7 +1872,7 @@ h6.plum {
   line-height: 1.7 !important;
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
-  width: 80%;
+  width: 100%;
 }
 
 .modal {
@@ -1996,7 +1996,7 @@ h6.plum {
   margin-left:0em;
   padding-left:0em;
   margin-bottom:4em;
-  max-width: 1000px;
+  max-width: 1150px;
 }
 
 .greenBlocks .totalSurveyCount {
