@@ -2,9 +2,13 @@
   border-bottom:none !important;
 }
 #myModal2 .modal-footer {
-  border-top:none !important;
+    border-top: none !important;
+    /* margin-top: 1em; */
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
 }
-
 #myModal2 .modal-body {
   padding-left:4em !important;
   padding-right:4em !important;
@@ -27,8 +31,8 @@
 }
 
 #myModal2 .vertical2 p {
-  font-size:12px !important;
-  color:#007a99;
+  font-family: 'Public Sans', sans-serif;
+  color: #00539f;
 }
 #myModal2 h3 {
   color:#007a99 !important;
@@ -43,32 +47,46 @@
   margin-top:2em;
 }
 
-@media (min-width: 768px) {
-  #myModal2 .modal-dialog {
-    width: 550px;
-    margin: 10px auto;
-  }
+
+
+#myModal2 .modal-header {
+    background: #e6eaec;
+    padding-top: 1em;
+}
+
+#myModal2 legend {
+  font-size:0px !important;
+  width:0px !important;
+}
+
+#myModal2 .modal-body {
+  padding:2em 4em 0em 4em;
 }
 
 
-.btn.middle {
-  padding: .60em 2em;
-  margin-bottom: 1em;
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-  border: none;
-  border-radius: 1.5em;
-  box-shadow: 0px 2px 3px rgba(0,0,0,0.15), 0px 0px 6px rgba(0,0,0,.1);
+#myModal2 .black {
+  line-height: 1.6 !important;
+  font-size: 18px !important;
+  margin: 1em 0em;
+  text-align: left;
+
 }
 
-.btn.middle:hover {
-  color: #00467f;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,.1);
+
+#myModal2 .modal-dialog {
+    max-width: 900px !important;
+}
+
+
+.browser {
+    font-family: 'Public Sans', sans-serif;
+    background: #576f7f;
+    border-color: transparent;
+    width: 8rem;
+    border-radius: 2rem;
+    color: white;
+    text-transform: uppercase;
+    height: 2.4rem;
 }
 
 #myModal2 .vertical2 {
@@ -84,7 +102,7 @@
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  margin: 0em .3em ;
+  margin: 0em 1em ;
 }
 
 .translate-toggle {
