@@ -1814,29 +1814,6 @@ $('.english').on('click', function(e) {
 
 })
 
-// $('.spanish').on('keyup', function(e) {
-//
-// 	var code = (e.keyCode ? e.keyCode : e.which);
-// 	if (code == 13 ) {
-// 		$(this).removeClass('inactiveDot').addClass('activeDot')
-// 		$('.english').removeClass('activeDot').addClass('inactiveDot')
-//
-// 	}
-//
-// })
-//
-//
-// $('.english').on('keyup', function(e) {
-// 	var code = (e.keyCode ? e.keyCode : e.which);
-// 	if (code == 13 ) {
-// 		$(this).removeClass('inactiveDot').addClass('activeDot')
-// 		$('.spanish').removeClass('activeDot').addClass('inactiveDot')
-//
-// 	}
-//
-// })
-
-
 
     var version = detectIE();
 

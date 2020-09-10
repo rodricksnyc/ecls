@@ -1493,29 +1493,6 @@ $(document).ready(function () {
 		$('li[data-target="#three"]').removeClass('spanishAfter');
 	});
 
-	// $('.spanish').on('keyup', function(e) {
-	//
-	// 	var code = (e.keyCode ? e.keyCode : e.which);
-	// 	if (code == 13 ) {
-	// 		$(this).removeClass('inactiveDot').addClass('activeDot')
-	// 		$('.english').removeClass('activeDot').addClass('inactiveDot')
-	//
-	// 	}
-	//
-	// })
-	//
-	//
-	// $('.english').on('keyup', function(e) {
-	// 	var code = (e.keyCode ? e.keyCode : e.which);
-	// 	if (code == 13 ) {
-	// 		$(this).removeClass('inactiveDot').addClass('activeDot')
-	// 		$('.spanish').removeClass('activeDot').addClass('inactiveDot')
-	//
-	// 	}
-	//
-	// })
-
-
 	var version = detectIE();
 
 	if (version === false) {} else if (version >= 12) {} else {
