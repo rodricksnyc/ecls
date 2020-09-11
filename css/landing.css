@@ -7271,12 +7271,12 @@ margin-left: 0;
 } */
 
 .absolute img {
-  max-width: 17em;
+  max-width: 15em;
 }
 
 .absolute {
 
-  top: -5em;
+  top: -3em;
 }
 
 
@@ -7386,10 +7386,10 @@ margin-left:25%;
 
 .absolute2 {
 
-  top: -5em;
+  top: -3em;
 }
 .absolute2 img {
-  max-width: 17em;
+  max-width: 15em;
 }
 
 .lightGreen.second .description {
