@@ -5570,6 +5570,10 @@ transform: scale(0.8);
     max-width: 20em;
   }
 
+  .absolute img {
+    max-width: 20em;
+  }
+
   .animation {
     min-height: 135vh;
     margin-left: 0;
