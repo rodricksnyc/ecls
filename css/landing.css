@@ -8541,12 +8541,12 @@ left: 1%;
   height: calc(100vh - 26rem);
 }
 .hero-img-container {
-  height: calc(100vh - 23rem);
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 32rem;
-  max-height: 38rem;
+    height: calc(100vh - 21rem);
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 30rem;
+    max-height: 38rem;
 }
 .animation {
     min-height: 229vh;
