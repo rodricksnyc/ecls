@@ -7074,13 +7074,13 @@ min-height: 140vh
 
 @media (max-width:1440px)  {
 
-  .tab-content img {
+  /* .tab-content img {
     max-width: 9em;
   }
 
   .tab-content img.threeRow {
     max-width: 9em;
-  }
+  } */
   /* .tab-content p.small.white {
   max-width: 11em;
 
