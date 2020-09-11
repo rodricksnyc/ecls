@@ -8561,7 +8561,7 @@ left: 1%;
   }
   .hero-img-container {
     margin-top: -1em;
-    height: calc(100vh - 21rem);
+    height: calc(100vh - 25rem);
   }
   .hero-img {
     height:18rem;
