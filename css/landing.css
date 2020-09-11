@@ -1929,6 +1929,8 @@ h6.plum {
   margin: 2em 5em 2em 5em;
 }
 
+
+
 .greenBlocks {
   background: #00843D;
   height:auto;
@@ -7673,10 +7675,23 @@ header .logos a {
   }
 
   .verse3 {
-
+    position: relative !important;
     height: 80px !important;
-
+    background-attachment: unset !important;
     transform: scale(1.1) !important;
+  }
+  .verse3.two {
+    position: relative !important;
+    background-attachment: unset !important;
+  }
+
+  .stop {
+    background-color: transparent;
+    min-height: 0 !important;
+    /* background-size: cover; */
+    background-attachment: unset !important;
+
+    display: none !important
   }
 
   .switch {
