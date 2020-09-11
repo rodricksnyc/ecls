@@ -115,6 +115,24 @@
     opacity: .8;
 }
 
+.firstRow .d-flex {
+  width:25%;
+}
+
+.firstRow .d-flex:nth-child(2) h6.purple {
+  max-width:7em;
+      margin-top: 1em;
+}
+
+.firstRow h6.purple{
+  font-weight: 300;
+    color: #071D49;
+    font-family: 'Public Sans', sans-serif;
+    margin: .5em 0em;
+    max-width: 12em;
+}
+
+
 .languageToggle{
   float: right;
     /* margin-top: -4em; */
