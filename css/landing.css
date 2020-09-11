@@ -1936,10 +1936,12 @@ h6.plum {
   padding: 1.2em 1.6em;
   max-width: 29.9em;
   margin: 1em 1em 0em 0em;
-  min-height: 18em;
+  min-height: 14em;
 }
 
-
+#tabs-3 .greenBlocks {
+  min-height:18em
+}
 
 .purpleBlocks {
   background:#3a4064;
