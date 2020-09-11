@@ -35,12 +35,17 @@ position: relative;
   color:white;
   z-index:999999999999;
   padding: .1em .5em .1em .5em;
+      border-radius: 0rem;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+
 }
 
 .activeDot.clear {
   background-color: transparent !important;
   color:#00539f;
-  z-index:999999999999
+  z-index:999999999999;
+      right: 0em;
 }
 
 .activeDot.clear:hover {
@@ -495,7 +500,7 @@ span.heading {
 
 .activeDot{
 
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   background: #00539f;
   color:white;
   position: relative;
@@ -504,6 +509,9 @@ span.heading {
   width: auto;
   padding: .1em .5em;
   right:-1em;
+
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .language {
@@ -537,7 +545,7 @@ span.heading {
   z-index: 2;
   border: 2px solid #00539f;
   width: auto;
-  padding: .1em .5em .1em 1em;
+  padding: .1em .5em .1em 1.3em;
 }
 
 
@@ -1054,12 +1062,12 @@ p.charcoal {
 
 
 .smallFont {
-  font-size:17px !important;
+  font-size:22px !important;
   line-height: 1.5 !important;
 }
 
 .greenMiddle .smallFont {
-  font-size:17px !important;
+  font-size:21px !important;
   margin-left:.6em;
   margin-top:1.2em;
 }
@@ -1099,7 +1107,7 @@ p.charcoal {
 }
 .lightGreen.second .description {
 
-  margin: 1em 7em;
+  margin: 1em 1em;
 }
 
 .guide-overlay{
@@ -7314,7 +7322,7 @@ margin-left:25%;
 }
 
 .lightGreen.second .description {
-  margin: 1em 0em;
+  margin: 0em 0em;
 }
 
 
