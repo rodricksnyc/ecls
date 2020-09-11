@@ -1934,17 +1934,19 @@ h6.plum {
   height:auto;
 
   padding: 1.2em 1.6em;
-  max-width: 30em;
+  max-width: 29.9em;
   margin: 1em 1em 0em 0em;
-  min-height: 14em;
+  min-height: 18em;
 }
+
+
 
 .purpleBlocks {
   background:#3a4064;
   height:auto;
 
   padding: 1.2em 1.6em;
-  max-width: 30em;
+  max-width: 29.9em;
   margin: 1em 1em 0em 0em;
   min-height: 14em;
 }
@@ -1973,6 +1975,8 @@ h6.plum {
   font-weight: 300;
   /* padding-right: 1em; */
   margin-right: 1em;
+  font-size: 1em !important;
+
 
 }
 
@@ -1988,7 +1992,7 @@ h6.plum {
 }
 
 .greenBlocks img {
-  max-width:18.5em;
+  max-width:19em;
 
 }
 
@@ -2018,13 +2022,14 @@ h6.plum {
 
 }
 .greenBlocks p.white.small {
-  font-family: 'Public Sans' !important;
-  margin: 0;
-  max-width: 8.4em;
-  font-weight: 300;
-  padding-right: .5em;
-  margin-right: 0em;
-  min-height: 9em;
+    font-family: 'Public Sans' !important;
+    margin: 0;
+    max-width: 8em;
+    font-weight: 300;
+    padding-right: .5em;
+    margin-right: 0em;
+    min-height: 9em;
+    font-size: 1em !important;
 }
 
 a.darkBlue {
