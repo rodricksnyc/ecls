@@ -8533,7 +8533,7 @@ left: 1%;
 @media (max-width:566px)and (min-width:415px) {
 
 .hero-img-container {
-  margin-top: -1em;
+  margin-top: -2em;
   height: calc(100vh - 26rem);
 }
 .hero-img-container {
