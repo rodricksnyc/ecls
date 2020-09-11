@@ -8544,6 +8544,10 @@ left: 1%;
   min-height: 32rem;
   max-height: 38rem;
 }
+.animation {
+    min-height: 227vh;
+    margin-left: 0;
+}
 
 }
 
