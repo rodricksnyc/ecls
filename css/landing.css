@@ -5619,6 +5619,20 @@ transform: scale(0.8);
     display: none;
   }
 
+  .text3.es {
+    position: absolute;
+    right: 572px;
+    top: 7.5em;
+    font-size: 23px;
+    min-width: 12em;
+    text-align: right !important;
+    line-height: 1.1 !important;
+}
+
+.text4.es {
+    min-width: 16.5em;
+}
+
 
   .guide-overlay2 {
     position: relative;

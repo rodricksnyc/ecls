@@ -1500,6 +1500,7 @@ $(document).ready(function () {
 
 			$('.animation').css('width', '150vw');
 			$('.guide-overlay').css('padding', '0em 7em');
+			$('.text3, .text4').addClass('es');
 		}
 
 		if ($(document).innerWidth() < 768) {

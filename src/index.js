@@ -1820,7 +1820,7 @@ $('.spanish').on('click', function(e) {
 
 		$('.animation').css('width', '150vw')
 		$('.guide-overlay').css('padding','0em 7em')
-
+		$('.text3, .text4').addClass('es')
 
 	}
 
