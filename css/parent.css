@@ -115,6 +115,24 @@
     opacity: .8;
 }
 
+.inactiveDot.blue {
+  background-color: #00539f !important;
+  color:white;
+  z-index:999999999999;
+  padding: .1em .5em .1em .5em;
+      border-radius: 0rem;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+
+}
+
+.activeDot.clear {
+  background-color: transparent !important;
+  color:#00539f;
+  z-index:999999999999;
+      right: 0em;
+}
+
 .firstRow .d-flex {
   width:25%;
 }
@@ -518,15 +536,18 @@ span.heading {
 
 .activeDot{
 
-      border-radius: 1rem;
-      background: #00539f;
-      color:white;
-      position: relative;
-      z-index: 22;
-      border: 2px solid #00559b;
-      width: auto;
-      padding: .1em .6em;
-      right:-1em;
+    /* border-radius: 1rem; */
+    background: #00539f;
+    color:white;
+    position: relative;
+    z-index: 22;
+    border: 2px solid #00559b;
+    width: auto;
+    padding: .1em .5em;
+    right:-1em;
+
+      border-bottom-left-radius: 1rem;
+      border-top-left-radius: 1rem;
 }
 
 .language {
@@ -2520,6 +2541,7 @@ legend {
 .radio-inline {
   font-size: 15px;
   display: inline-block;
+    padding-left:15%
 }
 
 
@@ -4782,7 +4804,18 @@ width: 33% !important;
   padding-left: 20px;
 }
 .radio-inline {
-  font-size:14px;
+  font-size:13px;
+}
+
+.smallFont {
+    font-size: 18px !important;
+
+}
+
+.greenMiddle .smallFont {
+    font-size: 18px !important;
+    margin-left: .6em;
+    margin-top: 1.2em;
 }
 
 h6.blue {
