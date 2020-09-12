@@ -5520,7 +5520,10 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,0.1);
 
 }
 
-@media (max-width: 997px) and (min-width: 768px){    .page_nav{
+
+@media (max-width: 997px) and (min-width: 768px){
+
+  .page_nav{
   display: none;
 }
 .img-l{
@@ -5584,13 +5587,8 @@ transform: scale(0.8);
   .animation .landing-sec-H {
     left:-8vw
   }
-  .greenBlocks{
-    max-width:18em;
-  }
 
-  .purpleBlocks{
-    max-width:18em;
-  }
+
   .greenBlocks p.white.small {
     min-height:0em
   }
@@ -5608,12 +5606,10 @@ transform: scale(0.8);
     display: none;
   }
 
-
   .guide-overlay2 {
-    position: relative;
-    padding: 0em 1em;
-    margin-top: -8em;
-
+      position: relative;
+      padding: 0em 8em;
+      margin-top: -4em;
   }
 
 }
@@ -7045,7 +7041,7 @@ min-height: 140vh
   }
   .guide-overlay2 {
     position: relative;
-    padding: 4em 2em 0em 6em;
+    padding: 1em 2em 0em 6em;
   }
 
 
@@ -7094,7 +7090,7 @@ min-height: 140vh
 
 @media (max-width:1200px){
   .lightGreen.second .description {
-    margin: 1em 4em;
+    margin: 1em 0em;
   }
   /* .animation {
   min-height: 141vh;
@@ -7200,6 +7196,12 @@ min-height: 140vh
   .menu-buttons-floating {
     left: 20px;
   }
+
+  .guide-overlay2 {
+    position: relative;
+    padding: 0em 7em;
+    margin-top: -5em;
+}
   .content-spacer {
     height: 4vh;
   }
