@@ -8573,7 +8573,7 @@ left: 1%;
 
 @media (max-width:360px) and  (min-height:641px) {
   .animation {
-    min-height: 212vh;
+    min-height: 234vh;
     margin-left: 0;
   }
 }
