@@ -769,6 +769,116 @@ $("#two .nav-link").click(function () {
 });
 
 
+$(window).on('scroll', function() {
+
+	var screenTop = $(window).scrollTop();
+	var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+	$('section').each(function() {
+		var elementTop = $(this).offset().top;
+		var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+		if ((screenBottom > elementTop + ($(this).find('.heros2').height() / 30 )) && (screenTop < elementBottom)) {
+			$('section').removeClass('active')
+			$(this).addClass('active')
+		}
+		else {
+			$(this).removeClass('active')
+		}
+	})
+
+
+
+	if ($('.block-2000').hasClass('active')) {
+
+		setTimeout(function(){
+			$('.line1').removeClass('box-rotate')
+		},100)
+		setTimeout(function(){
+			$('.line2').removeClass('transparent-opacity').addClass('animated fadeInUp')
+		}, 200)
+
+
+		setTimeout(function(){
+			$('.text1').removeClass('transparent-opacity').addClass('animated fadeInRight')
+		}, 400)
+
+		setTimeout(function(){
+			$('.text2').removeClass('transparent-opacity').addClass('animated fadeInUp')
+		}, 400)
+
+		setTimeout(function(){
+			$('.green-circle').removeClass('transparent-opacity').addClass('animated fadeIn')
+		}, 400)
+
+		setTimeout(function(){
+			$('.flower').removeClass('transparent-opacity').addClass('animated fadeIn')
+		}, 600)
+
+		setTimeout(function(){
+			$('.line3').removeClass('box-rotate')
+		}, 800)
+
+	//
+	// }
+	//
+	//
+	// if ($('.block-3000').hasClass('active')) {
+
+		setTimeout(function(){
+			$('.line4').removeClass('box-rotate')
+		},900)
+
+		setTimeout(function(){
+			$('.text3').removeClass('transparent-opacity').addClass('animated fadeInLeft')
+		}, 900)
+
+		setTimeout(function(){
+			$('.text4').removeClass('transparent-opacity').addClass('animated fadeInUp')
+		}, 1100)
+
+		setTimeout(function(){
+			$('.green-circle2').removeClass('transparent-opacity').addClass('animated fadeIn')
+		}, 1100)
+
+		setTimeout(function(){
+			$('.house').removeClass('transparent-opacity').addClass('animated fadeIn')
+		}, 1200)
+
+		setTimeout(function(){
+			$('.line5').removeClass('box-rotate')
+		},1300)
+
+		setTimeout(function(){
+			$('.line6').removeClass('box-rotate')
+		},1300)
+
+		setTimeout(function(){
+			$('.text5').removeClass('transparent-opacity').addClass('animated fadeInLeft')
+		}, 1400)
+
+		setTimeout(function(){
+			$('.text6').removeClass('transparent-opacity').addClass('animated fadeInUp')
+		}, 1500)
+
+		setTimeout(function(){
+			$('.green-circle3').removeClass('transparent-opacity').addClass('animated fadeIn')
+		}, 1500)
+
+		setTimeout(function(){
+			$('.leaves').removeClass('transparent-opacity').addClass('animated fadeIn')
+		}, 1600)
+
+		setTimeout(function(){
+			$('.text-last').removeClass('transparent-opacity').addClass('animated fadeInUp')
+		},1700)
+
+
+	}
+
+
+})
+
 
 
 
@@ -810,93 +920,93 @@ $(window).on('scroll', function() {
 	})
 
 
-
-	if ($('.block-2000').hasClass('active')) {
-
-		setTimeout(function(){
-			$('.line1').removeClass('box-rotate')
-		},600)
-		setTimeout(function(){
-			$('.line2').removeClass('transparent-opacity').addClass('animated fadeInUp')
-		}, 800)
-
-
-		setTimeout(function(){
-			$('.text1').removeClass('transparent-opacity').addClass('animated fadeInRight')
-		}, 1700)
-
-		setTimeout(function(){
-			$('.text2').removeClass('transparent-opacity').addClass('animated fadeInUp')
-		}, 1900)
-
-		setTimeout(function(){
-			$('.green-circle').removeClass('transparent-opacity').addClass('animated fadeIn')
-		}, 2100)
-
-		setTimeout(function(){
-			$('.flower').removeClass('transparent-opacity').addClass('animated fadeIn')
-		}, 2200)
-
-		setTimeout(function(){
-			$('.line3').removeClass('box-rotate')
-		}, 2400)
-
-
-	}
-
-
-	if ($('.block-3000').hasClass('active')) {
-
-		setTimeout(function(){
-			$('.line4').removeClass('box-rotate')
-		},1200)
-
-		setTimeout(function(){
-			$('.text3').removeClass('transparent-opacity').addClass('animated fadeInLeft')
-		}, 1700)
-
-		setTimeout(function(){
-			$('.text4').removeClass('transparent-opacity').addClass('animated fadeInUp')
-		}, 1800)
-
-		setTimeout(function(){
-			$('.green-circle2').removeClass('transparent-opacity').addClass('animated fadeIn')
-		}, 2000)
-
-		setTimeout(function(){
-			$('.house').removeClass('transparent-opacity').addClass('animated fadeIn')
-		}, 2400)
-
-		setTimeout(function(){
-			$('.line5').removeClass('box-rotate')
-		},2600)
-
-		setTimeout(function(){
-			$('.line6').removeClass('box-rotate')
-		},2800)
-
-		setTimeout(function(){
-			$('.text5').removeClass('transparent-opacity').addClass('animated fadeInLeft')
-		}, 3200)
-
-		setTimeout(function(){
-			$('.text6').removeClass('transparent-opacity').addClass('animated fadeInUp')
-		}, 3400)
-
-		setTimeout(function(){
-			$('.green-circle3').removeClass('transparent-opacity').addClass('animated fadeIn')
-		}, 3600)
-
-		setTimeout(function(){
-			$('.leaves').removeClass('transparent-opacity').addClass('animated fadeIn')
-		}, 3800)
-
-		setTimeout(function(){
-			$('.text-last').removeClass('transparent-opacity').addClass('animated fadeInUp')
-		},4000)
-
-
-	}
+	//
+	// if ($('.block-2000').hasClass('active')) {
+	//
+	// 	setTimeout(function(){
+	// 		$('.line1').removeClass('box-rotate')
+	// 	},600)
+	// 	setTimeout(function(){
+	// 		$('.line2').removeClass('transparent-opacity').addClass('animated fadeInUp')
+	// 	}, 800)
+	//
+	//
+	// 	setTimeout(function(){
+	// 		$('.text1').removeClass('transparent-opacity').addClass('animated fadeInRight')
+	// 	}, 1700)
+	//
+	// 	setTimeout(function(){
+	// 		$('.text2').removeClass('transparent-opacity').addClass('animated fadeInUp')
+	// 	}, 1900)
+	//
+	// 	setTimeout(function(){
+	// 		$('.green-circle').removeClass('transparent-opacity').addClass('animated fadeIn')
+	// 	}, 2100)
+	//
+	// 	setTimeout(function(){
+	// 		$('.flower').removeClass('transparent-opacity').addClass('animated fadeIn')
+	// 	}, 2200)
+	//
+	// 	setTimeout(function(){
+	// 		$('.line3').removeClass('box-rotate')
+	// 	}, 2400)
+	//
+	//
+	// }
+	//
+	//
+	// if ($('.block-3000').hasClass('active')) {
+	//
+	// 	setTimeout(function(){
+	// 		$('.line4').removeClass('box-rotate')
+	// 	},1200)
+	//
+	// 	setTimeout(function(){
+	// 		$('.text3').removeClass('transparent-opacity').addClass('animated fadeInLeft')
+	// 	}, 1700)
+	//
+	// 	setTimeout(function(){
+	// 		$('.text4').removeClass('transparent-opacity').addClass('animated fadeInUp')
+	// 	}, 1800)
+	//
+	// 	setTimeout(function(){
+	// 		$('.green-circle2').removeClass('transparent-opacity').addClass('animated fadeIn')
+	// 	}, 2000)
+	//
+	// 	setTimeout(function(){
+	// 		$('.house').removeClass('transparent-opacity').addClass('animated fadeIn')
+	// 	}, 2400)
+	//
+	// 	setTimeout(function(){
+	// 		$('.line5').removeClass('box-rotate')
+	// 	},2600)
+	//
+	// 	setTimeout(function(){
+	// 		$('.line6').removeClass('box-rotate')
+	// 	},2800)
+	//
+	// 	setTimeout(function(){
+	// 		$('.text5').removeClass('transparent-opacity').addClass('animated fadeInLeft')
+	// 	}, 3200)
+	//
+	// 	setTimeout(function(){
+	// 		$('.text6').removeClass('transparent-opacity').addClass('animated fadeInUp')
+	// 	}, 3400)
+	//
+	// 	setTimeout(function(){
+	// 		$('.green-circle3').removeClass('transparent-opacity').addClass('animated fadeIn')
+	// 	}, 3600)
+	//
+	// 	setTimeout(function(){
+	// 		$('.leaves').removeClass('transparent-opacity').addClass('animated fadeIn')
+	// 	}, 3800)
+	//
+	// 	setTimeout(function(){
+	// 		$('.text-last').removeClass('transparent-opacity').addClass('animated fadeInUp')
+	// 	},4000)
+	//
+	//
+	// }
 
 
 	if ($('.start').hasClass('active')) {
@@ -2075,6 +2185,9 @@ $(".scrollIt").on("click", function(event) {
 		});
 
 	});
+
+
+
 
 
 })
