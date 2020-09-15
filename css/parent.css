@@ -179,7 +179,7 @@
     text-transform: uppercase;
     font-size: 16px;
     color:white;
-    margin:2em 0em
+    margin:0em 0em 2em 0em
 }
 
 #signature {
@@ -187,7 +187,18 @@
   margin-top:.5em
 }
 
+.longGreyBox {
+  background: #d1d3d4;
+  padding:.5em;
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
 
+.longGreyBox i{
+  font-size:30px;
+  color: #6F6F6F;
+}
 .signature i {
   color:#071D49;
   font-weight:800;
@@ -206,7 +217,7 @@
     text-transform: uppercase;
     font-size: 16px;
     font-family: 'Public Sans' !important;
-  margin:2em 0em
+    margin:0em 0em 2em 0em
 
 }
 
@@ -410,7 +421,7 @@ header a:hover {
 }
 
 h2 {
-  padding: 7% 0;
+  padding: 5% 0;
   text-align: center;
   font-size: 38px;
   text-shadow: 2px 2px 5px rgb(255, 255, 255);

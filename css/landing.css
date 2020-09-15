@@ -6857,7 +6857,7 @@ body{
 
 
 
-@media (max-width:1600px)  {
+@media (min-width:1601px)  {
 #tabs-2 .greenBlocks p.white.small {
 
     max-width: 11em;
