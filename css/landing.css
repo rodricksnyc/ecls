@@ -7746,8 +7746,12 @@ header .logos a {
     top: 165px;
   }
   .hero-img-container{
-    margin-top:-1em;
     height: calc(100vh - 28rem);
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 28rem;
+        max-height: 38rem;
   }
   .greenBar.top {
     display: none;
@@ -8678,9 +8682,13 @@ left: 1%;
   .margin2 {
     margin-top: -1.6em;
   }
-  .hero-img-container {
-    margin-top: -1em;
-    height: calc(100vh - 25rem);
+  .hero-img-container{
+    height: calc(100vh - 28rem);
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 28rem;
+        max-height: 38rem;
   }
   .hero-img {
     height:18rem;

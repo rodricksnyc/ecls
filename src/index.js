@@ -1555,6 +1555,11 @@ $('#one').keypress(
 );
 
 
+var height = $('.block50').height()
+
+console.log(height)
+
+$('.greenBottom').css('height', height)
 
 
 

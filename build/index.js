@@ -1306,6 +1306,12 @@ $(document).ready(function () {
 	};
 	$('#one').keypress(open).click(open);
 
+	var height = $('.block50').height();
+
+	console.log(height);
+
+	$('.greenBottom').css('height', height);
+
 	$('.contactUsOverlay').on('click', function (e) {
 
 		if ($('body').hasClass('showContact')) {

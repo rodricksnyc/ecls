@@ -1936,7 +1936,7 @@ footer a.white:hover {
   right:0;
 
   bottom: 0em;
-  height: 531px;
+  /* height: 531px; */
   z-index: -1;
 
 }
@@ -2967,6 +2967,9 @@ background: #7bc043;
 
 .guide-overlay{
   position: relative;
+
+    margin-bottom: 5%;
+
 }
 
 #Guide .img-r{
