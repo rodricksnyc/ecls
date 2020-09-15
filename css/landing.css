@@ -6036,7 +6036,13 @@ button.close {
 }
 
 
+@media (min-height:1000px){
 
+    .animation {
+    min-height: 100vh;
+
+  }
+}
 
 @media (min-width:992px) and (max-width:1024px)  {
   .margin4 {

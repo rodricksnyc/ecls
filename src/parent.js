@@ -11,9 +11,4 @@ var canvas = document.getElementById("signature");
 
 
 
-
-
-
-
-
 })
