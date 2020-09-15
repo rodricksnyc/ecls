@@ -1601,7 +1601,7 @@ $(document).ready(function () {
 			$('.menu-buttons-floating').css('left', '28px');
 			$('.guide-overlay2').css('padding', '4em 4em 0em 8.4em');
 
-			$('#two .nav-tabs .nav-link.selected, #two .nav-tabs .nav-link').css('font-size', '19px');
+			// $('#two .nav-tabs .nav-link.selected, #two .nav-tabs .nav-link').css('font-size', '19px')
 
 			$('.text3').addClass('es');
 		}
