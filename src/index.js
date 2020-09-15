@@ -843,15 +843,15 @@ $(window).on('scroll', function() {
 
 		setTimeout(function(){
 			$('.house').removeClass('transparent-opacity').addClass('animated fadeIn')
-		}, 1200)
+		}, 1400)
 
 		setTimeout(function(){
 			$('.line5').removeClass('box-rotate')
-		},1300)
+		},1400)
 
 		setTimeout(function(){
 			$('.line6').removeClass('box-rotate')
-		},1300)
+		},1400)
 
 		setTimeout(function(){
 			$('.text5').removeClass('transparent-opacity').addClass('animated fadeInLeft')
