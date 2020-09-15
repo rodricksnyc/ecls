@@ -1761,7 +1761,17 @@ right: 0;
   margin: 2em 5em 2em 5em;
 }
 
-@media  (min-width:1801px) {
+
+
+@media (min-width: 2000px) {
+constructed stylesheet
+#two .offset-md-1 {
+    margin-left: 25%;
+}
+
+}
+
+@media  (min-width:1801px) and (max-width:1999px) {
   #two .offset-md-1 {
     margin-left: 18%;
   }
