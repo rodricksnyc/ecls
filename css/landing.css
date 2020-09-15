@@ -7871,7 +7871,7 @@ button.close {
   }
 }
 
-@media (max-width:320px) {
+@media (max-width:325px) {
   .text1.es {
     right: 121px !important;
   }
