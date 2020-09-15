@@ -7745,13 +7745,28 @@ header .logos a {
     left: 5%;
     top: 165px;
   }
-  .hero-img-container{
+  /* .hero-img-container{
     height: calc(100vh - 28rem);
         position: relative;
         display: flex;
         align-items: center;
         min-height: 28rem;
         max-height: 38rem;
+  } */
+
+  .hero-img-container {
+      height: auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 18rem;
+      /* max-height: 38rem; */
+      margin-bottom: 11em;
+      top:0rem;
+  }
+  .hero-img {
+    height:auto;
+    min-height: 20rem;
   }
   .greenBar.top {
     display: none;
@@ -7785,10 +7800,10 @@ header .logos a {
     opacity:1
   }
 
-  .hero-img {
+  /* .hero-img {
     padding-top: 0;
     min-height:0em
-  }
+  } */
 
   .lightGreen.second h2 {
     padding-top: 7%;
@@ -8583,19 +8598,6 @@ left: 1%;
 
 }
 
-@media (min-width:1501px) {
-  /* #tabs-2 .greenBlocks {
-
-    padding: 1.2em 3.6em;
-
-  } */
-
-  /* #tabs-2 .greenBlocks img {
-  max-width: 16.5em;
-  margin-left: 4em;
-  } */
-
-}
 
 
 @media (max-width:375px){
@@ -8659,18 +8661,20 @@ left: 1%;
 
 @media (max-width:566px)and (min-width:415px) {
 
-.hero-img-container {
-  margin-top: -2em;
-  height: calc(100vh - 26rem);
-}
-.hero-img-container {
-    height: calc(100vh - 24rem);
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 30rem;
-    max-height: 38rem;
-}
+  .hero-img-container {
+      height: auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 18rem;
+      /* max-height: 38rem; */
+      margin-bottom: 11em;
+      top:0rem;
+  }
+  .hero-img {
+    height:auto;
+    min-height: 18rem;
+  }
 .animation {
     min-height: 242vh;
     margin-left: 0;
@@ -8704,7 +8708,7 @@ left: 1%;
   }
   .hero-img {
     height:auto;
-    min-height: 18rem;
+    min-height: 20rem;
   }
 }
 
@@ -8784,24 +8788,39 @@ left: 1%;
     max-width: 180px;
   }
 
-  .hero-img-container{
+  /* .hero-img-container{
     height: calc(100vh - 28rem);
         position: relative;
         display: flex;
         align-items: center;
         min-height: 28rem;
         max-height: 38rem;
-  }
+  } */
   .purpleBlocks, .greenBlocks {
     margin: 1em 1em 0em 1em;
     min-width: 17em;
   }
 
-
+  .hero-img-container {
+      height: auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 18rem;
+      /* max-height: 38rem; */
+      margin-bottom: 11em;
+      top:0rem;
+  }
   .hero-img {
+    height:auto;
+    min-height: 21rem;
+  }
+
+
+  /* .hero-img {
     height:19rem;
     min-height: 19rem;
-  }
+  } */
 
   .title2 {
     font-size: 1.8rem;
