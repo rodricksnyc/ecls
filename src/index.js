@@ -819,11 +819,11 @@ $(window).on('scroll', function() {
 			$('.line3').removeClass('box-rotate')
 		}, 800)
 
-	//
-	// }
-	//
-	//
-	// if ($('.block-3000').hasClass('active')) {
+		//
+		// }
+		//
+		//
+		// if ($('.block-3000').hasClass('active')) {
 
 		setTimeout(function(){
 			$('.line4').removeClass('box-rotate')
