@@ -715,35 +715,35 @@ $(document).ready(function () {
 
 			setTimeout(function () {
 				$('.house').removeClass('transparent-opacity').addClass('animated fadeIn');
-			}, 1400);
-
-			setTimeout(function () {
-				$('.line5').removeClass('box-rotate');
-			}, 1400);
-
-			setTimeout(function () {
-				$('.line6').removeClass('box-rotate');
-			}, 1400);
-
-			setTimeout(function () {
-				$('.text5').removeClass('transparent-opacity').addClass('animated fadeInLeft');
-			}, 1400);
-
-			setTimeout(function () {
-				$('.text6').removeClass('transparent-opacity').addClass('animated fadeInUp');
-			}, 1500);
-
-			setTimeout(function () {
-				$('.green-circle3').removeClass('transparent-opacity').addClass('animated fadeIn');
-			}, 1500);
-
-			setTimeout(function () {
-				$('.leaves').removeClass('transparent-opacity').addClass('animated fadeIn');
 			}, 1600);
 
 			setTimeout(function () {
+				$('.line5').removeClass('box-rotate');
+			}, 1600);
+
+			setTimeout(function () {
+				$('.line6').removeClass('box-rotate');
+			}, 1600);
+
+			setTimeout(function () {
+				$('.text5').removeClass('transparent-opacity').addClass('animated fadeInLeft');
+			}, 1600);
+
+			setTimeout(function () {
+				$('.text6').removeClass('transparent-opacity').addClass('animated fadeInUp');
+			}, 1800);
+
+			setTimeout(function () {
+				$('.green-circle3').removeClass('transparent-opacity').addClass('animated fadeIn');
+			}, 1800);
+
+			setTimeout(function () {
+				$('.leaves').removeClass('transparent-opacity').addClass('animated fadeIn');
+			}, 1900);
+
+			setTimeout(function () {
 				$('.text-last').removeClass('transparent-opacity').addClass('animated fadeInUp');
-			}, 1700);
+			}, 1900);
 		}
 	});
 
