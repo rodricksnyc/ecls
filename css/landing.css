@@ -6857,19 +6857,16 @@ body{
 
 
 
-@media (max-width:1440px)  {
+@media (max-width:1600px)  {
+#tabs-2 .greenBlocks p.white.small {
 
-  /* .tab-content img {
-    max-width: 9em;
-  }
+    max-width: 11em;
 
-  .tab-content img.threeRow {
-    max-width: 9em;
-  } */
-  /* .tab-content p.small.white {
-  max-width: 11em;
+}
 
-  } */
+#tabs-2 .greenBlocks img {
+  max-width:19em
+}
 
 }
 
