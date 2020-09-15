@@ -7423,13 +7423,12 @@ max-width: 12em;
 
 
 #two .nav-tabs .nav-link{
-  font-size: 20px;
-  padding-bottom: 1em;
-  padding-top: 1em;
+  font-size: 18px;
+
 }
 
 #two .nav-tabs .nav-link.selected  {
-  font-size: 20px;
+  font-size: 18px;
 
 
 }
