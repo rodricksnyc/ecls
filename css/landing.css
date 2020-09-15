@@ -8772,9 +8772,13 @@ left: 1%;
     max-width: 180px;
   }
 
-  .hero-img-container {
-    margin-top: -1em;
-    height: calc(100vh - 16rem);
+  .hero-img-container{
+    height: calc(100vh - 28rem);
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 28rem;
+        max-height: 38rem;
   }
   .purpleBlocks, .greenBlocks {
     margin: 1em 1em 0em 1em;
