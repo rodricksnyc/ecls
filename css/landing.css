@@ -8664,7 +8664,7 @@ left: 1%;
   height: calc(100vh - 26rem);
 }
 .hero-img-container {
-    height: calc(100vh - 21rem);
+    height: calc(100vh - 24rem);
     position: relative;
     display: flex;
     align-items: center;
@@ -8691,7 +8691,7 @@ left: 1%;
         max-height: 38rem;
   }
   .hero-img {
-    height:18rem;
+    height:auto;
     min-height: 18rem;
   }
 }
