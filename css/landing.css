@@ -8682,13 +8682,25 @@ left: 1%;
   .margin2 {
     margin-top: -1.6em;
   }
-  .hero-img-container{
+  /* .hero-img-container{
     height: calc(100vh - 28rem);
         position: relative;
         display: flex;
         align-items: center;
         min-height: 28rem;
         max-height: 38rem;
+  } */
+
+
+  .hero-img-container {
+      height: auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 18rem;
+      /* max-height: 38rem; */
+      margin-bottom: 11em;
+      top:0rem;
   }
   .hero-img {
     height:auto;
