@@ -6035,8 +6035,16 @@ button.close {
   display:none !important
 }
 
+@media (min-height:1100px){
 
-@media (min-height:1000px){
+    .animation {
+    min-height: 90vh;
+
+  }
+}
+
+
+@media (min-height:1000px) and (max-height:1100px){
 
     .animation {
     min-height: 100vh;
