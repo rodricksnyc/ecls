@@ -1557,7 +1557,7 @@ h6.plum {
   margin-bottom: 1em;
   margin-right: 1em;
   box-shadow:none;
-
+    max-width: 1170px;
 }
 
 
@@ -1698,7 +1698,7 @@ h6.plum {
 
   /* padding-right: 3em; */
   line-height: 1.7 !important;
-  max-width:88%;
+  max-width:95%;
 }
 
 .source {
