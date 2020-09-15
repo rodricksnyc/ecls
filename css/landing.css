@@ -5425,12 +5425,12 @@ transform: scale(0.8);
   .animation {
     min-height: 135vh;
     margin-left: 0;
-    width: 115vw;
+    width: 106vw;
   }
 
 
   .animation .landing-sec-H {
-    left:-8vw
+    left:-3vw
   }
 
 
@@ -5541,6 +5541,12 @@ transform: scale(0.8);
     margin-top: -0px;
   }
 
+}
+
+@media (min-width:992px) {
+  #small-container {
+    max-width: 1140px !important;
+  }
 }
 
 @media (max-width: 767px) {
