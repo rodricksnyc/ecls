@@ -6950,11 +6950,27 @@ body{
 }
 }
 
+
+@media (min-width: 1350px) and (max-width:1449px) {
+.container {
+    max-width: 1200px;
+}
+}
+
+@media (min-width: 1200px) and (max-width:1300px) {
+.container {
+    max-width: 1060px;
+}
+}
+
+
 @media (max-width: 1400px) and (min-width:1340px) {
 .guide-overlay {
     position: relative;
     padding: 0em 4em;
 }
+
+
 
 .greenBlocks img {
   max-width:20em
