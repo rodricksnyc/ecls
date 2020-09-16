@@ -177,7 +177,7 @@ a:hover {
   display: none;
 
   position: absolute;
-
+  width:100%;
 }
 
 .box-outer {
@@ -203,9 +203,18 @@ a:hover {
   left: 0;
 
 }
+.margin-0 {
+  margin:0 !important
+}
 
 
+.larger {
+  font-size:25px !important
+}
 
+.grayBox.third .across img {
+  width:4em
+}
 
 .signature {
   background: #d5e6f3;
@@ -239,12 +248,21 @@ a:hover {
   margin:0em 0em 2em 0em
 }
 
+#finishOptOut {
+background: #00843D;
+background-color: #00843D;
+border-color: #00843D;
+min-width: 8rem;
+margin-top: 1em;
+
+}
+
 #signature {
   border-bottom: 1px solid #071D49;
   margin-top:.5em
 }
 
-.your-signature {
+.consent, .no-consent, .your-signature {
   border-top: none;
   border-right: none;
   border-left: none;
@@ -926,15 +944,24 @@ span.heading {
   max-width: 8.8em;
   font-weight: 300;
   padding-right: .5em;
-  margin-right: 0em;
+  margin-right: 1em;
   min-height: 9em;
   font-size: 1em !important;
 }
 .greenBlocks img.threeRow {
-  /* max-width: 5.7em; */
-  max-width: 10.1em;
+  max-width: 9.7em;
   transform: scale(1.3);
 }
+
+.padding-0{
+  padding:0
+}
+
+
+.none {
+  background-color: #d1d3d4
+}
+
 
 
 .purpleBlocks img {
