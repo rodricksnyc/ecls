@@ -61,7 +61,7 @@ $(document).ready(function () {
         "right": 0
       }, 300);
 
-    }, 0);
+    }, 100);
 
     console.log(negative)
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
       $(".grayBox.first").animate({
         "left": 0
-      }, 600);
+      }, 500);
 
 
 
@@ -87,7 +87,7 @@ $(document).ready(function () {
 
     $(".grayBox.second").animate({
       "right": negative
-    }, 600);
+    }, 500);
 
 
 
