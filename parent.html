@@ -17,8 +17,7 @@
 	<link rel="stylesheet" href="css/parent.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
-
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
@@ -280,7 +279,7 @@
 
 
 										</div>
-										<p class="charcoal">Below is more detail on the tasks we are asking you and your child to complete. If you have questions, please let <span class="darkBlue strong">[SCHOOL COORDINATOR]</span> at your child’s school know.</p>
+										<p class="charcoal">Below is more detail on the tasks we are asking you and your child to complete. If you have questions, please let <span class="darkBlue strong" id="coordinator">[SCHOOL COORDINATOR]</span> at your child’s school know.</p>
 										<p class="charcoal">The study activities at your child’s school will take place [ASSESSMENT DATE START] through [ASSESSMENT DATE END] in coordination with your child’s school and teacher. During this visit, trained ECLS staff will conduct engaging in-person, one-on-one assessment activities with each selected child. The activities consist of age- and grade-appropriate reading and mathematics items. The ECLS staff member will present questions and stories to your child, who then will select his or her answers by pointing to colorful pictures. Although the session is untimed, we expect most children to complete the activities in about <span class="strong">45 minutes</span>. Children may decline to answer any of the questions they do not wish to answer and their responses will not be associated with their names or provided to school staff.</p>
 										<p class="charcoal">All ECLS staff who enter schools undergo a Federal background investigation conducted jointly by the U.S. Departments of Education and Defense.</p>
 									</div>
@@ -300,18 +299,21 @@
 
 						</section>
 
-
-
 						<section class="block5">
 							<div id="survey" class="container-fluid heros">
 
 								<div class="guide-overlay container">
+
 									<h2 class="landing-sec-H">Consent Form</h2>
 
-									<div class="grayBox">
+									<div class="box-outer">
 
+								  <div class="grayBox first">
+										<div class="top-consent-text">
 										<p class="charcoal">We are requesting your permission to include your child in the ECLS. Without your permission, your child will <span class="strong">not</span> be able to participate in any study activities</p>
-										<p class="charcoal">To provide permission for your child, [CHILD NAME], to participate in the ECLS, please check the box below, enter your name, and select “Submit.”</p>
+										<p class="charcoal">To provide permission for your child, <span id="child-name">[CHILD NAME]</span>, to participate in the ECLS, please check the box below, enter your name, and select “Submit.”</p>
+									</div>
+
 										<form>
 											<div id="listResults">
 
@@ -325,26 +327,115 @@
 
 											<div class="signature">
 												<p class="plum">Enter Your Name</p>
-												<canvas id="signature" height="40" width="500"></canvas>
+												<input name="name" placeholder="" required class="your-signature">
+
+												<!-- <canvas id="signature" height="40" width="500"></canvas> -->
 												<i class="fas fa-file-signature"></i>
 
 											</div>
 											<center>
 
-												<button type="submit" class="btn btn-info" id="signatureButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Signature">Submit</button>
+												<button type="submit" class="btn btn-info lightGrayColor" id="signatureButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Signature">Submit</button>
 											</center>
 
 											<p class="charcoal">If you do not want your child, [CHILD NAME], to participate in the ECLS activities, please select “Opt Out” to continue.</p>
 
+
+
+										</form>
+										<center>
+
+											<button class="btn btn-info steelColor" id="optOut1" tabindex="0" aria-hidden="false" role="button" aria-describedby="Opt out">OPT OUT</button>
+										</center>
+
+									</div>
+
+
+
+
+								<div class="grayBox second">
+										<div class="top-consent-text">
+										<p class="charcoal">If you did <span class="strong">not</span> mean to have your child opt out of the ECLS, select “Return” to go back to the Parent Portal.</p>
+									</div>
+									<center>
+
+										<button type="submit" class="btn btn-info steelColor" id="return1" tabindex="0" aria-hidden="false" role="button" aria-describedby="Opt out">RETURN</button>
+									</center>
+
+									<p class="charcoal">Or, if you do <span class="strong">not</span> want your child to participate in the ECLS study activities, please check the box below, enter your name and select “Submit.”</p>
+
+
+										<form>
+											<div id="listResults">
+
+												<div class="one">
+													<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation9" value="">
+													<label class="form-check-label plum" tabindex="0" for="customControlValidation9">No, I do <span class="strong">not</span> give permission for my child to participate in the ECLS.</label>
+												</div>
+
+
+											</div>
+
+											<div class="signature">
+												<p class="plum">Enter Your Name</p>
+												<input name="name" placeholder="" required class="your-signature">
+
+												<!-- <canvas id="signature" height="40" width="500"></canvas> -->
+												<i class="fas fa-file-signature"></i>
+
+											</div>
 											<center>
 
-												<button type="submit" class="btn btn-info" id="optOut" tabindex="0" aria-hidden="false" role="button" aria-describedby="Opt out">OPT OUT</button>
+												<button type="submit" class="btn btn-info lightGrayColor" id="signatureButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Signature">Submit</button>
 											</center>
 
 										</form>
 
 									</div>
 
+
+
+																<div class="grayBox third">
+																		<div class="top-consent-text">
+																		<p class="charcoal">If you did <span class="strong">not</span> mean to have your child opt out of the ECLS, select “Return” to go back to the Parent Portal.</p>
+																	</div>
+																	<center>
+
+																		<button type="submit" class="btn btn-info steelColor" id="return1" tabindex="0" aria-hidden="false" role="button" aria-describedby="Opt out">RETURN</button>
+																	</center>
+
+																	<p class="charcoal">Or, if you do <span class="strong">not</span> want your child to participate in the ECLS study activities, please check the box below, enter your name and select “Submit.”</p>
+
+
+																		<form>
+																			<div id="listResults">
+
+																				<div class="one">
+																					<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation9" value="">
+																					<label class="form-check-label plum" tabindex="0" for="customControlValidation9">No, I do <span class="strong">not</span> give permission for my child to participate in the ECLS.</label>
+																				</div>
+
+
+																			</div>
+
+																			<div class="signature">
+																				<p class="plum">Enter Your Name</p>
+									    									<input name="name" placeholder="" required class="your-signature">
+
+
+																				<i class="fas fa-file-signature"></i>
+
+																			</div>
+																			<center>
+
+																				<button type="submit" class="btn btn-info lightGrayColor" id="signatureButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Signature">Submit</button>
+																			</center>
+
+																		</form>
+
+																	</div>
+
+							</div>
 
 									<h2 class="landing-sec-H">Parent Survey</h2>
 									<div class="longGreyBox">
@@ -902,8 +993,8 @@
 				<div class="menu-buttons-floating wow slideInUp">
 					<ul class="menu-buttons-floating-list">
 						<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
-						<li tabindex="0" data-target="#survey"><i class="fal fa-server"></i></li>
-						<li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li>
+						<li tabindex="0" data-target="#survey"><i class="fas fa-file-contract"></i></li>
+						<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
 						<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
 					</ul>
 				</div>
@@ -912,8 +1003,8 @@
 				<div class="menu-buttons-768">
 					<ul class="menu-buttons-768-list">
 						<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
-						<li tabindex="0" data-target="#survey"><i class="fal fa-server"></i></li>
-						<li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li>
+						<li tabindex="0" data-target="#survey"><i class="fas fa-file-contract"></i></li>
+						<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
 						<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
 					</ul>
 				</div>
