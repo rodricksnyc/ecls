@@ -10,46 +10,46 @@ $(document).ready(function () {
 
   $('body').keydown(function (event) {
 
-		if (!$('.consent').val() == '' )   {
-		$('#consent-button').css({
-			'background': '#00843D',
-			'color' :'white'
+    if (!$('.consent').val() == '' )   {
+      $('#consent-button').css({
+        'background': '#00843D',
+        'color' :'white'
 
-		});
+      });
 
-  }
+    }
 
-  else {
+    else {
 
-    $('#consent-button').css({
-      'background': '#d1d3d4',
-      'color' :'#6F6F6F'
+      $('#consent-button').css({
+        'background': '#d1d3d4',
+        'color' :'#6F6F6F'
 
-    });
+      });
 
-  }
+    }
 
 
-  if (!$('.no-consent').val() == '' )   {
-  $('#noConsent-button').css({
-    'background': '#00843D',
-    'color' :'white'
+    if (!$('.no-consent').val() == '' )   {
+      $('#noConsent-button').css({
+        'background': '#00843D',
+        'color' :'white'
+
+      });
+
+    }
+
+    else {
+
+      $('#noConsent-button').css({
+        'background': '#d1d3d4',
+        'color' :'#6F6F6F'
+
+      });
+
+    }
 
   });
-
-}
-
-else {
-
-  $('#noConsent-button').css({
-    'background': '#d1d3d4',
-    'color' :'#6F6F6F'
-
-  });
-
-}
-
-	});
 
   var negative = -$(".box-outer").width()
 
@@ -106,30 +106,30 @@ else {
 
     }, 100);
 
-  $('#return1').click(function(){
-    $('.grayBox.first').addClass('animated slideInDown slow')
+    $('#return1').click(function(){
+      $('.grayBox.first').addClass('animated slideInDown slow')
 
-    $(".grayBox.first").animate({
-      "top": 0
-    }, 600);
-
-
-
-})
-
-$('#consent-button').click(function(e){
-  e.preventDefault()
-  $(".grayBox.first").animate({
-    "top": negative2
-  }, 400);
+      $(".grayBox.first").animate({
+        "top": 0
+      }, 600);
 
 
-  $(".grayBox.consent1").animate({
-    "left": 0
-  }, 600);
+
+    })
+
+    $('#consent-button').click(function(e){
+      e.preventDefault()
+      $(".grayBox.first").animate({
+        "top": negative2
+      }, 400);
 
 
-});
+      $(".grayBox.consent1").animate({
+        "left": 0
+      }, 600);
+
+
+    });
 
 
 
@@ -166,147 +166,181 @@ $('#consent-button').click(function(e){
   });
 
 
-$('#noConsent-button').click(function(e){
-  e.preventDefault()
+  $('#noConsent-button').click(function(e){
+    e.preventDefault()
 
-  var yourFormElement2 = $("#no-consent-given")[0];
-   yourFormElement2.checkValidity();
-   yourFormElement2.reportValidity();
+    var yourFormElement2 = $("#no-consent-given")[0];
+    yourFormElement2.checkValidity();
+    yourFormElement2.reportValidity();
 
-if (!$('.no-consent').val() == '' )   {
+    if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
 
-  $(".grayBox.second").animate({
-    "top": negative2
-  }, 400);
-
-
-  setTimeout(function(){
-    $('.grayBox.third').addClass('animated slideInUp').show();
-
-    $(".grayBox.third").animate({
-      "bottom": 0,
-      "top":0
-    }, 400);
+      $(".grayBox.second").animate({
+        "top": negative2
+      }, 400);
 
 
-  }, 0);
+      setTimeout(function(){
+        $('.grayBox.third').addClass('animated slideInUp').show();
 
-}
-
-
-})
-
-
-$('#consentGiven').on('submit',function(event){
-  event.preventDefault();
-  event.currentTarget.submit();
-});
+        $(".grayBox.third").animate({
+          "bottom": 0,
+          "top":0
+        }, 400);
 
 
+      }, 0);
 
-$('#consent-button').click(function(e){
-  e.preventDefault()
-
-var yourFormElement1 = $("#consentGiven")[0];
- yourFormElement1.checkValidity();
- yourFormElement1.reportValidity();
-		if (!$('.consent').val() == '' )   {
-  $(".grayBox.first").animate({
-    "top": negative2
-  }, 400);
+    }
 
 
-  setTimeout(function(){
-    $('.grayBox.consent1').addClass('animated slideInUp').show();
-
-    $(".grayBox.consent1").animate({
-      "bottom": 0,
-      "top":0
-    }, 400);
+  })
 
 
-  }, 0);
-
-
-}
-});
+  $('#consentGiven').on('submit',function(event){
+    event.preventDefault();
+    event.currentTarget.submit();
+  });
 
 
 
-$('#finishOptOut').click(function(e){
-  e.preventDefault()
+  $('#consent-button').click(function(e){
+    e.preventDefault()
 
-$('.box-outer').animate({
-  "height" : 120
-}, 500);
-
-$('.longGreyBox').animate({
-  "height" : 0
-}, 500).hide();
-
-$('.grayBox.third .top-consent-text').remove()
-$('#finishOptOut').remove()
-
-$('.box-outer').addClass('none')
-$(".moreInfo").fadeIn()
-
-$('.parent-survey .d-flex p').removeClass('transparent-opacity')
-
-setTimeout(function(){
-
-$('.grayBox.third').append('<div class="across"><img src="images/red-check.svg" class="img-responsive"><p class="purple larger">Consent <span class="strong">Not</span> Provided</p></div>')
-
-}, 600)
+    var yourFormElement1 = $("#consentGiven")[0];
+    yourFormElement1.checkValidity();
+    yourFormElement1.reportValidity();
+    if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
+      $(".grayBox.first").animate({
+        "top": negative2
+      }, 400);
 
 
+      setTimeout(function(){
+        $('.grayBox.consent1').addClass('animated slideInUp').show();
 
-})
-
-
-$('#give-consent').click(function(e){
-  e.preventDefault()
-
-$('.box-outer').animate({
-  "height" : 138
-}, 500);
-
-$('.longGreyBox').animate({
-  "height" : 0
-}, 500).hide();
-
-$('.grayBox.consent1').children().fadeOut()
+        $(".grayBox.consent1").animate({
+          "bottom": 0,
+          "top":0
+        }, 400);
 
 
-$('.box-outer, .grayBox.consent1').addClass('given')
-$(".moreInfo").fadeIn()
+      }, 0);
 
-$('.parent-survey .d-flex p').removeClass('transparent-opacity')
 
-setTimeout(function(){
-
-$('.grayBox.consent1').append('<div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Consent Given</h6></div>')
-
-}, 600)
+    }
+  });
 
 
 
-})
+  $('#finishOptOut').click(function(e){
+    e.preventDefault()
+
+    $('.box-outer').animate({
+      "height" : 138
+    }, 500);
+
+    $('.longGreyBox').animate({
+      "height" : 0
+    }, 500).hide();
+
+    $('.grayBox.third .top-consent-text').remove()
+    $('#finishOptOut').remove()
+
+    $('.box-outer').addClass('none')
+    $(".moreInfo").fadeIn()
+
+    $('.parent-survey .d-flex p').removeClass('transparent-opacity')
+
+    setTimeout(function(){
+
+      $('.grayBox.third').append('<div class="across"><img src="images/red-check.svg" class="img-responsive"><p class="purple larger">Consent <span class="strong">Not</span> Provided</p></div>')
+
+    }, 600)
+
+
+
+  })
+
+
+  $('#give-consent').click(function(e){
+    e.preventDefault()
+
+    $('.box-outer').animate({
+      "height" : 138
+    }, 500);
+
+    $('.longGreyBox').animate({
+      "height" : 0
+    }, 500).hide();
+
+    $('.grayBox.consent1').children().fadeOut()
+
+
+    $('.box-outer, .grayBox.consent1').addClass('given')
+    $(".moreInfo").fadeIn()
+
+    $('.parent-survey .d-flex p').removeClass('transparent-opacity')
+
+    setTimeout(function(){
+
+      $('.grayBox.consent1').append('<div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Consent Given</h6></div>')
+
+    }, 600)
+
+
+
+  })
 
 
 
 
-$('#informationForm').on('submit',function(event){
-  event.preventDefault();
-  event.currentTarget.submit();
-});
+  $('#informationForm').on('submit',function(event){
+    event.preventDefault();
+    event.currentTarget.submit();
+  });
 
 
-$('#update').click(function(e){
-  e.preventDefault()
-  var yourFormElement = $("#informationForm")[0];
- yourFormElement.checkValidity();
- yourFormElement.reportValidity();
-})
+
+  $('#update').click(function(e){
+    e.preventDefault()
+    var yourFormElement = $("#informationForm")[0];
+    yourFormElement.checkValidity();
+    yourFormElement.reportValidity();
+
+    let valid = true;
+    $('#informationForm [required]').each(function() {
+      if ($(this).is(':invalid') || !$(this).val()) valid = false;
+    })
+    if (!valid) {
+
+    }
+    else {
+      $('.contact-info .moreInfo').animate({
+        "min-height": "150",
+        "height" : "auto",
+        "width" : "100%"
+      }, 500);
+      $('.contact-info .moreInfo').children().fadeOut()
+      $('.contact-info .moreInfo').addClass('given')
+
+      setTimeout(function(){
+
+      $('.contact-info .moreInfo').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p></div>')
+
+      }, 600)
+
+
+    }
+
+
+
+
+  })
+
+
+
+
 
 
 })

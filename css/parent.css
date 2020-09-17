@@ -185,6 +185,15 @@ a:hover {
 
 }
 
+.completed {
+  padding: 2em 11em;
+}
+
+.contact-info h6.green {
+    font-size: 26px;
+    font-weight: 400;
+}
+
 .given {
       background-color: #f1fbeb !important;
 }
