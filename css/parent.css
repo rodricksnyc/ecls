@@ -224,6 +224,22 @@ a:hover {
 
 }
 
+.invalid-tooltip {
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    display: none;
+    max-width: 100%;
+    padding: .5rem;
+    margin-top: .1rem;
+    font-size: .875rem;
+    line-height: 1;
+    color: #fff;
+    background-color: rgba(220,53,69,.8);
+    border-radius: .2rem;
+      font-family: 'Public Sans', sans-serif;
+}
+
 .grayBox.second.flexing-scroll {
   position: relative;
   z-index: 10000000;

@@ -349,6 +349,15 @@ $(document).ready(function () {
   });
 
 
+  var email = document.getElementById("email1").value
+  var confemail = document.getElementById("email2").value
+
+  $('body').keydown(function (event) {
+  if (email == confemail) {
+    $('.invalid-tooltip').hide()
+
+  }
+  })
 
   $('#update').click(function(e){
     e.preventDefault()
@@ -361,7 +370,9 @@ $(document).ready(function () {
         var email = document.getElementById("email1").value
         var confemail = document.getElementById("email2").value
         if(email != confemail) {
-            alert('Email must match');
+            $('.invalid-tooltip').show()
+
+
         }
 
 
@@ -373,6 +384,7 @@ $(document).ready(function () {
 
     }
     else if (valid && (email == confemail)) {
+
       $('.lightGrayBox').animate({
         "height": "auto",
         "min-height": "200",
