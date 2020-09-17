@@ -8,9 +8,50 @@ $(document).ready(function () {
   //  });
   //
 
+
+  $(" :checkbox").change(function() {
+    if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
+    $('#consent-button').css({
+      'background': '#00843D',
+      'color' :'white'
+
+    });
+
+  }
+
+  else {
+
+    $('#consent-button').css({
+      'background': '#d1d3d4',
+      'color' :'#6F6F6F'
+
+    });
+
+  }
+
+
+if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
+    $('#noConsent-button').css({
+      'background': '#00843D',
+      'color' :'white'
+
+    });
+
+  }
+
+  else {
+
+    $('#noConsent-button').css({
+      'background': '#d1d3d4',
+      'color' :'#6F6F6F'
+
+    });
+
+  }
+  });
   $('body').keydown(function (event) {
 
-    if (!$('.consent').val() == '' )   {
+      if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
       $('#consent-button').css({
         'background': '#00843D',
         'color' :'white'
@@ -30,7 +71,7 @@ $(document).ready(function () {
     }
 
 
-    if (!$('.no-consent').val() == '' )   {
+  if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
       $('#noConsent-button').css({
         'background': '#00843D',
         'color' :'white'
@@ -160,6 +201,8 @@ $(document).ready(function () {
 
   })
 
+  //allowing for to still submit
+
   $('#no-consent-given').on('submit',function(event){
     event.preventDefault();
     event.currentTarget.submit();
@@ -196,6 +239,7 @@ $(document).ready(function () {
 
   })
 
+//allowing for to still submit
 
   $('#consentGiven').on('submit',function(event){
     event.preventDefault();
@@ -226,7 +270,6 @@ $(document).ready(function () {
 
 
       }, 0);
-
 
     }
   });
@@ -293,7 +336,7 @@ $(document).ready(function () {
   })
 
 
-
+//allowing for to still submit
 
   $('#informationForm').on('submit',function(event){
     event.preventDefault();
@@ -326,7 +369,7 @@ $(document).ready(function () {
 
       setTimeout(function(){
 
-      $('.contact-info .moreInfo').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p></div>')
+        $('.contact-info .moreInfo').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p></div>')
 
       }, 600)
 
