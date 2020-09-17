@@ -160,10 +160,21 @@ $('#consent-button').click(function(e){
 
   })
 
+  $('#no-consent-given').on('submit',function(event){
+    event.preventDefault();
+    event.currentTarget.submit();
+  });
 
 
 $('#noConsent-button').click(function(e){
   e.preventDefault()
+
+  var yourFormElement2 = $("#no-consent-given")[0];
+   yourFormElement2.checkValidity();
+   yourFormElement2.reportValidity();
+
+if (!$('.no-consent').val() == '' )   {
+
   $(".grayBox.second").animate({
     "top": negative2
   }, 400);
@@ -180,17 +191,26 @@ $('#noConsent-button').click(function(e){
 
   }, 0);
 
+}
+
 
 })
 
 
-$('#consentGive').on('submit',function(event){
+$('#consentGiven').on('submit',function(event){
   event.preventDefault();
   event.currentTarget.submit();
 });
 
+
+
 $('#consent-button').click(function(e){
   e.preventDefault()
+
+var yourFormElement1 = $("#consentGiven")[0];
+ yourFormElement1.checkValidity();
+ yourFormElement1.reportValidity();
+		if (!$('.consent').val() == '' )   {
   $(".grayBox.first").animate({
     "top": negative2
   }, 400);
@@ -206,6 +226,9 @@ $('#consent-button').click(function(e){
 
 
   }, 0);
+
+
+}
 });
 
 
@@ -267,6 +290,22 @@ $('.grayBox.consent1').append('<div class="across"><img src="images/green-check.
 
 
 
+})
+
+
+
+
+$('#informationForm').on('submit',function(event){
+  event.preventDefault();
+  event.currentTarget.submit();
+});
+
+
+$('#update').click(function(e){
+  e.preventDefault()
+  var yourFormElement = $("#informationForm")[0];
+ yourFormElement.checkValidity();
+ yourFormElement.reportValidity();
 })
 
 
