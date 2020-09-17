@@ -577,7 +577,7 @@ body {
 }
 
 .greenBanner {
-  background-image: url(../images/green.svg);
+  background-image: url(../images/banner.svg);
   position:relative;
   background-size: cover;
   background-repeat: no-repeat;
