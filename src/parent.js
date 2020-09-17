@@ -110,7 +110,6 @@ else {
     }, 400);
 
 
-
   })
 
 
@@ -145,10 +144,17 @@ $('.box-outer').animate({
   "height" : 120
 }, 500);
 
+$('.longGreyBox').animate({
+  "height" : 0
+}, 500).hide();
+
 $('.grayBox.third .top-consent-text').remove()
 $('#finishOptOut').remove()
 
 $('.box-outer').addClass('none')
+$(".moreInfo").fadeIn()
+
+$('.parent-survey .d-flex p').removeClass('transparent-opacity')
 
 setTimeout(function(){
 

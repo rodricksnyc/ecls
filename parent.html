@@ -415,7 +415,7 @@
 										<p class="charcoal transparent-opacity"><span class="darkBlue small">Technical and Security Recommendations <i class="far fa-window-restore"></i></span></p>
 									</div>
 
-
+									<div class="moreInfo">
 									<p class="charcoal">The parent survey is an essential part of the ECLS. Your input ensures that the study will be able to provide valuable results that can be used to improve children’s education and experiences. To begin your survey, select the Launch Survey icon <span class="rel">"<i class="fas fa-arrow-right darkBlue"></i>"</span> in the table below. Some of these questions, or the timeframe of the school year referred to, may not apply to you or your family, but just answer the best you can. Some questions in the survey have additional information and definitions that can be used if needed. To view the additional information for those questions,  select the blue <span class="rel">"<i class="fas fa-info-circle darkBlue"></i>”</span> icon.</p>
 									<div class="teacherAttr d-flex align-items-center">
 										<div class="col-lg-2">
@@ -469,6 +469,8 @@
 										<div class='progressBarFull'></div>
 									</div>
 
+								</div>
+
 
 									<div class="longGreyBox">
 										<i class="fal fa-ellipsis-h"></i>
@@ -477,13 +479,94 @@
 								</div>
 
 
-
+							<div class="contact-info">
 								<h2 class="landing-sec-H">Contact Information</h2>
-
+									<div class="moreInfo">
 								<p class="charcoal">Please update or complete your contact information below. We will use it to send you study reminders and updates when they are available. This information will not be shared or used for any other purpose.</p>
+
+
+
+								<div class="lightGrayBox">
+									<form>
+
+										<legend>
+
+										</legend>
+
+
+										<div class="form-group">
+											<label for="firstname">First Name</label>
+											<input type="text" class="form-control" id="firstname" placeholder="">
+
+										</div>
+
+										<div class="form-group">
+											<label for="lastname">Last Name</label>
+											<input type="text" class="form-control" id="lastname" placeholder="">
+										</div>
+										<div class="form-group">
+											<label for="email1">Email Address</label>
+											<input type="email" class="form-control" id="email1" placeholder="">
+										</div>
+
+
+										<div class="form-group">
+											<label for="email1">Confirm Email Address</label>
+											<input type="email" class="form-control" id="email2" placeholder="">
+										</div>
+
+										<div class="form-group">
+											<label for="phone">Phone Number</label>
+											<input type="text" class="form-control" id="phone" placeholder="">
+										</div>
+										<div class="form-group">
+											<label for="Address1">Address 1</label>
+											<input type="text" class="form-control" id="Address1" placeholder="">
+										</div>
+										<div class="form-group">
+											<label for="Address2">Address 2</label>
+											<input type="text" class="form-control" id="Address2" placeholder="">
+										</div>
+
+										<div class="form-group">
+											<label for="City">City</label>
+											<input type="text" class="form-control" id="City" placeholder="">
+										</div>
+										<div class="row mb-3">
+											<div class="col-md-4">
+										<div class="form-group">
+											<label for="state">State</label>
+											<input type="text" class="form-control" id="state" placeholder="">
+										</div>
+									</div>
+										<div class="col-md-8">
+										<div class="form-group">
+											<label for="zip">Zip Code</label>
+											<input type="text" class="form-control" id="zip" placeholder="">
+										</div>
+									</div>
+
+									</div>
+
+									<center>
+
+										<button type="submit" id="update" class="btn btn-info lightGrayColor" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update information">UPDATE</button>
+									</center>
+
+
+
+								</form>
+
+
+
+
+								</div>
+							</div>
 								<div class="longGreyBox">
 									<i class="fal fa-ellipsis-h"></i>
 								</div>
+
+							</div>
 
 
 
@@ -881,11 +964,22 @@
 
 
 			</section>
+			<div class="menu-buttons-floating wow slideInUp">
+				<ul class="menu-buttons-floating-list">
+					<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
+					<li tabindex="0" data-target="#survey"><i class="fas fa-file-contract"></i></li>
+					<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
+					<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
+				</ul>
+			</div>
 
 
+		</div>
 			<section class="block50" id="info">
 
-				<div class="lightGreen d-flex flex-column align-items-center heros">
+
+				<div class="lightGreen d-flex flex-column align-items-center heros container-fluid">
+							<!-- <div class="greenBottom"></div> -->
 					<div class="guide-overlay container">
 						<h2 class="landing-sec-H mb1">To learn more about the ECLS, please download the following documents or return to the MyECLS home screen for materials and links to the U.S. Department of Education's ECLS site:</h2>
 
@@ -903,6 +997,12 @@
 							</div>
 
 						</div>
+
+
+
+
+					<!-- <div class="row">
+						<div class="col-10 offset-md-2"> -->
 
 						<h2 class="landing-sec-H mb1">Findings from previous ECLS studies</h2>
 						<h3 class="landing-sec-H">What kinds of activities do parents do with their kindergarten children at least once a month?</h3>
@@ -1015,25 +1115,21 @@
 
 						</div>
 
+					<!-- </div>
+				</div> -->
+<!-- <div class="guide-overlay container"> -->
 						<p class="purple text-center greenUnderline">Privacy & Authorization</p>
 						<p class="dark">The National Center for Education Statistics (NCES) is authorized to conduct the Early Childhood Longitudinal Study (ECLS) by the Education Sciences Reform Act of 2002 (ESRA 2002, 20 U.S.C. §9543). The data are being collected for NCES by Westat, a U.S.-based research organization. All of the information you provide may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151). Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff.</p>
 						<p class="dark">According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
 						<p class="dark">OMB No. 1850-0750, Approval Expires XX/XX/XXXX</p>
 
-
+<!-- </div> -->
+		</div>
 					</div>
 				</div>
 
 			</section>
 
-			<div class="menu-buttons-floating wow slideInUp">
-				<ul class="menu-buttons-floating-list">
-					<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
-					<li tabindex="0" data-target="#survey"><i class="fas fa-file-contract"></i></li>
-					<!-- <li tabindex="0" data-target="#feedback"><i class="fas fa-comment-lines"></i></li> -->
-					<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
-				</ul>
-			</div>
 
 
 			<div class="menu-buttons-768">
@@ -1071,9 +1167,9 @@
 				</div>
 			</div>
 
-		</div>
 
-		<div class="greenBottom"></div>
+
+
 
 		<div class="back-to-top">
 			<i class="far fa-angle-up"></i>
