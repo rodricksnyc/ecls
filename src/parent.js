@@ -87,6 +87,54 @@ else {
 
   })
 
+  $('#return-noConsent').click(function(){
+
+    $('.grayBox.consent1').addClass('flexing-scroll')
+
+    $(".grayBox.consent1").animate({
+      "left": -$(".box-outer").width()
+    }, 400);
+
+
+    setTimeout(function(){
+
+      $('.grayBox.second').addClass('animated slideInRight').show();
+
+      $(".grayBox.second").animate({
+        "right": 0
+      }, 200);
+
+    }, 100);
+
+  $('#return1').click(function(){
+    $('.grayBox.first').addClass('animated slideInDown slow')
+
+    $(".grayBox.first").animate({
+      "top": 0
+    }, 600);
+
+
+
+})
+
+$('#consent-button').click(function(e){
+  e.preventDefault()
+  $(".grayBox.first").animate({
+    "top": negative2
+  }, 400);
+
+
+  $(".grayBox.consent1").animate({
+    "left": 0
+  }, 600);
+
+
+});
+
+
+
+  })
+
 
   $('#return1').click(function(){
     console.log(negative)
@@ -136,6 +184,31 @@ $('#noConsent-button').click(function(e){
 })
 
 
+$('#consentGive').on('submit',function(event){
+  event.preventDefault();
+  event.currentTarget.submit();
+});
+
+$('#consent-button').click(function(e){
+  e.preventDefault()
+  $(".grayBox.first").animate({
+    "top": negative2
+  }, 400);
+
+
+  setTimeout(function(){
+    $('.grayBox.consent1').addClass('animated slideInUp').show();
+
+    $(".grayBox.consent1").animate({
+      "bottom": 0,
+      "top":0
+    }, 400);
+
+
+  }, 0);
+});
+
+
 
 $('#finishOptOut').click(function(e){
   e.preventDefault()
@@ -158,7 +231,37 @@ $('.parent-survey .d-flex p').removeClass('transparent-opacity')
 
 setTimeout(function(){
 
-$('.grayBox.third').append('<div class="across"><img src="images/check-complete.svg" class="img-responsive"><p class="purple larger">Consent <span class="strong">Not</span> Provided</p></div>')
+$('.grayBox.third').append('<div class="across"><img src="images/red-check.svg" class="img-responsive"><p class="purple larger">Consent <span class="strong">Not</span> Provided</p></div>')
+
+}, 600)
+
+
+
+})
+
+
+$('#give-consent').click(function(e){
+  e.preventDefault()
+
+$('.box-outer').animate({
+  "height" : 138
+}, 500);
+
+$('.longGreyBox').animate({
+  "height" : 0
+}, 500).hide();
+
+$('.grayBox.consent1').children().fadeOut()
+
+
+$('.box-outer, .grayBox.consent1').addClass('given')
+$(".moreInfo").fadeIn()
+
+$('.parent-survey .d-flex p').removeClass('transparent-opacity')
+
+setTimeout(function(){
+
+$('.grayBox.consent1').append('<div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Consent Given</h6></div>')
 
 }, 600)
 

@@ -314,7 +314,7 @@
 											<p class="charcoal">To provide permission for your child, <span id="child-name">[CHILD NAME]</span>, to participate in the ECLS, please check the box below, enter your name, and select “Submit.”</p>
 										</div>
 
-										<form>
+										<form id="consentGiven">
 											<div id="listResults">
 
 												<div class="one">
@@ -392,7 +392,6 @@
 									</div>
 
 
-
 									<div class="grayBox third">
 										<div class="top-consent-text">
 											<p class="charcoal">Thank you for your consideration!</p>
@@ -404,6 +403,32 @@
 											<button type="submit" class="btn btn-info steelColor" id="finishOptOut" tabindex="0" aria-hidden="false" role="button" aria-describedby="Select ok">OK</button>
 										</center>
 
+
+									</div>
+
+
+									<div class="grayBox consent1">
+										<form>
+										<div class="top-consent-text">
+
+											<p class="charcoal">Your child, <span id="child-name">[CHILD NAME]</span>, has been selected to participate in the ECLS!</p>
+											<p class="charcoal">Please select “Continue” to return to the Parent Portal and move on to the Parent Survey.</p>
+
+										</div>
+										<center>
+
+											<button type="submit" class="btn btn-info" id="give-consent" tabindex="0" aria-hidden="false" role="button" aria-describedby="Give consent">CONTINUE</button>
+										</center>
+
+										</form>
+
+										<p class="charcoal">If you do <span class="strong">not</span> want your child to participate, select “Opt out.”</p>
+
+
+											<center>
+
+												<button type="submit" id="return-noConsent" class="btn btn-info steelColor" tabindex="0" aria-hidden="false" role="button" aria-describedby="Return to no consent">OPT OUT</button>
+											</center>
 
 									</div>
 

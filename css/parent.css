@@ -167,11 +167,27 @@ a:hover {
   display: none;
   top:0;
   bottom:0;
-
   position: absolute;
 
 }
 
+.grayBox.consent1 {
+  display: none;
+  top:0;
+  bottom:0;
+  position: absolute;
+  width:100%;
+}
+
+.grayBox.consent1 h6.green {
+  font-size:26px;
+  font-weight:400;
+
+}
+
+.given {
+      background-color: #f1fbeb !important;
+}
 
 .grayBox.third {
   display: none;
@@ -327,6 +343,21 @@ input {
   margin:0em 0em 2em 0em
 
 }
+
+#give-consent{
+    background: #00843D;
+    border-color: transparent !important;
+    width: auto;
+    padding: .2rem 1.6rem;
+    border-radius: 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Public Sans' !important;
+    margin:0em 0em 2em 0em
+
+
+  }
 
 #listResults .plum {
   color:#071D49;
