@@ -177,25 +177,27 @@ a:hover {
   bottom:0;
   position: absolute;
   width:100%;
+  padding:6em;
 }
 
 .grayBox.consent1 h6.green {
   font-size:26px;
   font-weight:400;
 
+
 }
 
-.completed {
+/* .completed {
   padding: 2em 11em;
-}
+} */
 
 .contact-info h6.green {
-    font-size: 26px;
-    font-weight: 400;
+  font-size: 26px;
+  font-weight: 400;
 }
 
 .given {
-      background-color: #f1fbeb !important;
+  background-color: #f1fbeb !important;
 }
 
 .grayBox.third {
@@ -203,6 +205,7 @@ a:hover {
 
   position: absolute;
   width:100%;
+  padding:6em
 }
 
 .box-outer {
@@ -274,11 +277,11 @@ a:hover {
 }
 
 #finishOptOut {
-background: #00843D;
-background-color: #00843D;
-border-color: #00843D;
-min-width: 8rem;
-margin-top: 1em;
+  background: #00843D;
+  background-color: #00843D;
+  border-color: #00843D;
+  min-width: 8rem;
+  margin-top: 1em;
 
 }
 
@@ -349,24 +352,42 @@ input {
   text-transform: uppercase;
   font-size: 18px;
   font-family: 'Public Sans' !important;
-  margin:0em 0em 2em 0em
+  margin:1em 0em 2em 0em
 
 }
 
+#return-noConsent {
+  margin-top:1em;
+  min-width: 9rem;
+}
+
 #give-consent{
-    background: #00843D;
-    border-color: transparent !important;
-    width: auto;
-    padding: .2rem 1.6rem;
-    border-radius: 2rem;
-    color: white;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-family: 'Public Sans' !important;
-    margin:0em 0em 2em 0em
+  background: #00843D;
+  border-color: transparent !important;
+  width: auto;
+  padding: .2rem 1.6rem;
+  border-radius: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Public Sans' !important;
+  margin:1em 0em 2em 0em
 
+}
 
-  }
+#update-again{
+  background: #00843D;
+  border-color: transparent !important;
+  width: auto;
+  padding: .4rem 1.6rem;
+  border-radius: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Public Sans' !important;
+  margin: 1em 0em 1em 0em;
+
+}
 
 #listResults .plum {
   color:#071D49;
@@ -387,30 +408,30 @@ input {
 }
 
 .lightGrayBox .form-group {
-    margin: 2em  0em;
-    position: relative;
+  margin: 2em  0em;
+  position: relative;
 }
 
 
 .lightGrayBox .form-group label {
-    color: black;
-    font-family: 'Public Sans' !important;
-    position: absolute;
-    background: rgb(246,248,248);
+  color: black;
+  font-family: 'Public Sans' !important;
+  position: absolute;
+  background: rgb(246,248,248);
   background: linear-gradient(180deg, rgba(246,248,248,1) 58%, rgba(255,255,255,1) 59%);
-    top: -15px;
-    left: 10px;
-    padding: 0px 8px;
+  top: -15px;
+  left: 10px;
+  padding: 0px 8px;
 }
 
 .lightGrayBox .form-control {
-    height: auto;
-    padding: .5em 1em;
-    font-size: 15px;
-    border-radius: 0;
-    border: 1px solid black;
-    color: black;
-    font-family: 'Public Sans' !important;
+  height: auto;
+  padding: .5em 1em;
+  font-size: 15px;
+  border-radius: 0;
+  border: 1px solid black;
+  color: black;
+  font-family: 'Public Sans' !important;
 }
 
 .moreInfo {
@@ -5156,8 +5177,8 @@ transform: scale(0.8);
   }
 
   /* .activeDot, .inactiveDot {
-    height: 25px;
-    width: 25px;
+  height: 25px;
+  width: 25px;
   } */
 
 
@@ -6377,13 +6398,13 @@ body{
 @media  (max-width:767px)  {
 
   .flipTop {
-      background: #00539f;
-      writing-mode: tb-rl;
-      width: 1px;
-      height: 37px;
-      margin: 0em .6em 0em .7em;
+    background: #00539f;
+    writing-mode: tb-rl;
+    width: 1px;
+    height: 37px;
+    margin: 0em .6em 0em .7em;
 
-      opacity: .8;
+    opacity: .8;
   }
 
 
@@ -6607,7 +6628,7 @@ body{
     margin-bottom: .2em;
   }
   /* .greenBanner {
-    margin-top:-1em;
+  margin-top:-1em;
   } */
 
   .logo {

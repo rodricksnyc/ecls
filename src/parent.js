@@ -11,47 +11,6 @@ $(document).ready(function () {
 
   $(" :checkbox").change(function() {
     if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
-    $('#consent-button').css({
-      'background': '#00843D',
-      'color' :'white'
-
-    });
-
-  }
-
-  else {
-
-    $('#consent-button').css({
-      'background': '#d1d3d4',
-      'color' :'#6F6F6F'
-
-    });
-
-  }
-
-
-if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
-    $('#noConsent-button').css({
-      'background': '#00843D',
-      'color' :'white'
-
-    });
-
-  }
-
-  else {
-
-    $('#noConsent-button').css({
-      'background': '#d1d3d4',
-      'color' :'#6F6F6F'
-
-    });
-
-  }
-  });
-  $('body').keydown(function (event) {
-
-      if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
       $('#consent-button').css({
         'background': '#00843D',
         'color' :'white'
@@ -71,7 +30,48 @@ if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'
     }
 
 
-  if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
+    if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
+      $('#noConsent-button').css({
+        'background': '#00843D',
+        'color' :'white'
+
+      });
+
+    }
+
+    else {
+
+      $('#noConsent-button').css({
+        'background': '#d1d3d4',
+        'color' :'#6F6F6F'
+
+      });
+
+    }
+  });
+  $('body').keydown(function (event) {
+
+    if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
+      $('#consent-button').css({
+        'background': '#00843D',
+        'color' :'white'
+
+      });
+
+    }
+
+    else {
+
+      $('#consent-button').css({
+        'background': '#d1d3d4',
+        'color' :'#6F6F6F'
+
+      });
+
+    }
+
+
+    if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
       $('#noConsent-button').css({
         'background': '#00843D',
         'color' :'white'
@@ -239,7 +239,7 @@ if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'
 
   })
 
-//allowing for to still submit
+  //allowing for to still submit
 
   $('#consentGiven').on('submit',function(event){
     event.preventDefault();
@@ -293,6 +293,9 @@ if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'
     $('.box-outer').addClass('none')
     $(".moreInfo").fadeIn()
 
+    $('.grayBox.third').css('padding', '2em')
+
+
     $('.parent-survey .d-flex p').removeClass('transparent-opacity')
 
     setTimeout(function(){
@@ -317,6 +320,8 @@ if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'
       "height" : 0
     }, 500).hide();
 
+    $('.grayBox.consent1').css('padding', '2em')
+
     $('.grayBox.consent1').children().fadeOut()
 
 
@@ -336,7 +341,7 @@ if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'
   })
 
 
-//allowing for to still submit
+  //allowing for to still submit
 
   $('#informationForm').on('submit',function(event){
     event.preventDefault();
@@ -351,6 +356,18 @@ if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'
     yourFormElement.checkValidity();
     yourFormElement.reportValidity();
 
+
+    //   function confirmEmail() {
+    //     var email = document.getElementById("email1").value
+    //     var confemail = document.getElementById("email2").value
+    //     if(email != confemail) {
+    //         alert('Email Not Matching!');
+    //     }
+    // }
+    //
+    // confirmEmail()
+
+
     let valid = true;
     $('#informationForm [required]').each(function() {
       if ($(this).is(':invalid') || !$(this).val()) valid = false;
@@ -359,27 +376,62 @@ if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'
 
     }
     else {
-      $('.contact-info .moreInfo').animate({
-        "min-height": "150",
-        "height" : "auto",
-        "width" : "100%"
-      }, 500);
-      $('.contact-info .moreInfo').children().fadeOut()
-      $('.contact-info .moreInfo').addClass('given')
+      $('.lightGrayBox').animate({
+        "height": "auto",
+        "min-height": "200",
+        "width": "100%"
+      }, 800);
+
+      $('#informationForm').stop().animate({
+        height: "0px",
+      }, 700,
+      function () {
+        $(this).hide()
+      });
+
+      $('.lightGrayBox').addClass('given')
+
 
       setTimeout(function(){
+        $('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update information again">UPDATE AGAIN</button></div>')
 
-        $('.contact-info .moreInfo').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p></div>')
+            // $('.completed').css('display' ,'flex !important')
+      },700)
 
-      }, 600)
 
 
     }
 
+  })
 
+
+$("body").on("click","#update-again",function(){
+    console.log("diufeiuweubiueibubiu")
+
+    $('#informationForm').stop().animate({
+      height: "100%",
+    }, 400,
+    function () {
+      $(this).fadeIn()
+    });
+
+
+    $('.lightGrayBox').animate({
+      "height": "100%",
+      "width": "100%"
+    }, 600);
+
+
+    setTimeout(function(){
+    $('.lightGrayBox').removeClass('given')
+
+    $('.completed').remove()
+
+},400)
 
 
   })
+
 
 
 
