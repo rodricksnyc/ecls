@@ -911,7 +911,7 @@ $(window).on('scroll', function() {
 
 
 
-	if ( $('.block10').hasClass('active')  ) {
+	if ( $('.block10').hasClass('active')   ) {
 
 
 		$('li[data-target="#overview"]').addClass('activated')

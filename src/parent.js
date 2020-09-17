@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-  // var canvas = document.getElementById("signature");
-  //  var signaturePad = new SignaturePad(canvas);
-  //
-  //  $('#clear-signature').on('click', function(){
-  //      signaturePad.clear();
-  //  });
-  //
-
 
   $(" :checkbox").change(function() {
     if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
@@ -227,7 +219,7 @@ $(document).ready(function () {
         $('.grayBox.third').addClass('animated slideInUp').show();
 
         $(".grayBox.third").animate({
-          "bottom": 0,
+          // "bottom": 0,
           "top":0
         }, 400);
 
@@ -264,7 +256,7 @@ $(document).ready(function () {
         $('.grayBox.consent1').addClass('animated slideInUp').show();
 
         $(".grayBox.consent1").animate({
-          "bottom": 0,
+          // "bottom": 0,
           "top":0
         }, 400);
 
@@ -298,6 +290,8 @@ $(document).ready(function () {
 
     $('.parent-survey .d-flex p').removeClass('transparent-opacity')
 
+
+
     setTimeout(function(){
 
       $('.grayBox.third').append('<div class="across"><img src="images/red-check.svg" class="img-responsive"><p class="purple larger">Consent <span class="strong">Not</span> Provided</p></div>')
@@ -330,9 +324,11 @@ $(document).ready(function () {
 
     $('.parent-survey .d-flex p').removeClass('transparent-opacity')
 
+
+
     setTimeout(function(){
 
-      $('.grayBox.consent1').append('<div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Consent Given</h6></div>')
+      $('.grayBox.consent1').append('<div class="across"><img src="images/green-check.svg" class="img-responsive consent-green"><h6 class="green">Consent Given</h6></div>')
 
     }, 600)
 
@@ -353,10 +349,10 @@ $(document).ready(function () {
   var confemail = document.getElementById("email2").value
 
   $('body').keydown(function (event) {
-  if (email == confemail) {
-    $('.invalid-tooltip').hide()
+    if (email == confemail) {
+      $('.invalid-tooltip').hide()
 
-  }
+    }
   })
 
   $('#update').click(function(e){
@@ -366,61 +362,68 @@ $(document).ready(function () {
     yourFormElement.reportValidity();
 
 
-      function confirmEmail() {
-        var email = document.getElementById("email1").value
-        var confemail = document.getElementById("email2").value
-        if(email != confemail) {
-            $('.invalid-tooltip').show()
+    function confirmEmail() {
+      var email = document.getElementById("email1").value
+      var confemail = document.getElementById("email2").value
+      if(email != confemail) {
+        $('.invalid-tooltip').show()
 
 
-        }
+      }
 
 
-    let valid = true;
-    $('#informationForm [required]').each(function() {
-      if ($(this).is(':invalid') || !$(this).val()) valid = false;
-    })
-    if (!valid) {
+      let valid = true;
+      $('#informationForm [required]').each(function() {
+        if ($(this).is(':invalid') || !$(this).val()) valid = false;
+      })
+      if (!valid) {
+
+      }
+      else if (valid && (email == confemail)) {
+
+
+        $('.lightGrayBox').animate({
+          "height": "auto",
+          "min-height": "200",
+          "width": "100%"
+        }, 800);
+
+        $('#informationForm').stop().animate({
+          height: "0px",
+        }, 700,
+        function () {
+          $(this).hide()
+        });
+
+        $('.lightGrayBox').addClass('given')
+
+
+        setTimeout(function(){
+          $('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update information again">UPDATE AGAIN</button></div>')
+
+          // $('.completed').css('display' ,'flex !important')
+        },700)
+
+
+        $('#feedback, li[data-target="#feedback"]').show()
+        $('#feedback').css({
+          height:'auto',
+          width:'100%'
+        })
+
+
+      }
+
 
     }
-    else if (valid && (email == confemail)) {
 
-      $('.lightGrayBox').animate({
-        "height": "auto",
-        "min-height": "200",
-        "width": "100%"
-      }, 800);
-
-      $('#informationForm').stop().animate({
-        height: "0px",
-      }, 700,
-      function () {
-        $(this).hide()
-      });
-
-      $('.lightGrayBox').addClass('given')
-
-
-      setTimeout(function(){
-        $('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update information again">UPDATE AGAIN</button></div>')
-
-            // $('.completed').css('display' ,'flex !important')
-      },700)
-
-
-
-    }
-
-
-  }
-
-  confirmEmail()
+    confirmEmail()
 
 
   })
 
 
-$("body").on("click","#update-again",function(){
+  $("body").on("click","#update-again",function(){
     console.log("diufeiuweubiueibubiu")
 
     $('#informationForm').stop().animate({
@@ -438,19 +441,14 @@ $("body").on("click","#update-again",function(){
 
 
     setTimeout(function(){
-    $('.lightGrayBox').removeClass('given')
+      $('.lightGrayBox').removeClass('given')
 
-    $('.completed').remove()
+      $('.completed').remove()
 
-},400)
+    },400)
 
 
   })
-
-
-
-
-
 
 
 })
