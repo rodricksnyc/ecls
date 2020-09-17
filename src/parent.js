@@ -357,15 +357,12 @@ $(document).ready(function () {
     yourFormElement.reportValidity();
 
 
-    //   function confirmEmail() {
-    //     var email = document.getElementById("email1").value
-    //     var confemail = document.getElementById("email2").value
-    //     if(email != confemail) {
-    //         alert('Email Not Matching!');
-    //     }
-    // }
-    //
-    // confirmEmail()
+      function confirmEmail() {
+        var email = document.getElementById("email1").value
+        var confemail = document.getElementById("email2").value
+        if(email != confemail) {
+            alert('Email must match');
+        }
 
 
     let valid = true;
@@ -375,7 +372,7 @@ $(document).ready(function () {
     if (!valid) {
 
     }
-    else {
+    else if (valid && (email == confemail)) {
       $('.lightGrayBox').animate({
         "height": "auto",
         "min-height": "200",
@@ -401,6 +398,12 @@ $(document).ready(function () {
 
 
     }
+
+
+  }
+
+  confirmEmail()
+
 
   })
 
