@@ -166,7 +166,7 @@ a:hover {
 .grayBox.second {
   display: none;
   top:0;
-  /* bottom:0; */
+  bottom:0;
   position: absolute;
 
 }
@@ -174,7 +174,7 @@ a:hover {
 .grayBox.consent1 {
   display: none;
   top:0;
-  /* bottom:0; */
+  bottom:0;
   position: absolute;
   width:100%;
   padding:6em;
@@ -256,8 +256,12 @@ a:hover {
   left: 0;
 
 }
+
+@media (min-width:768px) {
 .margin-0 {
   margin:0 !important
+}
+
 }
 
 
@@ -6569,7 +6573,12 @@ body{
     align-items: center;
     flex-direction: column;
 }
-
+/* .block-list .across {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+} */
 .languageToggle {
     float: none;
     margin-top: 0em;
@@ -6593,6 +6602,23 @@ body{
 }
 .larger {
     font-size: 21px !important;
+}
+
+
+
+.greenBlocks p.white.small {
+
+    margin-right: 0em;
+
+}
+.greenBlocks img {
+    max-width: 10em;
+}
+
+.totalSurveyCount {
+
+    font-size: 2.5em;
+
 }
 
   #privacyModal {
@@ -7047,9 +7073,15 @@ align-items: center;
   }
 }
 
-@media (max-width:320px) {
+@media (max-width:321px) {
   p.black {
     font-size: .8em;
+  }
+  .block-list .across {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
   }
 
   footer .abso {

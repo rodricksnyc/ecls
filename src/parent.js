@@ -115,8 +115,11 @@ $(document).ready(function () {
       }, 200);
 
     }, 100);
+setTimeout(function(){
+    var divPosition = $('#anchorPoint').offset();
+    $('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-    console.log(negative)
+  },1000)
 
   })
 
@@ -166,6 +169,7 @@ $(document).ready(function () {
 
 
 
+
   })
 
 
@@ -180,7 +184,7 @@ $(document).ready(function () {
 
 
 
-    }, 100);
+    }, 300);
 
     setTimeout(function(){
       $('.grayBox.second').removeClass('animated slideInRight').hide();
@@ -188,7 +192,7 @@ $(document).ready(function () {
 
     $(".grayBox.second").animate({
       "right": negative
-    }, 400);
+    }, 600);
 
 
   })
@@ -225,6 +229,9 @@ $(document).ready(function () {
 
 
       }, 0);
+
+      var divPosition = $('#anchorPoint').offset();
+      $('html, body').animate({scrollTop: divPosition.top}, 1000);
 
     }
 
@@ -263,6 +270,9 @@ $(document).ready(function () {
 
       }, 0);
 
+      var divPosition = $('#anchorPoint').offset();
+      $('html, body').animate({scrollTop: divPosition.top}, 1000);
+
     }
   });
 
@@ -298,6 +308,12 @@ $(document).ready(function () {
 
     }, 600)
 
+        setTimeout(function(){
+    var divPosition = $('#anchorPoint').offset();
+    $('html, body').animate({scrollTop: divPosition.top}, 1000);
+
+  },600)
+
 
 
   })
@@ -332,7 +348,8 @@ $(document).ready(function () {
 
     }, 600)
 
-
+    var divPosition = $('#anchorPoint').offset();
+    $('html, body').animate({scrollTop: divPosition.top}, 1000);
 
   })
 
