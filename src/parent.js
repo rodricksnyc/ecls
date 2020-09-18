@@ -143,6 +143,9 @@ $(document).ready(function () {
 
 		$('.grayBox.consent1').addClass('flexing-scroll')
 
+
+
+
 		$(".grayBox.consent1").animate({
 			"left": -$(".box-outer").width()
 		}, 400);
@@ -170,12 +173,15 @@ $(document).ready(function () {
 		})
 
 		$('#consent-button').click(function(e){
+
 			e.preventDefault()
 			$(".grayBox.first").animate({
 				"top": negative2
 			}, 400);
 
-
+			$(".grayBox.consent1").addClass('animated slideInLeft')
+			// $(".grayBox.consent1").removeClass('flexing-scroll')
+			//
 			$(".grayBox.consent1").animate({
 				"left": 0
 			}, 600);

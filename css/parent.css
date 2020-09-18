@@ -2511,6 +2511,16 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
     transform: scale(.9);
 }
 
+ li.greenConsent:hover {
+
+    color: transparent !important;
+  }
+
+ li.redConsent:hover {
+
+     color: transparent !important;
+   }
+
 .greenConsent:after {
   bottom: -36%;
 }
