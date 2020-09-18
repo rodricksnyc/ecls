@@ -2426,6 +2426,20 @@ footer a.white:hover {
 
 }
 
+
+
+li.spanishAfter[data-target="#overview"]:after {
+  content: "visión de conjunto";
+  text-transform: uppercase;
+  min-width: 11em;
+  left: -25px;
+  font-size: 11px;
+
+}
+
+
+
+
 .menu-buttons-floating-list li:hover:after {
   color: #071D49 !important
 }
@@ -2448,6 +2462,16 @@ footer a.white:hover {
   font-family: 'Public Sans', sans-serif;
   color: #00843D;
   font-weight: 700;
+}
+
+li.spanishAfter[data-target="#parentSurvey"]:after {
+  content: "encuesta";
+  text-transform: uppercase;
+  min-width: 11em;
+  left: -25px;
+  font-size: 11px;
+
+
 }
 
 .grayedOut{
@@ -2548,6 +2572,17 @@ footer a.white:hover {
   font-weight: 700;
 }
 
+li.spanishAfter[data-target="#survey"]:after {
+  content: "consentimiento";
+  text-transform: uppercase;
+  min-width: 11em;
+      left: -29px;
+      font-size: 11px;
+      bottom: -34%;
+
+
+}
+
 
 .menu-buttons-floating-list li[data-target="#contact"]:after {
   content: "CONTACT";
@@ -2562,6 +2597,15 @@ footer a.white:hover {
   font-family: 'Public Sans', sans-serif;
   color: #00843D;
   font-weight: 700;
+}
+
+li.spanishAfter[data-target="#contact"]:after {
+  content: "contacto";
+  text-transform: uppercase;
+  min-width: 12em;
+  left: -31px;
+    font-size: 11px;
+
 }
 
 
@@ -2580,6 +2624,14 @@ footer a.white:hover {
   font-weight: 700;
 }
 
+li.spanishAfter[data-target="#feedback"]:after {
+  content: "realimentación";
+  text-transform: uppercase;
+  min-width: 12em;
+  left: -30px;
+font-size:11px;
+}
+
 
 
 
@@ -2596,6 +2648,15 @@ footer a.white:hover {
   font-family: 'Public Sans', sans-serif;
   color: #00843D;
   font-weight: 700;
+}
+
+li.spanishAfter[data-target="#info"]:after {
+  content: "Más información";
+  text-transform: uppercase;
+  min-width: 12em;
+  left: -33px;
+      font-size: 11px;
+
 }
 
 .menu-buttons-floating-list li:first-child, .btn-guide {
@@ -2918,7 +2979,7 @@ transform: scale(0.9);
 #slideOut {
   height: 100vh;
   top: 0;
-  z-index: 999999999;
+    z-index: 999999999999999999;
 }
 #slideOut {
   position: fixed;
@@ -3594,10 +3655,7 @@ background: #7bc043;
   color: white;
 }
 
-.menu-buttons-768-list li {
-  width:33.33%;
-  /* border-top-left-radius: 5px; */
-}
+
 
 /* .menu-buttons-768-list li {
 width:33.33%;
@@ -5328,6 +5386,8 @@ transform: scale(0.8);
 }
 
 @media (max-width: 767px) {
+
+
   .activated {
     font-weight: 800;
     background: #fbb03b !important;
@@ -6676,6 +6736,42 @@ body{
 }
 
 @media  (max-width:767px)  {
+
+
+
+    .menu-buttons-768-list li {
+      width:20%;
+        position: relative;
+    }
+
+    .menu-buttons-768-list  li[data-target="#feedback"] {
+        display: none;
+    }
+    .lightGrayBox {
+        background: #f6f8f8;
+        padding: 2em 2em;
+    }
+    .greenConsent, .redConsent {
+ background:#00843D !important;
+    border: 3px solid #00843D;
+}
+    .greenConsent:before {
+      top: -26px;
+    left: 1px;
+    transform: scale(.4);
+    height: 100px;
+    width: 100px;
+  }
+
+  .redConsent:before {
+    top: -26px;
+  left: 1px;
+  transform: scale(.4);
+  height: 100px;
+  width: 100px;
+}
+
+
 
   .toggleDiv .firstRow {
       /* flex-direction: column; */
