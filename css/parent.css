@@ -282,6 +282,11 @@ a:hover {
 }
 
 
+h3.landing-sec-H {
+    font-size: 26px;
+
+    margin-right: 30%;
+}
 .larger {
   font-size:25px !important
 }
@@ -6746,8 +6751,14 @@ body{
 }
 
 @media  (max-width:767px)  {
+  h3.landing-sec-H {
 
+    margin-right: 0%;
+}
 
+.spanishAfter:after {
+  display:none
+}
 
     .menu-buttons-768-list li {
       width:20%;
