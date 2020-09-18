@@ -993,6 +993,28 @@ $(window).on('scroll', function() {
 	}
 
 
+	if ($('.block00').hasClass('active')) {
+		$('li[data-target="#parentSurvey"]').addClass('activated')
+		$('li[data-target="#parentSurvey"]').addClass('activated')
+	}
+
+	else {
+		$('li[data-target="#parentSurvey"]').removeClass('activated')
+		$('li[data-target="#parentSurvey"]').removeClass('activated')
+	}
+
+
+		if ($('.block000').hasClass('active')) {
+			$('li[data-target="#contact"]').addClass('activated')
+			$('li[data-target="#contact"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#contact"]').removeClass('activated')
+			$('li[data-target="#contact"]').removeClass('activated')
+		}
+
+
 
 })
 

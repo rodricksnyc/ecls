@@ -214,6 +214,12 @@ a:hover {
   position: relative;
   /* background: #f6f8f8; */
   overflow: hidden;
+
+
+}
+
+.block5 {
+    min-height: 36em;
 }
 
 .grayBox.first.flexing-scroll {
@@ -224,7 +230,15 @@ a:hover {
 
 }
 
-#feedback, li[data-target="#feedback"] {
+.modal-body {
+  padding:2em
+}
+
+#feedback {
+  display: none
+}
+
+.menu-buttons-floating-list li[data-target="#feedback"] {
   display: none
 }
 
@@ -2386,8 +2400,57 @@ footer a.white:hover {
 }
 
 
+.menu-buttons-floating-list li[data-target="#parentSurvey"]:after {
+  content: "SURVEY";
+  font-size: 12px;
+  /* margin-top: 7em; */
+  position: absolute;
+  bottom: -28%;
+  color: black;
+  width: 100%;
+  margin-bottom: 0em;
+  left: 0;
+  font-family: 'Public Sans', sans-serif;
+  color: #00843D;
+  font-weight: 700;
+}
+
+.grayedOut{
+  background: #d1d3d4 !important
+}
+
+.grayedOut:after{
+  color: #d1d3d4 !important
+}
+
+.grayedOut i {
+  color:#6F6F6F !important;
+
+}
+
+.grayedOut.activated{
+    background: #d1d3d4 !important;
+      color:#6F6F6F !important;
+}
+
 .menu-buttons-floating-list li[data-target="#survey"]:after {
   content: "CONSENT";
+  font-size: 12px;
+  /* margin-top: 7em; */
+  position: absolute;
+  bottom: -28%;
+  color: black;
+  width: 100%;
+  margin-bottom: 0em;
+  left: 0;
+  font-family: 'Public Sans', sans-serif;
+  color: #00843D;
+  font-weight: 700;
+}
+
+
+.menu-buttons-floating-list li[data-target="#contact"]:after {
+  content: "CONTACT";
   font-size: 12px;
   /* margin-top: 7em; */
   position: absolute;
@@ -3049,9 +3112,6 @@ p.modalFooter {
   padding-top: 0em;
 }
 
-.modal-body {
-  padding-top: 0;
-}
 
 .form-control.secondOne {
   height: calc(1rem + 25px) !important;

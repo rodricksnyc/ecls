@@ -1,6 +1,18 @@
 $(document).ready(function () {
 
 
+	$("a, button, input, [tabIndex='0']").on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).css('outline', 'dashed 3px #4599ff')
+		}
+
+	})
+	$("a, button, input, [tabIndex='0']").on('focusout', function() {
+		$(this).css('outline', 'none')
+	})
+
+
   $(" :checkbox").change(function() {
     if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
       $('#consent-button').css({
@@ -427,6 +439,9 @@ setTimeout(function(){
           height:'auto',
           width:'100%'
         })
+
+        var divPosition = $('#anchorPoint2').offset();
+        $('html, body').animate({scrollTop: divPosition.top}, 500);
 
 
       }
