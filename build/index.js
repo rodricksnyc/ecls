@@ -750,7 +750,7 @@ $(document).ready(function () {
 			var elementTop = $(this).offset().top;
 			var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-			if (screenBottom > elementTop + $(this).find('.heros').height() / 3 && screenTop < elementBottom) {
+			if (screenBottom > elementTop + $(this).find('.heros').height() / 2 && screenTop < elementBottom) {
 				$('section').removeClass('active');
 				$(this).addClass('active');
 			} else {
@@ -826,6 +826,14 @@ $(document).ready(function () {
 			$('li[data-target="#info"]').removeClass('activated');
 		}
 
+		if ($('.block555').hasClass('active')) {
+
+			$('li[data-target="#survey"]').addClass('activated');
+			$('li[data-target="#survey"]').addClass('activated');
+		} else {
+			$('li[data-target="#survey"]').removeClass('activated');
+			$('li[data-target="#survey"]').removeClass('activated');
+		}
 		if ($('.block00').hasClass('active')) {
 			$('li[data-target="#parentSurvey"]').addClass('activated');
 			$('li[data-target="#parentSurvey"]').addClass('activated');

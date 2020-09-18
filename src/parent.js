@@ -13,474 +13,506 @@ $(document).ready(function () {
 	})
 
 
-  $(" :checkbox").change(function() {
-    if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
-      $('#consent-button').css({
-        'background': '#00843D',
-        'color' :'white'
+	$(" :checkbox").change(function() {
+		if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
+			$('#consent-button').css({
+				'background': '#00843D',
+				'color' :'white'
 
-      });
+			});
 
-    }
+		}
 
-    else {
+		else {
 
-      $('#consent-button').css({
-        'background': '#d1d3d4',
-        'color' :'#6F6F6F'
+			$('#consent-button').css({
+				'background': '#d1d3d4',
+				'color' :'#6F6F6F'
 
-      });
+			});
 
-    }
+		}
 
 
-    if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
-      $('#noConsent-button').css({
-        'background': '#00843D',
-        'color' :'white'
+		if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
+			$('#noConsent-button').css({
+				'background': '#00843D',
+				'color' :'white'
 
-      });
+			});
 
-    }
+		}
 
-    else {
+		else {
 
-      $('#noConsent-button').css({
-        'background': '#d1d3d4',
-        'color' :'#6F6F6F'
+			$('#noConsent-button').css({
+				'background': '#d1d3d4',
+				'color' :'#6F6F6F'
 
-      });
+			});
 
-    }
-  });
-  $('body').keydown(function (event) {
+		}
+	});
+	$('body').keydown(function (event) {
 
-    if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
-      $('#consent-button').css({
-        'background': '#00843D',
-        'color' :'white'
+		if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
+			$('#consent-button').css({
+				'background': '#00843D',
+				'color' :'white'
 
-      });
+			});
 
-    }
+		}
 
-    else {
+		else {
 
-      $('#consent-button').css({
-        'background': '#d1d3d4',
-        'color' :'#6F6F6F'
+			$('#consent-button').css({
+				'background': '#d1d3d4',
+				'color' :'#6F6F6F'
 
-      });
+			});
 
-    }
+		}
 
 
-    if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
-      $('#noConsent-button').css({
-        'background': '#00843D',
-        'color' :'white'
+		if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
+			$('#noConsent-button').css({
+				'background': '#00843D',
+				'color' :'white'
 
-      });
+			});
 
-    }
+		}
 
-    else {
+		else {
 
-      $('#noConsent-button').css({
-        'background': '#d1d3d4',
-        'color' :'#6F6F6F'
+			$('#noConsent-button').css({
+				'background': '#d1d3d4',
+				'color' :'#6F6F6F'
 
-      });
+			});
 
-    }
+		}
 
-  });
+	});
 
-  var negative = -$(".box-outer").width()
+	var negative = -$(".box-outer").width()
 
-  console.log(negative)
+	console.log(negative)
 
-  $(".grayBox.second").css('right', negative)
+	$(".grayBox.second").css('right', negative)
 
 
-  var negative2 = -$(".box-outer").outerHeight()
+	var negative2 = -$(".box-outer").outerHeight()
 
-  console.log(negative2)
+	console.log(negative2)
 
-  $(".grayBox.third").css('bottom', negative2)
+	$(".grayBox.third").css('bottom', negative2)
 
-  $('#optOut1').click(function(){
+	$('#optOut1').click(function(){
 
-    $('.grayBox.first').addClass('flexing-scroll')
+		$('.grayBox.first').addClass('flexing-scroll')
 
-    $(".grayBox.first").animate({
-      "left": -$(".box-outer").width()
-    }, 400);
+		$(".grayBox.first").animate({
+			"left": -$(".box-outer").width()
+		}, 400);
 
 
-    setTimeout(function(){
+		setTimeout(function(){
 
-      $('.grayBox.second').addClass('animated slideInRight').show();
+			$('.grayBox.second').addClass('animated slideInRight').show();
 
-      $(".grayBox.second").animate({
-        "right": 0
-      }, 200);
+			$(".grayBox.second").animate({
+				"right": 0
+			}, 200);
 
-    }, 100);
-setTimeout(function(){
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1000);
+		}, 100);
 
-  },1000)
+		if ($(document).innerWidth() <= 1024) {
+			setTimeout(function(){
+				var divPosition = $('#anchorPoint').offset();
+				$('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-  })
+			},1000)
 
-  $('#return-noConsent').click(function(){
+		}
 
-    $('.grayBox.consent1').addClass('flexing-scroll')
+	})
 
-    $(".grayBox.consent1").animate({
-      "left": -$(".box-outer").width()
-    }, 400);
+	$('#return-noConsent').click(function(){
 
+		$('.grayBox.consent1').addClass('flexing-scroll')
 
-    setTimeout(function(){
+		$(".grayBox.consent1").animate({
+			"left": -$(".box-outer").width()
+		}, 400);
 
-      $('.grayBox.second').addClass('animated slideInRight').show();
 
-      $(".grayBox.second").animate({
-        "right": 0
-      }, 200);
+		setTimeout(function(){
 
-    }, 100);
+			$('.grayBox.second').addClass('animated slideInRight').show();
 
-    $('#return1').click(function(){
-      $('.grayBox.first').addClass('animated slideInDown slow')
+			$(".grayBox.second").animate({
+				"right": 0
+			}, 200);
 
-      $(".grayBox.first").animate({
-        "top": 0
-      }, 600);
+		}, 100);
 
+		$('#return1').click(function(){
+			$('.grayBox.first').addClass('animated slideInDown slow')
 
+			$(".grayBox.first").animate({
+				"top": 0
+			}, 600);
 
-    })
 
-    $('#consent-button').click(function(e){
-      e.preventDefault()
-      $(".grayBox.first").animate({
-        "top": negative2
-      }, 400);
 
+		})
 
-      $(".grayBox.consent1").animate({
-        "left": 0
-      }, 600);
+		$('#consent-button').click(function(e){
+			e.preventDefault()
+			$(".grayBox.first").animate({
+				"top": negative2
+			}, 400);
 
 
-    });
+			$(".grayBox.consent1").animate({
+				"left": 0
+			}, 600);
 
 
+		});
 
 
-  })
 
 
-  $('#return1').click(function(){
-    console.log(negative)
-    setTimeout(function(){
-      $('.grayBox.first').removeClass('flexing-scroll')
+	})
 
-      $(".grayBox.first").animate({
-        "left": 0
-      }, 500);
 
+	$('#return1').click(function(){
+		console.log(negative)
+		setTimeout(function(){
+			$('.grayBox.first').removeClass('flexing-scroll')
 
+			$(".grayBox.first").animate({
+				"left": 0
+			}, 500);
 
-    }, 300);
 
-    setTimeout(function(){
-      $('.grayBox.second').removeClass('animated slideInRight').hide();
-    }, 400);
 
-    $(".grayBox.second").animate({
-      "right": negative
-    }, 600);
+		}, 300);
 
+		setTimeout(function(){
+			$('.grayBox.second').removeClass('animated slideInRight').hide();
+		}, 400);
 
-  })
+		$(".grayBox.second").animate({
+			"right": negative
+		}, 600);
 
-  //allowing for to still submit
 
-  $('#no-consent-given').on('submit',function(event){
-    event.preventDefault();
-    event.currentTarget.submit();
-  });
+	})
 
+	//allowing for to still submit
 
-  $('#noConsent-button').click(function(e){
-    e.preventDefault()
+	$('#no-consent-given').on('submit',function(event){
+		event.preventDefault();
+		event.currentTarget.submit();
+	});
 
-    var yourFormElement2 = $("#no-consent-given")[0];
-    yourFormElement2.checkValidity();
-    yourFormElement2.reportValidity();
 
-    if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
+	$('#noConsent-button').click(function(e){
+		e.preventDefault()
 
-      $(".grayBox.second").animate({
-        "top": negative2
-      }, 400);
+		var yourFormElement2 = $("#no-consent-given")[0];
+		yourFormElement2.checkValidity();
+		yourFormElement2.reportValidity();
 
+		if (!$('.no-consent').val() == '' &&  $('#no-consent-given input').is(':checked'))    {
 
-      setTimeout(function(){
-        $('.grayBox.third').addClass('animated slideInUp').show();
+			$(".grayBox.second").animate({
+				"top": negative2
+			}, 400);
 
-        $(".grayBox.third").animate({
-          // "bottom": 0,
-          "top":0
-        }, 400);
 
+			setTimeout(function(){
+				$('.grayBox.third').addClass('animated slideInUp').show();
 
-      }, 0);
+				$(".grayBox.third").animate({
+					// "bottom": 0,
+					"top":0
+				}, 400);
 
-      var divPosition = $('#anchorPoint').offset();
-      $('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-    }
+			}, 0);
 
+			if ($(document).innerWidth() <= 1024) {
 
-  })
+				var divPosition = $('#anchorPoint').offset();
+				$('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-  //allowing for to still submit
+			}
 
-  $('#consentGiven').on('submit',function(event){
-    event.preventDefault();
-    event.currentTarget.submit();
-  });
+		}
 
 
+	})
 
-  $('#consent-button').click(function(e){
-    e.preventDefault()
+	//allowing for to still submit
 
-    var yourFormElement1 = $("#consentGiven")[0];
-    yourFormElement1.checkValidity();
-    yourFormElement1.reportValidity();
-    if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
-      $(".grayBox.first").animate({
-        "top": negative2
-      }, 400);
+	$('#consentGiven').on('submit',function(event){
+		event.preventDefault();
+		event.currentTarget.submit();
+	});
 
 
-      setTimeout(function(){
-        $('.grayBox.consent1').addClass('animated slideInUp').show();
 
-        $(".grayBox.consent1").animate({
-          // "bottom": 0,
-          "top":0
-        }, 400);
+	$('#consent-button').click(function(e){
+		e.preventDefault()
 
+		var yourFormElement1 = $("#consentGiven")[0];
+		yourFormElement1.checkValidity();
+		yourFormElement1.reportValidity();
+		if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
+			$(".grayBox.first").animate({
+				"top": negative2
+			}, 400);
 
-      }, 0);
 
-      var divPosition = $('#anchorPoint').offset();
-      $('html, body').animate({scrollTop: divPosition.top}, 1000);
+			setTimeout(function(){
+				$('.grayBox.consent1').addClass('animated slideInUp').show();
 
-    }
-  });
+				$(".grayBox.consent1").animate({
+					// "bottom": 0,
+					"top":0
+				}, 400);
 
 
+			}, 0);
 
-  $('#finishOptOut').click(function(e){
-    e.preventDefault()
+			if ($(document).innerWidth() <= 1024) {
 
-    $('.box-outer').animate({
-      "height" : 138
-    }, 500);
+				var divPosition = $('#anchorPoint').offset();
+				$('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-    $('.longGreyBox').animate({
-      "height" : 0
-    }, 500).hide();
+			}
 
-    $('.grayBox.third .top-consent-text').remove()
-    $('#finishOptOut').remove()
+		}
+	});
 
-    $('.box-outer').addClass('none')
-    $(".moreInfo").fadeIn()
 
-    $('.grayBox.third').css('padding', '2em')
 
+	$('#finishOptOut').click(function(e){
+		e.preventDefault()
 
-    $('.parent-survey .d-flex p').removeClass('transparent-opacity')
+		$('.box-outer').animate({
+			"height" : 138
+		}, 500);
 
+		$('.longGreyBox').animate({
+			"height" : 0
+		}, 500).hide();
 
+		$('.grayBox.third .top-consent-text').remove()
+		$('#finishOptOut').remove()
 
-    setTimeout(function(){
+		$('.box-outer').addClass('none')
+		$(".moreInfo").fadeIn()
 
-      $('.grayBox.third').append('<div class="across"><img src="images/red-check.svg" class="img-responsive"><p class="purple larger">Consent <span class="strong">Not</span> Provided</p></div>')
+		$('.grayBox.third').css('padding', '2em')
 
-    }, 600)
 
-        setTimeout(function(){
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1000);
+		$('.parent-survey .d-flex p').removeClass('transparent-opacity')
 
-  },600)
 
 
+		setTimeout(function(){
 
-  })
+			$('.grayBox.third').append('<div class="across"><img src="images/red-check.svg" class="img-responsive"><p class="purple larger">Consent <span class="strong">Not</span> Provided</p></div>')
 
+		}, 600)
 
-  $('#give-consent').click(function(e){
-    e.preventDefault()
+		if ($(document).innerWidth() <= 1024) {
 
-    $('.box-outer').animate({
-      "height" : 138
-    }, 500);
+			setTimeout(function(){
+				var divPosition = $('#anchorPoint').offset();
+				$('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-    $('.longGreyBox').animate({
-      "height" : 0
-    }, 500).hide();
+			},600)
 
-    $('.grayBox.consent1').css('padding', '2em')
+		}
 
-    $('.grayBox.consent1').children().fadeOut()
+		$('li[data-target="#survey"]').addClass('redConsent')
+		$('li[data-target="#contact"]').removeClass('grayedOut')
 
 
-    $('.box-outer, .grayBox.consent1').addClass('given')
-    $(".moreInfo").fadeIn()
 
-    $('.parent-survey .d-flex p').removeClass('transparent-opacity')
+	})
 
 
+	$('#give-consent').click(function(e){
+		e.preventDefault()
 
-    setTimeout(function(){
+		$('.box-outer').animate({
+			"height" : 138
+		}, 500);
 
-      $('.grayBox.consent1').append('<div class="across"><img src="images/green-check.svg" class="img-responsive consent-green"><h6 class="green">Consent Given</h6></div>')
+		$('.longGreyBox').animate({
+			"height" : 0
+		}, 500).hide();
 
-    }, 600)
+		$('.grayBox.consent1').css('padding', '2em')
 
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1000);
+		$('.grayBox.consent1').children().fadeOut()
 
-  })
 
+		$('.box-outer, .grayBox.consent1').addClass('given')
+		$(".moreInfo").fadeIn()
 
-  //allowing for to still submit
+		$('.parent-survey .d-flex p').removeClass('transparent-opacity')
 
-  $('#informationForm').on('submit',function(event){
-    event.preventDefault();
-    event.currentTarget.submit();
-  });
 
 
-  var email = document.getElementById("email1").value
-  var confemail = document.getElementById("email2").value
+		setTimeout(function(){
 
-  $('body').keydown(function (event) {
-    if (email == confemail) {
-      $('.invalid-tooltip').hide()
+			$('.grayBox.consent1').append('<div class="across"><img src="images/green-check.svg" class="img-responsive consent-green"><h6 class="green">Consent Given</h6></div>')
 
-    }
-  })
+		}, 600)
 
-  $('#update').click(function(e){
-    e.preventDefault()
-    var yourFormElement = $("#informationForm")[0];
-    yourFormElement.checkValidity();
-    yourFormElement.reportValidity();
+		if ($(document).innerWidth() <= 1024) {
 
+			var divPosition = $('#anchorPoint').offset();
+			$('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-    function confirmEmail() {
-      var email = document.getElementById("email1").value
-      var confemail = document.getElementById("email2").value
-      if(email != confemail) {
-        $('.invalid-tooltip').show()
+		}
 
+		$('li[data-target="#contact"]').removeClass('grayedOut')
 
-      }
+		$('li[data-target="#survey"]').addClass('greenConsent')
 
+	})
 
-      let valid = true;
-      $('#informationForm [required]').each(function() {
-        if ($(this).is(':invalid') || !$(this).val()) valid = false;
-      })
-      if (!valid) {
 
-      }
-      else if (valid && (email == confemail)) {
+	//allowing for to still submit
 
+	$('#informationForm').on('submit',function(event){
+		event.preventDefault();
+		event.currentTarget.submit();
+	});
 
-        $('.lightGrayBox').animate({
-          "height": "auto",
-          "min-height": "200",
-          "width": "100%"
-        }, 800);
 
-        $('#informationForm').stop().animate({
-          height: "0px",
-        }, 700,
-        function () {
-          $(this).hide()
-        });
+	var email = document.getElementById("email1").value
+	var confemail = document.getElementById("email2").value
 
-        $('.lightGrayBox').addClass('given')
+	$('body').keydown(function (event) {
+		if (email == confemail) {
+			$('.invalid-tooltip').hide()
 
+		}
+	})
 
-        setTimeout(function(){
-          $('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update information again">UPDATE AGAIN</button></div>')
+	$('#update').click(function(e){
+		e.preventDefault()
+		var yourFormElement = $("#informationForm")[0];
+		yourFormElement.checkValidity();
+		yourFormElement.reportValidity();
 
-          // $('.completed').css('display' ,'flex !important')
-        },700)
 
+		function confirmEmail() {
+			var email = document.getElementById("email1").value
+			var confemail = document.getElementById("email2").value
+			if(email != confemail) {
+				$('.invalid-tooltip').show()
 
-        $('#feedback, li[data-target="#feedback"]').show()
-        $('#feedback').css({
-          height:'auto',
-          width:'100%'
-        })
 
-        var divPosition = $('#anchorPoint2').offset();
-        $('html, body').animate({scrollTop: divPosition.top}, 500);
+			}
 
 
-      }
+			let valid = true;
+			$('#informationForm [required]').each(function() {
+				if ($(this).is(':invalid') || !$(this).val()) valid = false;
+			})
+			if (!valid) {
 
+			}
+			else if (valid && (email == confemail)) {
 
-    }
 
-    confirmEmail()
+				$('.lightGrayBox').animate({
+					"height": "auto",
+					"min-height": "200",
+					"width": "100%"
+				}, 800);
 
+				$('#informationForm').stop().animate({
+					height: "0px",
+				}, 700,
+				function () {
+					$(this).hide()
+				});
 
-  })
+				$('.lightGrayBox').addClass('given')
 
 
-  $("body").on("click","#update-again",function(){
-    console.log("diufeiuweubiueibubiu")
+				setTimeout(function(){
+					$('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update information again">UPDATE AGAIN</button></div>')
 
-    $('#informationForm').stop().animate({
-      height: "100%",
-    }, 400,
-    function () {
-      $(this).fadeIn()
-    });
+					// $('.completed').css('display' ,'flex !important')
+				},700)
 
 
-    $('.lightGrayBox').animate({
-      "height": "100%",
-      "width": "100%"
-    }, 600);
+				$('#feedback, li[data-target="#feedback"]').show()
+				$('#feedback').css({
+					height:'auto',
+					width:'100%'
+				})
 
 
-    setTimeout(function(){
-      $('.lightGrayBox').removeClass('given')
+				if ($(document).innerWidth() <= 1024) {
 
-      $('.completed').remove()
+					var divPosition = $('#anchorPoint2').offset();
+					$('html, body').animate({scrollTop: divPosition.top}, 500);
 
-    },400)
+				}
 
 
-  })
+			}
+
+
+		}
+
+		confirmEmail()
+
+
+	})
+
+
+	$("body").on("click","#update-again",function(){
+		console.log("diufeiuweubiueibubiu")
+
+		$('#informationForm').stop().animate({
+			height: "100%",
+		}, 400,
+		function () {
+			$(this).fadeIn()
+		});
+
+
+		$('.lightGrayBox').animate({
+			"height": "100%",
+			"width": "100%"
+		}, 600);
+
+
+		setTimeout(function(){
+			$('.lightGrayBox').removeClass('given')
+
+			$('.completed').remove()
+
+		},400)
+
+
+	})
 
 
 })
