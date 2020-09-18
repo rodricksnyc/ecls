@@ -179,12 +179,16 @@ $(document).ready(function () {
 				"top": negative2
 			}, 400);
 
-			$(".grayBox.consent1").addClass('animated slideInLeft')
-			// $(".grayBox.consent1").removeClass('flexing-scroll')
+			// setTimeout(function(){
+
+			// $(".grayBox.consent1").addClass('animated slideInLeft')
+			$(".grayBox.consent1").removeClass('flexing-scroll')
 			//
 			$(".grayBox.consent1").animate({
 				"left": 0
 			}, 600);
+
+		// },300)
 
 
 		});
@@ -291,7 +295,7 @@ $(document).ready(function () {
 				$(".grayBox.consent1").animate({
 					// "bottom": 0,
 					"top":0
-				}, 400);
+				}, 200);
 
 
 			}, 0);
