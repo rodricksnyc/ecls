@@ -157,35 +157,17 @@ $(document).ready(function () {
 
 			$(".grayBox.second").animate({
 				"right": 0
-			}, 900);
+			}, 200);
 
 		}, 100);
 
 		$('#return1').click(function(){
-
-			if ($(document).innerWidth() > 767) {
 			$('.grayBox.first').addClass('animated slideInDown slow')
 
 			$(".grayBox.first").animate({
 				"top": 0
 			}, 600);
 
-		}
-
-		if ($(document).innerWidth() <= 767) {
-
-		setTimeout(function(){
-
-			$('.grayBox.first').addClass('animated slideInDown')
-
-			$(".grayBox.first").animate({
-				"top": 0
-			}, 800);
-
-
-
-		},200)
-	}
 
 
 		})
@@ -195,28 +177,14 @@ $(document).ready(function () {
 			e.preventDefault()
 			$(".grayBox.first").animate({
 				"top": negative2
-			}, 100);
+			}, 400);
 
-
-			$(".grayBox.consent1").removeClass('flexing-scroll')
-			if ($(document).innerWidth() > 767) {
+			$(".grayBox.consent1").addClass('animated slideInLeft')
+			// $(".grayBox.consent1").removeClass('flexing-scroll')
+			//
 			$(".grayBox.consent1").animate({
 				"left": 0
 			}, 600);
-
-		}
-
-		if ($(document).innerWidth() <= 767) {
-
-		setTimeout(function(){
-			$(".grayBox.consent1").animate({
-				"left": 0
-			}, 900);
-
-		},600)
-
-
-		}
 
 
 		});
@@ -228,7 +196,6 @@ $(document).ready(function () {
 
 
 	$('#return1').click(function(){
-
 		console.log(negative)
 		setTimeout(function(){
 			$('.grayBox.first').removeClass('flexing-scroll')
@@ -328,15 +295,6 @@ $(document).ready(function () {
 
 
 			}, 0);
-
-
-					setTimeout(function(){
-
-						$('.grayBox.consent1').removeClass('flexing-scroll');
-						$('.grayBox.consent1').removeClass('animated slideInUp');
-
-
-					},1200)
 
 			if ($(document).innerWidth() <= 1024) {
 
