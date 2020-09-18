@@ -2637,8 +2637,8 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
 
  }
 
-.menu-buttons-floating-list li.activated[data-target="#feedback"]:before {
-  background-color: #f8ef22 !important;
+.menu-buttons-floating-list li.activated[data-target="#feedback"] {
+  background-color: #00843D !important;
   color:white !important
 }
 
