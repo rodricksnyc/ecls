@@ -206,7 +206,8 @@ a:hover {
 
   position: absolute;
   width:100%;
-  padding:6em
+  padding:6em;
+      z-index: 200;
 }
 
 .box-outer {
