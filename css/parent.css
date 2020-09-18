@@ -1040,7 +1040,18 @@ span.heading {
     width: 132%;
 }
 
+
 }
+
+@media (min-width:768px) {
+  .block-list.es {
+
+    width: 115%;
+}
+
+
+}
+
 
 
 .left{
@@ -2529,13 +2540,15 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
 .greenConsent:after {
   bottom: -36%;
 }
-
+@media(min-width:768px) {
 .greenConsent.activated {
   background-color: transparent !important
 }
 
 .greenConsent.activated i {
     font-size: 0px;
+}
+
 }
 
 
@@ -2577,7 +2590,7 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
   font-size: 12px;
   /* margin-top: 7em; */
   position: absolute;
-  bottom: -28%;
+  bottom: -36%;
   color: black;
   width: 100%;
   margin-bottom: 0em;
@@ -2587,15 +2600,80 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
   font-weight: 700;
 }
 
+
+.menu-buttons-floating-list li[data-target="#feedback"]:before{
+  content: "New";
+  background-color: #f8ef22;
+      position: absolute;
+      top: -1px;
+      font-size: 12px;
+      color: black;
+      padding: .3em .3em .1em .3em;
+      min-width: 3.5em;
+      min-height: 2em;
+      text-transform: uppercase;
+      border-radius: 1rem;
+      right: -18px;
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 600;
+}
+
+ .menu-buttons-768-list li[data-target="#feedback"]:before{
+
+   content: "New";
+   background-color: #f8ef22;
+   position: absolute;
+   top: -9px;
+   font-size: 9px;
+   color: black;
+   padding: .3em .3em .1em .3em;
+   min-width: 3.5em;
+   min-height: 2em;
+   text-transform: uppercase;
+   border-radius: 1rem;
+   right: 25%;
+   font-family: 'Public Sans', sans-serif;
+   font-weight: 600;
+
+ }
+
+.menu-buttons-floating-list li.activated[data-target="#feedback"]:before {
+  background-color: #f8ef22 !important;
+  color:white !important
+}
+
+
+
+
 li.spanishAfter[data-target="#survey"]:after {
   content: "consentimiento";
   text-transform: uppercase;
   min-width: 11em;
-      left: -29px;
+      left: -25px;
       font-size: 11px;
-      bottom: -34%;
+      bottom: -27%;
+
+}
+
+li.spanishAfter.greenConsent[data-target="#survey"]:after, li.spanishAfter.redConsent[data-target="#survey"]:after {
+  content: "consentimiento";
+  text-transform: uppercase;
+  min-width: 11em;
+      left: -25px;
+      font-size: 11px;
+      bottom: -27%;
+
+      min-width: 10em;
+    left: -23px;
+    font-size: 11px;
+    bottom: -31%;
 
 
+}
+
+li.spanishAfter.greenConsent[data-target="#survey"] i , li.spanishAfter.redConsent[data-target="#survey"] i,
+li.spanishAfter.greenConsent[data-target="#contact"] i , li.spanishAfter.redConsent[data-target="#contact"] i{
+  display:none
 }
 
 
@@ -2614,11 +2692,16 @@ li.spanishAfter[data-target="#survey"]:after {
   font-weight: 700;
 }
 
+.menu-buttons-floating-list li.greenConsent[data-target="#contact"]:after {
+
+    bottom: -34%;
+
+}
 li.spanishAfter[data-target="#contact"]:after {
   content: "contacto";
   text-transform: uppercase;
   min-width: 12em;
-  left: -31px;
+  left: -34px;
     font-size: 11px;
 
 }
@@ -2635,8 +2718,12 @@ li.spanishAfter[data-target="#contact"]:after {
   margin-bottom: 0em;
   left: 0;
   font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif;
   color: #00843D;
   font-weight: 700;
+  min-width: 6em;
+  left: -4px;
+
 }
 
 li.spanishAfter[data-target="#feedback"]:after {
@@ -2645,6 +2732,15 @@ li.spanishAfter[data-target="#feedback"]:after {
   min-width: 12em;
   left: -30px;
 font-size:11px;
+}
+
+li.spanishAfter.greenConsent[data-target="#feedback"]:after {
+    content: "realimentación";
+    text-transform: uppercase;
+    min-width: 12em;
+    left: -33px;
+    font-size: 11px;
+    bottom: -33%;
 }
 
 
@@ -6612,10 +6708,22 @@ body{
     min-width: 10em;
   }
 
+  .toggleDiv .firstRow {
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+  }
+  .firstRow .d-flex {
+    width: 50%;
+}
+
   .smaller {
 
     margin-bottom: .3em;
   }
+
+  .menu-buttons-floating.es {
+    left: 32px;
+}
 
   .mobile {
     display: inline-block;
@@ -6756,6 +6864,11 @@ body{
     margin-right: 0%;
 }
 
+.noWrapRow {
+  flex-wrap:nowrap;
+  margin-top:-1em
+}
+
 .spanishAfter:after {
   display:none
 }
@@ -6792,6 +6905,12 @@ body{
   width: 100px;
 }
 
+
+.greenConsent.activated {
+  background: #fbb03b !important;
+    color: #071D49 !important;
+    border: none;
+}
 
 
   .toggleDiv .firstRow {
@@ -7153,9 +7272,6 @@ flex-direction: row;
     margin-bottom:35px;
   }
 
-  #feedback {
-    margin-top:-3em;
-  }
 
   #feedbackModal label p {
     margin-bottom: 0rem;
