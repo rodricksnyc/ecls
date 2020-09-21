@@ -2499,6 +2499,10 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
 
 }
 
+.position-relative {
+  position: relative;
+}
+
 .grayedOut{
   background: #d1d3d4 !important
 }
@@ -2536,15 +2540,6 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
     transform: scale(.9);
 }
 
- li.greenConsent:hover {
-
-    color: transparent !important;
-  }
-
- li.redConsent:hover {
-
-     color: transparent !important;
-   }
 
 .greenConsent:after {
   bottom: -36%;
@@ -2557,6 +2552,27 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
 .greenConsent.activated i {
     font-size: 0px;
 }
+
+
+ li.greenConsent:hover {
+
+    color: transparent !important;
+  }
+
+ li.redConsent:hover {
+
+     color: transparent !important;
+   }
+
+
+   .redConsent.activated {
+     background-color: transparent !important
+   }
+
+   .redConsent.activated i {
+       font-size: 0px;
+   }
+
 
 }
 
@@ -2584,14 +2600,6 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
   bottom: -36%;
 }
 
-
-.redConsent.activated {
-  background-color: transparent !important
-}
-
-.redConsent.activated i {
-    font-size: 0px;
-}
 
 
 .menu-buttons-floating-list li[data-target="#survey2"]:after {
@@ -6917,6 +6925,12 @@ body{
 
 .greenConsent.activated {
   background: #fbb03b !important;
+    color: #071D49 !important;
+    border: none;
+}
+
+.redConsent.activated {
+    background: #fbb03b !important;
     color: #071D49 !important;
     border: none;
 }

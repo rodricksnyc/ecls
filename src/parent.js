@@ -359,8 +359,8 @@ $(document).ready(function () {
 
 		}
 
-		$('li[data-target="#survey"]').addClass('redConsent')
-		$('li[data-target="#contact"]').removeClass('grayedOut')
+		$('li[data-target="#survey2"]').addClass('redConsent')
+		$('li[data-target="#contact2"]').removeClass('grayedOut')
 
 
 
@@ -408,9 +408,9 @@ $(document).ready(function () {
 
 		}
 
-		$('li[data-target="#contact"]').removeClass('grayedOut')
+		$('li[data-target="#contact2"]').removeClass('grayedOut')
 
-		$('li[data-target="#survey"]').addClass('greenConsent')
+		$('li[data-target="#survey2"]').addClass('greenConsent')
 
 	})
 
@@ -483,8 +483,8 @@ $(document).ready(function () {
 				},700)
 
 
-				$('#feedback, li[data-target="#feedback"]').show()
-				$('li[data-target="#contact"]').addClass('greenConsent')
+				$('#feedback, li[data-target="#feedback2"]').show()
+				$('li[data-target="#contact2"]').addClass('greenConsent')
 				$('#feedback').css({
 					height:'auto',
 					width:'100%'
@@ -545,12 +545,12 @@ $(document).ready(function () {
 		$('.block-list').addClass('es')
 		$('.menu-buttons-floating').addClass('es')
 		$('.slideForm .radio-inline').css('font-size', '11px')
-		$('li[data-target="#survey"]').addClass('spanishAfter')
-		$('li[data-target="#overview"]').addClass('spanishAfter')
-		$('li[data-target="#feedback"]').addClass('spanishAfter')
-		$('li[data-target="#contact"]').addClass('spanishAfter')
+		$('li[data-target="#survey2"]').addClass('spanishAfter')
+		$('li[data-target="#overview2"]').addClass('spanishAfter')
+		$('li[data-target="#feedback2"]').addClass('spanishAfter')
+		$('li[data-target="#contac2"]').addClass('spanishAfter')
 		$('li[data-target="#parentSurvey"]').addClass('spanishAfter')
-		$('li[data-target="#info"]').addClass('spanishAfter')
+		$('li[data-target="#info2"]').addClass('spanishAfter')
 
 
 	})
@@ -626,7 +626,7 @@ $(document).ready(function () {
 		}
 
 
-				// 
+				//
 				// if ($('.block111').hasClass('active')) {
 				// 	$('li[data-target="#info2"]').addClass('activated')
 				// 	$('li[data-target="#info2"]').addClass('activated')
