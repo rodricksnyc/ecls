@@ -12,7 +12,25 @@ $(document).ready(function () {
 		$(this).css('outline', 'none')
 	})
 
+	$(" :input").change(function() {
 
+		$('#informationForm [required]').each(function() {
+
+				if (!$('this').val() == '' ) {
+					console.log("ewiubweiegbu")
+				}
+
+
+				if ($('this').val() == '' ) {
+					console.log("sdgeewggweeiegbu")
+				}
+
+
+		})
+
+
+
+	})
 
 
 	$(" :checkbox").change(function() {
@@ -517,47 +535,47 @@ $(document).ready(function () {
 
 
 
-
-
-	$('body').keydown(function () {
-
-		function confirmEmail2() {
-
-			if(email != confemail) {
-
-
-
-			}
-
-
-			let valid = true;
-			$('#informationForm [required]').each(function() {
-				if ($(this).is(':invalid') || !$(this).val()) valid = false;
-
-
-			})
-			if (!valid) {
-
-			}
-			else if (valid && (email == confemail)) {
-
-
-							$('#update').css({
-								'background': '#00843D',
-								'color' :'white'
-
-							});
-
-
-			}
-
-
-		}
-
-		confirmEmail2()
-
-
-	})
+	// 
+	//
+	// $('body').keydown(function () {
+	//
+	// 	function confirmEmail2() {
+	//
+	// 		if(email != confemail) {
+	//
+	//
+	//
+	// 		}
+	//
+	//
+	// 		let valid = true;
+	// 		$('#informationForm [required]').each(function() {
+	// 			if ($(this).is(':invalid') || !$(this).val()) valid = false;
+	//
+	//
+	// 		})
+	// 		if (!valid) {
+	//
+	// 		}
+	// 		else if (valid && (email == confemail)) {
+	//
+	//
+	// 						$('#update').css({
+	// 							'background': '#00843D',
+	// 							'color' :'white'
+	//
+	// 						});
+	//
+	//
+	// 		}
+	//
+	//
+	// 	}
+	//
+	// 	confirmEmail2()
+	//
+	//
+	// })
 
 
 	$("body").on("click","#update-again",function(){
