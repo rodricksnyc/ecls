@@ -336,12 +336,12 @@ $(document).ready(function () {
 
 
 
-			$('.block444, .block333').show()
+		$('.block444, .block333').show()
 
-				$('.block444, .block333').css({
-				height:'auto',
-				width:'100%'
-			})
+		$('.block444, .block333').css({
+			height:'auto',
+			width:'100%'
+		})
 
 		setTimeout(function(){
 
@@ -389,7 +389,7 @@ $(document).ready(function () {
 		$('.parent-survey .d-flex p').removeClass('transparent-opacity')
 		$('.block444, .block333').show()
 
-			$('.block444, .block333').css({
+		$('.block444, .block333').css({
 			height:'auto',
 			width:'100%'
 		})
@@ -588,7 +588,7 @@ $(document).ready(function () {
 			var elementTop = $(this).offset().top;
 			var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-			if ((screenBottom > elementTop + ($(this).find('.heros').height()  )) && (screenTop < elementBottom)) {
+			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 2 )) && (screenTop < elementBottom)) {
 				$('section').removeClass('active')
 				$(this).addClass('active')
 			}
@@ -626,7 +626,16 @@ $(document).ready(function () {
 		}
 
 
-
+				// 
+				// if ($('.block111').hasClass('active')) {
+				// 	$('li[data-target="#info2"]').addClass('activated')
+				// 	$('li[data-target="#info2"]').addClass('activated')
+				// }
+				//
+				// else {
+				// 	$('li[data-target="#info2"]').removeClass('activated')
+				// 	$('li[data-target="#info2"]').removeClass('activated')
+				// }
 
 
 
@@ -641,39 +650,30 @@ $(document).ready(function () {
 		}
 
 
-			if ($('.block333').hasClass('active')) {
-				$('li[data-target="#contact2"]').addClass('activated')
-				$('li[data-target="#contact2"]').addClass('activated')
-			}
+		if ($('.block333').hasClass('active')) {
+			$('li[data-target="#contact2"]').addClass('activated')
+			$('li[data-target="#contact2"]').addClass('activated')
+		}
 
-			else {
-				$('li[data-target="#contact2"]').removeClass('activated')
-				$('li[data-target="#contact2"]').removeClass('activated')
-			}
-
-
-					if ($('.block222').hasClass('active')) {
-						$('li[data-target="#feedback2"]').addClass('activated')
-						$('li[data-target="#feedback2"]').addClass('activated')
-					}
-
-					else {
-						$('li[data-target="#feedback2"]').removeClass('activated')
-						$('li[data-target="#feedback2"]').removeClass('activated')
-					}
+		else {
+			$('li[data-target="#contact2"]').removeClass('activated')
+			$('li[data-target="#contact2"]').removeClass('activated')
+		}
 
 
+		if ($('.block222').hasClass('active')) {
+			$('li[data-target="#feedback2"]').addClass('activated')
+			$('li[data-target="#feedback2"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#feedback2"]').removeClass('activated')
+			$('li[data-target="#feedback2"]').removeClass('activated')
+		}
 
 
-					if ($('.block111').hasClass('active')) {
-						$('li[data-target="#info2"]').addClass('activated')
-						$('li[data-target="#info2"]').addClass('activated')
-					}
 
-					else {
-						$('li[data-target="#info2"]').removeClass('activated')
-						$('li[data-target="#info2"]').removeClass('activated')
-					}
+
 
 
 
@@ -682,6 +682,56 @@ $(document).ready(function () {
 
 
 
+
+	$(window).on('scroll', function() {
+
+		var screenTop = $(window).scrollTop();
+		var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+		$('section').each(function() {
+			var elementTop = $(this).offset().top;
+			var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+			if ((screenBottom > elementTop + ($(this).find('.heros2').height() / 5 )) && (screenTop < elementBottom)) {
+				$('section').removeClass('active')
+				$(this).addClass('active')
+			}
+			else {
+				$(this).removeClass('active')
+			}
+		})
+
+
+
+
+
+
+				if ($('.block111').hasClass('active')) {
+					$('li[data-target="#info2"]').addClass('activated')
+					$('li[data-target="#info2"]').addClass('activated')
+				}
+
+				else {
+					$('li[data-target="#info2"]').removeClass('activated')
+					$('li[data-target="#info2"]').removeClass('activated')
+				}
+
+
+
+
+
+
+
+	})
+
+
+
+
+	var height = $('.lightGreen').height()
+
+	console.log(height)
+
+	$('.greenBottom').css('height', height)
 
 
 

@@ -1907,6 +1907,7 @@ width:20%
   background: #e9f4ee;
   padding-bottom:6em;
   margin-top: 2em;
+  position: relative;
 }
 
 .infoBar {
