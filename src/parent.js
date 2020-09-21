@@ -188,7 +188,7 @@ $(document).ready(function () {
 				"left": 0
 			}, 600);
 
-		// },300)
+			// },300)
 
 
 		});
@@ -336,6 +336,13 @@ $(document).ready(function () {
 
 
 
+			$('.block444, .block333').show()
+
+				$('.block444, .block333').css({
+				height:'auto',
+				width:'100%'
+			})
+
 		setTimeout(function(){
 
 			$('.grayBox.third').append('<div class="across"><img src="images/red-check.svg" class="img-responsive"><p class="purple larger">Consent <span class="strong">Not</span> Provided</p></div>')
@@ -380,7 +387,12 @@ $(document).ready(function () {
 		$(".moreInfo").fadeIn()
 
 		$('.parent-survey .d-flex p').removeClass('transparent-opacity')
+		$('.block444, .block333').show()
 
+			$('.block444, .block333').css({
+			height:'auto',
+			width:'100%'
+		})
 
 
 		setTimeout(function(){
@@ -465,7 +477,7 @@ $(document).ready(function () {
 
 
 				setTimeout(function(){
-					$('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update information again">UPDATE AGAIN</button></div>')
+					$('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update contact information again">UPDATE AGAIN</button></div>')
 
 					// $('.completed').css('display' ,'flex !important')
 				},700)
@@ -483,8 +495,8 @@ $(document).ready(function () {
 
 				// if ($(document).innerWidth() <= 1024) {
 
-					var divPosition = $('#anchorPoint2').offset();
-					$('html, body').animate({scrollTop: divPosition.top}, 700);
+				var divPosition = $('#anchorPoint2').offset();
+				$('html, body').animate({scrollTop: divPosition.top}, 700);
 
 				// }
 
@@ -531,13 +543,13 @@ $(document).ready(function () {
 	$('.spanish').click(function() {
 		$('.purpleBlocks').css('min-height', '18em')
 		$('.block-list').addClass('es')
-		  $('.menu-buttons-floating').addClass('es')
-	$('.slideForm .radio-inline').css('font-size', '11px')
-	$('li[data-target="#survey"]').addClass('spanishAfter')
-	$('li[data-target="#overview"]').addClass('spanishAfter')
-	$('li[data-target="#feedback"]').addClass('spanishAfter')
-	$('li[data-target="#contact"]').addClass('spanishAfter')
-	$('li[data-target="#parentSurvey"]').addClass('spanishAfter')
+		$('.menu-buttons-floating').addClass('es')
+		$('.slideForm .radio-inline').css('font-size', '11px')
+		$('li[data-target="#survey"]').addClass('spanishAfter')
+		$('li[data-target="#overview"]').addClass('spanishAfter')
+		$('li[data-target="#feedback"]').addClass('spanishAfter')
+		$('li[data-target="#contact"]').addClass('spanishAfter')
+		$('li[data-target="#parentSurvey"]').addClass('spanishAfter')
 		$('li[data-target="#info"]').addClass('spanishAfter')
 
 
@@ -549,19 +561,133 @@ $(document).ready(function () {
 		if (distanceY > 485) {
 
 			$('.menu-buttons-floating').css({
-			top: '4em'
+				top: '4em'
 			})
 		} else {
 
 			$('.menu-buttons-floating').css({
-			top:'14em'
+				top:'14em'
 			})
 		}
 	});
 
 	if ($(document).innerWidth() <= 767) {
-	$('#ingles p').html('EN')
-	$('#espanol p').html('ES')
+		$('#ingles p').html('EN')
+		$('#espanol p').html('ES')
 
-}
+	}
+
+	$('li[data-target="#overview2"]').addClass('activated')
+
+	$(window).on('scroll', function() {
+
+		var screenTop = $(window).scrollTop();
+		var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+		$('section').each(function() {
+			var elementTop = $(this).offset().top;
+			var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+			if ((screenBottom > elementTop + ($(this).find('.heros').height()  )) && (screenTop < elementBottom)) {
+				$('section').removeClass('active')
+				$(this).addClass('active')
+			}
+			else {
+				$(this).removeClass('active')
+			}
+		})
+
+
+
+
+		if ( $('.block000').hasClass('active') || $('.block0').hasClass('active') ) {
+
+
+			$('li[data-target="#overview2"]').addClass('activated')
+			$('li[data-target="#overview2"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#overview2"]').removeClass('activated')
+			$('li[data-target="#overview2"]').removeClass('activated')
+		}
+
+
+
+		if ($('.block555').hasClass('active')) {
+
+			$('li[data-target="#survey2"]').addClass('activated')
+			$('li[data-target="#survey2"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#survey2"]').removeClass('activated')
+			$('li[data-target="#survey2"]').removeClass('activated')
+		}
+
+
+
+
+
+
+		if ($('.block444').hasClass('active')) {
+			$('li[data-target="#parentSurvey"]').addClass('activated')
+			$('li[data-target="#parentSurvey"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#parentSurvey"]').removeClass('activated')
+			$('li[data-target="#parentSurvey"]').removeClass('activated')
+		}
+
+
+			if ($('.block333').hasClass('active')) {
+				$('li[data-target="#contact2"]').addClass('activated')
+				$('li[data-target="#contact2"]').addClass('activated')
+			}
+
+			else {
+				$('li[data-target="#contact2"]').removeClass('activated')
+				$('li[data-target="#contact2"]').removeClass('activated')
+			}
+
+
+					if ($('.block222').hasClass('active')) {
+						$('li[data-target="#feedback2"]').addClass('activated')
+						$('li[data-target="#feedback2"]').addClass('activated')
+					}
+
+					else {
+						$('li[data-target="#feedback2"]').removeClass('activated')
+						$('li[data-target="#feedback2"]').removeClass('activated')
+					}
+
+
+
+
+					if ($('.block111').hasClass('active')) {
+						$('li[data-target="#info2"]').addClass('activated')
+						$('li[data-target="#info2"]').addClass('activated')
+					}
+
+					else {
+						$('li[data-target="#info2"]').removeClass('activated')
+						$('li[data-target="#info2"]').removeClass('activated')
+					}
+
+
+
+	})
+
+
+
+
+
+
+
+
+
+
+
+
 })
