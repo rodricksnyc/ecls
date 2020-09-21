@@ -4472,12 +4472,12 @@ html, body{
   z-index: 999;
 }
 
-#feedback2 .modal {
+#feedback .modal {
   top: 10%;
   z-index: 999999999;
 }
 
-#feedback2Modal .modal-dialog {
+#feedbackModal .modal-dialog {
   max-width: none;
   width: 778px !important;
 }
@@ -4486,7 +4486,7 @@ html, body{
   font-size:.9em !important
 }
 
-#feedback2Modal .modal-header {
+#feedbackModal .modal-header {
   background: #e6eaec;
   padding-top:1em;
 
@@ -4507,7 +4507,7 @@ html, body{
   /* font-family: 'PublicoText'; */
 }
 
-#feedback2Modal textarea {
+#feedbackModal textarea {
   width:100%;
   font-family: 'Public Sans', sans-serif;
   font-weight:300;
@@ -4533,48 +4533,48 @@ html, body{
 .strong {
   font-weight:600 !important;
 }
-/* #feedback2Modal .carousel-inner {
+/* #feedbackModal .carousel-inner {
 padding: 8px 20px;
 } */
 
-/* #feedback2Modal .modal-body{
+/* #feedbackModal .modal-body{
 padding-top:2em;
 } */
 
-#feedback2Modal .carousel-control-next, .carousel-control-prev  {
+#feedbackModal .carousel-control-next, .carousel-control-prev  {
   z-index:99999
 }
 
-#feedback2Modal .carousel {
+#feedbackModal .carousel {
   position: relative;
   height: 440px !important;
 }
 
-#feedback2Modal .carousel-inner {
+#feedbackModal .carousel-inner {
   position: relative;
   height: 440px !important;
 }
 
 
-#feedback2Modal .carousel-item {
+#feedbackModal .carousel-item {
   height:400px !important;
   margin:0em !important;
   /* padding:0em !important; */
 }
 
-#feedback2Modal .carousel-item.active {
+#feedbackModal .carousel-item.active {
   height:400px !important;
   margin:0em !important;
   /* padding:0em !important; */
 }
-#feedback2Modal ::placeholder {
+#feedbackModal ::placeholder {
   font-family: 'Public Sans', sans-serif;
   font-weight:100;
 
   font-size:15px !important;
 }
 
-#feedback2Modal .modal-body {
+#feedbackModal .modal-body {
   padding: 0rem 2em 2em 2em !important;
 }
 
@@ -4630,13 +4630,13 @@ h6.black {
   color:white;
 }
 
-#feedback2Modal .form-check {
+#feedbackModal .form-check {
   position: relative;
   margin-left: 0em;
   margin-bottom: .2em;
 }
 
-#feedback2Modal .form-check input {
+#feedbackModal .form-check input {
   height: 18px;
   left: 0;
   opacity: 0;
@@ -4645,14 +4645,14 @@ h6.black {
   width: 18px;
 }
 
-#feedback2Modal  .form-check label {
+#feedbackModal  .form-check label {
   padding: 0px 0px 0px 0px;
   font-size: 17px !important;
   font-weight: 400 !important;
 
 }
 
-#feedback2Modal .form-check input + label::before {
+#feedbackModal .form-check input + label::before {
   border: 1px solid #00539f;
   content: "";
   height: 18px;
@@ -4666,7 +4666,7 @@ h6.black {
 }
 
 
-#feedback2Modal .form-check input + label::after {
+#feedbackModal .form-check input + label::after {
   content: "";
   opacity: 0;
   border: 5px solid #00539f;
@@ -4687,7 +4687,7 @@ h6.black {
 
 }
 
-#feedback2Modal .rangeButtons:after {
+#feedbackModal .rangeButtons:after {
   content: '';
   width: 100%;
   height: 18px;
@@ -4775,15 +4775,15 @@ h6.black {
   font-size: 1.2em !important;
 }
 
-#feedback2Modal .form-check input:checked + label::after {
+#feedbackModal .form-check input:checked + label::after {
   opacity: 1;
 }
 
-#feedback2Modal .form-check.oneQuestion input:checked + label::after {
+#feedbackModal .form-check.oneQuestion input:checked + label::after {
   opacity: 1;
 }
 
-#feedback2Modal .carousel-control-next {
+#feedbackModal .carousel-control-next {
   right: 30%;
   position: absolute;
   top: 94%;
@@ -4801,19 +4801,19 @@ h6.black {
   font-family: 'Public Sans', sans-serif;
 }
 
-#feedback2Modal label p {
+#feedbackModal label p {
   margin-bottom:0rem;
   line-height: normal;
   font-size:17px;
   margin-top:1em;
 }
 
-#feedback2Modal fieldset {
+#feedbackModal fieldset {
   margin:0rem;
 }
 
 
-#feedback2Modal .carousel-control-prev {
+#feedbackModal .carousel-control-prev {
   left: 30%;
   position: absolute;
   top: 94%;
@@ -4830,7 +4830,7 @@ h6.black {
   opacity: 1;
   font-family: 'Public Sans', sans-serif;
 }
-#feedback2Modal  .modal-content {
+#feedbackModal  .modal-content {
   overflow: hidden;
 }
 .carousel-item,
@@ -5235,7 +5235,7 @@ p.oneBlack {
   box-shadow: none !important
 }
 
-#feedback2Modal .form-check.oneQuestion input + label::after {
+#feedbackModal .form-check.oneQuestion input + label::after {
   content: "";
   opacity: 0;
   border: 7px solid black;
@@ -5248,7 +5248,7 @@ p.oneBlack {
   transition: opacity 0.2s ease-in-out;
 }
 
-#feedback2Modal .form-check.oneQuestion input + label::before {
+#feedbackModal .form-check.oneQuestion input + label::before {
   border: 1px solid black;
   content: "";
   height: 18px;
@@ -6811,7 +6811,7 @@ body{
   .feedbackBar h6.darkBlue {
     max-width: 83%;
   }
-  #feedback2Modal .modal-dialog {
+  #feedbackModal .modal-dialog {
     max-width: none;
     width: 768px !important;
   }
@@ -7246,12 +7246,12 @@ flex-direction: row;
     font-size: 16px;
   }
 
-  #feedback2Modal .modal-dialog {
+  #feedbackModal .modal-dialog {
     max-width: none;
     width: auto !important;
   }
 
-  #feedback2Modal .modal-body {
+  #feedbackModal .modal-body {
     padding: 0em !important;
   }
   header .logos a {
@@ -7296,7 +7296,7 @@ flex-direction: row;
   }
 
 
-  #feedback2Modal label p {
+  #feedbackModal label p {
     margin-bottom: 0rem;
     line-height: normal;
     font-size: 14px;
@@ -7322,13 +7322,13 @@ flex-direction: row;
     height: 2rem;
   }
 
-  #feedback2Modal .carousel-control-prev {
+  #feedbackModal .carousel-control-prev {
     left: 24%;
 
     top: 90%;
   }
 
-  #feedback2Modal .carousel-control-next {
+  #feedbackModal .carousel-control-next {
     right: 24%;
 
     top: 90%;
@@ -7344,13 +7344,13 @@ flex-direction: row;
 
   }
 
-  #feedback2Modal .carousel-inner {
+  #feedbackModal .carousel-inner {
     position: relative;
     height: auto !important;
     /* min-height: 36em !important; */
   }
 
-  #feedback2Modal .carousel-item {
+  #feedbackModal .carousel-item {
     height: auto !important;
     padding-bottom:1em !important;
     min-height: 39em !important;
@@ -7366,11 +7366,11 @@ flex-direction: row;
     opacity: 1;
   }
 
-  #feedback2Modal .carousel-item.active {
+  #feedbackModal .carousel-item.active {
     height: auto !important;
     /* min-height: 36em !important; */
   }
-  #feedback2Modal .carousel {
+  #feedbackModal .carousel {
     position: relative;
     height: auto !important;
   }
@@ -7532,19 +7532,19 @@ align-items: center;
     height: 2rem;
   }
 
-  #feedback2Modal .carousel-control-prev {
+  #feedbackModal .carousel-control-prev {
     left: 22%;
 
     top: 90%;
   }
 
-  #feedback2Modal .carousel-control-next {
+  #feedbackModal .carousel-control-next {
     right: 22%;
 
     top: 90%;
   }
 
-  #feedback2Modal .carousel-inner {
+  #feedbackModal .carousel-inner {
     position: relative;
     height: auto !important;
     min-height: 44em !important;
@@ -7610,11 +7610,11 @@ align-items: center;
 
 
 @media (max-width:360px) and (max-height:640px) {
-  #feedback2Modal .carousel-control-prev {
+  #feedbackModal .carousel-control-prev {
     left: 21%;
   }
 
-  #feedback2Modal .carousel-control-next {
+  #feedbackModal .carousel-control-next {
     right: 21%;
   }
 }
