@@ -13,6 +13,8 @@ $(document).ready(function () {
 	})
 
 
+
+
 	$(" :checkbox").change(function() {
 		if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
 			$('#consent-button').css({
@@ -453,6 +455,8 @@ $(document).ready(function () {
 			let valid = true;
 			$('#informationForm [required]').each(function() {
 				if ($(this).is(':invalid') || !$(this).val()) valid = false;
+
+
 			})
 			if (!valid) {
 
@@ -492,7 +496,6 @@ $(document).ready(function () {
 
 				$('.hideWhenComplete').fadeOut()
 
-
 				// if ($(document).innerWidth() <= 1024) {
 
 				var divPosition = $('#anchorPoint2').offset();
@@ -507,6 +510,51 @@ $(document).ready(function () {
 		}
 
 		confirmEmail()
+
+
+	})
+
+
+
+
+
+
+	$('body').keydown(function () {
+
+		function confirmEmail2() {
+
+			if(email != confemail) {
+
+
+
+			}
+
+
+			let valid = true;
+			$('#informationForm [required]').each(function() {
+				if ($(this).is(':invalid') || !$(this).val()) valid = false;
+
+
+			})
+			if (!valid) {
+
+			}
+			else if (valid && (email == confemail)) {
+
+
+							$('#update').css({
+								'background': '#00843D',
+								'color' :'white'
+
+							});
+
+
+			}
+
+
+		}
+
+		confirmEmail2()
 
 
 	})
@@ -535,6 +583,13 @@ $(document).ready(function () {
 			$('.completed').remove()
 
 		},400)
+
+
+		$('#update').css({
+			'background': '#d1d3d4',
+			'color' :'#6F6F6F'
+
+		});
 
 
 	})
