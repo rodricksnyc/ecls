@@ -483,9 +483,9 @@ $(document).ready(function () {
 				},700)
 
 
-				$('#feedback, li[data-target="#feedback2"]').show()
+				$('#feedback2, li[data-target="#feedback2"]').show()
 				$('li[data-target="#contact2"]').addClass('greenConsent')
-				$('#feedback').css({
+				$('#feedback2').css({
 					height:'auto',
 					width:'100%'
 				})
