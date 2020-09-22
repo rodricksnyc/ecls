@@ -7150,9 +7150,13 @@ flex-direction: row;
 
   .title {
     /* padding:1em; */
-    font-size: 26px;
+    font-size: 25px;
     text-align: center;
   }
+
+  .modal-body {
+    padding: 1em;
+}
 
   .end {
     position: absolute;
