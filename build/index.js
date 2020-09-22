@@ -1368,6 +1368,7 @@ $(document).ready(function () {
 	$('.next').click(function () {
 		if ($('.next').hasClass('done')) {
 			$('#feedbackModal').modal('hide');
+			$('li[data-target="#feedback2"]').addClass('greenConsent');
 		}
 	});
 	$('.next, .skip').on("keyup", function (e) {

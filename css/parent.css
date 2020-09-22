@@ -236,12 +236,17 @@ a:hover {
   padding:2em
 }
 
-#feedback2, .block444, .block333{
+/* #feedback2, .block444, .block333{
+  display: none;
+  height:0;
+  width:0
+} */
+
+#feedback2{
   display: none;
   height:0;
   width:0
 }
-
 
 
 
@@ -490,9 +495,9 @@ input {
   font-family: 'Public Sans' !important;
 }
 
-.moreInfo {
+/* .moreInfo {
   display: none;
-}
+} */
 
 
 @media (max-width:1200px) {
@@ -2521,10 +2526,7 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
       color:#6F6F6F !important;
 }
 
-.greenConsent{
-  background: transparent !important;
-  border: 3px solid #00843D;
-}
+
 
 .greenConsent:before {
     content: '';
@@ -2545,8 +2547,17 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
   bottom: -36%;
 }
 @media(min-width:768px) {
+  .redConsent{
+    background: transparent !important;
+    border: 3px solid #00843D;
+  }
+  .greenConsent{
+    background: white !important;
+    border: 3px solid #00843D;
+  }
+
 .greenConsent.activated {
-  background-color: transparent !important
+  background-color: white !important
 }
 
 .greenConsent.activated i {
@@ -2577,10 +2588,7 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
 }
 
 
-.redConsent{
-  background: transparent !important;
-  border: 3px solid #00843D;
-}
+
 
 .redConsent:before {
     content: '';
@@ -2653,10 +2661,46 @@ li.spanishAfter[data-target="#parentSurvey"]:after {
    font-weight: 600;
 
  }
+.menu-buttons-768-list li.greenConsent[data-target="#feedback2"]:before{
+ top: -26px;
+     left: 1px;
+     transform: scale(.4);
+     height: 100px;
+     width: 100px;
+     background-color: transparent;
+content: "";
+
+ }
+
 
 .menu-buttons-floating-list li.activated[data-target="#feedback2"] {
   background-color: #00843D !important;
   color:white !important
+}
+
+@media (min-width:768px){
+
+ li.activated.greenConsent[data-target="#feedback2"] {
+    background-color: white !important;
+
+}
+
+li.greenConsent[data-target="#feedback2"]:before {
+  content: '';
+      background: url(../images/consent-circle.svg);
+      height: 160px;
+      width: 160px;
+      position: absolute;
+      display: block;
+      z-index: 99;
+      background-repeat: no-repeat;
+      top: -14px;
+      left: 1px;
+      transform: scale(.9);
+
+
+}
+
 }
 
 
@@ -2709,10 +2753,15 @@ li.spanishAfter.greenConsent[data-target="#contact2"] i , li.spanishAfter.redCon
   font-weight: 700;
 }
 
-.menu-buttons-floating-list li.greenConsent[data-target="#contact2"]:after {
+.menu-buttons-floating-list li.greenConsent[data-target="#feedback2"]:after {
 
     bottom: -34%;
 
+}
+
+
+.menu-buttons-floating-list li.greenConsent[data-target="#contact2"]:after {
+    bottom: -34%;
 }
 li.spanishAfter[data-target="#contact2"]:after {
   content: "contacto";
@@ -2818,7 +2867,7 @@ padding-top: 0px;
 }
 
 
-.menu-buttons-floating-list li:focus,
+/* .menu-buttons-floating-list li:focus,
 .btn-guide:focus  {
   font-weight: 800;
   box-shadow: 0px 2px 3px rgba(0,0,0,0.3), 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
@@ -2829,7 +2878,7 @@ padding-top: 0px;
   transform: scale(1.13);
   outline: none;
 
-}
+} */
 
 .menu-buttons-floating-list li:active,
 .btn-guide:active  {
@@ -3768,10 +3817,10 @@ background: #7bc043;
 .menu-buttons-768-list li:hover,
 .menu-buttons-768-list li:active {
   font-weight: 800;
-  background: #fbb03b;
+  background: #fbb03b !important;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
   opacity: 1;
-  color: #071D49;
+  color: #071D49 !important;
   transform: scale(1.2) !important;
 }
 
@@ -6909,10 +6958,24 @@ body{
         background: #f6f8f8;
         padding: 2em 2em;
     }
+
+
     .greenConsent, .redConsent {
- background:#00843D !important;
-    border: 3px solid #00843D;
+    /* background:#00843D !important; */
+    border: none;
+    /* color: white !important; */
 }
+
+
+
+.greenConsent:active,  .redConsent:active {
+
+    background: #fbb03b !important;
+
+    color: #071D49 !important;
+
+}
+
     .greenConsent:before {
       top: -26px;
     left: 1px;
@@ -6920,6 +6983,16 @@ body{
     height: 100px;
     width: 100px;
   }
+
+
+  .activated.greenConsent:before {
+    top: -26px;
+  left: 1px;
+  transform: scale(.4);
+  height: 100px;
+  width: 100px;
+}
+
 
   .redConsent:before {
     top: -26px;

@@ -33,6 +33,8 @@ $(document).ready(function () {
 	// // })
 
 
+
+
 	$(" :checkbox").change(function() {
 		if (!$('.consent').val() == ''  &&  $('#consentGiven input').is(':checked'))   {
 			$('#consent-button').css({
@@ -347,21 +349,21 @@ $(document).ready(function () {
 		$('#finishOptOut').remove()
 
 		$('.box-outer').addClass('none')
-		$(".moreInfo").fadeIn()
+		// $(".moreInfo").fadeIn()
 
 		$('.grayBox.third').css('padding', '2em')
 
 
-		$('.parent-survey .d-flex p').removeClass('transparent-opacity')
+		// $('.parent-survey .d-flex p').removeClass('transparent-opacity')
+		//
 
 
-
-		$('.block444, .block333').show()
-
-		$('.block444, .block333').css({
-			height:'auto',
-			width:'100%'
-		})
+		// $('.block444, .block333').show()
+		//
+		// $('.block444, .block333').css({
+		// 	height:'auto',
+		// 	width:'100%'
+		// })
 
 		setTimeout(function(){
 
@@ -404,15 +406,15 @@ $(document).ready(function () {
 
 
 		$('.box-outer, .grayBox.consent1').addClass('given')
-		$(".moreInfo").fadeIn()
-
-		$('.parent-survey .d-flex p').removeClass('transparent-opacity')
-		$('.block444, .block333').show()
-
-		$('.block444, .block333').css({
-			height:'auto',
-			width:'100%'
-		})
+		// $(".moreInfo").fadeIn()
+		//
+		// $('.parent-survey .d-flex p').removeClass('transparent-opacity')
+		// $('.block444, .block333').show()
+		//
+		// $('.block444, .block333').css({
+		// 	height:'auto',
+		// 	width:'100%'
+		// })
 
 
 		setTimeout(function(){
@@ -514,6 +516,8 @@ $(document).ready(function () {
 
 				$('.hideWhenComplete').fadeOut()
 
+						$('li[data-target="#contact2"]').removeClass('grayedOut')
+
 				// if ($(document).innerWidth() <= 1024) {
 
 				var divPosition = $('#anchorPoint2').offset();
@@ -543,8 +547,6 @@ $(document).ready(function () {
 
 			if(email != confemail) {
 
-
-
 			}
 
 
@@ -559,13 +561,11 @@ $(document).ready(function () {
 			}
 			else if (valid && (email == confemail)) {
 
-
 							$('#update').css({
 								'background': '#00843D',
 								'color' :'white'
 
 							});
-
 
 			}
 
@@ -621,7 +621,7 @@ $(document).ready(function () {
 		$('li[data-target="#survey2"]').addClass('spanishAfter')
 		$('li[data-target="#overview2"]').addClass('spanishAfter')
 		$('li[data-target="#feedback2"]').addClass('spanishAfter')
-		$('li[data-target="#contac2"]').addClass('spanishAfter')
+		$('li[data-target="#contact2"]').addClass('spanishAfter')
 		$('li[data-target="#parentSurvey"]').addClass('spanishAfter')
 		$('li[data-target="#info2"]').addClass('spanishAfter')
 
@@ -744,12 +744,6 @@ $(document).ready(function () {
 			$('li[data-target="#feedback2"]').removeClass('activated')
 		}
 
-
-
-
-
-
-
 	})
 
 
@@ -775,10 +769,6 @@ $(document).ready(function () {
 		})
 
 
-
-
-
-
 				if ($('.block111').hasClass('active')) {
 					$('li[data-target="#info2"]').addClass('activated')
 					$('li[data-target="#info2"]').addClass('activated')
@@ -789,14 +779,7 @@ $(document).ready(function () {
 					$('li[data-target="#info2"]').removeClass('activated')
 				}
 
-
-
-
-
-
-
 	})
-
 
 
 

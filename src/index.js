@@ -1669,6 +1669,7 @@ $('.cc-selector input').on("keyup", function (e) {
 $('.next').click(function() {
 	if ($('.next').hasClass('done')) {
 		$('#feedbackModal').modal('hide')
+		$('li[data-target="#feedback2"]').addClass('greenConsent')
 	}
 })
 $('.next, .skip').on("keyup", function (e) {
