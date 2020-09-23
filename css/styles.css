@@ -2234,6 +2234,12 @@ label.togglePassword {
 overflow: auto !important
 } */
 
+.fa-minus-circle.plusSign:before
+{
+font-family: "Font Awesome 5 Pro";
+content: "\f055";
+}
+
 .secondBlock {
   display: none;
 }
