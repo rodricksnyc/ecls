@@ -139,13 +139,10 @@ a:hover {
 
 
 
-.firstRow .d-flex {
-  width:25%;
-}
 
 .firstRow .d-flex:nth-child(2) h6.purple {
-  max-width:7em;
-  margin-top: 1em;
+  max-width:11em;
+
 }
 
 .firstRow h6.purple{
@@ -236,11 +233,14 @@ padding: 2em 11em;
   padding:2em
 }
 
+
+/* hide feedback and button */
+
 /* #feedback2, .block444, .block333{
 display: none;
 height:0;
 width:0
-} */
+}
 
 #feedback2{
   display: none;
@@ -249,16 +249,14 @@ width:0
 }
 
 
+.menu-buttons-floating-list li[data-target="#feedback2"] {
+  display: none
+} */
+
 
 .block20 h2 {
   padding: 0% 0;
 }
-
-.menu-buttons-floating-list li[data-target="#feedback2"] {
-  display: none
-}
-
-
 
 .invalid-tooltip {
   position: absolute;
@@ -1734,9 +1732,9 @@ h1.white.sentMessage {
 }
 
 .status {
-  min-width:90px;
-  max-width:110px;
-  height:90px;
+    min-width: 90px;
+    max-width: 150px;
+    height: 120px;
 }
 .rel {
   position: relative;
@@ -2092,9 +2090,9 @@ footer a.white:hover {
 }
 
 .abso {
-  position: absolute;
-  left:2%;
-  bottom:10%;
+    position: absolute;
+    left: 2%;
+    bottom: 56%;
 }
 
 .back-to-top {

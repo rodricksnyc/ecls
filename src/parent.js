@@ -444,9 +444,9 @@ $(document).ready(function () {
 		event.currentTarget.submit();
 	});
 
-
-	var email = document.getElementById("email1").value
-	var confemail = document.getElementById("email2").value
+	//
+	// var email = document.getElementById("email1").value
+	// var confemail = document.getElementById("email2").value
 
 	$('body').keydown(function (event) {
 		if (email == confemail) {
@@ -463,9 +463,9 @@ $(document).ready(function () {
 
 
 		function confirmEmail() {
-			var email = document.getElementById("email1").value
-			var confemail = document.getElementById("email2").value
-			if(email != confemail) {
+			// var email = document.getElementById("email1").value
+			// var confemail = document.getElementById("email2").value
+			if($("#email1") != $("#email2")) {
 				$('.invalid-tooltip').show()
 
 
