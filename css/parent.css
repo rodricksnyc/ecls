@@ -77,6 +77,10 @@
   max-width: 900px !important;
 }
 
+.modal-footer {
+  position: relative;
+}
+
 
 .browser {
   font-family: 'Public Sans', sans-serif;
@@ -220,6 +224,11 @@ padding: 2em 11em;
 
 }
 
+
+.infoBar  i {
+  font-size:22px;
+}
+
 .privacy:hover {
   cursor: grab;
 }
@@ -294,8 +303,8 @@ width:0
 
 h3.landing-sec-H {
   font-size: 26px;
-
-  margin-right: 30%;
+/*
+  margin-right: 30%; */
 }
 .larger {
   font-size:25px !important
@@ -887,6 +896,11 @@ span.heading {
   font-size:15px;
   padding-left:5px;
 
+}
+.fa-minus-circle.plusSign:before 
+{
+font-family: "Font Awesome 5 Pro";
+content: "\f055";
 }
 
 .tangerine {
@@ -7260,6 +7274,7 @@ body{
 
     .modal-body {
       padding: 1em;
+      padding-top:0em
     }
 
     .end {

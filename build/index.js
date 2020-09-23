@@ -1039,12 +1039,15 @@ $(document).ready(function () {
 
 		if ($(".toggleDiv").is(':visible')) {
 
+			$('.blueLine .fas').addClass('plusSign');
+
 			$('.blueLine span').html('expand');
 			// $('.tooltips-elements').attr("data-original-title", "see more" );
 
 			$(".toggleDiv").slideUp();
 		} else if ($(".toggleDiv").is(':hidden')) {
 			$('.blueLine span').html('collapse');
+			$('.blueLine .fas').removeClass('plusSign');
 			// $('.tooltips-elements').attr("data-original-title", "see less" );
 
 			$(".toggleDiv").slideDown();
