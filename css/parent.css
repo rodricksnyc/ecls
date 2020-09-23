@@ -890,6 +890,20 @@ span.heading {
   /* border-left: 1px solid #576f7f; */
 }
 
+.greenButton {
+  background: #00843D !important;
+background-color: #00843D !important;
+border-color: #00843D !important;
+font-family: 'Public Sans', sans-serif;
+
+width: 8rem;
+border-radius: 2rem;
+color: white;
+text-transform: uppercase;
+height: 2.4rem;
+
+}
+
 .slate.borderLeft:after {
   font-family: "Font Awesome 5 Pro";
   content: "\f2f5";
@@ -3522,8 +3536,8 @@ background: #7bc043;
   padding: 15px;
   text-align: left;
   border-top: none;
-  margin-left: 3em;
-  margin-right: 3em;
+  /* margin-left: 3em;
+  margin-right: 3em; */
   margin-top: 0em;
   padding-top: 0em;
 }
@@ -5008,8 +5022,10 @@ h6.black {
 .done:focus,
 .done:active,
 .done:visited {
-  background: #696969 !important;
-  border-color:#696969 !important;
+  background: #00843D !important;
+    border-color: #00843D !important;
+  /* background: #696969 !important;
+  border-color:#696969 !important; */
   left:41% !important;
   color:white;
 }

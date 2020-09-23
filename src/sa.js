@@ -444,139 +444,139 @@ $(document).ready(function () {
 		event.currentTarget.submit();
 	});
 
-	
-	var email = document.getElementById("email1").value
-	var confemail = document.getElementById("email2").value
 
-	$('body').keydown(function (event) {
-		if (email == confemail) {
-			$('.invalid-tooltip').hide()
-
-		}
-	})
-
-	$('#update').click(function(e){
-		e.preventDefault()
-		var yourFormElement = $("#informationForm")[0];
-		yourFormElement.checkValidity();
-		yourFormElement.reportValidity();
-
-
-		function confirmEmail() {
-			var email = document.getElementById("email1").value
-			var confemail = document.getElementById("email2").value
-			if( email != confemail) {
-				$('.invalid-tooltip').show()
-
-
-			}
-
-
-			let valid = true;
-			$('#informationForm [required]').each(function() {
-				if ($(this).is(':invalid') || !$(this).val()) valid = false;
-
-
-			})
-			if (!valid) {
-
-			}
-			else if (valid && (email == confemail)) {
-
-
-				$('.lightGrayBox').animate({
-					"height": "auto",
-					"min-height": "200",
-					"width": "100%"
-				}, 800);
-
-				$('#informationForm').stop().animate({
-					height: "0px",
-				}, 700,
-				function () {
-					$(this).hide()
-				});
-
-				$('.lightGrayBox').addClass('given')
-
-
-				setTimeout(function(){
-					$('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update contact information again">UPDATE AGAIN</button></div>')
-
-					// $('.completed').css('display' ,'flex !important')
-				},700)
-
-
-				$('#feedback2, li[data-target="#feedback2"]').show()
-				$('li[data-target="#contact2"]').addClass('greenConsent')
-				$('#feedback2').css({
-					height:'auto',
-					width:'100%'
-				})
-
-				$('.hideWhenComplete').fadeOut()
-
-						$('li[data-target="#contact2"]').removeClass('grayedOut')
-
-				// if ($(document).innerWidth() <= 1024) {
-
-				var divPosition = $('#anchorPoint2').offset();
-				$('html, body').animate({scrollTop: divPosition.top}, 700);
-
-				// }
-
-
-			}
-
-
-		}
-
-		confirmEmail()
-
-
-	})
-
-
-
-
-
-
-	$('body').keydown(function () {
-
-		function confirmEmail2() {
-
-			if(email != confemail) {
-
-			}
-
-
-			let valid = true;
-			$('#informationForm [required]').each(function() {
-				if ($(this).is(':invalid') || !$(this).val()) valid = false;
-
-
-			})
-			if (!valid) {
-
-			}
-			else if (valid && (email == confemail)) {
-
-							$('#update').css({
-								'background': '#00843D',
-								'color' :'white'
-
-							});
-
-			}
-
-
-		}
-
-		confirmEmail2()
-
-
-	})
-
+	// var email = document.getElementById("email1").value
+	// var confemail = document.getElementById("email2").value
+  //
+	// $('body').keydown(function (event) {
+	// 	if (email == confemail) {
+	// 		$('.invalid-tooltip').hide()
+  //
+	// 	}
+	// })
+  //
+	// $('#update').click(function(e){
+	// 	e.preventDefault()
+	// 	var yourFormElement = $("#informationForm")[0];
+	// 	yourFormElement.checkValidity();
+	// 	yourFormElement.reportValidity();
+  //
+  //
+	// 	function confirmEmail() {
+	// 		var email = document.getElementById("email1").value
+	// 		var confemail = document.getElementById("email2").value
+	// 		if( email != confemail) {
+	// 			$('.invalid-tooltip').show()
+  //
+  //
+	// 		}
+  //
+  //
+	// 		let valid = true;
+	// 		$('#informationForm [required]').each(function() {
+	// 			if ($(this).is(':invalid') || !$(this).val()) valid = false;
+  //
+  //
+	// 		})
+	// 		if (!valid) {
+  //
+	// 		}
+	// 		else if (valid && (email == confemail)) {
+  //
+  //
+	// 			$('.lightGrayBox').animate({
+	// 				"height": "auto",
+	// 				"min-height": "200",
+	// 				"width": "100%"
+	// 			}, 800);
+  //
+	// 			$('#informationForm').stop().animate({
+	// 				height: "0px",
+	// 			}, 700,
+	// 			function () {
+	// 				$(this).hide()
+	// 			});
+  //
+	// 			$('.lightGrayBox').addClass('given')
+  //
+  //
+	// 			setTimeout(function(){
+	// 				$('.lightGrayBox').append('<div class="completed d-flex flex-column align-items-center"><div class="across"><img src="images/green-check.svg" class="img-responsive"><h6 class="green">Completed</h6></div><p class="charcoal text-center">Thank you for submitting your contact information. If anything changes, you may update your information at any time.</p><button class="btn btn-info" id="update-again" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update contact information again">UPDATE AGAIN</button></div>')
+  //
+	// 				// $('.completed').css('display' ,'flex !important')
+	// 			},700)
+  //
+  //
+	// 			$('#feedback2, li[data-target="#feedback2"]').show()
+	// 			$('li[data-target="#contact2"]').addClass('greenConsent')
+	// 			$('#feedback2').css({
+	// 				height:'auto',
+	// 				width:'100%'
+	// 			})
+  //
+	// 			$('.hideWhenComplete').fadeOut()
+  //
+	// 					$('li[data-target="#contact2"]').removeClass('grayedOut')
+  //
+	// 			// if ($(document).innerWidth() <= 1024) {
+  //
+	// 			var divPosition = $('#anchorPoint2').offset();
+	// 			$('html, body').animate({scrollTop: divPosition.top}, 700);
+  //
+	// 			// }
+  //
+  //
+	// 		}
+  //
+  //
+	// 	}
+  //
+	// 	confirmEmail()
+  //
+  //
+	// })
+  //
+  //
+  //
+  //
+  //
+  //
+	// $('body').keydown(function () {
+  //
+	// 	function confirmEmail2() {
+  //
+	// 		if(email != confemail) {
+  //
+	// 		}
+  //
+  //
+	// 		let valid = true;
+	// 		$('#informationForm [required]').each(function() {
+	// 			if ($(this).is(':invalid') || !$(this).val()) valid = false;
+  //
+  //
+	// 		})
+	// 		if (!valid) {
+  //
+	// 		}
+	// 		else if (valid && (email == confemail)) {
+  //
+	// 						$('#update').css({
+	// 							'background': '#00843D',
+	// 							'color' :'white'
+  //
+	// 						});
+  //
+	// 		}
+  //
+  //
+	// 	}
+  //
+	// 	confirmEmail2()
+  //
+  //
+	// })
+  //
 
 	$("body").on("click","#update-again",function(){
 		$('.hideWhenComplete').fadeIn()
