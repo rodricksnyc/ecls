@@ -1975,7 +1975,7 @@ h6.plum {
 }
 
 .feedbackBar h6.darkBlue {
-  max-width: 90%;
+  max-width: 88%;
 }
 
 h6.darkBlue {
@@ -1995,6 +1995,34 @@ h6.darkBlue {
   width: 4rem;
   right: 4%;
 }
+
+.white-bubble {
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  margin: 1em 0em;
+  padding: 3em 4em;
+  border-radius: 1rem
+}
+
+.white-bubble ::placeholder {
+  color:black !important
+}
+
+.absolute-radio{
+  position: absolute !important;
+  top: 10px;
+      left: 32px;
+
+
+}
+
+#feedbackModal .form-check.two {
+    position: relative;
+    margin-left: 2em;
+    margin-bottom: .2em;
+}
+
 
 .greenCircle {
   position: absolute;
@@ -4986,14 +5014,16 @@ h6.black {
 .mobile {
   display: none;
 }
-
+.neg2 {
+  margin-top:-2em
+}
 
 .done,
 .done:focus,
 .done:active,
 .done:visited {
-  background: #696969 !important;
-  border-color:#696969 !important;
+  background: #00843D !important;
+  border-color: #00843D !important;
   left:41% !important;
   color:white;
 }
@@ -5099,6 +5129,18 @@ h6.green{
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
+}
+
+.mr2{
+  margin-right:2em !important;
+}
+
+.yes {
+    background-image: url(../images/yes.svg);
+}
+
+.no {
+    background-image: url(../images/x.svg);
 }
 
 .red{
@@ -5270,8 +5312,8 @@ p.oneBlack {
   font-size: 1.1em;
   margin: 0em;
   padding: 0em;
-  margin-top: 0em !important;
-  margin-left: .5em;
+  margin-top: .15em !important;
+  margin-left: .3em;
   font-size: 17px !important;
   line-height: inherit;
 }
