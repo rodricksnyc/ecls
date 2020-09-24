@@ -240,8 +240,8 @@ padding: 2em 11em;
 
 .fa-minus-circle.plusSign:before
 {
-font-family: "Font Awesome 5 Pro";
-content: "\f055";
+  font-family: "Font Awesome 5 Pro";
+  content: "\f055";
 }
 
 
@@ -254,14 +254,14 @@ width:0
 }
 
 #feedback2{
-  display: none;
-  height:0;
-  width:0
+display: none;
+height:0;
+width:0
 }
 
 
 .menu-buttons-floating-list li[data-target="#feedback2"] {
-  display: none
+display: none
 } */
 
 
@@ -887,8 +887,8 @@ span.heading {
 
 .slate.borderLeft {
 
-      padding-left: 0em;
-      border-left: none;
+  padding-left: 0em;
+  border-left: none;
 
 }
 
@@ -947,6 +947,102 @@ span.heading {
   margin: 0em .3em 0em 0.1em;
   position: relative;
 }
+
+
+/* appending names to form in dropdown in the sAdminBlocks */
+
+.sAdmin .dropdown-toggle::after {
+display: none
+}
+
+.sAdmin .dropdown-toggle{
+width: 100% !important;
+}
+.sAdmin .dropdown {
+width: 100% !important;
+
+}
+
+.sAdmin .vertical {
+
+  display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.form-group label {
+    color: black;
+    font-family: 'Public Sans' !important;
+    position: absolute;
+    background: white;
+    top: -15px;
+    left: 10px;
+    padding: 0px 8px;
+}
+
+ .form-group {
+    position: relative;
+    width: 100% !important;
+}
+
+.form-inline{
+      width: 100% !important;
+}
+
+.form-group label {
+    color: black;
+    font-family: 'Public Sans' !important;
+}
+
+.form-control {
+  border: 2px solid black;
+  border: 2px solid black !important;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: black !important;
+    font-family: 'Public Sans' !important;
+}
+
+
+
+.form-control {
+    height: auto;
+    padding: .5em 1em;
+    font-size: 15px;
+    border-radius: 0;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Public Sans' !important;
+}
+
+#appendedName, #appendedTitle {
+  line-height: 1.3;
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 185px;
+    text-align: left;
+
+}
+
+.horizontalBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 .activeDot{
 
@@ -1745,9 +1841,9 @@ h1.white.sentMessage {
 }
 
 .status {
-    min-width: 90px;
-    max-width: 150px;
-    height: 120px;
+  min-width: 90px;
+  max-width: 150px;
+  height: 120px;
 }
 .rel {
   position: relative;
@@ -1769,7 +1865,7 @@ h6.gray {
   font-size: .88em;
 }
 
-.teacher, .child {
+.sAdmin, .child {
   margin-bottom:1em;
   background: white;
   padding: 1em .5em 1em .5em;
@@ -1789,14 +1885,14 @@ p.black {
 
 }
 
-.teacher i {
+.sAdmin i {
   font-size:35px;
 }
 .child i {
   font-size:35px;
 }
 
-.teacherAttr, .childAttr {
+.sAdminAttr, .childAttr {
   padding-left:1em;
 }
 
@@ -1810,7 +1906,7 @@ p.black {
 }
 .margin4{
   margin-left: 4em;
-  margin-right: -4em;
+  margin-right: 0em;
 
 }
 
@@ -1897,7 +1993,7 @@ width:20%
   font-weight:600;
 }
 
-.teacherComplete, .childComplete {
+.sAdminComplete, .childComplete {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -2025,15 +2121,15 @@ h6.darkBlue {
 .absolute-radio{
   position: absolute !important;
   top: 10px;
-      left: 32px;
+  left: 32px;
 
 
 }
 
 #feedbackModal .form-check.two {
-    position: relative;
-    margin-left: 2em;
-    margin-bottom: .2em;
+  position: relative;
+  margin-left: 2em;
+  margin-bottom: .2em;
 }
 
 
@@ -2131,9 +2227,9 @@ footer a.white:hover {
 }
 
 .abso {
-    position: absolute;
-    left: 2%;
-    bottom: 56%;
+  position: absolute;
+  left: 2%;
+  bottom: 56%;
 }
 
 .back-to-top {
@@ -5029,20 +5125,20 @@ h6.black {
 }
 .neg2 {
   margin-top: -1em;
-margin-bottom: .4em;
+  margin-bottom: .4em;
 
 }
 
 .greenButton {
-    background: #00843D !important;
-    background-color: #00843D !important;
-    border-color: #00843D !important;
-    font-family: 'Public Sans', sans-serif;
-    width: 8rem;
-    border-radius: 2rem;
-    color: white;
-    text-transform: uppercase;
-    height: 2.4rem;
+  background: #00843D !important;
+  background-color: #00843D !important;
+  border-color: #00843D !important;
+  font-family: 'Public Sans', sans-serif;
+  width: 8rem;
+  border-radius: 2rem;
+  color: white;
+  text-transform: uppercase;
+  height: 2.4rem;
 }
 
 .done,
@@ -5163,11 +5259,11 @@ h6.green{
 }
 
 .yes {
-    background-image: url(../images/yes.svg);
+  background-image: url(../images/yes.svg);
 }
 
 .no {
-    background-image: url(../images/x.svg);
+  background-image: url(../images/x.svg);
 }
 
 .red{
@@ -6940,7 +7036,7 @@ body{
       width: 768px !important;
     }
 
-    .teacherAttr, .childAttr {
+    .sAdminAttr, .childAttr {
 
       display: none !important;
     }
@@ -7006,21 +7102,21 @@ body{
     }
 
     label.card-cc.second {
-        font-size: 19px;
+      font-size: 19px;
     }
 
 
     .landing-sec-H {
 
-        border-bottom: none !important;
+      border-bottom: none !important;
 
-        margin-bottom: 0em !important;
+      margin-bottom: 0em !important;
     }
 
     .firstRow h6.purple {
 
-    margin-bottom: 3em;
-}
+      margin-bottom: 3em;
+    }
 
     .noWrapRow {
       flex-wrap:nowrap;
@@ -7037,38 +7133,38 @@ body{
     }
     .modalGreyProgressBar {
 
-    background: none;
-    left: 0;
-}
+      background: none;
+      left: 0;
+    }
 
-.menu-buttons-768-list li.greenConsent[data-target="#feedback2"]:before {
-    top: -26px;
-    left: 14px;
-    transform: scale(.4);
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-    content: "";
-}
-.menu-buttons-768-list li[data-target="#feedback2"]:before {
-    content: "New";
-    background-color: #f8ef22;
-    position: absolute;
-    top: -9px;
-    font-size: 9px;
-    color: black;
-    padding: .3em .3em .1em .3em;
-    min-width: 4em;
-    min-height: 2em;
-    text-transform: uppercase;
-    border-radius: 1rem;
-    right: 30%;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 600;
-}
+    .menu-buttons-768-list li.greenConsent[data-target="#feedback2"]:before {
+      top: -26px;
+      left: 14px;
+      transform: scale(.4);
+      height: 100px;
+      width: 100px;
+      background-color: transparent;
+      content: "";
+    }
+    .menu-buttons-768-list li[data-target="#feedback2"]:before {
+      content: "New";
+      background-color: #f8ef22;
+      position: absolute;
+      top: -9px;
+      font-size: 9px;
+      color: black;
+      padding: .3em .3em .1em .3em;
+      min-width: 4em;
+      min-height: 2em;
+      text-transform: uppercase;
+      border-radius: 1rem;
+      right: 30%;
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 600;
+    }
 
     /* .menu-buttons-768-list  li[data-target="#feedback2"] {
-      display: none;
+    display: none;
     } */
     .lightGrayBox {
       background: #f6f8f8;
@@ -7405,7 +7501,7 @@ body{
       width: 100%;
     }
 
-    .teacherAttr, .childAttr {
+    .sAdminAttr, .childAttr {
 
       display: none !important;
     }
@@ -7551,10 +7647,10 @@ body{
     }
 
     .skip {
-        top: 90%;
-        right: 25px;
-        font-weight: 600 !important;
-        font-size: 16px !important;
+      top: 90%;
+      right: 25px;
+      font-weight: 600 !important;
+      font-size: 16px !important;
     }
 
     #feedbackModal .carousel-inner {
