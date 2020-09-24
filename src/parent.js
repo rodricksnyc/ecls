@@ -634,7 +634,7 @@ $('li[data-target="#overview"]').addClass('activated')
 		if (distanceY > 485) {
 
 			$('.menu-buttons-floating').css({
-				top: '4em'
+				top: '2em'
 			})
 		} else {
 
