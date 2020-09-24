@@ -1366,6 +1366,18 @@ $(document).ready(function () {
 		});
 	});
 
+	$('#v').on('change', function () {
+		if ($(this).is(':checked')) {
+			var increase = function increase() {
+				l = l + color;
+			};
+
+			$(".carousel-item").last().prev().prev().remove();
+
+			increase();
+		}
+	});
+
 	$('.skip').keypress(function (e) {
 
 		if ((e.keyCode ? e.keyCode : e.which) == 13) {

@@ -1672,6 +1672,19 @@ $('.back').click(function () {
 
 
 
+$('#v').on('change', function() {
+	if ($(this).is(':checked')) {
+		$(".carousel-item").last().prev().prev().remove()
+		function increase(){
+			l = l + color
+		}
+		increase()
+	}
+})
+
+
+
+
 $('.skip').keypress(function (e) {
 
 	if ((e.keyCode ? e.keyCode : e.which) == 13) {

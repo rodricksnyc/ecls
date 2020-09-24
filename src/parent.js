@@ -791,11 +791,6 @@ $('li[data-target="#overview"]').addClass('activated')
 
 
 
-// $('#v').on('change', function() {
-// 	if ($(this).is(':checked')) {
-// 		$(".carousel-item").last().prev().prev().remove()
-// 	}
-// })
 
 
 
