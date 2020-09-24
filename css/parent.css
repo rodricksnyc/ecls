@@ -251,11 +251,11 @@ height:0;
 width:0
 } */
 
-#feedback2{
+/* #feedback2{
   display: none;
   height:0;
   width:0
-}
+} */
 
 .firstRow .purple {
   font-weight: 600 !important
@@ -265,10 +265,10 @@ width:0
   padding: 0% 0;
 }
 
-.menu-buttons-floating-list li[data-target="#feedback2"] {
+/* .menu-buttons-floating-list li[data-target="#feedback2"] {
   display: none
 }
-
+ */
 
 
 .invalid-tooltip {
