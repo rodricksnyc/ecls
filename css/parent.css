@@ -5596,7 +5596,7 @@ transform: scale(0.8);
   .modalGreyProgressBar {
 
       background: transparent;
-  
+
   }
 
   .activated {
@@ -7485,13 +7485,10 @@ body{
     }
 
     .skip {
-
-      top: 90%;
-      right: 13px;
-
-      font-weight: 600 !important;
-      font-size: 14px !important;
-
+        top: 90%;
+        right: 25px;
+        font-weight: 600 !important;
+        font-size: 15px !important;
     }
 
     #feedbackModal .carousel-inner {
