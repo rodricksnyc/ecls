@@ -1788,7 +1788,7 @@ h6.gray {
   font-size: .88em;
 }
 
-.teacher, .child {
+.parent, .child {
   margin-bottom:1em;
   background: white;
   padding: 1em .5em 1em .5em;
@@ -1808,14 +1808,14 @@ p.black {
 
 }
 
-.teacher i {
+.parent i {
   font-size:35px;
 }
 .child i {
   font-size:35px;
 }
 
-.teacherAttr, .childAttr {
+.parentAttr, .childAttr {
   padding-left:1em;
 }
 
@@ -1916,7 +1916,7 @@ width:20%
   font-weight:600;
 }
 
-.teacherComplete, .childComplete {
+.parentComplete, .childComplete {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -6923,7 +6923,7 @@ body{
       width: 768px !important;
     }
 
-    .teacherAttr, .childAttr {
+    .parentAttr, .childAttr {
 
       display: none !important;
     }
@@ -7341,7 +7341,7 @@ body{
       width: 100%;
     }
 
-    .teacherAttr, .childAttr {
+    .parentAttr, .childAttr {
 
       display: none !important;
     }

@@ -2479,7 +2479,7 @@ footer a.white:hover {
 .menu-buttons-floating-list li:first-child .fal{
   font-size:35px;
 }
-.menu-buttons-floating-list li[data-target="#overview2"]:after {
+.menu-buttons-floating-list li[data-target="#home"]:after {
   content: "OVERVIEW";
   font-size: 12px;
   /* margin-top: 7em; */
@@ -2497,7 +2497,7 @@ footer a.white:hover {
 
 
 
-li.spanishAfter[data-target="#overview2"]:after {
+li.spanishAfter[data-target="#home"]:after {
   content: "visión de conjunto";
   text-transform: uppercase;
   min-width: 11em;

@@ -605,10 +605,34 @@ for(var j in teacher.teachersComplete) {
 }
 
 
+
+
+
+var parent = {"parents": [{
+	"parentId": '9999992-S01',
+	"name": 'Zach Tyler',
+	"type": "Primary",
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+}
+
+]
+
+};
+
+for(var j in parent.parents) {
+
+$('.parentBlocks').append(`<div class='parent newBlocks d-flex align-items-center flex-wrap'><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">PARENT ID</div><p class="black" id="parentId">${parent.parents[j].parentId}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">PARENT NAME</div><p class="black" id="parentName">${parent.parents[j].name}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TYPE</div><p class="black" id="parentType">${parent.parents[j].type}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">STATUS</div><p class="black" id="parentStatus">${parent.parents[j].status}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">% COMPLETE</div><div class="percentageCircle"><p class="black parentComplete">${parent.parents[j].percentage}</p></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2"><div class="mobile">DATE LAST ACCESSED</div><p class="black" id="parentDate">${parent.parents[j].date}</p></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LAUNCH</div><div id="launchStatus">${parent.parents[j].launch}</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
+
+}
+
+
 //change colors of the percentage circles and progress bars
 
 var Opt01 = "";
-$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete').each(function() {
+$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete').each(function() {
 	Opt01 = $(this).html();
 
 	if ($(this).html() > 50 && $(this).html() <= 75) {

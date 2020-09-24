@@ -259,8 +259,6 @@ location.reload();
 										<h6 class="purple text-center"><b>Learn more about the study</b></h6>
 									</div>
 
-
-
 									<div class="d-flex flex-column align-items-center rel">
 
 										<img src="images/survey.svg" class="img-responsive status" alt="">
@@ -330,16 +328,17 @@ location.reload();
 
 									<div class="moreInfo">
 										<p class="charcoal">To begin your survey, first indicate who (either you or your designee) is completing each section in the table below, then select the Launch Survey icon <span class="rel">"<i class="fas fa-arrow-right darkBlue"></i>"</span> in the table below. Please note that some of these questions, or the timeframe of the school year referred to, may not directly apply to you or your school, but just answer the best you can. Some questions in the survey have additional information and definitions that can be used if needed. To view the additional information for those questions, select the blue <span class="rel">"<i class="fas fa-info-circle darkBlue"></i>”</span> icon.</p>
+
 										<div class="teacherAttr d-flex align-items-center">
-											<div class="col-lg-2">
-												<h6 class="gray">PARENT ID</h6>
+											<div class="col-lg-3">
+												<h6 class="gray">SECTION</h6>
 											</div>
-											<div class="col-lg-2">
+											<!-- <div class="col-lg-2">
 												<h6 class="gray">CHILD NAME</h6>
 											</div>
 											<div class="col-lg-2">
 												<h6 class="gray">TYPE</h6>
-											</div>
+											</div> -->
 											<div class="col-lg-1">
 												<h6 class="gray">STATUS</h6>
 											</div>
@@ -349,23 +348,26 @@ location.reload();
 											<div class="col-lg-2">
 												<h6 class="gray">DATE LAST ACCESSED</h6>
 											</div>
+											<div class="col-lg-3">
+												<h6 class="gray">COMPLETED BY</h6>
+											</div>
 											<div class="col-lg-1">
 												<h6 class="gray">LAUNCH</h6>
 											</div>
 										</div>
 										<div class='teacher newBlocks d-flex align-items-center flex-wrap'>
-											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+											<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
 												<div class="mobile">TEACHER ID</div>
-												<p class="black" id="teacherId">9676994-S01</p>
+												<p class="black" id="teacherId">School Characteristics</p>
 											</div>
-											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+											<!-- <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 												<div class="mobile">CHILD NAME</div>
 												<p class="black" id="teacherName">Mae Whitman</p>
 											</div>
 											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 												<div class="mobile">TYPE</div>
 												<p class="black" id="teacherType">Primary</p>
-											</div>
+											</div> -->
 											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 												<div class="mobile">STATUS</div>
 												<p class="black" id="teacherStatus"><i class='fal fa-spinner'></i>In Progress</p>
@@ -380,6 +382,10 @@ location.reload();
 											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2">
 												<div class="mobile">DATE LAST ACCESSED</div>
 												<p class="black" id="teacherDate">3/15/20</p>
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">COMPLETED BY</div>
+												<p class="black" id="teacherStatus"><i class='fal fa-spinner'></i>In Progress</p>
 											</div>
 											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 												<div class="mobile">LAUNCH</div>
@@ -1128,7 +1134,7 @@ location.reload();
 
 								<div class="menu-buttons-floating wow slideInUp">
 									<ul class="menu-buttons-floating-list">
-										<li tabindex="0" data-target="#overview2"><i class="fas fa-info-circle"></i></li>
+										<li tabindex="0" data-target="#home"><i class="fas fa-info-circle"></i></li>
 										<!-- <li tabindex="0" data-target="#survey2"><i class="fas fa-file-contract"></i></li> -->
 										<li tabindex="0" data-target="#parentSurvey"><i class="fal fa-server"></i></li>
 
@@ -1139,7 +1145,7 @@ location.reload();
 
 								<div class="menu-buttons-768">
 									<ul class="menu-buttons-768-list">
-										<li tabindex="0" data-target="#overview2"><i class="fas fa-info-circle"></i></li>
+										<li tabindex="0" data-target="#home"><i class="fas fa-info-circle"></i></li>
 										<!-- <li tabindex="0" data-target="#survey2"><i class="fas fa-file-contract"></i></li> -->
 										<li tabindex="0" data-target="#parentSurvey"><i class="fal fa-server"></i></li>
 

@@ -619,7 +619,7 @@ $(document).ready(function () {
 		$('.menu-buttons-floating').addClass('es')
 		$('.slideForm .radio-inline').css('font-size', '11px')
 		$('li[data-target="#survey2"]').addClass('spanishAfter')
-		$('li[data-target="#overview2"]').addClass('spanishAfter')
+		$('li[data-target="#home"]').addClass('spanishAfter')
 		$('li[data-target="#feedback2"]').addClass('spanishAfter')
 		$('li[data-target="#contact2"]').addClass('spanishAfter')
 		$('li[data-target="#parentSurvey"]').addClass('spanishAfter')
@@ -650,7 +650,7 @@ $(document).ready(function () {
 
 	}
 
-	$('li[data-target="#overview2"]').addClass('activated')
+	$('li[data-target="#home"]').addClass('activated')
 
 	$(window).on('scroll', function() {
 
@@ -676,13 +676,13 @@ $(document).ready(function () {
 		if ( $('.block000').hasClass('active') || $('.block0').hasClass('active') ) {
 
 
-			$('li[data-target="#overview2"]').addClass('activated')
-			$('li[data-target="#overview2"]').addClass('activated')
+			$('li[data-target="#home"]').addClass('activated')
+			$('li[data-target="#home"]').addClass('activated')
 		}
 
 		else {
-			$('li[data-target="#overview2"]').removeClass('activated')
-			$('li[data-target="#overview2"]').removeClass('activated')
+			$('li[data-target="#home"]').removeClass('activated')
+			$('li[data-target="#home"]').removeClass('activated')
 		}
 
 
