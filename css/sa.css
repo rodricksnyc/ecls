@@ -132,7 +132,7 @@
 }
 
 .activeDot.clear {
-  background-color: transparent !important;
+  background-color: #00843D !important;
   color:white;
   z-index:999999999999;
   right: 0em;
@@ -853,7 +853,7 @@ span.heading {
 }
 
 .whiteBox {
-  background: white;
+
   padding:.4em .6em .4em 1em;
   /* display:flex;
   justify-content: space-around;
@@ -1000,7 +1000,7 @@ span.heading {
 .inactiveDot{
   border-radius: 1rem;
   color:white;
-  background-color: transparent;
+  background-color: #00843D;
   position: relative;
   z-index: 2;
   border: 2px solid white;
