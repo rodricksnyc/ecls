@@ -77,6 +77,11 @@
   max-width: 900px !important;
 }
 
+.firstRow .purple {
+  font-weight: 600 !important
+}
+
+
 
 .browser {
   font-family: 'Public Sans', sans-serif;
