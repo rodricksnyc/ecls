@@ -32,7 +32,7 @@ $(document).ready(function () {
 	//
 	// // })
 
-
+$('li[data-target="#overview"]').addClass('activated')
 
 
 	$(" :checkbox").change(function() {
@@ -444,7 +444,7 @@ $(document).ready(function () {
 		event.currentTarget.submit();
 	});
 
-	
+
 	var email = document.getElementById("email1").value
 	var confemail = document.getElementById("email2").value
 
