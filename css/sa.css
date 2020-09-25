@@ -5906,7 +5906,7 @@ body{
 @media (min-width:1025px) and (max-width:1399px) {
 
   .guide-overlay {
-    padding: 0em 5em !important;
+    padding: 0em 5.5em !important;
   }
   h6.gray {
     font-size: .7em;
