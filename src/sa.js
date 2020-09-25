@@ -11,27 +11,6 @@ $(document).ready(function () {
 	$("a, button, input, [tabIndex='0']").on('focusout', function() {
 		$(this).css('outline', 'none')
 	})
-	// //
-	// // $(" :input").change(function() {
-	//
-	// 	$('#informationForm input').each(function() {
-	//
-	// 			if (!$('this').val() == '' ) {
-	// 				console.log("ewiubweiegbu")
-	// 			}
-	//
-	//
-	// 			if ($('this').val() == '' ) {
-	// 				console.log("sdgeewggweeiegbu")
-	// 			}
-	//
-	//
-	// 	})
-	//
-	//
-	//
-	// // })
-
 
 
 
@@ -647,6 +626,13 @@ $(document).ready(function () {
 	if ($(document).innerWidth() <= 767) {
 		$('#ingles p').html('EN')
 		$('#espanol p').html('ES')
+
+	}
+
+	if ($(document).innerWidth() <= 991) {
+
+	  $('.sAdminAttr').remove()
+
 
 	}
 
