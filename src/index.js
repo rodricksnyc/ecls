@@ -1831,10 +1831,12 @@ function checkitem(){
 		$('.skip').css('pointer-events', 'none');
 		$('.next').html("Done")
 		$('.next').addClass('done')
+		$('.next').addClass('greenButton')
 
 	}
 	else if ($('.carousel-inner .carousel-item:last').prev().hasClass('active')) {
 		$('.next').html('Submit')
+	
 
 	}
 

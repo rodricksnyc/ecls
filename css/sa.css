@@ -4577,6 +4577,20 @@ h6.black {
   height: 2.4rem;
 }
 
+.greenButton:hover {
+  background: #00843D !important;
+  background-color: #00843D !important;
+  border-color: #00843D !important;
+  font-family: 'Public Sans', sans-serif;
+  width: 8rem;
+  border-radius: 2rem !important;
+  color: white !important;
+  text-transform: uppercase;
+  height: 2.4rem;
+}
+
+
+
 .done,
 .done:focus,
 .done:active,
