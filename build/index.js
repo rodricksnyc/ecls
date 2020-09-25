@@ -530,7 +530,7 @@ $(document).ready(function () {
 			"percentage": 100,
 			"date": "3/15/20",
 			"title": "School Administrator",
-			"name": "Dharmapuri Thirumala Anantharam",
+			"name": "Elizabeth Anne Rodricks",
 			"launch": "<i class='fas fa-check limeCheck'></i>"
 		}, {
 			"section": 'School-Family-Community Connections',
@@ -538,7 +538,7 @@ $(document).ready(function () {
 			"percentage": 75,
 			"date": "3/15/20",
 			"title": "School Administrator",
-			"name": "Dharmapuri Thirumala Anantharam",
+			"name": "Angelica Paul",
 			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 
@@ -547,7 +547,7 @@ $(document).ready(function () {
 			"percentage": 100,
 			"date": "3/15/20",
 			"title": "School Administrator",
-			"name": "Dharmapuri Thirumala Anantharam",
+			"name": "Alex Schneider",
 			"launch": "<i class='fas fa-check limeCheck'></i>"
 		}, {
 
@@ -556,8 +556,16 @@ $(document).ready(function () {
 			"percentage": 0,
 			"date": "3/15/20",
 			"title": "School Administrator",
-			"name": "Dharmapuri Thirumala Anantharam",
+			"name": "Meganne Abbott",
 			"launch": "<i class='fas fa-check limeCheck'></i>"
+		}, {
+			"section": 'School Characteristics',
+			"status": "<i class='fal fa-spinner'></i>In Progress",
+			"percentage": 50,
+			"date": "3/15/20",
+			"title": "School Administrator",
+			"name": "Hubert Blaine Wolfe­schlegel­stein­hausen­berger­dorff",
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}]
 
 	};
