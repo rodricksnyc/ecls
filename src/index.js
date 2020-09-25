@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
-
-
 	$('[data-toggle=tooltip]').tooltip();
-
 
 	$('.back-to-top').click(() => {
 		scrollfn("#overview");
@@ -1728,9 +1725,10 @@ $('.cc-selector input').on("keyup", function (e) {
 
 })
 
-$('.next').click(function() {
+$('.next, .skip').click(function() {
 	if ($('.next').hasClass('done')) {
 		$('#feedbackModal').modal('hide')
+		$('.feedbackBar').prop( "disabled", true )
 		$('li[data-target="#feedback2"]').addClass('greenConsent')
 	}
 })
@@ -1738,7 +1736,7 @@ $('.next, .skip').on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 13 && $('.next').hasClass('done')) {
-
+		$('.feedbackBar').prop( "disabled", true )
 		$('#feedbackModal').modal('hide')
 	}
 

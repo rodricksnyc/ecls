@@ -1413,9 +1413,10 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.next').click(function () {
+	$('.next, .skip').click(function () {
 		if ($('.next').hasClass('done')) {
 			$('#feedbackModal').modal('hide');
+			$('.feedbackBar').prop("disabled", true);
 			$('li[data-target="#feedback2"]').addClass('greenConsent');
 		}
 	});
@@ -1423,7 +1424,7 @@ $(document).ready(function () {
 
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 13 && $('.next').hasClass('done')) {
-
+			$('.feedbackBar').prop("disabled", true);
 			$('#feedbackModal').modal('hide');
 		}
 
