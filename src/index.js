@@ -1791,6 +1791,8 @@ $('.cc-selector input').on("keyup", function (e) {
 
 $('.next, .skip').click(function() {
 	if ($('.next').hasClass('done')) {
+
+		$('.next').addClass('greenButton')
 		$('#feedbackModal').modal('hide')
 		$('.feedbackBar').prop( "disabled", true )
 		$('li[data-target="#feedback2"]').addClass('greenConsent')

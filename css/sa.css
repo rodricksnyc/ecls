@@ -4128,7 +4128,10 @@ html, body{
   width:100%;
   font-family: 'Public Sans', sans-serif;
   font-weight:300;
+  padding:5px
 }
+
+
 .skip {
   position: absolute;
   top:94%;
@@ -4186,7 +4189,7 @@ padding-top:2em;
 }
 #feedbackModal ::placeholder {
   font-family: 'Public Sans', sans-serif;
-  font-weight:100;
+  font-weight:300;
 
   font-size:15px !important;
 }
