@@ -3583,6 +3583,17 @@ p.modalFooter {
 #slideOut label {
   margin-bottom: 0rem;
   font-weight:100;
+      color: white;
+}
+
+.modal-header {
+
+    border-bottom: none !important;
+
+}
+.modal-footer {
+
+    border-top: none !important;
 }
 
 .form-control {
