@@ -2153,6 +2153,10 @@ h6.plum {
 
 }
 
+.font-zero {
+  font-size:0px
+}
+
 h6.darkBlue {
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
