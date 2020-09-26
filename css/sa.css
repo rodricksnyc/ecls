@@ -2148,7 +2148,9 @@ h6.plum {
 }
 
 .feedbackBar h6.darkBlue {
-  max-width: 88%;
+  max-width: 85%;
+  font-weight:500;
+
 }
 
 h6.darkBlue {
