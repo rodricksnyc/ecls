@@ -657,7 +657,7 @@ var sAdmin = {"sAdmins": [{
 {
 
 "section": 'School Policies and Practices',
-"status": "Complete",
+"status": "<i class='fal fa-spinner'></i>In Progress",
 "percentage": 75,
 "date": "3/15/20",
 "title": "School Administrator",
