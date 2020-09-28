@@ -506,9 +506,37 @@ input {
   font-family: 'Public Sans' !important;
 }
 
-/* .moreInfo {
-display: none;
-} */
+/* hide radio button labels */
+
+.gold p,
+.orange p,
+.lime p {
+  font-size:0px !important
+}
+
+.goldBulb p,
+.orangeBulb p,
+.limeBulb p {
+  font-size:0px !important
+}
+
+
+.rainbow p {
+  font-size:0px !important
+}
+
+.rangeButtons .form-check:first-of-type p {
+  font-size:15px !important;
+  margin-top: .4em !important;
+}
+
+
+.rangeButtons .form-check:last-of-type p {
+  font-size:15px !important;
+  margin-top: .4em !important;
+}
+
+
 
 
 @media (max-width:1200px) {
@@ -1210,8 +1238,8 @@ p.purple {
   margin-top: 4em;
 }
 p.dark {
-  line-height: 1.2 !important;
-  font-size: 13px !important;
+  line-height: 1.7 !important;
+    font-size: 14px !important;
   margin-top: 5px !important;
   margin-bottom: 0px;
   font-weight: 300;
@@ -1964,7 +1992,8 @@ h6.plum {
 }
 
 .feedbackBar h6.darkBlue {
-  max-width: 90%;
+  max-width: 85%;
+  font-weight: 500;
 }
 
 h6.darkBlue {
@@ -4032,7 +4061,7 @@ h6.black {
 }
 
 
-.rangeButtons .form-check:nth-of-type(2) p {
+/* .rangeButtons .form-check:nth-of-type(2) p {
   margin-top: 0;
   margin-bottom: 0rem;
   position: absolute;
@@ -4052,6 +4081,28 @@ h6.black {
   min-width: max-content;
   font-size: 14px;
   font-family: 'Public Sans', sans-serif;
+} */
+
+.rangeButtons .form-check:nth-of-type(2) p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    position: absolute;
+    left: -25px;
+    width: auto;
+    min-width: max-content;
+    font-size: 14px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.rangeButtons .form-check:nth-of-type(3) p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    position: absolute;
+    left: -9px;
+    width: auto;
+    min-width: max-content;
+    font-size: 14px;
+    font-family: 'Public Sans', sans-serif;
 }
 
 .rangeButtons .form-check:nth-of-type(4) p {

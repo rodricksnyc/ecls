@@ -133,7 +133,7 @@
 									<div class="wrapText">
 										<h1 class="white title">Welcome to your ECLS Parent Portal!</h1>
 
-										<div class="d-flex align-items-center languageToggle">
+										<!-- <div class="d-flex align-items-center languageToggle">
 											<a id="ingles" href="" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no" onclick="loadGoogleTranslate()">
 												<p class="language notranslate" translate="no">English</p>
 
@@ -143,7 +143,7 @@
 												<p class="language">Espa&ntilde;ol</p>
 
 											</a>
-										</div>
+										</div> -->
 									</div>
 
 								</div>
@@ -468,7 +468,7 @@
 
 																<div class="carousel-item active">
 																	<fieldset>
-																			<legend>Overall, how would you rate your school's experience with the ECLS?</legend>
+																		<legend>Overall, how would you rate your school's experience with the ECLS?</legend>
 																		<h6 class="black">Overall, how would you rate your school's experience with the ECLS?</h6>
 
 																		<div class="cc-selector d-flex justify-content-between align-items-center">
@@ -476,13 +476,13 @@
 																			<label class="card-cc red" for="red"><p>Not at all positive</p></label>
 
 																			<input id="orange" type="radio" name="effort" value="Not very easy to use">
-																			<label class="card-cc orange" for="orange"><span class="font-zero">Not very easy to use</span></label>
+																			<label class="card-cc orange" for="orange"><p>Not very easy to use</p></label>
 
 																			<input id="gold" type="radio" name="effort" value="Somewhat easy to use">
-																			<label class="card-cc gold" for="gold"><span class="font-zero">Somewhat easy to use</span></label>
+																			<label class="card-cc gold" for="gold"><p>Somewhat easy to use</p></label>
 
 																			<input id="lime" type="radio" name="effort" value="Easy to use">
-																			<label class="card-cc lime" for="lime"><span class="font-zero">Easy to use</span></label>
+																			<label class="card-cc lime" for="lime"><p>Easy to use</p></label>
 
 																			<input id="jellybean" type="radio" name="effort" value="Very easy to use">
 																			<label class="card-cc jellybean" for="jellybean"><p>Very positive</p></label>
@@ -495,6 +495,7 @@
 
 																<div class="carousel-item">
 																	<fieldset>
+																		<legend>Schools that participate in the ECLS will be provided with a Certificate of Contribution signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank your school for its help in furthering the research efforts undertaken by the U.S. Department of Education.How likely will you be to display the Certificate of Contribution in your school?</legend>
 
 																		<h6 class="black">Schools that participate in the ECLS will be provided with a Certificate of Contribution signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank your school for its help in furthering the research efforts undertaken by the U.S. Department of Education.
 
@@ -503,35 +504,35 @@
 																				<div class="form-check">
 																					<input id="hot" type="radio" name="likeliness" value="Not at all likely" class="form-check-input">
 																					<label class="rainbow form-check-label" for="hot">
-
+																						<p>Not at all likely</p>
 																					</label>
-																					<p>Not at all likely</p>
+
 																				</div>
 																				<div class="form-check">
 
 																					<input id="warm" type="radio" name="likeliness" value="Not likely" class="form-check-input">
-																					<label class="rainbow form-check-label" for="warm"><span class="font-zero">Not likely</span></label>
+																					<label class="rainbow form-check-label" for="warm"><p>Not likely</p></label>
 
 																				</div>
 
 																				<div class="form-check">
 
 																					<input id="neutral" type="radio" name="likeliness" value="Somewhat likely" class="form-check-input">
-																					<label class="rainbow form-check-label" for="neutral"><span class="font-zero">Somewhat likely</span></label>
+																					<label class="rainbow form-check-label" for="neutral"><p>Somewhat likely</p></label>
 
 																				</div>
 
 																				<div class="form-check">
 
 																					<input id="cool" type="radio" name="likeliness" value="Likely" class="form-check-input">
-																					<label class="rainbow form-check-label" for="cool" ><span class="font-zero">Likely</span></label>
+																					<label class="rainbow form-check-label" for="cool"><p>Likely</p></label>
 
 																				</div>
 																				<div class="form-check">
 
 																					<input id="cooler" type="radio" name="likeliness" value="Very Likely" class="form-check-input">
-																					<label class="rainbow form-check-label" for="cooler">	</label>
-																					<p>Very Likely</p>
+																					<label class="rainbow form-check-label" for="cooler">		<p>Very Likely</p></label>
+
 
 																				</div>
 
@@ -542,42 +543,44 @@
 
 																	<div class="carousel-item">
 																		<fieldset>
+
+																			<legend>Schools that participate in the ECLS will be provided with a Certificate of Contribution signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank your school for its help in furthering the research efforts undertaken by the U.S. Department of Education. How much of a role did the receipt of this Certificate of Contribution play in your decision to participate in the study?</legend>
 
 																			<h6 class="black">Schools that participate in the ECLS will be provided with a Certificate of Contribution signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank your school for its help in furthering the research efforts undertaken by the U.S. Department of Education.</h6>
 																			<h6 class="black stronger">How much of a role did the receipt of this Certificate of Contribution play in your decision to participate in the study?</h6>
 																			<div class="rangeButtons d-flex justify-content-between align-items-center">
 																				<div class="form-check">
-																					<input id="hot3" type="radio" name="likeliness3" value="Not at all likely" class="form-check-input">
+																					<input id="hot3" type="radio" name="likeliness3" value="" class="form-check-input">
 																					<label class="rainbow form-check-label" for="hot3">
-
+																						<p>Not at all</p>
 																					</label>
-																					<p>Not at all</p>
+
 																				</div>
 																				<div class="form-check">
 
-																					<input id="warm3" type="radio" name="likeliness3" value="Not likely" class="form-check-input">
-																					<label class="rainbow form-check-label" for="warm3"><span class="font-zero">Not likely</span></label>
-
-																				</div>
-
-																				<div class="form-check">
-
-																					<input id="neutral3" type="radio" name="likeliness3" value="Somewhat likely" class="form-check-input">
-																					<label class="rainbow form-check-label" for="neutral3"><span class="font-zero">Somewhat likely</span></label>
+																					<input id="warm3" type="radio" name="likeliness3" value="" class="form-check-input">
+																					<label class="rainbow form-check-label" for="warm3"><p>Not likely</p></label>
 
 																				</div>
 
 																				<div class="form-check">
 
-																					<input id="cool3" type="radio" name="likeliness3" value="Likely" class="form-check-input">
-																					<label class="rainbow form-check-label" for="cool3"><span class="font-zero">Likely</span></label>
+																					<input id="neutral3" type="radio" name="likeliness3" value="" class="form-check-input">
+																					<label class="rainbow form-check-label" for="neutral3"><p>Somewhat likely</p></label>
+
+																				</div>
+
+																				<div class="form-check">
+
+																					<input id="cool3" type="radio" name="likeliness3" value="" class="form-check-input">
+																					<label class="rainbow form-check-label" for="cool3"><p>Likely</p></label>
 
 																				</div>
 																				<div class="form-check">
 
-																					<input id="cooler3" type="radio" name="likeliness3" value="Very Likely" class="form-check-input">
-																					<label class="rainbow form-check-label" for="cooler3">	</label>
-																					<p>A lot</p>
+																					<input id="cooler3" type="radio" name="likeliness3" value="" class="form-check-input">
+																					<label class="rainbow form-check-label" for="cooler3">	<p>A lot</p></label>
+
 
 																				</div>
 
@@ -588,15 +591,19 @@
 
 																	<div class="carousel-item">
 																		<fieldset>
+																			<legend>Schools that required all parents to provide explicit consent for their child’s participation in the ECLS were offered a food event (such as a pizza or ice cream party) if 100% of the forms were received from parents, regardless of whether the forms provided permission for the child to participate in the ECLS or not. Did your school participate in an ECLS food event?</legend>
 																			<h6 class="black">Schools that required all parents to provide explicit consent for their child’s participation in the ECLS were offered a food event (such as a pizza or ice cream party) if 100% of the forms were received from parents, regardless of whether the forms provided permission for the child to participate in the ECLS or not.
 																				<h6 class="black stronger">Did your school participate in an ECLS food event?</h6>
 
 																				<div class="cc-selector d-flex justify-content-start align-items-center">
-																					<input id="red" type="radio" name="effort" value="Not at all easy to use">
-																					<label class="card-cc second yes mr2" for="red"><p>Yes</p></label>
 
-																					<input id="jellybean" type="radio" name="effort" value="Very easy to use<">
-																					<label class="card-cc second no" for="jellybean"><p>No</p></label>
+																					<input id="yes1" type="radio" name="effort" value="">
+																					<label class="card-cc second yes mr2" for="yes1"><p>Yes</p></label>
+
+
+																					<input id="no1" type="radio" name="effort" value="">
+																					<label class="card-cc second no" for="no1"><p>No</p></label>
+
 
 																				</div>
 
@@ -606,42 +613,43 @@
 
 																		<div class="carousel-item">
 																			<fieldset>
+																				<legend>Schools that required all parents to provide explicit consent for their child’s participation in the ECLS were offered a food event (such as a pizza or ice cream party) if 100% of the forms were received from parents, regardless of whether the forms provided permission for the child to participate in the ECLS or not.How much of a role did the possibility of a food event play in your decision to participate in the study?</legend>
 
 																				<h6 class="black">Schools that required all parents to provide explicit consent for their child’s participation in the ECLS were offered a food event (such as a pizza or ice cream party) if 100% of the forms were received from parents, regardless of whether the forms provided permission for the child to participate in the ECLS or not.
 																					<h6 class="black stronger">How much of a role did the possibility of a food event play in your decision to participate in the study?</h6>
 																					<div class="rangeButtons d-flex justify-content-between align-items-center">
 																						<div class="form-check">
-																							<input id="hot2" type="radio" name="likeliness2" value="Not at all likely" class="form-check-input">
+																							<input id="hot2" type="radio" name="likeliness2" value="" class="form-check-input">
 																							<label class="rainbow form-check-label" for="hot2">
-
+																										<p>Not at all</p>
 																							</label>
-																							<p>Not at all</p>
+
 																						</div>
 																						<div class="form-check">
 
-																							<input id="warm2" type="radio" name="likeliness2" value="Not likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="warm2"><span class="font-zero">?</span></label>
-
-																						</div>
-
-																						<div class="form-check">
-
-																							<input id="neutral2" type="radio" name="likeliness2" value="Somewhat likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="neutral2"><span class="font-zero">?</span></label>
+																							<input id="warm2" type="radio" name="likeliness2" value="" class="form-check-input">
+																							<label class="rainbow form-check-label" for="warm2"><p>Not much</p></label>
 
 																						</div>
 
 																						<div class="form-check">
 
-																							<input id="cool2" type="radio" name="likeliness2" value="Likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="cool2" ><span class="font-zero">?</span></label>
+																							<input id="neutral2" type="radio" name="likeliness2" value="" class="form-check-input">
+																							<label class="rainbow form-check-label" for="neutral2"><p>Somewhat</p></label>
+
+																						</div>
+
+																						<div class="form-check">
+
+																							<input id="cool2" type="radio" name="likeliness2" value="" class="form-check-input">
+																							<label class="rainbow form-check-label" for="cool2" ><p>Some</p></label>
 
 																						</div>
 																						<div class="form-check">
 
-																							<input id="cooler2" type="radio" name="likeliness2" value="Very Likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="cooler2">	</label>
-																							<p>A lot</p>
+																							<input id="cooler2" type="radio" name="likeliness2" value="" class="form-check-input">
+																							<label class="rainbow form-check-label" for="cooler2">	<p>A lot</p>	</label>
+
 
 																						</div>
 
@@ -652,6 +660,8 @@
 
 																			<div class="carousel-item">
 																				<fieldset>
+
+																				<legend>To acknowledge the school’s participation in the ECLS, at the conclusion of the study, schools will receive a check reflecting $10 for each child who participated in the study.How much of a role did this check play in your decision to participate in the study?</legend>
 
 																					<h6 class="black">To acknowledge the school’s participation in the ECLS, at the conclusion of the study, schools will receive a check reflecting $10 for each child who participated in the study.</h6>
 																					<h6 class="black stronger">How much of a role did this check play in your decision to participate in the study?</h6>
@@ -659,35 +669,35 @@
 																						<div class="form-check">
 																							<input id="hot5" type="radio" name="likeliness3" value="Not at all likely" class="form-check-input">
 																							<label class="rainbow form-check-label" for="hot5">
-
+																									<p>Not at all</p>
 																							</label>
-																							<p>Not at all</p>
+
 																						</div>
 																						<div class="form-check">
 
 																							<input id="warm5" type="radio" name="likeliness3" value="Not likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="warm5"><span class="font-zero">?</span></label>
+																							<label class="rainbow form-check-label" for="warm5"><p>Not likely</p></label>
 
 																						</div>
 
 																						<div class="form-check">
 
 																							<input id="neutral5" type="radio" name="likeliness3" value="Somewhat likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="neutral5"><span class="font-zero">?</span></label>
+																							<label class="rainbow form-check-label" for="neutral5">	<p>Somewhat likely</p></label>
 
 																						</div>
 
 																						<div class="form-check">
 
 																							<input id="cool5" type="radio" name="likeliness3" value="Likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="cool5"><span class="font-zero">?</span></label>
+																							<label class="rainbow form-check-label" for="cool5"><p>Likely</p></label>
 
 																						</div>
 																						<div class="form-check">
 
 																							<input id="cooler5" type="radio" name="likeliness3" value="Very Likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="cooler5">	</label>
-																							<p>A lot</p>
+																							<label class="rainbow form-check-label" for="cooler5">	<p>A lot</p>	</label>
+
 
 																						</div>
 
@@ -699,42 +709,44 @@
 																			<div class="carousel-item">
 																				<fieldset>
 
+																					<legend>As part of the ECLS, school administrators/principals were asked to complete a survey about the school and their backgrounds. A check for $25 was included with the request to complete the survey. How much of a role did the $25 check play in your decision to complete the survey?</legend>
+
 																					<h6 class="black">As part of the ECLS, school administrators/principals were asked to complete a survey about the school and their backgrounds. A check for $25 was included with the request to complete the survey.</h6>
 																					<h6 class="black stronger">How much of a role did the $25 check play in your decision to complete the survey?</h6>
 																					<div class="rangeButtons d-flex justify-content-between align-items-center">
 																						<div class="form-check">
 																							<input id="hot4" type="radio" name="frequency" value="Rarely" class="form-check-input">
 																							<label class="rainbow form-check-label" for="hot4">
-
+																									<p>Not at all</p>
 																							</label>
-																							<p>Not at all</p>
+
 																						</div>
 																						<div class="form-check">
 
 																							<input id="warm4" type="radio" name="frequency" value="Sometimes" class="form-check-input">
-																							<label class="rainbow form-check-label" for="warm4"><span class="font-zero">?</span></label>
+																							<label class="rainbow form-check-label" for="warm4">	<p>Sometimes</p></label>
 
 																						</div>
 
 																						<div class="form-check">
 
 																							<input id="neutral4" type="radio" name="frequency" value="Often" class="form-check-input">
-																							<label class="rainbow form-check-label" for="neutral4"><span class="font-zero">?</span></label>
+																							<label class="rainbow form-check-label" for="neutral4">	<p>Often</p></label>
 
 																						</div>
 
 																						<div class="form-check">
 
 																							<input id="cool4" type="radio" name="frequency" value="Very Often" class="form-check-input">
-																							<label class="rainbow form-check-label" for="cool4"><span class="font-zero">?</span></label>
+																							<label class="rainbow form-check-label" for="cool4"><p>Very Often</p></label>
 
 																						</div>
 
 																						<div class="form-check">
 
 																							<input id="cool5" type="radio" name="likeliness3" value="Very Likely" class="form-check-input">
-																							<label class="rainbow form-check-label" for="cool5">	</label>
-																							<p>A lot</p>
+																							<label class="rainbow form-check-label" for="cool5">	<p>A lot</p>	</label>
+
 
 																						</div>
 
@@ -754,6 +766,7 @@
 
 																			<div class="carousel-item">
 																				<fieldset>
+																					<legend>Please rate how easy it was to complete the School Administrator Survey on the following aspects: How easy to use was the overall survey technology (for example, launching the survey, leaving and re-entering the survey)?</legend>
 
 																					<h6 class="black">Please rate how easy it was to complete the School Administrator Survey on the following aspects:</h6>
 																					<h6 class="black stronger">How easy to use was the overall survey technology (for example, launching the survey, leaving and re-entering the survey)?</h6>
@@ -762,13 +775,13 @@
 																						<label class="card-cc red" for="red2"><p>Not at all easy to use</p></label>
 
 																						<input id="orange2" type="radio" name="effort2" value="Not very easy to use">
-																						<label class="card-cc orange"for="orange2"><span class="font-zero">Not easy</span></label>
+																						<label class="card-cc orange"for="orange2"><p>Not easy</p></label>
 
 																						<input id="gold2" type="radio" name="effort2" value="Somewhat easy to use">
-																						<label class="card-cc gold" for="gold2"><span class="font-zero">Somewhat easy</span></label>
+																						<label class="card-cc gold" for="gold2"><p>Somewhat easy</p></label>
 
 																						<input id="lime2" type="radio" name="effort2" value="Easy to use">
-																						<label class="card-cc lime"for="lime2"><span class="font-zero">Easy</span></label>
+																						<label class="card-cc lime"for="lime2"><p>Easy</p></label>
 
 																						<input id="jellybean2" type="radio" name="effort2" value="Very easy to use">
 																						<label class="card-cc jellybean" for="jellybean2"><p>Very easy to use</p></label>
@@ -788,7 +801,8 @@
 																			</div>
 																			<div class="carousel-item">
 																				<fieldset>
-																					<label></label>
+																					<legend>Please rate how easy it was to complete the School Administrator Survey on the following aspects: How easy was it to answer the questions in the survey (for example, entering responses, using the drop-down boxes)?</legend>
+
 																					<h6 class="black">Please rate how easy it was to complete the School Administrator Survey on the following aspects:</h6>
 																					<h6 class="black stronger">How easy was it to answer the questions in the survey (for example, entering responses, using the drop-down boxes)?</h6>
 																					<div class="cc-selector d-flex justify-content-between align-items-center">
@@ -796,13 +810,13 @@
 																						<label class="card-cc red" for="red3"><p>Not at all easy to use</p></label>
 
 																						<input id="orange3" type="radio" name="clarity" value="Not very clear">
-																						<label class="card-cc orange" for="orange3"><span class="font-zero">Not easy</span></label>
+																						<label class="card-cc orange" for="orange3"><p>Not easy</p></label>
 
 																						<input id="gold3" type="radio" name="clarity" value="Somewhat clear">
-																						<label class="card-cc gold" for="gold3"><span class="font-zero">Somewhat easy</span></label>
+																						<label class="card-cc gold" for="gold3"><p>Somewhat easy</p></label>
 
 																						<input id="lime3" type="radio" name="clarity" value="A little clear">
-																						<label class="card-cc lime" for="lime3"><span class="font-zero">Easy</span></label>
+																						<label class="card-cc lime" for="lime3"><p>Easy</p></label>
 
 																						<input id="jellybean3" type="radio" name="clarity" value="Clear">
 																						<label class="card-cc jellybean" for="jellybean3"><p>Very easy to use</p></label>
@@ -815,6 +829,8 @@
 																			<div class="carousel-item">
 																				<fieldset>
 
+																					<legend>Please rate how easy it was to complete the School Administrator Survey on the following aspects: How easy was it to navigate through the survey (for example, moving through the survey, backing up to previous responses)?</legend>
+
 																					<h6 class="black">Please rate how easy it was to complete the School Administrator Survey on the following aspects:</h6>
 																					<h6 class="black stronger">How easy was it to navigate through the survey (for example, moving through the survey, backing up to previous responses)?</h6>
 																					<div class="cc-selector d-flex justify-content-between align-items-center">
@@ -822,26 +838,18 @@
 																						<label class="card-cc red" for="red4"><p>Not at all easy to use	</p></label>
 
 																						<input id="orange4" type="radio" name="informative" value="Not informative" class="learn">
-																						<label class="card-cc orange" for="orange4"><span class="font-zero">Not easy</span></label>
+																						<label class="card-cc orange" for="orange4"><p>Not easy</p></label>
 
 																						<input id="gold4" type="radio" name="informative" value="Somewhat informative" class="learn">
-																						<label class="card-cc gold" for="gold4"><span class="font-zero">Somewhat easy</span></label>
+																						<label class="card-cc gold" for="gold4"><p>Somewhat easy</p></label>
 
 																						<input id="lime4" type="radio" name="informative" value="Informative" class="learn">
-																						<label class="card-cc lime" for="lime4"><span class="font-zero">Easy</span></label>
+																						<label class="card-cc lime" for="lime4"><p>Easy</p></label>
 
 																						<input id="jellybean4" type="radio" name="informative" value="Very Informative" class="learn">
 																						<label class="card-cc jellybean" for="jellybean4"><p>Very easy to use</p></label>
 
 																					</div>
-																					<!-- <hr>
-																					<div class="form-check oneQuestion">
-
-																					<input id="never" type="radio" name="informative" value="I never used the website to learn more about the study." class="form-check-input learn">
-																					<label class="rainbow form-check-label" for="never"><p class="oneBlack">I did not complete a survey.</p></label>
-
-
-																				</div> -->
 
 
 																			</fieldset>
@@ -850,6 +858,7 @@
 
 																		<div class="carousel-item">
 																			<fieldset>
+																					<legend>While completing the web survey, did you need to use your computer to find information on the web to answer the items? Please provide any feedback on that process.</legend>
 
 																				<h6 class="black">While completing the web survey, did you need to use your computer to find information on the web to answer the items? Please provide any feedback on that process.</h6>
 
@@ -877,6 +886,7 @@
 																		<div class="carousel-item">
 
 																			<fieldset>
+																				<legend>Did you find it helpful to have the web survey broken up into sections?</legend>
 																				<h6 class="black">Did you find it helpful to have the web survey broken up into sections?</h6>
 																				<div class="cc-selector d-flex justify-content-start align-items-center">
 																					<input id="yes2" type="radio" name="effort" value="Not at all easy to use">
@@ -893,6 +903,7 @@
 
 																		<div class="carousel-item">
 																			<fieldset>
+																				<legend>If you gave the secondary PIN to a designee, how helpful or easy was it to designate some of the survey to another staff member to complete?</legend>
 
 																				<h6 class="black">If you gave the secondary PIN to a designee, how helpful or easy was it to designate some of the survey to another staff member to complete?</h6>
 																				<!-- <h6 class="black stronger">How easy to use was the website?</h6> -->
@@ -901,13 +912,13 @@
 																					<label class="card-cc red" for="red8"><p>not at all easy/helpful</p></label>
 
 																					<input id="orange8" type="radio"  name="pin" value="Not very easy to use">
-																					<label class="card-cc orange"for="orange8"></label>
+																					<label class="card-cc orange"for="orange8"><p>not easy</p></label>
 
 																					<input id="gold8" type="radio"  name="pin" value="Somewhat easy to use">
-																					<label class="card-cc gold" for="gold8"></label>
+																					<label class="card-cc gold" for="gold8"><p>somewhat easy</p></label>
 
 																					<input id="lime8" type="radio"  name="pin" value="Easy to use">
-																					<label class="card-cc lime"for="lime8"></label>
+																					<label class="card-cc lime"for="lime8"><p>easy</p></label>
 
 																					<input id="jellybean8" type="radio"  name="pin" value="Very easy to use">
 																					<label class="card-cc jellybean" for="jellybean8"><p>very easy/helpful</p></label>
@@ -928,6 +939,7 @@
 
 																		<div class="carousel-item">
 																			<fieldset>
+																				<legend>Please comment on any questions in the survey that were especially challenging, unclear, or time-consuming to answer.</legend>
 
 																				<h6 class="black">Please comment on any questions in the survey that were especially challenging, unclear, or time-consuming to answer.</h6>
 
@@ -936,7 +948,7 @@
 																			<br>
 																				<div class="form-check oneQuestion">
 
-																					<input id="a" type="radio" name="informative" value="I never used the website to learn more about the study." class="form-check-input learn">
+																					<input id="a" type="radio" name="informative" value="" class="form-check-input learn">
 																					<label class="rainbow form-check-label" for="a"><p class="oneBlack">I did not complete a survey.</p></label>
 
 
@@ -946,9 +958,9 @@
 																		<div class="carousel-item">
 																			<fieldset>
 
+																				<legend>In the future, would you prefer to respond to this type of survey on the web or on paper? Please explain your response.</legend>
+
 																				<h6 class="black">In the future, would you prefer to respond to this type of survey on the web or on paper? Please explain your response.</h6>
-
-
 
 																				<div class="rel white-bubble">
 																					<div class="form-check oneQuestion absolute-radio">
@@ -972,6 +984,8 @@
 																		<div class="carousel-item">
 																			<fieldset>
 
+																				<legend>Please rate your experience with using the MyECLS website. How easy to use was the website?</legend>
+
 																				<h6 class="black">Please rate your experience with using the MyECLS website.</h6>
 																				<h6 class="black stronger">How easy to use was the website?</h6>
 																				<div class="cc-selector d-flex justify-content-between align-items-center">
@@ -979,13 +993,13 @@
 																					<label class="card-cc red" for="red2"><p>Not at all easy to use</p></label>
 
 																					<input id="orange2" type="radio" name="effort2" value="Not very easy to use">
-																					<label class="card-cc orange"for="orange2"></label>
+																					<label class="card-cc orange"for="orange2"><p>Not easy to use</p></label>
 
 																					<input id="gold2" type="radio" name="effort2" value="Somewhat easy to use">
-																					<label class="card-cc gold" for="gold2"></label>
+																					<label class="card-cc gold" for="gold2"><p>Somewhat easy to use</p></label>
 
 																					<input id="lime2" type="radio" name="effort2" value="Easy to use">
-																					<label class="card-cc lime"for="lime2"></label>
+																					<label class="card-cc lime"for="lime2"><p>easy to use</p></label>
 
 																					<input id="jellybean2" type="radio" name="effort2" value="Very easy to use">
 																					<label class="card-cc jellybean" for="jellybean2"><p>Very easy to use</p></label>
@@ -997,7 +1011,7 @@
 
 																		<div class="carousel-item">
 																			<fieldset>
-																				<label></label>
+																				<legend>Please rate your experience with using the MyECLS website. How clear was the website in directing you to complete the surveys and any other needed tasks?</legend>
 																				<h6 class="black">Please rate your experience with using the MyECLS website.</h6>
 																				<h6 class="black stronger">How clear was the website in directing you to complete the surveys and any other needed tasks?</h6>
 																				<div class="cc-selector bulbs d-flex justify-content-between align-items-center">
@@ -1005,13 +1019,13 @@
 																					<label class="card-cc redBulb" for="red3"><p>Unclear</p></label>
 
 																					<input id="orange3" type="radio" name="clarity" value="Not very clear">
-																					<label class="card-cc orangeBulb" for="orange3"></label>
+																					<label class="card-cc orangeBulb" for="orange3"><p>Not very clear</p></label>
 
 																					<input id="gold3" type="radio" name="clarity" value="Somewhat clear">
-																					<label class="card-cc goldBulb" for="gold3"></label>
+																					<label class="card-cc goldBulb" for="gold3"><p>somewhat clear</p></label>
 
 																					<input id="lime3" type="radio" name="clarity" value="A little clear">
-																					<label class="card-cc limeBulb" for="lime3"></label>
+																					<label class="card-cc limeBulb" for="lime3"><p>a little clear</p></label>
 
 																					<input id="jellybean3" type="radio" name="clarity" value="Clear">
 																					<label class="card-cc jellybeanBulb" for="jellybean3"><p>Clear</p></label>
@@ -1023,31 +1037,31 @@
 
 																		<div class="carousel-item">
 																			<fieldset>
-																				<label></label>
+																				<legend>Please rate your experience with using the MyECLS website. How informative was the website when you were learning about the study or searching for additional details about the study?</legend>
 																				<h6 class="black">Please rate your experience with using the MyECLS website.</h6>
 																				<h6 class="black stronger">How informative was the website when you were learning about the study or searching for additional details about the study?</h6>
 																				<div class="cc-selector bulbs d-flex justify-content-between align-items-center">
 																					<input id="red3" type="radio" name="informative" value="Unclear">
 																					<label class="card-cc redBulb" for="red3"><p>Not at all informative</p></label>
 
-																					<input id="orange3" type="radio" name="informative" value="Not very clear">
-																					<label class="card-cc orangeBulb" for="orange3"></label>
+																					<input id="orange3" type="radio" name="informative" value="">
+																					<label class="card-cc orangeBulb" for="orange3"><p>Not informative</p></label>
 
-																					<input id="gold3" type="radio" name="informative" value="Somewhat clear">
-																					<label class="card-cc goldBulb" for="gold3"></label>
+																					<input id="gold3" type="radio" name="informative" value="">
+																					<label class="card-cc goldBulb" for="gold3"><p>somewhat informative</p></label>
 
-																					<input id="lime3" type="radio" name="informative" value="A little clear">
-																					<label class="card-cc limeBulb" for="lime3"></label>
+																					<input id="lime3" type="radio" name="informative" value="">
+																					<label class="card-cc limeBulb" for="lime3"><p>informative</p></label>
 
-																					<input id="jellybean3" type="radio" name="informative" value="Clear">
+																					<input id="jellybean3" type="radio" name="informative" value="">
 																					<label class="card-cc jellybeanBulb" for="jellybean3"><p>Very informative</p></label>
 
 																				</div>
 																				<hr class="neg2">
 																				<div class="form-check oneQuestion">
 
-																					<input id="l" type="radio" name="informative" value="I never used the website to learn more about the study." class="form-check-input learn">
-																					<label class="rainbow form-check-label" for="l"><p class="oneBlack">I never used the website to learn more about the study</p></label>
+																					<input id="l" type="radio" name="informative" value="" class="form-check-input learn">
+																					<label class="rainbow form-check-label" for="l"><p class="oneBlack">I never used the website to learn more about the study.</p></label>
 
 
 																				</div>
@@ -1058,15 +1072,17 @@
 																		<div class="carousel-item">
 																			<fieldset>
 
+																				<legend>Please rate your experience with using the MyECLS website.About how often did you access the MyECLS website during the course of the study?</legend>
+
 																				<h6 class="black">Please rate your experience with using the MyECLS website.</h6>
 																				<h6 class="black stronger">About how often did you access the MyECLS website during the course of the study?</h6>
 																				<div class="rangeButtons d-flex justify-content-between align-items-center">
 																					<div class="form-check">
 																						<input id="hot0" type="radio" name="frequency" value="Rarely" class="form-check-input">
 																						<label class="rainbow form-check-label" for="hot0">
-
+																							<p>Rarely</p>
 																						</label>
-																						<p>Rarely</p>
+
 																					</div>
 																					<div class="form-check">
 
@@ -1085,8 +1101,8 @@
 																					<div class="form-check">
 
 																						<input id="cool0" type="radio" name="frequency" value="Very Often" class="form-check-input">
-																						<label class="rainbow form-check-label" for="cool0"></label>
-																						<p>Very Often</p>
+																						<label class="rainbow form-check-label" for="cool0">	<p>Very Often</p></label>
+
 																					</div>
 
 
@@ -1096,6 +1112,8 @@
 
 																		<div class="carousel-item">
 																			<fieldset>
+
+																			<legend>Please provide any feedback you might have on the study, for example on how the ECLS staff worked with your school or how the assessments were conducted. Please also include any feedback you may have heard from teachers or parents. We also appreciate any suggestions you may have for improvements and welcome any remaining questions you may have about the study.</legend>
 
 																				<h6 class="black">Please provide any feedback you might have on the study, for example on how the ECLS staff worked with your school or how the assessments were conducted. Please also include any feedback you may have heard from teachers or parents. We also appreciate any suggestions you may have for improvements and welcome any remaining questions you may have about the study.</h6>
 

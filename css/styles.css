@@ -282,7 +282,7 @@ span.heading {
 }
 
 .whiteBox {
-  background: white;
+
   padding:.4em .6em .4em 1em;
   /* display:flex;
   justify-content: space-around;
@@ -315,8 +315,8 @@ span.heading {
 }
 
 .slate.borderLeft {
-  padding-left:1em;
-  border-left: 1px solid #576f7f;
+  padding-left:0em;
+  border-left: none;
 }
 
 .slate.borderLeft:after {
@@ -1216,7 +1216,7 @@ width:20%
 h6.plum {
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 0em;
   padding: 0em;
 }
@@ -1266,7 +1266,8 @@ h6.plum {
 }
 
 .feedbackBar h6.darkBlue {
-  max-width: 90%;
+  max-width: 85%;
+  font-weight:500
 }
 
 h6.darkBlue {
@@ -1315,6 +1316,66 @@ h6.darkBlue {
   font-size: 31px;
 
 }
+
+
+.greenButton {
+  background: #00843D !important;
+  background-color: #00843D !important;
+  border-color: #00843D !important;
+  font-family: 'Public Sans', sans-serif;
+  width: 8rem;
+  border-radius: 2rem !important;
+  color: white;
+  text-transform: uppercase;
+  height: 2.4rem;
+}
+
+.greenButton:hover {
+  background: #00843D !important;
+  background-color: #00843D !important;
+  border-color: #00843D !important;
+  font-family: 'Public Sans', sans-serif;
+  width: 8rem;
+  border-radius: 2rem !important;
+  color: white !important;
+  text-transform: uppercase;
+  height: 2.4rem;
+}
+
+
+/* hide radio button labels */
+
+.gold p,
+.orange p,
+.lime p {
+  font-size:0px !important
+}
+
+
+.goldBulb p,
+.orangeBulb p,
+.limeBulb p {
+  font-size:0px !important
+}
+
+
+.rainbow p {
+  font-size:0px !important
+}
+
+.rangeButtons .form-check:first-of-type p {
+  font-size:15px !important;
+  margin-top: .4em !important;
+}
+
+
+.rangeButtons .form-check:last-of-type p {
+  font-size:15px !important;
+  margin-top: .4em !important;
+}
+
+
+
 
 .footer-wrapper {
   width: 100%;
@@ -3734,7 +3795,7 @@ h6.black {
 }
 
 
-.rangeButtons .form-check:nth-of-type(2) p {
+/* .rangeButtons .form-check:nth-of-type(2) p {
   margin-top: 0;
   margin-bottom: 0rem;
   position: absolute;
@@ -3750,6 +3811,28 @@ h6.black {
   margin-bottom: 0rem;
   position: absolute;
   left: 0;
+  width: auto;
+  min-width: max-content;
+  font-size: 14px;
+  font-family: 'Public Sans', sans-serif;
+} */
+
+.rangeButtons .form-check:nth-of-type(2) p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+  position: absolute;
+  left: -25px;
+  width: auto;
+  min-width: max-content;
+  font-size: 14px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.rangeButtons .form-check:nth-of-type(3) p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+  position: absolute;
+  left: -9px;
   width: auto;
   min-width: max-content;
   font-size: 14px;

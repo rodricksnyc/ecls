@@ -518,19 +518,19 @@ $(document).ready(function () {
 	var sAdmin = { "sAdmins": [{
 			"section": 'School Characteristics',
 			"status": "<i class='fal fa-spinner'></i>In Progress",
-			"percentage": 50,
+			"percentage": 100,
 			"date": "3/15/20",
 			"title": "School Administrator",
 			"name": "Dharmapuri Thirumala Anantharam",
-			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+			"launch": "<i class='fas fa-check limeCheck'></i>"
 		}, {
 
-			"section": 'School Programs for Particular Populations',
+			"section": 'School Facilities and Resources',
 			"status": "Complete",
 			"percentage": 100,
 			"date": "3/15/20",
 			"title": "School Administrator",
-			"name": "Elizabeth Anne Rodricks",
+			"name": "John Smith",
 			"launch": "<i class='fas fa-check limeCheck'></i>"
 		}, {
 			"section": 'School-Family-Community Connections',
@@ -538,17 +538,17 @@ $(document).ready(function () {
 			"percentage": 75,
 			"date": "3/15/20",
 			"title": "School Administrator",
-			"name": "Angelica Paul",
+			"name": "Jane Doe",
 			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 
-			"section": 'School-Family-Community Connections',
+			"section": 'School Policies and Practices',
 			"status": "Complete",
-			"percentage": 100,
+			"percentage": 75,
 			"date": "3/15/20",
 			"title": "School Administrator",
-			"name": "Alex Schneider",
-			"launch": "<i class='fas fa-check limeCheck'></i>"
+			"name": "Alex Johnson",
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 
 			"section": 'School Programs for Particular Populations',
@@ -556,16 +556,34 @@ $(document).ready(function () {
 			"percentage": 0,
 			"date": "3/15/20",
 			"title": "School Administrator",
-			"name": "Meganne Abbott",
-			"launch": "<i class='fas fa-check limeCheck'></i>"
+			"name": "Bill Thomas",
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
-			"section": 'School Characteristics',
+
+			"section": 'Federal Programs',
+			"status": "Not Started",
+			"percentage": 0,
+			"date": "3/15/20",
+			"title": "School Administrator",
+			"name": "Andrew Smith",
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+		}, {
+
+			"section": 'Staffing and Teacher Characteristics',
+			"status": "Not Started",
+			"percentage": 0,
+			"date": "3/15/20",
+			"title": "School Administrator",
+			"name": "Kelly Jones",
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+		}, {
+			"section": 'School Administrator Characteristics',
 			"status": "<i class='fal fa-spinner'></i>In Progress",
-			"percentage": 50,
+			"percentage": 100,
 			"date": "3/15/20",
 			"title": "School Administrator",
 			"name": "Hubert Blaine Wolfe­schlegel­stein­hausen­berger­dorff",
-			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+			"launch": "<i class='fas fa-check limeCheck'></i>"
 		}]
 
 	};
@@ -574,22 +592,6 @@ $(document).ready(function () {
 
 		$('.sAdminBlocks').append('<div class=\'sAdmin newBlocks d-flex align-items-center flex-wrap\'><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">SECTION</div><p class="black" id="sASection">' + sAdmin.sAdmins[j].section + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">STATUS</div><p class="black" id="sAdminStatus">' + sAdmin.sAdmins[j].status + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">% COMPLETE</div><div class="percentageCircle"><p class="black sAdminComplete">' + sAdmin.sAdmins[j].percentage + '</p></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2"><div class="mobile">DATE LAST ACCESSED</div><p class="black" id="sAdminDate">' + sAdmin.sAdmins[j].date + '</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">COMPLETED BY</div><div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="appendInfo" data-toggle="dropdown" aria-haspopup="true"><div class="horizontalBlock"><div class="vertical"><p class="black" id="appendedTitle">' + sAdmin.sAdmins[j].title + '</p><p class="black" id="appendedName">' + sAdmin.sAdmins[j].name + '</p></div><i class="fal fa-angle-down darkBlue"></i></div></button><div class="dropdown-menu" aria-labelledby="appendInfo"><div class="blackLine"><p class="black small">Select School Staff</p><div class="d-flex justify-content-end"><i class="fal fa-angle-down darkBlue"></i></div></div><div class="greyBubble">School Administrator</div><form><legend>Other School Staff</legend><div class="blueBubble"><p class="darkBlue small">Other School Staff</p><div class="form-group"><label for="new-name">Name</label><input type="text" name="" class="form-control" id="new-name" placeholder="Jane Smith"></div><div class="form-group"><label for="new-title">Title</label><input type="text" name="" class="form-control" id="new-title" placeholder="Assistant Principal"></div><center><button type="button" class="btn greenButton" id="add" data-toggle="dropdown">ADD <i class="far fa-plus"></i></button></center></div></div></form></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LAUNCH</div><div id="launchStatus">' + sAdmin.sAdmins[j].launch + '</div></div><div class=\'progressBarEmpty\'></div><div class=\'progressBarFull\'></div></div>');
 	}
-
-	// $(document).on('keyup', '#new-name', function(){
-	//    var name = $(this).val()
-	//
-	// 	// var thisName = $(this).closest('.dropdown').find(name)
-	//
-	// 	 $("body").on("click","#add",function(){
-	//
-	// 		 // alert(thisName)
-	//
-	// 		$('#appendedName').html(name)
-	//
-	// 	});
-	//
-	// });
-
 
 	//change colors of the percentage circles and progress bars
 
@@ -903,16 +905,13 @@ $(document).ready(function () {
 			$('li[data-target="#two"]').removeClass('activated');
 		}
 
-		// if ($('.block55').hasClass('active')) {
-		// 	$('li[data-target="#three"]').addClass('activated')
-		// 	$('li[data-target="#three"]').addClass('activated')
-		// }
-		//
-		// else {
-		// 	$('li[data-target="#three"]').removeClass('activated')
-		// 	$('li[data-target="#three"]').removeClass('activated')
-		// }
-
+		if ($('.block55').hasClass('active')) {
+			$('li[data-target="#three"]').addClass('activated');
+			$('li[data-target="#three"]').addClass('activated');
+		} else {
+			$('li[data-target="#three"]').removeClass('activated');
+			$('li[data-target="#three"]').removeClass('activated');
+		}
 
 		if ($('.block50').hasClass('active') || $('.block111').hasClass('active') || $('.block333').hasClass('active')) {
 			$('li[data-target="#info"]').addClass('activated');
