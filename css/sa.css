@@ -672,7 +672,7 @@ body {
 }
 
 .greenBanner {
-  background-image: url(../images/banner.svg);
+  background-image: url(../images/sa-banner.svg);
   position:relative;
   background-size: cover;
   background-repeat: no-repeat;
