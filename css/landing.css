@@ -1635,7 +1635,7 @@ right: 0;
 
 .guide-overlay2 {
   position: relative;
-  padding:4em 2em 0em 8em;
+  padding:4em 2em 0em 9em;
 }
 
 .feedbackBar {
@@ -6179,7 +6179,7 @@ button.close {
 
 @media (min-width:1601px) {
   .container {
-    max-width: 1340px;
+    max-width: 1300px;
   }
 
   #two .nav-tabs {
@@ -6223,7 +6223,7 @@ button.close {
 
 @media (min-width: 1450px) and (max-width:1600px) {
   .container {
-    max-width: 1240px;
+    max-width: 1170px;
   }
 }
 
