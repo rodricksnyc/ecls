@@ -775,11 +775,17 @@ $(document).ready(function () {
 
 	$('.greenBottom').css('height', height)
 
+//yes no
 
+	$('.clickYes').click(function()
+	{
+	  $('.commentYes').removeAttr("disabled");
+	});
 
-
-
-
+	$('.no').click(function()
+	{
+	  $('.commentYes').attr("disabled","disabled");
+	});
 
 
 })
