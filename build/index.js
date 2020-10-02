@@ -1425,17 +1425,31 @@ $(document).ready(function () {
 		});
 	});
 
-	$('#v').on('change', function () {
-		if ($(this).is(':checked')) {
-			var increase = function increase() {
-				l = l + color;
-			};
+	//developers will need to chnage this based on the input's ID for this quesion
+	// 
+	// $('#v').on('change', function() {
+	// 	if ($(this).is(':checked')) {
+	// 		$(".carousel-item").last().prev().prev().remove()
+	// 		function increase(){
+	// 			l = l + color
+	// 		}
+	// 		increase()
+	// 	}
+	// })
+	//
+	// //developers will need to chnage this based on the input's ID for this quesion
+	//
+	//
+	// $('#ll').on('change', function() {
+	// 	if ($(this).is(':checked')) {
+	// 		$(".schoolAdministrator .carousel-item:eq(9), .schoolAdministrator .carousel-item:eq(10), .schoolAdministrator .carousel-item:eq(11), .schoolAdministrator .carousel-item:eq(12)").remove()
+	// 		function increase(){
+	// 			l = l + color
+	// 		}
+	// 		increase()
+	// 	}
+	// })
 
-			$(".carousel-item").last().prev().prev().remove();
-
-			increase();
-		}
-	});
 
 	$('.skip').keypress(function (e) {
 
