@@ -787,5 +787,11 @@ $(document).ready(function () {
 	  $('.commentYes').attr("disabled","disabled");
 	});
 
+	//paper web
+
+	$('input[name="paper"]').on('click', function(){
+    // $(this).next().prop('disabled',false).siblings('input[type=text]').prop('disabled',true);
+});
+
 
 })

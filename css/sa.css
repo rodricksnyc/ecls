@@ -2226,8 +2226,12 @@ h6.darkBlue {
   position: absolute !important;
   top: 10px;
   left: 32px;
+}
 
-
+.absolute-radio2 {
+    position: absolute !important;
+    top: 10px;
+    left: 82px;
 }
 
 #feedbackModal .form-check.two {
