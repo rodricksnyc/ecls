@@ -1131,7 +1131,7 @@ if ($(window).height() > 1000) {
 			var elementTop = $(this).offset().top;
 			var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-			if ((screenBottom > elementTop + ($(this).find('.heros').height() + 200 )) && (screenTop < elementBottom)) {
+			if ((screenBottom > elementTop + ($(this).find('.heros').height() + 1000 )) && (screenTop < elementBottom)) {
 				$('section').removeClass('active')
 				$(this).addClass('active')
 			}
