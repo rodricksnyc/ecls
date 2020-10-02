@@ -91,7 +91,7 @@ body {
 }
 
 .greenBanner {
-  background-image: url(../images/green.svg);
+  background-image: url(../images/teacher-banner.svg);
   position:relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1444,7 +1444,7 @@ footer a.white:hover {
 .abso {
   position: absolute;
   left:2%;
-  bottom:10%;
+  bottom:50%;
 }
 
 .back-to-top {
