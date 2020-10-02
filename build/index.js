@@ -936,7 +936,6 @@ $(document).ready(function () {
 	if ($(window).height() > 1000) {
 
 		$(window).on('scroll', function () {
-			alert("ergoubgergbeiru");
 
 			var screenTop = $(window).scrollTop();
 			var screenBottom = $(window).scrollTop() + window.innerHeight;
