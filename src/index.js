@@ -838,7 +838,7 @@ function setReasonActive() {
 		if ($(this).prop('checked')) {
 			$(this).closest('.vertical').find('label').css({
 				'color':'white',
-				'font-weight': '300'
+				'font-weight': '500'
 			})
 			$(this).closest('.vertical').find('.fas').css({
 				'color':'	#fed439',
@@ -852,7 +852,7 @@ function setReasonActive() {
 			$(this).parents('.vertical').css('border' ,'none')
 			$(this).closest('.vertical').find('label').css({
 				'color': 'white',
-				'font-weight': '100'
+				'font-weight': '300'
 			})
 			$(this).closest('.vertical').find('.fas').css('color', '#fbb03b')
 		}
