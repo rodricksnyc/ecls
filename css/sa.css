@@ -2044,8 +2044,12 @@ p.black {
 }
 .margin4{
   margin-left: 4em;
-  margin-right: 0em;
+  margin-right: -1em;
 
+}
+
+.sAdminAttr .col-lg-1:last-child {
+margin-left:1.5em
 }
 
 .fa-spinner {
@@ -5969,7 +5973,7 @@ body{
     font-size: .8em;
   }
   .margin4 {
-    margin-left: 3em;
+    margin-left: 4em;
     margin-right: -2em;
   }
 }
