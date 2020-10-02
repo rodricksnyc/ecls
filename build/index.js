@@ -1426,7 +1426,7 @@ $(document).ready(function () {
 	});
 
 	//developers will need to chnage this based on the input's ID for this quesion
-	// 
+	//
 	// $('#v').on('change', function() {
 	// 	if ($(this).is(':checked')) {
 	// 		$(".carousel-item").last().prev().prev().remove()
