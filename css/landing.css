@@ -1252,9 +1252,12 @@ p.dark {
 h6.plum {
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 0em;
   padding: 0em;
+}
+.infoBar i {
+    font-size: 22px;
 }
 
 .infoBar {
