@@ -732,7 +732,7 @@ $(document).ready(function () {
 		$(this).css('width', '33.33%');
 	}
 
-	$('li[data-target="#overview"]').addClass('activated');
+	// $('li[data-target="#overview"]').addClass('activated')
 
 	$("#two .nav-link").click(function () {
 
