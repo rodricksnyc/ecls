@@ -936,6 +936,7 @@ $(document).ready(function () {
 	if ($(window).height() > 1000) {
 
 		$(window).on('scroll', function () {
+			alert("ergoubgergbeiru");
 
 			var screenTop = $(window).scrollTop();
 			var screenBottom = $(window).scrollTop() + window.innerHeight;
@@ -944,7 +945,7 @@ $(document).ready(function () {
 				var elementTop = $(this).offset().top;
 				var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-				if (screenBottom > elementTop + ($(this).find('.heros').height() - 600) && screenTop < elementBottom) {
+				if (screenBottom > elementTop + ($(this).find('.heros').height() + 5000) && screenTop < elementBottom) {
 					$('section').removeClass('active');
 					$(this).addClass('active');
 				} else {
