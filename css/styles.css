@@ -6016,7 +6016,9 @@ body{
 }
 
 @media  (max-width:767px)  {
-
+  .cc-selector input{
+    visibility: hidden;
+  }
 
   #privacyModal {
     top: 0%;

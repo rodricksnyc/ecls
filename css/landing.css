@@ -6830,6 +6830,9 @@ button.close {
     margin-top: 1em;
 
   }
+  .cc-selector input{
+    visibility: hidden;
+  }
 
   .greenBlocks img {
     max-width: 16em;

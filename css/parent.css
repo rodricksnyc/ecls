@@ -4828,6 +4828,10 @@ transform: scale(0.8);
 
   }
 
+  .cc-selector input{
+    visibility: hidden;
+  }
+
   .activated {
     font-weight: 800;
     background: #fbb03b !important;

@@ -6317,6 +6317,10 @@ body{
       margin-bottom: 3em;
     }
 
+    .cc-selector input{
+      visibility: hidden;
+    }
+
     .noWrapRow {
       flex-wrap:nowrap;
       margin-top:-1em
