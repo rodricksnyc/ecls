@@ -4829,7 +4829,8 @@ transform: scale(0.8);
   }
 
   .cc-selector input{
-    visibility: hidden;
+    display: none;
+    opacity:0
   }
 
   .activated {
