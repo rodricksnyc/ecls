@@ -4829,11 +4829,12 @@ transform: scale(0.8);
   }
 
   .cc-selector input{
-    display: none;
-    opacity:0;
-    -webkit-appearance: none;
-    height: 0px;
-    width: 0px;
+    display: none !important;
+    opacity:0 !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    height: 0px !important;
+    width: 0px !important;
 }
 
   .activated {
