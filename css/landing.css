@@ -4754,10 +4754,12 @@ h6.green{
 
 
 .cc-selector input{
-  margin:0;padding:0;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
+  display: none !important;
+  opacity:0 !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  height: 0px !important;
+  width: 0px !important;
 }
 
 .red{
@@ -6830,9 +6832,7 @@ button.close {
     margin-top: 1em;
 
   }
-  .cc-selector input{
-    visibility: hidden;
-  }
+
 
   .greenBlocks img {
     max-width: 16em;

@@ -4152,10 +4152,12 @@ h6.green{
 
 
 .cc-selector input{
-  margin:0;padding:0;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
+  display: none !important;
+  opacity:0 !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  height: 0px !important;
+  width: 0px !important;
 }
 
 .red{
@@ -6016,10 +6018,7 @@ body{
 }
 
 @media  (max-width:767px)  {
-  .cc-selector input{
-    display: none;
-    opacity:0
-  }
+
 
   #privacyModal {
     top: 0%;
