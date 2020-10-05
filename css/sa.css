@@ -6248,6 +6248,11 @@ body{
       margin-right: 0%;
     }
 
+    #one {
+    top: 20%;
+  }
+
+
     label.card-cc.second {
       font-size: 19px;
       transform: scale(.7);
