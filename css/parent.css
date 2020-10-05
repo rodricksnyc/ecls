@@ -5577,6 +5577,14 @@ transform: scale(0.8);
   display:none !important
 }
 
+
+@media (min-height:800px){
+  #survey2{
+    margin-top:-200px;
+    padding-top:200px;
+  }
+}
+
 @media (max-width:1500px) and (min-width:1400px) {
   h6.gray {
     font-size:.8em;
