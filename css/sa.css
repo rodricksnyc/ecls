@@ -6078,17 +6078,6 @@ body{
   }
 
 
-  @media (min-width:992){
-    .sAdminAttr {
-    display: flex !important;
-}
-  }
-
-  @media (max-width:991px){
-    .sAdminAttr {
-      display: none !important;
-    }
-  }
 
 
   @media (min-width:768px) and (max-width:991px)  {
@@ -7138,3 +7127,17 @@ body{
       right: 21%;
     }
   }
+
+
+
+    @media (min-width:992){
+      .sAdminAttr.d-flex {
+      display: flex !important;
+  }
+    }
+
+    @media (max-width:991px){
+      .sAdminAttr.d-flex {
+        display: none !important;
+      }
+    }

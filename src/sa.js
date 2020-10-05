@@ -629,13 +629,6 @@ $(document).ready(function () {
 
 	}
 
-	if ($(document).innerWidth() <= 991) {
-
-	  $('.sAdminAttr').remove()
-
-
-	}
-
 	$('li[data-target="#home"]').addClass('activated')
 
 	$(window).on('scroll', function() {
