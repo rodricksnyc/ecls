@@ -237,7 +237,6 @@ padding: 2em 11em;
   /* background: #f6f8f8; */
   overflow: hidden;
 
-
 }
 
 .privacy:hover {
@@ -318,7 +317,10 @@ display: none
 
 }
 
-
+.margin3 {
+margin-left: 3em;
+margin-right: -3em;
+}
 
 
 h3.landing-sec-H {
@@ -6073,6 +6075,13 @@ body{
     }
 
 
+  }
+
+
+  @media (min-width:992){
+    .sAdminAttr {
+    display: flex !important;
+}
   }
 
   @media (max-width:991px){
