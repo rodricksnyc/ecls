@@ -4829,8 +4829,9 @@ transform: scale(0.8);
   }
 
   .cc-selector input{
-    display: none;
-    opacity:0
+    display: none !important;
+    opacity:0 !important;
+    -webkit-appearance: none !important;
   }
 
   .activated {
