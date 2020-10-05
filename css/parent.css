@@ -4416,11 +4416,20 @@ h6.green{
 }
 
 
-.cc-selector input{
+/* .cc-selector input{
   margin:0;padding:0;
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
+} */
+
+.cc-selector input{
+  display: none !important;
+  opacity:0 !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  height: 0px !important;
+  width: 0px !important;
 }
 
 .red{
@@ -4828,14 +4837,7 @@ transform: scale(0.8);
 
   }
 
-  .cc-selector input{
-    display: none !important;
-    opacity:0 !important;
-    -webkit-appearance: none !important;
-    appearance: none !important;
-    height: 0px !important;
-    width: 0px !important;
-}
+
 
   .activated {
     font-weight: 800;
