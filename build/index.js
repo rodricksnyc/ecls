@@ -937,6 +937,15 @@ $(document).ready(function () {
 	}
 
 	if ($(document).innerWidth() <= 767) {
+		$('#feedbackModal').on('hidden.bs.modal', function (e) {
+
+			$('#one').css('top', '40%');
+		});
+
+		$('#feedbackModal').on('show.bs.modal', function (e) {
+
+			$('#one').css('top', '10%');
+		});
 
 		// $('li[data-target="#home"]').addClass('activated')
 		$('li[data-target="#overview"]').removeClass('activated');

@@ -5836,10 +5836,6 @@ transform: scale(0.8);
       margin-right: 0%;
     }
 
-    #one {
-      top: 20%;
-    }
-
     .noWrapRow {
       flex-wrap:nowrap;
       margin-top:-1em
