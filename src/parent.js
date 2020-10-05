@@ -631,7 +631,7 @@ $('li[data-target="#overview"]').addClass('activated')
 
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 485) {
+		if (distanceY > 120) {
 
 			$('.menu-buttons-floating').css({
 				top: '2em'
