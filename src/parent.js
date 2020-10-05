@@ -628,6 +628,8 @@ $('li[data-target="#overview"]').addClass('activated')
 
 	})
 
+	if ($(window).height() < 800){
+
 
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
@@ -643,6 +645,8 @@ $('li[data-target="#overview"]').addClass('activated')
 			})
 		}
 	});
+
+}
 
 	if ($(document).innerWidth() <= 767) {
 		$('#ingles p').html('EN')
