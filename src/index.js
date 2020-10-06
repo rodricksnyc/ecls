@@ -721,6 +721,9 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 });
 
 
+//show more survey  blocks
+
+
 $('.newBlocks').addClass('hidden')
 
 var x=10
@@ -788,7 +791,6 @@ function scrollfn(e) {
 
 $('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
 
-
 	e.preventDefault();
 	scrollfn($(this).attr('data-target'));
 });
@@ -807,6 +809,9 @@ new WOW().init();
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
 })
+
+
+//radio buttons on contact form
 
 $('.radio-inline input').on('keyup', function(e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
@@ -879,7 +884,7 @@ $("#two .nav-link").click(function () {
 
 });
 
-
+//animations for landing page
 $(window).on('scroll', function() {
 
 	var screenTop = $(window).scrollTop();
@@ -1373,6 +1378,14 @@ $('.blueLine').keypress(
 	slideIt
 );
 
+//green background div
+
+var height = $('.block50').height()
+$('.greenBottom').css('height', height)
+
+
+// 508 focus
+
 $("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar").on("keyup", function (e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 9) {
@@ -1396,6 +1409,7 @@ $(".form-check").on("keyup", function (e) {
 
 })
 
+//contact form
 
 var open = function() {
 
@@ -1414,7 +1428,6 @@ var open = function() {
 
 	$('#sendMessage').attr('tabindex', '0');
 
-
 	$('.modal-content').addClass('opened')
 	$("#slideOut").addClass('showSlideOut');
 	setTimeout(function() {
@@ -1429,11 +1442,6 @@ $('#one').keypress(
 	open
 );
 
-
-var height = $('.block50').height()
-
-
-$('.greenBottom').css('height', height)
 
 
 $('.contactUsOverlay').on('click', function(e) {
@@ -1462,10 +1470,6 @@ $('.contactUsOverlay').on('click', function(e) {
 
 	}
 })
-
-
-
-
 
 var close = function() {
 
@@ -1500,7 +1504,6 @@ $('#close').keypress(
 
 
 $('.feedbackBar').on("keyup", function (e) {
-
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 13) {
 
@@ -1509,13 +1512,15 @@ $('.feedbackBar').on("keyup", function (e) {
 });
 
 $('.privacy').on("keyup", function (e) {
-
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 13) {
 
 		$('#privacyModal').modal('show')
 	}
 });
+
+
+//send message on contact form and toast message
 
 $('#sendMessage').click(function (e) {
 
@@ -1563,13 +1568,12 @@ $('#sendMessage').click(function (e) {
 });
 
 
+
+//green line width on Feedback modal carousel
+
 $('.carousel').carousel();
 
-
-
-
 var items = $('.carousel-item').length - 1
-
 
 console.log($('#feedbackModal .modal-dialog').width())
 
@@ -1643,7 +1647,7 @@ $('.back').click(function () {
 // })
 
 
-
+//feedback modal carousel functions
 
 
 $('.skip').keypress(function (e) {
@@ -1785,16 +1789,9 @@ var mainURL = window.location.href;
 
 $('#ingles').attr('href' , mainURL)
 
-
-
 $('#ingles').click(function(){
 	$('#ingles').attr('href' , mainURL)
 })
-
-
-// $(window).on('load', function() {
-// 			$('a').not('#espanol').prop('hash','#googtrans(en|en)');
-// })
 
 $('.spanish').on('click', function(e) {
 	$('.spanish').addClass('blue')
@@ -1870,7 +1867,7 @@ var resizeText = function () {
 
 }
 
-
+//IE message
 
 var version = detectIE();
 
@@ -2069,8 +2066,6 @@ $(".scrollIt").on("click", function(event) {
 		});
 
 	});
-
-
 
 
 

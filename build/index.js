@@ -601,6 +601,9 @@ $(document).ready(function () {
 		}
 	});
 
+	//show more survey  blocks
+
+
 	$('.newBlocks').addClass('hidden');
 
 	var x = 10;
@@ -675,6 +678,8 @@ $(document).ready(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 	});
 
+	//radio buttons on contact form
+
 	$('.radio-inline input').on('keyup', function (e) {
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 9) {
@@ -738,6 +743,7 @@ $(document).ready(function () {
 		$(this).addClass("selected");
 	});
 
+	//animations for landing page
 	$(window).on('scroll', function () {
 
 		var screenTop = $(window).scrollTop();
@@ -1126,6 +1132,13 @@ $(document).ready(function () {
 
 	$('.blueLine').keypress(slideIt).click(slideIt);
 
+	//green background div
+
+	var height = $('.block50').height();
+	$('.greenBottom').css('height', height);
+
+	// 508 focus
+
 	$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar").on("keyup", function (e) {
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 9) {
@@ -1145,6 +1158,8 @@ $(document).ready(function () {
 			});
 		}
 	});
+
+	//contact form
 
 	var open = function open() {
 
@@ -1170,10 +1185,6 @@ $(document).ready(function () {
 		}, 300);
 	};
 	$('#one').keypress(open).click(open);
-
-	var height = $('.block50').height();
-
-	$('.greenBottom').css('height', height);
 
 	$('.contactUsOverlay').on('click', function (e) {
 
@@ -1224,7 +1235,6 @@ $(document).ready(function () {
 	$('#close').keypress(close).click(close);
 
 	$('.feedbackBar').on("keyup", function (e) {
-
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 13) {
 
@@ -1233,13 +1243,14 @@ $(document).ready(function () {
 	});
 
 	$('.privacy').on("keyup", function (e) {
-
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 13) {
 
 			$('#privacyModal').modal('show');
 		}
 	});
+
+	//send message on contact form and toast message
 
 	$('#sendMessage').click(function (e) {
 
@@ -1278,6 +1289,8 @@ $(document).ready(function () {
 			}, 4900);
 		}
 	});
+
+	//green line width on Feedback modal carousel
 
 	$('.carousel').carousel();
 
@@ -1350,6 +1363,9 @@ $(document).ready(function () {
 	// 		increase()
 	// 	}
 	// })
+
+
+	//feedback modal carousel functions
 
 
 	$('.skip').keypress(function (e) {
@@ -1462,10 +1478,6 @@ $(document).ready(function () {
 		$('#ingles').attr('href', mainURL);
 	});
 
-	// $(window).on('load', function() {
-	// 			$('a').not('#espanol').prop('hash','#googtrans(en|en)');
-	// })
-
 	$('.spanish').on('click', function (e) {
 		$('.spanish').addClass('blue');
 		$('.english').addClass('clear');
@@ -1526,6 +1538,8 @@ $(document).ready(function () {
 		$(".greenBar .nav-link").css("font-size", newFontSize + '%');
 		$(".landing-sec-H").css("font-size", newFontSize2 + '%');
 	};
+
+	//IE message
 
 	var version = detectIE();
 
