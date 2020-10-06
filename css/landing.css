@@ -85,7 +85,7 @@ body {
 .formFont{
     position: relative;
     top: -10px;
-    left: -10px;
+    left: 0px;
     font-size: 14px !important;
     font-weight: 400;
     color: #00539f;
@@ -6138,12 +6138,6 @@ button.close {
 }
 
 @media (max-width:1024px) {
-
-  .formFont{
-
-      left: 0px;
-
-    }
 
   .greenMiddle .mb-5 {
     margin-bottom: 1rem!important;
