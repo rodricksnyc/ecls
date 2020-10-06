@@ -1,40 +1,5 @@
 $(document).ready(function () {
 
-	$('[data-toggle=tooltip]').tooltip();
-
-	$('.back-to-top').click(() => {
-		scrollfn("#overview");
-	})
-
-
-	$(window).scroll(function () {
-		((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
-	});
-
-	function scrollfn(e) {
-		let $target = $(e),
-		offSet = e === "#overview" ? 0 : $target.offset().top;
-		$('html, body').stop().animate({
-			'scrollTop': offSet
-		}, 1200, 'swing');
-
-
-	}
-
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
-
-
-		e.preventDefault();
-		scrollfn($(this).attr('data-target'));
-	});
-
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
-
-		e.preventDefault();
-		scrollfn($(this).attr('data-target'));
-	});
-
-
 	//create and append teacher divs with objects
 
 	var teacher = {"teachers": [{
@@ -800,6 +765,42 @@ $('.loadMore').on('keyup', function(e) {
 })
 
 
+$('[data-toggle=tooltip]').tooltip();
+
+$('.back-to-top').click(() => {
+	scrollfn("#overview");
+})
+
+
+$(window).scroll(function () {
+	((window.pageYOffset || document.documentElement.scrollTop) > 100) ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
+});
+
+function scrollfn(e) {
+	let $target = $(e),
+	offSet = e === "#overview" ? 0 : $target.offset().top;
+	$('html, body').stop().animate({
+		'scrollTop': offSet
+	}, 1200, 'swing');
+
+
+}
+
+$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
+
+
+	e.preventDefault();
+	scrollfn($(this).attr('data-target'));
+});
+
+$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
+
+	e.preventDefault();
+	scrollfn($(this).attr('data-target'));
+});
+
+
+
 
 new WOW().init();
 
@@ -870,7 +871,6 @@ else {
 	$(this).css('width', '33.33%')
 }
 
-// $('li[data-target="#overview"]').addClass('activated')
 
 $("#two .nav-link").click(function () {
 
@@ -897,7 +897,6 @@ $(window).on('scroll', function() {
 			$(this).removeClass('active')
 		}
 	})
-
 
 
 	if ($('.block-2000').hasClass('active')) {
@@ -1116,11 +1115,6 @@ $(window).on('scroll', function() {
 
 
 
-
-
-
-
-
 if ($('.newBlocks').length < 10) {
 	$('.showBlocks').children().hide()
 }
@@ -1142,7 +1136,6 @@ if ($(document).innerWidth() <= 767) {
 
 	})
 
-	// $('li[data-target="#home"]').addClass('activated')
 	$('li[data-target="#overview"]').removeClass('activated')
 
 
@@ -1357,11 +1350,8 @@ var slideIt = function() {
 
 	if($(".toggleDiv").is(':visible')) {
 
-
 		$('.blueLine .fas').addClass('plusSign')
-
 		$('.blueLine span').html('expand')
-		// $('.tooltips-elements').attr("data-original-title", "see more" );
 
 		$(".toggleDiv").slideUp();
 
@@ -1370,7 +1360,6 @@ var slideIt = function() {
 	else if ($(".toggleDiv").is(':hidden')){
 		$('.blueLine span').html('collapse')
 		$('.blueLine .fas').removeClass('plusSign')
-		// $('.tooltips-elements').attr("data-original-title", "see less" );
 
 		$(".toggleDiv").slideDown();
 	}
@@ -1384,16 +1373,14 @@ $('.blueLine').keypress(
 	slideIt
 );
 
-$("input").on("keyup", function (e) {
-
+$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar").on("keyup", function (e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 9) {
 		$(this).css('outline', 'dashed 3px #4599ff')
-
 	}
 
 })
-$("input").on('focusout', function() {
+$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar").on('focusout', function() {
 	$(this).css('outline', 'none')
 })
 
@@ -1408,88 +1395,6 @@ $(".form-check").on("keyup", function (e) {
 	}
 
 })
-
-
-$("button").on("keyup", function (e) {
-
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).css('outline', 'dashed 3px #4599ff')
-
-	}
-
-})
-$("button").on('focusout', function() {
-	$(this).css('outline', 'none')
-})
-
-$("a").on("keyup", function (e) {
-
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).css('outline', 'dashed 3px #4599ff')
-
-	}
-
-})
-$("a").on('focusout', function() {
-	$(this).css('outline', 'none')
-})
-
-$("button").on("keyup", function (e) {
-
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).css('outline', 'dashed 3px #4599ff')
-
-	}
-
-})
-$("button").on('focusout', function() {
-	$(this).css('outline', 'none')
-})
-
-$(".feedbackBar").on("keyup", function (e) {
-
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).css('outline', 'dashed 3px #4599ff')
-
-	}
-
-})
-$(".feedbackBar").on('focusout', function() {
-	$(this).css('outline', 'none')
-})
-
-
-
-$('li').attr('tabindex', '0').on("keyup", function (e) {
-
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).css('outline', 'dashed 3px #4599ff')
-
-	}
-
-})
-$('li').attr('tabindex','0').on('focusout', function() {
-	$(this).css('outline', 'none')
-})
-
-$('.tooltips-elements').on("keyup", function (e) {
-
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).css('outline', 'dashed 3px #4599ff')
-
-	}
-
-})
-$('.tooltips-elements').on('focusout', function() {
-	$(this).css('outline', 'none')
-})
-
 
 
 var open = function() {
@@ -1527,11 +1432,8 @@ $('#one').keypress(
 
 var height = $('.block50').height()
 
-console.log(height)
 
 $('.greenBottom').css('height', height)
-
-
 
 
 $('.contactUsOverlay').on('click', function(e) {
@@ -1594,19 +1496,6 @@ $('#close').keypress(
 	close
 );
 
-
-$("#one, .skip, a, #closeThisPlease, .infoBar, button, input, [tabindex='0'], li").on("keyup", function (e) {
-
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 9) {
-		$(this).css('outline', 'dashed 3px #4599ff')
-
-	}
-
-})
-$("#one, .skip, a, #closeThisPlease, .infoBar, button, input, [tabindex='0'], li").on('focusout', function() {
-	$(this).css('outline', 'none')
-})
 
 
 

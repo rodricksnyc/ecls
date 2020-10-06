@@ -1,36 +1,6 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
-
-	$('[data-toggle=tooltip]').tooltip();
-
-	$('.back-to-top').click(function () {
-		scrollfn("#overview");
-	});
-
-	$(window).scroll(function () {
-		(window.pageYOffset || document.documentElement.scrollTop) > 100 ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
-	});
-
-	function scrollfn(e) {
-		var $target = $(e),
-		    offSet = e === "#overview" ? 0 : $target.offset().top;
-		$('html, body').stop().animate({
-			'scrollTop': offSet
-		}, 1200, 'swing');
-	}
-
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
-
-		e.preventDefault();
-		scrollfn($(this).attr('data-target'));
-	});
-
-	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
-
-		e.preventDefault();
-		scrollfn($(this).attr('data-target'));
-	});
 
 	//create and append teacher divs with objects
 
@@ -72,7 +42,7 @@ $(document).ready(function () {
 
 	for (var j in teacher.teachers) {
 
-		$('.teacherBlocks').append('<div class=\'teacher newBlocks d-flex align-items-center flex-wrap\'><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TEACHER ID</div><p class="black" id="teacherId">' + teacher.teachers[j].teacherId + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TEACHER NAME</div><p class="black" id="teacherName">' + teacher.teachers[j].name + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TYPE</div><p class="black" id="teacherType">' + teacher.teachers[j].type + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">STATUS</div><p class="black" id="teacherStatus">' + teacher.teachers[j].status + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">% COMPLETE</div><div class="percentageCircle"><p class="black teacherComplete">' + teacher.teachers[j].percentage + '</p></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2"><div class="mobile">DATE LAST ACCESSED</div><p class="black" id="teacherDate">' + teacher.teachers[j].date + '</p></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LAUNCH</div><div id="launchStatus">' + teacher.teachers[j].launch + '</div></div><div class=\'progressBarEmpty\'></div><div class=\'progressBarFull\'></div></div>');
+		$('.teacherBlocks').append("<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER ID</div><p class=\"black\" id=\"teacherId\">" + teacher.teachers[j].teacherId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER NAME</div><p class=\"black\" id=\"teacherName\">" + teacher.teachers[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"teacherType\">" + teacher.teachers[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"teacherStatus\">" + teacher.teachers[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black teacherComplete\">" + teacher.teachers[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"teacherDate\">" + teacher.teachers[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + teacher.teachers[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	//create and append child divs with objects
@@ -443,7 +413,7 @@ $(document).ready(function () {
 
 	for (var j in child.children) {
 
-		$('.childBlocks').append('<div class=\'child newBlocks d-flex align-items-center flex-wrap\'><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">CHILD ID</div><p class="black" id="childId">' + child.children[j].childId + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">CHILD NAME</div><p class="black" id="childName">' + child.children[j].name + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TYPE</div><p class="black" id="childType">' + child.children[j].type + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">STATUS</div><p class="black" id="childStatus">' + child.children[j].status + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">% COMPLETE</div><div class="percentageCircle"><p class="black childComplete">' + child.children[j].percentage + '</p></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2"><div class="mobile">DATE LAST ACCESSED</div><p class="black" id="childDate">' + child.children[j].date + '</p></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LAUNCH</div><div id="launchStatus">' + child.children[j].launch + '</div></div><div class=\'progressBarEmpty\'></div><div class=\'progressBarFull\'></div></div>');
+		$('.childBlocks').append("<div class='child newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">CHILD ID</div><p class=\"black\" id=\"childId\">" + child.children[j].childId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">CHILD NAME</div><p class=\"black\" id=\"childName\">" + child.children[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"childType\">" + child.children[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"childStatus\">" + child.children[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black childComplete\">" + child.children[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"childDate\">" + child.children[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + child.children[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	//create and append child divs with objects
@@ -477,7 +447,7 @@ $(document).ready(function () {
 
 	for (var j in child.childrenComplete) {
 
-		$('.childBlocksComplete').append('<div class=\'child newBlocks d-flex align-items-center flex-wrap\'><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">CHILD ID</div><p class="black" id="childId">' + child.childrenComplete[j].childId + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">CHILD NAME</div><p class="black" id="childName">' + child.childrenComplete[j].name + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TYPE</div><p class="black" id="childType">' + child.childrenComplete[j].type + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">STATUS</div><p class="black" id="childStatus">' + child.childrenComplete[j].status + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">% COMPLETE</div><div class="percentageCircle"><p class="black childComplete">' + child.childrenComplete[j].percentage + '</p></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2"><div class="mobile">DATE LAST ACCESSED</div><p class="black" id="childDate">' + child.childrenComplete[j].date + '</p></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LAUNCH</div><div id="launchStatus">' + child.childrenComplete[j].launch + '</div></div><div class=\'progressBarEmpty\'></div><div class=\'progressBarFull\'></div></div>');
+		$('.childBlocksComplete').append("<div class='child newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">CHILD ID</div><p class=\"black\" id=\"childId\">" + child.childrenComplete[j].childId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">CHILD NAME</div><p class=\"black\" id=\"childName\">" + child.childrenComplete[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"childType\">" + child.childrenComplete[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"childStatus\">" + child.childrenComplete[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black childComplete\">" + child.childrenComplete[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"childDate\">" + child.childrenComplete[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + child.childrenComplete[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	var teacher = { "teachersComplete": [{
@@ -495,7 +465,7 @@ $(document).ready(function () {
 
 	for (var j in teacher.teachersComplete) {
 
-		$('.teacherBlocksComplete').append('<div class=\'teacher newBlocks d-flex align-items-center flex-wrap\'><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TEACHER ID</div><p class="black" id="teacherId">' + teacher.teachersComplete[j].teacherId + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TEACHER NAME</div><p class="black" id="teacherName">' + teacher.teachersComplete[j].name + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TYPE</div><p class="black" id="teacherType">' + teacher.teachersComplete[j].type + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">STATUS</div><p class="black" id="teacherStatus">' + teacher.teachersComplete[j].status + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">% COMPLETE</div><div class="percentageCircle"><p class="black teacherComplete">' + teacher.teachersComplete[j].percentage + '</p></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2"><div class="mobile">DATE LAST ACCESSED</div><p class="black" id="teacherDate">' + teacher.teachersComplete[j].date + '</p></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LAUNCH</div><div id="launchStatus">' + teacher.teachersComplete[j].launch + '</div></div><div class=\'progressBarEmpty\'></div><div class=\'progressBarFull\'></div></div>');
+		$('.teacherBlocksComplete').append("<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER ID</div><p class=\"black\" id=\"teacherId\">" + teacher.teachersComplete[j].teacherId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER NAME</div><p class=\"black\" id=\"teacherName\">" + teacher.teachersComplete[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"teacherType\">" + teacher.teachersComplete[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"teacherStatus\">" + teacher.teachersComplete[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black teacherComplete\">" + teacher.teachersComplete[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"teacherDate\">" + teacher.teachersComplete[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + teacher.teachersComplete[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	var parent = { "parents": [{
@@ -512,7 +482,7 @@ $(document).ready(function () {
 
 	for (var j in parent.parents) {
 
-		$('.parentBlocks').append('<div class=\'parent newBlocks d-flex align-items-center flex-wrap\'><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">PARENT ID</div><p class="black" id="parentId">' + parent.parents[j].parentId + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">PARENT NAME</div><p class="black" id="parentName">' + parent.parents[j].name + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">TYPE</div><p class="black" id="parentType">' + parent.parents[j].type + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">STATUS</div><p class="black" id="parentStatus">' + parent.parents[j].status + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">% COMPLETE</div><div class="percentageCircle"><p class="black parentComplete">' + parent.parents[j].percentage + '</p></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2"><div class="mobile">DATE LAST ACCESSED</div><p class="black" id="parentDate">' + parent.parents[j].date + '</p></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LAUNCH</div><div id="launchStatus">' + parent.parents[j].launch + '</div></div><div class=\'progressBarEmpty\'></div><div class=\'progressBarFull\'></div></div>');
+		$('.parentBlocks').append("<div class='parent newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">PARENT ID</div><p class=\"black\" id=\"parentId\">" + parent.parents[j].parentId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">PARENT NAME</div><p class=\"black\" id=\"parentName\">" + parent.parents[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"parentType\">" + parent.parents[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"parentStatus\">" + parent.parents[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black parentComplete\">" + parent.parents[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"parentDate\">" + parent.parents[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + parent.parents[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	var sAdmin = { "sAdmins": [{
@@ -590,7 +560,7 @@ $(document).ready(function () {
 
 	for (var j in sAdmin.sAdmins) {
 
-		$('.sAdminBlocks').append('<div class=\'sAdmin newBlocks d-flex align-items-center flex-wrap\'><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">SECTION</div><p class="black" id="sASection">' + sAdmin.sAdmins[j].section + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">STATUS</div><p class="black" id="sAdminStatus">' + sAdmin.sAdmins[j].status + '</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">% COMPLETE</div><div class="percentageCircle"><p class="black sAdminComplete">' + sAdmin.sAdmins[j].percentage + '</p></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2"><div class="mobile">DATE LAST ACCESSED</div><p class="black" id="sAdminDate">' + sAdmin.sAdmins[j].date + '</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">COMPLETED BY</div><div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="appendInfo" data-toggle="dropdown" aria-haspopup="true"><div class="horizontalBlock"><div class="vertical"><p class="black" id="appendedTitle">' + sAdmin.sAdmins[j].title + '</p><p class="black" id="appendedName">' + sAdmin.sAdmins[j].name + '</p></div><i class="fal fa-angle-down darkBlue"></i></div></button><div class="dropdown-menu" aria-labelledby="appendInfo"><div class="blackLine"><p class="black small">Select School Staff</p><div class="d-flex justify-content-end"><i class="fal fa-angle-down darkBlue"></i></div></div><div class="greyBubble">School Administrator</div><form><legend>Other School Staff</legend><div class="blueBubble"><p class="darkBlue small">Other School Staff</p><div class="form-group"><label for="new-name">Name</label><input type="text" name="" class="form-control" id="new-name" placeholder="Jane Smith"></div><div class="form-group"><label for="new-title">Title</label><input type="text" name="" class="form-control" id="new-title" placeholder="Assistant Principal"></div><center><button type="button" class="btn greenButton" id="add" data-toggle="dropdown">ADD <i class="far fa-plus"></i></button></center></div></div></form></div></div><div class="col-lg-1 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LAUNCH</div><div id="launchStatus">' + sAdmin.sAdmins[j].launch + '</div></div><div class=\'progressBarEmpty\'></div><div class=\'progressBarFull\'></div></div>');
+		$('.sAdminBlocks').append("<div class='sAdmin newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SECTION</div><p class=\"black\" id=\"sASection\">" + sAdmin.sAdmins[j].section + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"sAdminStatus\">" + sAdmin.sAdmins[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black sAdminComplete\">" + sAdmin.sAdmins[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"sAdminDate\">" + sAdmin.sAdmins[j].date + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">COMPLETED BY</div><div class=\"dropdown\"><button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"appendInfo\" data-toggle=\"dropdown\" aria-haspopup=\"true\"><div class=\"horizontalBlock\"><div class=\"vertical\"><p class=\"black\" id=\"appendedTitle\">" + sAdmin.sAdmins[j].title + "</p><p class=\"black\" id=\"appendedName\">" + sAdmin.sAdmins[j].name + "</p></div><i class=\"fal fa-angle-down darkBlue\"></i></div></button><div class=\"dropdown-menu\" aria-labelledby=\"appendInfo\"><div class=\"blackLine\"><p class=\"black small\">Select School Staff</p><div class=\"d-flex justify-content-end\"><i class=\"fal fa-angle-down darkBlue\"></i></div></div><div class=\"greyBubble\">School Administrator</div><form><legend>Other School Staff</legend><div class=\"blueBubble\"><p class=\"darkBlue small\">Other School Staff</p><div class=\"form-group\"><label for=\"new-name\">Name</label><input type=\"text\" name=\"\" class=\"form-control\" id=\"new-name\" placeholder=\"Jane Smith\"></div><div class=\"form-group\"><label for=\"new-title\">Title</label><input type=\"text\" name=\"\" class=\"form-control\" id=\"new-title\" placeholder=\"Assistant Principal\"></div><center><button type=\"button\" class=\"btn greenButton\" id=\"add\" data-toggle=\"dropdown\">ADD <i class=\"far fa-plus\"></i></button></center></div></div></form></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + sAdmin.sAdmins[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	//change colors of the percentage circles and progress bars
@@ -669,6 +639,36 @@ $(document).ready(function () {
 		}
 	});
 
+	$('[data-toggle=tooltip]').tooltip();
+
+	$('.back-to-top').click(function () {
+		scrollfn("#overview");
+	});
+
+	$(window).scroll(function () {
+		(window.pageYOffset || document.documentElement.scrollTop) > 100 ? $('.back-to-top').css({ opacity: 1, visibility: "visible" }) : $('.back-to-top').css({ opacity: 0, visibility: "hidden" });
+	});
+
+	function scrollfn(e) {
+		var $target = $(e),
+		    offSet = e === "#overview" ? 0 : $target.offset().top;
+		$('html, body').stop().animate({
+			'scrollTop': offSet
+		}, 1200, 'swing');
+	}
+
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('click', function (e) {
+
+		e.preventDefault();
+		scrollfn($(this).attr('data-target'));
+	});
+
+	$('.menu-buttons-list li, .menu-buttons-floating-list li, .menu-buttons-768-list li').on('keypress', function (e) {
+
+		e.preventDefault();
+		scrollfn($(this).attr('data-target'));
+	});
+
 	new WOW().init();
 
 	$(function () {
@@ -731,8 +731,6 @@ $(document).ready(function () {
 	} else {
 		$(this).css('width', '33.33%');
 	}
-
-	// $('li[data-target="#overview"]').addClass('activated')
 
 	$("#two .nav-link").click(function () {
 
@@ -947,7 +945,6 @@ $(document).ready(function () {
 			$('#one').css('top', '10%');
 		});
 
-		// $('li[data-target="#home"]').addClass('activated')
 		$('li[data-target="#overview"]').removeClass('activated');
 
 		$('.logo:eq(1)').css({
@@ -1116,15 +1113,12 @@ $(document).ready(function () {
 		if ($(".toggleDiv").is(':visible')) {
 
 			$('.blueLine .fas').addClass('plusSign');
-
 			$('.blueLine span').html('expand');
-			// $('.tooltips-elements').attr("data-original-title", "see more" );
 
 			$(".toggleDiv").slideUp();
 		} else if ($(".toggleDiv").is(':hidden')) {
 			$('.blueLine span').html('collapse');
 			$('.blueLine .fas').removeClass('plusSign');
-			// $('.tooltips-elements').attr("data-original-title", "see less" );
 
 			$(".toggleDiv").slideDown();
 		}
@@ -1132,14 +1126,13 @@ $(document).ready(function () {
 
 	$('.blueLine').keypress(slideIt).click(slideIt);
 
-	$("input").on("keyup", function (e) {
-
+	$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar").on("keyup", function (e) {
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 9) {
 			$(this).css('outline', 'dashed 3px #4599ff');
 		}
 	});
-	$("input").on('focusout', function () {
+	$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar").on('focusout', function () {
 		$(this).css('outline', 'none');
 	});
 
@@ -1151,72 +1144,6 @@ $(document).ready(function () {
 				$(this).addClass('focusClass');
 			});
 		}
-	});
-
-	$("button").on("keyup", function (e) {
-
-		var code = e.keyCode ? e.keyCode : e.which;
-		if (code == 9) {
-			$(this).css('outline', 'dashed 3px #4599ff');
-		}
-	});
-	$("button").on('focusout', function () {
-		$(this).css('outline', 'none');
-	});
-
-	$("a").on("keyup", function (e) {
-
-		var code = e.keyCode ? e.keyCode : e.which;
-		if (code == 9) {
-			$(this).css('outline', 'dashed 3px #4599ff');
-		}
-	});
-	$("a").on('focusout', function () {
-		$(this).css('outline', 'none');
-	});
-
-	$("button").on("keyup", function (e) {
-
-		var code = e.keyCode ? e.keyCode : e.which;
-		if (code == 9) {
-			$(this).css('outline', 'dashed 3px #4599ff');
-		}
-	});
-	$("button").on('focusout', function () {
-		$(this).css('outline', 'none');
-	});
-
-	$(".feedbackBar").on("keyup", function (e) {
-
-		var code = e.keyCode ? e.keyCode : e.which;
-		if (code == 9) {
-			$(this).css('outline', 'dashed 3px #4599ff');
-		}
-	});
-	$(".feedbackBar").on('focusout', function () {
-		$(this).css('outline', 'none');
-	});
-
-	$('li').attr('tabindex', '0').on("keyup", function (e) {
-
-		var code = e.keyCode ? e.keyCode : e.which;
-		if (code == 9) {
-			$(this).css('outline', 'dashed 3px #4599ff');
-		}
-	});
-	$('li').attr('tabindex', '0').on('focusout', function () {
-		$(this).css('outline', 'none');
-	});
-
-	$('.tooltips-elements').on("keyup", function (e) {
-
-		var code = e.keyCode ? e.keyCode : e.which;
-		if (code == 9) {
-			$(this).css('outline', 'dashed 3px #4599ff');
-		}
-	});
-	$('.tooltips-elements').on('focusout', function () {
-		$(this).css('outline', 'none');
 	});
 
 	var open = function open() {
@@ -1245,8 +1172,6 @@ $(document).ready(function () {
 	$('#one').keypress(open).click(open);
 
 	var height = $('.block50').height();
-
-	console.log(height);
 
 	$('.greenBottom').css('height', height);
 
@@ -1297,17 +1222,6 @@ $(document).ready(function () {
 	};
 
 	$('#close').keypress(close).click(close);
-
-	$("#one, .skip, a, #closeThisPlease, .infoBar, button, input, [tabindex='0'], li").on("keyup", function (e) {
-
-		var code = e.keyCode ? e.keyCode : e.which;
-		if (code == 9) {
-			$(this).css('outline', 'dashed 3px #4599ff');
-		}
-	});
-	$("#one, .skip, a, #closeThisPlease, .infoBar, button, input, [tabindex='0'], li").on('focusout', function () {
-		$(this).css('outline', 'none');
-	});
 
 	$('.feedbackBar').on("keyup", function (e) {
 
