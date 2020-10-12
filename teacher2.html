@@ -26,6 +26,47 @@
 <body>
 
 	<div class="container-fluid overflow-hidden position-relative">
+		<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close Browser Recommendations Modal">
+							<span aria-hidden="true" style="font-size:25px;">&times;</span></button>
+							<h4 class="modal-title">Browser Recommendations</h4>
+
+						</div>
+						<div class="modal-body">
+							<h6 class="black">We recommend using a desktop or laptop computer to complete the study activities. For the best
+								experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
+								you can select one of the browser icons below to download the installer.</h6>
+								<div class="flex">
+									<div class="vertical2">
+										<img src="images/google.png" class="img-responsive icon" height="70" width="70" alt="">
+										<p>Chrome</p>
+									</div>
+									<div class="vertical2">
+										<img src="images/edge.png" class="img-responsive icon" height="70" width="70" alt="">
+										<p>Edge</p>
+									</div>
+									<div class="vertical2">
+										<img src="images/safari.png" class="img-responsive icon" height="70" width="70" alt="">
+										<p>Safari</p>
+									</div>
+									<div class="vertical2">
+										<img src="images/firefox.png" class="img-responsive icon" height="70" width="73" alt="">
+										<p>Firefox</p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<center>
+									<button type="button" class="btn browser" data-dismiss="modal">DONE</button>
+								</center>
+
+							</div>
+						</div>
+					</div>
+				</div>
 		<section class="block0">
 			<div class="heros" id="home">
 				<header class="landing d-flex">
@@ -114,7 +155,7 @@
 											</label>
 										</div>
 										<div class="vertical">
-										<i class="fas fa-user-headset"></i>
+											<i class="fas fa-user-headset"></i>
 											<label class="radio-inline">
 												<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
 											</label>
@@ -399,25 +440,311 @@
 										<h6 class="black">Overall, how would you rate your experience with the ECLS?</h6>
 
 										<div class="cc-selector d-flex justify-content-between align-items-center">
-											<input id="red" type="radio" name="effort" value="Not at all easy to use">
-											<label class="card-cc red" for="red"><p>Not at all easy to use</p></label>
+											<input id="red" type="radio" name="effort" value="">
+											<label class="card-cc red" for="red"><p>Not at all positive</p></label>
 
-											<input id="orange" type="radio" name="effort" value="Not very easy to use<">
-											<label class="card-cc orange"for="orange"><p>Not easy to use</p></label>
+											<input id="orange" type="radio" name="effort" value="">
+											<label class="card-cc orange"for="orange"><p>Not positive</p></label>
 
-											<input id="gold" type="radio" name="effort" value="Somewhat easy to use<">
-											<label class="card-cc gold" for="gold"><p>somewhat easy to use</p></label>
+											<input id="gold" type="radio" name="effort" value="">
+											<label class="card-cc gold" for="gold"><p>somewhat positive</p></label>
 
-											<input id="lime" type="radio" name="effort" value="Easy to use">
-											<label class="card-cc lime"for="lime"><p>easy</p></label>
+											<input id="lime" type="radio" name="effort" value="">
+											<label class="card-cc lime"for="lime"><p>Positive</p></label>
 
-											<input id="jellybean" type="radio" name="effort" value="Very easy to use<">
-											<label class="card-cc jellybean" for="jellybean"><p>Very easy to use</p></label>
+											<input id="jellybean" type="radio" name="effort" value="">
+											<label class="card-cc jellybean" for="jellybean"><p>Very positive</p></label>
 
 										</div>
 
 									</fieldset>
 								</div>
+								<div class="carousel-item 2">
+									<fieldset>
+										<legend>Teachers who participate in the ECLS will be provided with a Certificate of Contribution signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank you for your help in furthering the research efforts undertaken by the U.S. Department of Education. How likely will you be to display the Certificate of Contribution in your school?</legend>
+
+										<h6 class="black">Teachers who participate in the ECLS will be provided with a Certificate of Contribution signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank you for your help in furthering the research efforts undertaken by the U.S. Department of Education.</h6>
+
+											<h6 class="black stronger">How likely will you be to display the Certificate of Contribution in your school?</h6>
+											<div class="rangeButtons d-flex justify-content-between align-items-center">
+												<div class="form-check">
+													<input id="hot" type="radio" name="likeliness" value="Not at all likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="hot">
+														<p>Not at all likely</p>
+													</label>
+
+												</div>
+												<div class="form-check">
+
+													<input id="warm" type="radio" name="likeliness" value="Not likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="warm"><p>Not likely</p></label>
+
+												</div>
+
+												<div class="form-check">
+
+													<input id="neutral" type="radio" name="likeliness" value="Somewhat likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="neutral"><p>Somewhat likely</p></label>
+
+												</div>
+
+												<div class="form-check">
+
+													<input id="cool" type="radio" name="likeliness" value="Likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="cool"><p>Likely</p></label>
+
+												</div>
+												<div class="form-check">
+
+													<input id="cooler" type="radio" name="likeliness" value="Very Likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="cooler">		<p>Very Likely</p></label>
+
+
+												</div>
+
+											</div>
+										</fieldset>
+									</div>
+
+
+									<div class="carousel-item">
+										<fieldset>
+
+											<legend>Teachers who participate in the ECLS will be provided with a Certificate of Contribution signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank you for your help in furthering the research efforts undertaken by the U.S. Department of Education. How much of a role did the receipt of this Certificate of Contribution play in your decision to participate in the study?</legend>
+
+											<h6 class="black">Teachers who participate in the ECLS will be provided with a Certificate of Contribution signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank you for your help in furthering the research efforts undertaken by the U.S. Department of Education.</h6>
+											<h6 class="black stronger">How much of a role did the receipt of this Certificate of Contribution play in your decision to participate in the study?</h6>
+											<div class="rangeButtons d-flex justify-content-between align-items-center">
+												<div class="form-check">
+													<input id="hot3" type="radio" name="likeliness3" value="" class="form-check-input">
+													<label class="rainbow form-check-label" for="hot3">
+														<p>Not at all</p>
+													</label>
+
+												</div>
+												<div class="form-check">
+
+													<input id="warm3" type="radio" name="likeliness3" value="" class="form-check-input">
+													<label class="rainbow form-check-label" for="warm3"><p>Not likely</p></label>
+
+												</div>
+
+												<div class="form-check">
+
+													<input id="neutral3" type="radio" name="likeliness3" value="" class="form-check-input">
+													<label class="rainbow form-check-label" for="neutral3"><p>Somewhat likely</p></label>
+
+												</div>
+
+												<div class="form-check">
+
+													<input id="cool3" type="radio" name="likeliness3" value="" class="form-check-input">
+													<label class="rainbow form-check-label" for="cool3"><p>Likely</p></label>
+
+												</div>
+												<div class="form-check">
+
+													<input id="cooler3" type="radio" name="likeliness3" value="" class="form-check-input">
+													<label class="rainbow form-check-label" for="cooler3">	<p>A lot</p></label>
+
+
+												</div>
+
+											</div>
+
+										</fieldset>
+									</div>
+									<div class="carousel-item">
+										<fieldset>
+
+										<legend>As part of the ECLS, teachers were asked to complete a survey about their background, their classrooms, and ECLS students. A check for $20 plus $7 for each child-level survey was included with the request to complete the surveys. How much of a role did the check play in your decision to complete the surveys?</legend>
+
+											<h6 class="black">As part of the ECLS, teachers were asked to complete a survey about their background, their classrooms, and ECLS students. A check for $20 plus $7 for each child-level survey was included with the request to complete the surveys.</h6>
+											<h6 class="black stronger">How much of a role did the check play in your decision to complete the surveys?</h6>
+											<div class="rangeButtons d-flex justify-content-between align-items-center">
+												<div class="form-check">
+													<input id="hot5" type="radio" name="likeliness3" value="Not at all likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="hot5">
+															<p>Not at all</p>
+													</label>
+
+												</div>
+												<div class="form-check">
+
+													<input id="warm5" type="radio" name="likeliness3" value="Not likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="warm5"><p>Not likely</p></label>
+
+												</div>
+
+												<div class="form-check">
+
+													<input id="neutral5" type="radio" name="likeliness3" value="Somewhat likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="neutral5">	<p>Somewhat likely</p></label>
+
+												</div>
+
+												<div class="form-check">
+
+													<input id="cool5" type="radio" name="likeliness3" value="Likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="cool5"><p>Likely</p></label>
+
+												</div>
+												<div class="form-check">
+
+													<input id="cooler5" type="radio" name="likeliness3" value="Very Likely" class="form-check-input">
+													<label class="rainbow form-check-label" for="cooler5">	<p>A lot</p>	</label>
+
+
+												</div>
+
+											</div>
+
+										</fieldset>
+									</div>
+
+									<div class="carousel-item">
+										<fieldset>
+
+											<legend>Please rate your experience with using the MyECLS website. How easy to use was the website?</legend>
+
+											<h6 class="black">Please rate your experience with using the MyECLS website.</h6>
+											<h6 class="black stronger">How easy to use was the website?</h6>
+											<div class="cc-selector d-flex justify-content-between align-items-center">
+												<input id="red2" type="radio" name="effort2" value="Not at all easy to use">
+												<label class="card-cc red" for="red2"><p>Not at all easy to use</p></label>
+
+												<input id="orange2" type="radio" name="effort2" value="Not very easy to use">
+												<label class="card-cc orange"for="orange2"><p>Not easy to use</p></label>
+
+												<input id="gold2" type="radio" name="effort2" value="Somewhat easy to use">
+												<label class="card-cc gold" for="gold2"><p>somewhat easy to use</p></label>
+
+												<input id="lime2" type="radio" name="effort2" value="Easy to use">
+												<label class="card-cc lime"for="lime2"><p>easy to use</p></label>
+
+												<input id="jellybean2" type="radio" name="effort2" value="Very easy to use">
+												<label class="card-cc jellybean" for="jellybean2"><p>Very easy to use</p></label>
+
+											</div>
+
+										</fieldset>
+									</div>
+
+									<div class="carousel-item">
+										<fieldset>
+											<legend>Please rate your experience with using the MyECLS website. How clear was the website in directing you to complete the surveys and any other needed tasks?</legend>
+											<h6 class="black">Please rate your experience with using the MyECLS website.</h6>
+											<h6 class="black stronger">How clear was the website in directing you to complete the surveys and any other needed tasks?</h6>
+											<div class="cc-selector bulbs d-flex justify-content-between align-items-center">
+												<input id="red3" type="radio" name="clarity" value="Unclear">
+												<label class="card-cc redBulb" for="red3"><p>Unclear</p></label>
+
+												<input id="orange3" type="radio" name="clarity" value="Not very clear">
+												<label class="card-cc orangeBulb" for="orange3"><p>not clear</p></label>
+
+												<input id="gold3" type="radio" name="clarity" value="Somewhat clear">
+												<label class="card-cc goldBulb" for="gold3"><p>somewhat clear</p></label>
+
+												<input id="lime3" type="radio" name="clarity" value="A little clear">
+												<label class="card-cc limeBulb" for="lime3"><p>little clear</p></label>
+
+												<input id="jellybean3" type="radio" name="clarity" value="Clear">
+												<label class="card-cc jellybeanBulb" for="jellybean3"><p>Clear</p></label>
+
+											</div>
+
+										</fieldset>
+									</div>
+
+									<div class="carousel-item">
+										<fieldset>
+
+											<legend>Please rate your experience with using the MyECLS website. How informative was the website when you were learning about the study orsearching for additional details about the study?</legend>
+
+											<h6 class="black">Please rate your experience with using the MyECLS website.</h6>
+											<h6 class="black">How informative was the website when you were learning about the study orsearching for additional details about the study?</h6>
+											<div class="cc-selector bulbs d-flex justify-content-between align-items-center">
+												<input id="red4" type="radio" name="informative" value="Not at all informative" class="learn">
+												<label class="card-cc redBulb" for="red4"><p>Not at all informative</p></label>
+
+												<input id="orange4" type="radio" name="informative" value="Not informative" class="learn">
+												<label class="card-cc orangeBulb" for="orange4"><p>Not informative	</p></label>
+
+												<input id="gold4" type="radio" name="informative" value="Somewhat informative" class="learn">
+												<label class="card-cc goldBulb" for="gold4"><p>somewhat informative	</p></label>
+
+												<input id="lime4" type="radio" name="informative" value="Informative" class="learn">
+												<label class="card-cc limeBulb" for="lime4"><p>informative	</p></label>
+
+												<input id="jellybean4" type="radio" name="informative" value="Very Informative" class="learn">
+												<label class="card-cc jellybeanBulb" for="jellybean4"><p>Very Informative</p></label>
+
+											</div>
+											<hr>
+											<div class="form-check oneQuestion">
+
+												<input id="never" type="radio" name="informative" value="I never used the website to learn more about the study." class="form-check-input learn">
+												<label class="rainbow form-check-label" for="never"><p class="oneBlack">I never used the website to learn more about the study.</p></label>
+
+
+											</div>
+
+
+										</fieldset>
+									</div>
+									<div class="carousel-item">
+										<fieldset>
+
+											<legend>Please rate your experience with using the MyECLS website. About how often did you access the MyECLS website during the course of the study?</legend>
+
+											<h6 class="black">Please rate your experience with using the MyECLS website.</h6>
+											<h6 class="black stronger">About how often did you access the MyECLS website during the course of the study?</h6>
+											<div class="rangeButtons d-flex justify-content-between align-items-center">
+												<div class="form-check">
+													<input id="hot4" type="radio" name="frequency" value="Rarely" class="form-check-input">
+													<label class="rainbow form-check-label" for="hot4">
+														<p>Rarely</p>
+													</label>
+
+												</div>
+												<div class="form-check">
+
+													<input id="warm4" type="radio" name="frequency" value="Sometimes" class="form-check-input">
+													<label class="rainbow form-check-label" for="warm4"><span class="font-zero">Sometimes</span></label>
+													<p>Sometimes</p>
+												</div>
+
+												<div class="form-check">
+
+													<input id="neutral4" type="radio" name="frequency" value="Often" class="form-check-input">
+													<label class="rainbow form-check-label" for="neutral4"><span class="font-zero">Often</span></label>
+													<p>Often</p>
+												</div>
+
+												<div class="form-check">
+
+													<input id="cool4" type="radio" name="frequency" value="Very Often" class="form-check-input">
+													<label class="rainbow form-check-label" for="cool4">	<p>Very Often</p></label>
+
+												</div>
+
+
+											</div>
+										</fieldset>
+									</div>
+
+									<div class="carousel-item">
+										<fieldset>
+											<legend>Please comment on any questions in the survey that were especially challenging, unclear, or time-consuming to answer.</legend>
+
+											<h6 class="black">Please comment on any questions in the survey that were especially challenging, unclear, or time-consuming to answer.</h6>
+
+											<textarea name="message" tabindex="0" aria-hidden="false" name="message" required="true" rows="5" data-form-field="Message" placeholder=""></textarea>
+
+
+										</fieldset>
+									</div>
+
 								<div class="carousel-item">
 									<fieldset>
 										<legend>Please provide any feedback you might have on the study, for example on how the ECLS staff worked with your school or how the assessments were conducted. Please also include any feedback you may have heard from teacher or parents. We are also happy to receive any suggestions you may have for improvements or questions you have about the study.</legend>
@@ -440,7 +767,7 @@
 										</div>
 									</fieldset>
 								</div>
-								<div class="carousel-item">
+								<!-- <div class="carousel-item">
 									<fieldset>
 
 										<legend>Teachers that participate in the ECLS will be provided with a certificate signed by the Commissioner of the National Center for Education Statistics (NCES), the research arm of the U.S. Department of Education. This certificate, suitable for framing, will thank you for your help in furthering the research efforts undertaken by the Department of Education. How likely will you be to display the certificate?</legend>
@@ -451,7 +778,7 @@
 											<div class="form-check">
 												<input id="hot" type="radio" name="likeliness" value="Not at all likely" class="form-check-input">
 												<label class="rainbow form-check-label" for="hot">
-														<p>Not at all likely</p>
+													<p>Not at all likely</p>
 												</label>
 
 											</div>
@@ -582,138 +909,8 @@
 									</fieldset>
 								</div>
 
+ -->
 
-								<div class="carousel-item">
-									<fieldset>
-
-										<legend>Please rate your experience with using this website, the MyECLS. How easy to use was the website?</legend>
-
-										<h6 class="black">Please rate your experience with using this website, the MyECLS.</h6>
-										<h6 class="black stronger">How easy to use was the website?</h6>
-										<div class="cc-selector d-flex justify-content-between align-items-center">
-											<input id="red2" type="radio" name="effort2" value="Not at all easy to use">
-											<label class="card-cc red" for="red2"><p>Not at all easy to use</p></label>
-
-											<input id="orange2" type="radio" name="effort2" value="Not very easy to use">
-											<label class="card-cc orange"for="orange2"><p>Not easy to use</p></label>
-
-											<input id="gold2" type="radio" name="effort2" value="Somewhat easy to use">
-											<label class="card-cc gold" for="gold2"><p>somewhat easy to use</p></label>
-
-											<input id="lime2" type="radio" name="effort2" value="Easy to use">
-											<label class="card-cc lime"for="lime2"><p>easy to use</p></label>
-
-											<input id="jellybean2" type="radio" name="effort2" value="Very easy to use">
-											<label class="card-cc jellybean" for="jellybean2"><p>Very easy to use</p></label>
-
-										</div>
-
-									</fieldset>
-								</div>
-
-								<div class="carousel-item">
-									<fieldset>
-										<legend>Please rate your experience with using this website, the MyECLS. How clear was the website in directing you to complete the surveys and any other needed tasks?</legend>
-										<h6 class="black">Please rate your experience with using this website, the MyECLS.</h6>
-										<h6 class="black stronger">How clear was the website in directing you to complete the surveys and any other needed tasks?</h6>
-										<div class="cc-selector bulbs d-flex justify-content-between align-items-center">
-											<input id="red3" type="radio" name="clarity" value="Unclear">
-											<label class="card-cc redBulb" for="red3"><p>Unclear</p></label>
-
-											<input id="orange3" type="radio" name="clarity" value="Not very clear">
-											<label class="card-cc orangeBulb" for="orange3"><p>not clear</p></label>
-
-											<input id="gold3" type="radio" name="clarity" value="Somewhat clear">
-											<label class="card-cc goldBulb" for="gold3"><p>somewhat clear</p></label>
-
-											<input id="lime3" type="radio" name="clarity" value="A little clear">
-											<label class="card-cc limeBulb" for="lime3"><p>little clear</p></label>
-
-											<input id="jellybean3" type="radio" name="clarity" value="Clear">
-											<label class="card-cc jellybeanBulb" for="jellybean3"><p>Clear</p></label>
-
-										</div>
-
-									</fieldset>
-								</div>
-
-								<div class="carousel-item">
-									<fieldset>
-
-										<legend>Please rate your experience with using this website, the MyECLS.How informative was the website when you were learning about the study or searching for additional details about the study?</legend>
-
-										<h6 class="black">Please rate your experience with using this website, the MyECLS.</h6>
-										<h6 class="black">How informative was the website when you were learning about the study or searching for additional details about the study?</h6>
-										<div class="cc-selector bulbs d-flex justify-content-between align-items-center">
-											<input id="red4" type="radio" name="informative" value="Not at all informative" class="learn">
-											<label class="card-cc redBulb" for="red4"><p>Not at all informative	</p></label>
-
-											<input id="orange4" type="radio" name="informative" value="Not informative" class="learn">
-											<label class="card-cc orangeBulb" for="orange4"><p>Not informative	</p></label>
-
-											<input id="gold4" type="radio" name="informative" value="Somewhat informative" class="learn">
-											<label class="card-cc goldBulb" for="gold4"><p>somewhat informative	</p></label>
-
-											<input id="lime4" type="radio" name="informative" value="Informative" class="learn">
-											<label class="card-cc limeBulb" for="lime4"><p>informative	</p></label>
-
-											<input id="jellybean4" type="radio" name="informative" value="Very Informative" class="learn">
-											<label class="card-cc jellybeanBulb" for="jellybean4"><p>Very Informative</p></label>
-
-										</div>
-										<hr>
-										<div class="form-check oneQuestion">
-
-											<input id="never" type="radio" name="informative" value="I never used the website to learn more about the study." class="form-check-input learn">
-											<label class="rainbow form-check-label" for="never"><p class="oneBlack">I never used the website to learn more about the study.</p></label>
-
-
-										</div>
-
-
-									</fieldset>
-								</div>
-
-								<div class="carousel-item">
-									<fieldset>
-
-										<legend>Please rate your experience with using this website, the MyECLS. About how often did you access the MyECLS website during the course of the study?</legend>
-
-										<h6 class="black">Please rate your experience with using this website, the MyECLS.</h6>
-										<h6 class="black stronger">About how often did you access the MyECLS website during the course of the study?</h6>
-										<div class="rangeButtons d-flex justify-content-between align-items-center">
-											<div class="form-check">
-												<input id="hot4" type="radio" name="frequency" value="Rarely" class="form-check-input">
-												<label class="rainbow form-check-label" for="hot4">
-													<p>Rarely</p>
-												</label>
-
-											</div>
-											<div class="form-check">
-
-												<input id="warm4" type="radio" name="frequency" value="Sometimes" class="form-check-input">
-												<label class="rainbow form-check-label" for="warm4"></label>
-												<p>Sometimes</p>
-											</div>
-
-											<div class="form-check">
-
-												<input id="neutral4" type="radio" name="frequency" value="Often" class="form-check-input">
-												<label class="rainbow form-check-label" for="neutral4"></label>
-												<p>Often</p>
-											</div>
-
-											<div class="form-check">
-
-												<input id="cool4" type="radio" name="frequency" value="Very Often" class="form-check-input">
-												<label class="rainbow form-check-label" for="cool4">	<p>Very Often</p></label>
-
-											</div>
-
-
-										</div>
-									</fieldset>
-								</div>
 
 								<div class="carousel-item">
 									<fieldset>
@@ -734,14 +931,14 @@
 
 								</form>
 							</div>
-									<div class="acrossMobile">
+							<div class="acrossMobile">
 
-							<button class="btn back carousel-control-prev" aria-hidden="true" href="#carouselExampleControls" role="button" data-slide="prev">Back
-							</button>
+								<button class="btn back carousel-control-prev" aria-hidden="true" href="#carouselExampleControls" role="button" data-slide="prev">Back
+								</button>
 
-							<button aria-hidden="true" class="carousel-control-next btn next" href="#carouselExampleControls" role="button" data-slide="next">Next
-							</button>
-						</div>
+								<button aria-hidden="true" class="carousel-control-next btn next" href="#carouselExampleControls" role="button" data-slide="next">Next
+								</button>
+							</div>
 
 							<button class="skip" role="button" aria-describedby="Skip question" aria-label="Skip question" data-slide="next" href="#carouselExampleControls">
 								<h6 class="darkBlue small strong">Skip</h6>&nbsp;
@@ -766,10 +963,14 @@
 
 	</section>
 
+</div>
 
 	<section class="block50" id="info">
 
-		<div class="lightGreen d-flex flex-column align-items-center heros">
+
+
+		<div class="lightGreen d-flex flex-column align-items-center heros container-fluid">
+				<div class="greenBottom"></div>
 			<div class="guide-overlay container">
 				<h2 class="landing-sec-H mb1">To learn more about the ECLS, please download the following documents:</h2>
 
@@ -789,9 +990,99 @@
 				</div>
 
 			</div>
+
+			<div class="guide-overlay container">
+				<h2 class="landing-sec-H mb1">To learn more about the ECLS, please download the following documents or return to the MyECLS home screen for materials and links to the U.S. Department of Education's ECLS site:</h2>
+
+				<div class="infoBar d-flex align-items-center">
+					<div class="greenLeftBar"></div>
+					<h6 class="plum"><i class="fas fa-book plum"></i> ECLS Parent Fact Sheet</h6>
+
+					<div class="greenCircle"><i class="fas fa-file-download white"></i></div>
+				</div>
+				<div class="infoBar d-flex align-items-center">
+					<div class="greenLeftBar"></div>
+					<h6 class="plum">	<i class="fas fa-chalkboard-teacher plum"></i> Parent Letter</h6>
+
+					<div class="greenCircle">
+						<i class="fas fa-file-download white"></i>
+					</div>
+
+				</div>
+
+
+				<h2 class="landing-sec-H mb1">Findings from previous U.S. Department of Education studies</h2>
+				<h3 class="landing-sec-H">How often do teachers assign homework that requires access to technology?</h3>
+				<p class="charcoal">The U.S. Department of Education asked third-through twelfth-grade public school teachers about the use of technology during the 2018-19 school year—this is what they found.</p>
+
+				<div class="block-list">
+
+					<div class="greenBlocks">
+						<div class="across">
+								<img class="img-fluid top-svg" src="images/ecls_tech.svg" alt="Computer mouse graphic">
+							<div class="vertical-blocks">
+								<p class="white totalSurveyCount">28<span>%</span></p>
+								<p class="white small max1">of teachers reported that they <span class="yellow">sometimes</span> assign technology-based homework.</p>
+								<p class="white totalSurveyCount">19<span>%</span></p>
+								<p class="white small max1">of teachers reported that they <span class="yellow">often</span> assign technology-based homework.</p>
+							</div>
+
+
+						</div>
+
+					</div>
+
+					<div class="greenBlocks">
+						<div class="across">
+								<img class="img-fluid top-svg" src="images/ecls_internet.svg" alt="Wifi signal graphic">
+							<div class="vertical-blocks">
+								<p class="white totalSurveyCount">29<span>%</span></p>
+								<p class="white small max2">of teachers thought it <span class="yellow">very likely</span> that their students’ home computers had <span class="yellow">reliable Internet access.</span></p>
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+
+					</div>
+
+						<h3 class="landing-sec-H mt-5">Do children in public schools have access to computers and internet through the school?</h3>
+						<div class="greenBlocks bottom">
+							<div class="across">
+
+								<div class="vertical-blocks">
+									<p class="white totalSurveyCount">26<span>%</span></p>
+									<p class="white small max3"><span class="yellow">of teachers</span> reported that their students <span class="yellow">have district-or school-provided computers</span> to take home on a long-term basis during the school year.</p>
+
+								</div>
+								<img class="img-fluid top-svg" src="images/ecls_computers.svg" alt="Laptop graphic">
+
+
+							</div>
+
+						</div>
+
+					<p class="source">SOURCE. Gray, L., and Lewis, L. (2020). Teachers’ Use of Technology for School and Homework Assignments: 2018–19 (NCES 2020-048). U.S. Department of Education. Washington, DC: National Center for Education Statistics. Retrieved July 31, 2020, from <a href="https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2020048" class="darkBlue" target="_blank">https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2020048.</a></p>
+
+
+
+				<p class="purple text-center greenUnderline">Privacy & Authorization</p>
+				<p class="dark">The National Center for Education Statistics (NCES) is authorized to conduct the Early Childhood Longitudinal Study (ECLS) by the Education Sciences Reform Act of 2002 (ESRA 2002, 20 U.S.C. §9543). The data are being collected for NCES by Westat, a U.S.-based research organization. All of the information you provide may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151). Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff.</p>
+				<p class="dark">Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff. According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. The time required to complete this information collection is estimated to average approximately 17 to 27 minutes per teacher background survey and feedback questions and 15 minutes per child-level survey, including the time to review instructions and complete and review the information collection. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
+				<p class="dark">OMB No. 1850-0750, Approval Expires XX/XX/XXXX</p>
+				<p class="dark">v.X</p>
+
+			</div>
 		</div>
 
 	</section>
+
+
+
+
 
 	<div class="menu-buttons-floating">
 		<ul class="menu-buttons-floating-list">
@@ -812,7 +1103,7 @@
 		</ul>
 	</div>
 
-	<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="show privacy and authorization" aria-hidden="true">
+	<!-- <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="show privacy and authorization" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -834,11 +1125,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-</div>
 
-<div class="greenBottom"></div>
+
 
 <div class="back-to-top">
 	<i class="far fa-angle-up"></i>
@@ -852,8 +1142,8 @@
 		</div>
 
 		<div class="d-flex">
-			<a role="button" data-toggle="modal" data-target="#privacyModal" tabindex="0" aria-describedby="Privacy and Authorization" aria-label="Show Privacy and Authorization" class="white privacy"><p class="white">Privacy & Authorization</p></a>
-			<div class="flip white"></div>
+			<!-- <a role="button" data-toggle="modal" data-target="#privacyModal" tabindex="0" aria-describedby="Privacy and Authorization" aria-label="Show Privacy and Authorization" class="white privacy"><p class="white">Privacy & Authorization</p></a>
+			<div class="flip white"></div> -->
 			<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
 			<i class="fas fa-external-link-square white"></i>
 		</div>

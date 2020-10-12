@@ -884,6 +884,8 @@ $("#two .nav-link").click(function () {
 
 });
 
+	$('li[data-target="#overview"]').addClass('activated')
+
 //animations for landing page
 $(window).on('scroll', function() {
 
@@ -1095,7 +1097,7 @@ $(window).on('scroll', function() {
 	}
 
 
-	if ($('.block50').hasClass('active') || $('.block111').hasClass('active') || $('.block333').hasClass('active')) {
+	if ($('.block50').hasClass('active') || $('.block111').hasClass('active') || $('.block333').hasClass('active') || $('.block888').hasClass('active')) {
 		$('li[data-target="#info"]').addClass('activated')
 		$('li[data-target="#info"]').addClass('activated')
 	}
@@ -1700,6 +1702,7 @@ $('.next, .skip').click(function() {
 		$('#feedbackModal').modal('hide')
 		$('.feedbackBar').prop( "disabled", true )
 		$('li[data-target="#feedback2"]').addClass('greenConsent')
+		$('li[data-target="#feedback"]').addClass('greenConsent')
 	}
 })
 $('.next, .skip').on("keyup", function (e) {
@@ -1875,7 +1878,8 @@ if (version === false) {
 
 } else if (version >= 12) {
 
-} else {
+}
+else {
 	$('#myModal2').modal('show')
 
 }
