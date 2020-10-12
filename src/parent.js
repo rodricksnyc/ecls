@@ -628,7 +628,7 @@ $('li[data-target="#overview"]').addClass('activated')
 
 	})
 
-	if ($(window).height() > 800){
+	if ($(window).height() > 900){
 
 	$(window).on('scroll', function() {
 
@@ -715,7 +715,7 @@ $('li[data-target="#overview"]').addClass('activated')
 }
 
 
-	if ($(window).height() < 800){
+	if ($(window).height() < 900){
 
 
 	$(window).scroll(function () {
