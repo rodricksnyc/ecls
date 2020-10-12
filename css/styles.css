@@ -1466,7 +1466,8 @@ p.dark {
   h3.landing-sec-H {
     font-size: 19px;
     border-bottom:none;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: 1.4em !important;
   }
 
   .greenBlocks img {
