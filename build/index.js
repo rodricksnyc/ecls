@@ -1210,6 +1210,8 @@ $(document).ready(function () {
 
 		if ($('body').hasClass('showContact')) {
 
+			$('.contactUsOverlay').hide();
+
 			$('#theform input').each(function () {
 				$(this).attr('tabindex', '-1');
 			});
