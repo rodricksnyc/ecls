@@ -2119,6 +2119,28 @@ footer a.white:hover {
   color: #00843D;
   font-weight: 700;
 }
+.menu-buttons-floating-list li[data-target="#feedback"]:after {
+    content: "FEEDBACK";
+    font-size: 12px;
+    /* margin-top: 7em; */
+    position: absolute;
+    bottom: -28%;
+    color: black;
+    width: 100%;
+    margin-bottom: 0em;
+    left: 0;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    color: #00843D;
+    font-weight: 700;
+    min-width: 6em;
+    left: -4px;
+}
+
+.menu-buttons-floating-list li.greenConsent[data-target="#feedback"]:after {
+    bottom: -34%;
+    color: #00843D;
+}
 
 
 
