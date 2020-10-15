@@ -1282,6 +1282,7 @@ $(document).ready(function () {
 	$('#sendMessage').click(function (e) {
 
 		if (!$('#formControl1').val() == '' && !$('#formControl2').val() == '') {
+			e.preventDefault();
 
 			$('#theform input').each(function () {
 				$(this).attr('tabindex', '-1');
