@@ -9,7 +9,7 @@ $(document).ready(function () {
 		"status": "<i class='fal fa-spinner'></i>In Progress",
 		"percentage": 50,
 		"date": "3/15/20",
-		"launch": "<i class='fas fa-file-export darkBlue'></i>"
+		"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 	},
 
 	{
@@ -19,7 +19,7 @@ $(document).ready(function () {
 		"status": "Not Started",
 		"percentage": 0,
 		"date": "--",
-		"launch": "<i class='fas fa-file-export darkBlue'></i>"
+		"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 	},
 
 	{
@@ -39,7 +39,7 @@ $(document).ready(function () {
 		"status": "<i class='fal fa-spinner'></i>In Progress",
 		"percentage": 75,
 		"date": "3/15/20",
-		"launch": "<i class='fas fa-file-export darkBlue'></i>"
+		"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 	}
 
 ]
@@ -61,7 +61,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -71,7 +71,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -91,7 +91,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -101,7 +101,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -110,7 +110,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -120,7 +120,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -129,7 +129,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '7999994-S01',
@@ -138,7 +138,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -148,7 +148,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -158,7 +158,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -178,7 +178,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -188,7 +188,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -197,7 +197,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -207,7 +207,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -216,7 +216,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '7999994-S01',
@@ -225,7 +225,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -235,7 +235,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -245,7 +245,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -265,7 +265,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -275,7 +275,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -284,7 +284,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -294,7 +294,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -303,7 +303,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '7999994-S01',
@@ -312,7 +312,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -322,7 +322,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -332,7 +332,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -352,7 +352,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -362,7 +362,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -371,7 +371,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -381,7 +381,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -390,7 +390,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '7999994-S01',
@@ -399,7 +399,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -408,7 +408,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -418,7 +418,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -438,7 +438,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -448,7 +448,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -457,7 +457,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 
 {
@@ -467,7 +467,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 75,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '9999992-S01',
@@ -476,7 +476,7 @@ var child = {"children": [{
 	"status": "<i class='fal fa-spinner'></i>In Progress",
 	"percentage": 50,
 	"date": "3/15/20",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"childId": '7999994-S01',
@@ -485,7 +485,7 @@ var child = {"children": [{
 	"status": "Not Started",
 	"percentage": 0,
 	"date": "--",
-	"launch": "<i class='fas fa-file-export darkBlue'></i>"
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 }
 
 
@@ -1436,6 +1436,30 @@ $(".form-check").on("keyup", function (e) {
 	}
 
 })
+
+//  // $('.cc-selector input').on("keyup", function (e) {
+//  //
+//  // 	var code = (e.keyCode ? e.keyCode : e.which);
+//  // 	if (code == 9) {
+//  //
+//
+// 		$('.cc-selector input').css({
+// 			'display' : 'block !important',
+// 			'opacity' : '1 !important',
+// 			'-webkit-appearance' : 'none !important',
+// 			'appearance' : 'none !important',
+// 			'height' : 'auto !important',
+// 			'width' : 'auto !important'.
+// 			'-moz-appearance' : 'none !important'
+//
+// 		})
+//
+//
+// // 	}
+// // })
+//
+
+
 
 //contact form
 

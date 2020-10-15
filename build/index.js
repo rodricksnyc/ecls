@@ -11,7 +11,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"teacherId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -19,7 +19,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"teacherId": '9676994-S01',
 			"name": 'Mae Whitman',
@@ -35,7 +35,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}]
 
 	};
@@ -54,7 +54,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -62,7 +62,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'Mae Whitman',
@@ -78,7 +78,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -86,7 +86,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -94,7 +94,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'John Smith',
@@ -102,7 +102,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -110,7 +110,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -118,7 +118,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -126,7 +126,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -134,7 +134,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'Mae Whitman',
@@ -150,7 +150,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -158,7 +158,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -166,7 +166,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'John Smith',
@@ -174,7 +174,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -182,7 +182,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -190,7 +190,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -198,7 +198,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -206,7 +206,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'Mae Whitman',
@@ -222,7 +222,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -230,7 +230,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -238,7 +238,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'John Smith',
@@ -246,7 +246,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -254,7 +254,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -262,7 +262,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -270,7 +270,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -278,7 +278,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'Mae Whitman',
@@ -294,7 +294,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -302,7 +302,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -310,7 +310,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'John Smith',
@@ -318,7 +318,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -326,7 +326,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -334,7 +334,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -342,7 +342,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -350,7 +350,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'Mae Whitman',
@@ -366,7 +366,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -374,7 +374,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -382,7 +382,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9676994-S01',
 			"name": 'John Smith',
@@ -390,7 +390,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 75,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '9999992-S01',
 			"name": 'Zach Tyler',
@@ -398,7 +398,7 @@ $(document).ready(function () {
 			"status": "<i class='fal fa-spinner'></i>In Progress",
 			"percentage": 50,
 			"date": "3/15/20",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}, {
 			"childId": '7999994-S01',
 			"name": 'Jack De Sena',
@@ -406,7 +406,7 @@ $(document).ready(function () {
 			"status": "Not Started",
 			"percentage": 0,
 			"date": "--",
-			"launch": "<i class='fas fa-file-export darkBlue'></i>"
+			"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 		}]
 
 	};
@@ -1178,6 +1178,29 @@ $(document).ready(function () {
 			});
 		}
 	});
+
+	//  // $('.cc-selector input').on("keyup", function (e) {
+	//  //
+	//  // 	var code = (e.keyCode ? e.keyCode : e.which);
+	//  // 	if (code == 9) {
+	//  //
+	//
+	// 		$('.cc-selector input').css({
+	// 			'display' : 'block !important',
+	// 			'opacity' : '1 !important',
+	// 			'-webkit-appearance' : 'none !important',
+	// 			'appearance' : 'none !important',
+	// 			'height' : 'auto !important',
+	// 			'width' : 'auto !important'.
+	// 			'-moz-appearance' : 'none !important'
+	//
+	// 		})
+	//
+	//
+	// // 	}
+	// // })
+	//
+
 
 	//contact form
 

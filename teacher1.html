@@ -218,10 +218,12 @@
 							<h2 class="landing-sec-H">ECLS Overview</h2>
 
 							<div class="toggleDiv">
-								<p class="charcoal">Your school has agreed to participate in the <span class="strong">Early Childhood Longitudinal Study (ECLS)</span>, a nation-wide study of elementary-aged children, their schools, teachers, and parents. As part of the study, we are asking teachers at your school to complete web-based surveys. You have been asked to complete surveys because one or more of the children you serve are participants in this study.  The teacher survey contains questions abour you and your classroom practices. There are also brief surveys for each of the sampled children that you teach. These surveys contain questions about the children’s skills and abilitites. The table below displays the list of participating children in your classroom and the surveys we are asking you to complete.  First, please confirm that you teach each of these children. If not, please let {{ }} know.”</p>
-								<p class="charcoal">As a thank-you for completing these surveys, you have received $20 for the teacher survey and $7 for each of the child surveys.</p>
+								<p class="charcoal">Your school has agreed to participate in the <span class="strong">Early Childhood Longitudinal Study (ECLS)</span>, a nationwide study of elementary-aged children, their schools, their teachers, and their parents. As part of the study, we are asking teachers at your school to complete web-based surveys. You have been asked to complete surveys because one or more of the students you teach are participants in this study. The teacher survey contains questions about you and your classroom practices. There are also brief surveys for each of the ECLS children that you teach. These surveys contain questions about the children’s skills and abilities.</p>
+								<p class="charcoal">The table below displays the list of participating children and the surveys we are asking you to complete. First, please confirm that you teach each of these children. If you do not, please let <span class="darkBlue strong" id="coordinator">[SCHOOL COORDINATOR]</span> know.</p>
+								<p class="charcoal">As a thank-you for completing these surveys, you have received $20 for the teacher background survey and $7 for each of the surveys about the individual children you teach.</p>
 								<p class="charcoal">The ECLS collects information from teachers of children who are in the study to investigate the relationship between children’s academic progress and various school, classroom, teacher, and home characteristics.</p>
-								<p class="charcoal">Taking part in the study is voluntary. You may stop at any time or choose not to answer a question you do not want to answer. However, only you can provide this information. Although we realize you are very busy, we urge you to complete these surveys as completely and accurately as possible.</p>
+								<p class="charcoal">Taking part in the study is voluntary. You may stop at any time or choose not to answer any question you do not want to answer. However, only you can provide this information. Although we realize you are very busy, we urge you to complete these surveys as completely and accurately as possible.</p>
+
 							</div>
 
 							<div class="blueLine">
@@ -238,14 +240,43 @@
 
 				</section>
 
+				<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="Show Technical Recommendations"  aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title">Technical and Security Recommendations </h4>
+											<button role="button" class="close" data-dismiss="modal" aria-label="Close Technical Recommendations" style="outline: none;">
+												<span aria-hidden="true">×</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<p class="charcoal"><b>We recommend using a desktop or laptop computer to complete the study activities. For the best experience, use Chrome, Edge, Safari, or Firefox.</b></p>
+											<p class="charcoal">When you have finished or if you need to stop before finishing, please LOG OUT of the survey system by selecting "Logout" and CLOSE ALL browser windows or screens to keep your responses secure. For example, if you used Chrome or Safari to open the website, make sure no Chrome or Safari windows or screens are open after you end the session. Not closing all browsers may allow someone else to see your responses.</p>
+										</div>
+										<div class="modal-footer">
+
+											<button type="button" class="btn  greenButton" data-dismiss="modal">Done</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
 
 
 				<section class="block5">
 					<div id="survey" class="container-fluid heros">
 
 						<div class="guide-overlay container">
-							<h2 class="landing-sec-H">All Surveys</h2>
-							<p class="charcoal">To begin each survey, select the Launch Survey icon <span class="rel">"<i class="fas fa-file-export darkBlue"></i>"</span> in the table below. Some of these questions, or the timeframe of the school year referred to, may not directly apply to your classroom or students, but just answer the best you can. Some questions in the survey have additional information and definitions that can be used if needed. To view the additional information for those questions, select the blue <span class="rel">"<img src="images/icon.svg" class="img-responsive" alt="">” </span> icon.</p>
+							<!-- <h2 class="landing-sec-H">All Surveys</h2> -->
+							<div class="d-flex justify-content-between flex-wrap">
+									<h2 class="landing-sec-H p-0 m-0">All Surveys</h2>
+									<a role="button" data-toggle="modal" data-target="#privacyModal" tabindex="0" aria-describedby="Technical and Security Recommendations" aria-label="Show Technical and Security Recommendations" class="privacy">
+										<p class="charcoal"><span class="darkBlue small">Technical and Security Recommendations <i class="far fa-window-restore"></i></span>
+										</p>
+									</a>
+								</div>
+							<p class="charcoal">To begin each survey, select the Launch Survey icon <span class="rel">"<i class="fas fa-arrow-right darkBlue"></i>"</span> in the table below. Some of these questions, or the timeframe of the school year referred to, may not directly apply to your classroom or students, but just answer the best you can. Some questions in the survey have additional information and definitions that can be used if needed. To view the additional information for those questions, select the blue <span class="rel">"<img src="images/icon.svg" class="img-responsive" alt="">” </span> icon.</p>
 
 
 
@@ -486,7 +517,7 @@
 
 							<div class="vertical-blocks">
 								<p class="white totalSurveyCount">26<span>%</span></p>
-								<p class="white small max3"><span class="yellow">of teachers</span> reported that their students <span class="yellow">have district-or school-provided computers</span> to take home on a long-term basis during the school year.</p>
+								<p class="white small max3"><span class="yellow">of teachers</span> reported that their students <span class="yellow">have district-&nbsp;or school-provided computers</span> to take home on a long-term basis during the school year.</p>
 
 							</div>
 							<img class="img-fluid top-svg" src="images/ecls_computers.svg" alt="Laptop graphic">
@@ -496,13 +527,13 @@
 
 					</div>
 
-				<p class="source">SOURCE. Gray, L., and Lewis, L. (2020). Teachers’ Use of Technology for School and Homework Assignments: 2018–19 (NCES 2020-048). U.S. Department of Education. Washington, DC: National Center for Education Statistics. Retrieved July 31, 2020, from <a href="https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2020048" class="darkBlue" target="_blank">https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2020048.</a></p>
+				<p class="source">SOURCE. Gray, L., and Lewis, L. (2020). <em>Teachers’ Use of Technology for School and Homework Assignments: 2018–19</em> (NCES 2020-048). U.S. Department of Education. Washington, DC: National Center for Education Statistics. Retrieved July 31, 2020, from <a href="https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2020048" class="darkBlue" target="_blank">https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2020048.</a></p>
 
 
 
 			<p class="purple text-center greenUnderline">Privacy & Authorization</p>
 			<p class="dark">The National Center for Education Statistics (NCES) is authorized to conduct the Early Childhood Longitudinal Study (ECLS) by the Education Sciences Reform Act of 2002 (ESRA 2002, 20 U.S.C. §9543). The data are being collected for NCES by Westat, a U.S.-based research organization. All of the information you provide may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151). Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff.</p>
-			<p class="dark">Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff. According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. The time required to complete this information collection is estimated to average approximately <span class="strong">17 to 27 minutes</span> per teacher background survey and feedback questions and <span class="strong">15 minutes</span> per child-level survey, including the time to review instructions and complete and review the information collection. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
+			<p class="dark">According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. The time required to complete this information collection is estimated to average approximately <span class="strong">17 to 27 minutes</span> per teacher background survey and feedback questions and <span class="strong">15 minutes</span> per child-level survey, including the time to review instructions and complete and review the information collection. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
 			<p class="dark">OMB No. 1850-0750, Approval Expires XX/XX/XXXX</p>
 			<p class="dark">v.X</p>
 

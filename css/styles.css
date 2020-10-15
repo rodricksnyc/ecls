@@ -157,6 +157,32 @@ body {
   top:0 !important
 }
 
+textarea::-webkit-input-placeholder {
+  color: black;
+font-weight:300 !important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: black;
+  font-weight:300 !important;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: black;
+font-weight:300 !important;
+}
+
+textarea:-ms-input-placeholder {
+  color: black;
+font-weight:300 !important;
+}
+
+textarea::placeholder {
+  color: black;
+font-weight:300 !important;
+}
+
+
 
 .white {
   color:white;
@@ -2142,7 +2168,18 @@ footer a.white:hover {
     color: #00843D;
 }
 
+#privacyModal .modal-body {
+    padding: 2em !important;
+}
 
+a:hover {
+  text-decoration: none;
+  cursor: grab;
+}
+
+#survey {
+  margin-top: 4em
+}
 
 
 .menu-buttons-floating-list li[data-target="#info"]:after {
@@ -3983,6 +4020,8 @@ html, body{
   font-size:.9em !important
 }
 
+
+
 #feedbackModal .modal-header {
   background: #e6eaec;
   padding-top:1em;
@@ -4566,13 +4605,32 @@ h6.green{
 
 
 .cc-selector input{
-  display: none !important;
+
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+
+  /* display: none !important;
   opacity:0 !important;
   -webkit-appearance: none !important;
   appearance: none !important;
   height: 0px !important;
-  width: 0px !important;
+  width: 0px !important; */
 }
+
+/*
+.cc-selector input{
+
+    display: block !important;
+    opacity:1 !important;
+    -webkit-appearance:auto !important;
+    appearance: auto !important;
+    height: auto !important;
+    width: auto !important;
+} */
+
+
+
 
 .red{
   background-image: url(../images/red.svg);
