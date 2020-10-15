@@ -1437,29 +1437,8 @@ $(".form-check").on("keyup", function (e) {
 
 })
 
-//  // $('.cc-selector input').on("keyup", function (e) {
-//  //
-//  // 	var code = (e.keyCode ? e.keyCode : e.which);
-//  // 	if (code == 9) {
-//  //
-//
-// 		$('.cc-selector input').css({
-// 			'display' : 'block !important',
-// 			'opacity' : '1 !important',
-// 			'-webkit-appearance' : 'none !important',
-// 			'appearance' : 'none !important',
-// 			'height' : 'auto !important',
-// 			'width' : 'auto !important'.
-// 			'-moz-appearance' : 'none !important'
-//
-// 		})
-//
-//
-// // 	}
-// // })
-//
 
-
+$('.emailInfo a').attr('tabindex', '-1')
 
 //contact form
 
@@ -1473,6 +1452,7 @@ var open = function() {
 	$('.radio-inline input').each(function () {
 		$(this).attr('tabindex', '0');
 	});
+	$('.emailInfo a').attr('tabindex', '0')
 
 	$('.form-control').attr('tabindex', '0');
 
@@ -1510,6 +1490,7 @@ $('.contactUsOverlay').on('click', function(e) {
 		$('.radio-inline input').each(function () {
 			$(this).attr('tabindex', '-1');
 		});
+		$('.emailInfo a').attr('tabindex', '-1')
 
 		$('.form-control').attr('tabindex', '-1');
 
@@ -1536,6 +1517,7 @@ var close = function() {
 	$('.radio-inline input').each(function () {
 		$(this).attr('tabindex', '-1');
 	});
+	$('.emailInfo a').attr('tabindex', '-1')
 
 	$('.form-control').attr('tabindex', '-1');
 
