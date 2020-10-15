@@ -6366,6 +6366,20 @@ body{
   }
 }
 
+
+@media (max-width:1025px){
+  .cc-selector input{
+
+    display: none !important;
+    opacity:0 !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    height: 0px !important;
+    width: 0px !important;
+  }
+}
+
+
 @media (min-width:992px) and (max-width:1024px)  {
   .margin4 {
     margin-left: 3em;
@@ -6530,13 +6544,6 @@ body{
     width: 60px;
   }
 
-  /* .child i {
-  font-size: 50px;
-}
-
-.teacher i {
-font-size: 50px;
-} */
 
 
 .newBlocks .col-xs-6 {
