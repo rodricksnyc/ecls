@@ -1281,7 +1281,7 @@ $(document).ready(function () {
 
 	$('#sendMessage').click(function (e) {
 
-		if (!$('#formControl1').val() == '' && !$('#formControl2').val() == '' && !$('#general-inquiry').val() == '' && !$('#formControl4').val() == '') {
+		if (!$('#formControl1').val() == '' && !$('#formControl2').val() == '') {
 
 			$('#theform input').each(function () {
 				$(this).attr('tabindex', '-1');
