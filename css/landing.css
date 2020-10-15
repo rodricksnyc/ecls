@@ -4874,13 +4874,14 @@ h6.green{
 
 
 .cc-selector input{
-  display: none !important;
-  opacity:0 !important;
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  height: 0px !important;
-  width: 0px !important;
+
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+
 }
+
+
 
 .red{
   background-image: url(../images/red.svg);
@@ -6248,7 +6249,17 @@ button.close {
 
 }
 
-@media (max-width:1024px) {
+@media (max-width:1025px) {
+
+
+  .cc-selector input{
+    display: none !important;
+    opacity:0 !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    height: 0px !important;
+    width: 0px !important;
+  }
 
   .greenMiddle .mb-5 {
     margin-bottom: 1rem!important;

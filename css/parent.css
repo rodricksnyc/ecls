@@ -4416,21 +4416,15 @@ h6.green{
 }
 
 
-/* .cc-selector input{
-margin:0;padding:0;
--webkit-appearance:none;
--moz-appearance:none;
-appearance:none;
-} */
-
 .cc-selector input{
-  display: none !important;
-  opacity:0 !important;
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  height: 0px !important;
-  width: 0px !important;
+
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+
 }
+
+
 
 .red{
   background-image: url(../images/red.svg);
@@ -5646,8 +5640,20 @@ transform: scale(0.8);
 
     margin: 1em;
   }
+}
 
-  @media (max-width:1024px) {
+  @media (max-width:1025px) {
+
+
+
+    .cc-selector input{
+      display: none !important;
+      opacity:0 !important;
+      -webkit-appearance: none !important;
+      appearance: none !important;
+      height: 0px !important;
+      width: 0px !important;
+    }
     .consent, .no-consent, .your-signature {
       border-top: none;
       border-right: none;
