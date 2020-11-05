@@ -1294,7 +1294,7 @@ $(document).ready(function () {
 		}
 	};
 
-	$('.blueLine').keypress(slideIt).click(slideIt);
+	$('.blueLine, .closeDiv').keypress(slideIt).click(slideIt);
 
 	//green background div
 

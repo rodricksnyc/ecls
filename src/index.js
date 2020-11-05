@@ -1563,7 +1563,7 @@ var slideIt = function() {
 
 }
 
-$('.blueLine').keypress(
+$('.blueLine, .closeDiv').keypress(
 	slideIt
 
 ).click(
