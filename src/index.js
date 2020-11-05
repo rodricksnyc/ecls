@@ -785,20 +785,20 @@ $('.sortId').on('click', function() {
 	$(".renderDistricts").html(numericallyOrderedDivs);
 });
 
-
-var str = $('.leadid').html()
-var split = str.split(' ');
-
-console.log(split)
-
-split.forEach(function(item){
-  // If the split is not NaN
-  if(!isNaN(item)){
-    // Heres your number
-    console.log(item);
-  }
-});
-
+//
+// var str = $('.leadid').html()
+// var split = str.split(' ');
+//
+// console.log(split)
+//
+// split.forEach(function(item){
+//   // If the split is not NaN
+//   if(!isNaN(item)){
+//     // Heres your number
+//     console.log(item);
+//   }
+// });
+//
 
 
 
@@ -2382,50 +2382,6 @@ if (!$( ".slideOutLeft" ).hasClass('open')) {
 });
 
 
-// $('.projects').on('keyup', function(e) {
-//
-// 	var code = (e.keyCode ? e.keyCode : e.which);
-// 	if (code == 13 ) {
-//
-// 		$( ".slideOutLeft" ).animate({
-// 			left: "0",
-// 		}, 800, function() {
-//
-// 		});
-//
-// 		$('#slideOutRight').css('z-index', '1')
-// 		$('.projects').attr('tabindex', '1')
-//
-// 		$('.close-project').attr('tabindex', '1')
-// 		$('.close-project').attr('aria-hidden', 'false')
-//
-//
-// 	}
-//
-// })
-
-//
-// $('.close-project').on('keyup', function(e) {
-// 	e.stopPropagation()
-//
-// 	var code = (e.keyCode ? e.keyCode : e.which);
-// 	if (code == 13 ) {
-//
-// 		$( ".slideOutLeft" ).animate({
-// 			left: "-400",
-// 		}, 800, function() {
-//
-// 		});
-//
-// 		$('#slideOutRight').css('z-index', '10')
-// 		$('.projects').attr('tabindex', '0')
-//
-// 		$('.close-project').attr('tabindex', '-1')
-// 		$('.close-project').attr('aria-hidden', 'true')
-//
-// 	}
-//
-// })
 
 $('.districts').on('mouseenter', function() {
 
