@@ -1282,13 +1282,14 @@ $(document).ready(function () {
 
 		if ($(".toggleDiv").is(':visible')) {
 
-			$('.blueLine .fas').addClass('plusSign');
+			$('i').addClass('plusSign');
+
 			$('.blueLine span').html('expand');
 
 			$(".toggleDiv").slideUp();
 		} else if ($(".toggleDiv").is(':hidden')) {
 			$('.blueLine span').html('collapse');
-			$('.blueLine .fas').removeClass('plusSign');
+			$('i').removeClass('plusSign');
 
 			$(".toggleDiv").slideDown();
 		}

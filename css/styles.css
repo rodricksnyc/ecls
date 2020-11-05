@@ -500,6 +500,27 @@ overflow-x: hidden;
   border-bottom:1px solid #00539f
 }
 
+.grayBox.second .blueLine {
+    width: 100%;
+    position: relative;
+    background: none;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 1em 0em;
+    font-size: 18px;
+}
+
+.grayBox.second .blueLine .darkBlue{
+  font-size:18px !important;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.grayBox.second .blueLine i{
+  color:#00539f
+}
+
 
 .grayBox.third {
     display: none;
@@ -760,7 +781,7 @@ p.dark {
   font-size: 22px;
 }
 
-.cube:hover .blueCube {
+ .col-lg-3 .cube:hover .blueCube {
   -webkit-transition: transform .5s ease-in-out;
   -moz-transition:transform .55s ease-in-out;
   -ms-transition:transform .5s ease-in-out;
@@ -768,7 +789,7 @@ p.dark {
 
 }
 
-.cube:hover .greenCube {
+.col-lg-3 .cube:hover .greenCube {
   -webkit-transition: transform .5s ease-in-out;
   -moz-transition:transform .55s ease-in-out;
   -ms-transition:transform .5s ease-in-out;
@@ -1637,11 +1658,11 @@ h1.white.sentMessage {
 
 }
 
-.blueLine span {
+.blueLine p {
   font-family: 'Public Sans', sans-serif;
   font-size:14px !important;
   font-weight: 500 !important;
-  margin-top:-5px !important;
+    font-weight: 400;
 }
 
 #Guide{
@@ -3383,6 +3404,19 @@ overflow: auto !important
 {
   font-family: "Font Awesome 5 Pro";
   content: "\f055";
+}
+
+
+ .far.fa-chevron-up.plusSign:before
+{
+  font-family: "Font Awesome 5 Pro";
+  content: "\f107";
+}
+
+ .fas.fa-chevron-circle-up.plusSign:before
+{
+  font-family: "Font Awesome 5 Pro";
+  content: "\f13a";
 }
 
 .secondBlock {
