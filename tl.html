@@ -2,527 +2,915 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/iwp5gli.css">
-	<link rel="stylesheet" href="https://use.typekit.net/koi5ueb.css">
-	<title>ECLS</title>
-	<link rel="shortcut icon" href="images/square.png">
-	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/iwp5gli.css">
+<link rel="stylesheet" href="https://use.typekit.net/koi5ueb.css">
+<title>ECLS</title>
+<link rel="shortcut icon" href="images/square.png">
+<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 
 
-	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
 
-	<div class="container-fluid overflow-hidden position-relative">
-		<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close Browser Recommendations Modal">
-							<span aria-hidden="true" style="font-size:25px;">&times;</span></button>
-							<h4 class="modal-title">Browser Recommendations</h4>
+<div class="container-fluid overflow-hidden position-relative">
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close Browser Recommendations Modal">
+		<span aria-hidden="true" style="font-size:25px;">&times;</span></button>
+		<h4 class="modal-title">Browser Recommendations</h4>
 
-						</div>
-						<div class="modal-body">
-							<h6 class="black">We recommend using a desktop or laptop computer to complete the study activities. For the best
-								experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
-								you can select one of the browser icons below to download the installer.</h6>
-								<div class="flex">
-									<div class="vertical2">
-										<img src="images/google.png" class="img-responsive icon" height="70" width="70" alt="">
-										<p>Chrome</p>
-									</div>
-									<div class="vertical2">
-										<img src="images/edge.png" class="img-responsive icon" height="70" width="70" alt="">
-										<p>Edge</p>
-									</div>
-									<div class="vertical2">
-										<img src="images/safari.png" class="img-responsive icon" height="70" width="70" alt="">
-										<p>Safari</p>
-									</div>
-									<div class="vertical2">
-										<img src="images/firefox.png" class="img-responsive icon" height="70" width="73" alt="">
-										<p>Firefox</p>
-									</div>
-								</div>
-							</div>
-							<div class="modal-footer">
-								<center>
-									<button type="button" class="btn browser" data-dismiss="modal">DONE</button>
-								</center>
-
-							</div>
-						</div>
-					</div>
+	</div>
+	<div class="modal-body">
+		<h6 class="black">We recommend using a desktop or laptop computer to complete the study activities. For the best
+			experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
+			you can select one of the browser icons below to download the installer.</h6>
+			<div class="flex">
+				<div class="vertical2">
+					<img src="images/google.png" class="img-responsive icon" height="70" width="70" alt="">
+					<p>Chrome</p>
 				</div>
-				<section class="block0">
-					<div class="heros" id="home">
-						<header class="landing d-flex">
-							<div class="logos d-flex justify-content-start align-items-center">
-								<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
+				<div class="vertical2">
+					<img src="images/edge.png" class="img-responsive icon" height="70" width="70" alt="">
+					<p>Edge</p>
+				</div>
+				<div class="vertical2">
+					<img src="images/safari.png" class="img-responsive icon" height="70" width="70" alt="">
+					<p>Safari</p>
+				</div>
+				<div class="vertical2">
+					<img src="images/firefox.png" class="img-responsive icon" height="70" width="73" alt="">
+					<p>Firefox</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<center>
+				<button type="button" class="btn browser" data-dismiss="modal">DONE</button>
+			</center>
 
-								<div class="flipTop"></div>
+		</div>
+	</div>
+</div>
+</div>
+<section class="block0">
+<div class="heros" id="home">
+	<header class="landing d-flex">
+		<div class="logos d-flex justify-content-start align-items-center">
+			<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
 
-								<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
+			<div class="flipTop"></div>
+
+			<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
+		</div>
+
+		<div class="end">
+			<div class="whiteBox d-flex justify-content-between align-items-center">
+
+				<a class="slate" href="" role="button" tabindex="0" aria-label="Access ECLS home">
+					<p class="slate">my ECLSHome</p>
+				</a>
+				<a href="" role="button" tabindex="0" aria-label="Access portal">
+					<div class="tangerineBox">
+						<p class="plum">Portal</p>
+					</div>
+				</a>
+
+				<a class="slate" href="" role="button" tabindex="0" aria-label="Logout"><p class="slate borderLeft">Logout<p></a>
+
+				</div>
+			</div>
+		</header>
+		<div class="tlBanner"><h1 class="white title">Welcome to the MyECLS Website!</h1></div>
+	</div>
+
+</section>
+
+
+<div id="slideOut" class="content-top">
+
+	<div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
+		<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
+
+	</div>
+
+	<div class="modal-content">
+		<div class="modal-header">
+			<div class="closeThisPlease" id="close">
+				<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+					<span aria-hidden="true">
+						<div class="circCont">
+							<div class="circleClose" data-animation="magnify" data-remove="3000">
+								<span></span>
 							</div>
-
-							<div class="end">
-								<div class="whiteBox d-flex justify-content-between align-items-center">
-
-									<a class="slate" href="" role="button" tabindex="0" aria-label="Access ECLS home">
-										<p class="slate">my ECLSHome</p>
-									</a>
-									<a href="" role="button" tabindex="0" aria-label="Access portal">
-										<div class="tangerineBox">
-											<p class="plum">Portal</p>
-										</div>
-									</a>
-
-									<a class="slate" href="" role="button" tabindex="0" aria-label="Logout"><p class="slate borderLeft">Logout<p></a>
-
-									</div>
-								</div>
-							</header>
-							<div class="tlBanner"><h1 class="white title">Welcome to the MyECLS Website!</h1></div>
 						</div>
+					</span>
+				</button>
+			</div>
+			<br>
 
-					</section>
+			<p class="whiteLarge">How to Contact Us</p>
 
+		</div>
+		<div class="modal-body">
 
-					<div id="slideOut" class="content-top">
+			<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
+				<!-- <p class="modalFooter">*Required Field</p> -->
+				<div class="form-group">
+					<label for="formControl1">Name</label>
+					<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
+				</div>
+				<div class="form-group">
+					<label for="formControl2">Email</label>
+					<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+				</div>
 
-						<div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
-							<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
-
+				<div class="form-group">
+					<fieldset>
+						<label for="general-inquiry">Reason for Contact</label>
+						<div class="around">
+							<div class="vertical">
+								<i class="fas fa-info-circle"></i>
+								<legend>Reason for Contact</legend>
+								<label class="radio-inline">
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
+								</label>
+							</div>
+							<div class="vertical">
+								<i class="fas fa-question-circle"></i>
+								<label class="radio-inline">
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
+								</label>
+							</div>
+							<div class="vertical">
+								<i class="fas fa-user-headset"></i>
+								<label class="radio-inline">
+									<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
+								</label>
+							</div>
 						</div>
+					</fieldset>
+				</div>
+				<div class="form-group">
+					<label for="formControl4">Message</label>
+					<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
+				</div>
+				<center>
+					<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+				</center>
+				<div class="emailInfo">
+					<h6 class="white pt1">Email</h6>
+					<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
+				</div>
+			</form>
 
+		</div>
+		<div class="modal-footer">
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+	&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+</div>
+
+<div class="contactUsOverlay"></div>
+
+
+
+<section class="block200">
+	<div id="overview" class="container-fluid heros">
+
+		<div class="container">
+
+			<p class="darkGreen text-center mt-5">DATA COLLECTION</p>
+
+			<div class="row addMargin">
+				<div class="col-lg-3 offset-lg-1 offset-md-0 col-md-6">
+					<a class="cube" role="button" data-toggle="modal" data-target="#districtsModal" tabindex="0" aria-label="Show Districts">
+						<div class="greenCube districts">
+							<img src="images/img_districts.svg" class="img-fluid pl-4 pr-4">
+							<p class="white twenty mt-3 mb-0">Districts</p>
+							<i class="far fa-arrow-right yellowColor"></i>
+						</div>
+					</a>
+				</div>
+
+				<div class="modal fade tlModals" id="districtsModal" tabindex="-1" role="dialog" aria-labelledby="Show Technical Recommendations"  aria-hidden="true">
+					<div class="modal-dialog" role="document">
 						<div class="modal-content">
+
+							<div class="greenSide projects" tabindex="0" role="button" aria-expanded="false">
+								<i class="fal fa-angle-left yellowColor absoluteAngle"></i>
+								<img src="images/img_districts.svg" class="img-fluid">
+								<p class="white">Districts</p>
+							</div>
+							<div class="slideOutLeft">
+
+								<div class="d-flex align-items-center justify-content-center">
+									<div class="close-project" aria-expanded="false" role="button" aria-hidden="true" tabindex="-1">
+										<i class="fal fa-angle-double-left darkBlue "></i>
+
+									</div>
+									<h6 class="gray text-center">MENU</h6>
+								</div>
+
+								<div class="d-flex align-items-center flex-column  columnCubes">
+
+									<a class="cube" href="">
+										<div class="greenCube districts activeCube">
+											<img src="images/img_districts.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Districts</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="greenCube schools">
+											<img src="images/img_school.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Schools</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="greenCube parents">
+											<img src="images/img_parents.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Parents</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="blueCube documents">
+											<img src="images/img_documents.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Documents</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="blueCube transmission">
+											<img src="images/img_transmission.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Transmission</p>
+
+										</div>
+									</a>
+									<a href="" class="cube">
+										<div class="blueCube messaging">
+											<img src="images/img_messaging.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Message Center</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="blueCube reports">
+											<img src="images/img_reports.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Reports</p>
+
+										</div>
+									</a>
+
+
+								</div>
+
+
+							</div>
 							<div class="modal-header">
-								<div class="closeThisPlease" id="close">
-									<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
-										<span aria-hidden="true">
-											<div class="circCont">
-												<div class="circleClose" data-animation="magnify" data-remove="3000">
-													<span></span>
+								<button role="button" class="close" data-dismiss="modal" aria-label="Close Technical Recommendations" style="outline: none;">
+									<span aria-hidden="true">×</span>
+								</button>
+
+
+							</div>
+							<div class="modal-body districtsBody">
+
+								<div class="box-outer">
+									<div class="grayBox first">
+										<div class="form-group has-search d-flex justify-content-center align-items-center">
+											<p class="dark">Select a district or...</p> <div><span class="fa fa-search form-control-feedback"></span>
+												<input type="text" class="form-control" placeholder="search by LEAID or district name"></div>
+											</div>
+											<div class="topAttr d-flex align-items-center">
+												<div class="col-lg-3">
+													<h6 class="gray larger sortId">LEAID <i class="far fa-sort darkBlue"></i></h6>
+												</div>
+												<div class="col-lg-3">
+													<h6 class="gray larger sortDistrict">DISTRICT NAME <i class="far fa-sort darkBlue"></i></h6>
+												</div>
+												<div class="col-lg-3">
+													<h6 class="gray larger sortDflag">DFLAG <i class="far fa-sort darkBlue"></i></h6>
+												</div>
+												<div class="col-lg-3">
+													<h6 class="gray larger sortStatus">DISTRICT STATUS <i class="far fa-sort darkBlue"></i></h6>
+												</div>
+
+											</div>
+											<div class="renderDistricts">
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap goToInfo' type="submit" tabindex="0" aria-hidden="false" role="button">
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8971A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Nazareth School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Dolor ipsum</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black received dStatus">Approval Received</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA9991A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Bethlehem School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Lorem ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black received dStatus">Approval Received</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA6091A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Easton Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+
+												<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black leadid">LEA8891A</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black schoolName">Kutztown Area School District</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black dflag">Ipsum dolor</p>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+														<p class="black in-progress dStatus">Special Handling– In Progress</p>
+													</div>
+													<div class='progressBarEmpty'></div>
+													<div class='progressBarFull'></div>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="grayBox second">
+											<div class="d-flex justify-content-center">
+												<button class="btn btn-info steelColor" tabindex="0" aria-hidden="false" role="button" aria-describedby="Opt out"><i class="far fa-print"></i> DISTRICT</button>
+											</div>
+
+											<h2 class="landing-sec-H padding-0 margin-0">District Information</h2>
+
+
+
+											<div class="row">
+												<div class="col-xs-12 col-lg-12 col-md-12">
+
+
+													<form class="informationForm" role="form" method="POST">
+
+														<fieldset>
+															<legend>Update Your Information</legend>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="lightGrayBox">
+																		<div class="form-group">
+																			<label for="leaid-input" class="disabled">LEAID</label>
+																			<input type="text" name="info" class="form-control disabled" id="leadid-input" placeholder="">
+
+																		</div>
+
+																		<div class="form-group">
+																			<label for="district-name" class="disabled">District Name</label>
+																			<input type="text" name="info" class="form-control disabled" id="district-name" placeholder="">
+																		</div>
+																		<div class="form-group">
+																			<label for="address1" class="disabled">Address</label>
+																			<input type="text" name="info" class="form-control disabled" id="address1" placeholder="">
+																		</div>
+
+
+
+																		<div class="row noWrapRow">
+																			<div class="col-md-5 col-xs-12">
+																				<div class="form-group">
+																					<label for="city" class="disabled">City</label>
+																					<input type="text" name="info" class="form-control disabled" id="city" placeholder="">
+																				</div>
+																			</div>
+																			<div class="col-md-3 col-xs-12">
+																				<div class="form-group">
+																					<label for="state" class="disabled">State</label>
+																					<input type="text" name="info" class="form-control disabled" id="state" placeholder="">
+																				</div>
+																			</div>
+																			<div class="col-md-4 col-xs-12">
+																				<div class="form-group">
+																					<label for="zip" class="disabled">ZIP</label>
+																					<input type="text" name="info" class="form-control disabled" id="zip" placeholder="">
+																				</div>
+																			</div>
+
+																		</div>
+
+																		<div class="form-group">
+																			<label for="phone">Phone Number</label>
+																			<input type="text" name="info" class="form-control" id="phone" placeholder="">
+																		</div>
+																		<div class="form-group">
+																			<label for="website">District Website</label>
+																			<input type="text" name="info" class="form-control" id="website" placeholder="">
+																		</div>
+
+
+
+																	</div>
+
+
+																	<div class="lightGrayBox">
+
+																		<div class="form-group">
+																			<label for="DS-name">District Superintendent Name</label>
+																			<input type="text" name="info" class="form-control" id="DS-name" placeholder="">
+																		</div>
+																		<div class="form-group">
+																			<label for="DS-title">District Website</label>
+																			<input type="text" name="info" class="form-control" id="DS-title" placeholder="">
+																		</div>
+
+
+																		<div class="row noWrapRow">
+																			<div class="col-md-8 col-xs-12">
+																				<div class="form-group">
+																					<label for="DS-phone">District Superintendent Phone</label>
+																					<input type="text" name="info" class="form-control" id="DS-phone" placeholder="">
+																				</div>
+																			</div>
+																			<div class="col-md-4 col-xs-12">
+																				<div class="form-group">
+																					<label for="ext" class="disabled">Ext.</label>
+																					<input type="text" name="info" class="form-control" id="ext" placeholder="">
+																				</div>
+																			</div>
+
+
+																		</div>
+
+																		<div class="form-group">
+																			<label for="DS-email">District Superintendent Email</label>
+																			<input type="text" name="info" class="form-control" id="DS-email" placeholder="">
+																		</div>
+
+																	</div>
+
+
+																	<div class="lightGrayBox">
+
+																		<div class="form-group">
+																			<label for="DTD-name">District Testing Director Name</label>
+																			<input type="text" name="info" class="form-control" id="DTD-name" placeholder="">
+																		</div>
+																		<div class="form-group">
+																			<label for="DTD-title">District Testing Director Title</label>
+																			<input type="text" name="info" class="form-control" id="DTD-title" placeholder="">
+																		</div>
+
+
+																		<div class="row noWrapRow">
+																			<div class="col-md-8 col-xs-12">
+																				<div class="form-group">
+																					<label for="DTD-phone">District Testing Director Phone</label>
+																					<input type="text" name="info" class="form-control" id="DTD-phone" placeholder="">
+																				</div>
+																			</div>
+																			<div class="col-md-4 col-xs-12">
+																				<div class="form-group">
+																					<label for="ext2" class="disabled">Ext.</label>
+																					<input type="text" name="info" class="form-control" id="ext2" placeholder="">
+																				</div>
+																			</div>
+
+
+																		</div>
+
+																		<div class="form-group">
+																			<label for="DTD-email">District Testing Director Email</label>
+																			<input type="text" name="info" class="form-control" id="DTD-email" placeholder="">
+																		</div>
+
+																	</div>
+
+																</div>
+
+																<div class="col-lg-6">
+																	<div class="lightGrayBox">
+
+																		<div class="form-group">
+																			<label for="D-status">District Status</label>
+																			<input type="text" name="info" class="form-control" id="D-status" placeholder="">
+																		</div>
+																		<div id="listResults">
+																		<div class="one">
+															<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation8" value="" required="">
+															<label class="form-check-label plum" tabindex="0" for="customControlValidation8">Yes, I give permission for my child to participate in the ECLS.</label>
+														</div>
+													</div>
+
+													<p class="blackFont">Consent Rule</p>
+
+													<div class="btn-group" data-toggle="buttons">
+					  <label class="btn btn-primary active">
+					    <input type="radio" name="options" id="option1" autocomplete="off" checked>EXPLICIT
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="radio" name="options" id="option2" autocomplete="off">IMPLICIT
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="radio" name="options" id="option3" autocomplete="off">SCHOOL DECIDES
+					  </label>
+					</div>
+
+																	</div>
+
+																</div>
+
+															</div>
+
+														</fieldset>
+
+
+													</form>
+
+
 												</div>
 											</div>
-										</span>
-									</button>
+										</div>
+
+									</div>
+
 								</div>
-								<br>
-
-								<p class="whiteLarge">How to Contact Us</p>
-
-							</div>
-							<div class="modal-body">
-
-								<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
-									<!-- <p class="modalFooter">*Required Field</p> -->
-									<div class="form-group">
-										<label for="formControl1">Name</label>
-										<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
-									</div>
-									<div class="form-group">
-										<label for="formControl2">Email</label>
-										<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
-									</div>
-
-									<div class="form-group">
-										<fieldset>
-											<label for="general-inquiry">Reason for Contact</label>
-											<div class="around">
-												<div class="vertical">
-													<i class="fas fa-info-circle"></i>
-													<legend>Reason for Contact</legend>
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
-													</label>
-												</div>
-												<div class="vertical">
-													<i class="fas fa-question-circle"></i>
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
-													</label>
-												</div>
-												<div class="vertical">
-													<i class="fas fa-user-headset"></i>
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
-													</label>
-												</div>
-											</div>
-										</fieldset>
-									</div>
-									<div class="form-group">
-										<label for="formControl4">Message</label>
-										<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
-									</div>
-									<center>
-										<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
-									</center>
-									<div class="emailInfo">
-										<h6 class="white pt1">Email</h6>
-										<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
-									</div>
-								</form>
-
-							</div>
-							<div class="modal-footer">
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
-						&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
-					</div>
-
-					<div class="contactUsOverlay"></div>
-
-
-
-					<section class="block200">
-						<div id="overview" class="container-fluid heros">
-
-							<div class="container">
-
-								<p class="darkGreen text-center mt-5">DATA COLLECTION</p>
-
-								<div class="row addMargin">
-									<div class="col-lg-3 offset-lg-1 offset-md-0 col-md-6">
-										<a class="cube" role="button" data-toggle="modal" data-target="#districtsModal" tabindex="0" aria-label="Show Districts">
-											<div class="greenCube districts">
-												<img src="images/img_districts.svg" class="img-fluid pl-4 pr-4">
-												<p class="white twenty mt-3 mb-0">Districts</p>
-												<i class="far fa-arrow-right yellowColor"></i>
-											</div>
-										</a>
-									</div>
-
-									<div class="modal fade tlModals" id="districtsModal" tabindex="-1" role="dialog" aria-labelledby="Show Technical Recommendations"  aria-hidden="true">
-										<div class="modal-dialog" role="document">
-											<div class="modal-content">
-												<div class="greenSide projects" tabindex="0" role="button" aria-expanded="false">
-													<i class="fal fa-angle-left yellowColor absoluteAngle"></i>
-													<img src="images/img_districts.svg" class="img-fluid">
-													<p class="white">Districts</p>
-												</div>
-												<div class="slideOutLeft">
-
-													<div class="d-flex align-items-center justify-content-center">
-														<div class="close-project" aria-expanded="false" role="button" aria-hidden="true" tabindex="-1">
-															<i class="fal fa-angle-double-left darkBlue "></i>
-
-														</div>
-														<h6 class="gray text-center">MENU</h6>
-													</div>
-
-													<div class="d-flex align-items-center flex-column  columnCubes">
-
-														<a class="cube" href="">
-															<div class="greenCube districts activeCube">
-																<img src="images/img_districts.svg" class="img-fluid">
-																<p class="white twenty mt-0 mb-0">Districts</p>
-
-															</div>
-														</a>
-
-														<a href="" class="cube">
-															<div class="greenCube schools">
-																<img src="images/img_school.svg" class="img-fluid">
-																<p class="white twenty mt-0 mb-0">Schools</p>
-
-															</div>
-														</a>
-
-														<a href="" class="cube">
-															<div class="greenCube parents">
-																<img src="images/img_parents.svg" class="img-fluid">
-																<p class="white twenty mt-0 mb-0">Parents</p>
-
-															</div>
-														</a>
-
-														<a href="" class="cube">
-															<div class="blueCube documents">
-																<img src="images/img_documents.svg" class="img-fluid">
-																<p class="white twenty mt-0 mb-0">Documents</p>
-
-															</div>
-														</a>
-
-														<a href="" class="cube">
-															<div class="blueCube transmission">
-																<img src="images/img_transmission.svg" class="img-fluid">
-																<p class="white twenty mt-0 mb-0">Transmission</p>
-
-															</div>
-														</a>
-														<a href="" class="cube">
-															<div class="blueCube messaging">
-																<img src="images/img_messaging.svg" class="img-fluid">
-																<p class="white twenty mt-0 mb-0">Message Center</p>
-
-															</div>
-														</a>
-
-														<a href="" class="cube">
-															<div class="blueCube reports">
-																<img src="images/img_reports.svg" class="img-fluid">
-																<p class="white twenty mt-0 mb-0">Reports</p>
-
-															</div>
-														</a>
-
-
-													</div>
-
-
-												</div>
-												<div class="modal-header">
-													<button role="button" class="close" data-dismiss="modal" aria-label="Close Technical Recommendations" style="outline: none;">
-														<span aria-hidden="true">×</span>
-													</button>
-													<div class="form-group has-search d-flex justify-content-center align-items-center">
-														<p class="dark">Select a district or...</p> <div><span class="fa fa-search form-control-feedback"></span>
-															<input type="text" class="form-control" placeholder="search by LEAID or district name"></div>
-														</div>
-
-													</div>
-													<div class="modal-body districtsBody">
-
-														<div class="topAttr d-flex align-items-center">
-															<div class="col-lg-3">
-																<h6 class="gray larger sortId">LEAID <i class="far fa-sort darkBlue"></i></h6>
-															</div>
-															<div class="col-lg-3">
-																<h6 class="gray larger sortDistrict">DISTRICT NAME <i class="far fa-sort darkBlue"></i></h6>
-															</div>
-															<div class="col-lg-3">
-																<h6 class="gray larger sortDflag">DFLAG <i class="far fa-sort darkBlue"></i></h6>
-															</div>
-															<div class="col-lg-3">
-																<h6 class="gray larger sortStatus">DISTRICT STATUS <i class="far fa-sort darkBlue"></i></h6>
-															</div>
-
-														</div>
-														<div class="renderDistricts">
-															<a href="districts-info.html">
-															<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
-
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black leadid">LEA8971A</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black schoolName">Nazareth School District</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black dflag">Dolor ipsum</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black received dStatus">Approval Received</p>
-																</div>
-																<div class='progressBarEmpty'></div>
-																<div class='progressBarFull'></div>
-															</div>
-
-														</a>
-
-															<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
-
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black leadid">LEA9991A</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black schoolName">Bethlehem School District</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black dflag">Lorem ipsum dolor</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black received dStatus">Approval Received</p>
-																</div>
-																<div class='progressBarEmpty'></div>
-																<div class='progressBarFull'></div>
-															</div>
-
-															<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
-
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black leadid">LEA6091A</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black schoolName">Easton Area School District</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black dflag">Ipsum dolor</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black in-progress dStatus">Special Handling– In Progress</p>
-																</div>
-																<div class='progressBarEmpty'></div>
-																<div class='progressBarFull'></div>
-															</div>
-
-															<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
-
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black leadid">LEA8891A</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black schoolName">Kutztown Area School District</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black dflag">Ipsum dolor</p>
-																</div>
-																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-																	<p class="black in-progress dStatus">Special Handling– In Progress</p>
-																</div>
-																<div class='progressBarEmpty'></div>
-																<div class='progressBarFull'></div>
-															</div>
-
-
-
-
-														</div>
-													</div>
-													<div class="modal-footer">
-
-
-													</div>
-												</div>
-											</div>
-										</div>
-
-
-
-										<div class="col-lg-3 col-md-6">
-											<a href="" class="cube">
-												<div class="greenCube schools">
-													<img src="images/img_school.svg" class="img-fluid pl-4 pr-4">
-													<p class="white twenty mt-3 mb-0">Schools</p>
-													<i class="far fa-arrow-right yellowColor"></i>
-												</div>
-											</a>
-
-										</div>
-
-										<div class="col-lg-3 col-md-6">
-											<a href="" class="cube">
-												<div class="greenCube parents">
-													<img src="images/img_parents.svg" class="img-fluid pl-4 pr-4">
-													<p class="white twenty mt-3 mb-0">Parents</p>
-													<i class="far fa-arrow-right yellowColor"></i>
-												</div>
-											</a>
-
-										</div>
-
-									</div>
-
-									<p class="blueText text-center mt-5">ADMINISTRATIVE</p>
-
-									<div class="row mt-2">
-										<div class="col-lg-3 col-md-6">
-											<a href="" class="cube">
-												<div class="blueCube documents">
-													<img src="images/img_documents.svg" class="img-fluid pl-4 pr-4">
-													<p class="white twenty mt-3 mb-0">Documents</p>
-													<i class="far fa-arrow-right goldColor"></i>
-												</div>
-											</a>
-
-										</div>
-
-										<div class="col-lg-3 col-md-6">
-											<a href="" class="cube">
-												<div class="blueCube transmission">
-													<img src="images/img_transmission.svg" class="img-fluid pl-4 pr-4">
-													<p class="white twenty mt-3 mb-0">Transmission</p>
-													<i class="far fa-arrow-right goldColor"></i>
-												</div>
-											</a>
-										</div>
-
-										<div class="col-lg-3 col-md-6">
-											<a href="" class="cube">
-												<div class="blueCube messaging">
-													<img src="images/img_messaging.svg" class="img-fluid pl-4 pr-4">
-													<p class="white twenty mt-3 mb-0">Message Center</p>
-													<i class="far fa-arrow-right goldColor"></i>
-												</div>
-											</a>
-										</div>
-
-										<div class="col-lg-3 col-md-6">
-											<a href="" class="cube">
-												<div class="blueCube reports">
-													<img src="images/img_reports.svg" class="img-fluid pl-4 pr-4">
-													<p class="white twenty mt-3 mb-0">Reports</p>
-													<i class="far fa-arrow-right goldColor"></i>
-												</div>
-											</a>
-										</div>
-
-									</div>
-
+								<div class="modal-footer">
 
 
 								</div>
 							</div>
-
-						</section>
-
-
-
-
-						<div class="back-to-top">
-							<i class="far fa-angle-up"></i>
 						</div>
+					</div>
 
-						<div class="content-spacer"></div>
+
+
+					<div class="col-lg-3 col-md-6">
+						<a href="" class="cube">
+							<div class="greenCube schools">
+								<img src="images/img_school.svg" class="img-fluid pl-4 pr-4">
+								<p class="white twenty mt-3 mb-0">Schools</p>
+								<i class="far fa-arrow-right yellowColor"></i>
+							</div>
+						</a>
 
 					</div>
-					<footer>
-						<div class="footer-wrapper">
-							<div class="abso">
-								<img src="images/sunshine.png" class="img-responsive">
+
+					<div class="col-lg-3 col-md-6">
+						<a href="" class="cube">
+							<div class="greenCube parents">
+								<img src="images/img_parents.svg" class="img-fluid pl-4 pr-4">
+								<p class="white twenty mt-3 mb-0">Parents</p>
+								<i class="far fa-arrow-right yellowColor"></i>
 							</div>
+						</a>
 
-							<div class="d-flex">
+					</div>
 
-								<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
-								<i class="fas fa-external-link-square white"></i>
+				</div>
+
+				<p class="blueText text-center mt-5">ADMINISTRATIVE</p>
+
+				<div class="row mt-2">
+					<div class="col-lg-3 col-md-6">
+						<a href="" class="cube">
+							<div class="blueCube documents">
+								<img src="images/img_documents.svg" class="img-fluid pl-4 pr-4">
+								<p class="white twenty mt-3 mb-0">Documents</p>
+								<i class="far fa-arrow-right goldColor"></i>
 							</div>
+						</a>
 
-						</div>
-					</footer>
+					</div>
 
-					<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+					<div class="col-lg-3 col-md-6">
+						<a href="" class="cube">
+							<div class="blueCube transmission">
+								<img src="images/img_transmission.svg" class="img-fluid pl-4 pr-4">
+								<p class="white twenty mt-3 mb-0">Transmission</p>
+								<i class="far fa-arrow-right goldColor"></i>
+							</div>
+						</a>
+					</div>
 
-					<!-- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
-					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-					<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+					<div class="col-lg-3 col-md-6">
+						<a href="" class="cube">
+							<div class="blueCube messaging">
+								<img src="images/img_messaging.svg" class="img-fluid pl-4 pr-4">
+								<p class="white twenty mt-3 mb-0">Message Center</p>
+								<i class="far fa-arrow-right goldColor"></i>
+							</div>
+						</a>
+					</div>
 
-					<script type="text/javascript" src="build/index.js"></script>
+					<div class="col-lg-3 col-md-6">
+						<a href="" class="cube">
+							<div class="blueCube reports">
+								<img src="images/img_reports.svg" class="img-fluid pl-4 pr-4">
+								<p class="white twenty mt-3 mb-0">Reports</p>
+								<i class="far fa-arrow-right goldColor"></i>
+							</div>
+						</a>
+					</div>
+
+				</div>
 
 
-				</body>
 
-				</html>
+			</div>
+		</div>
+
+	</section>
+
+
+
+
+	<div class="back-to-top">
+		<i class="far fa-angle-up"></i>
+	</div>
+
+	<div class="content-spacer"></div>
+
+</div>
+<footer>
+	<div class="footer-wrapper">
+		<div class="abso">
+			<img src="images/sunshine.png" class="img-responsive">
+		</div>
+
+		<div class="d-flex">
+
+			<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
+			<i class="fas fa-external-link-square white"></i>
+		</div>
+
+	</div>
+</footer>
+
+<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+
+<!-- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script type="text/javascript" src="build/index.js"></script>
+
+
+</body>
+
+</html>

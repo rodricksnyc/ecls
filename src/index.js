@@ -2288,7 +2288,7 @@ $(".scrollIt").on("click", function(event) {
 	$('.close-project').attr('tabindex', '-1')
 	$('.close-project').attr('aria-hidden', 'true')
 
-	$( ".districtsBody" ).animate({
+	$( ".box-outer" ).animate({
 		'margin-left': "0px",
 		'margin-right': '0px'
 	}, 160, function() {
@@ -2345,9 +2345,9 @@ $('.slideOutLeft').click(function() {
 	$('.close-project').attr('tabindex', '1')
 	$('.close-project').attr('aria-hidden', 'false')
 
-	$( ".districtsBody" ).animate({
-		'margin-left': "160px",
-		'margin-right': '40px'
+	$( ".box-outer" ).animate({
+		'margin-left': "140px",
+		'margin-right': '20px'
 	}, 200, function() {
 
 	});
@@ -2427,6 +2427,16 @@ if (!$( ".slideOutLeft" ).hasClass('open')) {
 //
 // })
 
+$('.districts').on('mouseenter', function() {
+
+	$('.districts img').attr('src', 'images/img_districts-hover.svg')
+})
+
+$('.districts').on('mouseleave', function() {
+
+	$('.districts img').attr('src', 'images/img_districts.svg')
+})
+
 $('.schools').on('mouseenter', function() {
 
 	$('.schools img').attr('src', 'images/img_school-hover.svg')
@@ -2500,6 +2510,35 @@ $('.reports').on('mouseleave', function() {
 // 	}
 //
 // });
+
+$('.goToInfo').click(function(){
+
+	$('.grayBox.first').addClass('flexing-scroll')
+
+	$(".grayBox.first").animate({
+		"left": -$(".tlModals").width()
+	}, 400);
+
+
+	setTimeout(function(){
+
+		$('.grayBox.second').addClass('animated slideInRight').show();
+
+		$(".grayBox.second").animate({
+			"right": 0
+		}, 200);
+
+	}, 100);
+
+
+
+})
+
+
+$('.btn').on('click', function () {
+  $(input, this).removeAttr('checked');
+  $(this).removeClass('active');
+});
 
 
 
