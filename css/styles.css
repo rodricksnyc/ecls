@@ -579,7 +579,7 @@ width: 0px;
       display: flex;
       justify-content: center;
       align-items: center;
-min-width: 7rem;
+width:33%;
 }
 
 
@@ -594,7 +594,11 @@ min-width: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 7rem;
+    width:33%
+}
+
+.lightGrayBox .btn-group {
+  width:100%
 }
 
 .informationForm{
