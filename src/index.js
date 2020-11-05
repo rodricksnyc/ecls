@@ -2278,7 +2278,7 @@ $(".scrollIt").on("click", function(event) {
 	$( "#slideOutLeft" ).animate({
 		width: "0",
 		opacity: '0'
-	}, 300, function() {
+	}, 160, function() {
 
 	});
 
@@ -2288,6 +2288,14 @@ $(".scrollIt").on("click", function(event) {
 	$('.close-project').attr('tabindex', '-1')
 	$('.close-project').attr('aria-hidden', 'true')
 
+	$( ".districtsBody" ).animate({
+		'margin-left': "0px",
+		'margin-right': '0px'
+	}, 160, function() {
+
+	});
+
+
 
 })
 
@@ -2295,9 +2303,9 @@ $(".scrollIt").on("click", function(event) {
 $('.projects').click(function() {
 
 	$( "#slideOutLeft" ).animate({
-		width: "140px",
+		width: "180px",
 		opacity: '1'
-	}, 300, function() {
+	}, 200, function() {
 
 	});
 
@@ -2305,6 +2313,13 @@ $('.projects').click(function() {
 	$('.projects').attr('tabindex', '1')
 	$('.close-project').attr('tabindex', '1')
 	$('.close-project').attr('aria-hidden', 'true')
+
+	$( ".districtsBody" ).animate({
+		'margin-left': "160px",
+		'margin-right': '60px'
+	}, 200, function() {
+
+	});
 
 
 });

@@ -329,12 +329,35 @@ color:black
 
 }
 
+.columnCubes .twenty {
+    font-size: 12px;
 
+
+}
+
+.close-project i.darkBlue {
+  margin-left: -2.2em;
+      font-size: 1.5em;
+      margin-top: .2em;
+
+}
+
+.close-project i.darkBlue:hover {
+  cursor:grab
+}
+
+#slideOutLeft .greenCube, #slideOutLeft .blueCube{
+      padding: .2em 2em;
+      width:160px
+}
+/* #slideOutLeft .greenCube img, #slideOutLeft .blueCube img {
+  max-width:30em
+} */
 
 .tlModals .modal-dialog {
     max-width: 92%;
     margin: 1.75rem auto;
-    top:5%;
+    top:2%;
 }
 
 .content-spacer {
@@ -407,18 +430,18 @@ p.dark {
 }
 
 .cube:hover .blueCube {
-  -webkit-transition: transform .5s ease-in-out;
+  /* -webkit-transition: transform .5s ease-in-out;
   -moz-transition:transform .55s ease-in-out;
   -ms-transition:transform .5s ease-in-out;
-  transform: scale(1.1);
+  transform: scale(1.1); */
 
 }
 
 .cube:hover .greenCube {
-  -webkit-transition: transform .5s ease-in-out;
+  /* -webkit-transition: transform .5s ease-in-out;
   -moz-transition:transform .55s ease-in-out;
   -ms-transition:transform .5s ease-in-out;
-  transform: scale(1.1);
+  transform: scale(1.1); */
 
 }
 
@@ -1432,7 +1455,7 @@ z-index:999999;
   opacity:0;
   position: fixed;
   position: fixed;
-  height: 103%;
+  height: auto;
   background: #e6e6e6;
   top: -3%;
   z-index: 99999999;
