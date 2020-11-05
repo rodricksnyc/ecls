@@ -205,7 +205,7 @@
 								<div class="row addMargin">
 									<div class="col-lg-3 offset-lg-1 offset-md-0 col-md-6">
 										<a class="cube" role="button" data-toggle="modal" data-target="#districtsModal" tabindex="0" aria-label="Show Districts">
-											<div class="greenCube">
+											<div class="greenCube districts">
 												<img src="images/img_districts.svg" class="img-fluid pl-4 pr-4">
 												<p class="white twenty mt-3 mb-0">Districts</p>
 												<i class="far fa-arrow-right yellowColor"></i>
@@ -216,142 +216,250 @@
 									<div class="modal fade tlModals" id="districtsModal" tabindex="-1" role="dialog" aria-labelledby="Show Technical Recommendations"  aria-hidden="true">
 										<div class="modal-dialog" role="document">
 											<div class="modal-content">
-												<div class="modal-header">
-													<div class="form-group has-search">
-														Select a district or... <span class="fa fa-search form-control-feedback"></span>
-														<input type="text" class="form-control" placeholder="search by LEAID or district name">
+												<div class="greenSide projects" tabindex="0" role="button" aria-expanded="false">
+													<i class="fal fa-angle-left yellowColor absoluteAngle"></i>
+													<img src="images/img_districts.svg" class="img-fluid">
+													<p class="white">Districts</p>
+												</div>
+												<div id="slideOutLeft">
+
+													<div class="d-flex align-items-center">
+														<div class="close-project" aria-expanded="false" role="button" aria-hidden="true" tabindex="-1">
+															<i class="fal fa-angle-double-left darkBlue"></i>
+
+														</div>
+														<h6 class="gray text-center">MENU</h6>
 													</div>
+
+
+												</div>
+												<div class="modal-header">
 													<button role="button" class="close" data-dismiss="modal" aria-label="Close Technical Recommendations" style="outline: none;">
 														<span aria-hidden="true">×</span>
 													</button>
-												</div>
-												<div class="modal-body">
-													<p class="charcoal"><b>We recommend using a desktop or laptop computer to complete the study activities. For the best experience, use Chrome, Edge, Safari, or Firefox.</b></p>
-													<p class="charcoal">When you have finished or if you need to stop before finishing, please LOG OUT of the survey system by selecting "Logout" and CLOSE ALL browser windows or screens to keep your responses secure. For example, if you used Chrome or Safari to open the website, make sure no Chrome or Safari windows or screens are open after you end the session. Not closing all browsers may allow someone else to see your responses.</p>
-												</div>
-												<div class="modal-footer">
+													<div class="form-group has-search d-flex justify-content-center align-items-center">
+														<p class="dark">Select a district or...</p> <div><span class="fa fa-search form-control-feedback"></span>
+															<input type="text" class="form-control" placeholder="search by LEAID or district name"></div>
+														</div>
 
-													<button type="button" class="btn  greenButton" data-dismiss="modal">Done</button>
+													</div>
+													<div class="modal-body">
 
+														<div class="topAttr d-flex align-items-center">
+															<div class="col-lg-3">
+																<h6 class="gray larger sortId">LEAID <i class="far fa-sort darkBlue"></i></h6>
+															</div>
+															<div class="col-lg-3">
+																<h6 class="gray larger sortDistrict">DISTRICT NAME <i class="far fa-sort darkBlue"></i></h6>
+															</div>
+															<div class="col-lg-3">
+																<h6 class="gray larger sortDflag">DFLAG <i class="far fa-sort darkBlue"></i></h6>
+															</div>
+															<div class="col-lg-3">
+																<h6 class="gray larger sortStatus">DISTRICT STATUS <i class="far fa-sort darkBlue"></i></h6>
+															</div>
+
+														</div>
+														<div class="renderDistricts">
+
+
+															<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black leadid">LEA8971A</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black schoolName">Nazareth School District</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black dflag">Dolor ipsum</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black received dStatus">Approval Received</p>
+																</div>
+																<div class='progressBarEmpty'></div>
+																<div class='progressBarFull'></div>
+															</div>
+
+															<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black leadid">LEA9991A</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black schoolName">Bethlehem School District</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black dflag">Lorem ipsum dolor</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black received dStatus">Approval Received</p>
+																</div>
+																<div class='progressBarEmpty'></div>
+																<div class='progressBarFull'></div>
+															</div>
+
+															<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black leadid">LEA6091A</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black schoolName">Easton Area School District</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black dflag">Ipsum dolor</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black in-progress dStatus">Special Handling– In Progress</p>
+																</div>
+																<div class='progressBarEmpty'></div>
+																<div class='progressBarFull'></div>
+															</div>
+
+															<div class='addBlocks newBlocks d-flex align-items-center flex-wrap'>
+
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black leadid">LEA8891A</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black schoolName">Kutztown Area School District</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black dflag">Ipsum dolor</p>
+																</div>
+																<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+																	<p class="black in-progress dStatus">Special Handling– In Progress</p>
+																</div>
+																<div class='progressBarEmpty'></div>
+																<div class='progressBarFull'></div>
+															</div>
+
+
+														</div>
+													</div>
+													<div class="modal-footer">
+
+
+													</div>
 												</div>
 											</div>
 										</div>
+
+
+
+										<div class="col-lg-3 col-md-6">
+											<a href="" class="cube">
+												<div class="greenCube schools">
+													<img src="images/img_school.svg" class="img-fluid pl-4 pr-4">
+													<p class="white twenty mt-3 mb-0">Schools</p>
+													<i class="far fa-arrow-right yellowColor"></i>
+												</div>
+											</a>
+
+										</div>
+
+										<div class="col-lg-3 col-md-6">
+											<a href="" class="cube">
+												<div class="greenCube parents">
+													<img src="images/img_parents.svg" class="img-fluid pl-4 pr-4">
+													<p class="white twenty mt-3 mb-0">Parents</p>
+													<i class="far fa-arrow-right yellowColor"></i>
+												</div>
+											</a>
+
+										</div>
+
+									</div>
+
+									<p class="blueText text-center mt-5">ADMINISTRATIVE</p>
+
+									<div class="row mt-2">
+										<div class="col-lg-3 col-md-6">
+											<a href="" class="cube">
+												<div class="blueCube documents">
+													<img src="images/img_documents.svg" class="img-fluid pl-4 pr-4">
+													<p class="white twenty mt-3 mb-0">Documents</p>
+													<i class="far fa-arrow-right goldColor"></i>
+												</div>
+											</a>
+
+										</div>
+
+										<div class="col-lg-3 col-md-6">
+											<a href="" class="cube">
+												<div class="blueCube transmission">
+													<img src="images/img_transmission.svg" class="img-fluid pl-4 pr-4">
+													<p class="white twenty mt-3 mb-0">Transmission</p>
+													<i class="far fa-arrow-right goldColor"></i>
+												</div>
+											</a>
+										</div>
+
+										<div class="col-lg-3 col-md-6">
+											<a href="" class="cube">
+												<div class="blueCube messaging">
+													<img src="images/img_messaging.svg" class="img-fluid pl-4 pr-4">
+													<p class="white twenty mt-3 mb-0">Message Center</p>
+													<i class="far fa-arrow-right goldColor"></i>
+												</div>
+											</a>
+										</div>
+
+										<div class="col-lg-3 col-md-6">
+											<a href="" class="cube">
+												<div class="blueCube reports">
+													<img src="images/img_reports.svg" class="img-fluid pl-4 pr-4">
+													<p class="white twenty mt-3 mb-0">Reports</p>
+													<i class="far fa-arrow-right goldColor"></i>
+												</div>
+											</a>
+										</div>
+
 									</div>
 
 
-
-									<div class="col-lg-3 col-md-6">
-										<a href="" class="cube">
-											<div class="greenCube">
-												<img src="images/img_school.svg" class="img-fluid pl-4 pr-4">
-												<p class="white twenty mt-3 mb-0">Schools</p>
-												<i class="far fa-arrow-right yellowColor"></i>
-											</div>
-										</a>
-
-									</div>
-
-									<div class="col-lg-3 col-md-6">
-										<a href="" class="cube">
-											<div class="greenCube">
-												<img src="images/img_parents.svg" class="img-fluid pl-4 pr-4">
-												<p class="white twenty mt-3 mb-0">Parents</p>
-												<i class="far fa-arrow-right yellowColor"></i>
-											</div>
-										</a>
-
-									</div>
 
 								</div>
-
-								<p class="blueText text-center mt-5">ADMINISTRATIVE</p>
-
-								<div class="row mt-2">
-									<div class="col-lg-3 col-md-6">
-										<a href="" class="cube">
-											<div class="blueCube">
-												<img src="images/img_documents.svg" class="img-fluid pl-4 pr-4">
-												<p class="white twenty mt-3 mb-0">Documents</p>
-												<i class="far fa-arrow-right goldColor"></i>
-											</div>
-										</a>
-
-									</div>
-
-									<div class="col-lg-3 col-md-6">
-										<a href="" class="cube">
-											<div class="blueCube">
-												<img src="images/img_transmission.svg" class="img-fluid pl-4 pr-4">
-												<p class="white twenty mt-3 mb-0">Transmission</p>
-												<i class="far fa-arrow-right goldColor"></i>
-											</div>
-										</a>
-									</div>
-
-									<div class="col-lg-3 col-md-6">
-										<a href="" class="cube">
-											<div class="blueCube">
-												<img src="images/img_messaging.svg" class="img-fluid pl-4 pr-4">
-												<p class="white twenty mt-3 mb-0">Message Center</p>
-												<i class="far fa-arrow-right goldColor"></i>
-											</div>
-										</a>
-									</div>
-
-									<div class="col-lg-3 col-md-6">
-										<a href="" class="cube">
-											<div class="blueCube">
-												<img src="images/img_reports.svg" class="img-fluid pl-4 pr-4">
-												<p class="white twenty mt-3 mb-0">Reports</p>
-												<i class="far fa-arrow-right goldColor"></i>
-											</div>
-										</a>
-									</div>
-
-								</div>
-
-
-
 							</div>
+
+						</section>
+
+
+
+
+						<div class="back-to-top">
+							<i class="far fa-angle-up"></i>
 						</div>
 
-					</section>
-
-
-
-
-					<div class="back-to-top">
-						<i class="far fa-angle-up"></i>
-					</div>
-
-					<div class="content-spacer"></div>
-
-				</div>
-				<footer>
-					<div class="footer-wrapper">
-						<div class="abso">
-							<img src="images/sunshine.png" class="img-responsive">
-						</div>
-
-						<div class="d-flex">
-
-							<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
-							<i class="fas fa-external-link-square white"></i>
-						</div>
+						<div class="content-spacer"></div>
 
 					</div>
-				</footer>
+					<footer>
+						<div class="footer-wrapper">
+							<div class="abso">
+								<img src="images/sunshine.png" class="img-responsive">
+							</div>
 
-				<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+							<div class="d-flex">
 
-				<!-- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+								<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
+								<i class="fas fa-external-link-square white"></i>
+							</div>
 
-				<script type="text/javascript" src="build/index.js"></script>
+						</div>
+					</footer>
+
+					<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+
+					<!-- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
+					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+					<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+					<script type="text/javascript" src="build/index.js"></script>
 
 
-			</body>
+				</body>
 
-			</html>
+				</html>

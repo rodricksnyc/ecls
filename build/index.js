@@ -563,7 +563,148 @@ $(document).ready(function () {
 		$('.sAdminBlocks').append("<div class='sAdmin newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SECTION</div><p class=\"black\" id=\"sASection\">" + sAdmin.sAdmins[j].section + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"sAdminStatus\">" + sAdmin.sAdmins[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black sAdminComplete\">" + sAdmin.sAdmins[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"sAdminDate\">" + sAdmin.sAdmins[j].date + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">COMPLETED BY</div><div class=\"dropdown\"><button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"appendInfo\" data-toggle=\"dropdown\" aria-haspopup=\"true\"><div class=\"horizontalBlock\"><div class=\"vertical\"><p class=\"black\" id=\"appendedTitle\">" + sAdmin.sAdmins[j].title + "</p><p class=\"black\" id=\"appendedName\">" + sAdmin.sAdmins[j].name + "</p></div><i class=\"fal fa-angle-down darkBlue\"></i></div></button><div class=\"dropdown-menu\" aria-labelledby=\"appendInfo\"><div class=\"blackLine\"><p class=\"black small\">Select School Staff</p><div class=\"d-flex justify-content-end\"><i class=\"fal fa-angle-down darkBlue\"></i></div></div><div class=\"greyBubble\">School Administrator</div><form><legend>Other School Staff</legend><div class=\"blueBubble\"><p class=\"darkBlue small\">Other School Staff</p><div class=\"form-group\"><label for=\"new-name\">Name</label><input type=\"text\" name=\"\" class=\"form-control\" id=\"new-name\" placeholder=\"Jane Smith\"></div><div class=\"form-group\"><label for=\"new-title\">Title</label><input type=\"text\" name=\"\" class=\"form-control\" id=\"new-title\" placeholder=\"Assistant Principal\"></div><center><button type=\"button\" class=\"btn greenButton\" id=\"add\" data-toggle=\"dropdown\">ADD <i class=\"far fa-plus\"></i></button></center></div></div></form></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + sAdmin.sAdmins[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
+	//tl portal alphabetize and sort numerically
+
+
+	$('.sortDistrict').on('click', function () {
+		if (!$('.sortDistrict').hasClass('ascending')) {
+
+			var ascendOrderedDivs = $('.addBlocks').sort(function (a, b) {
+				return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? 1 : -1;
+			});
+			$(".renderDistricts").html(ascendOrderedDivs);
+			setTimeout(function () {
+				$('.sortDistrict').addClass('ascending');
+			}, 600);
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortDistrict').hasClass('ascending')) {
+
+			var descendOrderedDivs = $('.addBlocks').sort(function (a, b) {
+				return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? -1 : 1;
+			});
+			$(".renderDistricts").html(descendOrderedDivs);
+			setTimeout(function () {
+				$('.sortDistrict').removeClass('ascending');
+			}, 600);
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	$('.sortDflag').on('click', function () {
+		if (!$('.sortDflag').hasClass('ascending')) {
+
+			var ascendOrderedDivs2 = $('.addBlocks').sort(function (a, b) {
+				return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? 1 : -1;
+			});
+			$(".renderDistricts").html(ascendOrderedDivs2);
+			setTimeout(function () {
+				$('.sortDflag').addClass('ascending');
+			}, 600);
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortDflag').hasClass('ascending')) {
+
+			var descendOrderedDivs2 = $('.addBlocks').sort(function (a, b) {
+				return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? -1 : 1;
+			});
+			$(".renderDistricts").html(descendOrderedDivs2);
+			setTimeout(function () {
+				$('.sortDflag').removeClass('ascending');
+			}, 600);
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	$('.sortStatus').on('click', function () {
+		if (!$('.sortStatus').hasClass('ascending')) {
+
+			var ascendOrderedDivs3 = $('.addBlocks').sort(function (a, b) {
+				return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? 1 : -1;
+			});
+			$(".renderDistricts").html(ascendOrderedDivs3);
+			setTimeout(function () {
+				$('.sortStatus').addClass('ascending');
+			}, 600);
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortStatus').hasClass('ascending')) {
+
+			var descendOrderedDivs3 = $('.addBlocks').sort(function (a, b) {
+				return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? -1 : 1;
+			});
+			$(".renderDistricts").html(descendOrderedDivs3);
+			setTimeout(function () {
+				$('.sortStatus').removeClass('ascending');
+			}, 600);
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	$('.sortId').on('click', function () {
+		var numericallyOrderedDivs = $('.addBlocks').sort(function (a, b) {
+
+			return parseFloat($(a).find('.leadid').text()) > parseFloat($(b).find('.leadid').text()) ? 1 : -1;
+		});
+		$(".renderDistricts").html(numericallyOrderedDivs);
+	});
+
+	var str = $('.leadid').html();
+	var split = str.split(' ');
+
+	console.log(split);
+
+	split.forEach(function (item) {
+		// If the split is not NaN
+		if (!isNaN(item)) {
+			// Heres your number
+			console.log(item);
+		}
+	});
+
+	var reA = /[^a-zA-Z]/g;
+	var reN = /[^0-9]/g;
+
+	function sortAlphaNum(a, b) {
+		var aA = a.replace(reA, "");
+		var bA = b.replace(reA, "");
+		if (aA === bA) {
+			var aN = parseInt(a.replace(reN, ""), 10);
+			var bN = parseInt(b.replace(reN, ""), 10);
+			return aN === bN ? 0 : aN > bN ? 1 : -1;
+		} else {
+			return aA > bA ? 1 : -1;
+		}
+	}
+	console.log(["A1", "A10", "A11", "A12", "A2", "A3", "A4", "B10", "B2", "F1", "F12", "F3"].sort(sortAlphaNum));
+
+	//change colors in districts to either green or goldColor
+	$('.dStatus').each(function () {
+		if ($(this).hasClass('in-progress')) {
+
+			$(this).closest('.newBlocks').find('.progressBarFull').css({
+				'background': '#fbb03b',
+				'width': '100%'
+			});
+		}
+
+		if ($(this).hasClass('received')) {
+
+			$(this).closest('.newBlocks').find('.progressBarFull').css({
+				'background': '#71d82e',
+				'width': '100%'
+			});
+		}
+	});
+
 	//change colors of the percentage circles and progress bars
+
 
 	var Opt01 = "";
 	$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete').each(function () {
@@ -1724,5 +1865,138 @@ $(document).ready(function () {
 			'color': 'white'
 
 		});
+	});
+
+	$('.close-project').click(function (e) {
+		e.stopPropagation();
+
+		$("#slideOutLeft").animate({
+			width: "0",
+			opacity: '0'
+		}, 300, function () {});
+
+		$('#slideOutRight').css('z-index', '10');
+		$('.projects').attr('tabindex', '0');
+
+		$('.close-project').attr('tabindex', '-1');
+		$('.close-project').attr('aria-hidden', 'true');
+	});
+
+	$('.projects').click(function () {
+
+		$("#slideOutLeft").animate({
+			width: "140px",
+			opacity: '1'
+		}, 300, function () {});
+
+		$('#slideOutRight').css('z-index', '1');
+		$('.projects').attr('tabindex', '1');
+		$('.close-project').attr('tabindex', '1');
+		$('.close-project').attr('aria-hidden', 'true');
+	});
+
+	// $('.projects').on('keyup', function(e) {
+	//
+	// 	var code = (e.keyCode ? e.keyCode : e.which);
+	// 	if (code == 13 ) {
+	//
+	// 		$( "#slideOutLeft" ).animate({
+	// 			left: "0",
+	// 		}, 800, function() {
+	//
+	// 		});
+	//
+	// 		$('#slideOutRight').css('z-index', '1')
+	// 		$('.projects').attr('tabindex', '1')
+	//
+	// 		$('.close-project').attr('tabindex', '1')
+	// 		$('.close-project').attr('aria-hidden', 'false')
+	//
+	//
+	// 	}
+	//
+	// })
+
+	//
+	// $('.close-project').on('keyup', function(e) {
+	// 	e.stopPropagation()
+	//
+	// 	var code = (e.keyCode ? e.keyCode : e.which);
+	// 	if (code == 13 ) {
+	//
+	// 		$( "#slideOutLeft" ).animate({
+	// 			left: "-400",
+	// 		}, 800, function() {
+	//
+	// 		});
+	//
+	// 		$('#slideOutRight').css('z-index', '10')
+	// 		$('.projects').attr('tabindex', '0')
+	//
+	// 		$('.close-project').attr('tabindex', '-1')
+	// 		$('.close-project').attr('aria-hidden', 'true')
+	//
+	// 	}
+	//
+	// })
+
+	$('.schools').on('mouseenter', function () {
+
+		$('.schools img').attr('src', 'images/img_school-hover.svg');
+	});
+
+	$('.schools').on('mouseleave', function () {
+
+		$('.schools img').attr('src', 'images/img_school.svg');
+	});
+
+	$('.parents').on('mouseenter', function () {
+
+		$('.parents img').attr('src', 'images/img_parents-hover.svg');
+	});
+
+	$('.parents').on('mouseleave', function () {
+
+		$('.parents img').attr('src', 'images/img_parents.svg');
+	});
+
+	$('.documents').on('mouseenter', function () {
+
+		$('.documents img').attr('src', 'images/img_documents-hover.svg');
+	});
+
+	$('.documents').on('mouseleave', function () {
+
+		$('.documents img').attr('src', 'images/img_documents.svg');
+	});
+
+	$('.transmission').on('mouseenter', function () {
+
+		$('.transmission img').attr('src', 'images/img_transmission-hover.svg');
+	});
+
+	$('.transmission').on('mouseleave', function () {
+
+		$('.transmission img').attr('src', 'images/img_transmission.svg');
+	});
+
+	$('.messaging').on('mouseenter', function () {
+
+		$('.messaging img').attr('src', 'images/img_messaging-hover.svg');
+	});
+
+	$('.messaging').on('mouseleave', function () {
+
+		$('.messaging img').attr('src', 'images/img_messaging.svg');
+	});
+
+	$('.reports').on('mouseenter', function () {
+
+		$('.reports img').attr('src', 'images/img_reports-hover.svg');
+	});
+
+	$('.reports').on('mouseleave', function () {
+
+		$('.reports img').attr('src', 'images/img_reports.svg');
 	});
 });
