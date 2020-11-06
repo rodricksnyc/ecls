@@ -2679,5 +2679,23 @@ $('.btn').on('click', function () {
 });
 
 
+$(window).scroll(function () {
+	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+	if (distanceY > 120) {
+
+		$('.save-floating').css({
+			top: '80vw'
+		})
+	} else {
+
+		$('.save-floating').css({
+			top:'20vw'
+		})
+	}
+});
+
+
+
+
 
 })

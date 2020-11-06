@@ -529,6 +529,29 @@ textarea::placeholder {
     display: none
 }
 
+
+.invalid-feedback {
+  /*
+  margin-top: -25px; */
+  font-size: 80%;
+  color: #CC473A;
+  padding-left: 5px;
+  /* margin-bottom: 25px; */
+}
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+  border-color: #CC473A !important;
+}
+label.error{
+  font-size: 12px !important;
+      color: #CC473A !important;
+      /* min-width: 320px !important; */
+      margin-top: 4.5em;
+      background: transparent !important;
+
+}
+
+
+
 .saveInfo{
   color:#00843D;
   font-size:1.4rem;
