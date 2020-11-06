@@ -2471,8 +2471,11 @@ $(document).ready(function () {
 
 		$('.save-floating').show().css('display', 'flex');
 
-		// })
+		setTimeout(function () {
+			$('.tlModals').animate({ scrollTop: 0 }, 900);
+		}, 1000);
 
+		// })
 	};
 
 	$('.goToInfo').keypress(viewDistrictInfo).click(viewDistrictInfo);
