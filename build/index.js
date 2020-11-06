@@ -2472,6 +2472,7 @@ $(document).ready(function () {
 		$('.save-floating').show().css('display', 'flex');
 
 		// })
+
 	};
 
 	$('.goToInfo').keypress(viewDistrictInfo).click(viewDistrictInfo);

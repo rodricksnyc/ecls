@@ -2324,6 +2324,20 @@ p.dark {
   padding: 5px 10px;
 }
 
+
+.tlModals p.dark {
+  line-height: 1.7 !important;
+  font-size: 17px !important;
+  margin-top: 5px !important;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-family: 'Public Sans' !important;
+  padding: 5px 10px;
+}
+.tlModals ::placeholder{
+  color:black
+}
+
 .block-list {
   display: flex;
   justify-content: space-between;
