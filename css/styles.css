@@ -371,11 +371,11 @@ textarea::placeholder {
 }
 
 .slideOutLeft   h6.gray {
-    font-size: .9em;
-    position: relative;
-    right: -45px;
+  font-size: .9em;
+  position: relative;
+  right: -45px;
 
-  }
+}
 
 .myTabs{
   margin-left:105px
@@ -525,16 +525,16 @@ textarea::placeholder {
   flex-direction: column;
   align-items: center;
   -webkit-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
-      -moz-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
-      box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
-    border-radius: 1rem;
-    right: 45px;
-    padding: .6em;
-    top: 20%;
+  -moz-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+  box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+  border-radius: 1rem;
+  right: 45px;
+  padding: .6em;
+  top: 20%;
 
-    z-index: 99999999999999999999999999999999999999;
-    background: white;
-    display: none
+  z-index: 99999999999999999999999999999999999999;
+  background: white;
+  display: none
 }
 
 
@@ -551,29 +551,33 @@ textarea::placeholder {
 }
 label.error{
   font-size: 12px !important;
-      color: #CC473A !important;
-      /* min-width: 320px !important; */
-      margin-top: 4.5em;
-      background: transparent !important;
+  color: #CC473A !important;
+  /* min-width: 320px !important; */
+  margin-top: 4.5em;
+  background: transparent !important;
 
+}
+
+.form-control.error {
+  border: 2px solid #CC473A !important;
 }
 
 .saveInformation{
   position: relative;
-outline: none;
-border: none;
-background: transparent;
-position:relative;
-z-index: 99999999999999999999999999999999999999;
+  outline: none;
+  border: none;
+  background: transparent;
+  position:relative;
+  z-index: 99999999999999999999999999999999999999;
 }
 
 .cancel {
   position: relative;
-outline: none;
-border: none;
-background: transparent;
-position:relative;
-z-index: 99999999999999999999999999999999999999;
+  outline: none;
+  border: none;
+  background: transparent;
+  position:relative;
+  z-index: 99999999999999999999999999999999999999;
 }
 
 
@@ -586,7 +590,7 @@ z-index: 99999999999999999999999999999999999999;
 .stop{
   color:#576f7f;
   font-size:1.4rem;
-    margin:.4em 0em
+  margin:.4em 0em
 }
 
 
@@ -702,9 +706,9 @@ textarea {
 
 .addEroc {
   position: relative;
-    left: 100px;
-    top: 38px;
-    text-transform: lowercase !important
+  left: 100px;
+  top: 38px;
+  text-transform: lowercase !important
 }
 
 .renderSchoolList .addBlocks {
@@ -908,12 +912,12 @@ p.dark {
 }
 
 .goldLeftBar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 12px;
-    background: #fbb03b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 12px;
+  background: #fbb03b;
 }
 
 .line {
@@ -1830,7 +1834,7 @@ h1.white.sentMessage {
 .darkBlue {
   color:#00539f;
   font-family: 'Public Sans', sans-serif;
-font-weight: 400;
+  font-weight: 400;
 
 }
 
@@ -5775,7 +5779,7 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,0.1);
     width:auto;
   }
   .lightGrayBox .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
-  width:auto;
+    width:auto;
 
   }
 }
@@ -7194,7 +7198,7 @@ body{
     font-size: .7em;
   }
 
-.slideOutLeft   h6.gray {
+  .slideOutLeft   h6.gray {
     font-size: .9em;
     position: relative;
     right: -45px;
