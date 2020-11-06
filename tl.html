@@ -607,7 +607,7 @@
 
 
 																<div class="d-flex justify-content-center">
-																	<button class="btn btn-info steelColor" tabindex="0" aria-hidden="false" role="button" aria-label="Opt out"><i class="far fa-print"></i> DISTRICT</button>
+																	<button class="btn btn-info steelColor" tabindex="0" aria-hidden="false" role="button" aria-label="Opt out"><i class="far fa-print"></i> DISTRICT INFO</button>
 																</div>
 																<div class="outside">
 																	<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0"  aria-label="Shows Less"></i>
@@ -620,7 +620,7 @@
 
 																			<div class="toggleDiv">
 																				<form class="informationForm" novalidate role="form" method="POST" id="newInfo">
-
+																			  <div id="errors"></div>
 																					<fieldset>
 																						<legend>Update Your Information</legend>
 																						<div class="row position-relative">
@@ -1146,13 +1146,16 @@
 						</div>
 					</footer>
 
-					<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 
+
+		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 					<!-- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
 					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 					<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 					<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
 
 					<script type="text/javascript" src="build/index.js"></script>
 
@@ -1186,7 +1189,11 @@
 						$('.saveInformation').click( function() {
 
 							$(".informationForm").trigger('submit');
+
+
 						});
+
+
 
 
 
