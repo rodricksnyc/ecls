@@ -1611,16 +1611,29 @@ $('.greenBottom').css('height', height)
 
 // 508 focus
 
-$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar").on("keyup", function (e) {
+$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar, .goToInfo, .close-project").on("keyup", function (e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 9) {
 		$(this).css('outline', 'dashed 3px #4599ff')
 	}
 
 })
-$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar").on('focusout', function() {
+$("a, button, input, [tabindex='0'], li, #one, .tooltips-elements, .feedbackBar, .skip, #closeThisPlease, .infoBar, .goToInfo, .close-project").on('focusout', function() {
 	$(this).css('outline', 'none')
 })
+
+
+$(".cube").on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).find('.greenCube').css('outline', 'dashed 3px #4599ff')
+	}
+
+})
+$(".cube").on('focusout', function() {
+	$(this).find('.greenCube').css('outline', 'none')
+})
+
 
 $(".form-check").on("keyup", function (e) {
 
@@ -1742,6 +1755,15 @@ $('.feedbackBar').on("keyup", function (e) {
 	if (code == 13) {
 
 		$('#feedbackModal').modal('show')
+	}
+});
+
+
+$('.cube').on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+
+		$('.tlModals').modal('show')
 	}
 });
 
@@ -2305,6 +2327,16 @@ $(".scrollIt").on("click", function(event) {
 
 
 
+
+$('.disabled').attr('disabled','disabled')
+
+
+
+//TL portal open sidebar
+
+
+// var closeProject = function() {
+
 	$('.close-project').click(function(e) {
 	e.stopPropagation()
 
@@ -2332,9 +2364,20 @@ $(".scrollIt").on("click", function(event) {
 		$( ".slideOutLeft" ).removeClass('open')
 	}, 200)
 
-
-
 })
+
+
+// }
+//
+// $('.close-project').keypress(
+// closeProject
+//
+// ).click(
+// closeProject
+// );
+
+
+
 
 
 $('.slideOutLeft').on('mouseleave', function(e) {
@@ -2359,6 +2402,8 @@ $('.close-project').attr('aria-hidden', 'true')
 
 })
 
+
+// var slideOutLeft = function() {
 
 $('.slideOutLeft').not('.activeCube').click(function() {
 
@@ -2388,6 +2433,85 @@ $('.slideOutLeft').not('.activeCube').click(function() {
 
 });
 
+// }
+//
+// $('.slideOutLeft').not('.activeCube').keypress(
+// slideOutLeft
+//
+// ).click(
+// 	slideOutLeft
+// );
+
+
+
+$('.close-project').on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+// e.stopPropagation()
+
+$( ".slideOutLeft" ).animate({
+	width: "0",
+	opacity: '0'
+}, 160, function() {
+
+});
+
+$('#slideOutRight').css('z-index', '10')
+$('.projects').attr('tabindex', '0')
+
+$('.close-project').attr('tabindex', '-1')
+$('.close-project').attr('aria-hidden', 'true')
+
+$( ".box-outer" ).animate({
+	'margin-left': "0px",
+	'margin-right': '0px'
+}, 160, function() {
+
+});
+
+setTimeout(function() {
+	$( ".slideOutLeft" ).removeClass('open')
+}, 200)
+
+}
+
+})
+
+
+
+$('.projects').on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+
+	$( ".slideOutLeft" ).animate({
+		width: "180px",
+		opacity: '1'
+	}, 200, function() {
+
+	});
+
+	$('#slideOutRight').css('z-index', '1')
+	$('.projects').attr('tabindex', '1')
+	$('.close-project').attr('tabindex', '1')
+	$('.close-project').attr('aria-hidden', 'false')
+
+	$( ".box-outer" ).animate({
+		'margin-left': "140px",
+		'margin-right': '20px'
+	}, 200, function() {
+
+	});
+
+	setTimeout(function() {
+		$( ".slideOutLeft" ).addClass('open')
+	}, 200)
+
+}
+
+
+});
+
+
 $('.projects').on('mouseenter' , function() {
 if (!$( ".slideOutLeft" ).hasClass('open')) {
 
@@ -2409,6 +2533,8 @@ if (!$( ".slideOutLeft" ).hasClass('open')) {
 });
 
 
+
+//TL images
 
 $('.districts').on('mouseenter', function() {
 
@@ -2482,19 +2608,9 @@ $('.reports').on('mouseleave', function() {
 
 
 
-// var path = window.location.href
-//
-// $('.tlModals').each(function() {
-// 	if (this.href === path) {
-// 		$(this).addClass('active');
-// 	}
-// 	else {
-// 		$(this).removeClass('active');
-// 	}
-//
-// });
+var viewDistrictInfo = function() {
 
-$('.goToInfo').click(function(){
+// $('.goToInfo').click(function(){
 
 	$('.grayBox.first').addClass('flexing-scroll')
 
@@ -2513,9 +2629,22 @@ $('.goToInfo').click(function(){
 
 	}, 100);
 
+	$('.save-floating').show().css('display', 'flex')
+
+// })
+
+}
+
+$('.goToInfo').keypress(
+viewDistrictInfo
+
+).click(
+	viewDistrictInfo
+);
 
 
-})
+
+
 
 	var negative = -$(".box-outer").width()
 

@@ -336,7 +336,7 @@ textarea::placeholder {
 }
 
 .close-project i.darkBlue {
-  margin-left: -2.2em;
+
   font-size: 1.5em;
   margin-top: .2em;
 
@@ -447,6 +447,7 @@ textarea::placeholder {
   padding: 0px;
 }
 
+
 .tlModals .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -463,22 +464,11 @@ textarea::placeholder {
 }
 
 
-/* .tlModals .modal-body {
-
-overflow-y: auto;
-max-height: 700px;
-height: auto;
-
-} */
-
-
 .disabled{
   background: #f6f8f8 !important;
   background-color: #f6f8f8 !important;
 }
-/* .tlModals .modal-content {
-height: 700px !important;
-} */
+
 
 .grayBox.first.flexing-scroll {
   position: relative;
@@ -520,6 +510,35 @@ height: 700px !important;
 
 .grayBox.second .blueLine i{
   color:#00539f
+}
+
+.save-floating{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+      -moz-box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+      box-shadow: 0px 0px 22px -2px rgba(99,99,99,0.44);
+    border-radius: 1rem;
+    right:-19px;
+    padding: .6em;
+    top: 20%;
+    z-index: 99999999999999999999999999999999;
+    background: white;
+    display: none
+}
+
+.saveInfo{
+  color:#00843D;
+  font-size:1.4rem;
+  margin:.4em 0em
+}
+
+.stop{
+  color:#576f7f;
+  font-size:1.4rem;
+    margin:.4em 0em
 }
 
 
@@ -730,14 +749,11 @@ padding: 0em 2em
 }
 
 
-/* .slideOutLeft .greenCube img, .slideOutLeft .blueCube img {
-max-width:30em
-} */
-
 .tlModals .modal-dialog {
   max-width: 92%;
   margin: 1.75rem auto;
   top:2%;
+
 }
 
 .content-spacer {
@@ -1763,7 +1779,10 @@ h1.white.sentMessage {
 }
 
 .darkBlue {
-  color:#00539f
+  color:#00539f;
+  font-family: 'Public Sans', sans-serif;
+font-weight: 400;
+
 }
 
 .status {
