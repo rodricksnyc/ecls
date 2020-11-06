@@ -5785,7 +5785,7 @@ box-shadow: 0px 2px 3px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,0.1);
 
 }
 
-@media (max-width:1300px){
+@media (max-width:1300px) and (min-width:992px){
   .lightGrayBox .btn-group{
     width:auto;
     flex-wrap: wrap;
