@@ -1280,6 +1280,25 @@ $(document).ready(function () {
 
 	var slideIt = function slideIt() {
 
+		if ($(this).closest('.outside').find(".toggleDiv").is(':visible')) {
+
+			$(this).closest('.outside').find('i').addClass('plusSign');
+
+			$(this).closest('.outside').find('.blueLine span').html('expand section');
+
+			$(this).closest('.outside').find(".toggleDiv").slideUp();
+		} else if ($(this).closest('.outside').find(".toggleDiv").is(':hidden')) {
+			$(this).closest('.outside').find('.blueLine span').html('collapse section');
+			$(this).closest('.outside').find('i').removeClass('plusSign');
+
+			$(this).closest('.outside').find(".toggleDiv").slideDown();
+		}
+	};
+
+	$('.blueLine, .closeDiv').keypress(slideIt).click(slideIt);
+
+	var slideIt2 = function slideIt2() {
+
 		if ($(".toggleDiv").is(':visible')) {
 
 			$('i').addClass('plusSign');
@@ -1295,7 +1314,7 @@ $(document).ready(function () {
 		}
 	};
 
-	$('.blueLine, .closeDiv').keypress(slideIt).click(slideIt);
+	$('.blueLine').keypress(slideIt2).click(slideIt2);
 
 	//green background div
 
@@ -1898,10 +1917,6 @@ $(document).ready(function () {
 	$('.slideOutLeft').on('mouseleave', function (e) {
 		e.stopPropagation();
 		if (!$(".slideOutLeft").hasClass('open')) {
-			// setTimeout(function() {
-			// 	$( ".slideOutLeft" ).removeClass('open')
-			// }, 200)
-
 
 			$(".slideOutLeft").animate({
 				width: "0",
@@ -1916,8 +1931,8 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.slideOutLeft').click(function () {
-		// if ($( ".slideOutLeft" ).hasClass('open')) {
+	$('.slideOutLeft').not('.activeCube').click(function () {
+
 		$(".slideOutLeft").animate({
 			width: "180px",
 			opacity: '1'
@@ -1936,9 +1951,6 @@ $(document).ready(function () {
 		setTimeout(function () {
 			$(".slideOutLeft").addClass('open');
 		}, 200);
-
-		// }
-
 	});
 
 	$('.projects').on('mouseenter', function () {
@@ -2056,8 +2068,29 @@ $(document).ready(function () {
 		}, 100);
 	});
 
+	var negative = -$(".box-outer").width();
+
+	$('.activeCube').click(function () {
+		console.log(negative);
+		setTimeout(function () {
+			$('.grayBox.first').removeClass('flexing-scroll');
+
+			$(".grayBox.first").animate({
+				"left": 0
+			}, 500);
+		}, 300);
+
+		setTimeout(function () {
+			$('.grayBox.second').removeClass('animated slideInRight').hide();
+		}, 400);
+
+		$(".grayBox.second").animate({
+			"right": negative
+		}, 600);
+	});
+
 	$('.btn').on('click', function () {
-		$(input, this).removeAttr('checked');
+		$('input', this).removeAttr('checked');
 		$(this).removeClass('active');
 	});
 });
