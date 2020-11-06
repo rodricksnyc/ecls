@@ -216,6 +216,9 @@
 									<div class="modal fade tlModals" id="districtsModal" tabindex="-1" role="dialog" aria-labelledby="Show Technical Recommendations"  aria-hidden="true">
 										<div class="modal-dialog" role="document">
 
+
+
+
 											<div class="modal-content">
 
 												<div class="greenSide projects" tabindex="0" role="button" aria-expanded="false">
@@ -225,7 +228,7 @@
 												</div>
 												<div class="slideOutLeft">
 
-													<div class="d-flex align-items-center justify-content-center">
+													<div class="d-flex align-items-center justify-content-evenly">
 														<div class="close-project" aria-expanded="false" role="button" aria-hidden="true" tabindex="-1">
 															<i class="fal fa-angle-double-left darkBlue"></i>
 
@@ -888,15 +891,14 @@
 
 
 																							</div>
-																							<div class="save-floating">
-																								<button type="submit" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information" style="outline: none;border: none;background: transparent;"><i class="fas fa-save saveInfo"></i>
-																								</button>
-																								<i class="fas fa-ban stop"></i>
-
-																							</div>
 
 
+																						</div>
 
+																						<div class="save-floating">
+																							<button class="saveInformation" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information" style="outline: none;border: none;background: transparent;"><i class="fas fa-save saveInfo"></i>
+																							</button>
+																							<i class="fas fa-ban stop"></i>
 
 																						</div>
 
@@ -1173,17 +1175,31 @@
 
 								},
 								email:
-										{
-											required: true,
-											email: true
+								{
+									required: true,
+									email: true
 
-										}
+								}
 							}
+						});
+
+						//save form button outside the <form> tag
+$('.saveInfo').click( function() {
+
+		console.log("egwivy")
+
+
+	})
+
+						$('.saveInformation').click( function() {
+							console.log("egwivy")
+							$(".informationForm").trigger('submit');
 						});
 
 
 
-</script>
+
+					</script>
 
 
 				</body>

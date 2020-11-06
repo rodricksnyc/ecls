@@ -339,7 +339,7 @@ textarea::placeholder {
 
   font-size: 1.5em;
   margin-top: .2em;
-
+  margin-left:10px
 }
 
 .close-project i.darkBlue:hover {
@@ -369,6 +369,13 @@ textarea::placeholder {
 .greenSide:hover {
   cursor:grab
 }
+
+.slideOutLeft   h6.gray {
+    font-size: .9em;
+    position: relative;
+    right: -45px;
+
+  }
 
 .myTabs{
   margin-left:105px
@@ -550,6 +557,10 @@ label.error{
 
 }
 
+.saveInformation{
+  position: relative;
+  z-index: 9999999999999999999999999999999
+}
 
 
 .saveInfo{
@@ -7167,6 +7178,14 @@ body{
   h6.gray {
     font-size: .7em;
   }
+
+.slideOutLeft   h6.gray {
+    font-size: .9em;
+    position: relative;
+    right: -45px;
+
+  }
+
   p.black {
     font-size: .8em;
   }
