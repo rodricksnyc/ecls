@@ -570,9 +570,129 @@ $(document).ready(function () {
 			"dStatus": "Approval Received"
 		}, {
 			"leadid": 'LEA8971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Kutztown Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Morem ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Morem ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Ipsum ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Ipsum ipsum',
+			"dStatus": "Special Handling– In Progressd"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA8971A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
 		}, {
 			"leadid": 'LEA8971A',
 			"schoolName": "Nazareth School District",
@@ -592,7 +712,7 @@ $(document).ready(function () {
 			"leadid": 'LEA8971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
+			"dStatus": "Special Handling– In Progress"
 		}, {
 			"leadid": 'LEA8971A',
 			"schoolName": "Nazareth School District",
@@ -607,7 +727,7 @@ $(document).ready(function () {
 			"leadid": 'LEA8971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
+			"dStatus": "Special Handling– In Progress"
 		}, {
 			"leadid": 'LEA8971A',
 			"schoolName": "Nazareth School District",
@@ -617,127 +737,7 @@ $(document).ready(function () {
 			"leadid": 'LEA8971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
+			"dStatus": "Special Handling– In Progress"
 		}, {
 			"leadid": 'LEA8971A',
 			"schoolName": "Nazareth School District",
