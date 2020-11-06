@@ -800,6 +800,37 @@ $(document).ready(function () {
 		$('.renderDistricts').append("<div class='addBlocks d-flex align-items-center flex-wrap goToInfo' type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LEAID</div><p class=\"black leadid\">" + district.districts[j].leadid + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">DISTRICT NAME</div><p class=\"black schoolName\">" + district.districts[j].schoolName + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">DFLAG</div><p class=\"black dflag\">" + district.districts[j].dflag + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">DISTRICT STATUS</div><p class=\"black received dStatus\">" + district.districts[j].dStatus + "</p></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
+	var schoolList = { "schoolLists": [{
+			"schoolId": '9999994C',
+			"schoolName": "Edward Tracy Elementary School",
+			"schoolAddress": 'Street Name, Easton PA 18040'
+		}, {
+			"schoolId": '9999994C',
+			"schoolName": "Edward Tracy Elementary School",
+			"schoolAddress": 'Street Name, Easton PA 18040'
+		}, {
+			"schoolId": '9999994C',
+			"schoolName": "Edward Tracy Elementary School",
+			"schoolAddress": 'Street Name, Easton PA 18040'
+		}, {
+			"schoolId": '9999994C',
+			"schoolName": "Edward Tracy Elementary School",
+			"schoolAddress": 'Street Name, Easton PA 18040'
+		}, {
+			"schoolId": '9999994C',
+			"schoolName": "Edward Tracy Elementary School",
+			"schoolAddress": 'Street Name, Easton PA 18040'
+		}, {
+			"schoolId": '9999994C',
+			"schoolName": "Edward Tracy Elementary School",
+			"schoolAddress": 'Street Name, Easton PA 18040'
+		}] };
+
+	for (var j in schoolList.schoolLists) {
+
+		$('.renderSchoolList').append("<div class='addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3' type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black schoolId\">" + schoolList.schoolLists[j].schoolId + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black schoolName\">" + schoolList.schoolLists[j].schoolName + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ADDRESS</div><p class=\"black schoolAddress\">" + schoolList.schoolLists[j].schoolAddress + "</p></div></div>");
+	}
+
 	//tl portal alphabetize and sort numerically
 
 
