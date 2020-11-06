@@ -679,6 +679,295 @@ for(var j in sAdmin.sAdmins) {
 
 }
 
+
+var district = {"districts": [{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+},
+{
+	"leadid": 'LEA8971A',
+	"schoolName": "Nazareth School District",
+	"dflag": 'Dolor ipsum',
+	"dStatus": "Approval Received"
+}
+
+
+]};
+
+for(var j in district.districts) {
+
+		$('.renderDistricts').append(`<div class='addBlocks d-flex align-items-center flex-wrap goToInfo' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><p class="black leadid">${district.districts[j].leadid}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><p class="black schoolName">${district.districts[j].schoolName}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><p class="black dflag">${district.districts[j].dflag}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><p class="black received dStatus">${district.districts[j].dStatus}</p></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
+
+
+}
+
+
 //tl portal alphabetize and sort numerically
 
 
@@ -822,24 +1111,24 @@ console.log(
 
 
 //change colors in districts to either green or goldColor
-$('.dStatus').each(function() {
-if ($(this).hasClass('in-progress')){
-
-	$(this).closest('.newBlocks').find('.progressBarFull').css({
-		'background' : '#fbb03b',
-		'width': '100%'
-	})
-}
-
-if ($(this).hasClass('received')){
-
-	$(this).closest('.newBlocks').find('.progressBarFull').css({
-		'background' : '#71d82e',
-		'width': '100%'
-	})
-}
-
-})
+// $('.dStatus').each(function() {
+// if ($(this).hasClass('in-progress')){
+//
+// 	$(this).closest('.newBlocks').find('.progressBarFull').css({
+// 		'background' : '#fbb03b',
+// 		'width': '100%'
+// 	})
+// }
+//
+// if ($(this).hasClass('received')){
+//
+// 	$(this).closest('.newBlocks').find('.progressBarFull').css({
+// 		'background' : '#71d82e',
+// 		'width': '100%'
+// 	})
+// }
+//
+// })
 
 
 
@@ -848,20 +1137,32 @@ if ($(this).hasClass('received')){
 
 
 var Opt01 = "";
-$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete').each(function() {
+$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete, .dStatus').each(function() {
 	Opt01 = $(this).html();
 
-	if ($(this).html() > 50 && $(this).html() <= 75) {
+
+	if ($(this).html() > 50 && $(this).html() <= 75 || $(this).html() == 'Special Handling– In Progress') {
 		$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fbb03b')
 		$(this).closest('.newBlocks').find('.progressBarFull').css({
 			'background' : '#fbb03b',
 			'width': '75%'
 		})
+		$(this).closest('.addBlocks').find('.progressBarFull').css({
+			'background' : '#fbb03b',
+			'width': '100%'
+		})
+
+
 	}
 
-	if ($(this).html() > 75 && $(this).html() <= 100) {
+	if ($(this).html() > 75 && $(this).html() <= 100 || $(this).html() == 'Approval Received') {
 		$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#71d82e')
 		$(this).closest('.newBlocks').find('.progressBarFull').css({
+			'background' : '#71d82e',
+			'width': '100%'
+		})
+
+		$(this).closest('.addBlocks').find('.progressBarFull').css({
 			'background' : '#71d82e',
 			'width': '100%'
 		})
@@ -892,11 +1193,13 @@ $('.newBlocks').addClass('hidden')
 
 var x=10
 $('.newBlocks').slice(0, 14).removeClass('hidden')
-$('.loadMore').on('click', function (e) {
+$('.loadMore, .load20More').on('click', function (e) {
 	e.preventDefault();
 
 	x = x+14;
+	xx = xx+24;
 	$('.newBlocks').slice(0, x).slideDown('slow').removeClass('hidden');
+	$('.addBlocks').slice(0, xx).slideDown('slow').removeClass('hidden');
 });
 
 $('.loadAll').on('click', function (e) {
@@ -920,16 +1223,58 @@ $('.loadAll').on('keyup', function(e) {
 })
 
 
-$('.loadMore').on('keyup', function(e) {
+$('.loadMore, .load20More').on('keyup', function(e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 13 ) {
 		e.preventDefault();
 
 		x = x+14;
+		xx = xx+24;
 		$('.newBlocks').slice(0, x).slideDown('slow').removeClass('hidden');
+		$('.addBlocks').slice(0, xx).slideDown('slow').removeClass('hidden');
 	}
 
 })
+
+
+
+$('.addBlocks').addClass('hidden')
+
+var xx=20
+$('.addBlocks').slice(0, 24).removeClass('hidden')
+$('.loadMore').on('click', function (e) {
+	e.preventDefault();
+
+	xx = xx+24;
+	$('.addBlocks').slice(0, xx).slideDown('slow').removeClass('hidden');
+});
+
+$('.loadAll').on('click', function (e) {
+	e.preventDefault();
+	$('.addBlocks').slideDown('slow').removeClass('hidden');
+	$('.loadMore, .flip').hide()
+	$('.loadAll p').addClass('all').hide()
+});
+
+$('.loadAll').on('keyup', function(e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13 ) {
+		e.preventDefault();
+		$('.addBlocks').slideDown('slow').removeClass('hidden');
+		$('.loadMore, .flip').hide()
+		$('.loadAll p').addClass('all').hide()
+
+	}
+
+
+})
+
+
+
+
+
+
+
 
 
 $('[data-toggle=tooltip]').tooltip();
