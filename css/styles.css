@@ -560,7 +560,20 @@ label.error{
 
 .saveInformation{
   position: relative;
-  z-index: 9999999999999999999999999999999
+outline: none;
+border: none;
+background: transparent;
+position:relative;
+z-index: 99999999999999999999999999999999999999;
+}
+
+.cancel {
+  position: relative;
+outline: none;
+border: none;
+background: transparent;
+position:relative;
+z-index: 99999999999999999999999999999999999999;
 }
 
 

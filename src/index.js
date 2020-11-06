@@ -2704,6 +2704,17 @@ $('.btn').on('click', function () {
 
 
 
+  $('.informationForm').find('input:text').val('');
+
+
+$('.cancel').on('click', function() {
+	  $('.informationForm').find('input:text').val('');
+})
+
+
+
+
+
 
 
 

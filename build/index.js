@@ -2212,4 +2212,10 @@ $(document).ready(function () {
 		$('input', this).removeAttr('checked');
 		$(this).removeClass('active');
 	});
+
+	$('.informationForm').find('input:text').val('');
+
+	$('.cancel').on('click', function () {
+		$('.informationForm').find('input:text').val('');
+	});
 });
