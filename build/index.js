@@ -2183,6 +2183,28 @@ $(document).ready(function () {
 		}, 600);
 
 		$('.save-floating').hide();
+
+		e.stopPropagation();
+
+		$(".slideOutLeft").animate({
+			width: "0",
+			opacity: '0'
+		}, 160, function () {});
+
+		$('#slideOutRight').css('z-index', '10');
+		$('.projects').attr('tabindex', '0');
+
+		$('.close-project').attr('tabindex', '-1');
+		$('.close-project').attr('aria-hidden', 'true');
+
+		$(".box-outer").animate({
+			'margin-left': "0px",
+			'margin-right': '0px'
+		}, 160, function () {});
+
+		setTimeout(function () {
+			$(".slideOutLeft").removeClass('open');
+		}, 200);
 	});
 
 	var negative = -$(".box-outer").width();
