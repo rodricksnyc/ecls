@@ -882,6 +882,7 @@ p.dark {
   -ms-transition:transform .1s ease-in-out;
   transform: scaleY(1.01);
   transform: scaleX(1.01);
+  cursor:grab
 }
 
 .addBlocks:hover p.black{
