@@ -1549,14 +1549,14 @@ var slideIt = function() {
 
 		$(this).closest('.outside').find('i').addClass('plusSign')
 
-		$(this).closest('.outside').find('.blueLine span').html('expand section')
+		$(this).closest('.outside').find('.blueLine2 span').html('expand section')
 
 		$(this).closest('.outside').find(".toggleDiv").slideUp();
 
 	}
 
 	else if ($(this).closest('.outside').find(".toggleDiv").is(':hidden')){
-		$(this).closest('.outside').find('.blueLine span').html('collapse section')
+		$(this).closest('.outside').find('.blueLine2 span').html('collapse section')
 		$(this).closest('.outside').find('i').removeClass('plusSign')
 
 		$(this).closest('.outside').find(".toggleDiv").slideDown();
@@ -1564,7 +1564,7 @@ var slideIt = function() {
 
 }
 
-$('.blueLine, .closeDiv').keypress(
+$('.blueLine2, .closeDiv').keypress(
 	slideIt
 
 ).click(
@@ -2679,20 +2679,6 @@ $('.btn').on('click', function () {
 });
 
 
-$(window).scroll(function () {
-	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-	if (distanceY > 120) {
-
-		$('.save-floating').css({
-			top: '80vw'
-		})
-	} else {
-
-		$('.save-floating').css({
-			top:'20vw'
-		})
-	}
-});
 
 
 
