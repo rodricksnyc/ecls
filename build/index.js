@@ -2165,10 +2165,7 @@ $(document).ready(function () {
 
 	$('.goToInfo').keypress(viewDistrictInfo).click(viewDistrictInfo);
 
-	var negative = -$(".box-outer").width();
-
-	$('.activeCube').click(function () {
-		console.log(negative);
+	$('.tlModals').on('hidden.bs.modal', function (e) {
 		setTimeout(function () {
 			$('.grayBox.first').removeClass('flexing-scroll');
 
@@ -2184,6 +2181,31 @@ $(document).ready(function () {
 		$(".grayBox.second").animate({
 			"right": negative
 		}, 600);
+
+		$('.save-floating').hide();
+	});
+
+	var negative = -$(".box-outer").width();
+
+	$('.activeCube').click(function () {
+
+		setTimeout(function () {
+			$('.grayBox.first').removeClass('flexing-scroll');
+
+			$(".grayBox.first").animate({
+				"left": 0
+			}, 500);
+		}, 300);
+
+		setTimeout(function () {
+			$('.grayBox.second').removeClass('animated slideInRight').hide();
+		}, 400);
+
+		$(".grayBox.second").animate({
+			"right": negative
+		}, 600);
+
+		$('.save-floating').hide();
 	});
 
 	$('.btn').on('click', function () {
