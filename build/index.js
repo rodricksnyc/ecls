@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 	for (var j in teacher.teachers) {
 
-		$('.teacherBlocks').append("<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER ID</div><p class=\"black\" id=\"teacherId\">" + teacher.teachers[j].teacherId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER NAME</div><p class=\"black\" id=\"teacherName\">" + teacher.teachers[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"teacherType\">" + teacher.teachers[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"teacherStatus\">" + teacher.teachers[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black teacherComplete\">" + teacher.teachers[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"teacherDate\">" + teacher.teachers[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + teacher.teachers[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
+		$('.teacherBlocks').append("<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER ID</div><p class=\"black teacherId\">" + teacher.teachers[j].teacherId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER NAME</div><p class=\"black teacherName\">" + teacher.teachers[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black teacherType\">" + teacher.teachers[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black teacherStatus\">" + teacher.teachers[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black teacherComplete\">" + teacher.teachers[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black teacherDate\">" + teacher.teachers[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div class=\"launchStatus\">" + teacher.teachers[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	//create and append child divs with objects
@@ -447,7 +447,7 @@ $(document).ready(function () {
 
 	for (var j in child.childrenComplete) {
 
-		$('.childBlocksComplete').append("<div class='child newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">CHILD ID</div><p class=\"black\" id=\"childId\">" + child.childrenComplete[j].childId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">CHILD NAME</div><p class=\"black\" id=\"childName\">" + child.childrenComplete[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"childType\">" + child.childrenComplete[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"childStatus\">" + child.childrenComplete[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black childComplete\">" + child.childrenComplete[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"childDate\">" + child.childrenComplete[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + child.childrenComplete[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
+		$('.childBlocksComplete').append("<div class='child newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">CHILD ID</div><p class=\"black childId\">" + child.childrenComplete[j].childId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">CHILD NAME</div><p class=\"black childName\">" + child.childrenComplete[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black childType\">" + child.childrenComplete[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black childStatus\">" + child.childrenComplete[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black childComplete\">" + child.childrenComplete[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black childDate\">" + child.childrenComplete[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div class=\"launchStatus\">" + child.childrenComplete[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	var teacher = { "teachersComplete": [{
@@ -465,7 +465,7 @@ $(document).ready(function () {
 
 	for (var j in teacher.teachersComplete) {
 
-		$('.teacherBlocksComplete').append("<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER ID</div><p class=\"black\" id=\"teacherId\">" + teacher.teachersComplete[j].teacherId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER NAME</div><p class=\"black\" id=\"teacherName\">" + teacher.teachersComplete[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"teacherType\">" + teacher.teachersComplete[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"teacherStatus\">" + teacher.teachersComplete[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black teacherComplete\">" + teacher.teachersComplete[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"teacherDate\">" + teacher.teachersComplete[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + teacher.teachersComplete[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
+		$('.teacherBlocksComplete').append("<div class='teacher newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER ID</div><p class=\"black teacherId\">" + teacher.teachersComplete[j].teacherId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TEACHER NAME</div><p class=\"black teacherName\">" + teacher.teachersComplete[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black teacherType\">" + teacher.teachersComplete[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black teacherStatus\">" + teacher.teachersComplete[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black teacherComplete\">" + teacher.teachersComplete[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black teacherDate\">" + teacher.teachersComplete[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div class=\"launchStatus\">" + teacher.teachersComplete[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	var parent = { "parents": [{
@@ -482,7 +482,7 @@ $(document).ready(function () {
 
 	for (var j in parent.parents) {
 
-		$('.parentBlocks').append("<div class='parent newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">PARENT ID</div><p class=\"black\" id=\"parentId\">" + parent.parents[j].parentId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">PARENT NAME</div><p class=\"black\" id=\"parentName\">" + parent.parents[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black\" id=\"parentType\">" + parent.parents[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"parentStatus\">" + parent.parents[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black parentComplete\">" + parent.parents[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"parentDate\">" + parent.parents[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + parent.parents[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
+		$('.parentBlocks').append("<div class='parent newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">PARENT ID</div><p class=\"black parentId\">" + parent.parents[j].parentId + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">PARENT NAME</div><p class=\"black parentName\">" + parent.parents[j].name + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">TYPE</div><p class=\"black parentType\">" + parent.parents[j].type + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black parentStatus\">" + parent.parents[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black parentComplete\">" + parent.parents[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black parentDate\">" + parent.parents[j].date + "</p></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div class=\"launchStatus\">" + parent.parents[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	var sAdmin = { "sAdmins": [{
@@ -560,16 +560,16 @@ $(document).ready(function () {
 
 	for (var j in sAdmin.sAdmins) {
 
-		$('.sAdminBlocks').append("<div class='sAdmin newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SECTION</div><p class=\"black\" id=\"sASection\">" + sAdmin.sAdmins[j].section + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black\" id=\"sAdminStatus\">" + sAdmin.sAdmins[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black sAdminComplete\">" + sAdmin.sAdmins[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black\" id=\"sAdminDate\">" + sAdmin.sAdmins[j].date + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">COMPLETED BY</div><div class=\"dropdown\"><button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"appendInfo\" data-toggle=\"dropdown\" aria-haspopup=\"true\"><div class=\"horizontalBlock\"><div class=\"vertical\"><p class=\"black\" id=\"appendedTitle\">" + sAdmin.sAdmins[j].title + "</p><p class=\"black\" id=\"appendedName\">" + sAdmin.sAdmins[j].name + "</p></div><i class=\"fal fa-angle-down darkBlue\"></i></div></button><div class=\"dropdown-menu\" aria-labelledby=\"appendInfo\"><div class=\"blackLine\"><p class=\"black small\">Select School Staff</p><div class=\"d-flex justify-content-end\"><i class=\"fal fa-angle-down darkBlue\"></i></div></div><div class=\"greyBubble\">School Administrator</div><form><legend>Other School Staff</legend><div class=\"blueBubble\"><p class=\"darkBlue small\">Other School Staff</p><div class=\"form-group\"><label for=\"new-name\">Name</label><input type=\"text\" name=\"\" class=\"form-control\" id=\"new-name\" placeholder=\"Jane Smith\"></div><div class=\"form-group\"><label for=\"new-title\">Title</label><input type=\"text\" name=\"\" class=\"form-control\" id=\"new-title\" placeholder=\"Assistant Principal\"></div><center><button type=\"button\" class=\"btn greenButton\" id=\"add\" data-toggle=\"dropdown\">ADD <i class=\"far fa-plus\"></i></button></center></div></div></form></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div id=\"launchStatus\">" + sAdmin.sAdmins[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
+		$('.sAdminBlocks').append("<div class='sAdmin newBlocks d-flex align-items-center flex-wrap'><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SECTION</div><p class=\"black sASection\">" + sAdmin.sAdmins[j].section + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">STATUS</div><p class=\"black sAdminStatus\">" + sAdmin.sAdmins[j].status + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">% COMPLETE</div><div class=\"percentageCircle\"><p class=\"black sAdminComplete\">" + sAdmin.sAdmins[j].percentage + "</p></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6 margin2\"><div class=\"mobile\">DATE LAST ACCESSED</div><p class=\"black sAdminDate\">" + sAdmin.sAdmins[j].date + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">COMPLETED BY</div><div class=\"dropdown\"><button class=\"appendInfo btn btn-default dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\"><div class=\"horizontalBlock\"><div class=\"vertical\"><p class=\"black appendedTitle\">" + sAdmin.sAdmins[j].title + "</p><p class=\"black appendedName\">" + sAdmin.sAdmins[j].name + "</p></div><i class=\"fal fa-angle-down darkBlue\"></i></div></button><div class=\"dropdown-menu\" aria-labelledby=\"appendInfo\"><div class=\"blackLine\"><p class=\"black small\">Select School Staff</p><div class=\"d-flex justify-content-end\"><i class=\"fal fa-angle-down darkBlue\"></i></div></div><div class=\"greyBubble\">School Administrator</div><form><legend>Other School Staff</legend><div class=\"blueBubble\"><p class=\"darkBlue small\">Other School Staff</p><div class=\"form-group\"><label for=\"new-name\">Name</label><input type=\"text\" name=\"\" class=\"form-control new-name\" placeholder=\"Jane Smith\"></div><div class=\"form-group\"><label for=\"new-title\">Title</label><input type=\"text\" name=\"\" class=\"form-control new-title\" placeholder=\"Assistant Principal\"></div><center><button type=\"button\" class=\"btn greenButton add\" data-toggle=\"dropdown\">ADD <i class=\"far fa-plus\"></i></button></center></div></div></form></div></div><div class=\"col-lg-1 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">LAUNCH</div><div class=\"launchStatus\">" + sAdmin.sAdmins[j].launch + "</div></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>");
 	}
 
 	var district = { "districts": [{
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8671A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA9971A',
 			"schoolName": "Easton Area School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
@@ -579,12 +579,12 @@ $(document).ready(function () {
 			"dflag": 'Lorem ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8881A',
 			"schoolName": "Kutztown Area School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA3971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
@@ -594,22 +594,22 @@ $(document).ready(function () {
 			"dflag": 'Lorem ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA1971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8571A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8551A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Morem ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA5571A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
@@ -619,57 +619,57 @@ $(document).ready(function () {
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA2971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA7971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA7771A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Morem ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA6671A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8871A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8071A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Ipsum ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8681A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA9979A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA4941A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA4471A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Ipsum ipsum',
 			"dStatus": "Special Handling– In Progressd"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA3371A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
@@ -679,7 +679,7 @@ $(document).ready(function () {
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA1971A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
@@ -689,7 +689,7 @@ $(document).ready(function () {
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA1171A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
@@ -699,27 +699,12 @@ $(document).ready(function () {
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA2271A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Special Handling– In Progress"
-		}, {
-			"leadid": 'LEA8971A',
-			"schoolName": "Nazareth School District",
-			"dflag": 'Dolor ipsum',
-			"dStatus": "Approval Received"
-		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8953A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
@@ -729,27 +714,42 @@ $(document).ready(function () {
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8461A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8993A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA8994A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Special Handling– In Progress"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA8977A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA7772A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"leadid": 'LEA6771A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
 		}, {
-			"leadid": 'LEA8971A',
+			"leadid": 'LEA5671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"leadid": 'LEA4471A',
 			"schoolName": "Nazareth School District",
 			"dflag": 'Dolor ipsum',
 			"dStatus": "Approval Received"
@@ -876,6 +876,7 @@ $(document).ready(function () {
 			var ascendOrderedDivs2 = $('.addBlocks').sort(function (a, b) {
 				return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? 1 : -1;
 			});
+
 			$(".renderDistricts").html(ascendOrderedDivs2);
 			setTimeout(function () {
 				$('.sortDflag').addClass('ascending');
@@ -940,62 +941,41 @@ $(document).ready(function () {
 	});
 
 	$('.sortId').on('click', function () {
-		var numericallyOrderedDivs = $('.addBlocks').sort(function (a, b) {
+		if (!$('.sortId').hasClass('ascending')) {
 
-			return parseFloat($(a).find('.leadid').text()) > parseFloat($(b).find('.leadid').text()) ? 1 : -1;
-		});
-		$(".renderDistricts").html(numericallyOrderedDivs);
+			// var number = $('.addBlocks').sort(function(a, b) {
+			// district.districts.sort(function(a, b) {
+			// 							  return a.leadid.localeCompare(b.leadid, undefined, {
+			// 							    numeric: true,
+			// 							    sensitivity: 'base'
+			// 							  });
+			//
+			// 							})
+
+			var number = district.districts = district.districts.sort(function (a, b) {
+				return a.leadid.localeCompare(b.leadid, undefined, {
+					numeric: true,
+					sensitivity: 'base'
+				});
+			});
+
+			console.log(number);
+
+			setTimeout(function () {
+				$('.sortStatus').addClass('ascending');
+			}, 600);
+
+			$('.topAttr .gray.larger i').each(function () {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
 	});
 
-	//
-	// var str = $('.leadid').html()
-	// var split = str.split(' ');
-	//
-	// console.log(split)
-	//
-	// split.forEach(function(item){
-	//   // If the split is not NaN
-	//   if(!isNaN(item)){
-	//     // Heres your number
-	//     console.log(item);
-	//   }
-	// });
-	//
-
-
-	var reA = /[^a-zA-Z]/g;
-	var reN = /[^0-9]/g;
-
-	function sortAlphaNum(a, b) {
-		var aA = a.replace(reA, "");
-		var bA = b.replace(reA, "");
-		if (aA === bA) {
-			var aN = parseInt(a.replace(reN, ""), 10);
-			var bN = parseInt(b.replace(reN, ""), 10);
-			return aN === bN ? 0 : aN > bN ? 1 : -1;
-		} else {
-			return aA > bA ? 1 : -1;
-		}
-	}
-	console.log(["A1", "A10", "A11", "A12", "A2", "A3", "A4", "B10", "B2", "F1", "F12", "F3"].sort(sortAlphaNum));
-
-	//change colors in districts to either green or goldColor
-	// $('.dStatus').each(function() {
-	// if ($(this).hasClass('in-progress')){
-	//
-	// 	$(this).closest('.newBlocks').find('.progressBarFull').css({
-	// 		'background' : '#fbb03b',
-	// 		'width': '100%'
-	// 	})
-	// }
-	//
-	// if ($(this).hasClass('received')){
-	//
-	// 	$(this).closest('.newBlocks').find('.progressBarFull').css({
-	// 		'background' : '#71d82e',
-	// 		'width': '100%'
-	// 	})
-	// }
+	// var Opt88 = "";
+	// $('.leadid').each(function() {
+	// 	var Opt88 = $(this).html().slice(3);
+	// 	console.log(Opt88)
 	//
 	// })
 
@@ -2270,6 +2250,7 @@ $(document).ready(function () {
 		}, 160, function () {});
 
 		setTimeout(function () {
+			$('.hoverOnly').show();
 			$(".slideOutLeft").removeClass('open');
 		}, 200);
 	});
@@ -2309,6 +2290,8 @@ $(document).ready(function () {
 			width: "180px",
 			opacity: '1'
 		}, 200, function () {});
+
+		$('.hoverOnly').hide();
 
 		$('#slideOutRight').css('z-index', '1');
 		$('.projects').attr('tabindex', '1');
@@ -2357,6 +2340,7 @@ $(document).ready(function () {
 			}, 160, function () {});
 
 			setTimeout(function () {
+				$('.hoverOnly').show();
 				$(".slideOutLeft").removeClass('open');
 			}, 200);
 		}
@@ -2370,6 +2354,8 @@ $(document).ready(function () {
 				width: "180px",
 				opacity: '1'
 			}, 200, function () {});
+
+			$('.hoverOnly').hide();
 
 			$('#slideOutRight').css('z-index', '1');
 			$('.projects').attr('tabindex', '1');
@@ -2578,5 +2564,9 @@ $(document).ready(function () {
 
 	$('.cancel').on('click', function () {
 		$('.informationForm').find('input:text').val('');
+	});
+	$('.back-to-top-in-modal').on('click', function () {
+
+		$('.tlModals').animate({ scrollTop: 0 }, 'slow');
 	});
 });

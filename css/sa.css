@@ -1121,7 +1121,7 @@ span.heading {
   transform: translate3d(0px, -1px, 0px) !important;
 }
 
-#appendedName, #appendedTitle {
+.appendedName, .appendedTitle {
   line-height: 1.3;
   white-space: nowrap;
   overflow: hidden;
@@ -1130,7 +1130,7 @@ span.heading {
   text-align: left;
 
 }
-#add{
+.add{
 
   font-size: 12px;
   width: auto;
@@ -1139,7 +1139,7 @@ span.heading {
   margin-bottom: .5em;
 }
 
-.sAdmin #add i {
+.sAdmin .add i {
   font-size: 14px;
 }
 
@@ -6044,10 +6044,10 @@ transform: scale(0.8);
 
 
   @media (max-width:1199px) and (min-width:991px){
-    #appendedName, #appendedTitle {
+    .appendedName, .appendedTitle {
 
       max-width: 120px;
-      margin-bottom: 0em;
+      margin-bottom: 0em !important;
     }
   }
 
@@ -6056,7 +6056,7 @@ transform: scale(0.8);
       margin-left: 3em;
       margin-right: -2em;
     }
-    .sAdminAttr .col-lg-1 h6.gray, #sAdminDate {
+    .sAdminAttr .col-lg-1 h6.gray, .sAdminDate {
 
       width: 204%;
     }
@@ -6085,9 +6085,9 @@ transform: scale(0.8);
       min-width: 10em;
     }
 
-    #appendedName, #appendedTitle {
+    .appendedName, .appendedTitle {
 
-      margin-bottom: 0em;
+      margin-bottom: 0em !important;
     }
 
     .toggleDiv .firstRow {
@@ -6246,10 +6246,10 @@ transform: scale(0.8);
       margin-right: 0%;
     }
 
-    /* #one {
-      top: 15%;
-    } */
+    .appendedName, .appendedTitle {
 
+      margin-bottom: 0em !important;
+    }
 
     label.card-cc.second {
       font-size: 19px;
@@ -6277,7 +6277,7 @@ transform: scale(0.8);
     hr.mt-5 {
       margin-top: 5rem!important;
     }
-    #appendedName, #appendedTitle {
+    .appendedName, .appendedTitle {
       max-width: 104px;
       margin-bottom: 0em;
       font-size: 14px;
@@ -7050,7 +7050,7 @@ transform: scale(0.8);
 
     }
 
-    #appendedName, #appendedTitle {
+    .appendedName, .appendedTitle {
       max-width: 90px;
       margin-bottom: 0em;
       font-size: 12px;
