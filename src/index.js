@@ -3023,9 +3023,9 @@ var viewDistrictInfo = function() {
 
 	$('.save-floating').show().css('display', 'flex')
 
-	
+
 	  setTimeout(function() {
-			$('.tlModals').animate({ scrollTop: 0 }, 900);
+			$('.tlModals').animate({ scrollTop: 0 }, 700);
 		},1000)
 
 // })

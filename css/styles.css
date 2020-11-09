@@ -339,7 +339,7 @@ textarea::placeholder {
 
   font-size: 1.5em;
   margin-top: .2em;
-  margin-left:10px
+  margin-left:70px
 }
 
 .close-project i.darkBlue:hover {
@@ -347,9 +347,16 @@ textarea::placeholder {
 }
 
 .slideOutLeft .greenCube, .slideOutLeft .blueCube{
-  padding: .2em 2em;
-  width:140px
+  padding: .6em 1.6em;
+  width: 150px;
+    margin-bottom: .6em;
 }
+.slideOutLeft .greenCube img, .slideOutLeft .blueCube img{
+width: 5em;
+
+}
+
+
 
 .activeCube{
   background: transparent;
@@ -373,7 +380,7 @@ textarea::placeholder {
 .slideOutLeft   h6.gray {
   font-size: .9em;
   position: relative;
-  right: -45px;
+  right: -57px;
 
 }
 
@@ -494,7 +501,7 @@ textarea::placeholder {
   bottom: 0;
   position: absolute;
   left:0;
-  padding: 0em 2em;
+  padding: 2em 2em;
 }
 
 .grayBox.second .landing-sec-H {
@@ -541,7 +548,7 @@ textarea::placeholder {
   display: none
 }
 
-/* .errorMessages {
+.errorMessages {
 display: none;
 list-style-type: disc;
 margin: 0 10px 15px 10px;
@@ -554,7 +561,7 @@ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .errorMessages span {
 font-weight: bold;
-} */
+}
 
 
 .invalid-feedback {
@@ -634,9 +641,14 @@ label.error{
   border-radius: 2rem;
   color: #6F6F6F;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 17px;
   color: white;
-  margin: 0em 0em 2em 0em;
+  margin: 0em 0em 0em 0em;
+
+}
+
+.floatRight{
+  float:right
 }
 
 
@@ -675,10 +687,67 @@ label.error{
   color: black;
   font-family: 'Public Sans' !important;
 }
+
+
+.lightGrayBox .form-control.disabled{
+    border: 1px solid gray;
+}
 .lightGrayBox {
   background: #f6f8f8;
   padding: 2em;
   margin-top:1em
+}
+
+
+.swal-modal {
+  width:700px;
+  height:400px;
+}
+
+.swal-title{
+  font-weight: 600 !important;
+    color: #071D49;
+    font-family: kepler-std, serif;
+    padding-top:86px
+}
+
+.swal-footer {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.swal-button--cancel {
+
+  background: #B20F0F !important;
+      border-color: #B20F0F !important;
+      width: 8rem;
+      border-radius: 2rem;
+      color: white;
+      text-transform: uppercase;
+      height: 2.1rem;
+      border: 1px solid;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 18px;
+      padding: 0;
+      font-weight: 500;
+}
+
+
+.swal-button--confirm {
+  background: white !important;
+      /* border-color: #00843D !important; */
+      width: 8rem;
+      border-radius: 2rem;
+      color: #576f7f;
+      text-transform: uppercase;
+      height: 2.1rem;
+      border: 1px solid;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 18px;
+      padding: 0;
+      font-weight: 500;
 }
 
 textarea {
@@ -1936,7 +2005,7 @@ h6.gray {
 
 .absoluteAngle{
   position: absolute;
-  left:10px;
+  right:3px;
   height:1em;
   width:1em;
   top:calc(50% - .5em)
@@ -1950,7 +2019,7 @@ h6.gray {
   position: fixed;
   height: auto;
   background: #e6e6e6;
-  top: -1em;
+  top: -15px;
   z-index: 99999999;
   left: -2%;
   border-radius: .5rem;
@@ -7242,7 +7311,7 @@ body{
   .slideOutLeft   h6.gray {
     font-size: .9em;
     position: relative;
-    right: -45px;
+  right: -57px;
 
   }
 
