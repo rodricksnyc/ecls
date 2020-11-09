@@ -844,6 +844,11 @@ $(document).ready(function () {
 			setTimeout(function () {
 				$('.sortDistrict').addClass('ascending');
 			}, 600);
+
+			$('.topAttr .gray.larger i').each(function () {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
 			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
 		}
 
@@ -856,6 +861,10 @@ $(document).ready(function () {
 			setTimeout(function () {
 				$('.sortDistrict').removeClass('ascending');
 			}, 600);
+
+			$('.topAttr .gray.larger i').each(function () {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
 
 			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
 		}
@@ -871,6 +880,10 @@ $(document).ready(function () {
 			setTimeout(function () {
 				$('.sortDflag').addClass('ascending');
 			}, 600);
+
+			$('.topAttr .gray.larger i').each(function () {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
 			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
 		}
 
@@ -883,6 +896,10 @@ $(document).ready(function () {
 			setTimeout(function () {
 				$('.sortDflag').removeClass('ascending');
 			}, 600);
+
+			$('.topAttr .gray.larger i').each(function () {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
 
 			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
 		}
@@ -898,6 +915,9 @@ $(document).ready(function () {
 			setTimeout(function () {
 				$('.sortStatus').addClass('ascending');
 			}, 600);
+			$('.topAttr .gray.larger i').each(function () {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
 			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
 		}
 
@@ -910,6 +930,10 @@ $(document).ready(function () {
 			setTimeout(function () {
 				$('.sortStatus').removeClass('ascending');
 			}, 600);
+
+			$('.topAttr .gray.larger i').each(function () {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
 
 			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
 		}

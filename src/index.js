@@ -1031,7 +1031,13 @@ $('.sortDistrict').on('click', function() {
 	setTimeout(function() {
 		$('.sortDistrict').addClass('ascending')
 	}, 600)
+
+$('.topAttr .gray.larger i').each(function() {
+$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+})
+
 	$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+
 }
 
 	if ($('.sortDistrict').hasClass('ascending')) {
@@ -1044,6 +1050,10 @@ $('.sortDistrict').on('click', function() {
 	setTimeout(function() {
 		$('.sortDistrict').removeClass('ascending')
 	}, 600)
+
+	$('.topAttr .gray.larger i').each(function() {
+	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+	})
 
 	$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
 
@@ -1061,6 +1071,10 @@ $('.sortDflag').on('click', function() {
 	setTimeout(function() {
 		$('.sortDflag').addClass('ascending')
 	}, 600)
+
+	$('.topAttr .gray.larger i').each(function() {
+	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+	})
 	$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
 }
 
@@ -1074,6 +1088,10 @@ $('.sortDflag').on('click', function() {
 	setTimeout(function() {
 		$('.sortDflag').removeClass('ascending')
 	}, 600)
+
+	$('.topAttr .gray.larger i').each(function() {
+	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+	})
 
 	$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
 
@@ -1091,6 +1109,9 @@ $('.sortStatus').on('click', function() {
 	setTimeout(function() {
 		$('.sortStatus').addClass('ascending')
 	}, 600)
+	$('.topAttr .gray.larger i').each(function() {
+	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+	})
 	$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
 }
 
@@ -1104,6 +1125,10 @@ $('.sortStatus').on('click', function() {
 	setTimeout(function() {
 		$('.sortStatus').removeClass('ascending')
 	}, 600)
+
+	$('.topAttr .gray.larger i').each(function() {
+	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+	})
 
 	$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
 

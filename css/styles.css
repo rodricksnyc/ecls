@@ -803,6 +803,11 @@ textarea {
   display: flex !important
 }
 
+.rotateIt {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f0de";
+}
+
 
 .grayBoxEmpty {
   background: #d1d3d4;
