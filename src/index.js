@@ -601,13 +601,13 @@ var sAdmin = {"sAdmins": [{
 
 {
 
-"section": 'School Facilities and Resources',
-"status": "Complete",
-"percentage": 100,
-"date": "3/15/20",
-"title": "School Administrator",
-"name": "John Smith",
-"launch": "<i class='fas fa-check limeCheck'></i>"
+	"section": 'School Facilities and Resources',
+	"status": "Complete",
+	"percentage": 100,
+	"date": "3/15/20",
+	"title": "School Administrator",
+	"name": "John Smith",
+	"launch": "<i class='fas fa-check limeCheck'></i>"
 },
 
 {
@@ -621,43 +621,43 @@ var sAdmin = {"sAdmins": [{
 },
 {
 
-"section": 'School Policies and Practices',
-"status": "<i class='fal fa-spinner'></i>In Progress",
-"percentage": 75,
-"date": "3/15/20",
-"title": "School Administrator",
-"name": "Alex Johnson",
-"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+	"section": 'School Policies and Practices',
+	"status": "<i class='fal fa-spinner'></i>In Progress",
+	"percentage": 75,
+	"date": "3/15/20",
+	"title": "School Administrator",
+	"name": "Alex Johnson",
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 
-"section": 'School Programs for Particular Populations',
-"status": "Not Started",
-"percentage": 0,
-"date": "3/15/20",
-"title": "School Administrator",
-"name": "Bill Thomas",
-"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+	"section": 'School Programs for Particular Populations',
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "3/15/20",
+	"title": "School Administrator",
+	"name": "Bill Thomas",
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 
-"section": 'Federal Programs',
-"status": "Not Started",
-"percentage": 0,
-"date": "3/15/20",
-"title": "School Administrator",
-"name": "Andrew Smith",
-"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+	"section": 'Federal Programs',
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "3/15/20",
+	"title": "School Administrator",
+	"name": "Andrew Smith",
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 
-"section": 'Staffing and Teacher Characteristics',
-"status": "Not Started",
-"percentage": 0,
-"date": "3/15/20",
-"title": "School Administrator",
-"name": "Kelly Jones",
-"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
+	"section": 'Staffing and Teacher Characteristics',
+	"status": "Not Started",
+	"percentage": 0,
+	"date": "3/15/20",
+	"title": "School Administrator",
+	"name": "Kelly Jones",
+	"launch": "<i class='fas fa-arrow-right darkBlue'></i>"
 },
 {
 	"section": 'School Administrator Characteristics',
@@ -966,7 +966,7 @@ var district = {"districts": [{
 for(var j in district.districts) {
 
 
-		$('.renderDistricts').append(`<div class='addBlocks d-flex align-items-center flex-wrap goToInfo' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LEAID</div><p class="black leadid">${district.districts[j].leadid}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">DISTRICT NAME</div><p class="black schoolName">${district.districts[j].schoolName}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">DFLAG</div><p class="black dflag">${district.districts[j].dflag}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">DISTRICT STATUS</div><p class="black received dStatus">${district.districts[j].dStatus}</p></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
+	$('.renderDistricts').append(`<div class='addBlocks d-flex align-items-center flex-wrap goToInfo' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">LEAID</div><p class="black leadid">${district.districts[j].leadid}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">DISTRICT NAME</div><p class="black schoolName">${district.districts[j].schoolName}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">DFLAG</div><p class="black dflag">${district.districts[j].dflag}</p></div><div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"><div class="mobile">DISTRICT STATUS</div><p class="black received dStatus">${district.districts[j].dStatus}</p></div><div class='progressBarEmpty'></div><div class='progressBarFull'></div></div>`)
 
 }
 
@@ -1012,7 +1012,7 @@ var schoolList = {"schoolLists": [{
 
 for(var j in schoolList.schoolLists) {
 
-		$('.renderSchoolList').append(`<div class='addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="goldLeftBar"></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ID</div><p class="black schoolId">${schoolList.schoolLists[j].schoolId}</p></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL NAME</div><p class="black schoolName">${schoolList.schoolLists[j].schoolName}</p></div><div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ADDRESS</div><p class="black schoolAddress">${schoolList.schoolLists[j].schoolAddress}</p></div></div>`)
+	$('.renderSchoolList').append(`<div class='addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="goldLeftBar"></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ID</div><p class="black schoolId">${schoolList.schoolLists[j].schoolId}</p></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL NAME</div><p class="black schoolName">${schoolList.schoolLists[j].schoolName}</p></div><div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ADDRESS</div><p class="black schoolAddress">${schoolList.schoolLists[j].schoolAddress}</p></div></div>`)
 
 }
 
@@ -1023,38 +1023,38 @@ for(var j in schoolList.schoolLists) {
 $('.sortDistrict').on('click', function() {
 	if (!$('.sortDistrict').hasClass('ascending')) {
 
-	var ascendOrderedDivs = $('.addBlocks').sort(function(a, b) {
-		return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? 1 : -1;
-	});
-	$(".renderDistricts").html(ascendOrderedDivs);
-	setTimeout(function() {
-		$('.sortDistrict').addClass('ascending')
-	}, 600)
+		var ascendOrderedDivs = $('.addBlocks').sort(function(a, b) {
+			return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? 1 : -1;
+		});
+		$(".renderDistricts").html(ascendOrderedDivs);
+		setTimeout(function() {
+			$('.sortDistrict').addClass('ascending')
+		}, 600)
 
-$('.topAttr .gray.larger i').each(function() {
-$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-})
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
 
-	$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
 
-}
+	}
 
 	if ($('.sortDistrict').hasClass('ascending')) {
 
 
-	var descendOrderedDivs = $('.addBlocks').sort(function(a, b) {
-		return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? -1 : 1;
-	});
-	$(".renderDistricts").html(descendOrderedDivs);
-	setTimeout(function() {
-		$('.sortDistrict').removeClass('ascending')
-	}, 600)
+		var descendOrderedDivs = $('.addBlocks').sort(function(a, b) {
+			return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? -1 : 1;
+		});
+		$(".renderDistricts").html(descendOrderedDivs);
+		setTimeout(function() {
+			$('.sortDistrict').removeClass('ascending')
+		}, 600)
 
-	$('.topAttr .gray.larger i').each(function() {
-	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-	})
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
 
-	$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
 
 	}
 
@@ -1063,38 +1063,38 @@ $('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
 $('.sortDflag').on('click', function() {
 	if (!$('.sortDflag').hasClass('ascending')) {
 
-	var ascendOrderedDivs2 = $('.addBlocks').sort(function(a, b) {
-		return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? 1 : -1;
-	});
+		var ascendOrderedDivs2 = $('.addBlocks').sort(function(a, b) {
+			return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? 1 : -1;
+		});
 
 
-	$(".renderDistricts").html(ascendOrderedDivs2);
-	setTimeout(function() {
-		$('.sortDflag').addClass('ascending')
-	}, 600)
+		$(".renderDistricts").html(ascendOrderedDivs2);
+		setTimeout(function() {
+			$('.sortDflag').addClass('ascending')
+		}, 600)
 
-	$('.topAttr .gray.larger i').each(function() {
-	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-	})
-	$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
-}
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+	}
 
 	if ($('.sortDflag').hasClass('ascending')) {
 
 
-	var descendOrderedDivs2 = $('.addBlocks').sort(function(a, b) {
-		return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? -1 : 1;
-	});
-	$(".renderDistricts").html(descendOrderedDivs2);
-	setTimeout(function() {
-		$('.sortDflag').removeClass('ascending')
-	}, 600)
+		var descendOrderedDivs2 = $('.addBlocks').sort(function(a, b) {
+			return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? -1 : 1;
+		});
+		$(".renderDistricts").html(descendOrderedDivs2);
+		setTimeout(function() {
+			$('.sortDflag').removeClass('ascending')
+		}, 600)
 
-	$('.topAttr .gray.larger i').each(function() {
-	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-	})
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
 
-	$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
 
 	}
 
@@ -1103,35 +1103,35 @@ $('.sortDflag').on('click', function() {
 $('.sortStatus').on('click', function() {
 	if (!$('.sortStatus').hasClass('ascending')) {
 
-	var ascendOrderedDivs3 = $('.addBlocks').sort(function(a, b) {
-		return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? 1 : -1;
-	});
-	$(".renderDistricts").html(ascendOrderedDivs3);
-	setTimeout(function() {
-		$('.sortStatus').addClass('ascending')
-	}, 600)
-	$('.topAttr .gray.larger i').each(function() {
-	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-	})
-	$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
-}
+		var ascendOrderedDivs3 = $('.addBlocks').sort(function(a, b) {
+			return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? 1 : -1;
+		});
+		$(".renderDistricts").html(ascendOrderedDivs3);
+		setTimeout(function() {
+			$('.sortStatus').addClass('ascending')
+		}, 600)
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+	}
 
 	if ($('.sortStatus').hasClass('ascending')) {
 
 
-	var descendOrderedDivs3 = $('.addBlocks').sort(function(a, b) {
-		return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? -1 : 1;
-	});
-	$(".renderDistricts").html(descendOrderedDivs3);
-	setTimeout(function() {
-		$('.sortStatus').removeClass('ascending')
-	}, 600)
+		var descendOrderedDivs3 = $('.addBlocks').sort(function(a, b) {
+			return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? -1 : 1;
+		});
+		$(".renderDistricts").html(descendOrderedDivs3);
+		setTimeout(function() {
+			$('.sortStatus').removeClass('ascending')
+		}, 600)
 
-	$('.topAttr .gray.larger i').each(function() {
-	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-	})
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
 
-	$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
 
 	}
 
@@ -1145,35 +1145,35 @@ $('.sortId').on('click', function() {
 
 
 		// var number = $('.addBlocks').sort(function(a, b) {
- // district.districts.sort(function(a, b) {
-	// 							  return a.leadid.localeCompare(b.leadid, undefined, {
-	// 							    numeric: true,
-	// 							    sensitivity: 'base'
-	// 							  });
- //
-	// 							})
+		// district.districts.sort(function(a, b) {
+		// 							  return a.leadid.localeCompare(b.leadid, undefined, {
+		// 							    numeric: true,
+		// 							    sensitivity: 'base'
+		// 							  });
+		//
+		// 							})
 
-var number =  district.districts = district.districts.sort(function(a, b) {
-				  return a.leadid.localeCompare(b.leadid, undefined, {
-				    numeric: true,
-				    sensitivity: 'base'
-				  });
+		var number =  district.districts = district.districts.sort(function(a, b) {
+			return a.leadid.localeCompare(b.leadid, undefined, {
+				numeric: true,
+				sensitivity: 'base'
+			});
 
 
 
-})
+		})
 
-	console.log(number)
+		console.log(number)
 
-	setTimeout(function() {
-		$('.sortStatus').addClass('ascending')
-	}, 600)
+		setTimeout(function() {
+			$('.sortStatus').addClass('ascending')
+		}, 600)
 
-	$('.topAttr .gray.larger i').each(function() {
-	$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-	})
-	$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
-}
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+	}
 
 
 });
@@ -1450,7 +1450,7 @@ $("#two .nav-link").click(function () {
 
 });
 
-	$('li[data-target="#overview"]').addClass('activated')
+$('li[data-target="#overview"]').addClass('activated')
 
 //animations for landing page
 $(window).on('scroll', function() {
@@ -1561,20 +1561,20 @@ $(window).on('scroll', function() {
 if ($(window).height() < 800){
 
 
-$(window).scroll(function () {
-	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-	if (distanceY > 120) {
+	$(window).scroll(function () {
+		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+		if (distanceY > 120) {
 
-		$('.menu-buttons-floating').css({
-			top: '2em'
-		})
-	} else {
+			$('.menu-buttons-floating').css({
+				top: '2em'
+			})
+		} else {
 
-		$('.menu-buttons-floating').css({
-			top:'14em'
-		})
-	}
-});
+			$('.menu-buttons-floating').css({
+				top:'14em'
+			})
+		}
+	});
 
 
 }
@@ -1725,7 +1725,7 @@ else {
 if ($(document).innerWidth() <= 767) {
 	$('#feedbackModal').on('hidden.bs.modal', function (e) {
 
-				$('#one').css('top', '40%')
+		$('#one').css('top', '40%')
 
 	})
 
@@ -2092,7 +2092,7 @@ $('.contactUsOverlay').on('click', function(e) {
 
 	if($('body').hasClass('showContact')) {
 
-	$('.contactUsOverlay').hide()
+		$('.contactUsOverlay').hide()
 
 
 		$('#theform input').each(function () {
@@ -2185,42 +2185,42 @@ $('#sendMessage').click(function (e) {
 	if(!$('#formControl1').val() == '' && !$('#formControl2').val() =='' )    {
 		e.preventDefault()
 
-	$('#theform input').each(function () {
-		$(this).attr('tabindex', '-1');
-	});
+		$('#theform input').each(function () {
+			$(this).attr('tabindex', '-1');
+		});
 
-	$('.radio-inline input').each(function () {
-		$(this).attr('tabindex', '-1');
-	});
+		$('.radio-inline input').each(function () {
+			$(this).attr('tabindex', '-1');
+		});
 
-	$('.form-control').attr('tabindex', '-1');
+		$('.form-control').attr('tabindex', '-1');
 
-	$('#closeThisPlease').attr('tabindex', '-1');
+		$('#closeThisPlease').attr('tabindex', '-1');
 
-	$('#sendMessage').attr('tabindex', '-1');
-
-
-	$("#slideOut").removeClass('showSlideOut');
-	// e.preventDefault()
-
-	setTimeout(function () {
-		$('.toast').css('right', '0px')
-		$('.toast').removeClass('transparent-opacity').addClass('animated slideInRight')
-	}, 300)
-
-	setTimeout(function () {
-		$('.toast').removeClass('transparent-opacity').removeClass('animated slideInRight')
-		$('.toast').addClass('transparent-opacity');
-		$('.toast').removeClass('animated slideOutRight')
-
-	}, 5000)
-	setTimeout(function () {
-		$('.toast').css('right', '-335px')
-		$('.toast').addClass('animated slideOutRight')
-	}, 4900)
+		$('#sendMessage').attr('tabindex', '-1');
 
 
-}
+		$("#slideOut").removeClass('showSlideOut');
+		// e.preventDefault()
+
+		setTimeout(function () {
+			$('.toast').css('right', '0px')
+			$('.toast').removeClass('transparent-opacity').addClass('animated slideInRight')
+		}, 300)
+
+		setTimeout(function () {
+			$('.toast').removeClass('transparent-opacity').removeClass('animated slideInRight')
+			$('.toast').addClass('transparent-opacity');
+			$('.toast').removeClass('animated slideOutRight')
+
+		}, 5000)
+		setTimeout(function () {
+			$('.toast').css('right', '-335px')
+			$('.toast').addClass('animated slideOutRight')
+		}, 4900)
+
+
+	}
 
 
 });
@@ -2730,348 +2730,347 @@ $(".scrollIt").on("click", function(event) {
 
 
 
-$('.disabled').attr('disabled','disabled')
+	$('.disabled').attr('disabled','disabled')
 
 
 
-//TL portal open sidebar
+	//TL portal open sidebar
 
 
-// var closeProject = function() {
+
 
 	$('.close-project').click(function(e) {
-	e.stopPropagation()
+		e.stopPropagation()
 
-	$( ".slideOutLeft" ).animate({
-		width: "0",
-		opacity: '0'
-	}, 160, function() {
+		$( ".slideOutLeft" ).animate({
+			width: "0",
+			opacity: '0'
+		}, 160, function() {
+
+		});
+
+		$('#slideOutRight').css('z-index', '10')
+		$('.projects').attr('tabindex', '0')
+
+		$('.close-project').attr('tabindex', '-1')
+		$('.close-project').attr('aria-hidden', 'true')
+
+		$( ".box-outer" ).animate({
+			'margin-left': "0px",
+			'margin-right': '0px'
+		}, 160, function() {
+
+		});
+
+
+		setTimeout(function() {
+			if ($(document).innerWidth() > 1024) {
+				$('.hoverOnly').show()
+			}
+			$( ".slideOutLeft" ).removeClass('open')
+		}, 200)
+
+	})
+
+
+
+	$('.slideOutLeft').on('mouseleave', function(e) {
+		e.stopPropagation()
+		if (!$( ".slideOutLeft" ).hasClass('open')) {
+
+			$( ".slideOutLeft" ).animate({
+				width: "0",
+				opacity: '0'
+			}, 160, function() {
+
+			});
+
+			$('#slideOutRight').css('z-index', '10')
+			$('.projects').attr('tabindex', '0')
+
+			$('.close-project').attr('tabindex', '-1')
+			$('.close-project').attr('aria-hidden', 'true')
+
+		}
+
+
+	})
+
+
+	// var slideOutLeft = function() {
+
+	$('.slideOutLeft').not('.activeCube').click(function() {
+
+		$( ".slideOutLeft" ).animate({
+			width: "180px",
+			opacity: '1'
+		}, 200, function() {
+
+		});
+		if ($(document).innerWidth() > 1024) {
+			$('.hoverOnly').hide()
+		}
+
+		$('#slideOutRight').css('z-index', '1')
+		$('.projects').attr('tabindex', '1')
+		$('.close-project').attr('tabindex', '1')
+		$('.close-project').attr('aria-hidden', 'false')
+
+		$( ".box-outer" ).animate({
+			'margin-left': "140px",
+			'margin-right': '20px'
+		}, 200, function() {
+
+		});
+
+		setTimeout(function() {
+			$( ".slideOutLeft" ).addClass('open')
+		}, 200)
+
 
 	});
 
-	$('#slideOutRight').css('z-index', '10')
-	$('.projects').attr('tabindex', '0')
+	// }
+	//
+	// $('.slideOutLeft').not('.activeCube').keypress(
+	// slideOutLeft
+	//
+	// ).click(
+	// 	slideOutLeft
+	// );
 
-	$('.close-project').attr('tabindex', '-1')
-	$('.close-project').attr('aria-hidden', 'true')
 
-	$( ".box-outer" ).animate({
-		'margin-left': "0px",
-		'margin-right': '0px'
-	}, 160, function() {
+
+	$('.close-project').on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
+			// e.stopPropagation()
+
+			$( ".slideOutLeft" ).animate({
+				width: "0",
+				opacity: '0'
+			}, 160, function() {
+
+			});
+
+			$('#slideOutRight').css('z-index', '10')
+			$('.projects').attr('tabindex', '0')
+
+			$('.close-project').attr('tabindex', '-1')
+			$('.close-project').attr('aria-hidden', 'true')
+
+			$( ".box-outer" ).animate({
+				'margin-left': "0px",
+				'margin-right': '0px'
+			}, 160, function() {
+
+			});
+
+			setTimeout(function() {
+				if ($(document).innerWidth() > 1024) {
+					$('.hoverOnly').show()
+
+				}
+				$( ".slideOutLeft" ).removeClass('open')
+			}, 200)
+
+		}
+
+	})
+
+
+
+	$('.projects').on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
+
+			$( ".slideOutLeft" ).animate({
+				width: "180px",
+				opacity: '1'
+			}, 200, function() {
+
+			});
+
+			if ($(document).innerWidth() > 1024) {
+
+				$('.hoverOnly').hide()
+
+			}
+
+			$('#slideOutRight').css('z-index', '1')
+			$('.projects').attr('tabindex', '1')
+			$('.close-project').attr('tabindex', '1')
+			$('.close-project').attr('aria-hidden', 'false')
+
+			$( ".box-outer" ).animate({
+				'margin-left': "140px",
+				'margin-right': '20px'
+			}, 200, function() {
+
+			});
+
+			setTimeout(function() {
+				$( ".slideOutLeft" ).addClass('open')
+			}, 200)
+
+		}
+
 
 	});
 
-	setTimeout(function() {
-		$('.hoverOnly').show()
-		$( ".slideOutLeft" ).removeClass('open')
-	}, 200)
 
-})
+	$('.projects').on('mouseenter' , function() {
+		if (!$( ".slideOutLeft" ).hasClass('open')) {
 
 
-// }
-//
-// $('.close-project').keypress(
-// closeProject
-//
-// ).click(
-// closeProject
-// );
+			$( ".slideOutLeft" ).animate({
+				width: "180px",
+				opacity: '1'
+			}, 200, function() {
 
+			});
 
+			$('#slideOutRight').css('z-index', '1')
+			$('.projects').attr('tabindex', '1')
+			$('.close-project').attr('tabindex', '1')
+			$('.close-project').attr('aria-hidden', 'false')
 
-
-
-$('.slideOutLeft').on('mouseleave', function(e) {
-e.stopPropagation()
-if (!$( ".slideOutLeft" ).hasClass('open')) {
-
-$( ".slideOutLeft" ).animate({
-	width: "0",
-	opacity: '0'
-}, 160, function() {
-
-});
-
-$('#slideOutRight').css('z-index', '10')
-$('.projects').attr('tabindex', '0')
-
-$('.close-project').attr('tabindex', '-1')
-$('.close-project').attr('aria-hidden', 'true')
-
-}
-
-
-})
-
-
-// var slideOutLeft = function() {
-
-$('.slideOutLeft').not('.activeCube').click(function() {
-
-	$( ".slideOutLeft" ).animate({
-		width: "180px",
-		opacity: '1'
-	}, 200, function() {
+		}
 
 	});
 
-		$('.hoverOnly').hide()
 
-	$('#slideOutRight').css('z-index', '1')
-	$('.projects').attr('tabindex', '1')
-	$('.close-project').attr('tabindex', '1')
-	$('.close-project').attr('aria-hidden', 'false')
 
-	$( ".box-outer" ).animate({
-		'margin-left': "140px",
-		'margin-right': '20px'
-	}, 200, function() {
+	//TL images
 
-	});
+	$('.districts').on('mouseenter', function() {
 
-	setTimeout(function() {
-		$( ".slideOutLeft" ).addClass('open')
-	}, 200)
+		$('.districts img').attr('src', 'images/img_districts-hover.svg')
+	})
 
+	$('.districts').on('mouseleave', function() {
 
-});
+		$('.districts img').attr('src', 'images/img_districts.svg')
+	})
 
-// }
-//
-// $('.slideOutLeft').not('.activeCube').keypress(
-// slideOutLeft
-//
-// ).click(
-// 	slideOutLeft
-// );
+	$('.schools').on('mouseenter', function() {
 
+		$('.schools img').attr('src', 'images/img_school-hover.svg')
+	})
 
+	$('.schools').on('mouseleave', function() {
 
-$('.close-project').on("keyup", function (e) {
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 13) {
-// e.stopPropagation()
+		$('.schools img').attr('src', 'images/img_school.svg')
+	})
 
-$( ".slideOutLeft" ).animate({
-	width: "0",
-	opacity: '0'
-}, 160, function() {
+	$('.parents').on('mouseenter', function() {
 
-});
+		$('.parents img').attr('src', 'images/img_parents-hover.svg')
+	})
 
-$('#slideOutRight').css('z-index', '10')
-$('.projects').attr('tabindex', '0')
+	$('.parents').on('mouseleave', function() {
 
-$('.close-project').attr('tabindex', '-1')
-$('.close-project').attr('aria-hidden', 'true')
+		$('.parents img').attr('src', 'images/img_parents.svg')
+	})
 
-$( ".box-outer" ).animate({
-	'margin-left': "0px",
-	'margin-right': '0px'
-}, 160, function() {
+	$('.documents').on('mouseenter', function() {
 
-});
+		$('.documents img').attr('src', 'images/img_documents-hover.svg')
+	})
 
-setTimeout(function() {
-		$('.hoverOnly').show()
-	$( ".slideOutLeft" ).removeClass('open')
-}, 200)
+	$('.documents').on('mouseleave', function() {
 
-}
+		$('.documents img').attr('src', 'images/img_documents.svg')
+	})
 
-})
+	$('.transmission').on('mouseenter', function() {
 
+		$('.transmission img').attr('src', 'images/img_transmission-hover.svg')
+	})
 
+	$('.transmission').on('mouseleave', function() {
 
-$('.projects').on("keyup", function (e) {
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 13) {
+		$('.transmission img').attr('src', 'images/img_transmission.svg')
+	})
 
-	$( ".slideOutLeft" ).animate({
-		width: "180px",
-		opacity: '1'
-	}, 200, function() {
+	$('.messaging').on('mouseenter', function() {
 
-	});
+		$('.messaging img').attr('src', 'images/img_messaging-hover.svg')
+	})
 
-	$('.hoverOnly').hide()
+	$('.messaging').on('mouseleave', function() {
 
-	$('#slideOutRight').css('z-index', '1')
-	$('.projects').attr('tabindex', '1')
-	$('.close-project').attr('tabindex', '1')
-	$('.close-project').attr('aria-hidden', 'false')
+		$('.messaging img').attr('src', 'images/img_messaging.svg')
+	})
 
-	$( ".box-outer" ).animate({
-		'margin-left': "140px",
-		'margin-right': '20px'
-	}, 200, function() {
+	$('.reports').on('mouseenter', function() {
 
-	});
+		$('.reports img').attr('src', 'images/img_reports-hover.svg')
+	})
 
-	setTimeout(function() {
-		$( ".slideOutLeft" ).addClass('open')
-	}, 200)
+	$('.reports').on('mouseleave', function() {
 
-}
+		$('.reports img').attr('src', 'images/img_reports.svg')
+	})
 
 
-});
 
+	var viewDistrictInfo = function() {
 
-$('.projects').on('mouseenter' , function() {
-if (!$( ".slideOutLeft" ).hasClass('open')) {
+		// $('.goToInfo').click(function(){
 
+		$('.grayBox.first').addClass('flexing-scroll')
 
-	$( ".slideOutLeft" ).animate({
-		width: "180px",
-		opacity: '1'
-	}, 200, function() {
+		$(".grayBox.first").animate({
+			"left": -$(".tlModals").width()
+		}, 400);
 
-	});
 
-	$('#slideOutRight').css('z-index', '1')
-	$('.projects').attr('tabindex', '1')
-	$('.close-project').attr('tabindex', '1')
-	$('.close-project').attr('aria-hidden', 'false')
+		setTimeout(function(){
 
-}
+			$('.grayBox.second').addClass('animated slideInRight').show();
 
-});
+			$(".grayBox.second").animate({
+				"right": 0
+			}, 200);
 
+		}, 100);
 
+		$('.save-floating').show().css('display', 'flex')
 
-//TL images
 
-$('.districts').on('mouseenter', function() {
-
-	$('.districts img').attr('src', 'images/img_districts-hover.svg')
-})
-
-$('.districts').on('mouseleave', function() {
-
-	$('.districts img').attr('src', 'images/img_districts.svg')
-})
-
-$('.schools').on('mouseenter', function() {
-
-	$('.schools img').attr('src', 'images/img_school-hover.svg')
-})
-
-$('.schools').on('mouseleave', function() {
-
-	$('.schools img').attr('src', 'images/img_school.svg')
-})
-
-$('.parents').on('mouseenter', function() {
-
-	$('.parents img').attr('src', 'images/img_parents-hover.svg')
-})
-
-$('.parents').on('mouseleave', function() {
-
-	$('.parents img').attr('src', 'images/img_parents.svg')
-})
-
-$('.documents').on('mouseenter', function() {
-
-	$('.documents img').attr('src', 'images/img_documents-hover.svg')
-})
-
-$('.documents').on('mouseleave', function() {
-
-	$('.documents img').attr('src', 'images/img_documents.svg')
-})
-
-$('.transmission').on('mouseenter', function() {
-
-	$('.transmission img').attr('src', 'images/img_transmission-hover.svg')
-})
-
-$('.transmission').on('mouseleave', function() {
-
-	$('.transmission img').attr('src', 'images/img_transmission.svg')
-})
-
-$('.messaging').on('mouseenter', function() {
-
-	$('.messaging img').attr('src', 'images/img_messaging-hover.svg')
-})
-
-$('.messaging').on('mouseleave', function() {
-
-	$('.messaging img').attr('src', 'images/img_messaging.svg')
-})
-
-$('.reports').on('mouseenter', function() {
-
-	$('.reports img').attr('src', 'images/img_reports-hover.svg')
-})
-
-$('.reports').on('mouseleave', function() {
-
-	$('.reports img').attr('src', 'images/img_reports.svg')
-})
-
-
-
-var viewDistrictInfo = function() {
-
-// $('.goToInfo').click(function(){
-
-	$('.grayBox.first').addClass('flexing-scroll')
-
-	$(".grayBox.first").animate({
-		"left": -$(".tlModals").width()
-	}, 400);
-
-
-	setTimeout(function(){
-
-		$('.grayBox.second').addClass('animated slideInRight').show();
-
-		$(".grayBox.second").animate({
-			"right": 0
-		}, 200);
-
-	}, 100);
-
-	$('.save-floating').show().css('display', 'flex')
-
-
-	  setTimeout(function() {
+		setTimeout(function() {
 			$('.tlModals').animate({ scrollTop: 0 }, 700);
 		},1000)
 
-// })
+		// })
 
-}
+	}
 
-$('.goToInfo').keypress(
-viewDistrictInfo
+	$('.goToInfo').keypress(
+		viewDistrictInfo
 
-).click(
-	viewDistrictInfo
-);
+	).click(
+		viewDistrictInfo
+	);
 
-$('.tlModals').on('hidden.bs.modal', function (e) {
-	setTimeout(function(){
-		$('.grayBox.first').removeClass('flexing-scroll')
+	$('.tlModals').on('hidden.bs.modal', function (e) {
+		setTimeout(function(){
+			$('.grayBox.first').removeClass('flexing-scroll')
 
-		$(".grayBox.first").animate({
-			"left": 0
-		}, 500);
+			$(".grayBox.first").animate({
+				"left": 0
+			}, 500);
 
-	}, 300);
+		}, 300);
 
-	setTimeout(function(){
-		$('.grayBox.second').removeClass('animated slideInRight').hide();
-	}, 400);
+		setTimeout(function(){
+			$('.grayBox.second').removeClass('animated slideInRight').hide();
+		}, 400);
 
-	$(".grayBox.second").animate({
-		"right": negative
-	}, 600);
+		$(".grayBox.second").animate({
+			"right": negative
+		}, 600);
 
 		$('.save-floating').hide()
 
@@ -3108,50 +3107,50 @@ $('.tlModals').on('hidden.bs.modal', function (e) {
 
 	var negative = -$(".box-outer").width()
 
-$('.activeCube').click(function(){
+	$('.activeCube').click(function(){
 
-	setTimeout(function(){
-		$('.grayBox.first').removeClass('flexing-scroll')
+		setTimeout(function(){
+			$('.grayBox.first').removeClass('flexing-scroll')
 
-		$(".grayBox.first").animate({
-			"left": 0
-		}, 500);
+			$(".grayBox.first").animate({
+				"left": 0
+			}, 500);
 
 
 
-	}, 300);
+		}, 300);
 
-	setTimeout(function(){
-		$('.grayBox.second').removeClass('animated slideInRight').hide();
-	}, 400);
+		setTimeout(function(){
+			$('.grayBox.second').removeClass('animated slideInRight').hide();
+		}, 400);
 
-	$(".grayBox.second").animate({
-		"right": negative
-	}, 600);
+		$(".grayBox.second").animate({
+			"right": negative
+		}, 600);
 
 		$('.save-floating').hide()
 
 
-})
+	})
 
 
-$('.btn').on('click', function () {
-  $('input' , this).removeAttr('checked');
-  $(this).removeClass('active');
-});
+	$('.btn').on('click', function () {
+		$('input' , this).removeAttr('checked');
+		$(this).removeClass('active');
+	});
 
 
 
-$('.informationForm').find('input:text').val('');
+	$('.informationForm').find('input:text').val('');
 
 
-$('.cancel').on('click', function() {
-	  $('.informationForm').find('input:text').val('');
-})
-$('.back-to-top-in-modal').on('click', function() {
+	$('.cancel').on('click', function() {
+		$('.informationForm').find('input:text').val('');
+	})
+	$('.back-to-top-in-modal').on('click', function() {
 
-$('.tlModals').animate({ scrollTop: 0 }, 'slow');
-})
+		$('.tlModals').animate({ scrollTop: 0 }, 'slow');
+	})
 
 
 })

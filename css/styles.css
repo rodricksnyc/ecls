@@ -2659,7 +2659,7 @@ footer a.white:hover {
 
 .back-to-top-in-modal {
   position: fixed;
-  right: 4.2rem;
+  right: 4.5%;
   bottom: 9rem;
   z-index: 100;
   background: #fbb03b;
@@ -7417,6 +7417,16 @@ body{
     height: 0px !important;
     width: 0px !important;
   }
+}
+
+@media (max-width:1024px){
+.hoverOnly{
+  display: none
+}
+.slideOutLeft{
+  left:5px;
+}
+
 }
 
 

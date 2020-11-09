@@ -2228,8 +2228,6 @@ $(document).ready(function () {
 	//TL portal open sidebar
 
 
-	// var closeProject = function() {
-
 	$('.close-project').click(function (e) {
 		e.stopPropagation();
 
@@ -2250,20 +2248,12 @@ $(document).ready(function () {
 		}, 160, function () {});
 
 		setTimeout(function () {
-			$('.hoverOnly').show();
+			if ($(document).innerWidth() > 1024) {
+				$('.hoverOnly').show();
+			}
 			$(".slideOutLeft").removeClass('open');
 		}, 200);
 	});
-
-	// }
-	//
-	// $('.close-project').keypress(
-	// closeProject
-	//
-	// ).click(
-	// closeProject
-	// );
-
 
 	$('.slideOutLeft').on('mouseleave', function (e) {
 		e.stopPropagation();
@@ -2290,8 +2280,9 @@ $(document).ready(function () {
 			width: "180px",
 			opacity: '1'
 		}, 200, function () {});
-
-		$('.hoverOnly').hide();
+		if ($(document).innerWidth() > 1024) {
+			$('.hoverOnly').hide();
+		}
 
 		$('#slideOutRight').css('z-index', '1');
 		$('.projects').attr('tabindex', '1');
@@ -2340,7 +2331,9 @@ $(document).ready(function () {
 			}, 160, function () {});
 
 			setTimeout(function () {
-				$('.hoverOnly').show();
+				if ($(document).innerWidth() > 1024) {
+					$('.hoverOnly').show();
+				}
 				$(".slideOutLeft").removeClass('open');
 			}, 200);
 		}
@@ -2355,7 +2348,10 @@ $(document).ready(function () {
 				opacity: '1'
 			}, 200, function () {});
 
-			$('.hoverOnly').hide();
+			if ($(document).innerWidth() > 1024) {
+
+				$('.hoverOnly').hide();
+			}
 
 			$('#slideOutRight').css('z-index', '1');
 			$('.projects').attr('tabindex', '1');
