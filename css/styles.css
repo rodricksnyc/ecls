@@ -380,6 +380,11 @@ width: 4em;
   background: transparent;
   box-shadow:none;
   padding: 0;
+  width: 80px;
+height: 60px;
+margin: 1em 0em 2em 0em;
+text-align: center;
+
 }
 
 .activeCube:hover{
@@ -417,7 +422,7 @@ margin-bottom: 6px;
 .box-outer {
   z-index: 1;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   padding:0em 1em;
   height: 100%;
   /* overflow-y: auto;
@@ -519,18 +524,38 @@ margin-bottom: 6px;
   z-index: 100;
   height: auto;
   left: 0;
+
 }
+
+.grayBox.second.flexing-scroll {
+  position: relative;
+  z-index: 101;
+  height: auto;
+  display: none;
+
+}
+
 
 .grayBox.second {
   display: none;
   top: 0;
   bottom: 0;
   position: absolute;
-  left:0;
+  /* left:0; */
   padding: 2em 2em;
 }
 
-.grayBox.second .landing-sec-H {
+.grayBox.third {
+  display: none;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  /* left:0; */
+  padding: 2em 2em;
+}
+
+
+.grayBox.second .landing-sec-H, .grayBox.third .landing-sec-H {
 
   border-bottom:1px solid #00539f
 }
@@ -646,13 +671,6 @@ label.error{
 }
 
 
-.grayBox.third {
-  display: none;
-  position: absolute;
-  width: 100%;
-  padding: 6em;
-  z-index: 200;
-}
 
 .padding-0{
   padding:0
@@ -683,7 +701,7 @@ label.error{
   position: relative;
 }
 
-.lightGrayBox .form-group label {
+.tlModals .form-group label {
   color: black;
   font-family: 'Public Sans' !important;
   position: absolute;
@@ -695,16 +713,67 @@ label.error{
   font-size: 17px;
 }
 
+.erocs  label  {
+  display: none
+}
 
-.lightGrayBox .blackFont{
+.erocs .form-row, .erocs .form-group{
+  margin-bottom:3em
+}
+
+.input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: none;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+.erocs  .btn-group>.btn:not(.dropdown-toggle) {
+    /* border-top-right-radius: 0; */
+    /* border-bottom-right-radius: 0; */
+    background: transparent;
+    color: #00539f !important;
+    border: 1px solid;
+    font-family: 'Public Sans' !important;
+    font-size: 13px;
+    width: auto;
+    padding: .7em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+.erocs  .btn-group> .btn:last-child{
+  border-top-right-radius: .3em !important;
+ border-bottom-right-radius: .3em !important;
+}
+
+i.moveLeft{
+  position: absolute;
+left: -1.3em;
+}
+
+
+ .blackFont{
   color: black;
   font-family: 'Public Sans' !important;
 
   font-size: 17px;
   font-weight:500
 }
-
-.lightGrayBox .form-control {
+ .tlModals .form-control {
   height: auto;
   padding: .5em 1em;
   font-size: 15px;
@@ -715,7 +784,7 @@ label.error{
 }
 
 
-.lightGrayBox .form-control.disabled{
+.form-control.disabled{
     border: 1px solid gray;
 }
 .lightGrayBox {
@@ -724,6 +793,131 @@ label.error{
   margin-top:1em
 }
 
+.form-group {
+
+    position: relative;
+}
+
+/* date time */
+
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  border: 1px solid #34495e;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  min-width: 300px;
+  max-width: 100%;
+  width: auto;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before, .bootstrap-datetimepicker-widget.dropdown-menu.bottom:after {
+  display: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td, .bootstrap-datetimepicker-widget.dropdown-menu table th {
+  border-radius: 0;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td.old, .bootstrap-datetimepicker-widget.dropdown-menu table td.new {
+  color: #bbb;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td.today:before {
+  border-bottom-color: #0095ff;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td.active, .bootstrap-datetimepicker-widget.dropdown-menu table td.active:hover, .bootstrap-datetimepicker-widget.dropdown-menu table td span.active {
+  background-color: #0095ff;
+  text-shadow: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td.active.today:before, .bootstrap-datetimepicker-widget.dropdown-menu table td.active:hover.today:before, .bootstrap-datetimepicker-widget.dropdown-menu table td span.active.today:before {
+  border-bottom-color: #fff;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table th {
+  height: 40px;
+  padding: 0;
+  width: 40px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table th.picker-switch {
+  width: auto;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table tr:first-of-type th {
+  border-bottom: 1px solid #34495e;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td.day {
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  width: auto;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu table td span {
+  border-radius: 0;
+  height: 77px;
+  line-height: 77px;
+  margin: 0;
+  width: 25%;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .datepicker-months tbody tr td, .bootstrap-datetimepicker-widget.dropdown-menu .datepicker-years tbody tr td, .bootstrap-datetimepicker-widget.dropdown-menu .datepicker-decades tbody tr td {
+  padding: 0;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .datepicker-decades tbody tr td {
+  height: 27px;
+  line-height: 27px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .datepicker-decades tbody tr td span {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 46px;
+  line-height: 46px !important;
+  padding: 0;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .datepicker-decades tbody tr td span:not(.decade) {
+  display: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td {
+  padding: 0;
+  width: 30%;
+  height: 20px;
+  line-height: 20px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td:nth-child(2) {
+  width: 10%;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td a, .bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td span, .bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button {
+  border: none;
+  border-radius: 0;
+  height: 56px;
+  line-height: 56px;
+  padding: 0;
+  width: 100%;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td span {
+  color: #333;
+  margin-top: -1px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button:hover {
+  background-color: #eee;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .picker-switch table td {
+  border-top: 1px solid #34495e;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu .picker-switch table td a, .bootstrap-datetimepicker-widget.dropdown-menu .picker-switch table td span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  width: 100%;
+}
+.todayText:before {
+  content: "Today's Date";
+}
+
+
+/* swal */
 
 .swal-modal {
   width:700px;
@@ -781,12 +975,12 @@ textarea {
   width: 100%;
 }
 
-.lightGrayBox input[type="radio"], input[type="checkbox"] {
+.tlModals input[type="radio"], input[type="checkbox"] {
   opacity: 0;
   width: 0px;
 }
 
-.lightGrayBox .btn-group>.btn:not(.dropdown-toggle) {
+.tlModals .btn-group>.btn:not(.dropdown-toggle) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   background: transparent;
@@ -803,8 +997,8 @@ textarea {
 }
 
 
-.lightGrayBox .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
-  color: #fff;
+.tlModals .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
+  color: #fff !important;
   background-color: #00539f;
   border-color: #00539f;
   font-family: 'Public Sans' !important;
@@ -822,7 +1016,16 @@ textarea {
   position: relative;
   left: 100px;
   top: 38px;
-  text-transform: lowercase !important
+  text-transform: lowercase !important;
+  z-index: 99999999999999999999999999999999999999;
+
+}
+
+.btn.greenButton.addEroc:hover {
+  cursor:grab !important
+}
+.btn:hover{
+    cursor:grab !important
 }
 
 .renderSchoolList .addBlocks {
@@ -848,7 +1051,13 @@ textarea {
   align-items: center;
 }
 
-.lightGrayBox .btn-group {
+
+
+.blueLine2:hover{
+    cursor:grab !important
+}
+
+.tlModals .btn-group {
   width:100%;
   margin-bottom:1em
 }

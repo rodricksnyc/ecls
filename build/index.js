@@ -2472,6 +2472,7 @@ $(document).ready(function () {
 
 			$(".grayBox.second").animate({
 				"right": 0
+
 			}, 200);
 		}, 100);
 
@@ -2481,10 +2482,48 @@ $(document).ready(function () {
 			$('.tlModals').animate({ scrollTop: 0 }, 700);
 		}, 1000);
 
+		setTimeout(function () {
+			$('.grayBox.second').css('position', 'relative');
+			$('.grayBox.first').hide().css('position', 'absolute');
+		}, 700);
+
 		// })
 	};
 
 	$('.goToInfo').keypress(viewDistrictInfo).click(viewDistrictInfo);
+
+	var viewEroc = function viewEroc() {
+
+		// $('.goToInfo').click(function(){
+
+		$('.grayBox.second').addClass('flexing-scroll');
+
+		$(".grayBox.second").animate({
+			"left": -$(".tlModals").width()
+		}, 10);
+
+		setTimeout(function () {
+
+			$('.grayBox.third').addClass('animated slideInRight').show();
+
+			$(".grayBox.third").animate({
+				"right": 0
+			}, 200);
+		}, 100);
+
+		setTimeout(function () {
+			$('.tlModals').animate({ scrollTop: 0 }, 700);
+		}, 1000);
+
+		setTimeout(function () {
+			$('.grayBox.third').css('position', 'relative');
+			$('.grayBox.second').hide().css('position', 'absolute');
+		}, 700);
+
+		// })
+	};
+
+	$('.addEroc').keypress(viewEroc).click(viewEroc);
 
 	$('.tlModals').on('hidden.bs.modal', function (e) {
 		setTimeout(function () {
@@ -2528,27 +2567,34 @@ $(document).ready(function () {
 		}, 200);
 	});
 
-	var negative = -$(".box-outer").width();
+	var negative = -$(".tlModals").width();
 
-	$('.activeCube').click(function () {
-
+	$('.activeCube').click(function (e) {
+		e.stopPropagation();
 		setTimeout(function () {
-			$('.grayBox.first').removeClass('flexing-scroll');
+			$('.grayBox.first').removeClass('flexing-scroll').show();
 
 			$(".grayBox.first").animate({
 				"left": 0
 			}, 500);
-		}, 300);
+		}, 400);
 
 		setTimeout(function () {
-			$('.grayBox.second').removeClass('animated slideInRight').hide();
+			$('.grayBox.second').removeClass('animated slideInRight');
 		}, 400);
 
 		$(".grayBox.second").animate({
-			"right": negative
-		}, 600);
+			"right": negative,
+			"left": "auto"
+
+		}, 700);
 
 		$('.save-floating').hide();
+
+		setTimeout(function () {
+			$('.grayBox.first').css('position', 'relative');
+			$('.grayBox.second').hide().css('position', 'absolute');
+		}, 1000);
 	});
 
 	$('.btn').on('click', function () {

@@ -15,6 +15,7 @@
 	<link rel="shortcut icon" href="images/square.png">
 	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 
@@ -236,7 +237,7 @@
 												<div class="d-flex align-items-center flex-column columnCubes">
 
 
-													<div class="greenCube  activeCube">
+													<div class="activeCube">
 														<img src="images/img_districts-hover.svg" class="img-fluid">
 														<p class="white twenty mt-0 mb-0">Districts</p>
 
@@ -311,8 +312,6 @@
 
 
 												<div class="modal-content">
-
-
 
 													<div class="greenSide projects" tabindex="0" role="button" aria-expanded="false">
 														<div class="greenBackground"></div>
@@ -745,8 +744,8 @@
 
 
 												<div class="outside">
-													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
-													<button type="button" class="btn greenButton addEroc" data-dismiss="modal"><i class="far fa-plus"></i>&nbsp;new</button>
+													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less"></i>
+													<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc"><i class="far fa-plus"></i>&nbsp;new</button>
 
 													<h2 class="landing-sec-H padding-0 margin-0">EROC</h2>
 
@@ -767,7 +766,7 @@
 
 
 															<div class="blueLine2">
-																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
+																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
 
 
 															</div>
@@ -779,6 +778,113 @@
 
 
 
+
+											</div>
+
+
+											<div class="grayBox third">
+												<h2 class="landing-sec-H padding-0 margin-0"> <i class="far fa-angle-left darkBlue"></i> Add EROC</h2>
+												<div class="row">
+													<div class="col-lg-6 col-md-12">
+      								<form class="erocs" role="form">
+														<fieldset>
+															<legend>Add Eroc</legend>
+														<p class="blackFont mt-5">Date and Time</p>
+
+														<div class="form-row">
+
+														<div class="col-lg-6">
+															<label>Date</label>
+															<div class="input-group date" id="datepicker">
+																<input class="form-control" placeholder="MM/DD/YYYY" />
+																<span class="input-group-append input-group-addon">
+																	<span class="input-group-text">
+																		<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																	</span>
+																</span>
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<label>Time</label>
+															<div class="input-group time" id="timepicker">
+																<input class="form-control" placeholder="HH:MM AM/PM" />
+																<span class="input-group-append input-group-addon">
+																	<span class="input-group-text">
+																		<i class="far fa-clock darkBlue moveLeft"></i>
+																	</span>
+																</span>
+															</div>
+														</div>
+
+													</div>
+
+
+														<p class="blackFont">Mode</p>
+
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-primary">
+																<input type="radio" name="options" id="option7" autocomplete="off"><i class="fas fa-phone"></i>&nbsp;PHONE
+															</label>
+															<label class="btn btn-primary active">
+																<input type="radio" name="options" id="option8" autocomplete="off"><i class="fas fa-envelope"></i>&nbsp;EMAIL
+															</label>
+															<label class="btn btn-primary">
+																<input type="radio" name="options" id="option9" autocomplete="off"><i class="fas fa-user"></i>&nbsp;IN-PERSON
+															</label>
+														</div>
+
+
+														<p class="blackFont">Result</p>
+
+															<div class="form-group">
+														<label for="result">Select Result</label>
+														<select id="result" class="form-control valid">
+															<option selected="selected">Select Result</option>
+															<option value="1">No answer / VM - no message left</option>
+															<option value="2">Left voicemail</option>
+															<option value="3">Left message with person</option>
+															<option value="4">Callback</option>
+															<option value="5">Appointment Made</option>
+															<option value="5">Gatekeeper / Avoidance</option>
+															<option value="5">Special Handling packet submitted (to keep record of submission date)</option>
+															<option value="5">Special Handling – In Progress</option>
+															<option value="5">Wrong / Nonworking phone number</option>
+															<option value="5">Initial Refusal</option>
+															<option value="5">Approval Received</option>
+
+														</select>
+													</div>
+
+
+
+														<p class="blackFont">Contact Name</p>
+														<div class="form-group">
+															<label for="firstname">First Name</label>
+															<input type="text" name="info" class="form-control info" id="firstname" placeholder="" style="outline: none;">
+
+														</div>
+
+
+														<p class="blackFont">Contact Title/Position</p>
+														<div class="form-group">
+															<label for="firstname">First Name</label>
+															<input type="text" name="info" class="form-control info" id="firstname" placeholder="" style="outline: none;">
+
+														</div>
+
+														<p class="blackFont">Contact Made By</p>
+														<div class="form-group">
+															<label for="firstname">First Name</label>
+															<input type="text" name="info" class="form-control info" id="firstname" placeholder="" style="outline: none;">
+
+														</div>
+
+														<p class="blackFont">Comments</p>
+														<textarea name="message" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" placeholder=""></textarea>
+													</fieldset>
+												</form>
+													</div>
+												</div>
 
 											</div>
 
@@ -903,9 +1009,10 @@
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript" src="build/index.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="src/tl.js"></script>
-
-
 </body>
 
 </html>
