@@ -810,6 +810,7 @@ left: -1.3em;
   min-width: 300px;
   max-width: 100%;
   width: auto;
+  font-family: 'Public Sans' !important;
 }
 .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before, .bootstrap-datetimepicker-widget.dropdown-menu.bottom:after {
   display: none;
@@ -868,6 +869,7 @@ left: -1.3em;
   height: 46px;
   line-height: 46px !important;
   padding: 0;
+
 }
 .bootstrap-datetimepicker-widget.dropdown-menu .datepicker-decades tbody tr td span:not(.decade) {
   display: none;
@@ -888,16 +890,20 @@ left: -1.3em;
   line-height: 56px;
   padding: 0;
   width: 100%;
+
 }
 .bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td span {
   color: #333;
   margin-top: -1px;
+  color: #00539f;
 }
 .bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button {
   background-color: #fff;
   color: #333;
   font-weight: bold;
   font-size: 1.2em;
+  color: #00539f;
+
 }
 .bootstrap-datetimepicker-widget.dropdown-menu .timepicker-picker table td button:hover {
   background-color: #eee;
@@ -911,6 +917,7 @@ left: -1.3em;
   line-height: 40px;
   padding: 0;
   width: 100%;
+
 }
 .todayText:before {
   content: "Today's Date";

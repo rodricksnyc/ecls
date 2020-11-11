@@ -15,13 +15,13 @@
 	<link rel="shortcut icon" href="images/square.png">
 	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 </head>
 
 <body>
@@ -794,20 +794,25 @@
 														<div class="form-row">
 
 														<div class="col-lg-6">
-															<label>Date</label>
-															<div class="input-group date" id="datepicker">
-																<input class="form-control" placeholder="MM/DD/YYYY" />
+															<label for="datepicker">Date</label>
+
+															<div class="form-group input-group-sm">
+		<input type="text" class="form-control datepicker" id="date" placeholder="Select date" autocomplete="off" autofill="off">
+	</div>
+
+														 <!-- <div class="input-group date" id="datepicker">
+																<input class="form-control datepicker" placeholder="mm/dd/yyyy" value="01/01/2021">
 																<span class="input-group-append input-group-addon">
 																	<span class="input-group-text">
 																		<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
 																	</span>
 																</span>
-															</div>
+															</div> -->
 														</div>
 														<div class="col-lg-6">
-															<label>Time</label>
+															<label for="timepicker">Time</label>
 															<div class="input-group time" id="timepicker">
-																<input class="form-control" placeholder="HH:MM AM/PM" />
+																<input class="form-control" placeholder="HH:MM AM/PM">
 																<span class="input-group-append input-group-addon">
 																	<span class="input-group-text">
 																		<i class="far fa-clock darkBlue moveLeft"></i>
@@ -859,16 +864,16 @@
 
 														<p class="blackFont">Contact Name</p>
 														<div class="form-group">
-															<label for="firstname">First Name</label>
-															<input type="text" name="info" class="form-control info" id="firstname" placeholder="" style="outline: none;">
+															<label for="contactName">Contact Name</label>
+															<input type="text" name="info" class="form-control" id="contactName">
 
 														</div>
 
 
 														<p class="blackFont">Contact Title/Position</p>
 														<div class="form-group">
-															<label for="firstname">First Name</label>
-															<input type="text" name="info" class="form-control info" id="firstname" placeholder="" style="outline: none;">
+															<label for="contactTitle">Contact Title/Position</label>
+															<input type="text" name="info" class="form-control" id="contactTitle" >
 
 														</div>
 
@@ -881,6 +886,10 @@
 
 														<p class="blackFont">Comments</p>
 														<textarea name="message" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" placeholder=""></textarea>
+
+
+														<button type="button" class="btn greenButton doneEroc mt-3" role="button" tabindex="0" aria-label="Add Eroc">DONE</button>
+
 													</fieldset>
 												</form>
 													</div>
@@ -1001,18 +1010,86 @@
 
 
 <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
+ <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
 <script type="text/javascript" src="build/index.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
 <script type="text/javascript" src="src/tl.js"></script>
+<script>
+
+$(document).ready(function() {
+  $(".datepicker").datepicker({
+    //Datepicker settings
+		  format: "LT",
+    format: "dd/mm/yyyy",
+    startDate:"01/01/2021",
+    endDate: "30/11/2021",
+    clearBtn: false,
+    todayBtn: false,
+    todayHighlight: false
+  });
+
+  $('.today').text(today);
+});
+
+// in "format" write your desired date format
+var today = moment().format('DD/MM/YYYY');
+
+$('#timeInterval').on('change', function(){
+  var time = $(this).val();
+  var date = moment()
+  .subtract(time, "months")
+  .subtract(1, "days")
+  .format("DD/MM/YYYY");
+    $("#date").datepicker("update", date);
+});
+
+$("#date").on("change", function(a) {
+    var date = $(this).val();
+
+    var a = moment();
+    var b = moment(date, "DD/MM/YYYY");
+
+    var months = a.diff(b, "months");
+    var option = $("#timeInterval option[value='" + months + "']");
+    if (months == 0) {
+        option = $("#timeInterval option[value='" + 1 + "']");
+    }
+    if (!option.exists()) {
+        var time = Math.floor(months % 12);
+        if (time <= 3) {
+            months -= time;
+        } else {
+            months = months + 12 - time;
+        }
+        option = $("#timeInterval option[value='" + months + "']");
+        option.attr("selected", true);
+    }
+    option.attr("selected", true);
+});
+
+
+$.fn.exists = function() {
+    return this.length > 0;
+};
+
+
+		</script>
 </body>
 
 </html>
