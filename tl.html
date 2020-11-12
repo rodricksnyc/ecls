@@ -15,7 +15,8 @@
 	<link rel="shortcut icon" href="images/square.png">
 	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -300,7 +301,7 @@
 
 
 											<div class="save-floating">
-												<button form="newInfo" class="saveInformation" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information"><i class="fas fa-save saveInfo"></i>
+												<button type="submit" form="newInfo" class="saveInformation" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information"><i class="fas fa-save saveInfo"></i>
 												</button>
 
 												<button class="cancel" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving"><i class="fas fa-ban stop"></i>
@@ -339,8 +340,8 @@
 																	</div>
 																	<div class="topAttr d-flex align-items-center">
 																		<div class="col-lg-3">
-																			<h6 class="gray larger">LEAID
-																				<!-- <i class="far fa-sort darkBlue"></i> -->
+																			<h6 class="gray larger sortId">LEAID
+																				<i class="far fa-sort darkBlue"></i>
 																			</h6>
 																		</div>
 																		<div class="col-lg-3">
@@ -784,116 +785,193 @@
 
 											<div class="grayBox third">
 												<h2 class="landing-sec-H padding-0 margin-0"> <i class="far fa-angle-left darkBlue"></i> Add EROC</h2>
-												<div class="row">
-													<div class="col-lg-6 col-md-12">
-      								<form class="erocs" role="form">
-														<fieldset>
-															<legend>Add Eroc</legend>
-														<p class="blackFont mt-5">Date and Time</p>
 
-														<div class="form-row">
+														<form class="erocs" role="form">
+															<fieldset>
+																<legend>Add Eroc</legend>
+																<p class="blackFont mt-5">Date and Time</p>
+																<div class="row">
+																	<div class="col-lg-6 col-md-12">
+																<div class="form-row">
+																	<div class="col-lg-6">
+																		<label for="datepicker">Date</label>
 
-														<div class="col-lg-6">
-															<label for="datepicker">Date</label>
+																		<div class="form-group  input-group time">
+																			<input type="text" class="form-control datepicker" id="date" placeholder="Select date" autocomplete="off" autofill="off">
+																			<span class="input-group-text">
+																				<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																			</span>
+																		</div>
 
-															<div class="form-group input-group-sm">
-		<input type="text" class="form-control datepicker" id="date" placeholder="Select date" autocomplete="off" autofill="off">
-	</div>
+																	</div>
+																	<div class="col-lg-6">
+																		<label for="timepicker">Time</label>
+																		<div class="input-group time" id="timepicker">
+																			<input class="form-control" placeholder="HH:MM AM/PM">
+																			<span class="input-group-append input-group-addon">
+																				<span class="input-group-text">
+																					<i class="far fa-clock darkBlue moveLeft"></i>
+																				</span>
+																			</span>
+																		</div>
+																	</div>
 
-														 <!-- <div class="input-group date" id="datepicker">
-																<input class="form-control datepicker" placeholder="mm/dd/yyyy" value="01/01/2021">
-																<span class="input-group-append input-group-addon">
-																	<span class="input-group-text">
-																		<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
-																	</span>
-																</span>
-															</div> -->
-														</div>
-														<div class="col-lg-6">
-															<label for="timepicker">Time</label>
-															<div class="input-group time" id="timepicker">
-																<input class="form-control" placeholder="HH:MM AM/PM">
-																<span class="input-group-append input-group-addon">
-																	<span class="input-group-text">
-																		<i class="far fa-clock darkBlue moveLeft"></i>
-																	</span>
-																</span>
+																</div>
+
+
+																<p class="blackFont">Mode</p>
+
+																<div class="btn-group" data-toggle="buttons">
+																	<label class="btn btn-primary">
+																		<input type="radio" name="options" id="option7" autocomplete="off"><i class="fas fa-phone"></i>&nbsp;PHONE
+																	</label>
+																	<label class="btn btn-primary active">
+																		<input type="radio" name="options" id="option8" autocomplete="off"><i class="fas fa-envelope"></i>&nbsp;EMAIL
+																	</label>
+																	<label class="btn btn-primary">
+																		<input type="radio" name="options" id="option9" autocomplete="off"><i class="fas fa-user"></i>&nbsp;IN-PERSON
+																	</label>
+																</div>
+
+
+																<p class="blackFont">Result</p>
+
+																<div class="form-group">
+																	<label for="result">Select Result</label>
+																	<select id="result" class="form-control valid">
+																		<option selected="selected">Select Result</option>
+																		<option value="1">No answer / VM - no message left</option>
+																		<option value="2">Left voicemail</option>
+																		<option value="3">Left message with person</option>
+																		<option value="4">Callback</option>
+																		<option value="5">Appointment Made</option>
+																		<option value="6">Gatekeeper / Avoidance</option>
+																		<option value="7">Special Handling packet submitted (to keep record of submission date)</option>
+																		<option value="8">Special Handling – In Progress</option>
+																		<option value="9">Wrong / Nonworking phone number</option>
+																		<option value="10">Initial Refusal</option>
+																		<option value="11">Approval Received</option>
+
+																	</select>
+																</div>
+
 															</div>
 														</div>
 
-													</div>
+
+																<div class="lightGrayBox">
+																	<div class="row">
+																		<div class="col-lg-6 col-md-12">
+																	<p class="blackFont">Refusal Reason</p>
+
+																	<div class="form-group">
+																		<label for="refusalReason">Refusal Reason</label>
+																		<select id="refusalReason" class="form-control valid">
+																			<option selected="selected"></option>
+																			<option value="1">Too much testing</option>
+																			<option value="2">No direct benefit to district/schools/children</option>
+																			<option value="3">Too much of a commitment (time/space)</option>
+																			<option value="4">Confidentiality/consent concerns</option>
+																			<option value="5">Missed special handling deadline</option>
+																			<option value="6">Special handling proposal rejected – no reason given</option>
+																			<option value="7">District does not participate in external research studies</option>
+
+																		</select>
+																	</div>
+
+																	<p class="blackFont">Refusal Severity</p>
+
+																	<div class="form-group">
+																		<label for="refusalSeverity">Refusal Severity</label>
+																		<select id="refusalSeverity" class="form-control valid">
+																			<option selected="selected"></option>
+																			<option value="1">Adamant</option>
+																			<option value="2">Determined</option>
+																			<option value="3">Firm</option>
+																			<option value="4">Mild</option>
+	
+
+																		</select>
+																	</div>
+
+																	<p class="blackFont">Would participate if:</p>
+
+																	<div class="form-group">
+																		<label for="participate">Would participate if:</label>
+																		<select id="participate" class="form-control valid">
+																			<option selected="selected"></option>
+																			<option value="1">Not indicated</option>
+																			<option value="2">Not under any circumstances</option>
+																			<option value="3">If assessments were conducted outside school hours</option>
+																			<option value="4">If assessments were at a different time of year</option>
+																			<option value="5">Need to get onto district calendar earlier</option>
+																			<option value="6">Personal visit/presentation from ECLS representative</option>
+																			<option value="7">Increased compensation</option>
+																			<option value="8">Feedback on district/school/student performance</option>
+																			<option value="9">Reduce the amount of time required</option>
+																			<option value="10">Other, Specify</option>
 
 
-														<p class="blackFont">Mode</p>
+																		</select>
+																	</div>
 
-														<div class="btn-group" data-toggle="buttons">
-															<label class="btn btn-primary">
-																<input type="radio" name="options" id="option7" autocomplete="off"><i class="fas fa-phone"></i>&nbsp;PHONE
-															</label>
-															<label class="btn btn-primary active">
-																<input type="radio" name="options" id="option8" autocomplete="off"><i class="fas fa-envelope"></i>&nbsp;EMAIL
-															</label>
-															<label class="btn btn-primary">
-																<input type="radio" name="options" id="option9" autocomplete="off"><i class="fas fa-user"></i>&nbsp;IN-PERSON
-															</label>
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="col-lg-12 col-md-12">
+
+																	<p class="blackFont">Ideas for conversion:</p>
+																	<textarea name="message" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" placeholder=""></textarea>
+
+																</div>
+															</div>
+
 														</div>
 
 
-														<p class="blackFont">Result</p>
+																<div class="row">
+																	<div class="col-lg-6 col-md-12">
+																<p class="blackFont">Contact Name</p>
+																<div class="form-group">
+																	<label for="contactName">Contact Name</label>
+																	<input type="text" name="info" class="form-control" id="contactName">
 
-															<div class="form-group">
-														<label for="result">Select Result</label>
-														<select id="result" class="form-control valid">
-															<option selected="selected">Select Result</option>
-															<option value="1">No answer / VM - no message left</option>
-															<option value="2">Left voicemail</option>
-															<option value="3">Left message with person</option>
-															<option value="4">Callback</option>
-															<option value="5">Appointment Made</option>
-															<option value="5">Gatekeeper / Avoidance</option>
-															<option value="5">Special Handling packet submitted (to keep record of submission date)</option>
-															<option value="5">Special Handling – In Progress</option>
-															<option value="5">Wrong / Nonworking phone number</option>
-															<option value="5">Initial Refusal</option>
-															<option value="5">Approval Received</option>
-
-														</select>
-													</div>
+																</div>
 
 
+																<p class="blackFont">Contact Title/Position</p>
+																<div class="form-group">
+																	<label for="contactTitle">Contact Title/Position</label>
+																	<input type="text" name="info" class="form-control" id="contactTitle" >
 
-														<p class="blackFont">Contact Name</p>
-														<div class="form-group">
-															<label for="contactName">Contact Name</label>
-															<input type="text" name="info" class="form-control" id="contactName">
+																</div>
 
+																<p class="blackFont">Contact Made By</p>
+																<div class="form-group">
+																	<label for="firstname">First Name</label>
+																	<input type="text" name="info" class="form-control info" id="firstname" placeholder="" style="outline: none;">
+
+																</div>
+
+															</div>
 														</div>
 
+														<div class="row">
+															<div class="col-lg-12 col-md-12">
 
-														<p class="blackFont">Contact Title/Position</p>
-														<div class="form-group">
-															<label for="contactTitle">Contact Title/Position</label>
-															<input type="text" name="info" class="form-control" id="contactTitle" >
+																<p class="blackFont">Comments</p>
+																<textarea name="message" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" placeholder=""></textarea>
 
+
+																<button type="submit" class="btn greenButton doneEroc mt-3" role="button" tabindex="0" aria-label="Add Eroc">DONE</button>
+
+															</div>
 														</div>
 
-														<p class="blackFont">Contact Made By</p>
-														<div class="form-group">
-															<label for="firstname">First Name</label>
-															<input type="text" name="info" class="form-control info" id="firstname" placeholder="" style="outline: none;">
+															</fieldset>
+														</form>
 
-														</div>
-
-														<p class="blackFont">Comments</p>
-														<textarea name="message" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" placeholder=""></textarea>
-
-
-														<button type="button" class="btn greenButton doneEroc mt-3" role="button" tabindex="0" aria-label="Add Eroc">DONE</button>
-
-													</fieldset>
-												</form>
-													</div>
-												</div>
 
 											</div>
 
@@ -1010,7 +1088,7 @@
 
 
 <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
- <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
@@ -1025,71 +1103,70 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="build/index.js"></script>
 
 
 <script type="text/javascript" src="src/tl.js"></script>
 <script>
 
-$(document).ready(function() {
-  $(".datepicker").datepicker({
-    //Datepicker settings
-		  format: "LT",
-    format: "dd/mm/yyyy",
-    startDate:"01/01/2021",
-    endDate: "30/11/2021",
-    clearBtn: false,
-    todayBtn: false,
-    todayHighlight: false
-  });
+//   $(".datepicker").datepicker({
+//     //Datepicker settings
+//
+//     format: "dd/mm/yyyy",
+//     startDate:"01/01/2021",
+//     endDate: "30/11/2021",
+//     clearBtn: false,
+//     todayBtn: false,
+//     todayHighlight: false
+//   });
+//
+//   $('.today').text(today);
+// });
+//
+// // in "format" write your desired date format
+// var today = moment().format('DD/MM/YYYY');
+//
+// $('#timeInterval').on('change', function(){
+//   var time = $(this).val();
+//   var date = moment()
+//   .subtract(time, "months")
+//   .subtract(1, "days")
+//   .format("DD/MM/YYYY");
+//     $("#date").datepicker("update", date);
+// });
+//
+// $("#date").on("change", function(a) {
+//     var date = $(this).val();
+//
+//     var a = moment();
+//     var b = moment(date, "DD/MM/YYYY");
+//
+//     var months = a.diff(b, "months");
+//     var option = $("#timeInterval option[value='" + months + "']");
+//     if (months == 0) {
+//         option = $("#timeInterval option[value='" + 1 + "']");
+//     }
+//     if (!option.exists()) {
+//         var time = Math.floor(months % 12);
+//         if (time <= 3) {
+//             months -= time;
+//         } else {
+//             months = months + 12 - time;
+//         }
+//         option = $("#timeInterval option[value='" + months + "']");
+//         option.attr("selected", true);
+//     }
+//     option.attr("selected", true);
+// });
+//
+//
+// $.fn.exists = function() {
+//     return this.length > 0;
+// };
 
-  $('.today').text(today);
-});
 
-// in "format" write your desired date format
-var today = moment().format('DD/MM/YYYY');
-
-$('#timeInterval').on('change', function(){
-  var time = $(this).val();
-  var date = moment()
-  .subtract(time, "months")
-  .subtract(1, "days")
-  .format("DD/MM/YYYY");
-    $("#date").datepicker("update", date);
-});
-
-$("#date").on("change", function(a) {
-    var date = $(this).val();
-
-    var a = moment();
-    var b = moment(date, "DD/MM/YYYY");
-
-    var months = a.diff(b, "months");
-    var option = $("#timeInterval option[value='" + months + "']");
-    if (months == 0) {
-        option = $("#timeInterval option[value='" + 1 + "']");
-    }
-    if (!option.exists()) {
-        var time = Math.floor(months % 12);
-        if (time <= 3) {
-            months -= time;
-        } else {
-            months = months + 12 - time;
-        }
-        option = $("#timeInterval option[value='" + months + "']");
-        option.attr("selected", true);
-    }
-    option.attr("selected", true);
-});
-
-
-$.fn.exists = function() {
-    return this.length > 0;
-};
-
-
-		</script>
+</script>
 </body>
 
 </html>

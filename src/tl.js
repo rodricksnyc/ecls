@@ -24,8 +24,8 @@ $(".informationForm").validate(
 	//submit form button outside the <form> tag
 
 	$('.saveInformation').click( function(e) {
-		// $(".informationForm").trigger('submit');
-    e.preventDefault()
+		$(".informationForm").trigger('submit');
+    // e.preventDefault()
 	});
 
   //allowing form to still submit without refreshing page
@@ -42,30 +42,37 @@ $(".informationForm").validate(
       $form.submit();
    });
 
-// 	 if (/Mobi/.test(navigator.userAgent)) {
-//
-//   $(".date input").attr("type", "date");
-//   $(".time input").attr("type", "time");
-// } else {
-//
-//   $("#datepicker").datetimepicker({
-//     useCurrent: false,
-//     format: "L",
-//     showTodayButton: true,
-//     icons: {
-//       next: "fa fa-chevron-right",
-//       previous: "fa fa-chevron-left",
-//       today: 'todayText',
-//     }
-//   });
-//   $("#timepicker").datetimepicker({
-//     format: "LT",
-//     icons: {
-//       up: "fa fa-chevron-up",
-//       down: "fa fa-chevron-down"
-//     }
-//   });
-// }
+	 if (/Mobi/.test(navigator.userAgent)) {
+  // if mobile device, use native pickers
+  $(".date input").attr("type", "date");
+  $(".time input").attr("type", "time");
+} else {
+  // if desktop device, use DateTimePicker
+  $(".datepicker").datepicker({
+    useCurrent: false,
+		format: "dd/mm/yyyy",
+		startDate:"01/01/2021",
+		endDate: "30/11/2021",
+		clearBtn: false,
+		todayBtn: false,
+		todayHighlight: false,
+    showTodayButton: true,
+		orientation: "bottom right",
+    icons: {
+      next: "fa fa-chevron-right",
+      previous: "fa fa-chevron-left",
+      today: 'todayText',
+    },
+
+  });
+  $("#timepicker").datetimepicker({
+    format: "LT",
+    icons: {
+      up: "fa fa-chevron-up",
+      down: "fa fa-chevron-down"
+    }
+  });
+}
 
 
 
