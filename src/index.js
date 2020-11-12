@@ -1137,53 +1137,86 @@ $('.sortStatus').on('click', function() {
 
 });
 
-
-
-
 $('.sortId').on('click', function() {
-	if (!$('.sortId').hasClass('ascending')) {
 
-
-		// var number = $('.addBlocks').sort(function(a, b) {
-		// district.districts.sort(function(a, b) {
-		// 							  return a.leadid.localeCompare(b.leadid, undefined, {
-		// 							    numeric: true,
-		// 							    sensitivity: 'base'
-		// 							  });
-		//
-		// 							})
-
-		var number =  district.districts = district.districts.sort(function(a, b) {
-			return a.leadid.localeCompare(b.leadid, undefined, {
-				numeric: true,
-				sensitivity: 'base'
+		if (!$('.sortId').hasClass('ascending')) {
+			var ascendOrderedDivs4 = $('.addBlocks').sort(function(a, b) {
+				return $(a).find(".leadid").text().toString().localeCompare($(b).find(".leadid").text().toString(), undefined, {
+					numeric: true,
+					sensitivity: 'base'
+				});
 			});
+			$(".renderDistricts").html(ascendOrderedDivs4);
+			setTimeout(function() {
+				$('.sortId').addClass('ascending')
+			}, 100)
 
+			$('.topAttr .gray.larger i').each(function() {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+			})
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+		}
+		if ($('.sortId').hasClass('ascending')) {
+			var descendOrderedDivs4 = $('.addBlocks').sort(function(a, b) {
+				return $(b).find(".leadid").text().toString().localeCompare($(a).find(".leadid").text().toString(), undefined, {
+					numeric: true,
+					sensitivity: 'base'
+				});
+			});
+			$(".renderDistricts").html(descendOrderedDivs4);
+			setTimeout(function() {
+				$('.sortId').removeClass('ascending')
+			}, 100)
 
-
-		})
-
-		console.log(number)
-
-		setTimeout(function() {
-			$('.sortStatus').addClass('ascending')
-		}, 600)
-
-		$('.topAttr .gray.larger i').each(function() {
-			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-		})
-		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
-	}
-
-
+			$('.topAttr .gray.larger i').each(function() {
+				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+			})
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+		}
 });
 
-// var Opt88 = "";
-// $('.leadid').each(function() {
-// 	var Opt88 = $(this).html().slice(3);
-// 	console.log(Opt88)
+
+
+
+// $('.sortId').on('click', function() {
+// 	if (!$('.sortId').hasClass('ascending')) {
 //
-// })
+//
+// 		// var number = $('.addBlocks').sort(function(a, b) {
+// 		// district.districts.sort(function(a, b) {
+// 		// 							  return a.leadid.localeCompare(b.leadid, undefined, {
+// 		// 							    numeric: true,
+// 		// 							    sensitivity: 'base'
+// 		// 							  });
+// 		//
+// 		// 							})
+//
+// 		var number =  district.districts = district.districts.sort(function(a, b) {
+// 			return a.leadid.localeCompare(b.leadid, undefined, {
+// 				numeric: true,
+// 				sensitivity: 'base'
+// 			});
+//
+//
+//
+// 		})
+//
+// 		console.log(number)
+//
+// 		setTimeout(function() {
+// 			$('.sortStatus').addClass('ascending')
+// 		}, 600)
+//
+// 		$('.topAttr .gray.larger i').each(function() {
+// 			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+// 		})
+// 		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+// 	}
+//
+//
+// });
+
+
 
 
 

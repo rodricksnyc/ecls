@@ -21,6 +21,44 @@ $(".informationForm").validate(
 		}
 	});
 
+
+	$(".erocs").validate(
+		{
+			rules:
+			{
+				options:
+				{
+					required: true
+
+
+				},
+				date:
+				{
+					required: true
+
+
+				},
+				result:
+				{
+					required: true
+
+
+				},
+				textarea:
+				{
+					required: true
+
+
+				},
+				info:
+				{
+					required: true
+
+
+				}
+			}
+		});
+
 	//submit form button outside the <form> tag
 
 	$('.saveInformation').click( function(e) {
