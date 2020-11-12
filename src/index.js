@@ -2737,10 +2737,10 @@ $(".scrollIt").on("click", function(event) {
 	//TL portal open sidebar
 
 
-
-
 	$('.close-project').click(function(e) {
 		e.stopPropagation()
+
+		$('.close-project').css('opacity', '0')
 
 		$( ".slideOutLeft" ).animate({
 			width: "0",
@@ -2800,6 +2800,9 @@ $(".scrollIt").on("click", function(event) {
 	// var slideOutLeft = function() {
 
 	$('.slideOutLeft').not('.activeCube').click(function() {
+
+
+		$('.close-project').css('opacity', '1')
 
 		$( ".slideOutLeft" ).animate({
 			width: "180px",
@@ -2883,6 +2886,8 @@ $(".scrollIt").on("click", function(event) {
 	$('.projects').on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 13) {
+
+			$('.close-project').css('opacity', '1')
 
 			$( ".slideOutLeft" ).animate({
 				width: "180px",

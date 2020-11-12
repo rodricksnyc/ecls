@@ -1,4 +1,4 @@
-//validate TL info
+
 
 $(".informationForm").validate(
 	{
@@ -73,6 +73,16 @@ $(".informationForm").validate(
     }
   });
 }
+
+
+var num = 10;
+
+$('select').on('change', function (e) {
+if ($("#result select.select option[value="+num+"]").prop("selected", true)) {
+	$('.erocs .lightGrayBox').show()
+}
+
+})
 
 
 

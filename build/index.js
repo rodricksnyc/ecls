@@ -2231,6 +2231,8 @@ $(document).ready(function () {
 	$('.close-project').click(function (e) {
 		e.stopPropagation();
 
+		$('.close-project').css('opacity', '0');
+
 		$(".slideOutLeft").animate({
 			width: "0",
 			opacity: '0'
@@ -2275,6 +2277,8 @@ $(document).ready(function () {
 	// var slideOutLeft = function() {
 
 	$('.slideOutLeft').not('.activeCube').click(function () {
+
+		$('.close-project').css('opacity', '1');
 
 		$(".slideOutLeft").animate({
 			width: "180px",
@@ -2342,6 +2346,8 @@ $(document).ready(function () {
 	$('.projects').on("keyup", function (e) {
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 13) {
+
+			$('.close-project').css('opacity', '1');
 
 			$(".slideOutLeft").animate({
 				width: "180px",

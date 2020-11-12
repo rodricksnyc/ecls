@@ -335,6 +335,10 @@ textarea::placeholder {
 
 }
 
+.close-project {
+      opacity: 0;
+}
+
 .close-project i.darkBlue {
 
   font-size: 1.2em;
