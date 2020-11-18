@@ -681,6 +681,7 @@ label.error{
   background: transparent;
   position:relative;
   z-index: 99999999999999999999999999999999999999;
+  height: 2rem !important
 }
 
 .cancel {
@@ -690,18 +691,27 @@ label.error{
   background: transparent;
   position:relative;
   z-index: 99999999999999999999999999999999999999;
+
+    border-color: #576f7f !important;
+    font-family: 'Public Sans', sans-serif;
+    width: 8rem;
+    border-radius: 2rem !important;
+    color: #576f7f;
+    text-transform: uppercase;
+      height: 2rem !important;
+    border: 2px solid #576f7f !important;
 }
 
 
 .saveInfo{
   color:#00843D;
-  font-size:1.4rem;
+
   margin:.4em 0em
 }
 
 .stop{
   color:#576f7f;
-  font-size:1.4rem;
+
   margin:.4em 0em
 }
 

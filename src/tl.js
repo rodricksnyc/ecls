@@ -44,7 +44,7 @@ $(".informationForm").validate(
 
 
 				},
-	
+
 				textarea:
 				{
 					required: true
@@ -62,11 +62,10 @@ $(".informationForm").validate(
 
 		});
 
-	//submit form button outside the <form> tag
 
 	$('.saveInformation').click( function(e) {
-		$(".informationForm").trigger('submit');
-    // e.preventDefault()
+
+    e.preventDefault()
 	});
 
   //allowing form to still submit without refreshing page
@@ -82,6 +81,8 @@ $(".informationForm").validate(
       $form.action = $actionAttr + $input.value;
       $form.submit();
    });
+
+
 
 	 if (/Mobi/.test(navigator.userAgent)) {
   // if mobile device, use native pickers

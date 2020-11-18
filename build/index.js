@@ -2502,11 +2502,14 @@ $(document).ready(function () {
 		//
 		// }, 100);
 
-		$('.save-floating').show().css('display', 'flex');
+		// $('.save-floating').show().css('display', 'flex')
 
-		setTimeout(function () {
-			$('.tlModals').animate({ scrollTop: 0 }, 700);
-		}, 1000);
+		var divPosition = $('#anchorPoint').offset();
+		$('html, body').animate({ scrollTop: divPosition.top }, 1200);
+
+		// setTimeout(function() {
+		// 	$('.tlModals').animate({ scrollTop: 0 }, 700);
+		// },1000)
 
 		$('.grayBox.second').fadeIn('slow');
 		$('.grayBox.first').fadeOut();
@@ -2522,38 +2525,49 @@ $(document).ready(function () {
 
 	$('.goToInfo').keypress(viewDistrictInfo).click(viewDistrictInfo);
 
-	var viewEroc = function viewEroc() {
+	// var viewEroc = function() {
+	//
+	// 	// $('.goToInfo').click(function(){
+	//
+	// 	$('.grayBox.second').addClass('flexing-scroll')
+	//
+	// 	$(".grayBox.second").animate({
+	// 		"left": -$(".tlModals").width()
+	// 	}, 10);
+	//
+	//
+	// 	setTimeout(function(){
+	//
+	// 		$('.grayBox.third').addClass('animated slideInRight').show();
+	//
+	// 		$(".grayBox.third").animate({
+	// 			"right": 0
+	// 		}, 200);
+	//
+	// 	}, 100);
+	//
+	//
+	// 	setTimeout(function() {
+	// 		$('.tlModals').animate({ scrollTop: 0 }, 700);
+	// 	},1000)
+	//
+	// 	setTimeout(function() {
+	// 		$('.grayBox.third').css('position', 'relative')
+	// 		$('.grayBox.second').hide().css('position', 'absolute')
+	// 	},700)
+	//
+	//
+	// 	// })
+	//
+	// }
+	//
+	// $('.addEroc').keypress(
+	// 	viewEroc
+	//
+	// ).click(
+	// 	viewEroc
+	// );
 
-		// $('.goToInfo').click(function(){
-
-		$('.grayBox.second').addClass('flexing-scroll');
-
-		$(".grayBox.second").animate({
-			"left": -$(".tlModals").width()
-		}, 10);
-
-		setTimeout(function () {
-
-			$('.grayBox.third').addClass('animated slideInRight').show();
-
-			$(".grayBox.third").animate({
-				"right": 0
-			}, 200);
-		}, 100);
-
-		setTimeout(function () {
-			$('.tlModals').animate({ scrollTop: 0 }, 700);
-		}, 1000);
-
-		setTimeout(function () {
-			$('.grayBox.third').css('position', 'relative');
-			$('.grayBox.second').hide().css('position', 'absolute');
-		}, 700);
-
-		// })
-	};
-
-	$('.addEroc').keypress(viewEroc).click(viewEroc);
 
 	$('.tlModals').on('hidden.bs.modal', function (e) {
 		setTimeout(function () {
@@ -2572,7 +2586,8 @@ $(document).ready(function () {
 			"right": negative
 		}, 600);
 
-		$('.save-floating').hide();
+		// $('.save-floating').hide()
+
 
 		e.stopPropagation();
 
@@ -2600,31 +2615,36 @@ $(document).ready(function () {
 	var negative = -$(".tlModals").width();
 
 	$('.activeCube').click(function (e) {
-		e.stopPropagation();
-		setTimeout(function () {
-			$('.grayBox.first').removeClass('flexing-scroll').show();
+		// e.stopPropagation()
+		// setTimeout(function(){
+		// 	$('.grayBox.first').removeClass('flexing-scroll').show()
+		//
+		// 	$(".grayBox.first").animate({
+		// 		"left": 0
+		// 	}, 500);
+		//
+		// }, 400);
+		//
+		// setTimeout(function(){
+		// 	$('.grayBox.second').removeClass('animated slideInRight')
+		//
+		// }, 400);
+		//
+		// $(".grayBox.second").animate({
+		// 	"right": negative,
+		// 	"left": "auto"
+		//
+		// },700);
+		//
+		// $('.save-floating').hide()
+		//
+		// setTimeout(function() {
+		// 	$('.grayBox.first').css('position', 'relative')
+		// 	$('.grayBox.second').hide().css('position', 'absolute')
+		// },1000)
 
-			$(".grayBox.first").animate({
-				"left": 0
-			}, 500);
-		}, 400);
-
-		setTimeout(function () {
-			$('.grayBox.second').removeClass('animated slideInRight');
-		}, 400);
-
-		$(".grayBox.second").animate({
-			"right": negative,
-			"left": "auto"
-
-		}, 700);
-
-		$('.save-floating').hide();
-
-		setTimeout(function () {
-			$('.grayBox.first').css('position', 'relative');
-			$('.grayBox.second').hide().css('position', 'absolute');
-		}, 1000);
+		$('.grayBox.first').fadeIn('slow');
+		$('.grayBox.second').fadeOut();
 	});
 
 	$('.btn').on('click', function () {

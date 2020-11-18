@@ -297,6 +297,8 @@
 						<section class="block99 mt-5">
 							<div id="overview" class="container-fluid heros">
 
+								<div id="anchorPoint"></div>
+
 								<div class="container">
 
 									<div class="box-outer tlModals">
@@ -632,6 +634,16 @@
 
 																		</div>
 
+																		<div class="d-flex justify-content-center mt-5">
+
+																		<button type="submit" form="newInfo" class="greenButton saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information">SAVE <i class="fas fa-save"></i>
+																		</button>
+
+																		<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving">CANCEL <i class="fas fa-ban stop"></i>
+																		</button>
+
+																	</div>
+
 																	</fieldset>
 
 
@@ -694,7 +706,8 @@
 
 												<div class="outside">
 													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less"></i>
-													<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc"><i class="far fa-plus"></i>&nbsp;new</button>
+
+													<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc" data-toggle="modal" data-target="#eRocModal"><i class="far fa-plus"></i>&nbsp;new</button>
 
 													<h2 class="landing-sec-H padding-0 margin-0">EROC</h2>
 
@@ -736,6 +749,29 @@
 										</div>
 									</div>
 								</section>
+
+
+
+																			<div class="modal fade" id="eRocModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												...
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
 
 
 
