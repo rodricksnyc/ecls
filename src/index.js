@@ -806,7 +806,7 @@ var district = {"districts": [{
 	"leadid": 'LEA4471A',
 	"schoolName": "Nazareth School District",
 	"dflag": 'Ipsum ipsum',
-	"dStatus": "Special Handling– In Progressd"
+	"dStatus": "Special Handling– In Progress"
 },
 {
 	"leadid": 'LEA3371A',
@@ -1015,6 +1015,37 @@ for(var j in schoolList.schoolLists) {
 	$('.renderSchoolList').append(`<div class='addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="goldLeftBar"></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ID</div><p class="black schoolId">${schoolList.schoolLists[j].schoolId}</p></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL NAME</div><p class="black schoolName">${schoolList.schoolLists[j].schoolName}</p></div><div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ADDRESS</div><p class="black schoolAddress">${schoolList.schoolLists[j].schoolAddress}</p></div></div>`)
 
 }
+
+
+//show added eRocs - this needs to be appended from new info added to the database
+
+var eRoc = {"eRocs": [{
+	"time": '10/13/2020 11:05AM',
+	"mode": "Phone",
+	"result": "Appointment Made",
+	"name": "Marcy Young",
+	"title": "Title",
+	"comment":"<i class='fas fa-comment-alt-dots darkBlue'></i>",
+	"attempt":"Liza Herle"
+}
+
+]}
+
+for(var j in eRoc.eRocs) {
+
+	$('.renderErocs').append(`<div class="addBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button"><div class="goldLeftBar"></div><div class="col-lg-2 col-md-6 col-sm-12 col-xs-12"><div class="mobile">CONTACT DATE & TIME</div><p class="black time">${eRoc.eRocs[j].time}</p></div><div class="col-lg-1 col-md-6 col-sm-12 col-xs-12"><div class="mobile">MODE</div><p class="black mode">${eRoc.eRocs[j].mode}</p></div><div class="col-lg-2 col-md-6 col-sm-12 col-xs-12"><div class="mobile">RESULT</div><p class="black result">${eRoc.eRocs[j].result}</p></div><div class="col-lg-2 col-md-6 col-sm-12 col-xs-12"><div class="mobile">CONTACT NAME</div><p class="black name">${eRoc.eRocs[j].name}</p></div><div class="col-lg-1 col-md-6 col-sm-12 col-xs-12"><div class="mobile">CONTACT TITLE/POSITION</div><p class="black eRoctitle">${eRoc.eRocs[j].title}</p></div><div class="col-lg-2 col-md-6 col-sm-12 col-xs-12"><div class="mobile">COMMENTS/INSTRUCTIONS</div><div class="comment">${eRoc.eRocs[j].comment}</div></div><div class="col-lg-2 col-md-6 col-sm-12 col-xs-12"><div class="mobile">PERSON WHO MADE CONTACT ATTEMPT</div><p class="black attempt">${eRoc.eRocs[j].attempt}</p></div></div>`)
+
+
+}
+
+$('.doneEroc').click(function() {
+
+$('.grayBoxEmpty').remove()
+$('.eRocAttr').removeClass('hidden')
+$('.renderErocs').removeClass('hidden')
+
+
+})
 
 
 //tl portal alphabetize and sort numerically
@@ -3137,7 +3168,7 @@ $(".scrollIt").on("click", function(event) {
 
 
 	$('.tlModals').on('hidden.bs.modal', function (e) {
-		
+
 		// setTimeout(function(){
 		// 	$('.grayBox.first').removeClass('flexing-scroll')
 		//

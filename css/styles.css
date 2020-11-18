@@ -1157,6 +1157,18 @@ textarea {
   display: flex !important
 }
 
+.renderErocs .addBlocks {
+    display: flex !important;
+}
+
+.eRocAttr h6.gray {
+  width:120%;
+  margin: 20px 0px 10px 0px;
+}
+
+
+
+
 .rotateIt {
   font-family: "Font Awesome 5 Pro";
   content: "\f0de";
@@ -1347,7 +1359,7 @@ p.dark {
 
 }
 
-.addBlocks:hover  {
+.renderDistricts .addBlocks:hover  {
   -webkit-transition: transform .1s ease-in-out;
   -moz-transition:transform .1s ease-in-out;
   -ms-transition:transform .1s ease-in-out;
@@ -1356,7 +1368,7 @@ p.dark {
   cursor:grab
 }
 
-.addBlocks:hover p.black{
+.renderDistricts .addBlocks:hover p.black{
   color:#00539f;
   font-weight:600
 }
@@ -2710,6 +2722,17 @@ h6.darkBlue {
 
 }
 
+.addAnother {
+    background: white !important;
+    border-color: #00843D !important;
+    width: auto;
+    border-radius: 2rem;
+    color: #00843D;
+    text-transform: uppercase;
+    height: 2.4rem;
+      font-family: 'Public Sans', sans-serif;
+}
+
 
 .greenButton {
   background: #00843D !important;
@@ -3337,6 +3360,8 @@ footer a.white:hover {
   .menu-buttons-floating {
     margin-left:2em;
   }
+
+
 
   .container_0, .container_1 {
     max-width: 1500px!important;
@@ -6451,6 +6476,11 @@ transform: scale(0.8);
       display: flex !important;
       padding-left: 1em;
   }
+
+  .renderErocs .addBlocks {
+      display: flex !important;
+      padding-left: 1em;
+  }
   .addBlocks p.black {
     text-align: left;
     margin-bottom: 1em;
@@ -6498,6 +6528,26 @@ transform: scale(0.8);
     margin-bottom: 0px !important;
 
   }
+
+  .tlModals .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
+
+    width: auto;
+}
+
+.tlModals .btn-group>.btn:not(.dropdown-toggle) {
+
+    width: auto;
+}
+
+  .tlModals .btn-group {
+    width: 100%;
+    margin-bottom: 1em;
+    flex-direction: column;
+}
+
+  .addBlocks p.black {
+    text-align: left;
+}
 
   .slate.borderLeft:after {
 
@@ -7775,6 +7825,16 @@ body{
 }
 
 
+@media (min-width:1024px){
+.renderErocs .comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:2em
+}
+
+}
+
 
 
 @media (max-width:1025px){
@@ -7795,6 +7855,11 @@ body{
 }
 .slideOutLeft{
   left:5px;
+}
+
+i.moveLeft {
+
+    display: none;
 }
 
 }

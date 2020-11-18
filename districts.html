@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.0.1/sweetalert.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.0.1/sweetalert.min.css">
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 
 </head>
@@ -28,8 +28,8 @@
 <style>
 
 /* .columnCubes {
-	position: fixed;
-	left:0
+position: fixed;
+left:0
 } */
 
 </style>
@@ -636,13 +636,13 @@
 
 																		<div class="d-flex justify-content-center mt-5">
 
-																		<button type="submit" form="newInfo" class="greenButton saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information">SAVE <i class="fas fa-save"></i>
-																		</button>
+																			<button type="submit" form="newInfo" class="greenButton saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information">SAVE <i class="fas fa-save"></i>
+																			</button>
 
-																		<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving">CANCEL <i class="fas fa-ban stop"></i>
-																		</button>
+																			<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving">CANCEL <i class="fas fa-ban stop"></i>
+																			</button>
 
-																	</div>
+																		</div>
 
 																	</fieldset>
 
@@ -705,7 +705,7 @@
 
 
 												<div class="outside">
-													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less"></i>
+													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less" style="margin-top: 2.75em;"></i>
 
 													<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc" data-toggle="modal" data-target="#eRocModal"><i class="far fa-plus"></i>&nbsp;new</button>
 
@@ -721,20 +721,54 @@
 																	<p class="black"><b>none added yet</b></p>
 																</div>
 
+																<div class="topAttr eRocAttr d-flex align-items-center hidden">
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">CONTACT DATE<br>& TIME
+
+																		</h6>
+																	</div>
+																	<div class="col-lg-1">
+																		<h6 class="gray larger">MODE</h6>
+																	</div>
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">RESULT</h6>
+																	</div>
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">CONTACT NAME</h6>
+																	</div>
+
+																	<div class="col-lg-1">
+																		<h6 class="gray larger">CONTACT<br>TITLE/<br>POSITION</h6>
+																	</div>
+
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">COMMENTS/<br>INSTRUCTIONS</h6>
+																	</div>
+
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">PERSON WHO MADE<br>CONTACT ATTEMPT</h6>
+																	</div>
+
+																</div>
+																<div class="renderErocs hidden">
 
 
+																</div>
+
+
+																<div class="blueLine2">
+																	<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+																</div>
 
 															</div>
-
-
-															<div class="blueLine2">
-																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
-
-
-															</div>
-
 														</div>
+
 													</div>
+
+
+
 
 												</div>
 
@@ -742,157 +776,191 @@
 
 
 											</div>
-
-
-
-
 										</div>
-									</div>
-								</section>
+									</section>
 
 
 
-								<div class="tlModals modal fade" id="eRocModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<div class="grayBox third">
-													<h2 class="landing-sec-H padding-0 margin-0"> <a role="button" tabindex="0" aria-label="Go back to District Information"><i class="far fa-angle-left darkBlue"></i></a> Add EROC</h2>
+									<div class="tlModals modal fade" id="eRocModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="grayBox third">
+														<h2 class="landing-sec-H padding-0 margin-0"> <a role="button" tabindex="0" aria-label="Go back to District Information"><i class="far fa-angle-left darkBlue"></i></a> Add EROC</h2>
 
-															<form class="erocs" novalidate role="form">
-																<fieldset>
-																	<legend>Add Eroc</legend>
-																	<p class="blackFont mt-5">Date and Time</p>
+														<form class="erocs" novalidate role="form">
+															<fieldset>
+																<legend>Add Eroc</legend>
+																<p class="blackFont mt-5">Date and Time</p>
+																<div class="row">
+																	<div class="col-lg-6 col-md-12">
+																		<div class="form-row">
+																			<div class="col-lg-6 position-relative">
+																				<label for="datepicker">Date</label>
+
+																				<div class="form-group input-group time position-relative">
+																					<input type="text" class="form-control datepicker position-relative" id="date" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
+																					<span class="input-group-text">
+																						<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																					</span>
+																				</div>
+
+																			</div>
+																			<div class="col-lg-6">
+																				<label for="timepicker">Time</label>
+																				<div class="form-group input-group time" id="timepicker">
+																					<input type="text" class="form-control timepicker" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time" required>
+																					<span class="input-group-append input-group-addon">
+																						<span class="input-group-text">
+																							<i class="far fa-clock darkBlue moveLeft"></i>
+																						</span>
+																					</span>
+																				</div>
+																			</div>
+
+																		</div>
+
+
+																		<p class="blackFont">Mode</p>
+
+																		<div class="btn-group" data-toggle="buttons">
+																			<label class="btn btn-primary">
+																				<input type="radio" name="options" id="option7" autocomplete="off"><i class="fas fa-phone"></i>&nbsp;PHONE
+																			</label>
+																			<label class="btn btn-primary active">
+																				<input type="radio" name="options" id="option8" autocomplete="off"><i class="fas fa-envelope"></i>&nbsp;EMAIL
+																			</label>
+																			<label class="btn btn-primary">
+																				<input type="radio" name="options" id="option9" autocomplete="off"><i class="fas fa-user"></i>&nbsp;IN-PERSON
+																			</label>
+																		</div>
+
+
+																		<p class="blackFont">Result</p>
+
+																		<div class="form-group">
+																			<label for="result" required>Select Result</label>
+																			<select id="result" class="form-control" name="result">
+																				<option selected="selected">Select Result</option>
+																				<option value="one">No answer / VM - no message left</option>
+																				<option value="two">Left voicemail</option>
+																				<option value="three">Left message with person</option>
+																				<option value="four">Callback</option>
+																				<option value="five">Appointment Made</option>
+																				<option value="six">Gatekeeper / Avoidance</option>
+																				<option value="seven">Special Handling packet submitted (to keep record of submission date)</option>
+																				<option value="eight">Special Handling – In Progress</option>
+																				<option value="nine">Wrong / Nonworking phone number</option>
+																				<option value="ten">Initial Refusal</option>
+																				<option value="eleven">Approval Received</option>
+
+																			</select>
+
+																		</div>
+
+																	</div>
+																</div>
+
+
+																<div class="lightGrayBox">
 																	<div class="row">
 																		<div class="col-lg-6 col-md-12">
-																	<div class="form-row">
-																		<div class="col-lg-6 position-relative">
-																			<label for="datepicker">Date</label>
+																			<p class="blackFont">Refusal Reason</p>
 
-																			<div class="form-group input-group time position-relative">
-																				<input type="text" class="form-control datepicker position-relative" id="date" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
-																				<span class="input-group-text">
-																					<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
-																				</span>
+																			<div class="form-group">
+																				<label for="refusalReason">Refusal Reason</label>
+																				<select id="refusalReason" class="form-control valid" name="result">
+																					<option selected="selected"></option>
+																					<option value="1">Too much testing</option>
+																					<option value="2">No direct benefit to district/schools/children</option>
+																					<option value="3">Too much of a commitment (time/space)</option>
+																					<option value="4">Confidentiality/consent concerns</option>
+																					<option value="5">Missed special handling deadline</option>
+																					<option value="6">Special handling proposal rejected – no reason given</option>
+																					<option value="7">District does not participate in external research studies</option>
+
+																				</select>
+																			</div>
+
+																			<p class="blackFont">Refusal Severity</p>
+
+																			<div class="form-group">
+																				<label for="refusalSeverity">Refusal Severity</label>
+																				<select id="refusalSeverity" class="form-control valid" name="result">
+																					<option selected="selected"></option>
+																					<option value="1">Adamant</option>
+																					<option value="2">Determined</option>
+																					<option value="3">Firm</option>
+																					<option value="4">Mild</option>
+
+
+																				</select>
+																			</div>
+
+																			<p class="blackFont">Would participate if:</p>
+
+																			<div class="form-group">
+																				<label for="participate">Would participate if:</label>
+																				<select id="participate" class="form-control valid" name="result">
+																					<option selected="selected"></option>
+																					<option value="1">Not indicated</option>
+																					<option value="2">Not under any circumstances</option>
+																					<option value="3">If assessments were conducted outside school hours</option>
+																					<option value="4">If assessments were at a different time of year</option>
+																					<option value="5">Need to get onto district calendar earlier</option>
+																					<option value="6">Personal visit/presentation from ECLS representative</option>
+																					<option value="7">Increased compensation</option>
+																					<option value="8">Feedback on district/school/student performance</option>
+																					<option value="9">Reduce the amount of time required</option>
+																					<option value="10">Other, Specify</option>
+
+
+																				</select>
 																			</div>
 
 																		</div>
-																		<div class="col-lg-6">
-																			<label for="timepicker">Time</label>
-																			<div class="form-group input-group time" id="timepicker">
-																				<input type="text" class="form-control timepicker" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time" required>
-																				<span class="input-group-append input-group-addon">
-																					<span class="input-group-text">
-																						<i class="far fa-clock darkBlue moveLeft"></i>
-																					</span>
-																				</span>
-																			</div>
+																	</div>
+
+																	<div class="row">
+																		<div class="col-lg-12 col-md-12">
+
+																			<p class="blackFont">Ideas for conversion:</p>
+																			<textarea name="message" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message"></textarea>
+
 																		</div>
-
-																	</div>
-
-
-																	<p class="blackFont">Mode</p>
-
-																	<div class="btn-group" data-toggle="buttons">
-																		<label class="btn btn-primary">
-																			<input type="radio" name="options" id="option7" autocomplete="off"><i class="fas fa-phone"></i>&nbsp;PHONE
-																		</label>
-																		<label class="btn btn-primary active">
-																			<input type="radio" name="options" id="option8" autocomplete="off"><i class="fas fa-envelope"></i>&nbsp;EMAIL
-																		</label>
-																		<label class="btn btn-primary">
-																			<input type="radio" name="options" id="option9" autocomplete="off"><i class="fas fa-user"></i>&nbsp;IN-PERSON
-																		</label>
-																	</div>
-
-
-																	<p class="blackFont">Result</p>
-
-																	<div class="form-group">
-																		<label for="result" required>Select Result</label>
-																		<select id="result" class="form-control" name="result">
-																			<option selected="selected">Select Result</option>
-																			<option value="one">No answer / VM - no message left</option>
-																			<option value="two">Left voicemail</option>
-																			<option value="three">Left message with person</option>
-																			<option value="four">Callback</option>
-																			<option value="five">Appointment Made</option>
-																			<option value="six">Gatekeeper / Avoidance</option>
-																			<option value="seven">Special Handling packet submitted (to keep record of submission date)</option>
-																			<option value="eight">Special Handling – In Progress</option>
-																			<option value="nine">Wrong / Nonworking phone number</option>
-																			<option value="ten">Initial Refusal</option>
-																			<option value="eleven">Approval Received</option>
-
-																		</select>
-
 																	</div>
 
 																</div>
-															</div>
 
 
-																	<div class="lightGrayBox">
-																		<div class="row">
-																			<div class="col-lg-6 col-md-12">
-																		<p class="blackFont">Refusal Reason</p>
-
+																<div class="row">
+																	<div class="col-lg-6 col-md-12">
+																		<p class="blackFont">Contact Name</p>
 																		<div class="form-group">
-																			<label for="refusalReason">Refusal Reason</label>
-																			<select id="refusalReason" class="form-control valid" name="result">
-																				<option selected="selected"></option>
-																				<option value="1">Too much testing</option>
-																				<option value="2">No direct benefit to district/schools/children</option>
-																				<option value="3">Too much of a commitment (time/space)</option>
-																				<option value="4">Confidentiality/consent concerns</option>
-																				<option value="5">Missed special handling deadline</option>
-																				<option value="6">Special handling proposal rejected – no reason given</option>
-																				<option value="7">District does not participate in external research studies</option>
+																			<label for="contactName">Contact Name</label>
+																			<input type="text" name="info1" class="form-control" id="contactName">
 
-																			</select>
 																		</div>
 
-																		<p class="blackFont">Refusal Severity</p>
 
+																		<p class="blackFont">Contact Title/Position</p>
 																		<div class="form-group">
-																			<label for="refusalSeverity">Refusal Severity</label>
-																			<select id="refusalSeverity" class="form-control valid" name="result">
-																				<option selected="selected"></option>
-																				<option value="1">Adamant</option>
-																				<option value="2">Determined</option>
-																				<option value="3">Firm</option>
-																				<option value="4">Mild</option>
+																			<label for="contactTitle">Contact Title/Position</label>
+																			<input type="text" name="info2" class="form-control" id="contactTitle" >
 
-
-																			</select>
 																		</div>
 
-																		<p class="blackFont">Would participate if:</p>
-
+																		<p class="blackFont">Contact Made By</p>
 																		<div class="form-group">
-																			<label for="participate">Would participate if:</label>
-																			<select id="participate" class="form-control valid" name="result">
-																				<option selected="selected"></option>
-																				<option value="1">Not indicated</option>
-																				<option value="2">Not under any circumstances</option>
-																				<option value="3">If assessments were conducted outside school hours</option>
-																				<option value="4">If assessments were at a different time of year</option>
-																				<option value="5">Need to get onto district calendar earlier</option>
-																				<option value="6">Personal visit/presentation from ECLS representative</option>
-																				<option value="7">Increased compensation</option>
-																				<option value="8">Feedback on district/school/student performance</option>
-																				<option value="9">Reduce the amount of time required</option>
-																				<option value="10">Other, Specify</option>
+																			<label for="firstname">First Name</label>
+																			<input type="text" name="info3" class="form-control info" id="firstname">
 
-
-																			</select>
 																		</div>
 
 																	</div>
@@ -901,76 +969,47 @@
 																<div class="row">
 																	<div class="col-lg-12 col-md-12">
 
-																		<p class="blackFont">Ideas for conversion:</p>
-																		<textarea name="message" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message"></textarea>
+																		<p class="blackFont">Comments</p>
+																		<textarea tabindex="0" aria-hidden="false" rows="5" data-form-field="Message"></textarea>
+
+
 
 																	</div>
 																</div>
 
-															</div>
+
+																<div class="d-flex justify-content-center align-items-center mt-3">
 
 
-																	<div class="row">
-																		<div class="col-lg-6 col-md-12">
-																	<p class="blackFont">Contact Name</p>
-																	<div class="form-group">
-																		<label for="contactName">Contact Name</label>
-																		<input type="text" name="info1" class="form-control" id="contactName">
+																	<button type="submit" dismiss="modal" class="btn greenButton doneEroc mr-1" role="button" tabindex="0" aria-label="Add Eroc">DONE</button>
 
-																	</div>
+																	<button type="submit" dismiss="modal" class="btn ml-1 addAnother" role="button" tabindex="0" aria-label="Add Eroc"><i class="far fa-plus"></i> ADD ANOTHER</button>
 
-
-																	<p class="blackFont">Contact Title/Position</p>
-																	<div class="form-group">
-																		<label for="contactTitle">Contact Title/Position</label>
-																		<input type="text" name="info2" class="form-control" id="contactTitle" >
-
-																	</div>
-
-																	<p class="blackFont">Contact Made By</p>
-																	<div class="form-group">
-																		<label for="firstname">First Name</label>
-																		<input type="text" name="info3" class="form-control info" id="firstname">
-
-																	</div>
 
 																</div>
-															</div>
 
-															<div class="row">
-																<div class="col-lg-12 col-md-12">
-
-																	<p class="blackFont">Comments</p>
-																	<textarea tabindex="0" aria-hidden="false" rows="5" data-form-field="Message"></textarea>
+															</fieldset>
+														</form>
 
 
-																	<button type="submit" dismiss="modal" class="btn greenButton doneEroc mt-3" role="button" tabindex="0" aria-label="Add Eroc">DONE</button>
-
-																</div>
-															</div>
-
-																</fieldset>
-															</form>
-
-
+													</div>
 												</div>
-											</div>
-											<div class="modal-footer">
-												<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary">Save changes</button> -->
+												<div class="modal-footer">
+													<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button> -->
+												</div>
 											</div>
 										</div>
 									</div>
+
+
+
+
+
+									<div class="content-spacer"></div>
+
 								</div>
-
-
-
-
-
-								<div class="content-spacer"></div>
-
 							</div>
-						</div>
 							<footer>
 								<div class="footer-wrapper">
 									<div class="abso">
@@ -1011,31 +1050,31 @@
 							<script type="text/javascript" src="src/tl.js"></script>
 							<script>
 
-// 							$(window).bind('beforeunload', function()
-// 							{
-//     					// if (!$('.informationForm input').val() == '' )  {
-//
-//   						return 'Are you sure you want to leave?';
-// // alert('cunt')
-// 						}
-//
-// 						// else{
-// 						// 	// alert('bitch')
-// 						// }
-// 							});
+							// 							$(window).bind('beforeunload', function()
+							// 							{
+							//     					// if (!$('.informationForm input').val() == '' )  {
+							//
+							//   						return 'Are you sure you want to leave?';
+							// // alert('cunt')
+							// 						}
+							//
+							// 						// else{
+							// 						// 	// alert('bitch')
+							// 						// }
+							// 							});
 
 
-// $('.toTL').on('click', function(){
-// if ($('.informationForm input').val().length == 0 )  {
-//
-// // return 'Are you sure you want to leave?';
-// alert('cunt')
-// }
-//
-// else{
-// alert('bitch')
-// }
-// });
+							// $('.toTL').on('click', function(){
+							// if ($('.informationForm input').val().length == 0 )  {
+							//
+							// // return 'Are you sure you want to leave?';
+							// alert('cunt')
+							// }
+							//
+							// else{
+							// alert('bitch')
+							// }
+							// });
 
 
 
