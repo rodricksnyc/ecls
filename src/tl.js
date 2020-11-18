@@ -107,7 +107,7 @@ $(".informationForm").validate(
     },
 
   });
-  $("#timepicker").datetimepicker({
+  $(".timepicker").datetimepicker({
     format: "LT",
     icons: {
       up: "fa fa-chevron-up",
