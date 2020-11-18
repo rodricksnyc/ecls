@@ -27,10 +27,10 @@
 
 <style>
 
-.columnCubes {
+/* .columnCubes {
 	position: fixed;
 	left:0
-}
+} */
 
 </style>
 
@@ -106,736 +106,741 @@
 									</div>
 								</div>
 							</header>
-							<div class="tlBanner"><h1 class="white title">Welcome to the MyECLS Website!</h1></div>
-						</div>
+							<div class="tlBanner">
+								<a href="tl.html"><div class="green-circle"><i class="far fa-angle-left yellow"></i></div></a>
+								<div class="d-flex justify-content-center align-items-center">
+									<img src="images/img_districts.svg" class="img-fluid districtGlobe"> <h1 class="white title pt-0">Districts</h1>
+								</div>
+							</div>
 
-					</section>
+						</section>
 
 
-					<div id="slideOut" class="content-top">
+						<div id="slideOut" class="content-top">
 
-						<div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
-							<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
+							<div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
+								<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
 
-						</div>
+							</div>
 
-						<div class="modal-content">
-							<div class="modal-header">
-								<div class="closeThisPlease" id="close">
-									<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
-										<span aria-hidden="true">
-											<div class="circCont">
-												<div class="circleClose" data-animation="magnify" data-remove="3000">
-													<span></span>
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="closeThisPlease" id="close">
+										<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+											<span aria-hidden="true">
+												<div class="circCont">
+													<div class="circleClose" data-animation="magnify" data-remove="3000">
+														<span></span>
+													</div>
 												</div>
+											</span>
+										</button>
+									</div>
+									<br>
+
+									<p class="whiteLarge">How to Contact Us</p>
+
+								</div>
+								<div class="modal-body">
+
+									<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
+										<!-- <p class="modalFooter">*Required Field</p> -->
+										<div class="form-group">
+											<label for="formControl1">Name</label>
+											<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
+										</div>
+										<div class="form-group">
+											<label for="formControl2">Email</label>
+											<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+										</div>
+
+										<div class="form-group">
+											<fieldset>
+												<label for="general-inquiry">Reason for Contact</label>
+												<div class="around">
+													<div class="vertical">
+														<i class="fas fa-info-circle"></i>
+														<legend>Reason for Contact</legend>
+														<label class="radio-inline">
+															<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
+														</label>
+													</div>
+													<div class="vertical">
+														<i class="fas fa-question-circle"></i>
+														<label class="radio-inline">
+															<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
+														</label>
+													</div>
+													<div class="vertical">
+														<i class="fas fa-user-headset"></i>
+														<label class="radio-inline">
+															<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
+														</label>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="form-group">
+											<label for="formControl4">Message</label>
+											<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
+										</div>
+										<center>
+											<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+										</center>
+										<div class="emailInfo">
+											<h6 class="white pt1">Email</h6>
+											<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
+										</div>
+									</form>
+
+								</div>
+								<div class="modal-footer">
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+							&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+						</div>
+
+						<div class="contactUsOverlay"></div>
+
+						<div class="rel">
+							<div class="greenSide projects" tabindex="0" role="button" aria-expanded="false">
+								<i class="far fa-bars yellow mb-2"></i>
+								<p class="white small">MENU</p>
+							</div>
+
+							<div class="slideOutLeft">
+
+								<div class="d-flex align-items-center justify-content-around menuClass">
+
+									<h6 class="gray text-center">MENU</h6>
+									<div class="close-project" aria-expanded="false" role="button" aria-hidden="true" tabindex="-1">
+
+										<i class="far fa-angle-double-left darkBlue"></i>
+										<div class="grayBackground"></div>
+
+									</div>
+								</div>
+								<div class="hoverOnly"><i class="fas fa-thumbtack darkBlue"></i></div>
+
+								<div class="d-flex align-items-center flex-column columnCubes">
+
+
+									<div class="activeCube">
+										<img src="images/img_districts-hover.svg" class="img-fluid">
+										<p class="white twenty mt-0 mb-0">Districts</p>
+
+									</div>
+
+
+									<a href="" class="cube">
+										<div class="greenCube schools">
+											<img src="images/img_school.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Schools</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="greenCube parents">
+											<img src="images/img_parents.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Parents</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="blueCube documents">
+											<img src="images/img_documents.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Documents</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="blueCube transmission">
+											<img src="images/img_transmission.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Transmission</p>
+
+										</div>
+									</a>
+									<a href="" class="cube">
+										<div class="blueCube messaging">
+											<img src="images/img_messaging.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Message Center</p>
+
+										</div>
+									</a>
+
+									<a href="" class="cube">
+										<div class="blueCube reports">
+											<img src="images/img_reports.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Reports</p>
+
+										</div>
+									</a>
+
+
+								</div>
+
+
+							</div>
+						</div>
+
+
+
+						<section class="block99 mt-5">
+							<div id="overview" class="container-fluid heros">
+
+								<div class="container">
+
+									<div class="box-outer tlModals">
+										<div class="grayBox first">
+											<div class="form-group has-search d-flex justify-content-center align-items-center">
+												<p class="dark">Select a district or...</p> <div><span class="fa fa-search form-control-feedback"></span>
+													<input type="text" class="form-control" placeholder="search by LEAID or district name"></div>
+												</div>
+												<div class="topAttr d-flex align-items-center">
+													<div class="col-lg-3">
+														<h6 class="gray larger sortId">LEAID
+															<i class="far fa-sort darkBlue"></i>
+														</h6>
+													</div>
+													<div class="col-lg-3">
+														<h6 class="gray larger sortDistrict">DISTRICT NAME <i class="far fa-sort darkBlue"></i></h6>
+													</div>
+													<div class="col-lg-3">
+														<h6 class="gray larger sortDflag">DFLAG <i class="far fa-sort darkBlue"></i></h6>
+													</div>
+													<div class="col-lg-3">
+														<h6 class="gray larger sortStatus">DISTRICT STATUS <i class="far fa-sort darkBlue"></i></h6>
+													</div>
+
+												</div>
+												<div class="renderDistricts">
+
+
+												</div>
+
+												<div class="d-flex justify-content-center mt-4">
+													<a class="load20More" role="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more">
+
+														<p class="darkBlue">show 20 more</p>
+
+													</a>
+
+
+												</div>
+
 											</div>
-										</span>
-									</button>
-								</div>
-								<br>
 
-								<p class="whiteLarge">How to Contact Us</p>
+											<div class="grayBox second">
 
-							</div>
-							<div class="modal-body">
+												<div class="outside">
+													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0"  aria-label="Shows Less"></i>
 
-								<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
-									<!-- <p class="modalFooter">*Required Field</p> -->
-									<div class="form-group">
-										<label for="formControl1">Name</label>
-										<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
-									</div>
-									<div class="form-group">
-										<label for="formControl2">Email</label>
-										<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
-									</div>
-
-									<div class="form-group">
-										<fieldset>
-											<label for="general-inquiry">Reason for Contact</label>
-											<div class="around">
-												<div class="vertical">
-													<i class="fas fa-info-circle"></i>
-													<legend>Reason for Contact</legend>
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
-													</label>
-												</div>
-												<div class="vertical">
-													<i class="fas fa-question-circle"></i>
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
-													</label>
-												</div>
-												<div class="vertical">
-													<i class="fas fa-user-headset"></i>
-													<label class="radio-inline">
-														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
-													</label>
-												</div>
-											</div>
-										</fieldset>
-									</div>
-									<div class="form-group">
-										<label for="formControl4">Message</label>
-										<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
-									</div>
-									<center>
-										<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
-									</center>
-									<div class="emailInfo">
-										<h6 class="white pt1">Email</h6>
-										<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
-									</div>
-								</form>
-
-							</div>
-							<div class="modal-footer">
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
-						&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
-					</div>
-
-					<div class="contactUsOverlay"></div>
+													<button class="btn btn-info steelColor floatRight mt-1 mr-3" tabindex="0" aria-hidden="false" role="button" aria-label="Opt out"><i class="far fa-print"></i> DISTRICT INFO</button>
 
 
-						<!-- <div class="d-flex align-items-center justify-content-around menuClass">
-
-							<h6 class="gray text-center">MENU</h6>
-							 <div class="close-project" aria-expanded="false" role="button" aria-hidden="true" tabindex="-1">
-
-								<i class="far fa-angle-double-left darkBlue"></i>
-								<div class="grayBackground"></div>
-
-							</div>
-						</div> -->
+													<h2 class="landing-sec-H padding-0 margin-0">District Information</h2>
 
 
-						<div class="d-flex align-items-center flex-column columnCubes">
+													<div class="row">
+														<div class="col-xs-12 col-lg-12 col-md-12">
 
-	<h6 class="gray text-center">MENU</h6>
-							<div class="activeCube">
-								<img src="images/img_districts-hover.svg" class="img-fluid">
-								<p class="white twenty mt-0 mb-0">Districts</p>
+															<div class="toggleDiv">
+																<form class="informationForm" novalidate role="form" method="POST" id="newInfo">
+																	<ul class="errorMessages"></ul>
+																	<fieldset>
+																		<legend>Update Your Information</legend>
+																		<div class="row position-relative">
+																			<div class="col-lg-6">
+																				<div class="lightGrayBox">
+																					<div class="form-group">
+																						<label for="leaid-input" class="disabled">LEAID</label>
+																						<input type="text" name="info" class="form-control disabled" id="leadid-input" placeholder="">
 
-							</div>
+																					</div>
 
-
-							<a href="" class="cube">
-								<div class="greenCube schools">
-									<img src="images/img_school.svg" class="img-fluid">
-									<p class="white twenty mt-0 mb-0">Schools</p>
-
-								</div>
-							</a>
-
-							<a href="" class="cube">
-								<div class="greenCube parents">
-									<img src="images/img_parents.svg" class="img-fluid">
-									<p class="white twenty mt-0 mb-0">Parents</p>
-
-								</div>
-							</a>
-
-							<a href="" class="cube">
-								<div class="blueCube documents">
-									<img src="images/img_documents.svg" class="img-fluid">
-									<p class="white twenty mt-0 mb-0">Documents</p>
-
-								</div>
-							</a>
-
-							<a href="" class="cube">
-								<div class="blueCube transmission">
-									<img src="images/img_transmission.svg" class="img-fluid">
-									<p class="white twenty mt-0 mb-0">Transmission</p>
-
-								</div>
-							</a>
-							<a href="" class="cube">
-								<div class="blueCube messaging">
-									<img src="images/img_messaging.svg" class="img-fluid">
-									<p class="white twenty mt-0 mb-0">Message Center</p>
-
-								</div>
-							</a>
-
-							<a href="" class="cube">
-								<div class="blueCube reports">
-									<img src="images/img_reports.svg" class="img-fluid">
-									<p class="white twenty mt-0 mb-0">Reports</p>
-
-								</div>
-							</a>
-
-
-						</div>
+																					<div class="form-group">
+																						<label for="district-name" class="disabled">District Name</label>
+																						<input type="text" name="info" class="form-control disabled" id="district-name" placeholder="">
+																					</div>
+																					<div class="form-group">
+																						<label for="address1" class="disabled">Address</label>
+																						<input type="text" name="info" class="form-control disabled" id="address1" placeholder="">
+																					</div>
 
 
 
-					<section class="block200">
-						<div id="overview" class="container-fluid heros">
+																					<div class="row noWrapRow">
+																						<div class="col-md-5 col-xs-12">
+																							<div class="form-group">
+																								<label for="city" class="disabled">City</label>
+																								<input type="text" name="info" class="form-control disabled" id="city" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-3 col-xs-12">
+																							<div class="form-group">
+																								<label for="state" class="disabled">State</label>
+																								<input type="text" name="info" class="form-control disabled" id="state" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-4 col-xs-12">
+																							<div class="form-group">
+																								<label for="zip" class="disabled">ZIP</label>
+																								<input type="text" name="info" class="form-control disabled" id="zip" placeholder="">
+																							</div>
+																						</div>
 
-							<div class="container">
+																					</div>
 
 
-																						<div class="box-outer">
-																							<div class="grayBox first">
-																								<div class="form-group has-search d-flex justify-content-center align-items-center">
-																									<p class="dark">Select a district or...</p> <div><span class="fa fa-search form-control-feedback"></span>
-																										<input type="text" class="form-control" placeholder="search by LEAID or district name"></div>
-																									</div>
-																									<div class="topAttr d-flex align-items-center">
-																										<div class="col-lg-3">
-																											<h6 class="gray larger sortId">LEAID
-																												<i class="far fa-sort darkBlue"></i>
-																											</h6>
-																										</div>
-																										<div class="col-lg-3">
-																											<h6 class="gray larger sortDistrict">DISTRICT NAME <i class="far fa-sort darkBlue"></i></h6>
-																										</div>
-																										<div class="col-lg-3">
-																											<h6 class="gray larger sortDflag">DFLAG <i class="far fa-sort darkBlue"></i></h6>
-																										</div>
-																										<div class="col-lg-3">
-																											<h6 class="gray larger sortStatus">DISTRICT STATUS <i class="far fa-sort darkBlue"></i></h6>
-																										</div>
 
-																									</div>
-																									<div class="renderDistricts">
+																					<div class="form-group">
+
+																						<label for="phoneNumber">Phone Number</label>
+																						<input id="phoneNumber" type="text" name="phoneNumber" class="form-control"  maxlength="10">
+
+
+																					</div>
+
+																					<div class="form-group">
+																						<label for="website">District Website</label>
+																						<input type="text" name="info" class="form-control" id="website" placeholder="">
+																					</div>
+
 
 
 																				</div>
 
-																				<div class="d-flex justify-content-center mt-4">
-																					<a class="load20More" role="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more">
 
-																						<p class="darkBlue">show 20 more</p>
+																				<div class="lightGrayBox">
 
-																					</a>
+																					<div class="form-group">
+																						<label for="DS-name">District Superintendent Name</label>
+																						<input type="text" name="info" class="form-control" id="DS-name" placeholder="">
+																					</div>
+																					<div class="form-group">
+																						<label for="DS-title">District Website</label>
+																						<input type="text" name="info" class="form-control" id="DS-title" placeholder="">
+																					</div>
+
+
+																					<div class="row noWrapRow">
+																						<div class="col-md-8 col-xs-12">
+																							<div class="form-group">
+																								<label for="DS-phone">District Superintendent Phone</label>
+																								<input type="text" name="phoneNumber" class="form-control" id="DS-phone" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-4 col-xs-12">
+																							<div class="form-group">
+																								<label for="ext">Ext.</label>
+																								<input type="text" name="info" class="form-control" id="ext" placeholder="">
+																							</div>
+																						</div>
+
+
+																					</div>
+
+																					<div class="form-group">
+																						<label for="DS-email">District Superintendent Email</label>
+																						<input type="email" name="email" class="form-control" id="DS-email" placeholder="">
+																					</div>
+
+																				</div>
+
+
+																				<div class="lightGrayBox">
+
+																					<div class="form-group">
+																						<label for="DTD-name">District Testing Director Name</label>
+																						<input type="text" name="info" class="form-control" id="DTD-name" placeholder="">
+																					</div>
+																					<div class="form-group">
+																						<label for="DTD-title">District Testing Director Title</label>
+																						<input type="text" name="info" class="form-control" id="DTD-title" placeholder="">
+																					</div>
+
+
+																					<div class="row noWrapRow">
+																						<div class="col-md-8 col-xs-12">
+																							<div class="form-group">
+																								<label for="DTD-phone">District Testing Director Phone</label>
+																								<input type="text" name="phoneNumber" class="form-control" id="DTD-phone" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-4 col-xs-12">
+																							<div class="form-group">
+																								<label for="ext2">Ext.</label>
+																								<input type="text" name="info" class="form-control" id="ext2" placeholder="">
+																							</div>
+																						</div>
+
+
+																					</div>
+
+																					<div class="form-group">
+																						<label for="DTD-email">District Testing Director Email</label>
+																						<input type="email" name="email" class="form-control" id="DTD-email" placeholder="">
+																					</div>
+
+																				</div>
+
+																			</div>
+
+																			<div class="col-lg-6">
+																				<div class="lightGrayBox">
+
+																					<div class="form-group">
+																						<label for="D-status" class="disabled">District Status</label>
+																						<input type="text" name="info" class="form-control disabled" id="D-status" placeholder="">
+																					</div>
+																					<div id="listResults">
+																						<div class="one">
+																							<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation88">
+																							<label class="form-check-label" tabindex="0" for="customControlValidation88">Special Handling</label>
+																							<br>
+																							<textarea name="validation" tabindex="0" aria-hidden="false" rows="3" data-form-field="Message" placeholder=""></textarea>
+																						</div>
+																					</div>
+
+																					<p class="blackFont">Consent Rule</p>
+
+																					<div class="btn-group" data-toggle="buttons">
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option1" autocomplete="off">EXPLICIT
+																						</label>
+																						<label class="btn btn-primary active">
+																							<input type="radio" name="options" id="option2" autocomplete="off" checked>IMPLICIT
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option3" autocomplete="off">SCHOOL DECIDES
+																						</label>
+																					</div>
+
+																					<p class="blackFont">Incentive Rule</p>
+
+																					<div class="btn-group" data-toggle="buttons">
+																						<label class="btn btn-primary active">
+																							<input type="radio" name="options" id="option4" autocomplete="off" checked>INCENTIVES<br>ALLOWED
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option5" autocomplete="off">INCENTIVES<br>PAYABLE TO SCHOOL
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option6" autocomplete="off">NO INCENTIVES
+																						</label>
+																					</div>
+
+																					<p class="blackFont">Surveys Allowed?</p>
+																					<div class="form-check form-check-inline customRadio">
+																						<input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="phone">
+																						<label class="form-check-label blue" for="inlineRadio1">Yes</label>
+																					</div>
+																					<div class="form-check form-check-inline customRadio">
+																						<input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="phone">
+																						<label class="form-check-label blue" for="inlineRadio2">No</label>
+																					</div>
+
+																					<div class="form-group">
+																						<label for="notes">Notes/Instructions</label>
+																						<textarea name="validation" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message" placeholder="" id="notes"></textarea>
+																					</div>
+																				</div>
+
+																				<div class="lightGrayBox">
+
+																					<div class="form-group">
+																						<label for="A-name">Approver Name</label>
+																						<input type="text" name="info" class="form-control" id="A-name" placeholder="">
+																					</div>
+																					<div class="form-group">
+																						<label for="A-title">Approver Title</label>
+																						<input type="text" name="info" class="form-control" id="A-title" placeholder="">
+																					</div>
+
+
+																					<div class="row noWrapRow">
+																						<div class="col-md-8 col-xs-12">
+																							<div class="form-group">
+																								<label for="A-phone">Approver Phone</label>
+																								<input type="text" name="phoneNumber" class="form-control" id="A-phone" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-4 col-xs-12">
+																							<div class="form-group">
+																								<label for="ext3">Ext.</label>
+																								<input type="text" name="info" class="form-control" id="ext3" placeholder="">
+																							</div>
+																						</div>
+
+
+																					</div>
+
+																					<div class="form-group">
+																						<label for="A-email">Approver Email</label>
+																						<input type="email" name="email" class="form-control" id="A-email" placeholder="">
+																					</div>
+
+																				</div>
+
+																				<div class="lightGrayBox">
+
+																					<div class="form-group">
+																						<label for="EED-name">Early Education Director Name</label>
+																						<input type="text" name="info" class="form-control" id="EED-name" placeholder="">
+																					</div>
+																					<div class="form-group">
+																						<label for="EED-title">Early Education Director Title</label>
+																						<input type="text" name="info" class="form-control" id="A-title" placeholder="">
+																					</div>
+
+
+																					<div class="row noWrapRow">
+																						<div class="col-md-8 col-xs-12">
+																							<div class="form-group">
+																								<label for="EED-phone">Early Education Director Phone</label>
+																								<input type="text" name="phoneNumber" class="form-control" id="EED-phone" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-4 col-xs-12">
+																							<div class="form-group">
+																								<label for="ext4">Ext.</label>
+																								<input type="text" name="info" class="form-control" id="ext4" placeholder="">
+																							</div>
+																						</div>
+
+
+																					</div>
+
+																					<div class="form-group">
+																						<label for="EED-email">Early Education Director Email</label>
+																						<input type="email" name="email" class="form-control" id="EED-email" placeholder="">
+																					</div>
 
 
 																				</div>
 
 																			</div>
 
-																			<div class="grayBox second">
+																		</div>
 
-																				<div class="outside">
-																					<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0"  aria-label="Shows Less"></i>
+																	</fieldset>
 
-																					<button class="btn btn-info steelColor floatRight mt-1 mr-3" tabindex="0" aria-hidden="false" role="button" aria-label="Opt out"><i class="far fa-print"></i> DISTRICT INFO</button>
 
+																</form>
+															</div>
 
-																					<h2 class="landing-sec-H padding-0 margin-0">District Information</h2>
+															<div class="blueLine2">
+																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
 
 
-																					<div class="row">
-																						<div class="col-xs-12 col-lg-12 col-md-12">
+															</div>
 
-																							<div class="toggleDiv">
-																								<form class="informationForm" novalidate role="form" method="POST" id="newInfo">
-																									<ul class="errorMessages"></ul>
-																									<fieldset>
-																										<legend>Update Your Information</legend>
-																										<div class="row position-relative">
-																											<div class="col-lg-6">
-																												<div class="lightGrayBox">
-																													<div class="form-group">
-																														<label for="leaid-input" class="disabled">LEAID</label>
-																														<input type="text" name="info" class="form-control disabled" id="leadid-input" placeholder="">
+														</div>
 
-																													</div>
+													</div>
+												</div>
+												<div class="outside">
+													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
 
-																													<div class="form-group">
-																														<label for="district-name" class="disabled">District Name</label>
-																														<input type="text" name="info" class="form-control disabled" id="district-name" placeholder="">
-																													</div>
-																													<div class="form-group">
-																														<label for="address1" class="disabled">Address</label>
-																														<input type="text" name="info" class="form-control disabled" id="address1" placeholder="">
-																													</div>
+													<h2 class="landing-sec-H padding-0 margin-0">List of Schools</h2>
 
+													<div class="row">
+														<div class="col-xs-12 col-lg-12 col-md-12">
 
+															<div class="toggleDiv">
 
-																													<div class="row noWrapRow">
-																														<div class="col-md-5 col-xs-12">
-																															<div class="form-group">
-																																<label for="city" class="disabled">City</label>
-																																<input type="text" name="info" class="form-control disabled" id="city" placeholder="">
-																															</div>
-																														</div>
-																														<div class="col-md-3 col-xs-12">
-																															<div class="form-group">
-																																<label for="state" class="disabled">State</label>
-																																<input type="text" name="info" class="form-control disabled" id="state" placeholder="">
-																															</div>
-																														</div>
-																														<div class="col-md-4 col-xs-12">
-																															<div class="form-group">
-																																<label for="zip" class="disabled">ZIP</label>
-																																<input type="text" name="info" class="form-control disabled" id="zip" placeholder="">
-																															</div>
-																														</div>
+																<div class="topAttr d-flex align-items-center">
+																	<div class="col-lg-4">
+																		<h6 class="gray larger sortId">SCHOOL ID </h6>
+																	</div>
+																	<div class="col-lg-4">
+																		<h6 class="gray larger sortDistrict">SCHOOL NAME </h6>
+																	</div>
+																	<div class="col-lg-4">
+																		<h6 class="gray larger sortDflag">SCHOOL ADDRESS</h6>
+																	</div>
 
-																													</div>
+																</div>
 
+																<div class="renderSchoolList">
 
 
-																													<div class="form-group">
+																</div>
 
-																														<label for="phoneNumber">Phone Number</label>
-																														<input id="phoneNumber" type="text" name="phoneNumber" class="form-control"  maxlength="10">
 
+															</div>
 
-																													</div>
 
-																													<div class="form-group">
-																														<label for="website">District Website</label>
-																														<input type="text" name="info" class="form-control" id="website" placeholder="">
-																													</div>
+															<div class="blueLine2">
+																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
 
 
+															</div>
 
-																												</div>
+														</div>
+													</div>
 
+												</div>
 
-																												<div class="lightGrayBox">
 
-																													<div class="form-group">
-																														<label for="DS-name">District Superintendent Name</label>
-																														<input type="text" name="info" class="form-control" id="DS-name" placeholder="">
-																													</div>
-																													<div class="form-group">
-																														<label for="DS-title">District Website</label>
-																														<input type="text" name="info" class="form-control" id="DS-title" placeholder="">
-																													</div>
+												<div class="outside">
+													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less"></i>
+													<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc"><i class="far fa-plus"></i>&nbsp;new</button>
 
+													<h2 class="landing-sec-H padding-0 margin-0">EROC</h2>
 
-																													<div class="row noWrapRow">
-																														<div class="col-md-8 col-xs-12">
-																															<div class="form-group">
-																																<label for="DS-phone">District Superintendent Phone</label>
-																																<input type="text" name="phoneNumber" class="form-control" id="DS-phone" placeholder="">
-																															</div>
-																														</div>
-																														<div class="col-md-4 col-xs-12">
-																															<div class="form-group">
-																																<label for="ext">Ext.</label>
-																																<input type="text" name="info" class="form-control" id="ext" placeholder="">
-																															</div>
-																														</div>
-
-
-																													</div>
-
-																													<div class="form-group">
-																														<label for="DS-email">District Superintendent Email</label>
-																														<input type="email" name="email" class="form-control" id="DS-email" placeholder="">
-																													</div>
-
-																												</div>
-
-
-																												<div class="lightGrayBox">
-
-																													<div class="form-group">
-																														<label for="DTD-name">District Testing Director Name</label>
-																														<input type="text" name="info" class="form-control" id="DTD-name" placeholder="">
-																													</div>
-																													<div class="form-group">
-																														<label for="DTD-title">District Testing Director Title</label>
-																														<input type="text" name="info" class="form-control" id="DTD-title" placeholder="">
-																													</div>
-
-
-																													<div class="row noWrapRow">
-																														<div class="col-md-8 col-xs-12">
-																															<div class="form-group">
-																																<label for="DTD-phone">District Testing Director Phone</label>
-																																<input type="text" name="phoneNumber" class="form-control" id="DTD-phone" placeholder="">
-																															</div>
-																														</div>
-																														<div class="col-md-4 col-xs-12">
-																															<div class="form-group">
-																																<label for="ext2">Ext.</label>
-																																<input type="text" name="info" class="form-control" id="ext2" placeholder="">
-																															</div>
-																														</div>
-
-
-																													</div>
-
-																													<div class="form-group">
-																														<label for="DTD-email">District Testing Director Email</label>
-																														<input type="email" name="email" class="form-control" id="DTD-email" placeholder="">
-																													</div>
-
-																												</div>
-
-																											</div>
-
-																											<div class="col-lg-6">
-																												<div class="lightGrayBox">
-
-																													<div class="form-group">
-																														<label for="D-status" class="disabled">District Status</label>
-																														<input type="text" name="info" class="form-control disabled" id="D-status" placeholder="">
-																													</div>
-																													<div id="listResults">
-																														<div class="one">
-																															<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation88">
-																															<label class="form-check-label" tabindex="0" for="customControlValidation88">Special Handling</label>
-																															<br>
-																															<textarea name="validation" tabindex="0" aria-hidden="false" rows="3" data-form-field="Message" placeholder=""></textarea>
-																														</div>
-																													</div>
-
-																													<p class="blackFont">Consent Rule</p>
-
-																													<div class="btn-group" data-toggle="buttons">
-																														<label class="btn btn-primary">
-																															<input type="radio" name="options" id="option1" autocomplete="off">EXPLICIT
-																														</label>
-																														<label class="btn btn-primary active">
-																															<input type="radio" name="options" id="option2" autocomplete="off" checked>IMPLICIT
-																														</label>
-																														<label class="btn btn-primary">
-																															<input type="radio" name="options" id="option3" autocomplete="off">SCHOOL DECIDES
-																														</label>
-																													</div>
-
-																													<p class="blackFont">Incentive Rule</p>
-
-																													<div class="btn-group" data-toggle="buttons">
-																														<label class="btn btn-primary active">
-																															<input type="radio" name="options" id="option4" autocomplete="off" checked>INCENTIVES<br>ALLOWED
-																														</label>
-																														<label class="btn btn-primary">
-																															<input type="radio" name="options" id="option5" autocomplete="off">INCENTIVES<br>PAYABLE TO SCHOOL
-																														</label>
-																														<label class="btn btn-primary">
-																															<input type="radio" name="options" id="option6" autocomplete="off">NO INCENTIVES
-																														</label>
-																													</div>
-
-																													<p class="blackFont">Surveys Allowed?</p>
-																													<div class="form-check form-check-inline customRadio">
-																														<input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="phone">
-																														<label class="form-check-label blue" for="inlineRadio1">Yes</label>
-																													</div>
-																													<div class="form-check form-check-inline customRadio">
-																														<input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="phone">
-																														<label class="form-check-label blue" for="inlineRadio2">No</label>
-																													</div>
-
-																													<div class="form-group">
-																														<label for="notes">Notes/Instructions</label>
-																														<textarea name="validation" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message" placeholder="" id="notes"></textarea>
-																													</div>
-																												</div>
-
-																												<div class="lightGrayBox">
-
-																													<div class="form-group">
-																														<label for="A-name">Approver Name</label>
-																														<input type="text" name="info" class="form-control" id="A-name" placeholder="">
-																													</div>
-																													<div class="form-group">
-																														<label for="A-title">Approver Title</label>
-																														<input type="text" name="info" class="form-control" id="A-title" placeholder="">
-																													</div>
-
-
-																													<div class="row noWrapRow">
-																														<div class="col-md-8 col-xs-12">
-																															<div class="form-group">
-																																<label for="A-phone">Approver Phone</label>
-																																<input type="text" name="phoneNumber" class="form-control" id="A-phone" placeholder="">
-																															</div>
-																														</div>
-																														<div class="col-md-4 col-xs-12">
-																															<div class="form-group">
-																																<label for="ext3">Ext.</label>
-																																<input type="text" name="info" class="form-control" id="ext3" placeholder="">
-																															</div>
-																														</div>
 
+													<div class="row">
+														<div class="col-xs-12 col-lg-12 col-md-12">
 
-																													</div>
+															<div class="toggleDiv">
 
-																													<div class="form-group">
-																														<label for="A-email">Approver Email</label>
-																														<input type="email" name="email" class="form-control" id="A-email" placeholder="">
-																													</div>
+																<div class="grayBoxEmpty">
+																	<p class="black"><b>none added yet</b></p>
+																</div>
 
-																												</div>
 
-																												<div class="lightGrayBox">
 
-																													<div class="form-group">
-																														<label for="EED-name">Early Education Director Name</label>
-																														<input type="text" name="info" class="form-control" id="EED-name" placeholder="">
-																													</div>
-																													<div class="form-group">
-																														<label for="EED-title">Early Education Director Title</label>
-																														<input type="text" name="info" class="form-control" id="A-title" placeholder="">
-																													</div>
 
+															</div>
 
-																													<div class="row noWrapRow">
-																														<div class="col-md-8 col-xs-12">
-																															<div class="form-group">
-																																<label for="EED-phone">Early Education Director Phone</label>
-																																<input type="text" name="phoneNumber" class="form-control" id="EED-phone" placeholder="">
-																															</div>
-																														</div>
-																														<div class="col-md-4 col-xs-12">
-																															<div class="form-group">
-																																<label for="ext4">Ext.</label>
-																																<input type="text" name="info" class="form-control" id="ext4" placeholder="">
-																															</div>
-																														</div>
 
+															<div class="blueLine2">
+																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
 
-																													</div>
 
-																													<div class="form-group">
-																														<label for="EED-email">Early Education Director Email</label>
-																														<input type="email" name="email" class="form-control" id="EED-email" placeholder="">
-																													</div>
+															</div>
 
+														</div>
+													</div>
 
-																												</div>
+												</div>
 
-																											</div>
 
-																										</div>
 
-																									</fieldset>
 
+											</div>
 
-																								</form>
-																							</div>
 
-																							<div class="blueLine2">
-																								<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
 
 
-																							</div>
+										</div>
+									</div>
+								</section>
 
-																						</div>
 
-																					</div>
-																				</div>
-																				<div class="outside">
-																					<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
 
-																					<h2 class="landing-sec-H padding-0 margin-0">List of Schools</h2>
 
-																					<div class="row">
-																						<div class="col-xs-12 col-lg-12 col-md-12">
-
-																							<div class="toggleDiv">
-
-																								<div class="topAttr d-flex align-items-center">
-																									<div class="col-lg-4">
-																										<h6 class="gray larger sortId">SCHOOL ID </h6>
-																									</div>
-																									<div class="col-lg-4">
-																										<h6 class="gray larger sortDistrict">SCHOOL NAME </h6>
-																									</div>
-																									<div class="col-lg-4">
-																										<h6 class="gray larger sortDflag">SCHOOL ADDRESS</h6>
-																									</div>
-
-																								</div>
-
-																								<div class="renderSchoolList">
-
-
-																								</div>
-
-
-																							</div>
-
-
-																							<div class="blueLine2">
-																								<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
-
-
-																							</div>
-
-																						</div>
-																					</div>
-
-																				</div>
-
-
-																				<div class="outside">
-																					<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less"></i>
-																					<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc"><i class="far fa-plus"></i>&nbsp;new</button>
-
-																					<h2 class="landing-sec-H padding-0 margin-0">EROC</h2>
-
-
-																					<div class="row">
-																						<div class="col-xs-12 col-lg-12 col-md-12">
-
-																							<div class="toggleDiv">
-
-																								<div class="grayBoxEmpty">
-																									<p class="black"><b>none added yet</b></p>
-																								</div>
-
-
-
-
-																							</div>
-
-
-																							<div class="blueLine2">
-																								<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
-
-
-																							</div>
-
-																						</div>
-																					</div>
-
-																				</div>
-
-
-
-
-																			</div>
-
-
-
+								<div class="content-spacer"></div>
 
 							</div>
 						</div>
-					</section>
+							<footer>
+								<div class="footer-wrapper">
+									<div class="abso">
+										<img src="images/sunshine.png" class="img-responsive">
+									</div>
+
+									<div class="d-flex">
+
+										<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
+										<i class="fas fa-external-link-square white"></i>
+									</div>
+
+								</div>
+							</footer>
 
 
 
+							<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+							<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+							<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+							<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+							<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+							<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+							<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+							<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+							<script type="text/javascript" src="build/index.js"></script>
 
 
+							<script type="text/javascript" src="src/tl.js"></script>
+							<script>
+
+							//   $(".datepicker").datepicker({
+							//     //Datepicker settings
+							//
+							//     format: "dd/mm/yyyy",
+							//     startDate:"01/01/2021",
+							//     endDate: "30/11/2021",
+							//     clearBtn: false,
+							//     todayBtn: false,
+							//     todayHighlight: false
+							//   });
+							//
+							//   $('.today').text(today);
+							// });
+							//
+							// // in "format" write your desired date format
+							// var today = moment().format('DD/MM/YYYY');
+							//
+							// $('#timeInterval').on('change', function(){
+							//   var time = $(this).val();
+							//   var date = moment()
+							//   .subtract(time, "months")
+							//   .subtract(1, "days")
+							//   .format("DD/MM/YYYY");
+							//     $("#date").datepicker("update", date);
+							// });
+							//
+							// $("#date").on("change", function(a) {
+							//     var date = $(this).val();
+							//
+							//     var a = moment();
+							//     var b = moment(date, "DD/MM/YYYY");
+							//
+							//     var months = a.diff(b, "months");
+							//     var option = $("#timeInterval option[value='" + months + "']");
+							//     if (months == 0) {
+							//         option = $("#timeInterval option[value='" + 1 + "']");
+							//     }
+							//     if (!option.exists()) {
+							//         var time = Math.floor(months % 12);
+							//         if (time <= 3) {
+							//             months -= time;
+							//         } else {
+							//             months = months + 12 - time;
+							//         }
+							//         option = $("#timeInterval option[value='" + months + "']");
+							//         option.attr("selected", true);
+							//     }
+							//     option.attr("selected", true);
+							// });
+							//
+							//
+							// $.fn.exists = function() {
+							//     return this.length > 0;
+							// };
 
 
+							</script>
+						</body>
 
-
-
-
-
-
-
-          <div class="content-spacer"></div>
-
-        </div>
-        <footer>
-          <div class="footer-wrapper">
-            <div class="abso">
-              <img src="images/sunshine.png" class="img-responsive">
-            </div>
-
-            <div class="d-flex">
-
-              <a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
-              <i class="fas fa-external-link-square white"></i>
-            </div>
-
-          </div>
-        </footer>
-
-
-
-        <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-        <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-        <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
-        <script type="text/javascript" src="build/index.js"></script>
-
-
-        <script type="text/javascript" src="src/tl.js"></script>
-        <script>
-
-        //   $(".datepicker").datepicker({
-        //     //Datepicker settings
-        //
-        //     format: "dd/mm/yyyy",
-        //     startDate:"01/01/2021",
-        //     endDate: "30/11/2021",
-        //     clearBtn: false,
-        //     todayBtn: false,
-        //     todayHighlight: false
-        //   });
-        //
-        //   $('.today').text(today);
-        // });
-        //
-        // // in "format" write your desired date format
-        // var today = moment().format('DD/MM/YYYY');
-        //
-        // $('#timeInterval').on('change', function(){
-        //   var time = $(this).val();
-        //   var date = moment()
-        //   .subtract(time, "months")
-        //   .subtract(1, "days")
-        //   .format("DD/MM/YYYY");
-        //     $("#date").datepicker("update", date);
-        // });
-        //
-        // $("#date").on("change", function(a) {
-        //     var date = $(this).val();
-        //
-        //     var a = moment();
-        //     var b = moment(date, "DD/MM/YYYY");
-        //
-        //     var months = a.diff(b, "months");
-        //     var option = $("#timeInterval option[value='" + months + "']");
-        //     if (months == 0) {
-        //         option = $("#timeInterval option[value='" + 1 + "']");
-        //     }
-        //     if (!option.exists()) {
-        //         var time = Math.floor(months % 12);
-        //         if (time <= 3) {
-        //             months -= time;
-        //         } else {
-        //             months = months + 12 - time;
-        //         }
-        //         option = $("#timeInterval option[value='" + months + "']");
-        //         option.attr("selected", true);
-        //     }
-        //     option.attr("selected", true);
-        // });
-        //
-        //
-        // $.fn.exists = function() {
-        //     return this.length > 0;
-        // };
-
-
-        </script>
-        </body>
-
-        </html>
+						</html>

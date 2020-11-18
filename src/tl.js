@@ -44,6 +44,7 @@ $(".informationForm").validate(
 
 
 				},
+	
 				textarea:
 				{
 					required: true
@@ -56,7 +57,9 @@ $(".informationForm").validate(
 
 
 				}
+
 			}
+
 		});
 
 	//submit form button outside the <form> tag
