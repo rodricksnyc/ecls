@@ -254,7 +254,11 @@ textarea::placeholder {
   width: 100%;
   height:100px;
   top:0;
-  margin-top:0em;;
+  margin-top:-2em;;
+}
+
+.noMargin {
+  margin-top:0em
 }
 
 
@@ -581,14 +585,16 @@ margin-bottom: 6px;
 }
 
 .grayBox.third {
-  display: none;
+
   /* top: 0;
   bottom: 0;
   position: absolute;
 
   padding: 2em 2em; */
 }
-
+.tlModals .modal-content {
+padding: 1em 3em;
+}
 
 .grayBox.second .landing-sec-H, .grayBox.third .landing-sec-H {
 
@@ -681,7 +687,7 @@ label.error{
   background: transparent;
   position:relative;
   z-index: 99999999999999999999999999999999999999;
-  height: 2rem !important
+  height: auto !important;
 }
 
 .cancel {
@@ -698,7 +704,7 @@ label.error{
     border-radius: 2rem !important;
     color: #576f7f;
     text-transform: uppercase;
-      height: 2rem !important;
+    height: auto !important;
     border: 2px solid #576f7f !important;
 }
 
@@ -2339,7 +2345,7 @@ h6.gray {
     position: fixed;
     top: 30%;
     left: 0px;
-    z-index: 999999;
+    z-index: 99;
 }
 
 .greenSide .yellow {
@@ -5768,6 +5774,17 @@ font-family: 'Public Sans', sans-serif;
   width:100%;
   margin-top:1em;
   border: 1px solid black;
+
+}
+
+
+.tlModals textarea{
+  width: 100%;
+    margin-top: -.1em;
+    border: 1px solid black;
+    padding: .5em;
+    font-family: 'Public Sans' !important;
+    padding-top: .5em;
 }
 
 .mobile {

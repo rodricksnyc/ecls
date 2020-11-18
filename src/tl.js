@@ -128,6 +128,12 @@ if ($("#result select.select option[value="+num+"]").prop("selected", true)) {
 
 
 
+
+// window.onbeforeunload = function(e) {
+//
+// };
+
+
   // 	var negative = -$(".box-outer").width()
   //
   //
