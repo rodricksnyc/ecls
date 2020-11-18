@@ -772,11 +772,11 @@
 																	<div class="row">
 																		<div class="col-lg-6 col-md-12">
 																	<div class="form-row">
-																		<div class="col-lg-6">
+																		<div class="col-lg-6 position-relative">
 																			<label for="datepicker">Date</label>
 
-																			<div class="form-group input-group time">
-																				<input type="text" class="form-control datepicker" id="date" placeholder="Select date" autocomplete="off" autofill="off" name="date">
+																			<div class="form-group input-group time position-relative">
+																				<input type="text" class="form-control datepicker position-relative" id="date" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
 																				<span class="input-group-text">
 																					<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
 																				</span>
@@ -786,7 +786,7 @@
 																		<div class="col-lg-6">
 																			<label for="timepicker">Time</label>
 																			<div class="form-group input-group time" id="timepicker">
-																				<input type="text" class="form-control timepicker" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="date">
+																				<input type="text" class="form-control timepicker" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time" required>
 																				<span class="input-group-append input-group-addon">
 																					<span class="input-group-text">
 																						<i class="far fa-clock darkBlue moveLeft"></i>
@@ -816,20 +816,20 @@
 																	<p class="blackFont">Result</p>
 
 																	<div class="form-group">
-																		<label for="result">Select Result</label>
-																		<select id="result" class="form-control valid" name="result">
+																		<label for="result" required>Select Result</label>
+																		<select id="result" class="form-control" name="result">
 																			<option selected="selected">Select Result</option>
-																			<option value="1">No answer / VM - no message left</option>
-																			<option value="2">Left voicemail</option>
-																			<option value="3">Left message with person</option>
-																			<option value="4">Callback</option>
-																			<option value="5">Appointment Made</option>
-																			<option value="6">Gatekeeper / Avoidance</option>
-																			<option value="7">Special Handling packet submitted (to keep record of submission date)</option>
-																			<option value="8">Special Handling – In Progress</option>
-																			<option value="9">Wrong / Nonworking phone number</option>
-																			<option value="10">Initial Refusal</option>
-																			<option value="11">Approval Received</option>
+																			<option value="one">No answer / VM - no message left</option>
+																			<option value="two">Left voicemail</option>
+																			<option value="three">Left message with person</option>
+																			<option value="four">Callback</option>
+																			<option value="five">Appointment Made</option>
+																			<option value="six">Gatekeeper / Avoidance</option>
+																			<option value="seven">Special Handling packet submitted (to keep record of submission date)</option>
+																			<option value="eight">Special Handling – In Progress</option>
+																			<option value="nine">Wrong / Nonworking phone number</option>
+																			<option value="ten">Initial Refusal</option>
+																			<option value="eleven">Approval Received</option>
 
 																		</select>
 
@@ -902,7 +902,7 @@
 																	<div class="col-lg-12 col-md-12">
 
 																		<p class="blackFont">Ideas for conversion:</p>
-																		<textarea name="message" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" name="textarea"></textarea>
+																		<textarea name="message" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message"></textarea>
 
 																	</div>
 																</div>
@@ -915,7 +915,7 @@
 																	<p class="blackFont">Contact Name</p>
 																	<div class="form-group">
 																		<label for="contactName">Contact Name</label>
-																		<input type="text" name="info" class="form-control" id="contactName">
+																		<input type="text" name="info1" class="form-control" id="contactName">
 
 																	</div>
 
@@ -923,14 +923,14 @@
 																	<p class="blackFont">Contact Title/Position</p>
 																	<div class="form-group">
 																		<label for="contactTitle">Contact Title/Position</label>
-																		<input type="text" name="info" class="form-control" id="contactTitle" >
+																		<input type="text" name="info2" class="form-control" id="contactTitle" >
 
 																	</div>
 
 																	<p class="blackFont">Contact Made By</p>
 																	<div class="form-group">
 																		<label for="firstname">First Name</label>
-																		<input type="text" name="info" class="form-control info" id="firstname">
+																		<input type="text" name="info3" class="form-control info" id="firstname">
 
 																	</div>
 
@@ -941,10 +941,10 @@
 																<div class="col-lg-12 col-md-12">
 
 																	<p class="blackFont">Comments</p>
-																	<textarea name="message" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" name="textarea"></textarea>
+																	<textarea tabindex="0" aria-hidden="false" rows="5" data-form-field="Message"></textarea>
 
 
-																	<button type="submit" class="btn greenButton doneEroc mt-3" role="button" tabindex="0" aria-label="Add Eroc">DONE</button>
+																	<button type="submit" dismiss="modal" class="btn greenButton doneEroc mt-3" role="button" tabindex="0" aria-label="Add Eroc">DONE</button>
 
 																</div>
 															</div>
@@ -1011,16 +1011,17 @@
 							<script type="text/javascript" src="src/tl.js"></script>
 							<script>
 
-// 							$(window).bind('beforeunload', function(){
-//     					if ($('.informationForm input').val() == '' )  {
+// 							$(window).bind('beforeunload', function()
+// 							{
+//     					// if (!$('.informationForm input').val() == '' )  {
 //
-//   						// return 'Are you sure you want to leave?';
-// alert('cunt')
+//   						return 'Are you sure you want to leave?';
+// // alert('cunt')
 // 						}
 //
-// 						else{
-// 							alert('bitch')
-// 						}
+// 						// else{
+// 						// 	// alert('bitch')
+// 						// }
 // 							});
 
 

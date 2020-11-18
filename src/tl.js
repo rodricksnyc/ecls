@@ -26,13 +26,19 @@ $(".informationForm").validate(
 		{
 			rules:
 			{
-				options:
+				// options:
+				// {
+				// 	required: true
+				//
+				//
+				// },
+				date:
 				{
 					required: true
 
 
 				},
-				date:
+				time:
 				{
 					required: true
 
@@ -51,12 +57,28 @@ $(".informationForm").validate(
 
 
 				},
-				info:
+				info1:
 				{
 					required: true
 
 
-				}
+				},
+				info2:
+				{
+					required: true
+
+
+				},
+				info3:
+				{
+					required: true
+
+
+				},
+				item:
+				 {
+					 required: true
+				 }
 
 			}
 
@@ -81,6 +103,17 @@ $(".informationForm").validate(
       $form.action = $actionAttr + $input.value;
       $form.submit();
    });
+
+
+var form = $(".erocs");
+form.validate();
+form.on("submit", function (e) {
+if(!form.valid()) {
+    return false;
+}
+    e.preventDefault();
+		$('#eRocModal').modal('hide')
+});
 
 
 
@@ -117,16 +150,29 @@ $(".informationForm").validate(
 }
 
 
-var num = 10;
 
-$('select').on('change', function (e) {
-if ($("#result select.select option[value="+num+"]").prop("selected", true)) {
+
+// $('select').on('change', function (e) {
+// if ($('#result select.select option[value="10"]').prop("selected", true)) {
+// 	$('.erocs .lightGrayBox').show()
+// 	alert("rewgobugewi")
+// }
+// else {
+// 		alert("aaaaaaarewgobugewi")
+// }
+//
+// })
+
+$("#result").change(function() {
+
+	if ($(this).val() == 'ten') {
 	$('.erocs .lightGrayBox').show()
-}
+	}
+
+
+
 
 })
-
-
 
 
 // window.onbeforeunload = function(e) {

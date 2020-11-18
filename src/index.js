@@ -3137,34 +3137,35 @@ $(".scrollIt").on("click", function(event) {
 
 
 	$('.tlModals').on('hidden.bs.modal', function (e) {
-		setTimeout(function(){
-			$('.grayBox.first').removeClass('flexing-scroll')
-
-			$(".grayBox.first").animate({
-				"left": 0
-			}, 500);
-
-		}, 300);
-
-		setTimeout(function(){
-			$('.grayBox.second').removeClass('animated slideInRight').hide();
-		}, 400);
-
-		$(".grayBox.second").animate({
-			"right": negative
-		}, 600);
-
-		// $('.save-floating').hide()
-
-
-		e.stopPropagation()
-
-		$( ".slideOutLeft" ).animate({
-			width: "0",
-			opacity: '0'
-		}, 160, function() {
-
-		});
+		
+		// setTimeout(function(){
+		// 	$('.grayBox.first').removeClass('flexing-scroll')
+		//
+		// 	$(".grayBox.first").animate({
+		// 		"left": 0
+		// 	}, 500);
+		//
+		// }, 300);
+		//
+		// setTimeout(function(){
+		// 	$('.grayBox.second').removeClass('animated slideInRight').hide();
+		// }, 400);
+		//
+		// $(".grayBox.second").animate({
+		// 	"right": negative
+		// }, 600);
+		//
+		// // $('.save-floating').hide()
+		//
+		//
+		// e.stopPropagation()
+		//
+		// $( ".slideOutLeft" ).animate({
+		// 	width: "0",
+		// 	opacity: '0'
+		// }, 160, function() {
+		//
+		// });
 
 		$('#slideOutRight').css('z-index', '10')
 		$('.projects').attr('tabindex', '0')
@@ -3172,22 +3173,22 @@ $(".scrollIt").on("click", function(event) {
 		$('.close-project').attr('tabindex', '-1')
 		$('.close-project').attr('aria-hidden', 'true')
 
-		$( ".box-outer" ).animate({
-			'margin-left': "0px",
-			'margin-right': '0px'
-		}, 160, function() {
-
-		});
-
-		setTimeout(function() {
-			$( ".slideOutLeft" ).removeClass('open')
-		}, 200)
+		// $( ".box-outer" ).animate({
+		// 	'margin-left': "0px",
+		// 	'margin-right': '0px'
+		// }, 160, function() {
+		//
+		// });
+		//
+		// setTimeout(function() {
+		// 	$( ".slideOutLeft" ).removeClass('open')
+		// }, 200)
 
 	})
 
 
-
-	var negative = -$(".tlModals").width()
+	//
+	// var negative = -$(".tlModals").width()
 
 	$('.activeCube').click(function(e){
 		// e.stopPropagation()
@@ -3237,6 +3238,7 @@ $(".scrollIt").on("click", function(event) {
 	$('.cancel').on('click', function() {
 		$('.informationForm').find('input:text').val('');
 	})
+
 	$('.back-to-top-in-modal').on('click', function() {
 
 		$('.tlModals').animate({ scrollTop: 0 }, 'slow');
