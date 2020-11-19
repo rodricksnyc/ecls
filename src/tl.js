@@ -191,7 +191,7 @@ if ($('.form-control').val() == '')  {
 
 document.querySelector(".saveInformation").addEventListener("click", function() {
   swal({
-    title: "Are you want to save?",
+    title: "Are you sure you want to save?",
 
     showCancelButton: true,
     confirmButtonText: "Save",
@@ -205,8 +205,17 @@ document.querySelector(".saveInformation").addEventListener("click", function() 
 
 
 $('.swal2-confirm swal2-styled').click(function() {
-	alert("wegrbewiiewg")
+
 })
+
+// $(window).bind('beforeunload', function() {
+//     	if ($('.form-control').val() == '')  {
+//   						return 'Are you sure you want to leave?';
+//
+// 				}
+//
+// });
+
 
 
 // window.onbeforeunload = function(e) {
