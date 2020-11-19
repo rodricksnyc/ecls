@@ -2739,6 +2739,48 @@ h6.darkBlue {
 }
 
 
+.lightGrayColor {
+    background: #d1d3d4;
+    border-color: : #d1d3d4;
+    border-color: transparent;
+    width: 8rem;
+    padding: .2rem 1.6rem;
+    border-radius: 2rem;
+    color: #6F6F6F;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Public Sans' !important;
+
+}
+
+.swal2-popup .swal2-styled.swal2-cancel {
+    border: 0;
+    border-radius: 1rem;
+    background-color: #aaa;
+    color: #fff;
+    font-size: 1.0625em;
+    width: 8rem;
+    border-radius: 2rem !important;
+    font-family: 'Public Sans' !important;
+
+}
+
+.swal2-popup .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 1rem;
+    background-color: #3085d6;
+    color: #fff;
+    font-size: 1.0625em;
+    font-family: 'Public Sans' !important;
+    width: 8rem;
+    border-radius: 2rem !important;
+}
+
+.swal2-popup{
+  padding: 5.25em !important
+}
+
+
 .greenButton {
   background: #00843D !important;
   background-color: #00843D !important;
@@ -2762,6 +2804,9 @@ h6.darkBlue {
   text-transform: uppercase;
   height: 2.4rem;
 }
+
+
+
 
 .greenBlocks {
   background: #00843D;

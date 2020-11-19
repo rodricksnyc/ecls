@@ -170,9 +170,21 @@ $("#result").change(function() {
 	}
 
 
-
-
 })
+
+document.querySelector(".saveInformation").addEventListener("click", function() {
+  swal({
+    title: "Are you want to save?",
+
+    showCancelButton: true,
+    confirmButtonText: "Save",
+    confirmButtonColor: "#00843D",
+    cancelButtonColor: "#999999",
+    reverseButtons: true,
+    focusConfirm: false,
+    focusCancel: true
+  });
+});
 
 
 // window.onbeforeunload = function(e) {

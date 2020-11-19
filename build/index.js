@@ -2708,4 +2708,15 @@ $(document).ready(function () {
 			});
 		}
 	});
+
+	$('.form-control').keydown(function (event) {
+		if (!$('.form-control').val() == '') {
+			$('.saveInformation').removeClass('lightGrayBox').addClass('greenButton');
+		}
+
+		if ($('.form-control').val() == '') {
+
+			$('.saveInformation').removeClass('lightGrayBox').addClass('greenButton');
+		}
+	});
 });
