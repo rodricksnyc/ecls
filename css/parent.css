@@ -803,6 +803,12 @@ body  {
   min-width: 15em;
 
 }
+
+.logos a:nth-of-type(2) img {
+  min-width: 17em;
+}
+
+
 header .logos a {
   margin-left: 2em;
   padding-top: .5em;
