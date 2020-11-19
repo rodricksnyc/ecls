@@ -3292,18 +3292,6 @@ $(".scrollIt").on("click", function(event) {
 		}
 	});
 
-  $('.form-control').keydown(function (event) {
-	if (!$('.form-control').val() == '')  {
-		$('.saveInformation').removeClass('lightGrayBox').addClass('greenButton')
 
-	}
-
-	if ($('.form-control').val() == '')  {
-
-		$('.saveInformation').removeClass('lightGrayBox').addClass('greenButton')
-
-	}
-
-})
 
 })

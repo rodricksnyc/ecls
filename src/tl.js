@@ -172,6 +172,23 @@ $("#result").change(function() {
 
 })
 
+$('.disabledSave').attr('disabled','disabled')
+
+$('.form-control').keydown(function (event) {
+if (!$('.form-control').val() == '')  {
+
+
+}
+
+if ($('.form-control').val() == '')  {
+
+	$('.saveInformation').removeClass('lightGrayBox').addClass('greenButton')
+	$('.disabledSave').removeAttr('disabled','disabled')
+
+}
+
+})
+
 document.querySelector(".saveInformation").addEventListener("click", function() {
   swal({
     title: "Are you want to save?",
@@ -185,6 +202,11 @@ document.querySelector(".saveInformation").addEventListener("click", function() 
     focusCancel: true
   });
 });
+
+
+$('.swal2-confirm swal2-styled').click(function() {
+	alert("wegrbewiiewg")
+})
 
 
 // window.onbeforeunload = function(e) {
