@@ -26,12 +26,12 @@ $(".informationForm").validate(
 		{
 			rules:
 			{
-				// options:
-				// {
-				// 	required: true
-				//
-				//
-				// },
+				mode:
+				{
+					required: true
+
+
+				},
 				date:
 				{
 					required: true
@@ -207,6 +207,30 @@ document.querySelector(".saveInformation").addEventListener("click", function() 
 $('.swal2-confirm swal2-styled').click(function() {
 
 })
+
+var removeError = function() {
+
+	if($(".mode .error").is(':visible')) {
+
+		$(".mode .error").hide()
+
+	}
+
+	if ($(".mode .error").is(':hidden')){
+
+	}
+
+}
+
+$('.mode .btn').keypress(
+	removeError
+
+).click(
+	removeError
+);
+
+
+
 
 // $(window).bind('beforeunload', function() {
 //     	if ($('.form-control').val() == '')  {
