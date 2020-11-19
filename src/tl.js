@@ -117,14 +117,8 @@ if(!form.valid()) {
 
 
 
-	 if (/Mobi/.test(navigator.userAgent)) {
-  // if mobile device, use native pickers
-  $(".date input").attr("type", "date");
-  $(".time input").attr("type", "time");
-} else {
-  // if desktop device, use DateTimePicker
   $(".datepicker").datepicker({
-    useCurrent: false,
+container:'#eRocModal',
 		format: "dd/mm/yyyy",
 		startDate:"01/01/2021",
 		endDate: "30/11/2021",
@@ -147,7 +141,6 @@ if(!form.valid()) {
       down: "fa fa-chevron-down"
     }
   });
-}
 
 
 
@@ -174,13 +167,13 @@ $("#result").change(function() {
 
 $('.disabledSave').attr('disabled','disabled')
 
-$('.form-control').keydown(function (event) {
+$('.informationForm .form-control').keydown(function (event) {
 if (!$('.form-control').val() == '')  {
 
 
 }
 
-if ($('.form-control').val() == '')  {
+if ($('.informationForm .form-control').val() == '')  {
 
 	$('.saveInformation').removeClass('lightGrayBox').addClass('greenButton')
 	$('.disabledSave').removeAttr('disabled','disabled')

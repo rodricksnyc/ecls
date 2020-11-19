@@ -883,14 +883,7 @@ left: -1.3em;
 
 
 .bootstrap-datetimepicker-widget.dropdown-menu {
-  /* border: 1px solid #34495e;
-  border-radius: 0;
-  box-shadow: none;
-  margin: 10px 0 0 0;
-  padding: 0;
-  min-width: 300px;
-  max-width: 100%;
-  width: auto; */
+
     color: #00539f;
   font-family: 'Public Sans' !important;
 }
