@@ -1040,9 +1040,9 @@ for(var j in eRoc.eRocs) {
 
 $('.doneEroc').click(function() {
 
-$('.grayBoxEmpty').remove()
-$('.eRocAttr').removeClass('hidden')
-$('.renderErocs').removeClass('hidden')
+	$('.grayBoxEmpty').remove()
+	$('.eRocAttr').removeClass('hidden')
+	$('.renderErocs').removeClass('hidden')
 
 
 })
@@ -1170,40 +1170,40 @@ $('.sortStatus').on('click', function() {
 
 $('.sortId').on('click', function() {
 
-		if (!$('.sortId').hasClass('ascending')) {
-			var ascendOrderedDivs4 = $('.addBlocks').sort(function(a, b) {
-				return $(a).find(".leadid").text().toString().localeCompare($(b).find(".leadid").text().toString(), undefined, {
-					numeric: true,
-					sensitivity: 'base'
-				});
+	if (!$('.sortId').hasClass('ascending')) {
+		var ascendOrderedDivs4 = $('.addBlocks').sort(function(a, b) {
+			return $(a).find(".leadid").text().toString().localeCompare($(b).find(".leadid").text().toString(), undefined, {
+				numeric: true,
+				sensitivity: 'base'
 			});
-			$(".renderDistricts").html(ascendOrderedDivs4);
-			setTimeout(function() {
-				$('.sortId').addClass('ascending')
-			}, 100)
+		});
+		$(".renderDistricts").html(ascendOrderedDivs4);
+		setTimeout(function() {
+			$('.sortId').addClass('ascending')
+		}, 100)
 
-			$('.topAttr .gray.larger i').each(function() {
-				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-			})
-			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
-		}
-		if ($('.sortId').hasClass('ascending')) {
-			var descendOrderedDivs4 = $('.addBlocks').sort(function(a, b) {
-				return $(b).find(".leadid").text().toString().localeCompare($(a).find(".leadid").text().toString(), undefined, {
-					numeric: true,
-					sensitivity: 'base'
-				});
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+	}
+	if ($('.sortId').hasClass('ascending')) {
+		var descendOrderedDivs4 = $('.addBlocks').sort(function(a, b) {
+			return $(b).find(".leadid").text().toString().localeCompare($(a).find(".leadid").text().toString(), undefined, {
+				numeric: true,
+				sensitivity: 'base'
 			});
-			$(".renderDistricts").html(descendOrderedDivs4);
-			setTimeout(function() {
-				$('.sortId').removeClass('ascending')
-			}, 100)
+		});
+		$(".renderDistricts").html(descendOrderedDivs4);
+		setTimeout(function() {
+			$('.sortId').removeClass('ascending')
+		}, 100)
 
-			$('.topAttr .gray.larger i').each(function() {
-				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
-			})
-			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
-		}
+		$('.topAttr .gray.larger i').each(function() {
+			$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+	}
 });
 
 
@@ -2754,7 +2754,7 @@ $(".scrollIt").on("click", function(event) {
 	$('.disabled').attr('disabled','disabled')
 
 
-//close project on click
+	//close project on click
 
 	$('.close-project').click(function(e) {
 		e.stopPropagation()
@@ -2777,12 +2777,12 @@ $(".scrollIt").on("click", function(event) {
 		$('.close-project').attr('aria-hidden', 'true')
 
 		if ($(document).innerWidth() < 1525) {
-		$( ".box-outer" ).animate({
-			'margin-left': "0px"
-		}, 160, function() {
+			$( ".box-outer" ).animate({
+				'margin-left': "0px"
+			}, 160, function() {
 
-		});
-	}
+			});
+		}
 
 
 		setTimeout(function() {
@@ -2794,7 +2794,7 @@ $(".scrollIt").on("click", function(event) {
 
 	})
 
-//close project on keypress
+	//close project on keypress
 
 	$('.close-project').on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
@@ -2820,12 +2820,12 @@ $(".scrollIt").on("click", function(event) {
 			$('.close-project').attr('aria-hidden', 'true')
 
 			if ($(document).innerWidth() < 1525) {
-			$( ".box-outer" ).animate({
-				'margin-left': "0px"
-			}, 160, function() {
+				$( ".box-outer" ).animate({
+					'margin-left': "0px"
+				}, 160, function() {
 
-			});
-		}
+				});
+			}
 
 
 			setTimeout(function() {
@@ -2868,23 +2868,23 @@ $(".scrollIt").on("click", function(event) {
 
 		if ($(document).innerWidth() < 1525 && $(document).innerWidth() > 1375) {
 
-		$( ".box-outer" ).animate({
-			'margin-left': "60px"
-		}, 200, function() {
+			$( ".box-outer" ).animate({
+				'margin-left': "60px"
+			}, 200, function() {
 
-		});
+			});
 
-	}
+		}
 
-	if ($(document).innerWidth() < 1375 ) {
+		if ($(document).innerWidth() < 1375 ) {
 
-		$( ".box-outer" ).animate({
-			'margin-left': "120px"
-		}, 200, function() {
+			$( ".box-outer" ).animate({
+				'margin-left': "120px"
+			}, 200, function() {
 
-		});
+			});
 
-	}
+		}
 
 		setTimeout(function() {
 			$( ".slideOutLeft" ).addClass('open')
@@ -2918,23 +2918,23 @@ $(".scrollIt").on("click", function(event) {
 
 			if ($(document).innerWidth() < 1525 && $(document).innerWidth() > 1375) {
 
-			$( ".box-outer" ).animate({
-				'margin-left': "60px"
-			}, 200, function() {
+				$( ".box-outer" ).animate({
+					'margin-left': "60px"
+				}, 200, function() {
 
-			});
+				});
 
-		}
+			}
 
-		if ($(document).innerWidth() < 1375 ) {
+			if ($(document).innerWidth() < 1375 ) {
 
-			$( ".box-outer" ).animate({
-				'margin-left': "120px"
-			}, 200, function() {
+				$( ".box-outer" ).animate({
+					'margin-left': "120px"
+				}, 200, function() {
 
-			});
+				});
 
-		}
+			}
 
 			setTimeout(function() {
 				$( ".slideOutLeft" ).addClass('open')
@@ -2950,27 +2950,27 @@ $(".scrollIt").on("click", function(event) {
 
 	//hover over projects
 
-		$('.slideOutLeft').on('mouseleave', function(e) {
-			e.stopPropagation()
-			if (!$( ".slideOutLeft" ).hasClass('open')) {
+	$('.slideOutLeft').on('mouseleave', function(e) {
+		e.stopPropagation()
+		if (!$( ".slideOutLeft" ).hasClass('open')) {
 
-				$( ".slideOutLeft" ).animate({
-					width: "0",
-					opacity: '0'
-				}, 160, function() {
+			$( ".slideOutLeft" ).animate({
+				width: "0",
+				opacity: '0'
+			}, 160, function() {
 
-				});
+			});
 
-				$('#slideOutRight').css('z-index', '10')
-				$('.projects').attr('tabindex', '0')
+			$('#slideOutRight').css('z-index', '10')
+			$('.projects').attr('tabindex', '0')
 
-				$('.close-project').attr('tabindex', '-1')
-				$('.close-project').attr('aria-hidden', 'true')
+			$('.close-project').attr('tabindex', '-1')
+			$('.close-project').attr('aria-hidden', 'true')
 
-			}
+		}
 
 
-		})
+	})
 
 	//hover over projects
 
@@ -3072,7 +3072,7 @@ $(".scrollIt").on("click", function(event) {
 
 
 
-		$('.renderDistricts').on('click', '.goToInfo', function(e) {
+	$('.renderDistricts').on('click', '.goToInfo', function(e) {
 
 		// $('.grayBox.first').addClass('flexing-scroll')
 		//
@@ -3094,11 +3094,11 @@ $(".scrollIt").on("click", function(event) {
 
 		// $('.save-floating').show().css('display', 'flex')
 
-	 setTimeout(function() {
-		var divPosition = $('#anchorPoint').offset();
-		$('html, body').animate({scrollTop: divPosition.top}, 1000);
+		setTimeout(function() {
+			var divPosition = $('#anchorPoint').offset();
+			$('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-	},800)
+		},800)
 
 		// setTimeout(function() {
 		// 	$('.tlModals').animate({ scrollTop: 0 }, 700);
@@ -3113,28 +3113,28 @@ $(".scrollIt").on("click", function(event) {
 		// },700)
 
 
-		})
+	})
 
 
 
-		$('.renderDistricts').on('keyup', '.goToInfo', function(e) {
-			var code = (e.keyCode ? e.keyCode : e.which);
-			if (code == 13) {
+	$('.renderDistricts').on('keyup', '.goToInfo', function(e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) {
 
-				setTimeout(function() {
-					var divPosition = $('#anchorPoint').offset();
-					$('html, body').animate({scrollTop: divPosition.top}, 1000);
+			setTimeout(function() {
+				var divPosition = $('#anchorPoint').offset();
+				$('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-				},800)
-
-
-				$('.grayBox.second').fadeIn('slow')
-				$('.grayBox.first').fadeOut()
-
-			}
+			},800)
 
 
-		})
+			$('.grayBox.second').fadeIn('slow')
+			$('.grayBox.first').fadeOut()
+
+		}
+
+
+	})
 
 
 
@@ -3281,10 +3281,10 @@ $(".scrollIt").on("click", function(event) {
 		$('.grayBox.second').fadeOut()
 
 		setTimeout(function() {
-		 var divPosition = $('#anchorPoint').offset();
-		 $('html, body').animate({scrollTop: divPosition.top}, 1000);
+			var divPosition = $('#anchorPoint').offset();
+			$('html, body').animate({scrollTop: divPosition.top}, 1000);
 
-	 },800)
+		},800)
 
 	}
 
