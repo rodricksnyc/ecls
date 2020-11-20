@@ -2718,16 +2718,33 @@ $(document).ready(function () {
 		$('.tlModals').animate({ scrollTop: 0 }, 'slow');
 	});
 
+	//
+	// $(window).scroll(function () {
+	// 	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+	// 	if (distanceY > 200 && $( ".slideOutLeft" ).hasClass('open')) {
+	//
+	// 		$('.slideOutLeft').css({
+	// 			top: '2%'
+	// 		})
+	// 	} else {
+	//
+	// 		$('.slideOutLeft').css({
+	// 			top:'30%'
+	// 		})
+	// 	}
+	// });
+
+
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 200 && $(".slideOutLeft").hasClass('open')) {
+		if (distanceY > 300) {
 
-			$('.slideOutLeft').css({
+			$('.greenSide.projects, .slideOutLeft').css({
 				top: '2%'
 			});
 		} else {
 
-			$('.slideOutLeft').css({
+			$('.greenSide.projects, .slideOutLeft').css({
 				top: '30%'
 			});
 		}

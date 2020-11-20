@@ -3072,7 +3072,7 @@ $(".scrollIt").on("click", function(event) {
 
 
 
-		$('.renderDistricts').on('click', '.goToInfo',function(e) {
+		$('.renderDistricts').on('click', '.goToInfo', function(e) {
 
 		// $('.grayBox.first').addClass('flexing-scroll')
 		//
@@ -3318,21 +3318,38 @@ $(".scrollIt").on("click", function(event) {
 	})
 
 
+	//
+	// $(window).scroll(function () {
+	// 	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+	// 	if (distanceY > 200 && $( ".slideOutLeft" ).hasClass('open')) {
+	//
+	// 		$('.slideOutLeft').css({
+	// 			top: '2%'
+	// 		})
+	// 	} else {
+	//
+	// 		$('.slideOutLeft').css({
+	// 			top:'30%'
+	// 		})
+	// 	}
+	// });
+
 
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 200 && $( ".slideOutLeft" ).hasClass('open')) {
+		if (distanceY > 140) {
 
-			$('.slideOutLeft').css({
+			$('.greenSide.projects, .slideOutLeft').css({
 				top: '2%'
 			})
 		} else {
 
-			$('.slideOutLeft').css({
+			$('.greenSide.projects, .slideOutLeft').css({
 				top:'30%'
 			})
 		}
 	});
+
 
 
 
