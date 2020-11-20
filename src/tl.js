@@ -173,24 +173,24 @@ $(".informationForm").validate(
 
 		})
 
-		document.querySelector(".saveInformation").addEventListener("click", function() {
-			swal({
-				title: "Are you sure you want to save?",
-
-				showCancelButton: true,
-				confirmButtonText: "SAVE",
-				confirmButtonColor: "#00843D",
-				cancelButtonColor: "#999999",
-				reverseButtons: true,
-				focusConfirm: true,
-				focusCancel: false
-			});
-		});
-
-
-		$('.swal2-confirm swal2-styled').click(function() {
-
-		})
+		// document.querySelector(".saveInformation").addEventListener("click", function() {
+		// 	swal({
+		// 		title: "Are you sure you want to save?",
+		//
+		// 		showCancelButton: true,
+		// 		confirmButtonText: "SAVE",
+		// 		confirmButtonColor: "#00843D",
+		// 		cancelButtonColor: "#999999",
+		// 		reverseButtons: true,
+		// 		focusConfirm: true,
+		// 		focusCancel: false
+		// 	});
+		// });
+		//
+		//
+		// $('.swal2-confirm swal2-styled').click(function() {
+		//
+		// })
 
 		var removeError = function() {
 
