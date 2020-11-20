@@ -178,12 +178,12 @@ $(".informationForm").validate(
 				title: "Are you sure you want to save?",
 
 				showCancelButton: true,
-				confirmButtonText: "Save",
+				confirmButtonText: "SAVE",
 				confirmButtonColor: "#00843D",
 				cancelButtonColor: "#999999",
 				reverseButtons: true,
-				focusConfirm: false,
-				focusCancel: true
+				focusConfirm: true,
+				focusCancel: false
 			});
 		});
 
@@ -212,7 +212,6 @@ $(".informationForm").validate(
 		).click(
 			removeError
 		);
-
 
 
 

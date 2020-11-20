@@ -2504,9 +2504,7 @@ $(document).ready(function () {
 		$('.reports img').attr('src', 'images/img_reports.svg');
 	});
 
-	var viewDistrictInfo = function viewDistrictInfo() {
-
-		// $('.goToInfo').click(function(){
+	$('.renderDistricts').on('click', '.goToInfo', function (e) {
 
 		// $('.grayBox.first').addClass('flexing-scroll')
 		//
@@ -2528,8 +2526,10 @@ $(document).ready(function () {
 
 		// $('.save-floating').show().css('display', 'flex')
 
-		var divPosition = $('#anchorPoint').offset();
-		$('html, body').animate({ scrollTop: divPosition.top }, 1200);
+		setTimeout(function () {
+			var divPosition = $('#anchorPoint').offset();
+			$('html, body').animate({ scrollTop: divPosition.top }, 1000);
+		}, 800);
 
 		// setTimeout(function() {
 		// 	$('.tlModals').animate({ scrollTop: 0 }, 700);
@@ -2543,11 +2543,21 @@ $(document).ready(function () {
 		// 	$('.grayBox.first').hide().css('position', 'absolute')
 		// },700)
 
+	});
 
-		// })
-	};
+	$('.renderDistricts').on('keyup', '.goToInfo', function (e) {
+		var code = e.keyCode ? e.keyCode : e.which;
+		if (code == 13) {
 
-	$('.goToInfo').keypress(viewDistrictInfo).click(viewDistrictInfo);
+			setTimeout(function () {
+				var divPosition = $('#anchorPoint').offset();
+				$('html, body').animate({ scrollTop: divPosition.top }, 1000);
+			}, 800);
+
+			$('.grayBox.second').fadeIn('slow');
+			$('.grayBox.first').fadeOut();
+		}
+	});
 
 	// var viewEroc = function() {
 	//
@@ -2642,41 +2652,55 @@ $(document).ready(function () {
 		// }, 200)
 	});
 
+	// //
+	// // var negative = -$(".tlModals").width()
 	//
-	// var negative = -$(".tlModals").width()
+	// $('.activeCube').click(function(e){
+	// 	// e.stopPropagation()
+	// 	// setTimeout(function(){
+	// 	// 	$('.grayBox.first').removeClass('flexing-scroll').show()
+	// 	//
+	// 	// 	$(".grayBox.first").animate({
+	// 	// 		"left": 0
+	// 	// 	}, 500);
+	// 	//
+	// 	// }, 400);
+	// 	//
+	// 	// setTimeout(function(){
+	// 	// 	$('.grayBox.second').removeClass('animated slideInRight')
+	// 	//
+	// 	// }, 400);
+	// 	//
+	// 	// $(".grayBox.second").animate({
+	// 	// 	"right": negative,
+	// 	// 	"left": "auto"
+	// 	//
+	// 	// },700);
+	// 	//
+	// 	// $('.save-floating').hide()
+	// 	//
+	// 	// setTimeout(function() {
+	// 	// 	$('.grayBox.first').css('position', 'relative')
+	// 	// 	$('.grayBox.second').hide().css('position', 'absolute')
+	// 	// },1000)
+	//
+	// 	$('.grayBox.first').fadeIn('slow')
+	// 	$('.grayBox.second').fadeOut()
+	//
+	// })
 
-	$('.activeCube').click(function (e) {
-		// e.stopPropagation()
-		// setTimeout(function(){
-		// 	$('.grayBox.first').removeClass('flexing-scroll').show()
-		//
-		// 	$(".grayBox.first").animate({
-		// 		"left": 0
-		// 	}, 500);
-		//
-		// }, 400);
-		//
-		// setTimeout(function(){
-		// 	$('.grayBox.second').removeClass('animated slideInRight')
-		//
-		// }, 400);
-		//
-		// $(".grayBox.second").animate({
-		// 	"right": negative,
-		// 	"left": "auto"
-		//
-		// },700);
-		//
-		// $('.save-floating').hide()
-		//
-		// setTimeout(function() {
-		// 	$('.grayBox.first').css('position', 'relative')
-		// 	$('.grayBox.second').hide().css('position', 'absolute')
-		// },1000)
 
+	var seeDistricts = function seeDistricts() {
 		$('.grayBox.first').fadeIn('slow');
 		$('.grayBox.second').fadeOut();
-	});
+
+		setTimeout(function () {
+			var divPosition = $('#anchorPoint').offset();
+			$('html, body').animate({ scrollTop: divPosition.top }, 1000);
+		}, 800);
+	};
+
+	$('.seeDistricts, .activeCube').keypress(seeDistricts).click(seeDistricts);
 
 	$('.btn').on('click', function () {
 		$('input', this).removeAttr('checked');

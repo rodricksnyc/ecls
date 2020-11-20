@@ -282,7 +282,7 @@ textarea::placeholder {
 
 }
 
-.districtGlobe {
+.topBannerImg {
   max-width:5em
 }
 #menu {
@@ -414,6 +414,20 @@ right: 12px;
     border-top-right-radius: .5rem;
 }
 
+.seeDistricts i{
+  font-size: 32px;
+}
+.seeDistricts {
+    position: relative;
+    left: 0;
+    top: 37px;
+    z-index: 888
+}
+
+.seeDistricts:hover i {
+  cursor:grab;
+  
+}
 
 .activeCube{
   background: transparent;
@@ -2763,11 +2777,11 @@ h6.darkBlue {
     border-radius: 1rem;
     background-color: #aaa;
     color: #fff;
-    font-size: 1.0625em;
+    font-size: 1em !important;
     width: 8rem;
     border-radius: 2rem !important;
     font-family: 'Public Sans' !important;
-
+    text-transform: uppercase;
 }
 
 .swal2-popup .swal2-styled.swal2-confirm {
@@ -2775,7 +2789,7 @@ h6.darkBlue {
     border-radius: 1rem;
     background-color: #3085d6;
     color: #fff;
-    font-size: 1.0625em;
+    font-size: 1em !important;
     font-family: 'Public Sans' !important;
     width: 8rem;
     border-radius: 2rem !important;
@@ -2783,6 +2797,9 @@ h6.darkBlue {
 
 .swal2-popup{
   padding: 5.25em !important
+}
+.swal2-popup .swal2-styled {
+      padding: .6em 1.5em !important
 }
 
 
