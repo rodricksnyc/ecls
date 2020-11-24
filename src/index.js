@@ -1010,11 +1010,67 @@ var schoolList = {"schoolLists": [{
 
 ]};
 
+
+
+
 for(var j in schoolList.schoolLists) {
 
 	$('.renderSchoolList').append(`<div class='addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="goldLeftBar"></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ID</div><p class="black schoolId">${schoolList.schoolLists[j].schoolId}</p></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL NAME</div><p class="black schoolName">${schoolList.schoolLists[j].schoolName}</p></div><div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ADDRESS</div><p class="black schoolAddress">${schoolList.schoolLists[j].schoolAddress}</p></div></div>`)
 
 }
+
+
+//render schools section on schools.html
+
+var school = {"schools": [{
+	"schoolid": '9999993S',
+	"theSchools": "Forks Elementary",
+	"aDate": '09/12/2020',
+	"srCode" : 'Lorem ipsum dolor',
+	"scCode" : 'Ipsum dorem',
+	'status' : 'Approval Received'
+
+},
+{
+	"schoolid": '9999991S',
+	"theSchools": "Palmer Elementary",
+	"aDate": '09/12/2020',
+	"srCode" : 'Rem ipsum dolor',
+	"scCode" : 'Lirem ipsum',
+	'status' : 'Approval Received'
+
+},
+{
+"schoolid": '9999992S',
+"theSchools": "Holy Family",
+"aDate": '09/12/2020',
+"srCode" : 'Ipsum dolor',
+"scCode" : 'Rorem lipsum',
+'status' : 'Special Handling– In Progress'
+
+},
+{
+"schoolid": '9999988S',
+"theSchools": "Moravian",
+"aDate": '09/12/2020',
+"srCode" : 'Dolor Lorem Ipsum',
+"scCode" : 'Ipsum soretum',
+'status' : 'Special Handling– In Progress'
+
+}
+
+
+]};
+
+
+
+for(var j in school.schools) {
+
+	$('.renderSchools').append(`<div class="addBlocks schoolBlocks d-flex align-items-center flex-wrap goToInfo" type="submit" tabindex="0" aria-hidden="false" role="button"><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 negPos"><div class="mobile">SCHOOL ID</div><p class="black schoolid">${school.schools[j].schoolid}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">SCHOOL NAME</div><p class="black theSchools">${school.schools[j].theSchools}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">ASSESSMENT DATE</div><p class="black aDate">${school.schools[j].aDate}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">SCHOOL RECRUITMENT CODE</div><p class="black srCode">${school.schools[j].srCode}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">SCHOOL COMPLETION CODE</div><p class="black scCode">${school.schools[j].scCode}</p></div><div class="col-lg-2 col-md-6 col-sm-6 col-xs-6"><div class="mobile">SCHOOL EROC STATUS</div><p class="black received dStatus">${school.schools[j].status}</p></div><div class="progressBarEmpty"></div><div class="progressBarFull"></div></div>`)
+
+}
+
+
 
 
 //show added eRocs - this needs to be appended from new info added to the database
@@ -1038,6 +1094,7 @@ for(var j in eRoc.eRocs) {
 
 }
 
+
 $('.doneEroc').click(function() {
 
 	$('.grayBoxEmpty').remove()
@@ -1048,7 +1105,7 @@ $('.doneEroc').click(function() {
 })
 
 
-//tl portal alphabetize and sort numerically
+//distrcit page alphabetize and sort numerically
 
 
 $('.sortDistrict').on('click', function() {
@@ -1205,6 +1262,185 @@ $('.sortId').on('click', function() {
 		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
 	}
 });
+
+
+
+
+//school page alphabetize and sort numerically
+
+
+$('.sortSchool').on('click', function() {
+
+	if (!$('.sortSchool').hasClass('ascending')) {
+
+		var ascendOrderedDivs5 = $('.schoolBlocks').sort(function(a, b) {
+			return $(a).find(".theSchools").text() > $(b).find(".theSchools").text() ? 1 : -1;
+		});
+
+		$(".renderSchools").html(ascendOrderedDivs5);
+		setTimeout(function() {
+			$('.sortSchool').addClass('ascending')
+		}, 600)
+
+		$('.topAttr  i').each(function() {
+		$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+
+	}
+
+	if ($('.sortSchool').hasClass('ascending')) {
+
+		var descendOrderedDivs5 = $('.schoolBlocks').sort(function(a, b) {
+			return $(a).find(".theSchools").text() > $(b).find(".theSchools").text() ? -1 : 1;
+		});
+
+		$(".renderSchools").html(descendOrderedDivs5);
+		setTimeout(function() {
+			$('.sortSchool').removeClass('ascending')
+		}, 600)
+
+		$('.topAttr  i').each(function() {
+			$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+
+	}
+
+});
+
+
+$('.sortRC').on('click', function() {
+
+	if (!$('.sortRC').hasClass('ascending')) {
+
+		var ascendOrderedDivs6 = $('.schoolBlocks').sort(function(a, b) {
+			return $(a).find(".srCode").text() > $(b).find(".srCode").text() ? 1 : -1;
+		});
+
+		$(".renderSchools").html(ascendOrderedDivs6);
+		setTimeout(function() {
+			$('.sortRC').addClass('ascending')
+		}, 600)
+
+		$('.topAttr i').each(function() {
+			$('.topAttr i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+
+	}
+
+	if ($('.sortRC').hasClass('ascending')) {
+
+		var descendOrderedDivs6 = $('.schoolBlocks').sort(function(a, b) {
+			return $(a).find(".srCode").text() > $(b).find(".srCode").text() ? -1 : 1;
+		});
+
+		$(".renderSchools").html(descendOrderedDivs6);
+		setTimeout(function() {
+			$('.sortRC').removeClass('ascending')
+		}, 600)
+
+		$('.topAttr  i').each(function() {
+			$('.topAttr i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+
+	}
+
+});
+
+
+$('.sortCC').on('click', function() {
+
+	if (!$('.sortCC').hasClass('ascending')) {
+
+		var ascendOrderedDivs7 = $('.schoolBlocks').sort(function(a, b) {
+			return $(a).find(".scCode").text() > $(b).find(".scCode").text() ? 1 : -1;
+		});
+
+		$(".renderSchools").html(ascendOrderedDivs7);
+		setTimeout(function() {
+			$('.sortCC').addClass('ascending')
+		}, 600)
+
+		$('.topAttr i').each(function() {
+			$('.topAttr i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+
+	}
+
+	if ($('.sortCC').hasClass('ascending')) {
+
+		var descendOrderedDivs7 = $('.schoolBlocks').sort(function(a, b) {
+			return $(a).find(".scCode").text() > $(b).find(".scCode").text() ? -1 : 1;
+		});
+
+		$(".renderSchools").html(descendOrderedDivs7);
+		setTimeout(function() {
+			$('.sortCC').removeClass('ascending')
+		}, 600)
+
+		$('.topAttr  i').each(function() {
+			$('.topAttr i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+
+	}
+
+});
+
+
+
+$('.sortSchoolID').on('click', function() {
+
+	if (!$('.sortSchoolID').hasClass('ascending')) {
+
+		var numericallyOrderedDivs = $('.schoolBlocks').sort(function(a, b) {
+			return parseFloat($(a).find('.schoolid').text()) > parseFloat($(b).find('.schoolid').text()) ? 1 : -1;
+		});
+
+		$(".renderSchools").html(numericallyOrderedDivs);
+		setTimeout(function() {
+			$('.sortSchoolID').addClass('ascending')
+		}, 600)
+
+		$('.topAttr  i').each(function() {
+			$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
+
+	}
+
+	if ($('.sortSchoolID').hasClass('ascending')) {
+
+		var numericallyOrderedDivs = $('.schoolBlocks').sort(function(a, b) {
+		return parseFloat($(a).find('.schoolid').text()) > parseFloat($(b).find('.schoolid').text()) ? -1 : 1;
+		});
+
+		$(".renderSchools").html(numericallyOrderedDivs);
+		setTimeout(function() {
+			$('.sortSchoolID').removeClass('ascending')
+		}, 600)
+
+		$('.topAttr  i').each(function() {
+			$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>')
+
+	}
+
+});
+
 
 
 
