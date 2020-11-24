@@ -2439,6 +2439,10 @@ h6.gray {
   text-align: center;
 }
 
+.schoolBlocks p.black.sStatus{
+      line-height: 1;
+}
+
 /* .greenSide{
 background: #00843D;
 padding: .2em 1.8em;
