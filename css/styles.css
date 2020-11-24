@@ -1420,6 +1420,21 @@ p.dark {
   font-weight:600
 }
 
+
+.renderSchools .addBlocks:hover  {
+  -webkit-transition: transform .1s ease-in-out;
+  -moz-transition:transform .1s ease-in-out;
+  -ms-transition:transform .1s ease-in-out;
+  transform: scaleY(1.01);
+  transform: scaleX(1.01);
+  cursor:grab
+}
+
+.renderSchools .addBlocks:hover p.black{
+  color:#00539f;
+  font-weight:600
+}
+
 .block200{
   min-height:70vh;
 }

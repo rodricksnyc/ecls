@@ -844,7 +844,7 @@ $(document).ready(function () {
 		}, {
 			"schoolid": '9999991S',
 			"theSchools": "Palmer Elementary",
-			"aDate": '09/12/2020',
+			"aDate": '03/22/2020',
 			"srCode": 'Rem ipsum dolor',
 			"scCode": 'Lirem ipsum',
 			'sStatus': 'Approval Received'
@@ -852,7 +852,7 @@ $(document).ready(function () {
 		}, {
 			"schoolid": '9999992S',
 			"theSchools": "Holy Family",
-			"aDate": '09/12/2020',
+			"aDate": '06/02/2020',
 			"srCode": 'Ipsum dolor',
 			"scCode": 'Rorem lipsum',
 			'sStatus': 'Special Handling– In Progress'
@@ -860,10 +860,26 @@ $(document).ready(function () {
 		}, {
 			"schoolid": '9999988S',
 			"theSchools": "Moravian",
-			"aDate": '09/12/2020',
+			"aDate": '07/18/2020',
 			"srCode": 'Dolor Lorem Ipsum',
 			"scCode": 'Ipsum soretum',
 			'sStatus': 'Special Handling– In Progress'
+
+		}, {
+			"schoolid": '9943991S',
+			"theSchools": "Liberty",
+			"aDate": '08/22/2020',
+			"srCode": 'Rem ipsum dolor',
+			"scCode": 'Lirem ipsum',
+			'sStatus': 'Approval Received'
+
+		}, {
+			"schoolid": '9209991S',
+			"theSchools": "St. Janes",
+			"aDate": '01/22/2020',
+			"srCode": 'Rem ipsum dolor',
+			"scCode": 'Lirem ipsum',
+			'sStatus': 'Approval Received'
 
 		}] };
 
@@ -1017,7 +1033,7 @@ $(document).ready(function () {
 			$(".renderDistricts").html(ascendOrderedDivs4);
 			setTimeout(function () {
 				$('.sortId').addClass('ascending');
-			}, 100);
+			}, 400);
 
 			$('.topAttr .gray.larger i').each(function () {
 				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
@@ -1034,7 +1050,7 @@ $(document).ready(function () {
 			$(".renderDistricts").html(descendOrderedDivs4);
 			setTimeout(function () {
 				$('.sortId').removeClass('ascending');
-			}, 100);
+			}, 400);
 
 			$('.topAttr .gray.larger i').each(function () {
 				$('.topAttr .gray.larger i').replaceWith('<i class="far fa-sort darkBlue"></i>');
@@ -1237,6 +1253,47 @@ $(document).ready(function () {
 				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
 			});
 
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	$('.sortDate').on('click', function () {
+
+		if (!$('.sortDate').hasClass('ascending')) {
+			console.log("nope");
+			var ascendOrderedDivs10 = $('.schoolBlocks').sort(function (a, b) {
+				return $(a).find(".aDate").text().toString().localeCompare($(b).find(".aDate").text().toString(), undefined, {
+					numeric: true,
+					sensitivity: 'base'
+				});
+			});
+			$(".renderSchools").html(ascendOrderedDivs10);
+			setTimeout(function () {
+				$('.sortDate').addClass('ascending');
+			}, 400);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortDate').hasClass('ascending')) {
+			console.log("yup");
+			var descendOrderedDivs10 = $('.schoolBlocks').sort(function (a, b) {
+				return $(b).find(".aDate").text().toString().localeCompare($(a).find(".aDate").text().toString(), undefined, {
+					numeric: true,
+					sensitivity: 'base'
+				});
+			});
+			$(".renderDistricts").html(descendOrderedDivs10);
+			setTimeout(function () {
+				$('.sortDate').removeClass('ascending');
+			}, 500);
+
+			$('.topAttr i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
 			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
 		}
 	});
@@ -2743,7 +2800,7 @@ $(document).ready(function () {
 		$('.reports img').attr('src', 'images/img_reports.svg');
 	});
 
-	$('.renderDistricts').on('click', '.goToInfo', function (e) {
+	$(document).on('click', '.goToInfo', function (e) {
 
 		setTimeout(function () {
 			var divPosition = $('#anchorPoint').offset();
