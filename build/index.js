@@ -839,7 +839,7 @@ $(document).ready(function () {
 			"aDate": '09/12/2020',
 			"srCode": 'Lorem ipsum dolor',
 			"scCode": 'Ipsum dorem',
-			'status': 'Approval Received'
+			'sStatus': 'Approval Received'
 
 		}, {
 			"schoolid": '9999991S',
@@ -847,7 +847,7 @@ $(document).ready(function () {
 			"aDate": '09/12/2020',
 			"srCode": 'Rem ipsum dolor',
 			"scCode": 'Lirem ipsum',
-			'status': 'Approval Received'
+			'sStatus': 'Approval Received'
 
 		}, {
 			"schoolid": '9999992S',
@@ -855,7 +855,7 @@ $(document).ready(function () {
 			"aDate": '09/12/2020',
 			"srCode": 'Ipsum dolor',
 			"scCode": 'Rorem lipsum',
-			'status': 'Special Handling– In Progress'
+			'sStatus': 'Special Handling– In Progress'
 
 		}, {
 			"schoolid": '9999988S',
@@ -863,13 +863,13 @@ $(document).ready(function () {
 			"aDate": '09/12/2020',
 			"srCode": 'Dolor Lorem Ipsum',
 			"scCode": 'Ipsum soretum',
-			'status': 'Special Handling– In Progress'
+			'sStatus': 'Special Handling– In Progress'
 
 		}] };
 
 	for (var j in school.schools) {
 
-		$('.renderSchools').append("<div class=\"addBlocks schoolBlocks d-flex align-items-center flex-wrap goToInfo\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6 negPos\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black schoolid\">" + school.schools[j].schoolid + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black theSchools\">" + school.schools[j].theSchools + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">ASSESSMENT DATE</div><p class=\"black aDate\">" + school.schools[j].aDate + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SCHOOL RECRUITMENT CODE</div><p class=\"black srCode\">" + school.schools[j].srCode + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SCHOOL COMPLETION CODE</div><p class=\"black scCode\">" + school.schools[j].scCode + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SCHOOL EROC STATUS</div><p class=\"black received dStatus\">" + school.schools[j].status + "</p></div><div class=\"progressBarEmpty\"></div><div class=\"progressBarFull\"></div></div>");
+		$('.renderSchools').append("<div class=\"addBlocks schoolBlocks d-flex align-items-center flex-wrap goToInfo\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6 negPos\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black schoolid\">" + school.schools[j].schoolid + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black theSchools\">" + school.schools[j].theSchools + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">ASSESSMENT DATE</div><p class=\"black aDate\">" + school.schools[j].aDate + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SCHOOL RECRUITMENT CODE</div><p class=\"black srCode\">" + school.schools[j].srCode + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SCHOOL COMPLETION CODE</div><p class=\"black scCode\">" + school.schools[j].scCode + "</p></div><div class=\"col-lg-2 col-md-6 col-sm-6 col-xs-6\"><div class=\"mobile\">SCHOOL EROC STATUS</div><p class=\"black received sStatus\">" + school.schools[j].sStatus + "</p></div><div class=\"progressBarEmpty\"></div><div class=\"progressBarFull\"></div></div>");
 	}
 
 	//show added eRocs - this needs to be appended from new info added to the database
@@ -896,7 +896,7 @@ $(document).ready(function () {
 		$('.renderErocs').removeClass('hidden');
 	});
 
-	//distrcit page alphabetize and sort numerically
+	//district page alphabetize and sort numerically
 
 
 	$('.sortDistrict').on('click', function () {
@@ -1163,6 +1163,45 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.sortSStatus').on('click', function () {
+
+		if (!$('.sortSStatus').hasClass('ascending')) {
+
+			var ascendOrderedDivs7 = $('.schoolBlocks').sort(function (a, b) {
+				return $(a).find(".sStatus").text() > $(b).find(".sStatus").text() ? 1 : -1;
+			});
+
+			$(".renderSchools").html(ascendOrderedDivs7);
+			setTimeout(function () {
+				$('.sortSStatus').addClass('ascending');
+			}, 600);
+
+			$('.topAttr i').each(function () {
+				$('.topAttr i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortSStatus').hasClass('ascending')) {
+
+			var descendOrderedDivs7 = $('.schoolBlocks').sort(function (a, b) {
+				return $(a).find(".sStatus").text() > $(b).find(".sStatus").text() ? -1 : 1;
+			});
+
+			$(".renderSchools").html(descendOrderedDivs7);
+			setTimeout(function () {
+				$('.sortSStatus').removeClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
 	$('.sortSchoolID').on('click', function () {
 
 		if (!$('.sortSchoolID').hasClass('ascending')) {
@@ -1206,7 +1245,7 @@ $(document).ready(function () {
 
 
 	var Opt01 = "";
-	$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete, .dStatus').each(function () {
+	$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete, .dStatus, .sStatus').each(function () {
 		Opt01 = $(this).html();
 
 		if ($(this).html() > 50 && $(this).html() <= 75 || $(this).html() == 'Special Handling– In Progress') {
