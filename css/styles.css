@@ -1519,6 +1519,53 @@ header a:hover {
   font-weight:700;
 }
 
+
+.grayBox.second .nav-tabs .nav-link.selected {
+    color: #071D49;
+    background-color: #fbb03b !important;
+    border-color: none !important;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-family: 'Public Sans', sans-serif;
+    background: white;
+    padding-top: 1em;
+    margin-bottom: 0em;
+    padding-bottom: 1em;
+    font-size: 17px;
+    border-radius: 0rem;
+    -webkit-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+    -moz-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+    box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+}
+
+.grayBox.second .nav-tabs .nav-link {
+    color: #071D49;
+    font-family: 'Public Sans', sans-serif;
+    width: 100%;
+    border-color: transparent;
+    font-weight: 400;
+    padding-top: 1em;
+    margin-bottom: 0em;
+    padding-bottom: 1em;
+    border-radius: 0rem;
+    font-size: 17px;
+    -webkit-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+    -moz-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+    box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+    background: #e6e6e6;
+}
+
+ .grayBox.second .nav-tabs {
+    border-bottom: none;
+    width: 100%;
+
+}
+
+.grayBox.second .nav-tabs .nav-item {
+    margin-bottom: -1px;
+    width: 16.667%;
+}
+
 h2 {
   padding: 7% 0;
   text-align: center;
