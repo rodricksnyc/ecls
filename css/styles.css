@@ -1166,10 +1166,14 @@ textarea {
   justify-content: center;
   align-items: center;
   width:33%;
+  border-radius: 0
 }
 
 
 .tlModals .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-radius: 0;
   color: #fff !important;
   background-color: #00539f;
   border-color: #00539f;
@@ -1564,6 +1568,7 @@ header a:hover {
 .onlyOne{
   border-top-right-radius: .25em !important;
     border-bottom-right-radius: .25em !important;
+    border-radius: .25rem !important;
     margin-left:1em !important
 }
 
