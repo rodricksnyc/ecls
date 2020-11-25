@@ -380,438 +380,466 @@ left:0
 												<div class="tab-content">
 													<div class="tab-pane active" id="tabs-1" role="tabpanel">
 
-												<div class="outside">
-													<i class="fas fa-chevron-circle-up closeDiv topOne" role="button" tabindex="0"  aria-label="Shows Less"></i>
+														<div class="outside">
+															<i class="fas fa-chevron-circle-up closeDiv topOne" role="button" tabindex="0"  aria-label="Shows Less"></i>
 
-													<button class="btn btn-info steelColor floatRight mr-3" tabindex="0" aria-hidden="false" role="button" aria-label="Opt out"><i class="far fa-print"></i> SCHOOL INFO</button>
-													<a role="button" tabindex="0" aria-label="Go back to Districts" class="seeDistricts"><i class="far fa-angle-left darkBlue"></i></a>
+															<button class="btn btn-info steelColor floatRight mr-3" tabindex="0" aria-hidden="false" role="button" aria-label="Opt out"><i class="far fa-print"></i> SCHOOL INFO</button>
+															<a role="button" tabindex="0" aria-label="Go back to Districts" class="seeDistricts"><i class="far fa-angle-left darkBlue"></i></a>
 
-													<h2 class="landing-sec-H padding-0 margin-0 pl-4">School Information</h2>
-
-
-													<div class="row">
-														<div class="col-xs-12 col-lg-12 col-md-12">
-
-															<div class="toggleDiv">
-																<form class="informationForm" novalidate role="form" method="POST" id="newInfo">
-																	<ul class="errorMessages"></ul>
-																	<fieldset>
-																		<legend>Update Your Information</legend>
-																		<div class="row position-relative">
-																			<div class="col-lg-6">
-																				<div class="lightGrayBox">
-																					<div class="form-group">
-																						<label for="leaid-input" class="disabled">LEAID</label>
-																						<input type="text" name="info" class="form-control disabled" id="leadid-input" placeholder="">
-
-																					</div>
-
-																					<div class="form-group">
-																						<label for="district-name" class="disabled">District Name</label>
-																						<input type="text" name="info" class="form-control disabled" id="district-name" placeholder="">
-																					</div>
-																					<div class="form-group">
-																						<label for="address1" class="disabled">Address</label>
-																						<input type="text" name="info" class="form-control disabled" id="address1" placeholder="">
-																					</div>
+															<h2 class="landing-sec-H padding-0 margin-0 pl-4">School Information</h2>
 
 
+															<div class="row">
+																<div class="col-xs-12 col-lg-12 col-md-12">
 
-																					<div class="row noWrapRow">
-																						<div class="col-md-5 col-xs-12">
+																	<div class="toggleDiv">
+																		<form class="informationForm" novalidate role="form" method="POST" id="newInfo">
+																			<ul class="errorMessages"></ul>
+																			<fieldset>
+																				<legend>Update Your Information</legend>
+																				<div class="row position-relative">
+																					<div class="col-lg-6">
+																						<div class="lightGrayBox">
 																							<div class="form-group">
-																								<label for="city" class="disabled">City</label>
-																								<input type="text" name="info" class="form-control disabled" id="city" placeholder="">
+																								<label for="school-name" class="disabled">School Name</label>
+																								<input type="text" name="info" class="form-control disabled" id="school-name" placeholder="">
+
 																							</div>
-																						</div>
-																						<div class="col-md-3 col-xs-12">
+
 																							<div class="form-group">
-																								<label for="state" class="disabled">State</label>
-																								<input type="text" name="info" class="form-control disabled" id="state" placeholder="">
+																								<label for="school-id" class="disabled">School ID</label>
+																								<input type="text" name="info" class="form-control disabled" id="school-id" placeholder="">
 																							</div>
-																						</div>
-																						<div class="col-md-4 col-xs-12">
+
+																							<p class="blackFont">School Type</p>
+
+																							<div class="btn-group" data-toggle="buttons">
+																								<label class="btn btn-primary disabled onlyOne">
+																									<input type="radio" name="options" id="option0" autocomplete="off" class="disabled">PUBLIC
+																								</label>
+
+																							</div>
+
 																							<div class="form-group">
-																								<label for="zip" class="disabled">ZIP</label>
-																								<input type="text" name="info" class="form-control disabled" id="zip" placeholder="">
+																								<label for="address1">Address (street)</label>
+																								<input type="text" name="info" class="form-control" id="address1" placeholder="">
 																							</div>
+
+
+
+																							<div class="row noWrapRow">
+																								<div class="col-md-5 col-xs-12">
+																									<div class="form-group">
+																										<label for="city" class="disabled">City</label>
+																										<input type="text" name="info" class="form-control disabled" id="city" placeholder="">
+																									</div>
+																								</div>
+																								<div class="col-md-3 col-xs-12">
+																									<div class="form-group">
+																										<label for="state" class="disabled">State</label>
+																										<input type="text" name="info" class="form-control disabled" id="state" placeholder="">
+																									</div>
+																								</div>
+																								<div class="col-md-4 col-xs-12">
+																									<div class="form-group">
+																										<label for="zip" class="disabled">ZIP</label>
+																										<input type="text" name="info" class="form-control disabled" id="zip" placeholder="">
+																									</div>
+																								</div>
+
+																							</div>
+
+
+
+																							<div class="form-group">
+
+																								<label for="phoneNumber">School Phone</label>
+																								<input id="phoneNumber" type="text" name="phoneNumber" class="form-control"  maxlength="10">
+
+
+																							</div>
+
+																							<div class="form-group">
+																								<label for="website">School Website</label>
+																								<input type="text" name="info" class="form-control" id="website" placeholder="">
+																							</div>
+
+																						</div>
+
+
+																						<div class="lightGrayBox">
+
+																							<div class="form-group">
+																								<label for="district-id" class="disabled">District ID</label>
+																								<input type="text" name="info" class="form-control disabled" id="district-id" placeholder="">
+																							</div>
+																							<div class="form-group">
+																								<label for="district-name" class="disabled">District Name</label>
+																								<input type="text" name="info" class="form-control disabled" id="district-name" placeholder="">
+																							</div>
+
+
+																							<div class="form-group">
+																								<label for="district-approver-name" class="disabled">District Approver Name</label>
+																								<input type="text" name="phoneNumber" class="form-control disabled" id="district-approver-name" placeholder="">
+																							</div>
+
+																							<div class="form-group">
+																								<label for="district-approver-title" class="disabled">District Approver Title</label>
+																								<input type="text" name="info" class="form-control disabled" id="district-approver-title" placeholder="">
+																							</div>
+
+																						</div>
+
+
+
+
+																						<div class="lightGrayBox">
+
+																							<div class="form-group">
+																								<label for="other-name">Other Contact Name</label>
+																								<input type="text" name="info" class="form-control" id="other-name" placeholder="">
+																							</div>
+																							<div class="form-group">
+																								<label for="other-title">Other Contact Title</label>
+																								<input type="text" name="info" class="form-control" id="other-title" placeholder="">
+																							</div>
+
+
+																							<div class="row noWrapRow">
+																								<div class="col-md-8 col-xs-12">
+																									<div class="form-group">
+																										<label for="other-phone">Other Contact Phone</label>
+																										<input type="text" name="phoneNumber" class="form-control" id="other-phone" placeholder="" maxlength="10">
+																									</div>
+																								</div>
+																								<div class="col-md-4 col-xs-12">
+																									<div class="form-group">
+																										<label for="ext">Ext.</label>
+																										<input type="text" name="info" class="form-control" id="ext" placeholder="">
+																									</div>
+																								</div>
+
+
+																							</div>
+
+																							<div class="form-group">
+																								<label for="other-email">Other Contact Email</label>
+																								<input type="email" name="email" class="form-control" id="other-email" placeholder="">
+																							</div>
+
+																						</div>
+
+
+
+
+																					</div>
+
+																					<div class="col-lg-6">
+																						<div class="lightGrayBox">
+
+																							<div class="form-group">
+																								<label for="SA-ID">School Administrator ID</label>
+																								<input type="text" name="info" class="form-control" id="SA-ID" placeholder="">
+																							</div>
+																							<div class="form-group">
+																								<label for="SA-name">School Administrator Name</label>
+																								<input type="text" name="info" class="form-control" id="SA-name" placeholder="">
+																							</div>
+
+																							<div class="one">
+																								<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation99">
+																								<label class="form-check-label" tabindex="0" for="customControlValidation99">New School Admin</label>
+
+																							</div>
+
+
+																							<div class="form-group">
+																								<label for="SA-title">School Administrator Title</label>
+																								<input type="text" name="info" class="form-control" id="SA-title" placeholder="">
+																							</div>
+
+
+																							<div class="row noWrapRow">
+																								<div class="col-md-8 col-xs-12">
+																									<div class="form-group">
+																										<label for="SA-phone">School Administrator Phone</label>
+																										<input type="text" name="phoneNumber" class="form-control" id="SA-phone" placeholder="">
+																									</div>
+																								</div>
+																								<div class="col-md-4 col-xs-12">
+																									<div class="form-group">
+																										<label for="ext2">Ext.</label>
+																										<input type="text" name="info" class="form-control" id="ext2" placeholder="">
+																									</div>
+																								</div>
+
+
+																							</div>
+
+																							<div class="form-group">
+																								<label for="SA-email">School Administrator Email</label>
+																								<input type="email" name="email" class="form-control" id="SA-email" placeholder="">
+																							</div>
+
+																						</div>
+
+
+
+																						<div class="lightGrayBox">
+
+																							<div class="form-group">
+																								<label for="SC-ID">School Coordinator ID</label>
+																								<input type="text" name="info" class="form-control" id="SC-ID" placeholder="">
+																							</div>
+																							<div class="form-group">
+																								<label for="SC-name">School Coordinator Name</label>
+																								<input type="text" name="info" class="form-control" id="SC-name" placeholder="">
+																							</div>
+
+
+																							<div class="one">
+																								<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation89">
+																								<label class="form-check-label" tabindex="0" for="customControlValidation89">New School Coordinator</label>
+
+																							</div>
+
+
+																							<div class="form-group">
+																								<label for="SC-title">School Coordinator Title</label>
+																								<input type="text" name="info" class="form-control" id="SC-title" placeholder="">
+																							</div>
+
+
+
+																							<div class="row noWrapRow">
+																								<div class="col-md-8 col-xs-12">
+																									<div class="form-group">
+																										<label for="SC-phone">School Coordinator Phone</label>
+																										<input type="text" name="phoneNumber" class="form-control" id="SC-phone" placeholder="">
+																									</div>
+																								</div>
+																								<div class="col-md-4 col-xs-12">
+																									<div class="form-group">
+																										<label for="ext3">Ext.</label>
+																										<input type="text" name="info" class="form-control" id="ext3" placeholder="">
+																									</div>
+																								</div>
+
+
+																							</div>
+
+																							<div class="form-group">
+																								<label for="SC-email">School Coordinator Email</label>
+																								<input type="email" name="email" class="form-control" id="SC-email" placeholder="">
+																							</div>
+
+
+																						</div>
+
+
+																						<div class="lightGrayBox">
+
+
+																							<div class="form-group">
+																								<label for="code">Current School Recruitment Code</label>
+																								<select id="code" class="form-control result required" name="result" required>
+
+																									<option value="one">12 – Initial Refusal</option>
+																									<option value="two">13 – Waiting for District Recruitment</option>
+																									<option value="three">14 – Initial Out of Scope</option>
+																									<option value="four">15 – Initial Refusal by District</option>
+																									<option value="five">60 – Cooperating</option>
+																									<option value="six">61 – Cooperating after Refusal Conversion Effort</option>
+
+
+																								</select>
+
+																							</div>
+
+																							<div class="form-group">
+																								<label for="code2">Current School Completion Code</label>
+																								<select id="code2" class="form-control result required" name="result" required>
+
+																									<option value="one">16 - Assessment date scheduled</option>
+																									<option value="two">17 - Assessment date not scheduled</option>
+																									<option value="three">18 - School Initial refusal</option>
+																									<option value="four">93 - Ran out of time</option>
+
+																								</select>
+
+																							</div>
+
+
+
 																						</div>
 
 																					</div>
-
-
-
-																					<div class="form-group">
-
-																						<label for="phoneNumber">Phone Number</label>
-																						<input id="phoneNumber" type="text" name="phoneNumber" class="form-control"  maxlength="10">
-
-
-																					</div>
-
-																					<div class="form-group">
-																						<label for="website">District Website</label>
-																						<input type="text" name="info" class="form-control" id="website" placeholder="">
-																					</div>
-
-
 
 																				</div>
 
+																				<div class="d-flex justify-content-center mt-5">
 
-																				<div class="lightGrayBox">
+																					<button type="submit" form="newInfo" class="disabledSave lightGrayColor saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information">SAVE <i class="fas fa-save"></i>
+																					</button>
 
-																					<div class="form-group">
-																						<label for="DS-name">District Superintendent Name</label>
-																						<input type="text" name="info" class="form-control" id="DS-name" placeholder="">
-																					</div>
-																					<div class="form-group">
-																						<label for="DS-title">District Website</label>
-																						<input type="text" name="info" class="form-control" id="DS-title" placeholder="">
-																					</div>
-
-
-																					<div class="row noWrapRow">
-																						<div class="col-md-8 col-xs-12">
-																							<div class="form-group">
-																								<label for="DS-phone">District Superintendent Phone</label>
-																								<input type="text" name="phoneNumber" class="form-control" id="DS-phone" placeholder="">
-																							</div>
-																						</div>
-																						<div class="col-md-4 col-xs-12">
-																							<div class="form-group">
-																								<label for="ext">Ext.</label>
-																								<input type="text" name="info" class="form-control" id="ext" placeholder="">
-																							</div>
-																						</div>
-
-
-																					</div>
-
-																					<div class="form-group">
-																						<label for="DS-email">District Superintendent Email</label>
-																						<input type="email" name="email" class="form-control" id="DS-email" placeholder="">
-																					</div>
+																					<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving">CANCEL <i class="fas fa-ban stop"></i>
+																					</button>
 
 																				</div>
 
-
-																				<div class="lightGrayBox">
-
-																					<div class="form-group">
-																						<label for="DTD-name">District Testing Director Name</label>
-																						<input type="text" name="info" class="form-control" id="DTD-name" placeholder="">
-																					</div>
-																					<div class="form-group">
-																						<label for="DTD-title">District Testing Director Title</label>
-																						<input type="text" name="info" class="form-control" id="DTD-title" placeholder="">
-																					</div>
+																			</fieldset>
 
 
-																					<div class="row noWrapRow">
-																						<div class="col-md-8 col-xs-12">
-																							<div class="form-group">
-																								<label for="DTD-phone">District Testing Director Phone</label>
-																								<input type="text" name="phoneNumber" class="form-control" id="DTD-phone" placeholder="">
-																							</div>
-																						</div>
-																						<div class="col-md-4 col-xs-12">
-																							<div class="form-group">
-																								<label for="ext2">Ext.</label>
-																								<input type="text" name="info" class="form-control" id="ext2" placeholder="">
-																							</div>
-																						</div>
+																		</form>
+																	</div>
+
+																	<div class="blueLine2">
+																		<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
 
 
-																					</div>
+																	</div>
 
-																					<div class="form-group">
-																						<label for="DTD-email">District Testing Director Email</label>
-																						<input type="email" name="email" class="form-control" id="DTD-email" placeholder="">
-																					</div>
+																</div>
 
-																				</div>
+															</div>
+														</div>
 
+														<div class="outside">
+															<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less" style="margin-top: 2.75em;"></i>
+
+															<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc" data-toggle="modal" data-target="#eRocModal"><i class="far fa-plus"></i>&nbsp;new</button>
+
+															<h2 class="landing-sec-H padding-0 margin-0">EROC</h2>
+
+
+															<div class="row">
+																<div class="col-xs-12 col-lg-12 col-md-12">
+
+																	<div class="toggleDiv">
+
+																		<div class="grayBoxEmpty">
+																			<p class="black"><b>none added yet</b></p>
+																		</div>
+
+																		<div class="topAttr eRocAttr d-flex align-items-center hidden">
+																			<div class="col-lg-2">
+																				<h6 class="gray larger">CONTACT DATE<br>& TIME
+
+																				</h6>
+																			</div>
+																			<div class="col-lg-1">
+																				<h6 class="gray larger">MODE</h6>
+																			</div>
+																			<div class="col-lg-2">
+																				<h6 class="gray larger">RESULT</h6>
+																			</div>
+																			<div class="col-lg-2">
+																				<h6 class="gray larger">CONTACT NAME</h6>
 																			</div>
 
-																			<div class="col-lg-6">
-																				<div class="lightGrayBox">
+																			<div class="col-lg-1">
+																				<h6 class="gray larger">CONTACT<br>TITLE/<br>POSITION</h6>
+																			</div>
 
-																					<div class="form-group">
-																						<label for="D-status" class="disabled">District Status</label>
-																						<input type="text" name="info" class="form-control disabled" id="D-status" placeholder="">
-																					</div>
-																					<div id="listResults">
-																						<div class="one">
-																							<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation88">
-																							<label class="form-check-label" tabindex="0" for="customControlValidation88">Special Handling</label>
-																							<br>
-																							<textarea name="validation" tabindex="0" aria-hidden="false" rows="3" data-form-field="Message" placeholder=""></textarea>
-																						</div>
-																					</div>
+																			<div class="col-lg-2">
+																				<h6 class="gray larger">COMMENTS/<br>INSTRUCTIONS</h6>
+																			</div>
 
-																					<p class="blackFont">Consent Rule</p>
+																			<div class="col-lg-2">
+																				<h6 class="gray larger">PERSON WHO MADE<br>CONTACT ATTEMPT</h6>
+																			</div>
 
-																					<div class="btn-group" data-toggle="buttons">
-																						<label class="btn btn-primary">
-																							<input type="radio" name="options" id="option1" autocomplete="off">EXPLICIT
-																						</label>
-																						<label class="btn btn-primary active">
-																							<input type="radio" name="options" id="option2" autocomplete="off" checked>IMPLICIT
-																						</label>
-																						<label class="btn btn-primary">
-																							<input type="radio" name="options" id="option3" autocomplete="off">SCHOOL DECIDES
-																						</label>
-																					</div>
-
-																					<p class="blackFont">Incentive Rule</p>
-
-																					<div class="btn-group" data-toggle="buttons">
-																						<label class="btn btn-primary active">
-																							<input type="radio" name="options" id="option4" autocomplete="off" checked>INCENTIVES<br>ALLOWED
-																						</label>
-																						<label class="btn btn-primary">
-																							<input type="radio" name="options" id="option5" autocomplete="off">INCENTIVES<br>PAYABLE TO SCHOOL
-																						</label>
-																						<label class="btn btn-primary">
-																							<input type="radio" name="options" id="option6" autocomplete="off">NO INCENTIVES
-																						</label>
-																					</div>
-
-																					<p class="blackFont">Surveys Allowed?</p>
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="phone">
-																						<label class="form-check-label blue" for="inlineRadio1">Yes</label>
-																					</div>
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="phone">
-																						<label class="form-check-label blue" for="inlineRadio2">No</label>
-																					</div>
-
-																					<div class="form-group">
-																						<label for="notes">Notes/Instructions</label>
-																						<textarea name="validation" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message" placeholder="" id="notes"></textarea>
-																					</div>
-																				</div>
-
-																				<div class="lightGrayBox">
-
-																					<div class="form-group">
-																						<label for="A-name">Approver Name</label>
-																						<input type="text" name="info" class="form-control" id="A-name" placeholder="">
-																					</div>
-																					<div class="form-group">
-																						<label for="A-title">Approver Title</label>
-																						<input type="text" name="info" class="form-control" id="A-title" placeholder="">
-																					</div>
+																		</div>
+																		<div class="renderErocs hidden">
 
 
-																					<div class="row noWrapRow">
-																						<div class="col-md-8 col-xs-12">
-																							<div class="form-group">
-																								<label for="A-phone">Approver Phone</label>
-																								<input type="text" name="phoneNumber" class="form-control" id="A-phone" placeholder="">
-																							</div>
-																						</div>
-																						<div class="col-md-4 col-xs-12">
-																							<div class="form-group">
-																								<label for="ext3">Ext.</label>
-																								<input type="text" name="info" class="form-control" id="ext3" placeholder="">
-																							</div>
-																						</div>
+																		</div>
 
 
-																					</div>
-
-																					<div class="form-group">
-																						<label for="A-email">Approver Email</label>
-																						<input type="email" name="email" class="form-control" id="A-email" placeholder="">
-																					</div>
-
-																				</div>
-
-																				<div class="lightGrayBox">
-
-																					<div class="form-group">
-																						<label for="EED-name">Early Education Director Name</label>
-																						<input type="text" name="info" class="form-control" id="EED-name" placeholder="">
-																					</div>
-																					<div class="form-group">
-																						<label for="EED-title">Early Education Director Title</label>
-																						<input type="text" name="info" class="form-control" id="A-title" placeholder="">
-																					</div>
+																	</div>
+																	<div class="blueLine2">
+																		<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
 
 
-																					<div class="row noWrapRow">
-																						<div class="col-md-8 col-xs-12">
-																							<div class="form-group">
-																								<label for="EED-phone">Early Education Director Phone</label>
-																								<input type="text" name="phoneNumber" class="form-control" id="EED-phone" placeholder="">
-																							</div>
-																						</div>
-																						<div class="col-md-4 col-xs-12">
-																							<div class="form-group">
-																								<label for="ext4">Ext.</label>
-																								<input type="text" name="info" class="form-control" id="ext4" placeholder="">
-																							</div>
-																						</div>
+																	</div>
+
+																</div>
+
+															</div>
 
 
-																					</div>
-
-																					<div class="form-group">
-																						<label for="EED-email">Early Education Director Email</label>
-																						<input type="email" name="email" class="form-control" id="EED-email" placeholder="">
-																					</div>
 
 
-																				</div>
+														</div>
 
+														<div class="outside">
+															<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
+
+															<h2 class="landing-sec-H padding-0 margin-0">School Administrator Survey Status</h2>
+
+															<p class="blackFont mt-3" style="font-weight: 300;">Here you can monitor completion of the School Administrator Survey.</p>
+
+
+															<div class="lightGrayBox lessPadding">
+																<div class="form-check form-check-inline">
+
+																<p class="blackFont">Survey Type: Fall K</p>
+
+																<div class="one">
+																	<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation89">
+																	<label class="form-check-label" tabindex="0" for="customControlValidation89">Paper Survey Distributed</label>
+
+																</div>
+
+															</div>
+
+
+															</div>
+
+															<div class="row">
+																<div class="col-xs-12 col-lg-12 col-md-12">
+
+																	<div class="toggleDiv">
+
+																		<div class="topAttr d-flex align-items-center">
+																			<div class="col-lg-4">
+																				<h6 class="gray larger sortId">SCHOOL ID </h6>
+																			</div>
+																			<div class="col-lg-4">
+																				<h6 class="gray larger sortDistrict">SCHOOL NAME </h6>
+																			</div>
+																			<div class="col-lg-4">
+																				<h6 class="gray larger sortDflag">SCHOOL ADDRESS</h6>
 																			</div>
 
 																		</div>
 
-																		<div class="d-flex justify-content-center mt-5">
+																		<div class="renderSchoolList">
 
-																			<button type="submit" form="newInfo" class="disabledSave lightGrayColor saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information">SAVE <i class="fas fa-save"></i>
-																			</button>
-
-																			<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving">CANCEL <i class="fas fa-ban stop"></i>
-																			</button>
 
 																		</div>
 
-																	</fieldset>
 
-
-																</form>
-															</div>
-
-															<div class="blueLine2">
-																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
-
-
-															</div>
-
-														</div>
-
-													</div>
-												</div>
-
-												<div class="outside">
-													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
-
-													<h2 class="landing-sec-H padding-0 margin-0">List of Schools</h2>
-
-													<div class="row">
-														<div class="col-xs-12 col-lg-12 col-md-12">
-
-															<div class="toggleDiv">
-
-																<div class="topAttr d-flex align-items-center">
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortId">SCHOOL ID </h6>
 																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDistrict">SCHOOL NAME </h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDflag">SCHOOL ADDRESS</h6>
+
+
+																	<div class="blueLine2">
+																		<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
 																	</div>
 
 																</div>
-
-																<div class="renderSchoolList">
-
-
-																</div>
-
-
-															</div>
-
-
-															<div class="blueLine2">
-																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="" style="outline: none;">&nbsp;<span class="darkBlue">collapse section</span></i>
-
-
 															</div>
 
 														</div>
-													</div>
-
-												</div>
 
 
-												<div class="outside">
-													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less" style="margin-top: 2.75em;"></i>
 
-													<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc" data-toggle="modal" data-target="#eRocModal"><i class="far fa-plus"></i>&nbsp;new</button>
-
-													<h2 class="landing-sec-H padding-0 margin-0">EROC</h2>
-
-
-													<div class="row">
-														<div class="col-xs-12 col-lg-12 col-md-12">
-
-															<div class="toggleDiv">
-
-																<div class="grayBoxEmpty">
-																	<p class="black"><b>none added yet</b></p>
-																</div>
-
-																<div class="topAttr eRocAttr d-flex align-items-center hidden">
-																	<div class="col-lg-2">
-																		<h6 class="gray larger">CONTACT DATE<br>& TIME
-
-																		</h6>
-																	</div>
-																	<div class="col-lg-1">
-																		<h6 class="gray larger">MODE</h6>
-																	</div>
-																	<div class="col-lg-2">
-																		<h6 class="gray larger">RESULT</h6>
-																	</div>
-																	<div class="col-lg-2">
-																		<h6 class="gray larger">CONTACT NAME</h6>
-																	</div>
-
-																	<div class="col-lg-1">
-																		<h6 class="gray larger">CONTACT<br>TITLE/<br>POSITION</h6>
-																	</div>
-
-																	<div class="col-lg-2">
-																		<h6 class="gray larger">COMMENTS/<br>INSTRUCTIONS</h6>
-																	</div>
-
-																	<div class="col-lg-2">
-																		<h6 class="gray larger">PERSON WHO MADE<br>CONTACT ATTEMPT</h6>
-																	</div>
-
-																</div>
-																<div class="renderErocs hidden">
-
-
-																</div>
-
-
-																</div>
-																<div class="blueLine2">
-																	<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
-
-
-																</div>
-
-														</div>
 
 													</div>
-
-
-
-
 												</div>
-
-											</div>
-										</div>
 
 
 											</div>
@@ -844,7 +872,7 @@ left:0
 																			<div class="col-lg-6 position-relative">
 																				<label for="datepicker">Date</label>
 
- 																			<div class="form-group input-group date">
+																				<div class="form-group input-group date">
 																					<input type="text" class="form-control datepicker position-relative" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
 																					<span class="input-group-text">
 																						<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
@@ -1093,7 +1121,7 @@ left:0
 							<script>
 
 
-						</script>
+							</script>
 
 						</body>
 

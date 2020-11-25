@@ -1561,6 +1561,12 @@ header a:hover {
 
 }
 
+.onlyOne{
+  border-top-right-radius: .25em !important;
+    border-bottom-right-radius: .25em !important;
+    margin-left:1em !important
+}
+
 .grayBox.second .nav-tabs .nav-item {
     margin-bottom: -1px;
     width: 16.667%;
@@ -5934,13 +5940,13 @@ font-family: 'Public Sans', sans-serif;
   left: 0;
 }
 
-#listResults .one label {
+ .one label {
   display: inline-block;
   vertical-align: middle;
   position: relative;
   padding-left: 30px;
 }
-#listResults .one input[type="checkbox"] {
+ .one input[type="checkbox"] {
   opacity: 0;
   z-index: 1;
   width: 20px;
@@ -5954,25 +5960,30 @@ font-family: 'Public Sans', sans-serif;
   font-size: 1em;
   margin: 0em;
   padding: 0em;
-
+  padding-left: 2em;
   margin-top:0em;
 }
 
 .lightGrayBox .one label {
-  font-weight:400
+  font-weight:400;
+  padding-left: 2em;
+}
+.lightGrayBox.lessPadding {
+    background: #f6f8f8;
+    padding: .6em 1em 0em 1em;
+    margin-top: 1em;
 }
 
 
-
-#listResults .one input[type="checkbox"] + label.blueBox::before {
+ .one input[type="checkbox"] + label.blueBox::before {
   outline: none !important;
 }
-#listResults .one input[type="checkbox"] + label::before {
+.one input[type="checkbox"] + label::before {
   border-color: black;
   background: white;
   border-radius: 0;
 }
-#listResults .one label::before {
+ .one label::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -5989,13 +6000,13 @@ font-family: 'Public Sans', sans-serif;
   top: 2px;
 
 }
-#listResults .one input[type="checkbox"]:checked + label::after, #listResults .one input[type="checkbox"]:checked + label::after {
+.one input[type="checkbox"]:checked + label::after,  .one input[type="checkbox"]:checked + label::after {
   color: black;
 }
-#listResults .one input[type="checkbox"]:checked + label::after {
+.one input[type="checkbox"]:checked + label::after {
   content: '\2713';
 }
-#listResults .one label::after {
+ .one label::after {
   display: inline-block;
   position: absolute;
   width: 25px;
@@ -6018,11 +6029,11 @@ font-family: 'Public Sans', sans-serif;
   outline:dashed 3px #4599ff
 }
 
-#listResults .one input[type="checkbox"] + label.blueBox::before {
+ .one input[type="checkbox"] + label.blueBox::before {
   outline: none !important;
 }
 
-#listResults textarea{
+ textarea{
   width:100%;
   margin-top:1em;
   border: 1px solid black;
