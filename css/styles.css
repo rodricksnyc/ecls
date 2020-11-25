@@ -6131,7 +6131,7 @@ font-family: 'Public Sans', sans-serif;
 
 .tlModals textarea{
   width: 100%;
-  margin-top: -.1em;
+  margin-top: 1em;
   border: 1px solid black;
   padding: .5em;
   font-family: 'Public Sans' !important;

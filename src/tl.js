@@ -145,6 +145,25 @@ $('document').ready(function(){
 			});
 
 
+			$(".datepicker2").datepicker({
+			
+				format: "dd/mm/yyyy",
+				startDate:"01/01/2021",
+				endDate: "30/11/2021",
+				clearBtn: false,
+				todayBtn: false,
+				todayHighlight: false,
+				showTodayButton: true,
+				orientation: "bottom right",
+				icons: {
+					next: "fa fa-chevron-right",
+					previous: "fa fa-chevron-left",
+					today: 'todayText',
+				},
+
+			});
+
+
 
 
 			$("#result").change(function() {
