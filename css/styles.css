@@ -1548,15 +1548,20 @@ header a:hover {
   width: 100%;
   border-color: transparent;
   font-weight: 400;
-  padding-top: 1em;
+
   margin-bottom: 0em;
-  padding-bottom: 1em;
+
   border-radius: 0rem;
   font-size: 17px;
   -webkit-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
   -moz-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
   box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
   background: #e6e6e6;
+  height: 4em;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
 .grayBox.second .nav-tabs {

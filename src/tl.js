@@ -289,9 +289,9 @@ $('document').ready(function(){
 
 			$(".datepicker").datepicker({
 				container:'#eRocModal',
-				format: "dd/mm/yyyy",
+				format: "mm/dd/yyyy",
 				startDate:"01/01/2021",
-				endDate: "30/11/2021",
+				endDate: "11/30/2021",
 				clearBtn: false,
 				todayBtn: false,
 				todayHighlight: false,
@@ -315,9 +315,101 @@ $('document').ready(function(){
 
 			$(".datepicker2").datepicker({
 
-				format: "dd/mm/yyyy",
+				format: "mm/dd/yyyy",
 				startDate:"01/01/2021",
-				endDate: "30/11/2021",
+				endDate: "11/30/2021",
+				clearBtn: false,
+				todayBtn: false,
+				todayHighlight: false,
+				showTodayButton: true,
+				orientation: "bottom right",
+				icons: {
+					next: "fa fa-chevron-right",
+					previous: "fa fa-chevron-left",
+					today: 'todayText',
+				},
+
+			});
+
+
+			$(".datepicker3").datepicker({
+
+				format: "mm/dd/yyyy",
+				startDate:"08/01/2021",
+				endDate: "09/30/2021",
+				clearBtn: false,
+				todayBtn: false,
+				todayHighlight: false,
+				showTodayButton: true,
+				orientation: "bottom right",
+				icons: {
+					next: "fa fa-chevron-right",
+					previous: "fa fa-chevron-left",
+					today: 'todayText',
+				},
+
+			});
+
+			$(".datepicker4").datepicker({
+
+				format: "mm/dd/yyyy",
+				startDate:"05/01/2021",
+				endDate: "06/30/2022",
+				clearBtn: false,
+				todayBtn: false,
+				todayHighlight: false,
+				showTodayButton: true,
+				orientation: "bottom right",
+				icons: {
+					next: "fa fa-chevron-right",
+					previous: "fa fa-chevron-left",
+					today: 'todayText',
+				},
+
+			});
+
+
+			$(".datepicker5").datepicker({
+
+				format: "mm/dd/yyyy",
+
+				clearBtn: false,
+				todayBtn: false,
+				todayHighlight: false,
+				showTodayButton: true,
+				orientation: "bottom right",
+				icons: {
+					next: "fa fa-chevron-right",
+					previous: "fa fa-chevron-left",
+					today: 'todayText',
+				},
+
+			});
+
+
+			$(".datepicker6").datepicker({
+
+				format: "mm/dd/yyyy",
+				startDate:"08/23/2021",
+				endDate: "11/30/2021",
+				clearBtn: false,
+				todayBtn: false,
+				todayHighlight: false,
+				showTodayButton: true,
+				orientation: "bottom right",
+				icons: {
+					next: "fa fa-chevron-right",
+					previous: "fa fa-chevron-left",
+					today: 'todayText',
+				},
+
+			});
+
+			$(".datepicker7").datepicker({
+
+				format: "mm/dd/yyyy",
+				startDate:"09/01/2021",
+				endDate: "12/17/2021",
 				clearBtn: false,
 				todayBtn: false,
 				todayHighlight: false,
