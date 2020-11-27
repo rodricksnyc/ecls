@@ -6049,7 +6049,7 @@ font-family: 'Public Sans', sans-serif;
 
 .assessment legend{
   font-size: 18px !important;
-  margin: .275em 0em 1.5em 0em !important;
+  margin: .275em 0em 1em 0em !important;
 font-family: 'Public Sans', sans-serif;
   }
 
@@ -6067,6 +6067,13 @@ font-family: 'Public Sans', sans-serif;
     margin:2em 0em
   }
 
+.assessment .form-row label {
+  font-size:0px
+}
+.assessment .form-row {
+margin-top: -1em;
+
+}
 
  .one input[type="checkbox"] + label.blueBox::before {
   outline: none !important;
