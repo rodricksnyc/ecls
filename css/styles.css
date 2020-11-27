@@ -1285,7 +1285,7 @@ padding: 0em 2em
   top: 0;
   width: 18px;
 }
-.customRadio label.blue {
+.customRadio label {
   padding: 1px 0px 0px 25px;
   font-size: 15px !important;
   font-weight: 300 !important;
@@ -6049,7 +6049,7 @@ font-family: 'Public Sans', sans-serif;
 
 .assessment legend{
   font-size: 18px !important;
-  margin: 0em 0em .75em 0em !important;
+  margin: 0em 0em .5em 0em !important;
   font-family: 'Public Sans', sans-serif;
 }
 
@@ -6121,16 +6121,78 @@ font-family: 'Public Sans', sans-serif;
 }
 
 
-.saveAssessment .mode label.error {
+
+
+.assessment .error{
+font-size: 12px !important;
+color: #CC473A !important;
+font-family: 'Public Sans' !important;
+background: transparent !important;
+position: relative;
+
+}
+
+
+div[for="secondGrade"],
+div[for="kindergarten"],
+div[for="firstGrade"],
+div[for="location"],
+div[for="directions"],
+div[for="notes"]{
+  font-size: 12px !important;
+  color: #CC473A !important;
+  font-family: 'Public Sans' !important;
+  background: transparent !important;
+
+    position: relative;
+    top: -15px;
+    left: 30px;
+}
+
+
+
+div[for="grade-level"]{
+  font-size: 12px !important;
+  color: #CC473A !important;
+  font-family: 'Public Sans' !important;
+  background: transparent !important;
+
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+
+
+
+
+
+.assessment .mode .error {
     font-size: 12px !important;
     color: #CC473A !important;
     min-width: 0;
     margin-top: 0em;
     background: transparent !important;
-    position: relative;
-    bottom: -36px;
-    left: 0;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+
 }
+
+
+
+div[for="yesNo1"],
+div[for="yesNo2"],
+div[for="yesNo3"],
+div[for="yesNo4"],
+div[for="yesNo5"]{
+  font-size: 12px !important;
+  color: #CC473A !important;
+  font-family: 'Public Sans' !important;
+  background: transparent !important;
+  position: absolute !important;
+
+}
+
 
 .one input[type="checkbox"] + label.blueBox::before {
   outline: none !important;

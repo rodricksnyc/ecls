@@ -86,7 +86,10 @@ $('document').ready(function(){
 
 
 			$(".schoolAssessment").validate(
-				{
+				{  errorElement: 'div',
+        errorPlacement: function(error, element) {
+            error.insertAfter(element.parent());
+        },
 					rules:
 					{
 						yesNo1:
@@ -243,8 +246,13 @@ $('document').ready(function(){
 
 				});
 
-
-
+// $('.saveAssessment').click( function(e) {
+// if ($('.form-check').hasClass('customRadio')) {
+// console.log('yes')
+// $(this).closest('div.error').addClass('radio')
+// }
+//
+// })
 
 
 			$('.saveInformation').click( function(e) {
