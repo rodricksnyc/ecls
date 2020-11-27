@@ -123,20 +123,29 @@ $('document').ready(function(){
 					},
 					kindergarten:
 					{
-						required: true
+						required: true,
+						maxlength: 3,
+					  minlength:1,
+					  digits: true
 
 
 					},
 
 					firstGrade:
 					{
-						required: true
+						required: true,
+						maxlength: 3,
+						minlength:1,
+						digits: true
 
 
 					},
 					secondGrade:
 					{
-						required: true
+						required: true,
+						maxlength: 3,
+						minlength:1,
+						digits: true
 
 
 					},
@@ -245,14 +254,6 @@ $('document').ready(function(){
 				}
 
 			});
-
-			// $('.saveAssessment').click( function(e) {
-			// if ($('.form-check').hasClass('customRadio')) {
-			// console.log('yes')
-			// $(this).closest('div.error').addClass('radio')
-			// }
-			//
-			// })
 
 
 			$('.saveInformation').click( function(e) {
