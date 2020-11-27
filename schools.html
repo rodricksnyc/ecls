@@ -914,19 +914,19 @@ left:0
 
 																				<fieldset>
 																					<legend id="SB_4">3a. Number of Kindergartners</legend>
-																					<input id="kindergarten" placeholder="" type="text" class="form-control col-2 offset-lg-1" size="6" name="kindergarten" value="" maxlength="4">
+																					<input id="kindergarten" placeholder="" type="text" class="form-control col-2" size="6" name="kindergarten" value="" maxlength="4">
 																				</fieldset>
 
 																				<fieldset>
 																					<legend id="SB_5">3b. Number of First graders</legend>
-																					<input id="first-grade" placeholder="" type="text" class="form-control col-2 offset-lg-1" size="6" name="first-grade" value="" maxlength="4">
+																					<input id="first-grade" placeholder="" type="text" class="form-control col-2" size="6" name="first-grade" value="" maxlength="4">
 																				</fieldset>
 
 
 
 																				<fieldset>
 																					<legend id="SB_6">3c. Number of Second graders</legend>
-																					<input id="second-grade" placeholder="" type="text" class="form-control col-2 offset-lg-1" size="6" name="second-grade" value="" maxlength="4">
+																					<input id="second-grade" placeholder="" type="text" class="form-control col-2" size="6" name="second-grade" value="" maxlength="4">
 																				</fieldset>
 
 																				<fieldset>
@@ -961,10 +961,10 @@ left:0
 
 																					</div>
 
-																							</fieldset>
+																				</fieldset>
 
-																					<fieldset>
-																						<legend id="SB_8">5a. First day of classes</legend>
+																				<fieldset>
+																					<legend id="SB_8">5a. First day of classes</legend>
 																					<div class="form-row">
 
 																						<div class="col-lg-3">
@@ -986,10 +986,222 @@ left:0
 
 																				<fieldset>
 																					<legend id="SB_9">5b. Last day of classes</legend>
+																					<div class="form-row">
+
+																						<div class="col-lg-3">
+
+
+																							<div class="form-group input-group date">
+																								<input type="text" class="form-control datepicker2 position-relative" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
+																								<span class="input-group-text">
+																									<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																								</span>
+																							</div>
+
+
+																						</div>
+
+																					</div>
+
+																				</fieldset>
+
+
+																				<fieldset>
+																					<legend id="SB_10">6. Highest Grade Level</legend>
+																					<div class="form-group">
+
+																						<select id="grade-level" class="form-control col-lg-1 result required" name="result" required="">
+
+																							<option value=""></option>
+																							<option value="one">1st grade</option>
+																							<option value="two">2nd grade</option>
+																							<option value="three">3rd grade</option>
+																							<option value="four">4th grade</option>
+																							<option value="five">5th grade</option>
+																							<option value="six">6th grade</option>
+																							<option value="seven">7th grade</option>
+																							<option value="eight">8th grade</option>
+																							<option value="nine">9th grade</option>
+																							<option value="ten">10th grade</option>
+																							<option value="eleven">11th grade</option>
+																							<option value="twelve">12th grade</option>
+
+																						</select>
+
+																					</div>
+																				</fieldset>
+
+																				<fieldset>
+																					<legend id="SB_11">7a. Consent type</legend>
+
+																					<div class="btn-group col-6" data-toggle="buttons">
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option20" autocomplete="off">EXPLICIT
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option21" autocomplete="off">IMPLICIT
+																						</label>
+
+																					</div>
+
+																				</fieldset>
+
+																				<fieldset>
+																					<legend id="SB_12">7b. Consent Collection Mode</legend>
+
+																					<div class="btn-group col-6" data-toggle="buttons">
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option22" autocomplete="off">ELECTRONIC
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option23" autocomplete="off">PAPER
+																						</label>
+
+																					</div>
+
+																				</fieldset>
+
+
+																				<fieldset>
+																					<legend id="SB_13">7c. Consent Distribution Method</legend>
+
+																					<div class="btn-group col-6" data-toggle="buttons">
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option24" autocomplete="off">ECLS STAFF
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option25" autocomplete="off">SCHOOL STAFF
+																						</label>
+
+																					</div>
+
+																				</fieldset>
+
+																				<fieldset>
+																					<legend id="SB_14">8. Incentive Rule</legend>
+
+																				<div class="btn-group col-6" data-toggle="buttons">
+																						<label class="btn btn-primary active">
+																							<input type="radio" name="options" id="option26" autocomplete="off" checked="">INCENTIVES<br>ALLOWED
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option27" autocomplete="off">INCENTIVES<br>PAYABLE TO SCHOOL
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option28" autocomplete="off">NO INCENTIVES
+																						</label>
+																					</div>
+																				</fieldset>
+
+
+																				<fieldset>
+																					<legend id="SB_14">9. Surveys Allowed?</legend>
+
+																					<div class="form-check form-check-inline customRadio">
+																						<input class="form-check-input" type="radio" id="inlineRadio20" value="option1" name="phone">
+																						<label class="form-check-label blue" for="inlineRadio20">Yes</label>
+																					</div>
+																					<div class="form-check form-check-inline customRadio">
+																						<input class="form-check-input" type="radio" id="inlineRadio21" value="option2" name="phone">
+																						<label class="form-check-label blue" for="inlineRadio21">No</label>
+																					</div>
+
+																				</fieldset>
+
+
+																				<fieldset>
+																					<legend id="SB_15">10. School holidays/activities</legend>
+																					<div class="form-row">
+
+																						<div class="col-lg-3">
+
+																							<div class="form-group input-group date">
+																								<input type="text" class="form-control datepicker2 position-relative" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
+																								<span class="input-group-text">
+																									<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																								</span>
+																							</div>
+
+
+																						</div>
+
+																					</div>
+
+																				</fieldset>
+
+																				<fieldset>
+																					<legend id="SB_16">11a. Preassessment Call or Visit</legend>
+
+																					<div class="btn-group col-6" data-toggle="buttons">
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option30" autocomplete="off">CALL
+																						</label>
+																						<label class="btn btn-primary">
+																							<input type="radio" name="options" id="option31" autocomplete="off">VISIT
+																						</label>
+
+																					</div>
+
+																				</fieldset>
+
+																				<fieldset>
+																					<legend id="SB_17">11b. Preassessment Date and Time</legend>
+
+																				<div class="form-row">
+																					<div class="col-lg-3 position-relative">
+																						<label for="datepicker">Date</label>
+
+																						<div class="form-group input-group date">
+																							<input type="text" class="form-control datepicker2 position-relative" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
+																							<span class="input-group-text">
+																								<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																							</span>
+																						</div>
+
+
+
+																					</div>
+																					<div class="col-lg-3">
+																						<label for="timepicker">Time</label>
+																						<div class="form-group input-group time">
+																							<input type="text" class="form-control timepicker" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time" required>
+																							<span class="input-group-append input-group-addon">
+																								<span class="input-group-text">
+																									<i class="far fa-clock darkBlue moveLeft"></i>
+																								</span>
+																							</span>
+																						</div>
+																					</div>
+
+																				</div>
+																			</fieldset>
+
+
+																			<fieldset>
+																				<legend id="SB_18">12a. First day of Assessments</legend>
 																				<div class="form-row">
 
 																					<div class="col-lg-3">
 
+																						<div class="form-group input-group date">
+																							<input type="text" class="form-control datepicker2 position-relative" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
+																							<span class="input-group-text">
+																								<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																							</span>
+																						</div>
+
+
+																					</div>
+
+																				</div>
+
+																			</fieldset>
+
+																			<fieldset>
+																				<legend id="SB_19">12b. Last day of Assessments</legend>
+																				<div class="form-row">
+
+																					<div class="col-lg-3">
 
 																						<div class="form-group input-group date">
 																							<input type="text" class="form-control datepicker2 position-relative" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
@@ -1007,29 +1219,39 @@ left:0
 
 
 																			<fieldset>
-																				<legend id="SB_10">6. Highest Grade Level</legend>
-																			<div class="form-group">
+																				<legend id="SB_20">12c. Assessment Start Time</legend>
 
-																								<select id="grade-level" class="form-control col-lg-1 result required" name="result" required="">
+																					<div class="col-lg-3">
+																						<label for="timepicker">Start Time</label>
+																						<div class="form-group input-group time">
+																							<input type="text" class="form-control timepicker" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time" required>
+																							<span class="input-group-append input-group-addon">
+																								<span class="input-group-text">
+																									<i class="far fa-clock darkBlue moveLeft"></i>
+																								</span>
+																							</span>
+																						</div>
+																					</div>
 
-																									<option value=""></option>
-																									<option value="one">1st grade</option>
-																									<option value="two">2nd grade</option>
-																									<option value="three">3rd grade</option>
-																									<option value="four">4th grade</option>
-																									<option value="five">5th grade</option>
-																									<option value="six">6th grade</option>
-																									<option value="seven">7th grade</option>
-																									<option value="eight">8th grade</option>
-																									<option value="nine">9th grade</option>
-																									<option value="ten">10th grade</option>
-																									<option value="eleven">11th grade</option>
-																									<option value="twelve">12th grade</option>
 
-																								</select>
+																			</fieldset>
 
-																							</div>
-																						</fieldset>
+																			<fieldset>
+																				<legend id="SB_21">13. Assessment location</legend>
+																				<input id="location" placeholder="" type="text" class="form-control col-6" size="6" name="location" value="" maxlength="4">
+																			</fieldset>
+
+																			<fieldset>
+																				<legend id="SB_22">14. Directions / parking / entrance / special instructions</legend>
+																				<input id="directions" placeholder="" type="text" class="form-control col-6" size="12" name="directions" value="" maxlength="4">
+																			</fieldset>
+
+																			<fieldset>
+																				<legend id="SB_23">15. Notes</legend>
+																				<input id="notes" placeholder="" type="text" class="form-control col-6" size="12" name="notes" value="" maxlength="4">
+																			</fieldset>
+
+
 
 																			</form>
 
