@@ -256,9 +256,27 @@ $('document').ready(function(){
 			});
 
 
-			$('.saveInformation').click( function(e) {
+			$('.saveInformation, .saveAssessment').click( function(e) {
 
 				e.preventDefault()
+
+
+				setTimeout(function () {
+					$('.toast2').css('right', '0px')
+					$('.toast2').removeClass('transparent-opacity').addClass('animated slideInRight')
+				}, 300)
+
+				setTimeout(function () {
+					$('.toast2').removeClass('transparent-opacity').removeClass('animated slideInRight')
+					$('.toast2').addClass('transparent-opacity');
+					$('.toast2').removeClass('animated slideOutRight')
+
+				}, 5000)
+				setTimeout(function () {
+					$('.toast2').css('right', '-335px')
+					$('.toast2').addClass('animated slideOutRight')
+				}, 4900)
+
 			});
 
 			//allowing form to still submit without refreshing page

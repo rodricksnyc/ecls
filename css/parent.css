@@ -804,10 +804,13 @@ body  {
 
 }
 
+@media (min-width:1025px){
+
 .logos a:nth-of-type(2) img {
   min-width: 18em;
 }
 
+}
 
 header .logos a {
   margin-left: 2em;

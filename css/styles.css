@@ -1605,8 +1605,12 @@ body  {
   min-width: 15em;
 }
 
+@media (min-width:1025px){
+
 .logos a:nth-of-type(2) img {
   min-width: 18em;
+}
+
 }
 
 
@@ -4227,6 +4231,26 @@ label.togglePassword {
 }
 
 
+.toast2 {
+  font-family: 'Public Sans', sans-serif;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  padding: 1em;
+  position: fixed;
+  right: -335px;
+  top: 1em;
+  transition: 0.15s ease-in-out;
+  width: 335px;
+  height: 60px;
+  font-size: 17px;
+  background: #00843D;
+  color:white;
+  z-index: 99999999999;
+  opacity: .95
+}
+
+
 
 .emailInfo a {
   color: white;
@@ -6118,7 +6142,7 @@ font-family: 'Public Sans', sans-serif;
   position: relative;
   z-index: 99999999999999999999999999999999999999;
   height: auto !important;
-  padding:.6rem 1.6rem;
+  padding:.2rem 1.6rem;
 
   text-transform: uppercase;
   font-size: 18px;
@@ -6938,7 +6962,14 @@ transform: scale(0.8);
     margin-top: -0px;
   }
 
+  .assessment .l2 {
+    margin-left: 0;
 }
+
+}
+
+
+
 
 @media (max-width: 767px) {
   .activated {
@@ -6951,6 +6982,10 @@ transform: scale(0.8);
     margin-bottom: 0px !important;
 
   }
+
+  .assessment .l2 {
+    margin-left: 0;
+}
 
   .tlModals .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
 
@@ -8285,6 +8320,54 @@ body{
     display: none;
   }
 
+  .has-search .form-control {
+    padding-left: 2.375rem;
+    min-width: 16em;
+}
+
+.negPos {
+    margin-left: 0px !important;
+    margin-right: 0;
+}
+.addBlocks p.black {
+    text-align: center;
+    line-height: 1.1;
+}
+.schoolPage .appendedName, .appendedTitle {
+
+    max-width: 200px;
+
+}
+
+.margin3 {
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+.margin4 {
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+
+.lightGrayBox.lessPadding {
+
+    margin-bottom: 2em;
+}
+
+
+.sAdminBlocks .btn {
+  padding-left:0em
+}
+
+
+.sAdminAttr .col-lg-1 {
+
+    flex: 0 0 10%;
+    max-width: 10%;
+}
+
+
 }
 
 
@@ -8317,9 +8400,19 @@ body{
 }
 
 @media (min-width:768px) and (max-width:991px)  {
+
+
+  .addBlocks p.black {
+      text-align: left;
+      line-height: 1.1;
+  }
   .logo {
     min-width: 10em;
   }
+
+  .sAdminAttr {
+    display: none !important;
+}
 
   .smaller {
 
@@ -8415,6 +8508,10 @@ body{
   .across {
     flex-direction: column;
   }
+
+  .sAdminAttr {
+    display: none !important;
+}
 
   .twenty {
     font-size: 22px;
