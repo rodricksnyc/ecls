@@ -87,172 +87,172 @@ $('document').ready(function(){
 
 			$(".schoolAssessment").validate(
 				{  errorElement: 'div',
-        errorPlacement: function(error, element) {
-            error.insertAfter(element.parent());
-        },
-					rules:
+				errorPlacement: function(error, element) {
+					error.insertAfter(element.parent());
+				},
+				rules:
+				{
+					yesNo1:
 					{
-						yesNo1:
-						{
-							required: true
-						},
-						yesNo2:
-						{
-							required: true
+						required: true
+					},
+					yesNo2:
+					{
+						required: true
 
 
-						},
-						yesNo3:
-						{
-							required: true
+					},
+					yesNo3:
+					{
+						required: true
 
 
-						},
-						yesNo4:
-						{
-							required: true
+					},
+					yesNo4:
+					{
+						required: true
 
 
-						},
+					},
 
-						yesNo5:
-						{
-							required: true
-
-
-						},
-						kindergarten:
-						{
-							required: true
+					yesNo5:
+					{
+						required: true
 
 
-						},
-
-						firstGrade:
-						{
-							required: true
-
-
-						},
-						secondGrade:
-						{
-							required: true
+					},
+					kindergarten:
+					{
+						required: true
 
 
-						},
+					},
 
-						result:
-						{
-							required: true
-
-
-						},
-						date:
-						{
-							required: true
+					firstGrade:
+					{
+						required: true
 
 
-						},
-
-						date2:
-						{
-							required: true
-
-
-						},
-						date3:
-						{
-							required: true
+					},
+					secondGrade:
+					{
+						required: true
 
 
-						},
-						date4:
-						{
-							required: true
+					},
+
+					result:
+					{
+						required: true
 
 
-						},
-						date5:
-						{
-							required: true
+					},
+					date:
+					{
+						required: true
 
 
-						},
-						date6:
-						{
-							required: true
+					},
+
+					date2:
+					{
+						required: true
 
 
-						},
-						time:
-						{
-							required: true
+					},
+					date3:
+					{
+						required: true
 
 
-						},
-						time2:
-						{
-							required: true
+					},
+					date4:
+					{
+						required: true
 
 
-						},
-						time3:
-						{
-							required: true
+					},
+					date5:
+					{
+						required: true
 
 
-						},
-						time4:
-						{
-							required: true
+					},
+					date6:
+					{
+						required: true
 
 
-						},
-						mode:
-						{
-							required: true
-						},
-						mode1:
-						{
-							required: true
-						},
-						mode2:
-						{
-							required: true
-						},
-						mode3:
-						{
-							required: true
-						},
-						mode4:
-						{
-							required: true
-						},
+					},
+					time:
+					{
+						required: true
 
-						location:
-						{
-							required: true
-						},
-						directions:
-						{
-							required: true
-						},
-						notes:
-						{
-							required: true
-						}
 
+					},
+					time2:
+					{
+						required: true
+
+
+					},
+					time3:
+					{
+						required: true
+
+
+					},
+					time4:
+					{
+						required: true
+
+
+					},
+					mode:
+					{
+						required: true
+					},
+					mode1:
+					{
+						required: true
+					},
+					mode2:
+					{
+						required: true
+					},
+					mode3:
+					{
+						required: true
+					},
+					mode4:
+					{
+						required: true
+					},
+
+					location:
+					{
+						required: true
+					},
+					directions:
+					{
+						required: true
+					},
+					notes:
+					{
+						required: true
 					}
 
-				});
+				}
 
-// $('.saveAssessment').click( function(e) {
-// if ($('.form-check').hasClass('customRadio')) {
-// console.log('yes')
-// $(this).closest('div.error').addClass('radio')
-// }
-//
-// })
+			});
+
+			// $('.saveAssessment').click( function(e) {
+			// if ($('.form-check').hasClass('customRadio')) {
+			// console.log('yes')
+			// $(this).closest('div.error').addClass('radio')
+			// }
+			//
+			// })
 
 
 			$('.saveInformation').click( function(e) {
@@ -375,6 +375,20 @@ $('document').ready(function(){
 				}
 
 			})
+
+			$('.schoolAssessment input').change(function () {
+				$('.saveAssessment').removeClass('lightGrayBox').addClass('greenButton')
+				$('.disabledSave').removeAttr('disabled','disabled')
+
+
+			})
+
+
+			$('.schoolAssessment textarea').keydown(function (event) {
+				$('.saveAssessment').removeClass('lightGrayBox').addClass('greenButton')
+				$('.disabledSave').removeAttr('disabled','disabled')
+
+			});
 
 			// document.querySelector(".saveInformation").addEventListener("click", function() {
 			// 	swal({
