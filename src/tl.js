@@ -111,7 +111,7 @@ $('document').ready(function(){
 
 
 						},
-						
+
 						yesNo5:
 						{
 							required: true
@@ -150,13 +150,66 @@ $('document').ready(function(){
 
 
 						},
+
+						date2:
+						{
+							required: true
+
+
+						},
+						date3:
+						{
+							required: true
+
+
+						},
+						date4:
+						{
+							required: true
+
+
+						},
+						date5:
+						{
+							required: true
+
+
+						},
+						date6:
+						{
+							required: true
+
+
+						},
 						time:
 						{
 							required: true
 
 
 						},
+						time2:
+						{
+							required: true
+
+
+						},
+						time3:
+						{
+							required: true
+
+
+						},
+						time4:
+						{
+							required: true
+
+
+						},
 						mode:
+						{
+							required: true
+						},
+						mode1:
 						{
 							required: true
 						},
@@ -172,10 +225,7 @@ $('document').ready(function(){
 						{
 							required: true
 						},
-						mode5:
-						{
-							required: true
-						},
+
 						location:
 						{
 							required: true
@@ -341,7 +391,7 @@ $('document').ready(function(){
 
 				if($(".mode .error").is(':visible')) {
 
-					$(".mode .error").hide()
+					$(this).closest('fieldset').find(".mode .error").hide()
 
 				}
 
