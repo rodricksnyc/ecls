@@ -85,6 +85,116 @@ $('document').ready(function(){
 
 
 
+			$(".schoolAssessment").validate(
+				{
+					rules:
+					{
+						yesNo1:
+						{
+							required: true
+						},
+						yesNo2:
+						{
+							required: true
+
+
+						},
+						yesNo3:
+						{
+							required: true
+
+
+						},
+						yesNo4:
+						{
+							required: true
+
+
+						},
+						
+						yesNo5:
+						{
+							required: true
+
+
+						},
+						kindergarten:
+						{
+							required: true
+
+
+						},
+
+						firstGrade:
+						{
+							required: true
+
+
+						},
+						secondGrade:
+						{
+							required: true
+
+
+						},
+
+						result:
+						{
+							required: true
+
+
+						},
+						date:
+						{
+							required: true
+
+
+						},
+						time:
+						{
+							required: true
+
+
+						},
+						mode:
+						{
+							required: true
+						},
+						mode2:
+						{
+							required: true
+						},
+						mode3:
+						{
+							required: true
+						},
+						mode4:
+						{
+							required: true
+						},
+						mode5:
+						{
+							required: true
+						},
+						location:
+						{
+							required: true
+						},
+						directions:
+						{
+							required: true
+						},
+						notes:
+						{
+							required: true
+						}
+
+					}
+
+				});
+
+
+
 
 
 			$('.saveInformation').click( function(e) {
@@ -146,7 +256,7 @@ $('document').ready(function(){
 
 
 			$(".datepicker2").datepicker({
-			
+
 				format: "dd/mm/yyyy",
 				startDate:"01/01/2021",
 				endDate: "30/11/2021",
@@ -186,6 +296,22 @@ $('document').ready(function(){
 				if ($('.informationForm .form-control').val() == '')  {
 
 					$('.saveInformation').removeClass('lightGrayBox').addClass('greenButton')
+					$('.disabledSave').removeAttr('disabled','disabled')
+
+				}
+
+			})
+
+
+			$('.schoolAssessment .form-control').keydown(function (event) {
+				if (!$('.form-control').val() == '')  {
+
+
+				}
+
+				if ($('.schoolAssessment .form-control').val() == '')  {
+
+					$('.saveAssessment').removeClass('lightGrayBox').addClass('greenButton')
 					$('.disabledSave').removeAttr('disabled','disabled')
 
 				}
