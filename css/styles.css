@@ -6049,7 +6049,7 @@ font-family: 'Public Sans', sans-serif;
 
 .assessment legend{
   font-size: 18px !important;
-  margin: .275em 0em 1em 0em !important;
+    margin: 0em 0em .75em 0em !important;
 font-family: 'Public Sans', sans-serif;
   }
 
@@ -6073,6 +6073,35 @@ font-family: 'Public Sans', sans-serif;
 .assessment .form-row {
 margin-top: -1em;
 
+}
+
+.assessment .l2{
+    margin-left: 2rem!important;
+}
+
+.assessment .btn-group>.btn:not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: transparent;
+    color: #00539f;
+    border: 1px solid;
+    font-family: 'Public Sans' !important;
+    font-size: 13px;
+    width: auto;
+    padding: .7em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border-radius: 0;
+}
+
+.assessment  .darkGreen {
+    color: #00843D;
+    font-size: 20px;
+    margin: 0em;
+    font-weight:600;
+    font-family: kepler-std, serif;
 }
 
  .one input[type="checkbox"] + label.blueBox::before {
