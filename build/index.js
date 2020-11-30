@@ -2161,11 +2161,21 @@ $(document).ready(function () {
 	$(".cube").on("keyup", function (e) {
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 9) {
-			$(this).find('.greenCube').css('outline', 'dashed 3px #4599ff');
+			$(this).find('.greenCube, .blueCube').css('outline', 'dashed 3px #4599ff');
 		}
 	});
 	$(".cube").on('focusout', function () {
-		$(this).find('.greenCube').css('outline', 'none');
+		$(this).find('.greenCube, .blueCube').css('outline', 'none');
+	});
+
+	$(".toTL").on("keyup", function (e) {
+		var code = e.keyCode ? e.keyCode : e.which;
+		if (code == 9) {
+			$(this).find('.circle').css('outline', 'dashed 3px #4599ff');
+		}
+	});
+	$(".toTL").on('focusout', function () {
+		$(this).find('.circle').css('outline', 'none');
 	});
 
 	$(".form-check").on("keyup", function (e) {
