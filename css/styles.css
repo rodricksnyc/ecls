@@ -382,7 +382,8 @@ textarea::placeholder {
 .slideOutLeft .greenCube, .slideOutLeft .blueCube{
   padding: .6em 1.6em;
   width: 150px;
-  margin-bottom: .6em;
+  margin-bottom: 0em;
+  margin-top: .6em;
 }
 .slideOutLeft .greenCube img, .slideOutLeft .blueCube img{
   width: 4em;
@@ -443,7 +444,7 @@ align-items: center;
   padding: 0;
   width: 80px;
   height: 46px;
-  margin: .4em 0em 2em 0em;
+  margin: .4em 0em 1.6em 0em;
   text-align: center;
 
 }
