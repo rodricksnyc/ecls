@@ -270,14 +270,14 @@ textarea::placeholder {
 }
 
 .blue-circle {
-    position: absolute;
-    height: 34px;
-    width: 34px;
-    border-radius: 50%;
-    background: #003463;
-    left: 1em;
-    top: calc(50% - 17px);
-    opacity: .8;
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: #003463;
+  left: 1em;
+  top: calc(50% - 17px);
+  opacity: .8;
 }
 
 .blue-circle i {
@@ -1251,13 +1251,14 @@ textarea {
 }
 
 .reportsBlocks {
-    margin-bottom: 1em;
-    background: white;
-    padding: 1em 0em;
-    -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    position: relative;
+  margin-bottom: 1em;
+  background: white;
+  padding: 1em 0em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
+  min-height: 4.5em;
 }
 
 
@@ -1600,9 +1601,9 @@ header a:hover {
   box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
   background: #e6e6e6;
   height: 4em;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -1649,9 +1650,9 @@ body  {
 
 @media (min-width:1025px){
 
-.logos a:nth-of-type(2) img {
-  min-width: 18em;
-}
+  .logos a:nth-of-type(2) img {
+    min-width: 18em;
+  }
 
 }
 
@@ -6040,8 +6041,40 @@ font-family: 'Public Sans', sans-serif;
   margin-top:0em;
 }
 
+.reports .form-group label {
+  color: black;
+  font-family: 'Public Sans' !important;
+  position: absolute;
+  background: white;
+  top: -8px;
+  left: 10px;
+  padding: 0px 8px;
+  font-size: 17px;
+  color: #576f7f;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+
+}
+
+.reports  .form-control {
+  height: auto;
+  padding: .5em 1em;
+  font-size: 15px;
+  border-radius: 0;
+  border: 1px solid black;
+  color: black;
+  font-family: 'Public Sans' !important;
+}
+
+.reports .form-group {
+  margin-bottom: 0;
+  padding-left: 0px;
+  margin-left: 10px;
+}
+
 .reports .form-row {
-      align-items: center;
+  align-items: center;
 }
 
 .reports .form-row .plum {
@@ -6050,69 +6083,78 @@ font-family: 'Public Sans', sans-serif;
   font-weight: 600;
   line-height: 1;
 }
-.reports .form-row .col-lg-6:last-child {
-    border-left: 1px solid #576f7f;
-}
+
 .reports .one label {
-    color: #576f7f;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    margin: 0em;
-    padding: 0em;
-    padding-left: 0em;
-    margin-top: -1em;
-    /* position: absolute; */
-    /* top: -197px; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: #576f7f;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0em;
+  padding: 0em;
+  padding-left: 0em;
+  margin-top: -1em;
+  /* position: absolute; */
+  /* top: -197px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .reports .one input[type="checkbox"] + label::before {
-    border-color: #00539f;
-    background: white;
-    border-radius: 0;
+  border-color: #00539f;
+  background: white;
+  border-radius: 0;
 }
 
 .reports .one input[type="checkbox"]:checked + label::after, .reports .one input[type="checkbox"]:checked + label::after {
-    color: #00539f;
+  color: #00539f;
+}
+
+.reportsBlocks:after {
+  content:"";
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid #d1d3d4;
+  /* transform: translate(-50%); */
 }
 
 
 .reports .one label::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 30%;
-    margin-left: 0px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: #fff;
-    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
-    top: 22px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30%;
+  margin-left: 0px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  top: 22px;
 }
 
 
 .reports .one label::after {
-    display: inline-block;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 34%;
-    top: 18px;
-    /* margin-left: -17px; */
-    padding-left: 0px;
-    padding-top: 0px;
-    font-size: 20px;
-    color: black;
-    font-weight: 100;
-    padding: 0px;
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 34%;
+  top: 18px;
+  /* margin-left: -17px; */
+  padding-left: 0px;
+  padding-top: 0px;
+  font-size: 20px;
+  color: black;
+  font-weight: 100;
+  padding: 0px;
 }
 
 
@@ -6273,11 +6315,11 @@ font-family: 'Public Sans', sans-serif;
 
 
 .assessment .error{
-font-size: 12px !important;
-color: #CC473A !important;
-font-family: 'Public Sans' !important;
-background: transparent !important;
-position: relative;
+  font-size: 12px !important;
+  color: #CC473A !important;
+  font-family: 'Public Sans' !important;
+  background: transparent !important;
+  position: relative;
 
 }
 
@@ -6293,9 +6335,9 @@ div[for="notes"]{
   font-family: 'Public Sans' !important;
   background: transparent !important;
 
-    position: relative;
-    top: -15px;
-    left: 30px;
+  position: relative;
+  top: -15px;
+  left: 30px;
 }
 
 
@@ -6306,9 +6348,9 @@ div[for="grade-level"]{
   font-family: 'Public Sans' !important;
   background: transparent !important;
 
-    position: relative;
-    top: 15px;
-    left: 30px;
+  position: relative;
+  top: 15px;
+  left: 30px;
 }
 
 
@@ -6316,14 +6358,14 @@ div[for="grade-level"]{
 
 
 .assessment .mode .error {
-    font-size: 12px !important;
-    color: #CC473A !important;
-    min-width: 0;
-    margin-top: 0em;
-    background: transparent !important;
-    position: absolute;
-    bottom: -20px;
-    left: 0px;
+  font-size: 12px !important;
+  color: #CC473A !important;
+  min-width: 0;
+  margin-top: 0em;
+  background: transparent !important;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
 
 }
 
@@ -7084,7 +7126,7 @@ transform: scale(0.8);
 
   .assessment .l2 {
     margin-left: 0;
-}
+  }
 
 }
 
@@ -7105,7 +7147,7 @@ transform: scale(0.8);
 
   .assessment .l2 {
     margin-left: 0;
-}
+  }
 
   .tlModals .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
 
@@ -8443,49 +8485,49 @@ body{
   .has-search .form-control {
     padding-left: 2.375rem;
     min-width: 16em;
-}
+  }
 
-.negPos {
+  .negPos {
     margin-left: 0px !important;
     margin-right: 0;
-}
-.addBlocks p.black {
+  }
+  .addBlocks p.black {
     text-align: center;
     line-height: 1.1;
-}
-.schoolPage .appendedName, .appendedTitle {
+  }
+  .schoolPage .appendedName, .appendedTitle {
 
     max-width: 200px;
 
-}
+  }
 
-.margin3 {
+  .margin3 {
     margin-left: 0em;
     margin-right: 0em;
-}
+  }
 
-.margin4 {
+  .margin4 {
     margin-left: 0em;
     margin-right: 0em;
-}
+  }
 
 
-.lightGrayBox.lessPadding {
+  .lightGrayBox.lessPadding {
 
     margin-bottom: 2em;
-}
+  }
 
 
-.sAdminBlocks .btn {
-  padding-left:0em
-}
+  .sAdminBlocks .btn {
+    padding-left:0em
+  }
 
 
-.sAdminAttr .col-lg-1 {
+  .sAdminAttr .col-lg-1 {
 
     flex: 0 0 10%;
     max-width: 10%;
-}
+  }
 
 
 }
@@ -8523,8 +8565,8 @@ body{
 
 
   .addBlocks p.black {
-      text-align: left;
-      line-height: 1.1;
+    text-align: left;
+    line-height: 1.1;
   }
   .logo {
     min-width: 10em;
@@ -8532,7 +8574,7 @@ body{
 
   .sAdminAttr {
     display: none !important;
-}
+  }
 
   .smaller {
 
@@ -8631,7 +8673,7 @@ body{
 
   .sAdminAttr {
     display: none !important;
-}
+  }
 
   .twenty {
     font-size: 22px;
