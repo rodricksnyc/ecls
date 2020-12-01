@@ -2541,6 +2541,14 @@ h6.gray {
   text-align: center
 }
 
+.submitChildList {
+
+}
+
+.largest{
+  font-size:1em !important
+}
+
 .teacher, .child {
   margin-bottom:1em;
   background: white;
@@ -7158,7 +7166,7 @@ transform: scale(0.8);
 
 
   .greenCube {
-  
+
       padding: 1em 1.4em;
 
     }
