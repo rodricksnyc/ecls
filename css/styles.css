@@ -6043,7 +6043,7 @@ font-family: 'Public Sans', sans-serif;
   margin-top:0em;
 }
 
-.reports .form-group label {
+.reportPage .form-group label {
   color: black;
   font-family: 'Public Sans' !important;
   position: absolute;
@@ -6059,7 +6059,7 @@ font-family: 'Public Sans', sans-serif;
 
 }
 
-.reports  .form-control {
+.reportPage  .form-control {
   height: auto;
   padding: .5em 1em;
   font-size: 15px;
@@ -6069,24 +6069,24 @@ font-family: 'Public Sans', sans-serif;
   font-family: 'Public Sans' !important;
 }
 
-.reports .form-group {
+.reportPage .form-group {
   margin-bottom: 0;
   padding-left: 0px;
   margin-left: 10px;
 }
 
-.reports .form-row {
+.reportPage .form-row {
   align-items: center;
 }
 
-.reports .form-row .plum {
+.reportPage .form-row .plum {
   margin-bottom:0em;
   padding-left:.5em;
   font-weight: 600;
   line-height: 1;
 }
 
-.reports .one label {
+.reportPage .one label {
   color: #576f7f;
   font-family: 'Public Sans', sans-serif;
   font-weight: 300;
@@ -6103,13 +6103,13 @@ font-family: 'Public Sans', sans-serif;
   align-items: center;
 }
 
-.reports .one input[type="checkbox"] + label::before {
+.reportPage .one input[type="checkbox"] + label::before {
   border-color: #00539f;
   background: white;
   border-radius: 0;
 }
 
-.reports .one input[type="checkbox"]:checked + label::after, .reports .one input[type="checkbox"]:checked + label::after {
+.reportPage .one input[type="checkbox"]:checked + label::after, .reports .one input[type="checkbox"]:checked + label::after {
   color: #00539f;
 }
 
@@ -6125,7 +6125,7 @@ font-family: 'Public Sans', sans-serif;
 }
 
 
-.reports .one label::before {
+.reportPage .one label::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -6143,7 +6143,7 @@ font-family: 'Public Sans', sans-serif;
 }
 
 
-.reports .one label::after {
+.reportPage .one label::after {
   display: inline-block;
   position: absolute;
   width: 25px;
@@ -6159,7 +6159,7 @@ font-family: 'Public Sans', sans-serif;
   padding: 0px;
 }
 
-.reports .lightGrayColor {
+.reportPage .lightGrayColor {
   padding: .4rem 1.6rem;
 }
 

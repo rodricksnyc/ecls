@@ -502,7 +502,7 @@ $('document').ready(function(){
 			});
 
 
-			$('.reports input').change(function () {
+			$('.reportPage input').change(function () {
 				if ($('.form-check-input').is(':checked')) {
 					$('.runReports').removeClass('lightGrayColor').addClass('greenButton')
 					$('.disabledSave').removeAttr('disabled','disabled')
