@@ -1728,10 +1728,9 @@ $('.sortDate').on('click', function() {
 	if (!$('.sortDate').hasClass('ascending')) {
 		console.log("nope")
 		var ascendOrderedDivs10 = $('.schoolBlocks').sort(function(a, b) {
-			return $(a).find(".aDate").text().toString().localeCompare($(b).find(".aDate").text().toString(), undefined, {
-				numeric: true,
-				sensitivity: 'base'
-			});
+
+			return parseFloat($(a).find('.aDate').text()) > parseFloat($(b).find('.aDate').text()) ? 1 : -1;
+
 		});
 		$(".renderSchools").html(ascendOrderedDivs10);
 		setTimeout(function() {
@@ -1747,12 +1746,11 @@ $('.sortDate').on('click', function() {
 	if ($('.sortDate').hasClass('ascending')) {
 				console.log("yup")
 		var descendOrderedDivs10 = $('.schoolBlocks').sort(function(a, b) {
-			return $(b).find(".aDate").text().toString().localeCompare($(a).find(".aDate").text().toString(), undefined, {
-				numeric: true,
-				sensitivity: 'base'
-			});
+
+				return parseFloat($(a).find('.aDate').text()) > parseFloat($(b).find('.aDate').text()) ? -1 : 1;
+
 		});
-		$(".renderDistricts").html(descendOrderedDivs10);
+		$(".renderSchools").html(descendOrderedDivs10);
 		setTimeout(function() {
 			$('.sortDate').removeClass('ascending')
 		}, 500)
