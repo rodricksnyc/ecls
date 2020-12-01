@@ -501,6 +501,18 @@ $('document').ready(function(){
 
 			});
 
+
+			$('.reports input').change(function () {
+				if ($('.form-check-input').is(':checked')) {
+					$('.runReports').removeClass('lightGrayColor').addClass('greenButton')
+					$('.disabledSave').removeAttr('disabled','disabled')
+				}
+				else {
+					$('.runReports').addClass('lightGrayColor').removeClass('greenButton')
+					$('.disabledSave').attr('disabled','disabled')
+				}
+			})
+
 			// document.querySelector(".saveInformation").addEventListener("click", function() {
 			// 	swal({
 			// 		title: "Are you sure you want to save?",

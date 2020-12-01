@@ -2992,6 +2992,8 @@ h6.darkBlue {
   color: white;
   text-transform: uppercase;
   height: 2.4rem;
+  outline: none;
+    border: none;
 }
 
 .greenButton:hover {
@@ -6157,6 +6159,27 @@ font-family: 'Public Sans', sans-serif;
   padding: 0px;
 }
 
+.reports .lightGrayColor {
+  padding: .4rem 1.6rem;
+}
+
+.reportsBlocks.skinny .form-row .col-lg-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  justify-content: flex-start !important;
+}
+
+.reportsBlocks.skinny .form-row .col-lg-6:last-child {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top:1em
+}
+
+.reportsBlocks.skinny:after {
+  border-left: none;
+
+}
+
 @media (max-width:1200px) {
   .reportsBlocks .form-row .col-lg-6 {
     flex: 0 0 100%;
@@ -6167,14 +6190,13 @@ font-family: 'Public Sans', sans-serif;
   .reportsBlocks .form-row .col-lg-6:last-child {
     flex: 0 0 100%;
     max-width: 100%;
-  margin-top:1em
+    margin-top:1em
   }
 
   .reportsBlocks:after {
-
     border-left: none;
 
-}
+  }
 }
 
 @media (max-width:991px){
