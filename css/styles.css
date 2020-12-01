@@ -2542,14 +2542,14 @@ h6.gray {
   text-align: center
 }
 
-.submitChildList .d-flex.justify-content-start.align-items-baseline{
+.submitChildList .d-flex{
 min-height:3em;
 margin-top:1em
 }
 
 .lightGrayBox.submitChildList {
     background: #f6f8f8;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 2em;
     margin-top: 1em;
 }
 
@@ -2559,7 +2559,11 @@ margin-top:1em
     font-size: 16px;
     margin-bottom: 0;
     padding: 0;
-    width: 36%;
+  width:60%;
+}
+
+.submitChildList p.black {
+  width:40%;
 }
 
 .largest{
