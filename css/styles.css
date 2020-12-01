@@ -6050,6 +6050,10 @@ font-family: 'Public Sans', sans-serif;
   margin-top:0em;
 }
 
+.fontZero {
+  font-size:0px
+}
+
 .reportPage .form-group label {
   color: black;
   font-family: 'Public Sans' !important;
