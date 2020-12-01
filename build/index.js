@@ -2982,6 +2982,16 @@ $(document).ready(function () {
 		$('.parents img').attr('src', 'images/img_parents.svg');
 	});
 
+	$('.case').on('mouseenter', function () {
+
+		$('.case img').attr('src', 'images/case-hover.svg');
+	});
+
+	$('.case').on('mouseleave', function () {
+
+		$('.case img').attr('src', 'images/case.svg');
+	});
+
 	$('.documents').on('mouseenter', function () {
 
 		$('.documents img').attr('src', 'images/img_documents-hover.svg');
