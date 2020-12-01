@@ -3451,7 +3451,7 @@ $(".scrollIt").on("click", function(event) {
 
 		if ($(document).innerWidth() < 1525 && $(document).innerWidth() > 1375) {
 
-			$( ".box-outer, .reports" ).animate({
+			$( ".box-outer, .reportPage" ).animate({
 				'margin-left': "60px"
 			}, 200, function() {
 
