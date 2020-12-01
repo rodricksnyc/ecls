@@ -1614,6 +1614,29 @@ header a:hover {
 
 }
 
+
+ .nav-tabs .nav-link.active {
+    color: #071D49;
+    background-color: #fbb03b !important;
+    border-color: none !important;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-family: 'Public Sans', sans-serif;
+    background: white;
+    padding-top: 1em;
+    margin-bottom: 0em;
+    padding-bottom: 1em;
+    font-size: 17px;
+    border-radius: 0rem;
+    -webkit-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+    -moz-box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+    box-shadow: 0px -7px 27px -9px rgba(173,173,173,0.48);
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .grayBox.second .nav-tabs {
   border-bottom: none;
   width: 100%;
@@ -6211,7 +6234,7 @@ font-family: 'Public Sans', sans-serif;
 }
 
 @media (max-width:991px){
-  .reports {
+  .reportPage {
     margin-left: 12%;
     margin-right: 12%;
   }
@@ -7134,7 +7157,11 @@ transform: scale(0.8);
   }
 
 
+  .greenCube {
+  
+      padding: 1em 1.4em;
 
+    }
 
 }
 
