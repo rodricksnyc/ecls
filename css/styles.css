@@ -943,6 +943,13 @@ i.moveLeft{
 .form-control.disabled{
   border: 1px solid gray;
 }
+
+
+textarea.disabled {
+    border: 1px solid gray !important;
+}
+
+
 .lightGrayBox {
   background: #f6f8f8;
   padding: 2em;
@@ -6509,6 +6516,16 @@ textarea{
 
 .mobile {
   display: none;
+}
+
+.tlModals .one .form-check-input:disabled~.form-check-label {
+    color: black;
+}
+
+.tlModals .one input[type="checkbox"] + label.disabled::before {
+    border-color: gray;
+    background: #f6f8f8;
+    border-radius: 0;
 }
 
 
