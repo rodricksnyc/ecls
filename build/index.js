@@ -2748,6 +2748,8 @@ $(document).ready(function () {
 	$('.close-project').click(function (e) {
 		e.stopPropagation();
 
+		$('.columnCubes a').attr('tabindex', '-1');
+
 		$('.close-project').css('opacity', '0');
 
 		$(".slideOutLeft").animate({
@@ -2784,6 +2786,8 @@ $(document).ready(function () {
 		if (code == 13) {
 			e.stopPropagation();
 
+			$('.columnCubes a').attr('tabindex', '-1');
+
 			$('.close-project').css('opacity', '0');
 
 			$(".slideOutLeft").animate({
@@ -2819,6 +2823,8 @@ $(document).ready(function () {
 	//open project on click
 
 	$('.slideOutLeft').click(function () {
+
+		$('.columnCubes a').attr('tabindex', '1');
 
 		$('.close-project').css('opacity', '1');
 
@@ -2864,6 +2870,8 @@ $(document).ready(function () {
 	$('.projects').on("keyup", function (e) {
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 13) {
+
+			$('.columnCubes a').attr('tabindex', '1');
 
 			$('.close-project').css('opacity', '1');
 
@@ -3025,7 +3033,7 @@ $(document).ready(function () {
 		$('.grayBox.first').fadeOut();
 	});
 
-	$('.renderDistricts').on('keyup', '.goToInfo', function (e) {
+	$(document).on('keyup', '.goToInfo', function (e) {
 		var code = e.keyCode ? e.keyCode : e.which;
 		if (code == 13) {
 
@@ -3093,4 +3101,6 @@ $(document).ready(function () {
 			});
 		}
 	});
+
+	$('.columnCubes a').attr('tabindex', '-1');
 });

@@ -3328,6 +3328,9 @@ $(".scrollIt").on("click", function(event) {
 	$('.close-project').click(function(e) {
 		e.stopPropagation()
 
+
+		$('.columnCubes a').attr('tabindex', '-1')
+
 		$('.close-project').css('opacity', '0')
 
 
@@ -3371,6 +3374,9 @@ $(".scrollIt").on("click", function(event) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 13) {
 			e.stopPropagation()
+
+
+			$('.columnCubes a').attr('tabindex', '-1')
 
 			$('.close-project').css('opacity', '0')
 
@@ -3422,6 +3428,9 @@ $(".scrollIt").on("click", function(event) {
 	//open project on click
 
 	$('.slideOutLeft').click(function() {
+
+
+		$('.columnCubes a').attr('tabindex', '1')
 
 		$('.close-project').css('opacity', '1')
 
@@ -3480,6 +3489,8 @@ $(".scrollIt").on("click", function(event) {
 	$('.projects').on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 13) {
+
+			$('.columnCubes a').attr('tabindex', '1')
 
 			$('.close-project').css('opacity', '1')
 
@@ -3679,7 +3690,7 @@ $(".scrollIt").on("click", function(event) {
 
 
 
-	$('.renderDistricts').on('keyup', '.goToInfo', function(e) {
+	$(document).on('keyup', '.goToInfo', function(e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 13) {
 
@@ -3770,7 +3781,7 @@ $(".scrollIt").on("click", function(event) {
 	});
 
 
-
+$('.columnCubes a').attr('tabindex', '-1')
 
 
 
