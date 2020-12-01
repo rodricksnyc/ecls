@@ -1647,7 +1647,8 @@ header a:hover {
   border-top-right-radius: .25em !important;
   border-bottom-right-radius: .25em !important;
   border-radius: .25rem !important;
-  margin-left:1em !important
+  margin-left:1em !important;
+  color:black !important
 }
 
 .grayBox.second .nav-tabs .nav-item {
