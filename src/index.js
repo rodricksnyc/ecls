@@ -3348,7 +3348,7 @@ $(".scrollIt").on("click", function(event) {
 		$('.close-project').attr('tabindex', '-1')
 		$('.close-project').attr('aria-hidden', 'true')
 
-		if ($(document).innerWidth() < 1525) {
+		if ($(document).innerWidth() < 1600) {
 			$( ".box-outer, .reportPage" ).animate({
 				'margin-left': "0px"
 			}, 160, function() {
@@ -3396,7 +3396,7 @@ $(".scrollIt").on("click", function(event) {
 			$('.close-project').attr('tabindex', '-1')
 			$('.close-project').attr('aria-hidden', 'true')
 
-			if ($(document).innerWidth() < 1525) {
+			if ($(document).innerWidth() < 1600) {
 				$( ".box-outer, .reportPage" ).animate({
 					'margin-left': "0px"
 				}, 160, function() {
