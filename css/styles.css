@@ -8770,7 +8770,7 @@ body{
     padding:0em 6em;
   }
   .container_0, .container_1 {
-    max-width: 920px!important;
+    max-width: 960px!important;
     margin: 0 auto;
   }
 
@@ -9087,6 +9087,7 @@ body{
 
   footer .abso img {
     max-width:120px;
+        max-height: 90px;
   }
 
   footer .abso {
