@@ -2565,7 +2565,9 @@ margin-top:1em
 .lightGrayBox.submitChildList {
     background: #f6f8f8;
     padding: 1em 2em;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
 }
 
 .submitChildList p.purple {
@@ -2579,6 +2581,15 @@ margin-top:1em
 
 .submitChildList p.black {
   width:40%;
+}
+
+
+ul.greenDot{
+    color: black;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
 }
 
 .largest{
@@ -2947,6 +2958,16 @@ h6.plum {
   background: #00539f
 }
 
+
+.blueBottomBar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 6px;
+    background: #00539f;
+}
+
 .feedbackBar h6.darkBlue {
   max-width: 85%;
   font-weight:500
@@ -2988,6 +3009,34 @@ h6.darkBlue {
   top: 26%;
   left: 28%;
   font-size: 31px;
+
+}
+
+.blueCircle2 {
+    position: absolute;
+    border-radius: 50%;
+    background: #00539f;
+    height: 4rem;
+    width: 4rem;
+    left: 15px;
+}
+
+.blueCircle2 i {
+  position: absolute;
+  top: 26%;
+  left:16px;
+  color:white;
+  font-size: 31px;
+
+}
+
+p.scBlock{
+  margin-left:5em;
+    color: black;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 18px;
 
 }
 
