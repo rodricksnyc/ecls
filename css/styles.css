@@ -759,6 +759,18 @@ label.error{
   border: 2px solid #CC473A !important;
 }
 
+
+select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #00539f 60%),
+    linear-gradient(135deg, #00539f 40%, transparent 50%) !important;
+  background-position: calc(100% - 18px) 15px, calc(100% - 8px) 15px, 100% 0;
+  background-size:10px 8px, 10px 8px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .saveInformation{
   position: relative;
   outline: none;
