@@ -738,7 +738,7 @@ label.error{
   font-size: 12px !important;
   color: #CC473A !important;
   /* min-width: 320px !important; */
-  margin-top: 4.5em;
+  margin-top: 5em;
   background: transparent !important;
 
 }
@@ -751,8 +751,8 @@ label.error{
   margin-top: 0em;
   background: transparent !important;
   position: absolute;
-  bottom: -27px;
-  left: 0;
+  bottom: -32px;
+  left: 17px;
 }
 
 .form-control.error {
