@@ -3232,6 +3232,13 @@ p.dark {
   font-size:0px
 }
 
+@media (min-width:1460px){
+.container.bigger {
+  max-width: 1400px;
+}
+
+}
+
 @media (min-width:1200px){
   .max2{
     max-width: 19em;
@@ -3259,9 +3266,7 @@ p.dark {
 
   }
 
-  .container.bigger {
-    max-width: 1250px;
-  }
+
 
 }
 
@@ -6245,6 +6250,13 @@ font-family: 'Public Sans', sans-serif;
   padding-left:.5em;
   font-weight: 600;
   line-height: 1;
+  padding-left: 27px;
+ text-indent: -18px;
+}
+
+.reportPage .form-row .plum.indentMore{
+  padding-left: 32px;
+  text-indent: -26px;
 }
 
 .reportPage .one label {
