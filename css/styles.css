@@ -390,6 +390,9 @@ textarea::placeholder {
 
 }
 
+.columnCubes {
+    padding-bottom: .5em;
+}
 .columnCubes .twenty {
   font-size: 12px;
 
