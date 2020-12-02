@@ -1367,6 +1367,17 @@ padding: 0em 2em
   width: 18px;
   border-radius: 50%;
 }
+
+.customRadio.disabledRadio input + label::before {
+
+  border: 1px solid #666666
+}
+
+
+.customRadio.disabledRadio input + label::after {
+  border: 6px solid #666666
+}
+
 .customRadio input + label::after {
   content: "";
   opacity: 0;
@@ -1377,6 +1388,9 @@ padding: 0em 2em
   top: 5px;
   transition: opacity 0.2s ease-in-out;
 }
+
+
+
 .customRadio input:checked + label::after {
   opacity: 1;
 }
@@ -6257,6 +6271,14 @@ font-family: 'Public Sans', sans-serif;
 .reportPage .form-row .plum.indentMore{
   padding-left: 32px;
   text-indent: -26px;
+}
+
+
+.notEnabled{
+background: #666666 !important;
+color: white !important;
+border-color: #666666 !important;
+
 }
 
 .reportPage .one label {
