@@ -2861,6 +2861,13 @@ $(document).ready(function () {
 			}, 200, function () {});
 		}
 
+		if ($(document).innerWidth() < 1600) {
+
+			$('.reportPage').animate({
+				'margin-left': "180px"
+			}, 200, function () {});
+		}
+
 		setTimeout(function () {
 			$(".slideOutLeft").addClass('open');
 		}, 200);
@@ -2902,6 +2909,9 @@ $(document).ready(function () {
 				}, 200, function () {});
 
 				$('.reportsBlocks').addClass('skinny');
+			}
+
+			if ($(document).innerWidth() < 1600) {
 
 				$('.reportPage').animate({
 					'margin-left': "180px"

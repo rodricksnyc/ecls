@@ -3246,6 +3246,10 @@ p.dark {
 
   }
 
+.container.bigger {
+    max-width: 1250px;
+}
+
 }
 
 @media (max-width:1199px) {

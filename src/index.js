@@ -3477,6 +3477,17 @@ $(".scrollIt").on("click", function(event) {
 
 		}
 
+
+		if ($(document).innerWidth() < 1600 ) {
+
+			$( '.reportPage').animate({
+				'margin-left': "180px"
+			}, 200, function() {
+
+			});
+
+		}
+
 		setTimeout(function() {
 			$( ".slideOutLeft" ).addClass('open')
 		}, 200)
@@ -3528,6 +3539,10 @@ $(".scrollIt").on("click", function(event) {
 				});
 
 				$('.reportsBlocks').addClass('skinny')
+
+			}
+
+			if ($(document).innerWidth() < 1600 ) {
 
 				$( '.reportPage').animate({
 					'margin-left': "180px"
