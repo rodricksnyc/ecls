@@ -682,7 +682,7 @@
 
 																				</div>
 
-																				<div class="d-flex justify-content-center mt-5">
+																				<!-- <div class="d-flex justify-content-center mt-5">
 
 																					<button type="submit" form="newInfo" class="disabledSave lightGrayColor saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information">SAVE <i class="fas fa-save"></i>
 																					</button>
@@ -690,7 +690,7 @@
 																					<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving">CANCEL <i class="fas fa-ban stop"></i>
 																					</button>
 
-																				</div>
+																				</div> -->
 
 																			</fieldset>
 
@@ -857,16 +857,16 @@
 
 																		<div class="toggleDiv">
 
-																			<form class="schoolAssessment" novalidate role="form" method="POST" >
+																			<form  role="form" method="POST" >
 																				<fieldset>
 																					<legend><span class="darkGreen">1.</span> Year-round school?</legend>
 
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input required" type="radio" id="inlineRadio1" name="yesNo1" required>
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio1" name="yesNo1" required>
 																						<label class="form-check-label blue" for="inlineRadio1">Yes</label>
 																					</div>
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input required" type="radio" id="inlineRadio2" name="yesNo1" required>
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio2" name="yesNo1" required>
 																						<label class="form-check-label blue" for="inlineRadio2">No</label>
 																					</div>
 
@@ -876,12 +876,12 @@
 																				<fieldset>
 																					<legend><span class="darkGreen">2a.</span> School Teaches Kindergarten?</legend>
 
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input" type="radio" id="inlineRadio3" name="yesNo2">
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio3" name="yesNo2">
 																						<label class="form-check-label blue" for="inlineRadio3">Yes</label>
 																					</div>
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input" type="radio" id="inlineRadio4"  name="yesNo2">
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio4"  name="yesNo2">
 																						<label class="form-check-label blue" for="inlineRadio4">No</label>
 																					</div>
 
@@ -891,12 +891,12 @@
 																				<fieldset>
 																					<legend><span class="darkGreen">2b.</span> School Teaches First grade?</legend>
 
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input required" type="radio" id="inlineRadio5"  name="yesNo3" required>
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio5"  name="yesNo3" required>
 																						<label class="form-check-label blue" for="inlineRadio5">Yes</label>
 																					</div>
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input required" type="radio" id="inlineRadio6" name="yesNo3" required>
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio6" name="yesNo3" required>
 																						<label class="form-check-label blue" for="inlineRadio6">No</label>
 																					</div>
 
@@ -905,12 +905,12 @@
 																				<fieldset>
 																					<legend><span class="darkGreen">2c.</span> School Teaches Second grade?</legend>
 
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input required" type="radio" id="inlineRadio7" name="yesNo4" required>
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio7" name="yesNo4" required>
 																						<label class="form-check-label blue" for="inlineRadio7">Yes</label>
 																					</div>
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input required" type="radio" id="inlineRadio8" name="yesNo4" required>
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio8" name="yesNo4" required>
 																						<label class="form-check-label blue" for="inlineRadio8">No</label>
 																					</div>
 
@@ -918,19 +918,19 @@
 
 																				<fieldset>
 																					<legend id="SB_4"><span class="darkGreen">3a.</span> Number of Kindergartners</legend>
-																					<input id="kindergarten" type="text" class="form-control col-2 l2 required" size="6" name="kindergarten" maxlength="3" max="300" required>
+																					<input id="kindergarten" type="text" class="form-control col-2 l2 disabled" size="6" name="kindergarten" maxlength="3" max="300" required>
 																				</fieldset>
 
 																				<fieldset>
 																					<legend id="SB_5"><span class="darkGreen">3b.</span> Number of First graders</legend>
-																					<input id="firstGrade" type="text" class="form-control col-2 l2 required" size="6" name="firstGrade" maxlength="3" max="300" required>
+																					<input id="firstGrade" type="text" class="form-control col-2 l2 disabled" size="6" name="firstGrade" maxlength="3" max="300" required>
 																				</fieldset>
 
 
 
 																				<fieldset>
 																					<legend id="SB_6"><span class="darkGreen">3c.</span> Number of Second graders</legend>
-																					<input id="secondGrade" type="text" class="form-control col-2 l2 required" size="6" name="secondGrade" maxlength="3" max="300" required>
+																					<input id="secondGrade" type="text" class="form-control col-2 l2 disabled" size="6" name="secondGrade" maxlength="3" max="300" required>
 																				</fieldset>
 
 																				<fieldset>
@@ -941,10 +941,10 @@
 																						<div class="col-lg-3">
 																							<label for="timepicker">Start Time</label>
 																							<div class="form-group input-group time">
-																								<input type="text" class="form-control timepicker required" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time" required>
+																								<input type="text" class="form-control timepicker disabled" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time" required>
 																								<span class="input-group-append input-group-addon">
 																									<span class="input-group-text">
-																										<i class="far fa-clock darkBlue moveLeft"></i>
+																										<i class="far fa-clock moveLeft"></i>
 																									</span>
 																								</span>
 																							</div>
@@ -954,10 +954,10 @@
 																						<div class="col-lg-3">
 																							<label for="timepicker">End Time</label>
 																							<div class="form-group input-group time">
-																								<input type="text" class="form-control timepicker required" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time2" required>
+																								<input type="text" class="form-control timepicker disabled" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time2" required>
 																								<span class="input-group-append input-group-addon">
 																									<span class="input-group-text">
-																										<i class="far fa-clock darkBlue moveLeft"></i>
+																										<i class="far fa-clock moveLeft"></i>
 																									</span>
 																								</span>
 																							</div>
@@ -974,9 +974,9 @@
 																						<div class="col-lg-3">
 
 																							<div class="form-group input-group date">
-																								<input type="text" class="form-control datepicker3 position-relative required" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date" required>
+																								<input type="text" class="form-control datepicker3 position-relative disabled" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date" required>
 																								<span class="input-group-text">
-																									<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																									<i class="fal fa-calendar-alt moveLeft"></i>
 																								</span>
 																							</div>
 
@@ -995,9 +995,9 @@
 																						<div class="col-lg-3">
 
 																							<div class="form-group input-group date">
-																								<input type="text" class="form-control datepicker4 position-relative required" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date2" required>
+																								<input type="text" class="form-control datepicker4 position-relative disabled" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date2" required>
 																								<span class="input-group-text">
-																									<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																									<i class="fal fa-calendar-alt moveLeft"></i>
 																								</span>
 																							</div>
 
@@ -1013,7 +1013,7 @@
 																					<legend id="SB_10"><span class="darkGreen">6.</span> Highest Grade Level</legend>
 																					<div class="form-row mt-2 l2">
 
-																						<select id="grade-level" class="form-control col-lg-2 result required" name="result" required="required">
+																						<select id="grade-level" class="form-control col-lg-2 result disabled" name="result" required="required">
 
 																							<option value=""></option>
 																							<option value="one">1st grade</option>
@@ -1040,11 +1040,12 @@
 																					<div class="form-row mt-2 l2">
 
 																						<div class="btn-group mode col-lg-9 col-md-12" data-toggle="buttons">
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode1" id="option20" autocomplete="off">EXPLICIT
+																							<label class="btn btn-primary disabled" disabled="disabled">
+																								<input type="radio" name="mode1" id="option20" autocomplete="off" class="disabled">EXPLICIT
 																							</label>
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode1" id="option21" autocomplete="off">IMPLICIT
+
+																							<label class="btn btn-primary disabled" disabled="disabled">
+																								<input type="radio" name="mode1" id="option21" autocomplete="off" class="disabled">IMPLICIT
 																							</label>
 
 																						</div>
@@ -1058,11 +1059,11 @@
 																					<div class="form-row mt-2 l2">
 
 																						<div class="btn-group mode col-lg-9 col-md-12" data-toggle="buttons">
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode2" id="option22" autocomplete="off">ELECTRONIC
+																							<label class="btn btn-primary disabled" disabled="disabled">
+																								<input type="radio" name="mode2" id="option22" autocomplete="off" class="disabled">ELECTRONIC
 																							</label>
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode2" id="option23" autocomplete="off">PAPER
+																							<label class="btn btn-primary disabled" disabled="disabled">
+																								<input type="radio" name="mode2" id="option23" autocomplete="off" class="disabled">PAPER
 																							</label>
 
 																						</div>
@@ -1076,11 +1077,11 @@
 																					<div class="form-row mt-2 l2">
 
 																						<div class="btn-group mode col-lg-9 col-md-12" data-toggle="buttons">
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode3" id="option24" autocomplete="off">ECLS STAFF
+																							<label class="btn btn-primary disabled">
+																								<input type="radio" name="mode3" id="option24" autocomplete="off" class="disabled">ECLS STAFF
 																							</label>
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode3" id="option25" autocomplete="off">SCHOOL STAFF
+																							<label class="btn btn-primary disabled">
+																								<input type="radio" name="mode3" id="option25" autocomplete="off" class="disabled">SCHOOL STAFF
 																							</label>
 
 																						</div>
@@ -1094,14 +1095,14 @@
 																					<div class="form-row mt-2 l2">
 
 																						<div class="btn-group mode col-lg-6 col-md-12" data-toggle="buttons">
-																							<label class="btn btn-primary active">
+																							<label class="btn btn-primary active notEnabled">
 																								<input type="radio" name="mode" id="option26" autocomplete="off" checked="">INCENTIVES<br>ALLOWED
 																							</label>
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode" id="option27" autocomplete="off">INCENTIVES<br>PAYABLE TO SCHOOL
+																							<label class="btn btn-primary disabled">
+																								<input type="radio" name="mode" id="option27" autocomplete="off" class="disabled">INCENTIVES<br>PAYABLE TO SCHOOL
 																							</label>
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode" id="option28" autocomplete="off">NO INCENTIVES
+																							<label class="btn btn-primary disabled">
+																								<input type="radio" name="mode" id="option28" autocomplete="off" class="disabled">NO INCENTIVES
 																							</label>
 																						</div>
 																					</div>
@@ -1111,12 +1112,12 @@
 																				<fieldset>
 																					<legend id="SB_14"><span class="darkGreen">9.</span> Surveys Allowed?</legend>
 
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input required" type="radio" id="inlineRadio20" value="option1" name="yesNo5" required>
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio20" value="option1" name="yesNo5" required>
 																						<label class="form-check-label blue" for="inlineRadio20">Yes</label>
 																					</div>
-																					<div class="form-check form-check-inline customRadio">
-																						<input class="form-check-input required" type="radio" id="inlineRadio21" value="option2" name="yesNo5" required>
+																					<div class="form-check form-check-inline customRadio disabledRadio">
+																						<input class="form-check-input disabled" type="radio" id="inlineRadio21" value="option2" name="yesNo5" required>
 																						<label class="form-check-label blue" for="inlineRadio21">No</label>
 																					</div>
 
@@ -1130,9 +1131,9 @@
 																						<div class="col-lg-3">
 
 																							<div class="form-group input-group date">
-																								<input type="text" class="form-control datepicker5 position-relative required" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date3" required>
+																								<input type="text" class="form-control datepicker5 position-relative disabled" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date3" required>
 																								<span class="input-group-text">
-																									<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																									<i class="fal fa-calendar-alt moveLeft"></i>
 																								</span>
 																							</div>
 
@@ -1149,11 +1150,11 @@
 																					<div class="form-row mt-2 l2">
 
 																						<div class="btn-group mode col-6" data-toggle="buttons">
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode4" id="option30" autocomplete="off">CALL
+																							<label class="btn btn-primary disabled">
+																								<input type="radio" name="mode4" id="option30" autocomplete="off" class="disabled">CALL
 																							</label>
-																							<label class="btn btn-primary">
-																								<input type="radio" name="mode4" id="option31" autocomplete="off">VISIT
+																							<label class="btn btn-primary disabled">
+																								<input type="radio" name="mode4" id="option31" autocomplete="off" class="disabled">VISIT
 																							</label>
 
 																						</div>
@@ -1170,9 +1171,9 @@
 																							<label for="datepicker">Date</label>
 
 																							<div class="form-group input-group date">
-																								<input type="text" class="form-control datepicker6 position-relative required" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date4" required>
+																								<input type="text" class="form-control datepicker6 position-relative disabled" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date4" required>
 																								<span class="input-group-text">
-																									<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																									<i class="fal fa-calendar-alt moveLeft"></i>
 																								</span>
 																							</div>
 
@@ -1182,10 +1183,10 @@
 																						<div class="col-lg-3">
 																							<label for="timepicker">Time</label>
 																							<div class="form-group input-group time">
-																								<input type="text" class="form-control timepicker required" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time3" required>
+																								<input type="text" class="form-control timepicker disabled" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time3" required>
 																								<span class="input-group-append input-group-addon">
 																									<span class="input-group-text">
-																										<i class="far fa-clock darkBlue moveLeft"></i>
+																										<i class="far fa-clock moveLeft"></i>
 																									</span>
 																								</span>
 																							</div>
@@ -1202,9 +1203,9 @@
 																						<div class="col-lg-3">
 
 																							<div class="form-group input-group date">
-																								<input type="text" class="form-control datepicker7 position-relative required" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date5" required>
+																								<input type="text" class="form-control datepicker7 position-relative disabled" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date5" required>
 																								<span class="input-group-text">
-																									<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																									<i class="fal fa-calendar-alt moveLeft"></i>
 																								</span>
 																							</div>
 
@@ -1222,9 +1223,9 @@
 																						<div class="col-lg-3">
 
 																							<div class="form-group input-group date">
-																								<input type="text" class="form-control datepicker7 position-relative required" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date6" required>
+																								<input type="text" class="form-control datepicker7 position-relative disabled" placeholder="MM/DD/2021" autocomplete="off" autofill="off" name="date6" required>
 																								<span class="input-group-text">
-																									<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																									<i class="fal fa-calendar-alt moveLeft"></i>
 																								</span>
 																							</div>
 
@@ -1242,10 +1243,10 @@
 																						<div class="col-lg-3">
 																							<label for="timepicker">Start Time</label>
 																							<div class="form-group input-group time">
-																								<input type="text" class="form-control timepicker required" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time4" required>
+																								<input type="text" class="form-control timepicker disabled" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time4" required>
 																								<span class="input-group-append input-group-addon">
 																									<span class="input-group-text">
-																										<i class="far fa-clock darkBlue moveLeft"></i>
+																										<i class="far fa-clock  moveLeft"></i>
 																									</span>
 																								</span>
 																							</div>
@@ -1256,20 +1257,20 @@
 
 																				<fieldset>
 																					<legend id="SB_21"><span class="darkGreen">13.</span> Assessment location</legend>
-																					<input id="location" type="text" class="form-control col-lg-7 col-md-12 l2 required" size="6" name="location" required>
+																					<input id="location" type="text" class="form-control col-lg-7 col-md-12 l2 disabled" size="6" name="location">
 																				</fieldset>
 
 																				<fieldset>
 																					<legend id="SB_22"><span class="darkGreen">14.</span> Directions / parking / entrance / special instructions</legend>
-																					<textarea name="directions" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" class="form-control col-lg-7 col-md-12 l2 required" required></textarea>
+																					<textarea name="directions" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message" class="form-control col-lg-7 col-md-12 l2 disabled"></textarea>
 																				</fieldset>
 
 																				<fieldset>
 																					<legend id="SB_23"><span class="darkGreen">15.</span> Notes</legend>
-																					<textarea name="notes" tabindex="0" aria-hidden="false" required="true" rows="5" data-form-field="Message" class="form-control col-lg-7 col-md-12 l2 required" required></textarea>
+																					<textarea name="notes" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message" class="form-control col-lg-7 col-md-12 l2 disabled"></textarea>
 																				</fieldset>
 
-																				<div class="d-flex justify-content-center mt-5">
+																				<!-- <div class="d-flex justify-content-center mt-5">
 
 																					<button type="submit" class="disabledSave lightGrayColor saveAssessment mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information">SAVE <i class="fas fa-save"></i>
 																					</button>
@@ -1280,7 +1281,7 @@
 
 
 
-																				</div>
+																				</div> -->
 
 																			</form>
 

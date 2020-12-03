@@ -654,6 +654,11 @@ overflow-y: initial !important;
   padding: 2em 2em; */
 }
 
+
+.grayBox.case.second {
+    display: block;
+}
+
 .grayBox.third {
 
   /* top: 0;
@@ -1683,6 +1688,16 @@ header a:hover {
 .grayBox.second .nav-tabs .nav-item {
   margin-bottom: -1px;
   width: 16.667%;
+}
+
+
+.grayBox.case.second .nav-tabs .nav-item {
+  margin-bottom: -1px;
+  width: 20%;
+}
+
+.noBorder{
+  border-bottom:none !important
 }
 
 h2 {
@@ -6529,6 +6544,12 @@ border-color: #666666 !important;
   border-radius: 0;
 }
 
+.assessment .btn-group>.btn.disabled:not(.dropdown-toggle) {
+
+  color: #6F6F6F
+
+}
+
 .assessment  .darkGreen {
   color: #00843D;
   font-size: 20px;
@@ -7342,6 +7363,10 @@ transform: scale(0.8);
     padding-left: 1em;
   }
 
+  h3.landing-sec-H {
+    font-size:22px
+  }
+
   .renderErocs .addBlocks {
     display: flex !important;
     padding-left: 1em;
@@ -7384,12 +7409,20 @@ transform: scale(0.8);
     margin-left: 0;
   }
 
+.smallTablet{
+font-size: 34px;
+font-weight: 700;
+padding-top: 29px;
+}
+
 }
 
 
 
 
 @media (max-width: 767px) {
+
+
   .activated {
     font-weight: 800;
     background: #fbb03b !important;
@@ -7745,6 +7778,11 @@ body{
 .landing-sec-H{
   font-size: 26px;
   width: 90%;
+}
+
+.landing-sec-H.hundred{
+  font-size: 26px;
+  width: 100%;
 }
 
 .guide-wrapper{

@@ -1345,6 +1345,57 @@ $('.doneEroc').click(function() {
 })
 
 
+
+// 
+// var districtUpdate = {"districtUpdates": [{
+// 	"schoolId": '9999994C',
+// 	"schoolName": "Edward Tracy Elementary School",
+// 	"schoolAddress": 'Street Name, Easton PA 18040'
+// },
+// {
+// 	"schoolId": '9999994C',
+// 	"schoolName": "Edward Tracy Elementary School",
+// 	"schoolAddress": 'Street Name, Easton PA 18040'
+// },
+//
+// {
+// 	"schoolId": '9999994C',
+// 	"schoolName": "Edward Tracy Elementary School",
+// 	"schoolAddress": 'Street Name, Easton PA 18040'
+// },
+//
+// {
+// 	"schoolId": '9999994C',
+// 	"schoolName": "Edward Tracy Elementary School",
+// 	"schoolAddress": 'Street Name, Easton PA 18040'
+// },
+//
+//
+// {
+// 	"schoolId": '9999994C',
+// 	"schoolName": "Edward Tracy Elementary School",
+// 	"schoolAddress": 'Street Name, Easton PA 18040'
+// },
+//
+// {
+// 	"schoolId": '9999994C',
+// 	"schoolName": "Edward Tracy Elementary School",
+// 	"schoolAddress": 'Street Name, Easton PA 18040'
+// }
+//
+//
+// ]};
+//
+//
+//
+//
+// for(var j in districtUpdate.districtUpdates) {
+//
+// 	$('.renderSchoolList').append(`<div class='addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="goldLeftBar"></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ID</div><p class="black schoolId">${districtUpdate.districtUpdates[j].schoolId}</p></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL NAME</div><p class="black schoolName">${districtUpdate.districtUpdates[j].schoolName}</p></div><div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ADDRESS</div><p class="black schoolAddress">${districtUpdate.districtUpdates[j].schoolAddress}</p></div></div>`)
+//
+// }
+
+
 //district page alphabetize and sort numerically
 
 
