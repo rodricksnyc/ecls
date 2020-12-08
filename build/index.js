@@ -3197,7 +3197,7 @@ $(document).ready(function () {
 	//update tabs in Final Case Status
 
 
-	$('.absoluteCheckbox input').on('change', function () {
+	$('#tabs-2 .absoluteCheckbox input').on('change', function () {
 		if ($(this).is(':checked')) {
 			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound');
 			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar');
@@ -3210,7 +3210,67 @@ $(document).ready(function () {
 			$(this).closest('.updateBlocks').find('.goldLeftBar').removeClass('newGreenBar');
 		}
 
-		if (!$('.absoluteCheckbox input').is(':checked')) {
+		if (!$('#tabs-2 .absoluteCheckbox input').is(':checked')) {
+			$(this).closest('.row').find('.updateButton').addClass('lightGrayColor').removeClass('greenButton');
+			$(this).closest('.row').find('.disabledSave').attr('disabled', 'disabled');
+			$(this).closest('.row').find('.codes li').first().removeClass('greenCode');
+		}
+	});
+
+	$('#tabs-3 .absoluteCheckbox input').on('change', function () {
+		if ($(this).is(':checked')) {
+			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound');
+			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar');
+			$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton');
+			$(this).closest('.row').find('.disabledSave').removeAttr('disabled', 'disabled');
+
+			$(this).closest('.row').find('.codes li').first().addClass('greenCode');
+		} else {
+			$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound');
+			$(this).closest('.updateBlocks').find('.goldLeftBar').removeClass('newGreenBar');
+		}
+
+		if (!$('#tabs-3 .absoluteCheckbox input').is(':checked')) {
+			$(this).closest('.row').find('.updateButton').addClass('lightGrayColor').removeClass('greenButton');
+			$(this).closest('.row').find('.disabledSave').attr('disabled', 'disabled');
+			$(this).closest('.row').find('.codes li').first().removeClass('greenCode');
+		}
+	});
+
+	$('#tabs-4 .absoluteCheckbox input').on('change', function () {
+		if ($(this).is(':checked')) {
+			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound');
+			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar');
+			$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton');
+			$(this).closest('.row').find('.disabledSave').removeAttr('disabled', 'disabled');
+
+			$(this).closest('.row').find('.codes li').first().addClass('greenCode');
+		} else {
+			$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound');
+			$(this).closest('.updateBlocks').find('.goldLeftBar').removeClass('newGreenBar');
+		}
+
+		if (!$('#tabs-4 .absoluteCheckbox input').is(':checked')) {
+			$(this).closest('.row').find('.updateButton').addClass('lightGrayColor').removeClass('greenButton');
+			$(this).closest('.row').find('.disabledSave').attr('disabled', 'disabled');
+			$(this).closest('.row').find('.codes li').first().removeClass('greenCode');
+		}
+	});
+
+	$('#tabs-5 .absoluteCheckbox input').on('change', function () {
+		if ($(this).is(':checked')) {
+			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound');
+			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar');
+			$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton');
+			$(this).closest('.row').find('.disabledSave').removeAttr('disabled', 'disabled');
+
+			$(this).closest('.row').find('.codes li').first().addClass('greenCode');
+		} else {
+			$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound');
+			$(this).closest('.updateBlocks').find('.goldLeftBar').removeClass('newGreenBar');
+		}
+
+		if (!$('#tabs-5 .absoluteCheckbox input').is(':checked')) {
 			$(this).closest('.row').find('.updateButton').addClass('lightGrayColor').removeClass('greenButton');
 			$(this).closest('.row').find('.disabledSave').attr('disabled', 'disabled');
 			$(this).closest('.row').find('.codes li').first().removeClass('greenCode');

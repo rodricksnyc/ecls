@@ -2727,8 +2727,17 @@ ul.greenDot{
 
 .updateBlocks p.black{
   text-align: center;
-  line-height: 1;
+
 }
+
+.casePage .lightGrayBox {
+  padding-top:1em
+}
+
+.casePage .plum {
+  font-size:20px
+}
+
 
 .topAttr .gray:hover {
   cursor:grab;
@@ -8952,7 +8961,10 @@ body{
     margin-left:-2em !important
   }
 
-
+  .updateBlocks p.black{
+    text-align: center;
+    line-height: 1;
+  }
 
 }
 
