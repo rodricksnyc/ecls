@@ -1346,7 +1346,7 @@ $('.doneEroc').click(function() {
 
 
 
-// 
+//
 // var districtUpdate = {"districtUpdates": [{
 // 	"schoolId": '9999994C',
 // 	"schoolName": "Edward Tracy Elementary School",
@@ -1925,7 +1925,11 @@ $('.loadMore, .load20More').on('keyup', function(e) {
 
 $('.addBlocks').addClass('hidden')
 
+
+
 var xx=20
+
+
 $('.addBlocks').slice(0, 24).removeClass('hidden')
 $('.loadMore').on('click', function (e) {
 	e.preventDefault();
@@ -1934,20 +1938,44 @@ $('.loadMore').on('click', function (e) {
 	$('.addBlocks').slice(0, xx).slideDown('slow').removeClass('hidden');
 });
 
-$('.loadAll').on('click', function (e) {
+$('.case-status.district-update .updateBlocks').addClass('hidden')
+$('.case-status.district-update .updateBlocks').slice(0, 4).removeClass('hidden')
+
+$('.case-status.school-nonResponse .updateBlocks').addClass('hidden')
+$('.case-status.school-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
+
+
+$('.case-status.child-nonResponse .updateBlocks').addClass('hidden')
+$('.case-status.child-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
+
+
+$('.case-status.parent-nonResponse .updateBlocks').addClass('hidden')
+$('.case-status.parent-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
+
+
+
+$('.loadAll, .loadAllUpdate').on('click', function (e) {
 	e.preventDefault();
 	$('.addBlocks').slideDown('slow').removeClass('hidden');
+
 	$('.loadMore, .flip').hide()
 	$('.loadAll p').addClass('all').hide()
+
+	$(this).closest('.case-status').find('.updateBlocks').slideDown('slow').removeClass('hidden');
+	$(this).closest('.case-status').find('.loadAllUpdate p').addClass('all').hide()
+
 });
 
-$('.loadAll').on('keyup', function(e) {
+$('.loadAll, .loadAllUpdate').on('keyup', function(e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 13 ) {
 		e.preventDefault();
 		$('.addBlocks').slideDown('slow').removeClass('hidden');
 		$('.loadMore, .flip').hide()
 		$('.loadAll p').addClass('all').hide()
+
+$(this).closest('.case-status').find('.updateBlocks').slideDown('slow').removeClass('hidden');
+	$(this).closest('.case-status').find('.loadAllUpdate p').addClass('all').hide()
 
 	}
 
@@ -3859,6 +3887,34 @@ $(".scrollIt").on("click", function(event) {
 
 
 $('.columnCubes a').attr('tabindex', '-1')
+
+//update tabs in Final Case Status
+
+
+
+$('.absoluteCheckbox input').on('change', function() {
+	if ($(this).is(':checked')) {
+		$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound')
+		$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar')
+		$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton')
+		$(this).closest('.row').find('.disabledSave').removeAttr('disabled','disabled')
+
+	$(this).closest('.row').find('.codes li').first().addClass('greenCode')
+	}
+	else {
+		$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound')
+		$(this).closest('.updateBlocks').find('.goldLeftBar').removeClass('newGreenBar')
+
+	}
+
+if (!$('.absoluteCheckbox input').is(':checked')){
+	$(this).closest('.row').find('.updateButton').addClass('lightGrayColor').removeClass('greenButton')
+	$(this).closest('.row').find('.disabledSave').attr('disabled','disabled')
+		$(this).closest('.row').find('.codes li').first().removeClass('greenCode')
+}
+
+
+})
 
 
 

@@ -228,8 +228,7 @@
 								<div class="d-flex align-items-center flex-column columnCubes">
 
 
-
-									<a href="districts.html" class="cube">
+									<a href="fmho-districts.html" class="cube">
 										<div class="greenCube districts">
 											<img src="images/img_districts.svg" class="img-fluid">
 											<p class="white twenty mt-0 mb-0">Districts</p>
@@ -238,14 +237,16 @@
 									</a>
 
 
-									<div class="activeCube">
-										<img src="images/img_school-hover.svg" class="img-fluid">
-										<p class="white twenty mt-0 mb-0">Schools</p>
+									<a href="fmho-schools.html" class="cube">
+										<div class="greenCube schools">
+											<img src="images/img_school.svg" class="img-fluid">
+											<p class="white twenty mt-0 mb-0">Schools</p>
 
-									</div>
+										</div>
+									</a>
 
 
-									<a href="parents.html" class="cube">
+									<a href="fmho-parents.html" class="cube">
 										<div class="greenCube parents">
 											<img src="images/img_parents.svg" class="img-fluid">
 											<p class="white twenty mt-0 mb-0">Parents</p>
@@ -253,7 +254,14 @@
 										</div>
 									</a>
 
-									<a href="documents.html" class="cube">
+									<div class="activeCube">
+										<img src="images/case-hover.svg" class="img-fluid">
+										<p class="white twenty mt-0 mb-0">Final Case Status</p>
+
+									</div>
+
+
+									<a href="fmho-documents.html" class="cube">
 										<div class="blueCube documents">
 											<img src="images/img_documents.svg" class="img-fluid">
 											<p class="white twenty mt-0 mb-0">Documents</p>
@@ -261,14 +269,8 @@
 										</div>
 									</a>
 
-									<a href="transmission.html" class="cube">
-										<div class="blueCube transmission">
-											<img src="images/img_transmission.svg" class="img-fluid">
-											<p class="white twenty mt-0 mb-0">Transmission</p>
 
-										</div>
-									</a>
-									<a href="message.html" class="cube">
+									<a href="fmho-message.html" class="cube">
 										<div class="blueCube messaging">
 											<img src="images/img_messaging.svg" class="img-fluid">
 											<p class="white twenty mt-0 mb-0">Message Center</p>
@@ -276,7 +278,7 @@
 										</div>
 									</a>
 
-									<a href="reports.html" class="cube">
+									<a href="fmho-reports.html" class="cube">
 										<div class="blueCube reports">
 											<img src="images/img_reports.svg" class="img-fluid">
 											<p class="white twenty mt-0 mb-0">Reports</p>
@@ -286,420 +288,1191 @@
 
 
 								</div>
-
-
 							</div>
+
+
+
+							<section class="casePage mt-5">
+								<div id="overview" class="container-fluid heros">
+
+									<div id="anchorPoint"></div>
+
+									<div class="container">
+
+
+										<div class="box-outer tlModals">
+
+											<div class="grayBox case second">
+												<ul class="nav nav-tabs" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link  active text-center" data-toggle="tab" href="#tabs-1" role="tab">Overview</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link  text-center" data-toggle="tab" href="#tabs-2" role="tab">District Update</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link  text-center" data-toggle="tab" href="#tabs-3" role="tab">School Non-Response</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link  text-center" data-toggle="tab" href="#tabs-4" role="tab">Child Non-Response</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link  text-center" data-toggle="tab" href="#tabs-5" role="tab">Parent Non-Response</a>
+													</li>
+
+
+												</ul>
+
+
+												<div class="tab-content">
+													<div class="tab-pane active" id="tabs-1" role="tabpanel">
+
+														<div class="outside">
+
+															<div class="row">
+																<div class="col-lg-6 case-status district-update">
+																	<h2 class="landing-sec-H noBorder text-center">District Update</h2>
+																	<div class="topAttr d-flex align-items-center">
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">LEAID</h6>
+																		</div>
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">DISTRICT NAME </h6>
+																		</div>
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">DFLAG</h6>
+																		</div>
+
+																	</div>
+
+																	<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																	</div>
+
+
+
+																	<div class="d-flex justify-content-center mt-4">
+																		<a class="loadAllUpdate" role="button" tabindex="0" aria-label="Show all">
+
+																			<p class="darkBlue">see all</p>
+
+																		</a>
+
+
+																	</div>
+
+
+																</div>
+																<div class="col-lg-6 case-status school-nonResponse">
+																	<h2 class="landing-sec-H noBorder text-center">School Non-Response</h2>
+																	<div class="topAttr d-flex align-items-center">
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">SCHOOL ID </h6>
+																		</div>
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">SCHOOL NAME </h6>
+																		</div>
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">SDISP</h6>
+																		</div>
+
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">Y116812</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">Y116812</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Paxinosa</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">Y116812</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Palmer Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">Y116812</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Palmer Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">Y116812</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Palmer Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">Y116812</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Palmer Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">Y116812</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Palmer Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">Y116812</p>
+																		</div>
+																	</div>
+
+
+																	<div class="d-flex justify-content-center mt-4">
+																		<a class="loadAllUpdate" role="button" tabindex="0" aria-label="Show all">
+
+																			<p class="darkBlue">see all</p>
+
+																		</a>
+
+
+																	</div>
+
+																</div>
+
+															</div>
+
+															<div class="row">
+																<div class="col-lg-6 case-status child-nonResponse">
+																	<h2 class="landing-sec-H noBorder text-center">Child Non-Response</h2>
+																	<div class="topAttr d-flex align-items-center">
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">CHILD ID</h6>
+																		</div>
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">CHILD NAME </h6>
+																		</div>
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">STATUS</h6>
+																		</div>
+
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childId">C116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Hanna Jones</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black childStatus">C_ASSESS</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childId">C116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Sophia Smith</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black childStatus">C_ASSESS</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childId">C116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Oliver Twist</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black childStatus">C_ASSESS</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childId">C116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Avery Jones</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black childStatus">C_ASSESS</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childId">C116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Avery Jones</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black childStatus">C_ASSESS</p>
+																		</div>
+																	</div>
+
+
+																	<div class="d-flex justify-content-center mt-4">
+																		<a class="loadAllUpdate" role="button" tabindex="0" aria-label="Show all">
+
+																			<p class="darkBlue">see all</p>
+
+																		</a>
+
+
+																	</div>
+
+
+																</div>
+																<div class="col-lg-6 case-status parent-nonResponse">
+																	<h2 class="landing-sec-H noBorder text-center">Parent Non-Response</h2>
+																	<div class="topAttr d-flex align-items-center">
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">PARENT ID </h6>
+																		</div>
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">PARENT NAME </h6>
+																		</div>
+																		<div class="col-lg-4">
+																			<h6 class="gray larger">STATUS</h6>
+																		</div>
+
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT ID</div>
+																			<p class="black parentId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Spencer Reed</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black parentStatus">Complete</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT ID</div>
+																			<p class="black parentId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Aaron Smith</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black parentStatus">Not Started</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT ID</div>
+																			<p class="black parentId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Emily Prentiss</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black parentStatus">In-Progress</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT ID</div>
+																			<p class="black parentId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Derek Morgan</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black parentStatus">Complete</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT ID</div>
+																			<p class="black parentId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Derek Morgan</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black parentStatus">Complete</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT ID</div>
+																			<p class="black parentId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Derek Morgan</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black parentStatus">Complete</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT ID</div>
+																			<p class="black parentId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Derek Morgan</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black parentStatus">Complete</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT ID</div>
+																			<p class="black parentId">Y116812</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Derek Morgan</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black parentStatus">Complete</p>
+																		</div>
+																	</div>
+
+																	<div class="d-flex justify-content-center mt-4">
+																		<a class="loadAllUpdate" role="button" tabindex="0" aria-label="Show all">
+																			<p class="darkBlue">see all</p>
+
+																		</a>
+
+
+																	</div>
+
+
+
+																</div>
+
+
+
+
+															</div>
+
+														</div>
+													</div>
+
+
+
+													<div class="tab-pane" id="tabs-2" role="tabpanel">
+														<form>
+															<div class="row grayUnderline">
+
+																<div class="col-lg-12 col-md-12 col-sm-12">
+
+																	<div class="form-row mb-3 d-flex align-items-center">
+																		<div class="col-lg-3 col-md-12">
+																			<label for="result" class="fontZero">Select Workarea</label>
+																			<select id="result" class="form-control result" name="result">
+																				<option value="">Select Workarea</option>
+																				<option value="one">something</option>
+																				<option value="two">something</option>
+																				<option value="three">something</option>
+																				<option value="four">something</option>
+																				<option value="five">something</option>
+																				<option value="six">something</option>
+																				<option value="seven">something</option>
+																				<option value="eight">something</option>
+																				<option value="nine">something</option>
+																				<option value="ten">something</option>
+																				<option value="eleven">something</option>
+
+																			</select>
+																		</div>
+
+
+																		<div class="col-lg-5 col-md-12">
+																			<div class="form-check form-check-inline mt-4 pt-1 ml-1">
+
+																				<p class="blackFont mb-0 mr-3">Sort By:</p>
+
+																				<div class="form-check form-check-inline customRadio sortUp">
+																					<input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="phone">
+																					<label class="form-check-label blue" for="inlineRadio1">School ID</label>
+																				</div>
+
+																				<div class="form-check form-check-inline customRadio">
+																					<input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="phone">
+																					<label class="form-check-label blue" for="inlineRadio2">Status</label>
+																				</div>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+
+																</div>
+
+															</div>
+
+
+															<div class="row">
+																<div class="col-lg-9 col-md-6">
+																	<div class="topAttr d-flex align-items-center">
+																		<div class="col-lg-3">
+																			<h6 class="gray larger">LEAID</h6>
+																		</div>
+																		<div class="col-lg-3">
+																			<h6 class="gray larger">DISTRICT NAME </h6>
+																		</div>
+																		<div class="col-lg-3">
+																			<h6 class="gray larger">DFLAG</h6>
+																		</div>
+																		<div class="col-lg-3">
+																			<h6 class="gray larger">DISTRICT STATUS</h6>
+																		</div>
+
+																	</div>
+
+																	<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation88">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation88">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation89">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation89">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation90">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation90">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation91">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation91">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation91">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation91">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation91">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation91">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+
+
+
+																</div>
+
+
+																<div class="col-lg-3 col-md-6">
+																	<div class="lightGrayBox">
+
+																		<p class="plum text-center mb-2 mt-0 pt-0">Disposition Codes</p>
+																		<h6 class="gray small text-center mt-0">??? - DESCRIPTION</h6>
+																		<ul class="codes">
+																		<li>71 - School Closed <i class="fal fa-times ml-4 darkBlue hidden" data-index="2"></i></li>
+																		<li>72 - Not a regular school</li>
+																		<li>73 - No kindergarten or first grade children</li>
+
+																		<li>90 - Final Refusal by district</li>
+																	</ul>
+
+
+																	</div>
+																	<div class="d-flex justify-content-center mt-3">
+																	<button type="submit" class="btn lightGrayColor disabledSave updateButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Consent Signature">UPDATE</button>
+																</div>
+
+
+
+																</div>
+
+
+
+															</div>
+
+														</form>
+
+
+													</div>
+
+
+
+													<div class="tab-pane" id="tabs-3" role="tabpanel">
+
+
+														<form>
+															<div class="row grayUnderline">
+
+																<div class="col-lg-12 col-md-12 col-sm-12">
+
+																	<div class="form-row mb-3 d-flex align-items-center">
+																		<div class="col-lg-3 col-md-12">
+																			<label for="result" class="fontZero">Select Workarea</label>
+																			<select id="result" class="form-control result" name="result">
+																				<option value="">Select Workarea</option>
+																				<option value="one">something</option>
+																				<option value="two">something</option>
+																				<option value="three">something</option>
+																				<option value="four">something</option>
+																				<option value="five">something</option>
+																				<option value="six">something</option>
+																				<option value="seven">something</option>
+																				<option value="eight">something</option>
+																				<option value="nine">something</option>
+																				<option value="ten">something</option>
+																				<option value="eleven">something</option>
+
+																			</select>
+																		</div>
+
+
+																		<div class="col-lg-5 col-md-12">
+																			<div class="form-check form-check-inline mt-4 pt-1 ml-1">
+
+																				<p class="blackFont mb-0 mr-3">Sort By:</p>
+
+																				<div class="form-check form-check-inline customRadio sortUp">
+																					<input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="phone">
+																					<label class="form-check-label blue" for="inlineRadio1">School ID</label>
+																				</div>
+
+																				<div class="form-check form-check-inline customRadio">
+																					<input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="phone">
+																					<label class="form-check-label blue" for="inlineRadio2">Status</label>
+																				</div>
+
+																			</div>
+
+																		</div>
+																	</div>
+
+
+																</div>
+
+															</div>
+
+
+															<div class="row">
+																<div class="col-lg-9 col-md-6">
+																	<div class="topAttr d-flex align-items-center">
+																		<div class="col-lg-3">
+																			<h6 class="gray larger">LEAID</h6>
+																		</div>
+																		<div class="col-lg-3">
+																			<h6 class="gray larger">DISTRICT NAME </h6>
+																		</div>
+																		<div class="col-lg-3">
+																			<h6 class="gray larger">DFLAG</h6>
+																		</div>
+																		<div class="col-lg-3">
+																			<h6 class="gray larger">DISTRICT STATUS</h6>
+																		</div>
+
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation88">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation88">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation89">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation89">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation90">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation90">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation91">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation91">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation91">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation91">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+
+
+																	<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation91">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation91">Something</label>
+
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">LEAID</div>
+																			<p class="black leadid">Y116812</p>
+																		</div>
+																		<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">DISTRICT NAME</div>
+																			<p class="black districtName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">DFLAG</div>
+																			<p class="black dflag">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">STATUS</div>
+																			<p class="black dStatus">Status</p>
+																		</div>
+																	</div>
+
+
+
+																</div>
+
+
+																<div class="col-lg-3 col-md-6">
+																	<div class="lightGrayBox">
+
+																		<p class="plum text-center mb-2">Disposition Codes</p>
+																		<h6 class="gray small text-center mt-0">??? - DESCRIPTION</h6>
+																		<ul class="codes">
+																		<li>71 - School Closed</li>
+																		<li>72 - Not a regular school</li>
+																		<li>73 - No kindergarten or first grade children</li>
+
+																		<li>90 - Final Refusal by district</li>
+																	</ul>
+
+
+																	</div>
+																	<div class="d-flex justify-content-center mt-3">
+																	<button type="submit" class="btn lightGrayColor disabledSave updateButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Consent Signature">UPDATE</button>
+																</div>
+
+
+
+																</div>
+
+
+
+															</div>
+
+														</form>
+
+
+
+													</div>
+
+
+
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+
+
+						<div class="back-to-top">
+							<i class="far fa-angle-up"></i>
 						</div>
 
 
 
-						<section class="block99 mt-5">
-							<div id="overview" class="container-fluid heros">
-
-								<div id="anchorPoint"></div>
-
-								<div class="container">
-
-
-									<div class="box-outer tlModals">
-
-									<div class="grayBox case second">
-										<ul class="nav nav-tabs" role="tablist">
-											<li class="nav-item">
-												<a class="nav-link  active text-center" data-toggle="tab" href="#tabs-1" role="tab">Overview</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link  text-center" data-toggle="tab" href="#tabs-2" role="tab">District Update</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link  text-center" data-toggle="tab" href="#tabs-3" role="tab">School Non-Response</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link  text-center" data-toggle="tab" href="#tabs-4" role="tab">Child Non-Response</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link  text-center" data-toggle="tab" href="#tabs-5" role="tab">Parent Non-Response</a>
-											</li>
-
-
-										</ul>
-
-
-										<div class="tab-content">
-											<div class="tab-pane active" id="tabs-1" role="tabpanel">
-
-												<div class="outside">
-
-													<div class="row">
-														<div class="col-lg-6">
-															<h2 class="landing-sec-H noBorder text-center">District Update</h2>
-															<div class="topAttr d-flex align-items-center">
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortId">LEAID</h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDistrict">DISTRICT NAME </h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDflag">DFLAG</h6>
-																	</div>
-
-																</div>
-
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-
-																<div class="d-flex justify-content-center mt-4">
-																	<a class="load20More" role="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more">
-
-																		<p class="darkBlue">show 20 more</p>
-
-																	</a>
-
-
-																</div>
-
-
-														</div>
-														<div class="col-lg-6">
-															<h2 class="landing-sec-H noBorder text-center">School Non-Response</h2>
-															<div class="topAttr d-flex align-items-center">
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortId">SCHOOL ID </h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDistrict">SCHOOL NAME </h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDflag">SDISP</h6>
-																	</div>
-
-																</div>
-
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="d-flex justify-content-center mt-4">
-																	<a class="load20More" role="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more">
-
-																		<p class="darkBlue">show 20 more</p>
-
-																	</a>
-
-
-																</div>
-
-
-
-														</div>
-
-
-
-
-													</div>
-
-													<div class="row">
-														<div class="col-lg-6">
-															<h2 class="landing-sec-H noBorder text-center">Child Non-Response</h2>
-															<div class="topAttr d-flex align-items-center">
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortId">CHILD ID</h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDistrict">CHILD NAME </h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDflag">STATUS</h6>
-																	</div>
-
-																</div>
-
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-
-																<div class="d-flex justify-content-center mt-4">
-																	<a class="load20More" role="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more">
-
-																		<p class="darkBlue">show 20 more</p>
-
-																	</a>
-
-
-																</div>
-
-
-														</div>
-														<div class="col-lg-6">
-															<h2 class="landing-sec-H noBorder text-center">Parent Non-Response</h2>
-															<div class="topAttr d-flex align-items-center">
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortId">SCHOOL ID </h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDistrict">SCHOOL NAME </h6>
-																	</div>
-																	<div class="col-lg-4">
-																		<h6 class="gray larger sortDflag">SCHOOL ADDRESS</h6>
-																	</div>
-
-																</div>
-
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																	<div class="goldLeftBar"></div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ID</div>
-																		<p class="black schoolId">9999994C</p>
-																	</div>
-																	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL NAME</div>
-																		<p class="black schoolName">Edward Tracy Elementary School</p>
-																	</div>
-																	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																		<div class="mobile">SCHOOL ADDRESS</div>
-																		<p class="black schoolAddress">Street Name, Easton PA 18040</p>
-																	</div>
-																</div>
-																<div class="d-flex justify-content-center mt-4">
-																	<a class="load20More" role="button" tabindex="0" aria-describedby="Show ten more" aria-label="Show ten more">
-
-																		<p class="darkBlue">show 20 more</p>
-
-																	</a>
-
-
-																</div>
-
-
-
-														</div>
-
-
-
-
-													</div>
-
-												</div>
-											</div>
-										</div>
-
-
-										</div>
-									</div>
-									</div>
-								</div>
-							</div>
-									</section>
-
-
-
-
-									<div class="back-to-top">
-										<i class="far fa-angle-up"></i>
-									</div>
-
-
-
-									<div class="content-spacer"></div>
-
-								</div>
-							</div>
-							<footer>
-								<div class="footer-wrapper">
-									<div class="abso">
-										<img src="images/sunshine.png" class="img-responsive">
-									</div>
-
-									<div class="d-flex">
-
-										<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
-										<i class="fas fa-external-link-square white"></i>
-									</div>
-
-								</div>
-							</footer>
-
-
-
-							<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-							<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-							<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-							<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-							<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-							<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
-
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
-							<script type="text/javascript" src="build/index.js"></script>
-
-							<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
-							<script type="text/javascript" src="src/tl.js"></script>
-
-							<script>
-
-
-							</script>
-
-						</body>
-
-						</html>
+						<div class="content-spacer"></div>
+
+					</div>
+				</div>
+				<footer>
+					<div class="footer-wrapper">
+						<div class="abso">
+							<img src="images/sunshine.png" class="img-responsive">
+						</div>
+
+						<div class="d-flex">
+
+							<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
+							<i class="fas fa-external-link-square white"></i>
+						</div>
+
+					</div>
+				</footer>
+
+
+
+				<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+				<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+				<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+				<script type="text/javascript" src="build/index.js"></script>
+
+				<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+				<script type="text/javascript" src="src/tl.js"></script>
+
+				<script>
+
+
+				</script>
+
+			</body>
+
+			</html>

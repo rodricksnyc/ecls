@@ -441,6 +441,13 @@ align-items: center;
 
 } */
 
+
+.grayUnderline{
+  border-bottom:1px solid #e6e6e6;
+  margin-left:0px;
+  margin-right:0px;
+}
+
 .hoverOnly{
   position: absolute;
   top: 8px;
@@ -477,7 +484,7 @@ align-items: center;
   background: transparent;
   box-shadow:none;
   padding: 0;
-  width: 80px;
+  width: 100px;
   height: 46px;
   margin: .4em 0em 1.6em 0em;
   text-align: center;
@@ -1309,6 +1316,65 @@ textarea {
   align-items: center;
 }
 
+.sortUp:after{
+  font-family: "Font Awesome 5 Pro";
+  content: "\f15e";
+  color:#07477d;
+  padding-left: 5px;
+padding-right: 10px;
+}
+
+.absoluteCheckbox{
+  position: absolute;
+  left: 3%;
+  top: calc(50% - 24px);
+  z-index:99
+}
+/*
+.absoluteCheckbox label{
+  font-size:0px !important;
+} */
+
+.lightGreenBackgrdound{
+  background: #e9f4ee !important
+}
+
+.newGreenBar {
+  background: #00843D !important
+}
+
+
+
+.codes li {
+    color: black;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom:0px;
+    list-style-type: none;
+    margin-left: -3em !important;
+
+}
+
+.greenCode {
+background: #e9f4ee !important;
+color:#00843D !important;
+font-weight:600 !important;
+border-radius: 1rem;
+left: -5%;
+position: relative;
+padding-left: 5%;
+}
+
+.greenCode i.hidden{
+  display: inline-flex !important;
+  font-weight:600
+}
+
+.casePage #tabs-2 .updateBlocks {
+  display: flex !important
+}
 
 
 .blueLine2:hover{
@@ -2644,7 +2710,22 @@ ul.greenDot{
   position: relative;
 }
 
+
+.updateBlocks {
+  margin-bottom:1em;
+  background: white;
+  padding: 1em 0em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
+}
+
 .addBlocks p.black{
+  text-align: center;
+}
+
+.updateBlocks p.black{
   text-align: center;
 }
 
@@ -2784,6 +2865,10 @@ p.black {
 }
 
 .addBlocks i {
+  font-size:35px;
+}
+
+.updateBlocks i {
   font-size:35px;
 }
 
@@ -3107,11 +3192,11 @@ p.scBlock{
   border-color: : #d1d3d4;
   border-color: transparent;
   width: 8rem;
-  padding: .2rem 1.6rem;
+  padding: .4rem 1.6rem;
   border-radius: 2rem;
   color: #6F6F6F;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1rem;
   font-family: 'Public Sans' !important;
 
 }
@@ -6235,7 +6320,7 @@ font-family: 'Public Sans', sans-serif;
 }
 
 .fontZero {
-  font-size:0px
+  font-size:0px !important
 }
 
 .reportPage .form-group label {
