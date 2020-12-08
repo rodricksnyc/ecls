@@ -3898,7 +3898,7 @@ $('#tabs-2 .absoluteCheckbox input').on('change', function() {
 		$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton')
 		$(this).closest('.row').find('.disabledSave').removeAttr('disabled','disabled')
 
-	$(this).closest('.row').find('.codes li').first().addClass('greenCode')
+	// $(this).closest('.row').find('.codes li').first().addClass('greenCode')
 	}
 	else {
 		$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound')
@@ -3922,7 +3922,7 @@ $('#tabs-3 .absoluteCheckbox input').on('change', function() {
 		$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton')
 		$(this).closest('.row').find('.disabledSave').removeAttr('disabled','disabled')
 
-	$(this).closest('.row').find('.codes li').first().addClass('greenCode')
+	// $(this).closest('.row').find('.codes li').first().addClass('greenCode')
 	}
 	else {
 		$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound')
@@ -3946,7 +3946,7 @@ $('#tabs-4 .absoluteCheckbox input').on('change', function() {
 		$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton')
 		$(this).closest('.row').find('.disabledSave').removeAttr('disabled','disabled')
 
-	$(this).closest('.row').find('.codes li').first().addClass('greenCode')
+	// $(this).closest('.row').find('.codes li').first().addClass('greenCode')
 	}
 	else {
 		$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound')
@@ -3968,8 +3968,8 @@ $('#tabs-5 .absoluteCheckbox input').on('change', function() {
 		$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar')
 		$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton')
 		$(this).closest('.row').find('.disabledSave').removeAttr('disabled','disabled')
-
-	$(this).closest('.row').find('.codes li').first().addClass('greenCode')
+	//
+	// $(this).closest('.row').find('.codes li').first().addClass('greenCode')
 	}
 	else {
 		$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound')
@@ -3984,6 +3984,31 @@ if (!$('#tabs-5 .absoluteCheckbox input').is(':checked')){
 }
 
 })
+
+
+$('.casePage .customRadio label').click(function () {
+		$('.casePage .customRadio label').removeClass('checked');
+		$(this).addClass('checked');
+});
+
+$('.casePage .customRadio input:checked').closest('.customRadio').find('.casePage .customRadio label').addClass('strong');
+
+
+// $('input:radio[name="codes"]').click(function() {
+//
+// 	if($('input:radio:checked').length > 0){
+//
+// 		$(this).closest('.customRadio').find('label').addClass('strong')
+//
+// 	}
+//
+// 	if($('input:radio:checked').length == 0){
+// 			$('label').removeClass('strong')
+// 	}
+//
+// })
+
+
 
 //sweet alerts for each update button
 

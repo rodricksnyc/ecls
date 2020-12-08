@@ -1377,6 +1377,26 @@ padding-right: 5px;
 /* float:right */
 }
 
+
+.casePage .customRadio label {
+    padding: 1px 0px 10px 5px;
+    font-size: 15px !important;
+    font-weight: 300;
+    font-family: 'Public Sans' !important;
+    /* color: #07477d; */
+}
+
+
+.casePage .form-check-label.blue.checked {
+  font-weight:500 !important
+}
+
+.casePage .customRadio label.strong {
+
+font-weight: 500 !important;
+
+}
+
 .casePage #tabs-2 .updateBlocks, .casePage #tabs-3 .updateBlocks, .casePage #tabs-4 .updateBlocks, .casePage #tabs-5 .updateBlocks {
   display: flex !important
 }
@@ -1764,7 +1784,8 @@ header a:hover {
 
 .grayBox.case.second .nav-tabs .nav-item {
   margin-bottom: -1px;
-  width: 20%;
+  width:25%;
+  /* width: 20%; */
 }
 
 .noBorder{
