@@ -663,7 +663,7 @@ overflow-y: initial !important;
 
 
 .grayBox.case.second {
-    display: block;
+  display: block;
 }
 
 .grayBox.third {
@@ -1321,7 +1321,7 @@ textarea {
   content: "\f15e";
   color:#07477d;
   padding-left: 5px;
-padding-right: 10px;
+  padding-right: 10px;
 }
 
 .absoluteCheckbox{
@@ -1332,7 +1332,7 @@ padding-right: 10px;
 }
 /*
 .absoluteCheckbox label{
-  font-size:0px !important;
+font-size:0px !important;
 } */
 
 .lightGreenBackgrdound{
@@ -1346,25 +1346,25 @@ padding-right: 10px;
 
 
 .codes li {
-    color: black;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    line-height: 30px;
-    font-size: 16px;
-    margin-bottom:0px;
-    list-style-type: none;
-    margin-left: -3em !important;
+  color: black;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 16px;
+  margin-bottom:0px;
+  list-style-type: none;
+  margin-left: -3em !important;
 
 }
 
 .greenCode {
-background: #e9f4ee !important;
-color:#00843D !important;
-font-weight:600 !important;
-border-radius: 1rem;
-left: -5%;
-position: relative;
-padding-left: 5%;
+  background: #e9f4ee !important;
+  color:#00843D !important;
+  font-weight:600 !important;
+  border-radius: 1rem;
+  left: -5%;
+  position: relative;
+  padding-left: 5%;
 }
 
 .greenCode i.hidden{
@@ -1372,7 +1372,7 @@ padding-left: 5%;
   font-weight:600
 }
 
-.casePage #tabs-2 .updateBlocks {
+.casePage #tabs-2 .updateBlocks, .casePage #tabs-3 .updateBlocks, .casePage #tabs-4 .updateBlocks, .casePage #tabs-5 .updateBlocks {
   display: flex !important
 }
 
@@ -2727,6 +2727,7 @@ ul.greenDot{
 
 .updateBlocks p.black{
   text-align: center;
+  line-height: 1;
 }
 
 .topAttr .gray:hover {
@@ -3347,9 +3348,9 @@ p.dark {
 }
 
 @media (min-width:1460px){
-.container.bigger {
-  max-width: 1400px;
-}
+  .container.bigger {
+    max-width: 1400px;
+  }
 
 }
 
@@ -6365,7 +6366,7 @@ font-family: 'Public Sans', sans-serif;
   font-weight: 600;
   line-height: 1;
   padding-left: 27px;
- text-indent: -18px;
+  text-indent: -18px;
 }
 
 .reportPage .form-row .plum.indentMore{
@@ -6375,9 +6376,9 @@ font-family: 'Public Sans', sans-serif;
 
 
 .notEnabled{
-background: #666666 !important;
-color: white !important;
-border-color: #666666 !important;
+  background: #666666 !important;
+  color: white !important;
+  border-color: #666666 !important;
 
 }
 
@@ -6499,6 +6500,31 @@ border-color: #666666 !important;
     margin-left: 12%;
     margin-right: 12%;
   }
+  .updateBlocks p.black {
+    text-align: left;
+  }
+  .absoluteCheckbox {
+    position: absolute;
+    left: 92%;
+    top: auto;
+    z-index: 99;
+  }
+  .updateBlocks{
+    padding-left: 5px;
+  }
+
+  .casePage .lightGrayBox{
+    padding:1em
+  }
+
+  .codes li {
+    margin-left:-2em !important
+  }
+
+  .casePage p.black{
+    margin-bottom:1em
+  }
+
 }
 
 
@@ -7494,11 +7520,11 @@ transform: scale(0.8);
     margin-left: 0;
   }
 
-.smallTablet{
-font-size: 34px;
-font-weight: 700;
-padding-top: 29px;
-}
+  .smallTablet{
+    font-size: 34px;
+    font-weight: 700;
+    padding-top: 29px;
+  }
 
 }
 
@@ -8918,6 +8944,14 @@ body{
     margin-right: -2em;
   }
 
+  .casePage .lightGrayBox{
+    padding:1em
+  }
+
+  .codes li {
+    margin-left:-2em !important
+  }
+
 
 
 }
@@ -9244,7 +9278,7 @@ body{
 
   footer .abso img {
     max-width:120px;
-        max-height: 90px;
+    max-height: 90px;
   }
 
   footer .abso {
