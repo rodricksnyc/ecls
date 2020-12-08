@@ -1354,7 +1354,9 @@ font-size:0px !important;
   margin-bottom:0px;
   list-style-type: none;
   margin-left: -3em !important;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .greenCode {
@@ -1369,7 +1371,10 @@ font-size:0px !important;
 
 .greenCode i.hidden{
   display: inline-flex !important;
-  font-weight:600
+  font-weight:600;
+  /* padding-top: 7px; */
+padding-right: 5px;
+/* float:right */
 }
 
 .casePage #tabs-2 .updateBlocks, .casePage #tabs-3 .updateBlocks, .casePage #tabs-4 .updateBlocks, .casePage #tabs-5 .updateBlocks {
@@ -3221,6 +3226,10 @@ p.scBlock{
   border-radius: 2rem !important;
   font-family: 'Public Sans' !important;
   text-transform: uppercase;
+}
+
+.swal2-popup .swal2-title {
+  font-size:1.5em
 }
 
 .swal2-popup .swal2-styled.swal2-confirm {

@@ -3276,4 +3276,21 @@ $(document).ready(function () {
 			$(this).closest('.row').find('.codes li').first().removeClass('greenCode');
 		}
 	});
+
+	//sweet alerts for each update button
+
+	$(".updateButton").on("click", function (e) {
+		e.preventDefault();
+		swal({
+			title: "Are you sure you want to set school [SID] to [SDISP]?",
+
+			showCancelButton: true,
+			confirmButtonText: "OK",
+			confirmButtonColor: "#00843D",
+			cancelButtonColor: "#999999",
+			reverseButtons: true,
+			focusConfirm: true,
+			focusCancel: false
+		});
+	});
 });
