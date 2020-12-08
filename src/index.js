@@ -3987,7 +3987,7 @@ if (!$('#tabs-5 .absoluteCheckbox input').is(':checked')){
 
 //sweet alerts for each update button
 
-$(".updateButton").on("click", function(e) {
+$("#tabs-3 .updateButton").on("click", function(e) {
 	e.preventDefault()
 	swal({
 		title: "Are you sure you want to set school [SID] to [SDISP]?",

@@ -3229,7 +3229,7 @@ p.scBlock{
 }
 
 .swal2-popup .swal2-title {
-  font-size:1.5em
+  font-size:1.5em !important
 }
 
 .swal2-popup .swal2-styled.swal2-confirm {
