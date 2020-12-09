@@ -549,8 +549,33 @@ align-items: center;
 }
 
 .modal-backdrop {
-  z-index: 99999999;
+  z-index: 9999;
 }
+
+.updateDistrictModal{
+  z-index: 999999;
+}
+
+.updates .title {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 0.4em;
+    padding: 0;
+    color: #595959 !important;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+}
+
+.updates .modal-content {
+  padding: 1rem 2rem;
+}
+.updates  {
+  top:12%;
+}
+
 
 .one input[type="checkbox"] {
   opacity: 0;
