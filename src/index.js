@@ -4090,7 +4090,7 @@ $('.casePage .customRadio input:checked').closest('.customRadio').find('.casePag
 
 
 
-//sweet alerts for each update button
+// alerts for each update button
 $("#tabs-2 .updateButton").on("click", function(e) {
 e.preventDefault()
 
@@ -4099,25 +4099,10 @@ $('.updateDistrictModal').modal('show')
 })
 
 
-// $("#tabs-3 .updateButton").on("click", function(e) {
-// 	e.preventDefault()
-// 	swal({
-// 		title: "Are you sure you want to set school [SID] to [SDISP]?",
-//
-// 		showCancelButton: true,
-// 		confirmButtonText: "OK",
-// 		confirmButtonColor: "#00843D",
-// 		cancelButtonColor: "#999999",
-// 		reverseButtons: true,
-// 		focusConfirm: true,
-// 		focusCancel: false
-// 	});
-// });
-
 
 $(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 280) {
+		if (distanceY > 220) {
 
 			$('.fixedDiv').css({
 				top: '0'

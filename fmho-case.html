@@ -327,7 +327,7 @@
 										<div class="tab-content">
 
 											<div class="tab-pane active" id="tabs-2" role="tabpanel">
-												<form>
+												<form class="update" novalidate role="form">
 													<div class="row grayUnderline">
 
 														<div class="col-lg-12 col-md-12 col-sm-12">
@@ -404,25 +404,25 @@
 																<h6 class="gray small text-center mt-0">STATUS - DESCRIPTION</h6>
 
 																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio13" value="option1" name="codes">
+																	<input class="form-check-input" type="radio" id="inlineRadio13" value="option1" name="codes" required>
 																	<label class="form-check-label blue" for="inlineRadio13">71 - School Closed</label>
 																</div>
 
 																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio14" value="option2" name="codes">
+																	<input class="form-check-input" type="radio" id="inlineRadio14" value="option2" name="codes" required>
 																	<label class="form-check-label blue" for="inlineRadio14">72 - Not a regular school</label>
 																</div>
 																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio15" value="option3" name="codes">
+																	<input class="form-check-input" type="radio" id="inlineRadio15" value="option3" name="codes" required>
 																	<label class="form-check-label blue" for="inlineRadio15">73 - No kindergarten or first grade children</label>
 																</div>
 
 																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio16" value="option4" name="codes">
+																	<input class="form-check-input" type="radio" id="inlineRadio16" value="option4" name="codes" required>
 																	<label class="form-check-label blue" for="inlineRadio16">90 - Final Refusal by district</label>
 																</div>
 																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio17" value="option5" name="codes">
+																	<input class="form-check-input" type="radio" id="inlineRadio17" value="option5" name="codes" required>
 																	<label class="form-check-label blue" for="inlineRadio17">91 - Final refusal by school</label>
 																</div>
 
@@ -448,7 +448,7 @@
 
 														<div class="col-lg-12 col-md-12 col-sm-12">
 
-															<div class="form-row mb-3 d-flex align-items-center">
+															<div class="row mb-3 d-flex align-items-center">
 																<div class="col-lg-3 col-md-12">
 																	<label for="workarea2" class="fontZero">Select Workarea</label>
 																	<select id="workarea2" class="form-control">
@@ -469,9 +469,13 @@
 																</div>
 
 
-																<div class="col-lg-5 col-md-12">
-																	<div class="form-check form-check-inline mt-4 pt-1 ml-1">
+																<div class="col-lg-4 col-md-12">
 
+																	<div class="form-group has-search d-flex justify-content-center align-items-center">
+																		<div>
+																			<span class="fa fa-search form-control-feedback"></span>
+																			<input type="text" class="form-control" placeholder="search by school ID or school name">
+																		</div>
 																	</div>
 
 																</div>
@@ -505,6 +509,29 @@
 
 
 															</div>
+
+
+															<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+																		<div class="goldLeftBar"></div>
+																		<div class="one absoluteCheckbox">
+																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation202">
+																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation202">Something</label>
+
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL ID</div>
+																			<p class="black schoolId">9999993S</p>
+																		</div>
+																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+																			<div class="mobile">SCHOOL NAME</div>
+																			<p class="black schoolName">Forks Elementary</p>
+																		</div>
+																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																			<div class="mobile">SDISP</div>
+																			<p class="black sdisp">72</p>
+																		</div>
+
+																	</div>
 
 														</div>
 

@@ -21,6 +21,24 @@ $('document').ready(function(){
 			}
 		});
 
+		// $(".update").validate(
+		// 	{  errorElement: 'div',
+		// 	errorPlacement: function(error, element) {
+		// 		error.insertAfter(element.parent());
+		// 	},
+		// 		rules:
+		// 		{
+		// 			codes:
+		// 			{
+		// 				required: true
+		// 			}
+		//
+		//
+		// 		}
+		// 	}
+		//
+		// 	);
+
 
 		$(".erocs").validate(
 			{
