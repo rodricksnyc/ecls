@@ -307,423 +307,957 @@
 									<div class="grayBox case second">
 										<ul class="nav nav-tabs" role="tablist">
 
-											<li class="nav-item">
-												<a class="nav-link active text-center" data-toggle="tab" href="#tabs-2" role="tab">District Update</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link  text-center" data-toggle="tab" href="#tabs-3" role="tab">School Non-Response</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link  text-center" data-toggle="tab" href="#tabs-4" role="tab">Child Non-Response</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link  text-center" data-toggle="tab" href="#tabs-5" role="tab">Parent Non-Response</a>
-											</li>
+											<!-- <li class="nav-item">
+											<a class="nav-link active text-center" data-toggle="tab" href="#tabs-1" role="tab">District Update</a>
+										</li> -->
 
+										<li class="nav-item">
+											<a class="nav-link active text-center" data-toggle="tab" href="#tabs-2" role="tab">District Update</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link  text-center" data-toggle="tab" href="#tabs-3" role="tab">School Non-Response</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link  text-center" data-toggle="tab" href="#tabs-4" role="tab">Child Non-Response</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link  text-center" data-toggle="tab" href="#tabs-5" role="tab">Parent Non-Response</a>
+										</li>
 
-										</ul>
 
+									</ul>
 
-										<div class="tab-content">
 
-											<div class="tab-pane active" id="tabs-2" role="tabpanel">
-												<form class="update" novalidate role="form">
-													<div class="row grayUnderline">
+									<div class="tab-content">
 
-														<div class="col-lg-12 col-md-12 col-sm-12">
+										<!-- overview/tab-1 is commented out now -->
 
-															<div class="row mb-3 d-flex align-items-center">
-																<div class="col-lg-3 col-md-12">
-																	<label for="workarea1" class="fontZero">Select Workarea</label>
-																	<select id="workarea1" class="form-control">
-																		<option value="">Select Workarea</option>
-																		<option value="one">something</option>
-																		<option value="two">something</option>
-																		<option value="three">something</option>
-																		<option value="four">something</option>
-																		<option value="five">something</option>
-																		<option value="six">something</option>
-																		<option value="seven">something</option>
-																		<option value="eight">something</option>
-																		<option value="nine">something</option>
-																		<option value="ten">something</option>
-																		<option value="eleven">something</option>
+										<!-- <div class="tab-pane active" id="tabs-1" role="tabpanel">
 
-																	</select>
-																</div>
+										<div class="outside">
 
-																<div class="col-lg-4 col-md-12">
-
-																	<div class="form-group has-search d-flex justify-content-center align-items-center">
-																		<div>
-																			<span class="fa fa-search form-control-feedback"></span>
-																			<input type="text" class="form-control" placeholder="search by LEAID or district name">
-																		</div>
-																	</div>
-
-																</div>
-															</div>
-
-
-														</div>
-
-													</div>
-
-
-													<div class="row position-relative">
-														<div class="col-lg-8 col-md-8">
-															<div class="topAttr d-flex align-items-center">
-																<div class="col-lg-3">
-																	<h6 class="gray larger sortId">LEAID
-																		<i class="far fa-sort darkBlue"></i>
-																	</h6>
-																</div>
-																<div class="col-lg-3">
-																	<h6 class="gray larger sortDistrict">DISTRICT NAME <i class="far fa-sort darkBlue"></i></h6>
-																</div>
-																<div class="col-lg-3">
-																	<h6 class="gray larger sortDflag">DFLAG <i class="far fa-sort darkBlue"></i></h6>
-																</div>
-																<div class="col-lg-3">
-																	<h6 class="gray larger sortStatus">DISTRICT STATUS <i class="far fa-sort darkBlue"></i></h6>
-																</div>
-
-															</div>
-
-															<div class="renderDistrictUpdate">
-
-
-															</div>
-
-														</div>
-
-
-														<div class="col-lg-4 col-md-4 fixedDiv">
-															<div class="lightGrayBox">
-																<p class="plum text-center mb-2 mt-0 pt-0">Disposition Codes</p>
-																<h6 class="gray small text-center mt-0">STATUS - DESCRIPTION</h6>
-
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio13" value="option1" name="codes" required>
-																	<label class="form-check-label blue" for="inlineRadio13">71 - School Closed</label>
-																</div>
-
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio14" value="option2" name="codes" required>
-																	<label class="form-check-label blue" for="inlineRadio14">72 - Not a regular school</label>
-																</div>
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio15" value="option3" name="codes" required>
-																	<label class="form-check-label blue" for="inlineRadio15">73 - No kindergarten or first grade children</label>
-																</div>
-
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio16" value="option4" name="codes" required>
-																	<label class="form-check-label blue" for="inlineRadio16">90 - Final Refusal by district</label>
-																</div>
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio17" value="option5" name="codes" required>
-																	<label class="form-check-label blue" for="inlineRadio17">91 - Final refusal by school</label>
-																</div>
-
-															</div>
-															<div class="d-flex justify-content-center mt-3">
-																<button type="submit" class="btn lightGrayColor disabledSave updateButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Consent Signature">UPDATE</button>
-															</div>
-
-														</div>
-
-													</div>
-
-												</form>
-
-											</div>
-
-
-											<div class="tab-pane" id="tabs-3" role="tabpanel">
-
-
-												<form>
-													<div class="row grayUnderline">
-
-														<div class="col-lg-12 col-md-12 col-sm-12">
-
-															<div class="row mb-3 d-flex align-items-center">
-																<div class="col-lg-3 col-md-12">
-																	<label for="workarea2" class="fontZero">Select Workarea</label>
-																	<select id="workarea2" class="form-control">
-																		<option value="">Select Workarea</option>
-																		<option value="one">something</option>
-																		<option value="two">something</option>
-																		<option value="three">something</option>
-																		<option value="four">something</option>
-																		<option value="five">something</option>
-																		<option value="six">something</option>
-																		<option value="seven">something</option>
-																		<option value="eight">something</option>
-																		<option value="nine">something</option>
-																		<option value="ten">something</option>
-																		<option value="eleven">something</option>
-
-																	</select>
-																</div>
-
-
-																<div class="col-lg-4 col-md-12">
-
-																	<div class="form-group has-search d-flex justify-content-center align-items-center">
-																		<div>
-																			<span class="fa fa-search form-control-feedback"></span>
-																			<input type="text" class="form-control" placeholder="search by school ID or school name">
-																		</div>
-																	</div>
-
-																</div>
-															</div>
-
-
-														</div>
-
-													</div>
-
-
-													<div class="row">
-														<div class="col-lg-8 col-md-8">
-															<div class="topAttr d-flex align-items-center">
-																<div class="col-lg-4">
-																	<h6 class="gray larger sortSchoolID">SCHOOL ID
-																		<i class="far fa-sort darkBlue"></i>
-																	</h6>
-
-																</div>
-																<div class="col-lg-4">
-																	<h6 class="gray larger sortSchool">SCHOOL NAME
-																		<i class="far fa-sort darkBlue"></i>
-																	</h6>
-																</div>
-																<div class="col-lg-4">
-																	<h6 class="gray larger sdisp">SDISP
-																		<i class="far fa-sort darkBlue"></i>
-																	</h6>
-																</div>
-
-
-															</div>
-
-
-															<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-																		<div class="goldLeftBar"></div>
-																		<div class="one absoluteCheckbox">
-																			<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation202">
-																			<label class="form-check-label fontZero" tabindex="0" for="customControlValidation202">Something</label>
-
-																		</div>
-																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																			<div class="mobile">SCHOOL ID</div>
-																			<p class="black schoolId">9999993S</p>
-																		</div>
-																		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-																			<div class="mobile">SCHOOL NAME</div>
-																			<p class="black schoolName">Forks Elementary</p>
-																		</div>
-																		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-																			<div class="mobile">SDISP</div>
-																			<p class="black sdisp">72</p>
-																		</div>
-
-																	</div>
-
-														</div>
-
-
-														<div class="col-lg-4 col-md-4">
-															<div class="lightGrayBox">
-
-																<p class="plum text-center mb-2 mt-0 pt-0">Disposition Codes</p>
-																<h6 class="gray small text-center mt-0">SDISP - DESCRIPTION</h6>
-
-
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio103" value="option1" name="codes">
-																	<label class="form-check-label blue" for="inlineRadio103">71 - School Closed</label>
-																</div>
-
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio104" value="option2" name="codes">
-																	<label class="form-check-label blue" for="inlineRadio104">72 - Not a regular school</label>
-																</div>
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio105" value="option3" name="codes">
-																	<label class="form-check-label blue" for="inlineRadio105">73 - No kindergarten or first grade children</label>
-																</div>
-
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio106" value="option4" name="codes">
-																	<label class="form-check-label blue" for="inlineRadio106">90 - Final Refusal by district</label>
-																</div>
-																<div class="form-check customRadio">
-																	<input class="form-check-input" type="radio" id="inlineRadio107" value="option5" name="codes">
-																	<label class="form-check-label blue" for="inlineRadio107">91 - Final refusal by school</label>
-																</div>
-
-
-															</div>
-															<div class="d-flex justify-content-center mt-3">
-																<button type="submit" class="btn lightGrayColor disabledSave updateButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Consent Signature">UPDATE</button>
-															</div>
-
-
-														</div>
-
-
-
-													</div>
-
-												</form>
-
-
-
-											</div>
-
-
-											<div class="tab-pane" id="tabs-4" role="tabpanel">
-												<form>
-													<div class="row grayUnderline">
-
-														<div class="col-lg-12 col-md-12 col-sm-12">
-
-															<div class="form-row mb-3 d-flex align-items-center">
-																<div class="col-lg-3 col-md-12">
-																	<label for="workarea3" class="fontZero">Select Workarea</label>
-																	<select id="workarea3" class="form-control">
-																		<option value="">Select Workarea</option>
-																		<option value="one">something</option>
-																		<option value="two">something</option>
-																		<option value="three">something</option>
-																		<option value="four">something</option>
-																		<option value="five">something</option>
-																		<option value="six">something</option>
-																		<option value="seven">something</option>
-																		<option value="eight">something</option>
-																		<option value="nine">something</option>
-																		<option value="ten">something</option>
-																		<option value="eleven">something</option>
-
-																	</select>
-																</div>
-
-
-																<div class="col-lg-5 col-md-12">
-																	<div class="form-check form-check-inline mt-4 pt-1 ml-1">
-
-																		<p class="blackFont mb-0 mr-3">Sort By:</p>
-
-																		<div class="form-check form-check-inline customRadio sortUp">
-																			<input class="form-check-input" type="radio" id="inlineRadio501" value="option1" name="phone">
-																			<label class="form-check-label blue" for="inlineRadio501">Child ID</label>
-																		</div>
-
-																		<div class="form-check form-check-inline customRadio">
-																			<input class="form-check-input" type="radio" id="inlineRadio502" value="option2" name="phone">
-																			<label class="form-check-label blue" for="inlineRadio502">Status</label>
-																		</div>
-
-																	</div>
-
-																</div>
-															</div>
-
-
-														</div>
-
-													</div>
-
-
-													<div class="row">
-														<div class="col-lg-8 col-md-8">
-															<div class="topAttr d-flex align-items-center">
-																<div class="col-lg-4">
-																	<h6 class="gray larger">CHILD ID</h6>
-																</div>
-																<div class="col-lg-4">
-																	<h6 class="gray larger">CHILD NAME </h6>
-																</div>
-																<div class="col-lg-4">
-																	<h6 class="gray larger">STATUS</h6>
-																</div>
-
-
-															</div>
-
-															<!-- <div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-															<div class="goldLeftBar"></div>
-															<div class="one absoluteCheckbox">
-															<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation8888">
-															<label class="form-check-label fontZero" tabindex="0" for="customControlValidation8888">Something</label>
-
-														</div>
-														<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-														<div class="mobile">CHILD ID</div>
-														<p class="black childId">C116812</p>
-													</div>
-													<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-													<div class="mobile">CHILD NAME</div>
-													<p class="black childName">Hanna Jones</p>
-												</div>
-												<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-												<div class="mobile">STATUS</div>
-												<p class="black childStatus">C_ASSESS</p>
-											</div>
-
-										</div>
-
-										<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-										<div class="goldLeftBar"></div>
-										<div class="one absoluteCheckbox">
-										<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation8889">
-										<label class="form-check-label fontZero" tabindex="0" for="customControlValidation8889">Something</label>
-
+										<div class="row">
+										<div class="col-lg-6 case-status district-update">
+										<h2 class="landing-sec-H noBorder text-center">District Update</h2>
+										<div class="topAttr d-flex align-items-center">
+										<div class="col-lg-4">
+										<h6 class="gray larger">LEAID</h6>
 									</div>
-									<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-									<div class="mobile">CHILD ID</div>
-									<p class="black childId">C116812</p>
+									<div class="col-lg-4">
+									<h6 class="gray larger">DISTRICT NAME </h6>
 								</div>
-								<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-								<div class="mobile">CHILD NAME</div>
-								<p class="black childName">Hanna Jones</p>
+								<div class="col-lg-4">
+								<h6 class="gray larger">DFLAG</h6>
 							</div>
-							<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-							<div class="mobile">STATUS</div>
-							<p class="black childStatus">C_ASSESS</p>
+
+						</div>
+
+						<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+						<div class="goldLeftBar"></div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+						<div class="mobile">LEAID</div>
+						<p class="black leadid">Y116812</p>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+					<div class="mobile">DISTRICT NAME</div>
+					<p class="black districtName">Forks Elementary</p>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+				<div class="mobile">DFLAG</div>
+				<p class="black dflag">Forks Elementary</p>
+			</div>
+		</div>
+
+		<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+		<div class="goldLeftBar"></div>
+		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+		<div class="mobile">LEAID</div>
+		<p class="black leadid">Y116812</p>
+	</div>
+	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+	<div class="mobile">DISTRICT NAME</div>
+	<p class="black districtName">Forks Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">DFLAG</div>
+<p class="black dflag">Forks Elementary</p>
+</div>
+</div>
+<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">LEAID</div>
+<p class="black leadid">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">DISTRICT NAME</div>
+<p class="black districtName">Forks Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">DFLAG</div>
+<p class="black dflag">Forks Elementary</p>
+</div>
+</div>
+<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">LEAID</div>
+<p class="black leadid">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">DISTRICT NAME</div>
+<p class="black districtName">Forks Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">DFLAG</div>
+<p class="black dflag">Forks Elementary</p>
+</div>
+</div>
+
+<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">LEAID</div>
+<p class="black leadid">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">DISTRICT NAME</div>
+<p class="black districtName">Forks Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">DFLAG</div>
+<p class="black dflag">Forks Elementary</p>
+</div>
+</div>
+
+<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">LEAID</div>
+<p class="black leadid">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">DISTRICT NAME</div>
+<p class="black districtName">Forks Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">DFLAG</div>
+<p class="black dflag">Forks Elementary</p>
+</div>
+</div>
+
+<div class="updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">LEAID</div>
+<p class="black leadid">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">DISTRICT NAME</div>
+<p class="black districtName">Forks Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">DFLAG</div>
+<p class="black dflag">Forks Elementary</p>
+</div>
+</div>
+
+
+
+<div class="d-flex justify-content-center mt-4">
+<a class="loadAllUpdate" role="button" tabindex="0" aria-label="Show all">
+
+<p class="darkBlue">see all</p>
+
+</a>
+
+
+</div>
+
+
+</div>
+<div class="col-lg-6 case-status school-nonResponse">
+<h2 class="landing-sec-H noBorder text-center">School Non-Response</h2>
+<div class="topAttr d-flex align-items-center">
+<div class="col-lg-4">
+<h6 class="gray larger">SCHOOL ID </h6>
+</div>
+<div class="col-lg-4">
+<h6 class="gray larger">SCHOOL NAME </h6>
+</div>
+<div class="col-lg-4">
+<h6 class="gray larger">SDISP</h6>
+</div>
+
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL ID</div>
+<p class="black schoolId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL NAME</div>
+<p class="black schoolName">Forks Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">SDISP</div>
+<p class="black sdisp">Y116812</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL ID</div>
+<p class="black schoolId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL NAME</div>
+<p class="black schoolName">Forks Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">SDISP</div>
+<p class="black sdisp">Y116812</p>
+</div>
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL ID</div>
+<p class="black schoolId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL NAME</div>
+<p class="black schoolName">Paxinosa</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">SDISP</div>
+<p class="black sdisp">Y116812</p>
+</div>
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL ID</div>
+<p class="black schoolId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL NAME</div>
+<p class="black schoolName">Palmer Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">SDISP</div>
+<p class="black sdisp">Y116812</p>
+</div>
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL ID</div>
+<p class="black schoolId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL NAME</div>
+<p class="black schoolName">Palmer Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">SDISP</div>
+<p class="black sdisp">Y116812</p>
+</div>
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL ID</div>
+<p class="black schoolId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL NAME</div>
+<p class="black schoolName">Palmer Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">SDISP</div>
+<p class="black sdisp">Y116812</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL ID</div>
+<p class="black schoolId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL NAME</div>
+<p class="black schoolName">Palmer Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">SDISP</div>
+<p class="black sdisp">Y116812</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL ID</div>
+<p class="black schoolId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">SCHOOL NAME</div>
+<p class="black schoolName">Palmer Elementary</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">SDISP</div>
+<p class="black sdisp">Y116812</p>
+</div>
+</div>
+
+
+<div class="d-flex justify-content-center mt-4">
+<a class="loadAllUpdate" role="button" tabindex="0" aria-label="Show all">
+
+<p class="darkBlue">see all</p>
+
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-lg-6 case-status child-nonResponse">
+<h2 class="landing-sec-H noBorder text-center">Child Non-Response</h2>
+<div class="topAttr d-flex align-items-center">
+<div class="col-lg-4">
+<h6 class="gray larger">CHILD ID</h6>
+</div>
+<div class="col-lg-4">
+<h6 class="gray larger">CHILD NAME </h6>
+</div>
+<div class="col-lg-4">
+<h6 class="gray larger">STATUS</h6>
+</div>
+
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD ID</div>
+<p class="black childId">C116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD NAME</div>
+<p class="black childName">Hanna Jones</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black childStatus">C_ASSESS</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD ID</div>
+<p class="black childId">C116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD NAME</div>
+<p class="black childName">Sophia Smith</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black childStatus">C_ASSESS</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD ID</div>
+<p class="black childId">C116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD NAME</div>
+<p class="black childName">Oliver Twist</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black childStatus">C_ASSESS</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD ID</div>
+<p class="black childId">C116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD NAME</div>
+<p class="black childName">Avery Jones</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black childStatus">C_ASSESS</p>
+</div>
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD ID</div>
+<p class="black childId">C116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">CHILD NAME</div>
+<p class="black childName">Avery Jones</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black childStatus">C_ASSESS</p>
+</div>
+</div>
+
+
+<div class="d-flex justify-content-center mt-4">
+<a class="loadAllUpdate" role="button" tabindex="0" aria-label="Show all">
+
+<p class="darkBlue">see all</p>
+
+</a>
+
+
+</div>
+
+
+</div>
+<div class="col-lg-6 case-status parent-nonResponse">
+<h2 class="landing-sec-H noBorder text-center">Parent Non-Response</h2>
+<div class="topAttr d-flex align-items-center">
+<div class="col-lg-4">
+<h6 class="gray larger">PARENT ID </h6>
+</div>
+<div class="col-lg-4">
+<h6 class="gray larger">PARENT NAME </h6>
+</div>
+<div class="col-lg-4">
+<h6 class="gray larger">STATUS</h6>
+</div>
+
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT ID</div>
+<p class="black parentId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT NAME</div>
+<p class="black parentName">Spencer Reed</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black parentStatus">Complete</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT ID</div>
+<p class="black parentId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT NAME</div>
+<p class="black parentName">Aaron Smith</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black parentStatus">Not Started</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT ID</div>
+<p class="black parentId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT NAME</div>
+<p class="black parentName">Emily Prentiss</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black parentStatus">In-Progress</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT ID</div>
+<p class="black parentId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT NAME</div>
+<p class="black parentName">Derek Morgan</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black parentStatus">Complete</p>
+</div>
+</div>
+
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT ID</div>
+<p class="black parentId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT NAME</div>
+<p class="black parentName">Derek Morgan</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black parentStatus">Complete</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT ID</div>
+<p class="black parentId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT NAME</div>
+<p class="black parentName">Derek Morgan</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black parentStatus">Complete</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT ID</div>
+<p class="black parentId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT NAME</div>
+<p class="black parentName">Derek Morgan</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black parentStatus">Complete</p>
+</div>
+</div>
+<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
+<div class="goldLeftBar"></div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT ID</div>
+<p class="black parentId">Y116812</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+<div class="mobile">PARENT NAME</div>
+<p class="black parentName">Derek Morgan</p>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="mobile">STATUS</div>
+<p class="black parentStatus">Complete</p>
+</div>
+</div>
+
+<div class="d-flex justify-content-center mt-4">
+<a class="loadAllUpdate" role="button" tabindex="0" aria-label="Show all">
+<p class="darkBlue">see all</p>
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+</div> -->
+
+<div class="tab-pane active" id="tabs-2" role="tabpanel">
+	<form class="update" novalidate role="form">
+		<div class="row grayUnderline">
+
+			<div class="col-lg-7 col-md-12 col-sm-12">
+
+				<div class="row mb-3 d-flex align-items-center">
+					<div class="col-lg-6 col-md-12">
+						<label for="workarea1" class="fontZero">Select Workarea</label>
+						<select id="workarea1" class="form-control">
+							<option value="">Select Workarea</option>
+							<option value="one">something</option>
+							<option value="two">something</option>
+							<option value="three">something</option>
+							<option value="four">something</option>
+							<option value="five">something</option>
+							<option value="six">something</option>
+							<option value="seven">something</option>
+							<option value="eight">something</option>
+							<option value="nine">something</option>
+							<option value="ten">something</option>
+							<option value="eleven">something</option>
+
+						</select>
+					</div>
+
+					<div class="col-lg-6 col-md-12">
+
+						<div class="form-group has-search d-flex justify-content-center align-items-center">
+							<div>
+								<span class="fa fa-search form-control-feedback"></span>
+								<input type="text" class="form-control" placeholder="search by LEAID or district name">
+							</div>
 						</div>
 
 					</div>
-				-->
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+		<div class="row position-relative">
+			<div class="col-lg-8 col-md-8">
+				<div class="topAttr d-flex align-items-center">
+					<div class="col-lg-3">
+						<h6 class="gray larger sortId">LEAID
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
+					</div>
+					<div class="col-lg-3">
+						<h6 class="gray larger sortDistrict">DISTRICT NAME <i class="far fa-sort darkBlue"></i></h6>
+					</div>
+					<div class="col-lg-3">
+						<h6 class="gray larger sortDflag">DFLAG <i class="far fa-sort darkBlue"></i></h6>
+					</div>
+					<div class="col-lg-3">
+						<h6 class="gray larger sortStatus">DISTRICT STATUS <i class="far fa-sort darkBlue"></i></h6>
+					</div>
+
+				</div>
+
+				<div class="renderDistrictUpdate">
+
+
+				</div>
+
+			</div>
+
+
+			<div class="col-lg-4 col-md-4 position-rel">
+				<div class="lightGrayBox">
+					<p class="plum text-center mb-2 mt-0 pt-0">Disposition Codes</p>
+					<h6 class="gray small text-center mt-0">STATUS - DESCRIPTION</h6>
+
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio13" value="option1" name="codes" required>
+						<label class="form-check-label blue" for="inlineRadio13">71 - School Closed</label>
+					</div>
+
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio14" value="option2" name="codes" required>
+						<label class="form-check-label blue" for="inlineRadio14">72 - Not a regular school</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio15" value="option3" name="codes" required>
+						<label class="form-check-label blue" for="inlineRadio15">73 - No kindergarten or first grade children</label>
+					</div>
+
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio16" value="option4" name="codes" required>
+						<label class="form-check-label blue" for="inlineRadio16">90 - Final Refusal by district</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio17" value="option5" name="codes" required>
+						<label class="form-check-label blue" for="inlineRadio17">91 - Final refusal by school</label>
+					</div>
+
+				</div>
+				<div class="d-flex justify-content-center mt-3">
+					<button type="submit" class="btn lightGrayColor disabledSave updateButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Consent Signature">UPDATE</button>
+				</div>
+
+			</div>
+
+		</div>
+
+	</form>
+
+</div>
+
+
+<div class="tab-pane" id="tabs-3" role="tabpanel">
+
+
+	<form>
+		<div class="row grayUnderline">
+
+			<div class="col-lg-7 col-md-12 col-sm-12">
+
+				<div class="row mb-3 d-flex align-items-center">
+					<div class="col-lg-6 col-md-6">
+						<label for="workarea2" class="fontZero">Select Workarea</label>
+						<select id="workarea2" class="form-control">
+							<option value="">Select Workarea</option>
+							<option value="one">something</option>
+							<option value="two">something</option>
+							<option value="three">something</option>
+							<option value="four">something</option>
+							<option value="five">something</option>
+							<option value="six">something</option>
+							<option value="seven">something</option>
+							<option value="eight">something</option>
+							<option value="nine">something</option>
+							<option value="ten">something</option>
+							<option value="eleven">something</option>
+
+						</select>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6">
+
+						<div class="form-group has-search d-flex justify-content-center align-items-center">
+							<div>
+								<span class="fa fa-search form-control-feedback"></span>
+								<input type="text" class="form-control" placeholder="search by school ID or school name">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+		<div class="row position-relative">
+			<div class="col-lg-8 col-md-8">
+				<div class="topAttr d-flex align-items-center">
+					<div class="col-lg-4">
+						<h6 class="gray larger sortSchoolID">SCHOOL ID
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
+
+					</div>
+					<div class="col-lg-4">
+						<h6 class="gray larger sortSchool">SCHOOL NAME
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
+					</div>
+					<div class="col-lg-4">
+						<h6 class="gray larger sortSDISP">SDISP
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
+					</div>
+
+
+				</div>
+
+
+				<div class="renderSchoolUpdate">
+
+
+				</div>
+
+			</div>
+
+
+			<div class="col-lg-4 col-md-4 position-rel">
+				<div class="lightGrayBox">
+
+					<p class="plum text-center mb-2 mt-0 pt-0">Disposition Codes</p>
+					<h6 class="gray small text-center mt-0">SDISP - DESCRIPTION</h6>
+
+
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio103" value="option1" name="codes">
+						<label class="form-check-label blue" for="inlineRadio103">71 - School Closed</label>
+					</div>
+
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio104" value="option2" name="codes">
+						<label class="form-check-label blue" for="inlineRadio104">72 - Not a regular school</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio105" value="option3" name="codes">
+						<label class="form-check-label blue" for="inlineRadio105">73 - No kindergarten or first grade children</label>
+					</div>
+
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio106" value="option4" name="codes">
+						<label class="form-check-label blue" for="inlineRadio106">90 - Final Refusal by district</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio107" value="option5" name="codes">
+						<label class="form-check-label blue" for="inlineRadio107">91 - Final refusal by school</label>
+					</div>
+
+
+				</div>
+				<div class="d-flex justify-content-center mt-3">
+					<button type="submit" class="btn lightGrayColor disabledSave updateButton" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Consent Signature">UPDATE</button>
+				</div>
 
 
 			</div>
 
 
-			<div class="col-lg-4 col-md-4">
+
+		</div>
+
+	</form>
+
+
+
+</div>
+
+
+<div class="tab-pane" id="tabs-4" role="tabpanel">
+	<form>
+		<div class="row grayUnderline">
+
+			<div class="col-lg-7 col-md-12 col-sm-12">
+
+				<div class="form-row mb-3 d-flex align-items-center">
+					<div class="col-lg-6 col-md-12">
+						<label for="workarea3" class="fontZero">Select Workarea</label>
+						<select id="workarea3" class="form-control">
+							<option value="">Select Workarea</option>
+							<option value="one">something</option>
+							<option value="two">something</option>
+							<option value="three">something</option>
+							<option value="four">something</option>
+							<option value="five">something</option>
+							<option value="six">something</option>
+							<option value="seven">something</option>
+							<option value="eight">something</option>
+							<option value="nine">something</option>
+							<option value="ten">something</option>
+							<option value="eleven">something</option>
+
+						</select>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6">
+
+						<div class="form-group has-search d-flex justify-content-center align-items-center">
+							<div>
+								<span class="fa fa-search form-control-feedback"></span>
+								<input type="text" class="form-control" placeholder="search by child ID or child name">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-8 col-md-8">
+				<div class="topAttr d-flex align-items-center">
+					<div class="col-lg-4">
+						<h6 class="gray larger sortChildID">CHILD ID
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
+
+					</div>
+					<div class="col-lg-4">
+						<h6 class="gray larger sortChild">CHILD NAME
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
+					</div>
+					<div class="col-lg-4">
+						<h6 class="gray larger sortStatus">STATUS
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
+					</div>
+				</div>
+
+				<div class="renderChildUpdate"></div>
+
+			</div>
+
+
+			<div class="col-lg-4 col-md-4 position-rel">
 				<div class="lightGrayBox">
 
 					<p class="plum text-center mb-2 mt-0 pt-0">Disposition Codes</p>
-					<h6 class="gray small text-center mt-0">??? - DESCRIPTION</h6>
-					<ul class="codes">
-						<li>80 - Partial assessment, ran out of time <i class="fal fa-times ml-4 darkBlue hidden" data-index="2"></i></li>
-						<li>81 - Partial assessment, child ill/upset/fatigued <i class="fal fa-times ml-4 darkBlue hidden" data-index="3"></i></li>
-						<li>83 - Partial assessment, child's mental/physical limitation <i class="fal fa-times ml-4 darkBlue hidden" data-index="4"></i></li>
+					<h6 class="gray small text-center mt-0">STATUS - DESCRIPTION</h6>
 
-						<li>86 - Partial assessment, other (specify) <i class="fal fa-times ml-4 darkBlue hidden" data-index="5"></i></li>
 
-						<li>90 – Consent Not Obtained <i class="fal fa-times ml-4 darkBlue hidden" data-index="6"></i></li>
-						<li>92 – School Refused Names <i class="fal fa-times ml-4 darkBlue hidden" data-index="7"></i></li>
-						<li>93 – Child refused participation <i class="fal fa-times ml-4 darkBlue hidden" data-index="8"></i></li>
-						<li>94 – Child language barrier <i class="fal fa-times ml-4 darkBlue hidden" data-index="9"></i></li>
-						<li>95 – Not assessed – child unavailable <i class="fal fa-times ml-4 darkBlue hidden" data-index="10"></i></li>
-						<li>96 – Not assessed – other (specify) <i class="fal fa-times ml-4 darkBlue hidden" data-index="11"></i></li>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio60" value="option1" name="codes">
+						<label class="form-check-label blue" for="inlineRadio60">80 - Partial assessment, ran out of time</label>
+					</div>
 
-					</ul>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio61" value="option2" name="codes">
+						<label class="form-check-label blue" for="inlineRadio61">81 - Partial assessment, child ill/upset/fatigued</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio62" value="option3" name="codes">
+						<label class="form-check-label blue" for="inlineRadio62">83 - Partial assessment, child's mental/physical limitation</label>
+					</div>
+
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio63" value="option4" name="codes">
+						<label class="form-check-label blue" for="inlineRadio63">86 - Partial assessment, other (specify)</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio64" value="option5" name="codes">
+						<label class="form-check-label blue" for="inlineRadio64">90 – Consent Not Obtained</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio65" value="option6" name="codes">
+						<label class="form-check-label blue" for="inlineRadio65">92 – School Refused Names</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio66" value="option7" name="codes">
+						<label class="form-check-label blue" for="inlineRadio66">93 – Child refused participation</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio67" value="option8" name="codes">
+						<label class="form-check-label blue" for="inlineRadio67">94 – Child language barrier</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio68" value="option9" name="codes">
+						<label class="form-check-label blue" for="inlineRadio68">95 – Not assessed – child unavailable</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio69" value="option10" name="codes">
+						<label class="form-check-label blue" for="inlineRadio69">96 – Not assessed – other (specify)</label>
+					</div>
 
 
 				</div>
@@ -751,10 +1285,10 @@
 	<form>
 		<div class="row grayUnderline">
 
-			<div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="col-lg-7 col-md-12 col-sm-12">
 
-				<div class="form-row mb-3 d-flex align-items-center">
-					<div class="col-lg-3 col-md-12">
+				<div class="row mb-3 d-flex align-items-center">
+					<div class="col-lg-6 col-md-12">
 						<label for="workarea4" class="fontZero">Select Workarea</label>
 						<select id="workarea4" class="form-control">
 							<option value="">Select Workarea</option>
@@ -773,22 +1307,12 @@
 						</select>
 					</div>
 
-
-					<div class="col-lg-5 col-md-12">
-						<div class="form-check form-check-inline mt-4 pt-1 ml-1">
-
-							<p class="blackFont mb-0 mr-3">Sort By:</p>
-
-							<div class="form-check form-check-inline customRadio sortUp">
-								<input class="form-check-input" type="radio" id="inlineRadio601" value="option1" name="phone">
-								<label class="form-check-label blue" for="inlineRadio601">Parent ID</label>
+					<div class="col-lg-6 col-md-6">
+						<div class="form-group has-search d-flex justify-content-center align-items-center">
+							<div>
+								<span class="fa fa-search form-control-feedback"></span>
+								<input type="text" class="form-control" placeholder="search by parent ID or parent name">
 							</div>
-
-							<div class="form-check form-check-inline customRadio">
-								<input class="form-check-input" type="radio" id="inlineRadio602" value="option2" name="phone">
-								<label class="form-check-label blue" for="inlineRadio602">Status</label>
-							</div>
-
 						</div>
 
 					</div>
@@ -804,83 +1328,72 @@
 			<div class="col-lg-8 col-md-8">
 				<div class="topAttr d-flex align-items-center">
 					<div class="col-lg-4">
-						<h6 class="gray larger">PARENT ID</h6>
+						<h6 class="gray larger sortParentID">PARENT ID
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
+
 					</div>
 					<div class="col-lg-4">
-						<h6 class="gray larger">PARENT NAME </h6>
+						<h6 class="gray larger sortParent">PARENT NAME
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
 					</div>
 					<div class="col-lg-4">
-						<h6 class="gray larger">STATUS</h6>
+						<h6 class="gray larger sortStatus">STATUS
+							<i class="far fa-sort darkBlue"></i>
+						</h6>
 					</div>
 				</div>
 
-				<!-- <div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-				<div class="goldLeftBar"></div>
-				<div class="one absoluteCheckbox">
-				<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation788">
-				<label class="form-check-label fontZero" tabindex="0" for="customControlValidation788">Something</label>
+					<div class="renderParentUpdate"></div>
 
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-			<div class="mobile">PARENT ID</div>
-			<p class="black parentId">Y116812</p>
-		</div>
-		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-		<div class="mobile">PARENT NAME</div>
-		<p class="black parentName">Hanna Jones</p>
-	</div>
-	<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-	<div class="mobile">STATUS</div>
-	<p class="black parentStatus">Complete</p>
-</div>
-
-</div>
-
-<div class="updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden" type="submit" tabindex="0" aria-hidden="false" role="button">
-<div class="goldLeftBar"></div>
-<div class="one absoluteCheckbox">
-<input class="form-check-input" type="checkbox" name="validation" id="customControlValidation778">
-<label class="form-check-label fontZero" tabindex="0" for="customControlValidation778">Something</label>
-
-</div>
-<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-<div class="mobile">PARENT ID</div>
-<p class="black parentId">Y116812</p>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-<div class="mobile">PARENT NAME</div>
-<p class="black parentName">Hanna Jones</p>
-</div>
-<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-<div class="mobile">STATUS</div>
-<p class="black parentStatus">Complete</p>
-</div>
-
-</div> -->
 
 
 </div>
 
 
-<div class="col-lg-4 col-md-4">
+<div class="col-lg-4 col-md-4 position-rel">
 	<div class="lightGrayBox">
 
 		<p class="plum text-center mb-2 mt-0 pt-0">Disposition Codes</p>
-		<h6 class="gray small text-center mt-0">??? - DESCRIPTION</h6>
-		<ul class="codes">
-			<li>80 – Final breakoff <i class="fal fa-times ml-4 darkBlue hidden" data-index="2"></i></li>
-			<li>90 – Final refusal <i class="fal fa-times ml-4 darkBlue hidden" data-index="3"></i></li>
-			<li>92 – School refused names  <i class="fal fa-times ml-4 darkBlue hidden" data-index="4"></i></li>
+		<h6 class="gray small text-center mt-0">STATUS - DESCRIPTION</h6>
 
-			<li>93 – Unable to contact parent (Contact info correct) <i class="fal fa-times ml-4 darkBlue hidden" data-index="5"></i></li>
+		<div class="form-check customRadio">
+			<input class="form-check-input" type="radio" id="inlineRadio80" value="option1" name="codes">
+			<label class="form-check-label blue" for="inlineRadio80">80 – Final breakoff</label>
+		</div>
 
-			<li>94 – Unlocatable parent <i class="fal fa-times ml-4 darkBlue hidden" data-index="6"></i></li>
-			<li>95 – Language/hearing barrier <i class="fal fa-times ml-4 darkBlue hidden" data-index="7"></i></li>
-			<li>96 – Non-response/other (specify) <i class="fal fa-times ml-4 darkBlue hidden" data-index="8"></i></li>
-			<li>98 – Data deleted – do not recontact <i class="fal fa-times ml-4 darkBlue hidden" data-index="9"></i></li>
+		<div class="form-check customRadio">
+			<input class="form-check-input" type="radio" id="inlineRadio81" value="option2" name="codes">
+			<label class="form-check-label blue" for="inlineRadio81">90 – Final refusal</label>
+		</div>
+		<div class="form-check customRadio">
+			<input class="form-check-input" type="radio" id="inlineRadio82" value="option3" name="codes">
+			<label class="form-check-label blue" for="inlineRadio82">92 – School refused names</label>
+		</div>
+
+		<div class="form-check customRadio">
+			<input class="form-check-input" type="radio" id="inlineRadio83" value="option4" name="codes">
+			<label class="form-check-label blue" for="inlineRadio83">93 – Unable to contact parent (Contact info correct)</label>
+		</div>
+		<div class="form-check customRadio">
+			<input class="form-check-input" type="radio" id="inlineRadio84" value="option5" name="codes">
+			<label class="form-check-label blue" for="inlineRadio84">94 – Unlocatable parent</label>
+		</div>
+		<div class="form-check customRadio">
+			<input class="form-check-input" type="radio" id="inlineRadio85" value="option6" name="codes">
+			<label class="form-check-label blue" for="inlineRadio85">95 – Language/hearing barrier</label>
+		</div>
+		<div class="form-check customRadio">
+			<input class="form-check-input" type="radio" id="inlineRadio86" value="option7" name="codes">
+			<label class="form-check-label blue" for="inlineRadio86">96 – Non-response/other (specify)</label>
+		</div>
+		<div class="form-check customRadio">
+			<input class="form-check-input" type="radio" id="inlineRadio87" value="option8" name="codes">
+			<label class="form-check-label blue" for="inlineRadio87">98 – Data deleted – do not recontact</label>
+		</div>
 
 
-		</ul>
 
 
 	</div>
@@ -954,6 +1467,93 @@
 		</div>
 	</div>
 </div>
+
+
+<div class="modal updateSchoolModal updates" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h5 class="modal-title">Are you sure you want to set school [SID] to [SDISP]?</h5>
+				<div class="d-flex justify-content-center mt-5">
+
+					<button type="submit" class="lightGrayColor mr-1 greenButton" tabindex="0" aria-hidden="false" role="button" aria-label="Update Information" data-dismiss="modal">OK <i class="fas fa-check"></i>
+					</button>
+
+					<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without updating" data-dismiss="modal">CANCEL <i class="fas fa-ban stop"></i>
+					</button>
+
+				</div>
+			</div>
+			<div class="modal-footer">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal updateChildModal updates" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h5 class="modal-title">Are you sure you want to set child [CID] to [C_ASSESS]?</h5>
+				<div class="d-flex justify-content-center mt-5">
+
+					<button type="submit" class="lightGrayColor mr-1 greenButton" tabindex="0" aria-hidden="false" role="button" aria-label="Update Information" data-dismiss="modal">OK <i class="fas fa-check"></i>
+					</button>
+
+					<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without updating" data-dismiss="modal">CANCEL <i class="fas fa-ban stop"></i>
+					</button>
+
+				</div>
+			</div>
+			<div class="modal-footer">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal updateParentModal updates" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h5 class="modal-title">Are you sure you want to set parent [PID] to [CAPI_STAT]?</h5>
+				<div class="d-flex justify-content-center mt-5">
+
+					<button type="submit" class="lightGrayColor mr-1 greenButton" tabindex="0" aria-hidden="false" role="button" aria-label="Update Information" data-dismiss="modal">OK <i class="fas fa-check"></i>
+					</button>
+
+					<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without updating" data-dismiss="modal">CANCEL <i class="fas fa-ban stop"></i>
+					</button>
+
+				</div>
+			</div>
+			<div class="modal-footer">
+
+			</div>
+		</div>
+	</div>
+</div>
+
 
 
 <footer>

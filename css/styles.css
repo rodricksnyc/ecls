@@ -552,7 +552,7 @@ align-items: center;
   z-index: 9999;
 }
 
-.updateDistrictModal{
+.updates{
   z-index: 999999;
 }
 
@@ -1353,7 +1353,7 @@ textarea {
   position: absolute;
   left: 3%;
   top: calc(50% - 24px);
-  z-index:99
+  z-index:9999
 }
 /*
 .absoluteCheckbox label{
@@ -1407,7 +1407,7 @@ font-size:0px !important;
 }
 
 .casePage .has-search .form-control {
-  min-width: 20em;
+  min-width: 16em;
   margin: 0em !important;
 }
 

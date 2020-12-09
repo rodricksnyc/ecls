@@ -1165,6 +1165,222 @@ $(document).ready(function () {
 		$('.renderDistrictUpdate').append("<div class=\"updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + districtUpdate.districtsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + districtUpdate.districtsUpdate[j].checkboxID + "\">something</label></div><div class=\"col-lg-3 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">LEAID</div><p class=\"black leadid\">" + districtUpdate.districtsUpdate[j].leadid + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">DISTRICT NAME</div><p class=\"black schoolName\">" + districtUpdate.districtsUpdate[j].schoolName + "</p></div><div class=\"col-lg-3 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">DFLAG</div><p class=\"black dflag\">" + districtUpdate.districtsUpdate[j].dflag + "</p></div><div class=\"col-lg-3 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">STATUS</div><p class=\"black dStatus\">" + districtUpdate.districtsUpdate[j].dStatus + "</p></div></div>");
 	}
 
+	var schoolUpdate = { "schoolsUpdate": [{
+			"checkboxID": 'custom13',
+			"schoolid": '9939993S',
+			"theSchools": "Holy Family",
+			"sdisp": '72'
+		}, {
+			"checkboxID": 'custom14',
+			"schoolid": '9999993S',
+			"theSchools": "Palmer Elementary",
+			"sdisp": '73'
+		}, {
+			"checkboxID": 'custom15',
+			"schoolid": '9566993S',
+			"theSchools": "Forks Elementary",
+			"sdisp": '75'
+		}, {
+			"checkboxID": 'custom16',
+			"schoolid": '9222973S',
+			"theSchools": "Moravian",
+			"sdisp": '77'
+		}, {
+			"checkboxID": 'custom17',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom18',
+			"schoolid": '9939993S',
+			"theSchools": "Holy Family",
+			"sdisp": '72'
+		}, {
+			"checkboxID": 'custom19',
+			"schoolid": '9999993S',
+			"theSchools": "Palmer Elementary",
+			"sdisp": '73'
+		}, {
+			"checkboxID": 'custom20',
+			"schoolid": '9566993S',
+			"theSchools": "Forks Elementary",
+			"sdisp": '75'
+		}, {
+			"checkboxID": 'custom21',
+			"schoolid": '9222973S',
+			"theSchools": "Moravian",
+			"sdisp": '77'
+		}, {
+			"checkboxID": 'custom22',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		},, {
+			"checkboxID": 'custom23',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom24',
+			"schoolid": '9939993S',
+			"theSchools": "Holy Family",
+			"sdisp": '72'
+		}, {
+			"checkboxID": 'custom25',
+			"schoolid": '9999993S',
+			"theSchools": "Palmer Elementary",
+			"sdisp": '73'
+		}, {
+			"checkboxID": 'custom26',
+			"schoolid": '9566993S',
+			"theSchools": "Forks Elementary",
+			"sdisp": '75'
+		}, {
+			"checkboxID": 'custom27',
+			"schoolid": '9222973S',
+			"theSchools": "Moravian",
+			"sdisp": '77'
+		}, {
+			"checkboxID": 'custom28',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom29',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		},, {
+			"checkboxID": 'custom30',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom31',
+			"schoolid": '9939993S',
+			"theSchools": "Holy Family",
+			"sdisp": '72'
+		}, {
+			"checkboxID": 'custom32',
+			"schoolid": '9999993S',
+			"theSchools": "Palmer Elementary",
+			"sdisp": '73'
+		}, {
+			"checkboxID": 'custom33',
+			"schoolid": '9566993S',
+			"theSchools": "Forks Elementary",
+			"sdisp": '75'
+		}, {
+			"checkboxID": 'custom34',
+			"schoolid": '9222973S',
+			"theSchools": "Moravian",
+			"sdisp": '77'
+		}, {
+			"checkboxID": 'custom35',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}] };
+
+	for (var j in schoolUpdate.schoolsUpdate) {
+
+		$('.renderSchoolUpdate').append("<div class=\"updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + schoolUpdate.schoolsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + schoolUpdate.schoolsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black schoolid\">" + schoolUpdate.schoolsUpdate[j].schoolid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black theSchools\">" + schoolUpdate.schoolsUpdate[j].theSchools + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black sdisp\">" + schoolUpdate.schoolsUpdate[j].sdisp + "</p></div></div>");
+	}
+
+	var childUpdate = { "childsUpdate": [{
+			"checkboxID": 'custom80',
+			"chilid": '9119993S',
+			"childName": "Kelly Smith",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom81',
+			"childid": '9117793S',
+			"childName": "Billy Bob",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom82',
+			"childid": '9100993S',
+			"childName": "Jojo Momo",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom83',
+			"childid": '9124993S',
+			"childName": "Sal Hal",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom84',
+			"childid": '9119993S',
+			"childName": "Kelly Smith",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom85',
+			"childid": '9117793S',
+			"childName": "Billy Bob",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom86',
+			"childid": '9100993S',
+			"childName": "Jojo Momo",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom87',
+			"childid": '9124993S',
+			"childName": "Sal Hal",
+			"cStatus": "C_CONSENT"
+		}] };
+
+	for (var j in childUpdate.childsUpdate) {
+
+		$('.renderChildUpdate').append("<div class=\"updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + childUpdate.childsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + childUpdate.childsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black childid\">" + childUpdate.childsUpdate[j].childid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black childName\">" + childUpdate.childsUpdate[j].childName + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black cStatus\">" + childUpdate.childsUpdate[j].cStatus + "</p></div></div>");
+	}
+
+	var parentUpdate = { "parentsUpdate": [{
+			"checkboxID": 'custom30',
+			"parentid": 'Y116001P',
+			"parentName": "Kelly Smith",
+			"pStatus": "Complete"
+		}, {
+			"checkboxID": 'custom31',
+			"parentid": 'Y116002P',
+			"parentName": "Billy Bob",
+			"pStatus": "Not Started"
+		}, {
+			"checkboxID": 'custom32',
+			"parentid": 'Y116034P',
+			"parentName": "Jojo Momo",
+			"pStatus": "In-Progress"
+		}, {
+			"checkboxID": 'custom33',
+			"parentid": 'Y116182P',
+			"parentName": "Sal Hal",
+			"pStatus": "Not Started"
+		}, {
+			"checkboxID": 'custom34',
+			"parentid": 'Y116001P',
+			"parentName": "Kelly Smith",
+			"pStatus": "Complete"
+		}, {
+			"checkboxID": 'custom35',
+			"parentid": 'Y116552P',
+			"parentName": "Billy Bob",
+			"pStatus": "Complete"
+		}, {
+			"checkboxID": 'custom36',
+			"parentid": 'Y116762P',
+			"parentName": "Jojo Momo",
+			"pStatus": "In-Progress"
+		}, {
+			"checkboxID": 'custom37',
+			"parentid": 'Y116522P',
+			"parentName": "Sal Hal",
+			"pStatus": "In-Progress"
+		}] };
+
+	for (var j in parentUpdate.parentsUpdate) {
+
+		$('.renderParentUpdate').append("<div class=\"updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + parentUpdate.parentsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + parentUpdate.parentsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black parentid\">" + parentUpdate.parentsUpdate[j].parentid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black parentName\">" + parentUpdate.parentsUpdate[j].parentName + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black pStatus\">" + parentUpdate.parentsUpdate[j].pStatus + "</p></div></div>");
+	}
+
 	//district page alphabetize and sort numerically
 
 
@@ -1278,6 +1494,18 @@ $(document).ready(function () {
 				return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? 1 : -1;
 			});
 
+			var ascend41 = $('#tabs-4 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".cStatus").text() > $(b).find(".cStatus").text() ? 1 : -1;
+			});
+
+			var ascend51 = $('#tabs-5 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".pStatus").text() > $(b).find(".pStatus").text() ? 1 : -1;
+			});
+
+			$(".renderChildUpdate").html(ascend41);
+
+			$(".renderParentUpdate").html(ascend51);
+
 			$(".renderDistrictUpdate").html(ascend103);
 
 			$(".renderDistricts").html(ascendOrderedDivs3);
@@ -1299,6 +1527,18 @@ $(document).ready(function () {
 			var descend103 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
 				return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? -1 : 1;
 			});
+
+			var descend41 = $('#tabs-4 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".cStatus").text() > $(b).find(".cStatus").text() ? -1 : 1;
+			});
+
+			var descend51 = $('#tabs-5 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".pStatus").text() > $(b).find(".pStatus").text() ? -1 : 1;
+			});
+
+			$(".renderChildUpdate").html(descend41);
+
+			$(".renderParentUpdate").html(descend51);
 
 			$(".renderDistrictUpdate").html(descend103);
 
@@ -1384,6 +1624,12 @@ $(document).ready(function () {
 				return $(a).find(".theSchools").text() > $(b).find(".theSchools").text() ? 1 : -1;
 			});
 
+			var ascend501 = $('#tabs-3 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".theSchools").text() > $(b).find(".theSchools").text() ? 1 : -1;
+			});
+
+			$(".renderSchoolUpdate").html(ascend501);
+
 			$(".renderSchools").html(ascendOrderedDivs5);
 			setTimeout(function () {
 				$('.sortSchool').addClass('ascending');
@@ -1401,6 +1647,12 @@ $(document).ready(function () {
 			var descendOrderedDivs5 = $('.schoolBlocks').sort(function (a, b) {
 				return $(a).find(".theSchools").text() > $(b).find(".theSchools").text() ? -1 : 1;
 			});
+
+			var descend501 = $('#tabs-3 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".theSchools").text() > $(b).find(".theSchools").text() ? -1 : 1;
+			});
+
+			$(".renderSchoolUpdate").html(descend501);
 
 			$(".renderSchools").html(descendOrderedDivs5);
 			setTimeout(function () {
@@ -1540,6 +1792,16 @@ $(document).ready(function () {
 				return parseFloat($(a).find('.schoolid').text()) > parseFloat($(b).find('.schoolid').text()) ? 1 : -1;
 			});
 
+			var numerical101 = $('#tabs-3 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.schoolid').text()) > parseFloat($(b).find('.schoolid').text()) ? 1 : -1;
+			});
+
+			var sdisp = $('#tabs-3 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.sdisp').text()) > parseFloat($(b).find('.sdisp').text()) ? 1 : -1;
+			});
+
+			$(".renderSchoolUpdate").html(numerical101);
+
 			$(".renderSchools").html(numericallyOrderedDivs);
 			setTimeout(function () {
 				$('.sortSchoolID').addClass('ascending');
@@ -1558,7 +1820,14 @@ $(document).ready(function () {
 				return parseFloat($(a).find('.schoolid').text()) > parseFloat($(b).find('.schoolid').text()) ? -1 : 1;
 			});
 
+			var numerical101 = $('#tabs-3 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.schoolid').text()) > parseFloat($(b).find('.schoolid').text()) ? -1 : 1;
+			});
+
+			$(".renderSchoolUpdate").html(numerical101);
+
 			$(".renderSchools").html(numericallyOrderedDivs);
+
 			setTimeout(function () {
 				$('.sortSchoolID').removeClass('ascending');
 			}, 600);
@@ -1604,6 +1873,213 @@ $(document).ready(function () {
 			$('.topAttr i').each(function () {
 				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
 			});
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	//sort update final case
+
+	$('.sortParent').on('click', function () {
+
+		if (!$('.sortParent').hasClass('ascending')) {
+
+			var ascend71 = $('#tabs-5 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".parentName").text() > $(b).find(".parentName").text() ? 1 : -1;
+			});
+
+			$(".renderParentUpdate").html(ascend71);
+
+			setTimeout(function () {
+				$('.sortParent').addClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortParent').hasClass('ascending')) {
+
+			var descend71 = $('#tabs-5 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".parentName").text() > $(b).find(".parentName").text() ? -1 : 1;
+			});
+
+			$(".renderParentUpdate").html(descend71);
+
+			setTimeout(function () {
+				$('.sortParent').removeClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	$('.sortSDISP').on('click', function () {
+
+		if (!$('.sortSDISP').hasClass('ascending')) {
+
+			var sdispAscend = $('#tabs-3 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.sdisp').text()) > parseFloat($(b).find('.sdisp').text()) ? 1 : -1;
+			});
+
+			$(".renderSchoolUpdate").html(sdispAscend);
+
+			setTimeout(function () {
+				$('.sortSDISP').addClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortSDISP').hasClass('ascending')) {
+
+			var sdispDesc = $('#tabs-3 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.sdisp').text()) > parseFloat($(b).find('.sdisp').text()) ? -1 : 1;
+			});
+
+			$(".renderSchoolUpdate").html(sdispDesc);
+
+			setTimeout(function () {
+				$('.sortSDISP').removeClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	$('.sortChildID').on('click', function () {
+
+		if (!$('.sortChildID').hasClass('ascending')) {
+
+			var numerical21 = $('#tabs-4 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.childid').text()) > parseFloat($(b).find('.childid').text()) ? 1 : -1;
+			});
+
+			$(".renderChildUpdate").html(numerical21);
+
+			setTimeout(function () {
+				$('.sortChildID').addClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortChildID').hasClass('ascending')) {
+
+			var numerical21 = $('#tabs-4 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.childid').text()) > parseFloat($(b).find('.childid').text()) ? -1 : 1;
+			});
+
+			$(".renderChildUpdate").html(numerical21);
+
+			setTimeout(function () {
+				$('.sortChildID').removeClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	$('.sortChild').on('click', function () {
+
+		if (!$('.sortChild').hasClass('ascending')) {
+
+			var ascend22 = $('#tabs-4 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".childName").text() > $(b).find(".childName").text() ? 1 : -1;
+			});
+
+			$(".renderChildUpdate").html(ascend22);
+
+			setTimeout(function () {
+				$('.sortChild').addClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortChild').hasClass('ascending')) {
+
+			var descend22 = $('#tabs-4 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".childName").text() > $(b).find(".childName").text() ? -1 : 1;
+			});
+
+			$(".renderChildUpdate").html(descend22);
+
+			setTimeout(function () {
+				$('.sortChild').removeClass('ascending');
+			}, 100);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
+		}
+	});
+
+	$('.sortParentID').on('click', function () {
+
+		if (!$('.sortParentID').hasClass('ascending')) {
+
+			var numerical81 = $('#tabs-5 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.parentid').text()) > parseFloat($(b).find('.parentid').text()) ? 1 : -1;
+			});
+
+			$(".renderParentUpdate").html(numerical81);
+
+			setTimeout(function () {
+				$('.sortParentID').addClass('ascending');
+			}, 100);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
+			$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>');
+		}
+
+		if ($('.sortParentID').hasClass('ascending')) {
+
+			var numerical81 = $('#tabs-5 .updateBlocks').sort(function (a, b) {
+				return parseFloat($(a).find('.parentid').text()) > parseFloat($(b).find('.parentid').text()) ? -1 : 1;
+			});
+
+			$(".renderParentUpdate").html(numerical81);
+
+			setTimeout(function () {
+				$('.sortParentID').removeClass('ascending');
+			}, 600);
+
+			$('.topAttr  i').each(function () {
+				$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>');
+			});
+
 			$(this).find('i').replaceWith('<i class="fad fa-sort-down darkBlue"></i>');
 		}
 	});
@@ -3272,7 +3748,7 @@ $(document).ready(function () {
 	//update tabs in Final Case Status
 
 
-	$('#tabs-2 .absoluteCheckbox input').on('change', function () {
+	$(document).on('change', '#tabs-2 .absoluteCheckbox input', function () {
 		if ($(this).is(':checked')) {
 			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound');
 			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar');
@@ -3292,7 +3768,7 @@ $(document).ready(function () {
 		}
 	});
 
-	$('#tabs-3 .absoluteCheckbox input').on('change', function () {
+	$(document).on('change', '#tabs-3 .absoluteCheckbox input', function () {
 		if ($(this).is(':checked')) {
 			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound');
 			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar');
@@ -3312,7 +3788,7 @@ $(document).ready(function () {
 		}
 	});
 
-	$('#tabs-4 .absoluteCheckbox input').on('change', function () {
+	$(document).on('change', '#tabs-4 .absoluteCheckbox input', function () {
 		if ($(this).is(':checked')) {
 			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound');
 			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar');
@@ -3332,7 +3808,7 @@ $(document).ready(function () {
 		}
 	});
 
-	$('#tabs-5 .absoluteCheckbox input').on('change', function () {
+	$(document).on('change', '#tabs-5 .absoluteCheckbox input', function () {
 		if ($(this).is(':checked')) {
 			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound');
 			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar');
@@ -3366,9 +3842,34 @@ $(document).ready(function () {
 		$('.updateDistrictModal').modal('show');
 	});
 
+	$("#tabs-3 .updateButton").on("click", function (e) {
+		e.preventDefault();
+
+		$('.updateSchoolModal').modal('show');
+	});
+
+	$("#tabs-4 .updateButton").on("click", function (e) {
+		e.preventDefault();
+
+		$('.updateChildModal').modal('show');
+	});
+
+	$("#tabs-5 .updateButton").on("click", function (e) {
+		e.preventDefault();
+
+		$('.updateParentModal').modal('show');
+	});
+
+	$(window).scroll(function () {
+		var sticky = $('.position-rel'),
+		    scroll = $(window).scrollTop();
+
+		if (scroll >= 270) sticky.addClass('fixedDiv');else sticky.removeClass('fixedDiv');
+	});
+
 	$(window).scroll(function () {
 		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-		if (distanceY > 220) {
+		if (distanceY > 270) {
 
 			$('.fixedDiv').css({
 				top: '0'
