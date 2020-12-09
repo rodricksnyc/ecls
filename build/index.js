@@ -1104,55 +1104,66 @@ $(document).ready(function () {
 		$('.renderErocs').removeClass('hidden');
 	});
 
-	//
-	// var districtUpdate = {"districtUpdates": [{
-	// 	"schoolId": '9999994C',
-	// 	"schoolName": "Edward Tracy Elementary School",
-	// 	"schoolAddress": 'Street Name, Easton PA 18040'
-	// },
-	// {
-	// 	"schoolId": '9999994C',
-	// 	"schoolName": "Edward Tracy Elementary School",
-	// 	"schoolAddress": 'Street Name, Easton PA 18040'
-	// },
-	//
-	// {
-	// 	"schoolId": '9999994C',
-	// 	"schoolName": "Edward Tracy Elementary School",
-	// 	"schoolAddress": 'Street Name, Easton PA 18040'
-	// },
-	//
-	// {
-	// 	"schoolId": '9999994C',
-	// 	"schoolName": "Edward Tracy Elementary School",
-	// 	"schoolAddress": 'Street Name, Easton PA 18040'
-	// },
-	//
-	//
-	// {
-	// 	"schoolId": '9999994C',
-	// 	"schoolName": "Edward Tracy Elementary School",
-	// 	"schoolAddress": 'Street Name, Easton PA 18040'
-	// },
-	//
-	// {
-	// 	"schoolId": '9999994C',
-	// 	"schoolName": "Edward Tracy Elementary School",
-	// 	"schoolAddress": 'Street Name, Easton PA 18040'
-	// }
-	//
-	//
-	// ]};
-	//
-	//
-	//
-	//
-	// for(var j in districtUpdate.districtUpdates) {
-	//
-	// 	$('.renderSchoolList').append(`<div class='addBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3' type="submit" tabindex="0" aria-hidden="false" role="button"><div class="goldLeftBar"></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ID</div><p class="black schoolId">${districtUpdate.districtUpdates[j].schoolId}</p></div><div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"><div class="mobile">SCHOOL NAME</div><p class="black schoolName">${districtUpdate.districtUpdates[j].schoolName}</p></div><div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"><div class="mobile">SCHOOL ADDRESS</div><p class="black schoolAddress">${districtUpdate.districtUpdates[j].schoolAddress}</p></div></div>`)
-	//
-	// }
+	var districtUpdate = { "districtsUpdate": [{
+			"checkboxID": 'custom11',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom12',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom13',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom14',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom15',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom16',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom17',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom18',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom19',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Approval Received"
+		}] };
 
+	for (var j in districtUpdate.districtsUpdate) {
+
+		$('.renderDistrictUpdate').append("<div class=\"updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + districtUpdate.districtsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + districtUpdate.districtsUpdate[j].checkboxID + "\">something</label></div><div class=\"col-lg-3 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">LEAID</div><p class=\"black leadid\">" + districtUpdate.districtsUpdate[j].leadid + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">DISTRICT NAME</div><p class=\"black schoolName\">" + districtUpdate.districtsUpdate[j].schoolName + "</p></div><div class=\"col-lg-3 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">DFLAG</div><p class=\"black dflag\">" + districtUpdate.districtsUpdate[j].dflag + "</p></div><div class=\"col-lg-3 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">STATUS</div><p class=\"black dStatus\">" + districtUpdate.districtsUpdate[j].dStatus + "</p></div></div>");
+	}
 
 	//district page alphabetize and sort numerically
 
@@ -1163,6 +1174,13 @@ $(document).ready(function () {
 			var ascendOrderedDivs = $('.addBlocks').sort(function (a, b) {
 				return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? 1 : -1;
 			});
+
+			var ascend101 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? 1 : -1;
+			});
+
+			$(".renderDistrictUpdate").html(ascend101);
+
 			$(".renderDistricts").html(ascendOrderedDivs);
 			setTimeout(function () {
 				$('.sortDistrict').addClass('ascending');
@@ -1180,6 +1198,13 @@ $(document).ready(function () {
 			var descendOrderedDivs = $('.addBlocks').sort(function (a, b) {
 				return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? -1 : 1;
 			});
+
+			var descend101 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".schoolName").text() > $(b).find(".schoolName").text() ? -1 : 1;
+			});
+
+			$(".renderDistrictUpdate").html(descend101);
+
 			$(".renderDistricts").html(descendOrderedDivs);
 			setTimeout(function () {
 				$('.sortDistrict').removeClass('ascending');
@@ -1200,6 +1225,12 @@ $(document).ready(function () {
 				return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? 1 : -1;
 			});
 
+			var ascend102 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? 1 : -1;
+			});
+
+			$(".renderDistrictUpdate").html(ascend102);
+
 			$(".renderDistricts").html(ascendOrderedDivs2);
 			setTimeout(function () {
 				$('.sortDflag').addClass('ascending');
@@ -1216,6 +1247,13 @@ $(document).ready(function () {
 			var descendOrderedDivs2 = $('.addBlocks').sort(function (a, b) {
 				return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? -1 : 1;
 			});
+
+			var descend102 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".dflag").text() > $(b).find(".dflag").text() ? -1 : 1;
+			});
+
+			$(".renderDistrictUpdate").html(descend102);
+
 			$(".renderDistricts").html(descendOrderedDivs2);
 			setTimeout(function () {
 				$('.sortDflag').removeClass('ascending');
@@ -1235,6 +1273,13 @@ $(document).ready(function () {
 			var ascendOrderedDivs3 = $('.addBlocks').sort(function (a, b) {
 				return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? 1 : -1;
 			});
+
+			var ascend103 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? 1 : -1;
+			});
+
+			$(".renderDistrictUpdate").html(ascend103);
+
 			$(".renderDistricts").html(ascendOrderedDivs3);
 			setTimeout(function () {
 				$('.sortStatus').addClass('ascending');
@@ -1250,6 +1295,13 @@ $(document).ready(function () {
 			var descendOrderedDivs3 = $('.addBlocks').sort(function (a, b) {
 				return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? -1 : 1;
 			});
+
+			var descend103 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".dStatus").text() > $(b).find(".dStatus").text() ? -1 : 1;
+			});
+
+			$(".renderDistrictUpdate").html(descend103);
+
 			$(".renderDistricts").html(descendOrderedDivs3);
 			setTimeout(function () {
 				$('.sortStatus').removeClass('ascending');
@@ -1272,6 +1324,16 @@ $(document).ready(function () {
 					sensitivity: 'base'
 				});
 			});
+
+			var ascend100 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
+				return $(a).find(".leadid").text().toString().localeCompare($(b).find(".leadid").text().toString(), undefined, {
+					numeric: true,
+					sensitivity: 'base'
+				});
+			});
+
+			$(".renderDistrictUpdate").html(ascend100);
+
 			$(".renderDistricts").html(ascendOrderedDivs4);
 			setTimeout(function () {
 				$('.sortId').addClass('ascending');
@@ -1289,6 +1351,16 @@ $(document).ready(function () {
 					sensitivity: 'base'
 				});
 			});
+
+			var descend100 = $('#tabs-2 .updateBlocks').sort(function (a, b) {
+				return $(b).find(".leadid").text().toString().localeCompare($(a).find(".leadid").text().toString(), undefined, {
+					numeric: true,
+					sensitivity: 'base'
+				});
+			});
+
+			$(".renderDistrictUpdate").html(descend100);
+
 			$(".renderDistricts").html(descendOrderedDivs4);
 			setTimeout(function () {
 				$('.sortId').removeClass('ascending');
@@ -2839,6 +2911,7 @@ $(document).ready(function () {
 			}, 160, function () {});
 
 			$('.reportsBlocks').removeClass('skinny');
+			$('.fixedDiv').removeClass('moveRight');
 		}
 
 		setTimeout(function () {
@@ -2929,6 +3002,8 @@ $(document).ready(function () {
 			$('.reportPage').animate({
 				'margin-left': "180px"
 			}, 200, function () {});
+
+			$('.fixedDiv').addClass('moveRight');
 		}
 
 		if ($(document).innerWidth() < 1600) {
@@ -3284,21 +3359,6 @@ $(document).ready(function () {
 
 	$('.casePage .customRadio input:checked').closest('.customRadio').find('.casePage .customRadio label').addClass('strong');
 
-	// $('input:radio[name="codes"]').click(function() {
-	//
-	// 	if($('input:radio:checked').length > 0){
-	//
-	// 		$(this).closest('.customRadio').find('label').addClass('strong')
-	//
-	// 	}
-	//
-	// 	if($('input:radio:checked').length == 0){
-	// 			$('label').removeClass('strong')
-	// 	}
-	//
-	// })
-
-
 	//sweet alerts for each update button
 
 	$("#tabs-3 .updateButton").on("click", function (e) {
@@ -3314,5 +3374,20 @@ $(document).ready(function () {
 			focusConfirm: true,
 			focusCancel: false
 		});
+	});
+
+	$(window).scroll(function () {
+		var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+		if (distanceY > 280) {
+
+			$('.fixedDiv').css({
+				top: '0'
+			});
+		} else {
+
+			$('.fixedDiv').css({
+				top: 'auto'
+			});
+		}
 	});
 });

@@ -1373,17 +1373,33 @@ font-size:0px !important;
   display: inline-flex !important;
   font-weight:600;
   /* padding-top: 7px; */
-padding-right: 5px;
-/* float:right */
+  padding-right: 5px;
+  /* float:right */
+}
+
+.casePage .customRadio input + label::before{
+  background: white;
+}
+
+.casePage .has-search .form-control {
+  min-width: 20em;
+  margin: 0em !important;
+}
+
+.casePage .has-search {
+  position: relative;
+  margin-bottom: 0em !important;
+  margin-left: 0em;
+  margin-top: 1.3em;
 }
 
 
 .casePage .customRadio label {
-    padding: 1px 0px 10px 5px;
-    font-size: 15px !important;
-    font-weight: 300;
-    font-family: 'Public Sans' !important;
-    /* color: #07477d; */
+  padding: 1px 0px 10px 5px;
+  font-size: 15px !important;
+  font-weight: 300;
+  font-family: 'Public Sans' !important;
+  /* color: #07477d; */
 }
 
 
@@ -1393,7 +1409,7 @@ padding-right: 5px;
 
 .casePage .customRadio label.strong {
 
-font-weight: 500 !important;
+  font-weight: 500 !important;
 
 }
 
@@ -2753,8 +2769,60 @@ ul.greenDot{
 
 .updateBlocks p.black{
   text-align: center;
+  line-height: 1.1;
 
 }
+
+@media (min-width:1781px) {
+.fixedDiv {
+    position: fixed;
+    flex: 0 0 20%;
+    max-width: 20%;
+    right: 20%;
+}
+
+}
+
+@media (min-width:1600px) and (max-width:1780px){
+  .fixedDiv {
+    position: fixed;
+    flex: 0 0 23%;
+    max-width: 23%;
+    right: 16%;
+}
+}
+
+@media (max-width:1599px) and (min-width:1025px){
+
+.fixedDiv {
+    position: fixed;
+    flex: 0 0 26%;
+    max-width: 26%;
+    right:10%
+
+}
+}
+
+@media (max-width:1375px){
+  .moveRight{
+    right:8%
+  }
+}
+
+@media (max-width:1024px){
+  .fixedDiv {
+    position: fixed;
+    flex: 0 0 25%;
+    max-width: 25%;
+    right: 3%;
+}
+.casePage .col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 75.666667%;
+    max-width: 75.666667%;
+}
+}
+
 
 .casePage .lightGrayBox {
   padding-top:1em
