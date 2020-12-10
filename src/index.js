@@ -4318,6 +4318,11 @@ function detectIE() {
 	return false;
 }
 
+//show covid modal
+
+
+$('.covid-modal').modal('show')
+
 
 $(".scrollIt").on("click", function(event) {
 	if (
@@ -4459,7 +4464,7 @@ $(".scrollIt").on("click", function(event) {
 	})
 
 
-	$('#accessCode1').keydown(function (event) {
+	$('#accessCode2').keydown(function (event) {
 		$('#returning').css({
 			'background': '#00843D',
 			'color' :'white'
@@ -4468,7 +4473,7 @@ $(".scrollIt").on("click", function(event) {
 
 	});
 
-	$('#accessCode2').keydown(function (event) {
+	$('#accessCode1').keydown(function (event) {
 		$('#new-user').css({
 			'background': '#00843D',
 			'color' :'white'

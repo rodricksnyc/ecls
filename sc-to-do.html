@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/iwp5gli.css">
+	<link rel="stylesheet" href="https://use.typekit.net/koi5ueb.css">
+	<title>ECLS</title>
+	<link rel="shortcut icon" href="images/square.png">
+	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.0.1/sweetalert.min.css">
+	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+
+</head>
+
+
+
+<body>
+
+	<div class="container-fluid overflow-hidden position-relative">
+		<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close Browser Recommendations Modal">
+							<span aria-hidden="true" style="font-size:25px;">&times;</span></button>
+							<h4 class="modal-title">Browser Recommendations</h4>
+
+						</div>
+						<div class="modal-body">
+							<h6 class="black">We recommend using a desktop or laptop computer to complete the study activities. For the best
+								experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
+								you can select one of the browser icons below to download the installer.</h6>
+								<div class="flex">
+									<div class="vertical2">
+										<img src="images/google.png" class="img-responsive icon" height="70" width="70" alt="">
+										<p>Chrome</p>
+									</div>
+									<div class="vertical2">
+										<img src="images/edge.png" class="img-responsive icon" height="70" width="70" alt="">
+										<p>Edge</p>
+									</div>
+									<div class="vertical2">
+										<img src="images/safari.png" class="img-responsive icon" height="70" width="70" alt="">
+										<p>Safari</p>
+									</div>
+									<div class="vertical2">
+										<img src="images/firefox.png" class="img-responsive icon" height="70" width="73" alt="">
+										<p>Firefox</p>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<center>
+									<button type="button" class="btn browser" data-dismiss="modal">DONE</button>
+								</center>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="block0">
+					<div class="heros" id="home">
+						<header class="landing d-flex">
+							<div class="logos d-flex justify-content-start align-items-center">
+								<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
+
+								<div class="flipTop"></div>
+
+								<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
+							</div>
+
+							<div class="end">
+								<div class="whiteBox d-flex justify-content-between align-items-center">
+
+									<a class="slate" href="" role="button" tabindex="0" aria-label="Access ECLS home">
+										<p class="slate">my ECLSHome</p>
+									</a>
+									<a href="" role="button" tabindex="0" aria-label="Access portal">
+										<div class="tangerineBox">
+											<p class="plum">Portal</p>
+										</div>
+									</a>
+
+									<a class="slate" href="" role="button" tabindex="0" aria-label="Logout"><p class="slate borderLeft">Logout<p></a>
+
+									</div>
+								</div>
+							</header>
+							<div class="schoolBanner noMargin">
+								<a href="school-coordinator.html" class="toTL"><div class="green-circle circle"><i class="far fa-angle-left yellow"></i></div></a>
+								<div class="d-flex justify-content-center align-items-center">
+									<h1 class="white title pt-1">Welcome to your School Coordinator Portal!</h1>
+								</div>
+							</div>
+
+						</div>
+
+					</section>
+
+
+					<div id="slideOut" class="content-top">
+
+						<div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
+							<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
+
+						</div>
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<div class="closeThisPlease" id="close">
+									<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+										<span aria-hidden="true">
+											<div class="circCont">
+												<div class="circleClose" data-animation="magnify" data-remove="3000">
+													<span></span>
+												</div>
+											</div>
+										</span>
+									</button>
+								</div>
+								<br>
+
+								<p class="whiteLarge">How to Contact Us</p>
+
+							</div>
+							<div class="modal-body">
+
+								<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
+									<!-- <p class="modalFooter">*Required Field</p> -->
+									<div class="form-group">
+										<label for="formControl1">Name</label>
+										<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
+									</div>
+									<div class="form-group">
+										<label for="formControl2">Email</label>
+										<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+									</div>
+
+									<div class="form-group">
+										<fieldset>
+											<label for="general-inquiry">Reason for Contact</label>
+											<div class="around">
+												<div class="vertical">
+													<i class="fas fa-info-circle"></i>
+													<legend>Reason for Contact</legend>
+													<label class="radio-inline">
+														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
+													</label>
+												</div>
+												<div class="vertical">
+													<i class="fas fa-question-circle"></i>
+													<label class="radio-inline">
+														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
+													</label>
+												</div>
+												<div class="vertical">
+													<i class="fas fa-user-headset"></i>
+													<label class="radio-inline">
+														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
+													</label>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+									<div class="form-group">
+										<label for="formControl4">Message</label>
+										<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
+									</div>
+									<center>
+										<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+									</center>
+									<div class="emailInfo">
+										<h6 class="white pt1">Email</h6>
+										<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
+									</div>
+								</form>
+
+							</div>
+							<div class="modal-footer">
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+						&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+					</div>
+
+					<div class="toast2 transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+						&#x2713;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saved successfully.
+					</div>
+
+					<div class="contactUsOverlay"></div>
+
+
+					<div class="container_0">
+						<!-- <div class="menu-buttons-floating">
+						<ul class="menu-buttons-floating-list">
+						<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
+						<li tabindex="0" data-target="#survey" class="to-do"><i class="fas fa-tasks-alt"></i></li>
+
+						<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
+					</ul>
+				</div>
+
+
+				<div class="menu-buttons-768">
+				<ul class="menu-buttons-768-list">
+
+				<li tabindex="0" data-target="#overview"><i class="fas fa-info-circle"></i></li>
+				<li tabindex="0" data-target="#survey"><i class="fas fa-tasks-alt"></i></li>
+
+				<li tabindex="0" data-target="#info"><i class="fas fa-book-reader"></i></li>
+			</ul>
+		</div> -->
+
+		<section class="block10">
+
+			<div id="overview" class="container-fluid heros">
+
+				<div id="anchorPoint"></div>
+
+				<div class="container">
+
+
+					<div class="box-outer tlModals">
+
+						<div class="grayBox sc second mt-5">
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active text-center" data-toggle="tab" href="#tab1" role="tab">Submit Child List</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link text-center" data-toggle="tab" href="#tab2" role="tab">Prepare for the School Visit</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab3" role="tab">Documents</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab4" role="tab">School Info</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab5" role="tab">Child Info</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab6" role="tab">Parent Info</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab7" role="tab">Teacher Info</a>
+								</li>
+
+
+							</ul>
+
+
+							<div class="tab-content">
+
+								<div class="tab-pane active" id="tab1" role="tabpanel">
+									<div class="container pt-3">
+										<div class="row p-1">
+											<p class="charcoal strong">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+
+											<p class="charcoal">When compiling the child list, please do <span class="strong">not</span> include children who:</p>
+
+											<ul class="greenDots">
+
+												<li>are excluded from standardized assessments based on their IEP;</li>
+												<li>require assessment administration in Braille, Sign Language, or large print; or</li>
+												<li>do not speak English well enough to participate in an assessment.</li>
+
+											</ul>
+
+											<p class="charcoal">Children in these groups are not eligible to participate in the fall 2021 assessment. The fall 2021 ECLS does not have child assessment materials in Braille, Sign Language, large print, or languages other than English.</p>
+										
+
+											<p class="charcoal">Submit the child list electronically through this website.</p>
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="tab-pane" id="tab2" role="tabpanel">
+
+									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+
+
+
+								</div>
+								<div class="tab-pane" id="tab3" role="tabpanel">
+
+									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+
+
+
+								</div>
+								<div class="tab-pane" id="tab4" role="tabpanel">
+
+									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+
+
+
+								</div>
+								<div class="tab-pane" id="tab5" role="tabpanel">
+
+									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+
+
+
+								</div>
+								<div class="tab-pane" id="tab6" role="tabpanel">
+
+									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+
+								</div>
+								<div class="tab-pane" id="tab7" role="tabpanel">
+
+									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+
+								</div>
+
+
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="Show Technical Recommendations"  aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Technical and Security Recommendations </h4>
+						<button role="button" class="close" data-dismiss="modal" aria-label="Close Technical Recommendations" style="outline: none;">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="charcoal"><b>We recommend using a desktop or laptop computer to complete the study activities. For the best experience, use Chrome, Edge, Safari, or Firefox.</b></p>
+						<p class="charcoal">When you have finished or if you need to stop before finishing, please LOG OUT of the survey system by selecting "Logout" and CLOSE ALL browser windows or screens to keep your responses secure. For example, if you used Chrome or Safari to open the website, make sure no Chrome or Safari windows or screens are open after you end the session. Not closing all browsers may allow someone else to see your responses.</p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn  greenButton" data-dismiss="modal">Done</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<section class="block5 scFeedback">
+			<div id="survey" class="container-fluid heros">
+
+				<div class="guide-overlay container">
+
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+	</div>
+
+	<section class="block50" id="info">
+		<div class="lightGreen tabletBottomLess d-flex flex-column align-items-center heros container-fluid">
+			<div class="greenBottom"></div>
+			<div class="guide-overlay container pt-3">
+				<h2 class="landing-sec-H mb1">To learn more about the ECLS, please download the following documents or return to the MyECLS home screen for materials and links to the U.S. Department of Education’s ECLS site:</h2>
+
+				<div class="infoBar d-flex align-items-center">
+					<div class="greenLeftBar"></div>
+					<h6 class="plum"><i class="fas fa-envelope-open-text"></i> School Coordinator Letter </h6>
+					<div class="greenCircle"><i class="fas fa-file-download white"></i></div>
+				</div>
+				<div class="infoBar d-flex align-items-center">
+					<div class="greenLeftBar"></div>
+					<h6 class="plum">	<i class="fas fa-list-alt"></i> School Coordinator Responsibilities</h6>
+
+					<div class="greenCircle">
+						<i class="fas fa-file-download white"></i>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="guide-overlay container">
+
+
+
+				<p class="purple text-center greenUnderline">Privacy & Authorization</p>
+				<p class="dark">The National Center for Education Statistics (NCES) is authorized to conduct the Early Childhood Longitudinal Study (ECLS) by the Education Sciences Reform Act of 2002 (ESRA 2002, 20 U.S.C. §9543). The data are being collected for NCES by Westat, a U.S.-based research organization. All of the information you provide may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151).</p>
+				<p class="dark">Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff. According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. The time required to complete this information collection is estimated to average approximately <span class="strong">5 minutes per respondent</span> for completion of the feedback questions. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
+				<p class="dark">OMB No. 1850-0750, Approval Expires XX/XX/XXXX</p>
+				<p class="dark">v.X</p>
+
+			</div>
+		</div>
+
+	</section>
+
+
+	<div class="back-to-top">
+		<i class="far fa-angle-up"></i>
+	</div>
+
+
+
+</div>
+<footer>
+	<div class="footer-wrapper">
+		<div class="abso">
+			<img src="images/apple.svg" class="img-responsive">
+		</div>
+
+		<div class="d-flex">
+
+			<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
+			<i class="fas fa-external-link-square white"></i>
+		</div>
+
+
+	</div>
+</footer>
+
+
+<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="build/index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="src/tl.js"></script>
+
+<script>
+
+
+</script>
+
+</body>
+
+</html>

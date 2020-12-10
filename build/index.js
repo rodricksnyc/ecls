@@ -3606,6 +3606,11 @@ $(document).ready(function () {
 		return false;
 	}
 
+	//show covid modal
+
+
+	$('.covid-modal').modal('show');
+
 	$(".scrollIt").on("click", function (event) {
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 			var target = $(this.hash);
@@ -3713,7 +3718,7 @@ $(document).ready(function () {
 		} else {}
 	});
 
-	$('#accessCode1').keydown(function (event) {
+	$('#accessCode2').keydown(function (event) {
 		$('#returning').css({
 			'background': '#00843D',
 			'color': 'white'
@@ -3721,7 +3726,7 @@ $(document).ready(function () {
 		});
 	});
 
-	$('#accessCode2').keydown(function (event) {
+	$('#accessCode1').keydown(function (event) {
 		$('#new-user').css({
 			'background': '#00843D',
 			'color': 'white'

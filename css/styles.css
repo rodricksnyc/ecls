@@ -357,7 +357,7 @@ textarea::placeholder {
 
 .greenCube{
   background: #00843D;
-  padding: 1em 1.5em;
+  padding: 1em 1.3em;
   border-radius:1rem;
   display: flex;
   flex-direction: column;
@@ -3311,6 +3311,42 @@ p.scBlock{
   font-size: 18px;
   padding-right:1em
 
+}
+
+.scFeedback .feedbackBar:hover {
+  -webkit-transition: transform .6s ease-in-out;
+    -moz-transition: transform .6s ease-in-out;
+    -ms-transition: transform .6s ease-in-out;
+    transform: scale(1.05);
+    cursor: grab;
+}
+.greenDots {
+  list-style-type: none;
+  font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
+    margin-left: -1em;
+}
+
+.greenDots  li::before {
+    content: "\2022";
+    color: #00843D;
+    font-weight: bold;
+    display: inline-block;
+    width: .8em;
+margin-left: 0em;
+transform: scale(1.8);
+
+}
+
+.grayBox.sc.second {
+    display: block;
+}
+
+.grayBox.sc.second .nav-tabs .nav-item {
+    margin-bottom: -1px;
+    width: 14.28%;
 }
 
 .greenCircle i {

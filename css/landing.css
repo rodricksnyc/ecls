@@ -1,4 +1,141 @@
 
+.covid-modal p {
+  color: black;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.covid-modal .modal-header {
+    padding: 15px;
+    border-bottom: none;
+    margin-bottom: 0em;
+    display: block !important;
+    padding-top: 0em;
+    padding: 0;
+    height: 7px;
+}
+.covid-modal h3 {
+    position: relative;
+    top: 0px;
+    right: 4px;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #00539f;
+    font-family: 'Public Sans', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    top: 4px;
+    font-weight: 600;
+}
+
+.covid-modal button.close {
+    position: absolute;
+    right: 9px;
+    top: 6px;
+    z-index: 9999999;
+    color:#00539f;
+    opacity:1;
+    display: flex;
+    justify-content: flex-end;
+}
+.covid-modal button.close:hover{
+      opacity:1;
+}
+.covid-modal .close:not(:disabled):not(.disabled):focus, .covid-modal .close:not(:disabled):not(.disabled):hover {
+    color: #000;
+    text-decoration: none;
+    opacity: 1;
+    color: #00539f;
+}
+
+.redLeftBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 12px;
+    background: #FC7B75;
+        top: -7px;
+}
+
+
+.covid-modal .modal-lg {
+    max-width: 1000px;
+    top: 14%;
+}
+.covid-modal .modal-content {
+    padding-bottom: 0em;
+    position:relative;
+}
+
+.covid-modal .modal-body {
+    padding: 1em 2em;
+}
+
+.covid-modal h4 {
+  color:#AF2828
+}
+
+.errorModal .modal-dialog {
+  max-width: 760px !important;
+
+}
+
+.errorModal {
+  top:10%;
+}
+.errorModal .modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorModal .modal-header {
+  background: #fdd7d7;
+  padding-top:1em;
+
+}
+
+.errorModal p {
+  color: black;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.errorModal .modal-content{
+    border: 3px solid #AF2828;
+}
+
+.errorModal .redInfo{
+  color:#AF2828;
+0
+}
+
+.errorModal .modal-body {
+    padding: 2em 2em 1em 2em;
+}
+
+.errorModal .modal-title {
+  color:black
+}
+
+.errorModal .modal-header .close {
+    padding: 0rem;
+    margin: 0rem;
+    color: black;
+    opacity: 1;
+}
+
+.errorModal .modal-body {
+    padding: 2em 3em 1em 3em;
+    position: relative;
+}
 
 .flipTop {
 
@@ -2218,6 +2355,10 @@ footer a.white:hover {
   justify-content: center;
   align-items: center;
 }
+
+
+
+
 .closeIt {
   font-family: 'Public Sans', sans-serif;
   background: #696969 !important;
