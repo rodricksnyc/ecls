@@ -1158,11 +1158,119 @@ $(document).ready(function () {
 			"schoolName": "Bethlehem School District",
 			"dflag": 'Lorem ipsum',
 			"dStatus": "Approval Received"
+		},, {
+			"checkboxID": 'custom190',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom160',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom170',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom180',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom190',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom110',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom120',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom130',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom140',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom222',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom223',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom224',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom225',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom226',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom227',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
+		}, {
+			"checkboxID": 'custom228',
+			"leadid": 'LEA9971A',
+			"schoolName": "Easton Area School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom229',
+			"leadid": 'LEA8971A',
+			"schoolName": "Bethlehem School District",
+			"dflag": 'Lorem ipsum',
+			"dStatus": "Special Handling– In Progress"
+		}, {
+			"checkboxID": 'custom230',
+			"leadid": 'LEA8671A',
+			"schoolName": "Nazareth School District",
+			"dflag": 'Dolor ipsum',
+			"dStatus": "Approval Received"
 		}] };
 
 	for (var j in districtUpdate.districtsUpdate) {
 
-		$('.renderDistrictUpdate').append("<div class=\"updateBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + districtUpdate.districtsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + districtUpdate.districtsUpdate[j].checkboxID + "\">something</label></div><div class=\"col-lg-3 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">LEAID</div><p class=\"black leadid\">" + districtUpdate.districtsUpdate[j].leadid + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">DISTRICT NAME</div><p class=\"black schoolName\">" + districtUpdate.districtsUpdate[j].schoolName + "</p></div><div class=\"col-lg-3 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">DFLAG</div><p class=\"black dflag\">" + districtUpdate.districtsUpdate[j].dflag + "</p></div><div class=\"col-lg-3 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">STATUS</div><p class=\"black dStatus\">" + districtUpdate.districtsUpdate[j].dStatus + "</p></div></div>");
+		$('.renderDistrictUpdate').append("<div class=\"updateBlocks districtUpdateBlocks d-flex align-items-center flex-wrap position-relative mb-3\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + districtUpdate.districtsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + districtUpdate.districtsUpdate[j].checkboxID + "\">something</label></div><div class=\"col-lg-3 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">LEAID</div><p class=\"black leadid\">" + districtUpdate.districtsUpdate[j].leadid + "</p></div><div class=\"col-lg-3 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">DISTRICT NAME</div><p class=\"black schoolName\">" + districtUpdate.districtsUpdate[j].schoolName + "</p></div><div class=\"col-lg-3 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">DFLAG</div><p class=\"black dflag\">" + districtUpdate.districtsUpdate[j].dflag + "</p></div><div class=\"col-lg-3 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">STATUS</div><p class=\"black dStatus\">" + districtUpdate.districtsUpdate[j].dStatus + "</p></div></div>");
 	}
 
 	var schoolUpdate = { "schoolsUpdate": [{
@@ -1280,11 +1388,126 @@ $(document).ready(function () {
 			"schoolid": '8228973S',
 			"theSchools": "Linerty",
 			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom43',
+			"schoolid": '9939993S',
+			"theSchools": "Holy Family",
+			"sdisp": '72'
+		}, {
+			"checkboxID": 'custom44',
+			"schoolid": '9999993S',
+			"theSchools": "Palmer Elementary",
+			"sdisp": '73'
+		}, {
+			"checkboxID": 'custom45',
+			"schoolid": '9566993S',
+			"theSchools": "Forks Elementary",
+			"sdisp": '75'
+		}, {
+			"checkboxID": 'custom46',
+			"schoolid": '9222973S',
+			"theSchools": "Moravian",
+			"sdisp": '77'
+		}, {
+			"checkboxID": 'custom47',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom48',
+			"schoolid": '9939993S',
+			"theSchools": "Holy Family",
+			"sdisp": '72'
+		}, {
+			"checkboxID": 'custom49',
+			"schoolid": '9999993S',
+			"theSchools": "Palmer Elementary",
+			"sdisp": '73'
+		}, {
+			"checkboxID": 'custom50',
+			"schoolid": '9566993S',
+			"theSchools": "Forks Elementary",
+			"sdisp": '75'
+		}, {
+			"checkboxID": 'custom51',
+			"schoolid": '9222973S',
+			"theSchools": "Moravian",
+			"sdisp": '77'
+		}, {
+			"checkboxID": 'custom52',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		},, {
+			"checkboxID": 'custom53',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom54',
+			"schoolid": '9939993S',
+			"theSchools": "Holy Family",
+			"sdisp": '72'
+		}, {
+			"checkboxID": 'custom55',
+			"schoolid": '9999993S',
+			"theSchools": "Palmer Elementary",
+			"sdisp": '73'
+		}, {
+			"checkboxID": 'custom56',
+			"schoolid": '9566993S',
+			"theSchools": "Forks Elementary",
+			"sdisp": '75'
+		}, {
+			"checkboxID": 'custom57',
+			"schoolid": '9222973S',
+			"theSchools": "Moravian",
+			"sdisp": '77'
+		}, {
+			"checkboxID": 'custom58',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom59',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		},, {
+			"checkboxID": 'custom60',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
+		}, {
+			"checkboxID": 'custom61',
+			"schoolid": '9939993S',
+			"theSchools": "Holy Family",
+			"sdisp": '72'
+		}, {
+			"checkboxID": 'custom62',
+			"schoolid": '9999993S',
+			"theSchools": "Palmer Elementary",
+			"sdisp": '73'
+		}, {
+			"checkboxID": 'custom63',
+			"schoolid": '9566993S',
+			"theSchools": "Forks Elementary",
+			"sdisp": '75'
+		}, {
+			"checkboxID": 'custom64',
+			"schoolid": '9222973S',
+			"theSchools": "Moravian",
+			"sdisp": '77'
+		}, {
+			"checkboxID": 'custom65',
+			"schoolid": '8228973S',
+			"theSchools": "Linerty",
+			"sdisp": '90'
 		}] };
 
 	for (var j in schoolUpdate.schoolsUpdate) {
 
-		$('.renderSchoolUpdate').append("<div class=\"updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + schoolUpdate.schoolsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + schoolUpdate.schoolsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black schoolid\">" + schoolUpdate.schoolsUpdate[j].schoolid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black theSchools\">" + schoolUpdate.schoolsUpdate[j].theSchools + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black sdisp\">" + schoolUpdate.schoolsUpdate[j].sdisp + "</p></div></div>");
+		$('.renderSchoolUpdate').append("<div class=\"updateBlocks schoolUpdateBlocks d-flex align-items-center flex-wrap position-relative mb-3\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + schoolUpdate.schoolsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + schoolUpdate.schoolsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black schoolid\">" + schoolUpdate.schoolsUpdate[j].schoolid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black theSchools\">" + schoolUpdate.schoolsUpdate[j].theSchools + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black sdisp\">" + schoolUpdate.schoolsUpdate[j].sdisp + "</p></div></div>");
 	}
 
 	var childUpdate = { "childsUpdate": [{
@@ -1327,11 +1550,91 @@ $(document).ready(function () {
 			"childid": '9124993S',
 			"childName": "Sal Hal",
 			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom88',
+			"chilid": '9119993S',
+			"childName": "Kelly Smith",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom89',
+			"childid": '9117793S',
+			"childName": "Billy Bob",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom90',
+			"childid": '9100993S',
+			"childName": "Jojo Momo",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom91',
+			"childid": '9124993S',
+			"childName": "Sal Hal",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom92',
+			"childid": '9119993S',
+			"childName": "Kelly Smith",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom93',
+			"childid": '9117793S',
+			"childName": "Billy Bob",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom94',
+			"childid": '9100993S',
+			"childName": "Jojo Momo",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom95',
+			"childid": '9124993S',
+			"childName": "Sal Hal",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom96',
+			"chilid": '9119993S',
+			"childName": "Kelly Smith",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom97',
+			"childid": '9117793S',
+			"childName": "Billy Bob",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom98',
+			"childid": '9100993S',
+			"childName": "Jojo Momo",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom99',
+			"childid": '9124993S',
+			"childName": "Sal Hal",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom100',
+			"childid": '9119993S',
+			"childName": "Kelly Smith",
+			"cStatus": "C_CONSENT"
+		}, {
+			"checkboxID": 'custom101',
+			"childid": '9117793S',
+			"childName": "Billy Bob",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom102',
+			"childid": '9100993S',
+			"childName": "Jojo Momo",
+			"cStatus": "C_ASSESS"
+		}, {
+			"checkboxID": 'custom100',
+			"childid": '9124993S',
+			"childName": "Sal Hal",
+			"cStatus": "C_CONSENT"
 		}] };
 
 	for (var j in childUpdate.childsUpdate) {
 
-		$('.renderChildUpdate').append("<div class=\"updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + childUpdate.childsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + childUpdate.childsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black childid\">" + childUpdate.childsUpdate[j].childid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black childName\">" + childUpdate.childsUpdate[j].childName + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black cStatus\">" + childUpdate.childsUpdate[j].cStatus + "</p></div></div>");
+		$('.renderChildUpdate').append("<div class=\"updateBlocks childUpdateBlocks d-flex align-items-center flex-wrap position-relative mb-3\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + childUpdate.childsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + childUpdate.childsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black childid\">" + childUpdate.childsUpdate[j].childid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black childName\">" + childUpdate.childsUpdate[j].childName + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black cStatus\">" + childUpdate.childsUpdate[j].cStatus + "</p></div></div>");
 	}
 
 	var parentUpdate = { "parentsUpdate": [{
@@ -1374,11 +1677,51 @@ $(document).ready(function () {
 			"parentid": 'Y116522P',
 			"parentName": "Sal Hal",
 			"pStatus": "In-Progress"
+		}, {
+			"checkboxID": 'custom300',
+			"parentid": 'Y116001P',
+			"parentName": "Kelly Smith",
+			"pStatus": "Complete"
+		}, {
+			"checkboxID": 'custom301',
+			"parentid": 'Y116002P',
+			"parentName": "Billy Bob",
+			"pStatus": "Not Started"
+		}, {
+			"checkboxID": 'custom302',
+			"parentid": 'Y116034P',
+			"parentName": "Jojo Momo",
+			"pStatus": "In-Progress"
+		}, {
+			"checkboxID": 'custom303',
+			"parentid": 'Y116182P',
+			"parentName": "Sal Hal",
+			"pStatus": "Not Started"
+		}, {
+			"checkboxID": 'custom304',
+			"parentid": 'Y116001P',
+			"parentName": "Kelly Smith",
+			"pStatus": "Complete"
+		}, {
+			"checkboxID": 'custom305',
+			"parentid": 'Y116552P',
+			"parentName": "Billy Bob",
+			"pStatus": "Complete"
+		}, {
+			"checkboxID": 'custom306',
+			"parentid": 'Y116762P',
+			"parentName": "Jojo Momo",
+			"pStatus": "In-Progress"
+		}, {
+			"checkboxID": 'custom307',
+			"parentid": 'Y116522P',
+			"parentName": "Sal Hal",
+			"pStatus": "In-Progress"
 		}] };
 
 	for (var j in parentUpdate.parentsUpdate) {
 
-		$('.renderParentUpdate').append("<div class=\"updateBlocks newBlocks d-flex align-items-center flex-wrap position-relative mb-3 hidden\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + parentUpdate.parentsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + parentUpdate.parentsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black parentid\">" + parentUpdate.parentsUpdate[j].parentid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black parentName\">" + parentUpdate.parentsUpdate[j].parentName + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black pStatus\">" + parentUpdate.parentsUpdate[j].pStatus + "</p></div></div>");
+		$('.renderParentUpdate').append("<div class=\"updateBlocks parentUpdateBlocks d-flex align-items-center flex-wrap position-relative mb-3\" type=\"submit\" tabindex=\"0\" aria-hidden=\"false\" role=\"button\"><div class=\"goldLeftBar\"></div><div class=\"one absoluteCheckbox\"><input class=\"form-check-input\" type=\"checkbox\" name=\"validation\" id=\"" + parentUpdate.parentsUpdate[j].checkboxID + "\"><label class=\"form-check-label fontZero\" tabindex=\"0\" for=\"" + parentUpdate.parentsUpdate[j].checkboxID + "\">Something</label></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL ID</div><p class=\"black parentid\">" + parentUpdate.parentsUpdate[j].parentid + "</p></div><div class=\"col-lg-4 col-md-6 col-sm-12 col-xs-12\"><div class=\"mobile\">SCHOOL NAME</div><p class=\"black parentName\">" + parentUpdate.parentsUpdate[j].parentName + "</p></div><div class=\"col-lg-4 col-md-12 col-sm-12 col-xs-12\"><div class=\"mobile\">SDISP</div><p class=\"black pStatus\">" + parentUpdate.parentsUpdate[j].pStatus + "</p></div></div>");
 	}
 
 	//district page alphabetize and sort numerically
@@ -2134,25 +2477,44 @@ $(document).ready(function () {
 
 	//show more survey  blocks
 
+	$('.districtUpdateBlocks, .schoolUpdateBlocks, .childUpdateBlocks, .parentUpdateBlocks').addClass('hidden');
 
 	$('.newBlocks').addClass('hidden');
 
 	var x = 10;
+	var y = 10;
+	var z = 10;
+	$('.schoolUpdateBlocks').slice(0, 10).removeClass('hidden');
+	$('.districtUpdateBlocks').slice(0, 10).removeClass('hidden');
+	$('.childUpdateBlocks').slice(0, 10).removeClass('hidden');
+	$('.parentUpdateBlocks').slice(0, 10).removeClass('hidden');
 	$('.newBlocks').slice(0, 14).removeClass('hidden');
 	$('.loadMore, .load20More').on('click', function (e) {
 		e.preventDefault();
 
 		x = x + 14;
 		xx = xx + 24;
+		y = y + 10;
+		z = z + 10;
 		$('.newBlocks').slice(0, x).slideDown('slow').removeClass('hidden');
 		$('.addBlocks').slice(0, xx).slideDown('slow').removeClass('hidden');
+		$(this).closest('.row').find('.updateBlocks').slice(0, y).slideDown('slow').removeClass('hidden');
 	});
 
 	$('.loadAll').on('click', function (e) {
 		e.preventDefault();
+
 		$('.newBlocks').slideDown('slow').removeClass('hidden');
 		$('.loadMore, .flip').hide();
 		$('.loadAll p').addClass('all').hide();
+	});
+
+	$('.loadAllCase').on('click', function (e) {
+		e.preventDefault();
+		$(this).closest('.row').find('.updateBlocks').slideDown('slow').removeClass('hidden');
+
+		$(this).closest('.row').find('.loadMore, .flip').hide();
+		$(this).closest('.row').find('.loadAllCase p').addClass('all').hide();
 	});
 
 	$('.loadAll').on('keyup', function (e) {
@@ -2172,8 +2534,10 @@ $(document).ready(function () {
 
 			x = x + 14;
 			xx = xx + 24;
+			y = y + 14;
 			$('.newBlocks').slice(0, x).slideDown('slow').removeClass('hidden');
 			$('.addBlocks').slice(0, xx).slideDown('slow').removeClass('hidden');
+			// $('.updateBlocks').slice(0, y).slideDown('slow').removeClass('hidden');
 		}
 	});
 
@@ -2189,41 +2553,49 @@ $(document).ready(function () {
 		$('.addBlocks').slice(0, xx).slideDown('slow').removeClass('hidden');
 	});
 
-	$('.case-status.district-update .updateBlocks').addClass('hidden');
-	$('.case-status.district-update .updateBlocks').slice(0, 4).removeClass('hidden');
+	// $('.case-status.district-update .updateBlocks').addClass('hidden')
+	// $('.case-status.district-update .updateBlocks').slice(0, 4).removeClass('hidden')
+	//
+	// $('.case-status.school-nonResponse .updateBlocks').addClass('hidden')
+	// $('.case-status.school-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
+	//
+	//
+	// $('.case-status.child-nonResponse .updateBlocks').addClass('hidden')
+	// $('.case-status.child-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
+	//
+	//
+	// $('.case-status.parent-nonResponse .updateBlocks').addClass('hidden')
+	// $('.case-status.parent-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
 
-	$('.case-status.school-nonResponse .updateBlocks').addClass('hidden');
-	$('.case-status.school-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden');
 
-	$('.case-status.child-nonResponse .updateBlocks').addClass('hidden');
-	$('.case-status.child-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden');
+	// $('.loadAll, .loadAllUpdate').on('click', function (e) {
+	// 	e.preventDefault();
+	// 	$('.addBlocks').slideDown('slow').removeClass('hidden');
+	//
+	// 	$('.loadMore, .flip').hide()
+	// 	$('.loadAll p').addClass('all').hide()
+	//
+	// 	// $(this).closest('.case-status').find('.updateBlocks').slideDown('slow').removeClass('hidden');
+	// 	// $(this).closest('.case-status').find('.loadAllUpdate p').addClass('all').hide()
+	//
+	// });
+	//
+	// $('.loadAll, .loadAllUpdate').on('keyup', function(e) {
+	// 	var code = (e.keyCode ? e.keyCode : e.which);
+	// 	if (code == 13 ) {
+	// 		e.preventDefault();
+	// 		$('.addBlocks').slideDown('slow').removeClass('hidden');
+	// 		$('.loadMore, .flip').hide()
+	// 		$('.loadAll p').addClass('all').hide()
+	//
+	// 		// $(this).closest('.case-status').find('.updateBlocks').slideDown('slow').removeClass('hidden');
+	// 		// $(this).closest('.case-status').find('.loadAllUpdate p').addClass('all').hide()
+	//
+	// 	}
+	//
+	//
+	// })
 
-	$('.case-status.parent-nonResponse .updateBlocks').addClass('hidden');
-	$('.case-status.parent-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden');
-
-	$('.loadAll, .loadAllUpdate').on('click', function (e) {
-		e.preventDefault();
-		$('.addBlocks').slideDown('slow').removeClass('hidden');
-
-		$('.loadMore, .flip').hide();
-		$('.loadAll p').addClass('all').hide();
-
-		$(this).closest('.case-status').find('.updateBlocks').slideDown('slow').removeClass('hidden');
-		$(this).closest('.case-status').find('.loadAllUpdate p').addClass('all').hide();
-	});
-
-	$('.loadAll, .loadAllUpdate').on('keyup', function (e) {
-		var code = e.keyCode ? e.keyCode : e.which;
-		if (code == 13) {
-			e.preventDefault();
-			$('.addBlocks').slideDown('slow').removeClass('hidden');
-			$('.loadMore, .flip').hide();
-			$('.loadAll p').addClass('all').hide();
-
-			$(this).closest('.case-status').find('.updateBlocks').slideDown('slow').removeClass('hidden');
-			$(this).closest('.case-status').find('.loadAllUpdate p').addClass('all').hide();
-		}
-	});
 
 	$('[data-toggle=tooltip]').tooltip();
 

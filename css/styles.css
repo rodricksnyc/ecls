@@ -1438,9 +1438,9 @@ font-size:0px !important;
 
 }
 
-.casePage #tabs-2 .updateBlocks, .casePage #tabs-3 .updateBlocks, .casePage #tabs-4 .updateBlocks, .casePage #tabs-5 .updateBlocks {
+/* .casePage #tabs-2 .updateBlocks, .casePage #tabs-3 .updateBlocks, .casePage #tabs-4 .updateBlocks, .casePage #tabs-5 .updateBlocks {
   display: flex !important
-}
+} */
 
 
 .blueLine2:hover{
@@ -8930,6 +8930,7 @@ body{
 .loadMore, .loadAll {
   font-family: 'Public Sans';
   cursor: grab;
+  
 }
 
 .loadMore a:hover{
