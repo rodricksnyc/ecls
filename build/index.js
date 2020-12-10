@@ -4211,25 +4211,77 @@ $(document).ready(function () {
 	$("#tabs-2 .updateButton").on("click", function (e) {
 		e.preventDefault();
 
-		$('.updateDistrictModal').modal('show');
+		var yourFormElement1 = $(".update")[0];
+		yourFormElement1.checkValidity();
+		yourFormElement1.reportValidity();
+
+		if (!$('.casePage #tabs-2  .customRadio input').is(':checked')) {
+			$('#tabs-2 .invalid-feedback').show();
+		}
+		if ($('.casePage #tabs-2  .customRadio input').is(':checked')) {
+			$('.updateDistrictModal').modal('show');
+		}
 	});
 
 	$("#tabs-3 .updateButton").on("click", function (e) {
 		e.preventDefault();
 
-		$('.updateSchoolModal').modal('show');
+		var yourFormElement1 = $(".update")[0];
+		yourFormElement1.checkValidity();
+		yourFormElement1.reportValidity();
+
+		if (!$('.casePage #tabs-3  .customRadio input').is(':checked')) {
+			$('#tabs-3 .invalid-feedback').show();
+		}
+		if ($('.casePage #tabs-3  .customRadio input').is(':checked')) {
+			$('.updateSchoolModal').modal('show');
+		}
 	});
 
 	$("#tabs-4 .updateButton").on("click", function (e) {
 		e.preventDefault();
 
-		$('.updateChildModal').modal('show');
+		var yourFormElement1 = $(".update")[0];
+		yourFormElement1.checkValidity();
+		yourFormElement1.reportValidity();
+
+		if (!$('.casePage #tabs-4  .customRadio input').is(':checked')) {
+			$('#tabs-4 .invalid-feedback').show();
+		}
+		if ($('.casePage #tabs-4  .customRadio input').is(':checked')) {
+			$('.updateChildModal').modal('show');
+		}
 	});
 
 	$("#tabs-5 .updateButton").on("click", function (e) {
 		e.preventDefault();
 
-		$('.updateParentModal').modal('show');
+		var yourFormElement1 = $(".update")[0];
+		yourFormElement1.checkValidity();
+		yourFormElement1.reportValidity();
+
+		if (!$('.casePage #tabs-5  .customRadio input').is(':checked')) {
+			$('#tabs-5 .invalid-feedback').show();
+		}
+		if ($('.casePage #tabs-5  .customRadio input').is(':checked')) {
+			$('.updateParentModal').modal('show');
+		}
+	});
+
+	$('.casePage #tabs-2  .customRadio input').change(function () {
+		$('#tabs-2 .invalid-feedback').hide();
+	});
+
+	$('.casePage #tabs-3  .customRadio input').change(function () {
+		$('#tabs-3 .invalid-feedback').hide();
+	});
+
+	$('.casePage #tabs-4  .customRadio input').change(function () {
+		$('#tabs-4 .invalid-feedback').hide();
+	});
+
+	$('.casePage #tabs-5  .customRadio input').change(function () {
+		$('#tabs-5 .invalid-feedback').hide();
 	});
 
 	$(window).scroll(function () {
