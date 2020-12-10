@@ -6260,6 +6260,11 @@ transform: scale(0.8);
       margin-bottom: 0em !important;
     }
 
+
+.guide-overlay .d-flex.justify-content-between.flex-wrap{
+      justify-content: center !important;
+    }
+
     label.card-cc.second {
       font-size: 19px;
       transform: scale(.7);

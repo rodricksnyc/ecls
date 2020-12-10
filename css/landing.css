@@ -6974,6 +6974,12 @@ button.close {
 
   }
 
+  .landing-sec-H {
+    border-bottom: none;
+    margin-bottom: 0em;
+  }
+
+
   .greenBlocks img {
     max-width: 16em;
 

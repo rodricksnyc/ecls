@@ -5873,6 +5873,10 @@ transform: scale(0.8);
       margin-right: 0%;
     }
 
+    .guide-overlay .d-flex.justify-content-between.flex-wrap{
+          justify-content: center !important;
+        }
+
     .noWrapRow {
       flex-wrap:nowrap;
       margin-top:-1em

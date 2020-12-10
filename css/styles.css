@@ -245,6 +245,19 @@ textarea::placeholder {
   margin-top:-2em;;
 }
 
+
+.schoolBanner {
+  background-image: url(../images/sc-banner.svg);
+  position:relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height:100px;
+  top:0;
+  margin-top:-2em;;
+}
+
 .tlBanner {
   background-image: url(../images/green.svg);
   position:relative;
@@ -3125,7 +3138,7 @@ width:20%
 }
 
 .lightGreen {
-  /* background: #e9f4ee; */
+  background: #e9f4ee;
   padding-bottom:10em;
   margin-top: 2em;
   position: relative;
@@ -7606,6 +7619,10 @@ transform: scale(0.8);
     padding-left: 1em;
   }
 
+  .tabletBottomLess {
+    padding-bottom:5em;
+  }
+
   h3.landing-sec-H {
     font-size:22px
   }
@@ -7664,7 +7681,50 @@ transform: scale(0.8);
 
 
 @media (max-width: 767px) {
+  p.scBlock {
+      margin-left: 0;
+      color: black;
+      font-family: 'Public Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.4;
+      font-size: 18px;
+      padding-right: 1em;
+      padding-top: 1em;
+  }
 
+  .schoolBanner {
+    margin-top: -1em;
+  }
+
+
+
+.block5 .d-flex.justify-content-between.flex-wrap{
+  justify-content: center !important;
+}
+
+  .scFeedback .ml-5{
+    margin-left: 0rem !important;
+}
+
+
+  .scFeedback .feedbackBar {
+      margin: 3em 1em 3em 1em !important;
+}
+
+  .scFeedback .landing-sec-H {
+    font-size: 26px;
+    width: 100%;
+}
+
+  .blueCircle2 {
+    position: absolute;
+    border-radius: 50%;
+    background: #00539f;
+    height: 4rem;
+    width: 4rem;
+    left: calc(50% - 2rem);
+    top: -31px;
+}
 
   .activated {
     font-weight: 800;
@@ -8005,13 +8065,19 @@ body{
   font-weight: 800;
   /* color: #00559b; */
   padding-bottom: 10px;
-  border-bottom: 2px solid #7bc043;
+
   position: relative;
   /* width: 280px; */
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 1em;
+
 }
+
+.landing-sec-H {
+  border-bottom: none;
+  margin-bottom: 0em;
+}
+
 
 .landing-sec{
   padding-right: 0px !important;
