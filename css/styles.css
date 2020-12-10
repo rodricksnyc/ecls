@@ -81,6 +81,10 @@
   position: relative;
 }
 
+.modal-backdrop {
+    z-index: 999 !important;
+}
+
 
 .browser {
   font-family: 'Public Sans', sans-serif;
