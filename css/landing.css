@@ -79,6 +79,12 @@
   color:#AF2828
 }
 
+@media (max-width:767px){
+    .covid-modal  img{
+        max-height: 10em;
+      }
+}
+
 .errorModal .modal-dialog {
   max-width: 760px !important;
 
