@@ -1512,7 +1512,7 @@ $(document).ready(function () {
 
 	var childUpdate = { "childsUpdate": [{
 			"checkboxID": 'custom80',
-			"chilid": '9119993S',
+			"childid": '9119993S',
 			"childName": "Kelly Smith",
 			"cStatus": "C_CONSENT"
 		}, {
@@ -1552,7 +1552,7 @@ $(document).ready(function () {
 			"cStatus": "C_CONSENT"
 		}, {
 			"checkboxID": 'custom88',
-			"chilid": '9119993S',
+			"childid": '9119993S',
 			"childName": "Kelly Smith",
 			"cStatus": "C_CONSENT"
 		}, {
@@ -1592,7 +1592,7 @@ $(document).ready(function () {
 			"cStatus": "C_CONSENT"
 		}, {
 			"checkboxID": 'custom96',
-			"chilid": '9119993S',
+			"childid": '9119993S',
 			"childName": "Kelly Smith",
 			"cStatus": "C_CONSENT"
 		}, {

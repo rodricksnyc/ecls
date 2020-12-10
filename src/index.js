@@ -1844,7 +1844,7 @@ for(var j in schoolUpdate.schoolsUpdate) {
 var childUpdate = {"childsUpdate": [
 	{
 		"checkboxID": 'custom80',
-		"chilid": '9119993S',
+		"childid": '9119993S',
 		"childName": "Kelly Smith",
 		"cStatus": "C_CONSENT"
 	},
@@ -1892,7 +1892,7 @@ var childUpdate = {"childsUpdate": [
 	},
 	{
 		"checkboxID": 'custom88',
-		"chilid": '9119993S',
+		"childid": '9119993S',
 		"childName": "Kelly Smith",
 		"cStatus": "C_CONSENT"
 	},
@@ -1940,7 +1940,7 @@ var childUpdate = {"childsUpdate": [
 	},
 	{
 		"checkboxID": 'custom96',
-		"chilid": '9119993S',
+		"childid": '9119993S',
 		"childName": "Kelly Smith",
 		"cStatus": "C_CONSENT"
 	},
