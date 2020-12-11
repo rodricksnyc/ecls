@@ -1,78 +1,78 @@
 
 .covid-modal p {
   color: black;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    line-height: 30px;
-    font-size: 17px;
-    line-height: 1.6;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
 .covid-modal .modal-header {
-    padding: 15px;
-    border-bottom: none;
-    margin-bottom: 0em;
-    display: block !important;
-    padding-top: 0em;
-    padding: 0;
-    height: 7px;
+  padding: 15px;
+  border-bottom: none;
+  margin-bottom: 0em;
+  display: block !important;
+  padding-top: 0em;
+  padding: 0;
+  height: 7px;
 }
 .covid-modal h3 {
-    position: relative;
-    top: 0px;
-    right: 4px;
-    font-size: 14px !important;
-    font-weight: 400;
-    color: #00539f;
-    font-family: 'Public Sans', sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    top: 4px;
-    font-weight: 600;
+  position: relative;
+  top: 0px;
+  right: 4px;
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #00539f;
+  font-family: 'Public Sans', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  top: 4px;
+  font-weight: 600;
 }
 
 .covid-modal button.close {
-    position: absolute;
-    right: 9px;
-    top: 6px;
-    z-index: 9999999;
-    color:#00539f;
-    opacity:1;
-    display: flex;
-    justify-content: flex-end;
+  position: absolute;
+  right: 9px;
+  top: 6px;
+  z-index: 9999999;
+  color:#00539f;
+  opacity:1;
+  display: flex;
+  justify-content: flex-end;
 }
 .covid-modal button.close:hover{
-      opacity:1;
+  opacity:1;
 }
 .covid-modal .close:not(:disabled):not(.disabled):focus, .covid-modal .close:not(:disabled):not(.disabled):hover {
-    color: #000;
-    text-decoration: none;
-    opacity: 1;
-    color: #00539f;
+  color: #000;
+  text-decoration: none;
+  opacity: 1;
+  color: #00539f;
 }
 
 .redLeftBar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 12px;
-    background: #FC7B75;
-        top: -7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 12px;
+  background: #FC7B75;
+  top: -7px;
 }
 
 
 .covid-modal .modal-lg {
-    max-width: 1000px;
-    top: 14%;
+  max-width: 1000px;
+  top: 14%;
 }
 .covid-modal .modal-content {
-    padding-bottom: 0em;
-    position:relative;
+  padding-bottom: 0em;
+  position:relative;
 }
 
 .covid-modal .modal-body {
-    padding: 1em 2em;
+  padding: 1em 2em;
 }
 
 .covid-modal h4 {
@@ -80,9 +80,9 @@
 }
 
 @media (max-width:767px){
-    .covid-modal  img{
-        max-height: 10em;
-      }
+  .covid-modal  img{
+    max-height: 10em;
+  }
 }
 
 .errorModal .modal-dialog {
@@ -107,24 +107,24 @@
 
 .errorModal p {
   color: black;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    line-height: 30px;
-    font-size: 18px;
-    line-height: 1.8;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 .errorModal .modal-content{
-    border: 3px solid #AF2828;
+  border: 3px solid #AF2828;
 }
 
 .errorModal .redInfo{
   color:#AF2828;
-0
+  0
 }
 
 .errorModal .modal-body {
-    padding: 2em 2em 1em 2em;
+  padding: 2em 2em 1em 2em;
 }
 
 .errorModal .modal-title {
@@ -132,15 +132,15 @@
 }
 
 .errorModal .modal-header .close {
-    padding: 0rem;
-    margin: 0rem;
-    color: black;
-    opacity: 1;
+  padding: 0rem;
+  margin: 0rem;
+  color: black;
+  opacity: 1;
 }
 
 .errorModal .modal-body {
-    padding: 2em 3em 1em 3em;
-    position: relative;
+  padding: 2em 3em 1em 3em;
+  position: relative;
 }
 
 .flipTop {
@@ -226,13 +226,13 @@ body {
 }
 
 .formFont{
-    position: relative;
-    top: -10px;
-    left: 0px;
-    font-size: 14px !important;
-    font-weight: 400;
-    color: #00539f;
-    font-family: 'Public Sans', sans-serif;
+  position: relative;
+  top: -10px;
+  left: 0px;
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #00539f;
+  font-family: 'Public Sans', sans-serif;
 }
 
 .white {
@@ -459,9 +459,9 @@ body  {
 
 @media (min-width:1025px){
 
-.logos a:nth-of-type(2) img {
-  min-width: 18em;
-}
+  .logos a:nth-of-type(2) img {
+    min-width: 18em;
+  }
 
 }
 
@@ -1418,7 +1418,7 @@ h6.plum {
   padding: 0em;
 }
 .infoBar i {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .infoBar {
@@ -1929,9 +1929,9 @@ right: 0;
 
 @media (min-width: 2000px) {
 
-#two .offset-md-1 {
+  #two .offset-md-1 {
     margin-left: 25%;
-}
+  }
 
 }
 
@@ -5031,9 +5031,9 @@ h6.green{
 
 .cc-selector input{
 
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
 }
 
@@ -6329,7 +6329,7 @@ button.close {
 
 @media (min-height:1100px){
 
-    .animation {
+  .animation {
     min-height: 90vh;
 
   }
@@ -6338,7 +6338,7 @@ button.close {
 
 @media (min-height:900px) and (max-height:1100px){
 
-    .animation {
+  .animation {
     min-height: 110vh;
 
   }
@@ -6391,11 +6391,25 @@ button.close {
     max-width: 11em;
 
   }
-
+  
   #tabs-2 .greenBlocks img {
     max-width:19em
   }
 
+}
+
+
+
+.landing .fas.slate {
+  color:#576f7f !important;
+  font-size:22px !important;
+  padding: 5px;
+  margin:0em !important
+}
+
+.landing .fas.slate:active {
+  background: #fbb03b !important;
+  color: #071D49 !important;
 }
 
 @media (max-width:1200px){
@@ -6403,28 +6417,32 @@ button.close {
     margin: 1em 0em;
   }
 
-
-  .slate.borderLeft:after {
-      content: "";
+  .logo {
+    min-width: 12em;
+  }
+  .logos a:nth-of-type(2) img {
+    min-width: 13em;
   }
 
-    .whiteBox, .tangerineBox {
-      background: none;
-      padding:1em;
-    }
+
+  .slate.borderLeft:after {
+    content: "";
+  }
+
+  .whiteBox, .tangerineBox {
+    background: none;
+    padding:1em;
+  }
+  .tangerineBox .plum {
+    margin-bottom: 0em;
+    color: #576f7f;
+  }
+
+  .end {
+    right:1em
+  }
 
 
-    .landing .fas.slate {
-      color:#576f7f !important;
-      font-size:22px !important;
-      padding: 5px;
-      margin:0em !important
-    }
-
-    .landing .fas.slate:active {
-      background: #fbb03b !important;
-      color: #071D49 !important;
-    }
 
 
 }
