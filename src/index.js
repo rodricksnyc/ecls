@@ -3018,58 +3018,7 @@ $('.loadMore').on('click', function (e) {
 
 
 
-
-// $('.case-status.district-update .updateBlocks').addClass('hidden')
-// $('.case-status.district-update .updateBlocks').slice(0, 4).removeClass('hidden')
-//
-// $('.case-status.school-nonResponse .updateBlocks').addClass('hidden')
-// $('.case-status.school-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
-//
-//
-// $('.case-status.child-nonResponse .updateBlocks').addClass('hidden')
-// $('.case-status.child-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
-//
-//
-// $('.case-status.parent-nonResponse .updateBlocks').addClass('hidden')
-// $('.case-status.parent-nonResponse .updateBlocks').slice(0, 4).removeClass('hidden')
-
-
-
-// $('.loadAll, .loadAllUpdate').on('click', function (e) {
-// 	e.preventDefault();
-// 	$('.addBlocks').slideDown('slow').removeClass('hidden');
-//
-// 	$('.loadMore, .flip').hide()
-// 	$('.loadAll p').addClass('all').hide()
-//
-// 	// $(this).closest('.case-status').find('.updateBlocks').slideDown('slow').removeClass('hidden');
-// 	// $(this).closest('.case-status').find('.loadAllUpdate p').addClass('all').hide()
-//
-// });
-//
-// $('.loadAll, .loadAllUpdate').on('keyup', function(e) {
-// 	var code = (e.keyCode ? e.keyCode : e.which);
-// 	if (code == 13 ) {
-// 		e.preventDefault();
-// 		$('.addBlocks').slideDown('slow').removeClass('hidden');
-// 		$('.loadMore, .flip').hide()
-// 		$('.loadAll p').addClass('all').hide()
-//
-// 		// $(this).closest('.case-status').find('.updateBlocks').slideDown('slow').removeClass('hidden');
-// 		// $(this).closest('.case-status').find('.loadAllUpdate p').addClass('all').hide()
-//
-// 	}
-//
-//
-// })
-
-
-
-
-
-
-
-
+//floating buttons
 
 $('[data-toggle=tooltip]').tooltip();
 
@@ -3458,6 +3407,19 @@ if ($('.newBlocks').length < 10) {
 else {
 	$('.showBlocks').children().show()
 }
+
+
+if ($(document).innerWidth() <= 1200) {
+
+
+
+$('.logoutOptions .tangerineBox .plum').html('<i class="fas fa-user slate"></i>')
+$('.logoutOptions .slate:eq(0)').html('<i class="fas fa-home slate"></i>')
+$('.logoutOptions  .slate.borderLeft').html('<i class="fas fa-sign-out-alt slate"></i>')
+
+
+}
+
 
 if ($(document).innerWidth() <= 767) {
 	$('#feedbackModal').on('hidden.bs.modal', function (e) {
@@ -4189,6 +4151,21 @@ $(".card-cc").on("click", function (e) {
 	e.preventDefault();
 
 });
+
+
+if ($(document).innerWidth() <= 1200) {
+	$('.logoutOptions #ingles p').html('EN')
+	$('.logoutOptions #espanol p').html('ES')
+
+}
+
+
+
+if ($(document).innerWidth() <= 767) {
+	$('#ingles p').html('EN')
+	$('#espanol p').html('ES')
+
+}
 
 
 //spanish english

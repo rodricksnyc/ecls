@@ -6403,6 +6403,30 @@ button.close {
     margin: 1em 0em;
   }
 
+
+  .slate.borderLeft:after {
+      content: "";
+  }
+
+    .whiteBox, .tangerineBox {
+      background: none;
+      padding:1em;
+    }
+
+
+    .landing .fas.slate {
+      color:#576f7f !important;
+      font-size:22px !important;
+      padding: 5px;
+      margin:0em !important
+    }
+
+    .landing .fas.slate:active {
+      background: #fbb03b !important;
+      color: #071D49 !important;
+    }
+
+
 }
 
 @media (max-width:1025px) {
@@ -7928,11 +7952,6 @@ button.close {
 
 
 
-  .whiteBox, .tangerineBox {
-    background: none;
-    padding:1em;
-  }
-
 
   .greenBar {
     background: #00843D;
@@ -8065,18 +8084,6 @@ button.close {
   }
   #sendMessage{
     font-size: 14px;
-  }
-
-  .landing .fas.slate {
-    color:#576f7f !important;
-    font-size:22px !important;
-    padding: 5px;
-    margin:0em !important
-  }
-
-  .landing .fas.slate:active {
-    background: #fbb03b !important;
-    color: #071D49 !important;
   }
 
 
