@@ -3255,6 +3255,12 @@ h6.plum {
 }
 
 
+.school-coordinator-to-do{
+  padding-bottom:5em
+}
+
+
+
 .feedbackBar {
   margin-bottom:1em;
   background: white;
@@ -7783,6 +7789,18 @@ transform: scale(0.8);
     padding-top: 29px;
   }
 
+  .school-coordinator-to-do .grayBox.sc.second .nav-tabs .nav-item {
+      margin-bottom: 0px;
+      width: 50%;
+  }
+
+  .school-coordinator-to-do .grayBox.sc.second .nav-tabs .nav-item:last-child {
+      margin-bottom: 0px;
+      width: 50%;
+      margin-left:25%
+  }
+
+
 }
 
 
@@ -7801,9 +7819,25 @@ transform: scale(0.8);
   }
 
   .schoolBanner {
-    margin-top: -1em;
+    margin-top: 0em;
   }
 
+  .school-coordinator-to-do .grayBox.sc.second .nav-tabs .nav-item {
+      margin-bottom: 0px;
+      width: 100%;
+  }
+
+  h5 {
+      font-size: 1rem;
+  }
+
+.grayBox.second .nav-tabs .nav-link {
+  height:2.5em
+}
+
+.row.p-1{
+  padding:0rem !important
+}
 
 
   .block5 .d-flex.justify-content-between.flex-wrap{
