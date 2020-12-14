@@ -3267,6 +3267,10 @@ h6.plum {
     font-family: kepler-std, serif;
 }
 
+.school-coordinator-to-do li {
+  margin:.5em 0em
+}
+
 .inner  {
   list-style-type: none;
   font-family: 'Public Sans', sans-serif;
