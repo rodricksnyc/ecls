@@ -611,7 +611,7 @@ span.heading {
   margin-bottom:0em !important;
   padding-bottom:0em !important;
   z-index:9998;
-  opacity: .8;
+  opacity: .84;
   backdrop-filter: blur(6px);
 }
 
