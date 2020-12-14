@@ -1,4 +1,24 @@
+/* jquery validate error message in create account */
 
+ .validate_cus {
+  font-size: 12px !important;
+  color: #CC473A !important;
+  position:absolute;
+
+  background: transparent !important;
+  font-family: 'Public Sans', sans-serif;
+  left: 0 !important;
+
+}
+
+
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: transparent;
+    opacity: 1;
+}
+
+/* covid style */
 .covid-modal p {
   color: black;
   font-family: 'Public Sans', sans-serif;
@@ -84,6 +104,8 @@
     max-height: 10em;
   }
 }
+
+/* error modal style */
 
 .errorModal .modal-dialog {
   max-width: 760px !important;
@@ -570,8 +592,8 @@ span.heading {
 }
 
 /* .slate.borderLeft {
-  padding-left:1em;
-  border-left: 1px solid #576f7f;
+padding-left:1em;
+border-left: 1px solid #576f7f;
 } */
 
 .slate.borderLeft:after {
@@ -7838,9 +7860,9 @@ button.close {
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
     top: 1.7em;
-}
+  }
 
-.inactiveDot.blue {
+  .inactiveDot.blue {
     background-color: white!important;
     color: #00539f;
     z-index: 999999999999;
@@ -7849,14 +7871,14 @@ button.close {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     right: -3.6em;
-}
+  }
 
-.activeDot.clear {
+  .activeDot.clear {
     background-color: transparent !important;
     color: white;
     z-index: 999999999999;
     right: -3.6em;
-}
+  }
 
 
   .inactiveDot {
@@ -7870,14 +7892,14 @@ button.close {
     padding: .1em .5em .1em 1.3em;
     top: 1.7em;
     right: -2.6em;
-}
+  }
 
 
- .tangerineBox {
+  .tangerineBox {
     background: none;
     padding: 0em;
 
-}
+  }
 
   #accordion .card-link {
     font-family: 'Public Sans', sans-serif;
@@ -8027,8 +8049,8 @@ button.close {
   }
 
   .slate.borderLeft {
-      padding-left: 0em;
-      border-left: none;
+    padding-left: 0em;
+    border-left: none;
   }
 
 

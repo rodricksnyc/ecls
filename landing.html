@@ -402,13 +402,13 @@
 																		<div id="eye" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
 																	</div>
 																	<div class="d-flex justify-content-center mt-4 mb-3">
-																		<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false" role="button" data-toggle="modal" data-target="#newUserModal" tabindex="0" aria-describedby="New User" aria-label="New User">Submit</button>
+																		<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false" role="button" data-toggle="modal" data-target="#newUserModal" tabindex="0" aria-describedby="New User" aria-label="New User" onclick="(function(e){e.preventDefault();})(event)">Submit</button>
 																	</div>
 																</form>
 															</div>
 
 															<div class="whiteBox">
-																<form>
+																	<form  role="form" method="POST">
 																	<legend>
 																		<p class="darkGreen text-center">Returning Visitors</p>
 																	</p>
@@ -461,7 +461,34 @@
 											</button>
 										</div>
 
-										<form>
+										<!-- <form id="signup-form" action="login" method="post">
+  <div class="top-row">
+    <div class="form-group has-feedback field-wrap">
+      <label id="lbl_paswd" class="control-label" for="password">
+        Password
+        <span class="req">*
+        </span>
+      </label>
+      <input type="password" name="password" id="password_reg" class="" required autocomplete="off" />
+      <span class="glyphicon form-control-feedback" id="password_reg1">
+      </span>
+    </div>
+    <div class="form-group has-feedback field-wrap">
+      <label class="control-label" for="confirmPassword">
+        Confirm Password
+        <span class="req">*
+        </span>
+      </label>
+      <input type="password" name="confirmPassword" id="confirmPassword" class="" disabled required autocomplete="off" />
+      <span class="glyphicon form-control-feedback" id="confirmPassword1">
+      </span>
+    </div>
+  </div>
+  <button type="submit" class="button button-block">SIGN UP
+  </button>
+</form> -->
+
+										<form id="signup-form" action="login" method="post">
 											<div class="modal-body">
 												<legend>
 													Please create a username and password to use to access MyECLS.
@@ -482,12 +509,19 @@
 
 
 												<div class="form-group">
-													<label for="password1">Password</label>
-													<input type="password" class="form-control" id="password1" placeholder="Password" required>
+													<label id="lbl_paswd" class="control-label" for="password">Password</label>
+
+													<input type="password" name="password" id="password_reg" class="form-control" required autocomplete="off">
+													<span class="form-control-feedback" id="password_reg1">
+													</span>
+
 												</div>
 												<div class="form-group">
-													<label for="password1">Confirm Password</label>
-													<input type="password" class="form-control" id="password2" placeholder="Confirm Password" required>
+													<label class="control-label" for="confirmPassword">Confirm Password</label>
+													<input type="password" name="confirmPassword" id="confirmPassword" class="form-control noradius" disabled required autocomplete="off" />
+													<span class="form-control-feedback" id="confirmPassword1">
+													</span>
+
 												</div>
 
 											</div>
@@ -502,6 +536,23 @@
 
 								</div>
 							</div>
+
+
+							<!-- <form method="post" role="form" autocomplete="off" name="createAccountForm" id="createAccountForm">
+						 <div class="alert alert-danger changepassword-error hidden">
+						 </div>
+						 <div class="form-group">
+								 <label for="password">password</label>
+								 <input type="password" class="form-control" name="password" id="password" placeholder="password">
+						 </div>
+						 <div class="form-group reg-form col-sm-7 padLeft">
+								 <label for="confirmpassword">Confirm Password</label>
+								 <input type="password" class="form-control noradius" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
+						 </div>
+						 <div class="btn-toolbar">
+								 <button type="submit" class="btn">Submit</button>
+						 </div>
+				 </form> -->
 
 
 							<div class="modal fade errorModal" id="returningUserModal" tabindex="-1" role="dialog" aria-labelledby="Returning User" aria-hidden="true">
@@ -1333,7 +1384,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 	<script type="text/javascript" src="build/index.js"></script>
+	<script type="text/javascript" src="src/landing.js"></script>
 
 </body>
 
