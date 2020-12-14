@@ -68,8 +68,8 @@ $('#signup-form').validate({
   messages: {
     password: {
       pwcheck: "Password is not strong enough",
-      checklower: "Need at least 1 lowercase alphabet",
-      checkupper: "Need at least 1 uppercase alphabet",
+      checklower: "Need at least 1 lowercase letter",
+      checkupper: "Need at least 1 uppercase letter",
       checkdigit: "Need at least 1 digit"
     }
   },
