@@ -6391,7 +6391,7 @@ button.close {
     max-width: 11em;
 
   }
-  
+
   #tabs-2 .greenBlocks img {
     max-width:19em
   }
@@ -7812,14 +7812,72 @@ button.close {
 
   .end {
     position: absolute;
-    right: 10px;
+    right: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: auto;
     min-width: 0em;
-    margin-left: 4%;
+    margin-left: auto;
+    flex-wrap: wrap;
+    width: auto;
+    top: 1em;
+    max-width: 8.5em;
+
+
   }
+
+  .activeDot {
+    background: white;
+    color: #00539f;
+    position: relative;
+    z-index: 22;
+    border: 2px solid white;
+    width: auto;
+    padding: .1em .5em;
+    right: -3.6em;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    top: 1.5em;
+}
+
+.inactiveDot.blue {
+    background-color: white!important;
+    color: #00539f;
+    z-index: 999999999999;
+    padding: .1em .5em .1em .5em;
+    border-radius: 0rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    right: -3.6em;
+}
+
+.activeDot.clear {
+    background-color: transparent !important;
+    color: white;
+    z-index: 999999999999;
+    right: -3.6em;
+}
+
+
+  .inactiveDot {
+    border-radius: 1rem;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    border: 2px solid white;
+    width: auto;
+    padding: .1em .5em .1em 1.3em;
+    top: 1.5em;
+    right: -2.6em;
+}
+
+
+ .tangerineBox {
+    background: none;
+    padding: 0em;
+
+}
 
   #accordion .card-link {
     font-family: 'Public Sans', sans-serif;
@@ -7961,14 +8019,17 @@ button.close {
 
   .logo {
     max-width: 6em;
-    min-width: 5em;
+    min-width: 5em !important;
     padding-left: 1em;
     padding-top: 0em;
     padding-bottom: 0em;
     padding-right: 1em;
   }
 
-
+  .slate.borderLeft {
+      padding-left: 0em;
+      border-left: none;
+  }
 
 
   .greenBar {
