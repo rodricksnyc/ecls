@@ -2873,7 +2873,7 @@ ul.greenDot{
 
 
 .casePage .lightGrayBox {
-  padding-top:1em
+  padding:1.5em
 }
 
 .casePage .plum {
@@ -3259,19 +3259,34 @@ h6.plum {
   padding-bottom:5em
 }
 
+.school-coordinator-to-do .darkGreen {
+    color: #00843D;
+    font-size: 20px;
+    margin: 0em;
+    font-weight: 600;
+    font-family: kepler-std, serif;
+}
+
 .inner  {
-  list-style-type: none
+  list-style-type: none;
+  font-family: 'Public Sans', sans-serif;
+
+font-weight: 300;
+line-height: 30px;
+font-size: 18px;
+
 }
 
 .inner li::before {
     font-family: "Font Awesome 5 Pro";
     content: "\f111";
     color: #00843D;
-    font-size: 13px;
+    font-size: 12px;
     display: inline-block;
-    width: .3em;
-    margin-left: -1.4em;
+    width: .5em;
+    margin-left: 0em;
     margin-right: 1.2em;
+    font-weight: 500;
 
 }
 
@@ -3426,7 +3441,7 @@ p.scBlock{
   display: inline-block;
   width: .8em;
   margin-left: 0em;
-  transform: scale(1.8);
+  transform: scale(1.9);
 
 }
 
