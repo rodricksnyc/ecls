@@ -3259,6 +3259,22 @@ h6.plum {
   padding-bottom:5em
 }
 
+.inner  {
+  list-style-type: none
+}
+
+.inner li::before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f111";
+    color: #00843D;
+    font-size: 13px;
+    display: inline-block;
+    width: .3em;
+    margin-left: -1.4em;
+    margin-right: 1.2em;
+
+}
+
 
 
 .feedbackBar {

@@ -332,7 +332,7 @@
 
 										<!-- overview/tab-1 is commented out now -->
 
-	
+
 <div class="tab-pane active" id="tabs-2" role="tabpanel">
 	<form class="update" role="form" method="post">
 		<div class="row grayUnderline">
@@ -708,14 +708,15 @@
 						<input class="form-check-input" type="radio" id="inlineRadio61" value="option2" name="codes">
 						<label class="form-check-label blue" for="inlineRadio61">81 - Partial assessment, child ill/upset/fatigued</label>
 					</div>
+
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio62" value="option3" name="codes">
-						<label class="form-check-label blue" for="inlineRadio62">83 - Partial assessment, child's mental/physical limitation</label>
+						<label class="form-check-label blue" for="inlineRadio62">82 - Partial assessment, child's mental/physical limitation</label>
 					</div>
 
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio63" value="option4" name="codes">
-						<label class="form-check-label blue" for="inlineRadio63">86 - Partial assessment, other (specify)</label>
+						<label class="form-check-label blue" for="inlineRadio63">83 – Partial assessment, child refusal</label>
 					</div>
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio64" value="option5" name="codes">
@@ -739,7 +740,15 @@
 					</div>
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio69" value="option10" name="codes">
-						<label class="form-check-label blue" for="inlineRadio69">96 – Not assessed – other (specify)</label>
+						<label class="form-check-label blue" for="inlineRadio69">96 – Not assessed – virtual learning</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio70" value="option11" name="codes">
+						<label class="form-check-label blue" for="inlineRadio70">97 – Parent Consent Refused</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio71" value="option12" name="codes">
+						<label class="form-check-label blue" for="inlineRadio71">98 – Data deleted – do not recontact (by parent)</label>
 					</div>
 
 					<div class="invalid-feedback">
@@ -860,37 +869,57 @@
 
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio80" value="option1" name="codes">
-						<label class="form-check-label blue" for="inlineRadio80">80 – Final breakoff</label>
+						<label class="form-check-label blue" for="inlineRadio80">80 – Partial Complete Web Survey (Parent)</label>
 					</div>
 
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio81" value="option2" name="codes">
-						<label class="form-check-label blue" for="inlineRadio81">90 – Final refusal</label>
+						<label class="form-check-label blue" for="inlineRadio81">81 – Partial Complete Web Survey - Spanish (Parent)</label>
 					</div>
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio82" value="option3" name="codes">
-						<label class="form-check-label blue" for="inlineRadio82">92 – School refused names</label>
+						<label class="form-check-label blue" for="inlineRadio82">82 – Partial Complete Web Survey (Field)</label>
 					</div>
 
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio83" value="option4" name="codes">
-						<label class="form-check-label blue" for="inlineRadio83">93 – Unable to contact parent (Contact info correct)</label>
+						<label class="form-check-label blue" for="inlineRadio83">83 – Partial Complete Web Survey - Spanish (Field)</label>
 					</div>
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio84" value="option5" name="codes">
-						<label class="form-check-label blue" for="inlineRadio84">94 – Unlocatable parent</label>
+						<label class="form-check-label blue" for="inlineRadio84">90 – Final refusal</label>
 					</div>
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio85" value="option6" name="codes">
-						<label class="form-check-label blue" for="inlineRadio85">95 – Language/hearing barrier</label>
+						<label class="form-check-label blue" for="inlineRadio85">91 – Do not recontact</label>
 					</div>
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio86" value="option7" name="codes">
-						<label class="form-check-label blue" for="inlineRadio86">96 – Non-response/other (specify)</label>
+						<label class="form-check-label blue" for="inlineRadio86">92 – School Refused Names</label>
 					</div>
 					<div class="form-check customRadio">
 						<input class="form-check-input" type="radio" id="inlineRadio87" value="option8" name="codes">
-						<label class="form-check-label blue" for="inlineRadio87">98 – Data deleted – do not recontact</label>
+						<label class="form-check-label blue" for="inlineRadio87">93 – Unable to Contact Parent/Contact Info Correct</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio87" value="option8" name="codes">
+						<label class="form-check-label blue" for="inlineRadio87">94 – Unlocatable Parent</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio88" value="option9" name="codes">
+						<label class="form-check-label blue" for="inlineRadio88">95 – Language/Hearing Barrier</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio89" value="option10" name="codes">
+						<label class="form-check-label blue" for="inlineRadio89">96 – Non-response/other (specify)</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio90" value="option11" name="codes">
+						<label class="form-check-label blue" for="inlineRadio90">98 – Parent Data Deleted/Do not Recontact</label>
+					</div>
+					<div class="form-check customRadio">
+						<input class="form-check-input" type="radio" id="inlineRadio91" value="option12" name="codes">
+						<label class="form-check-label blue" for="inlineRadio91">99 - No previous interview conducted</label>
 					</div>
 
 					<div class="invalid-feedback">
