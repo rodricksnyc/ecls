@@ -569,10 +569,10 @@ span.heading {
   font-size:18px;
 }
 
-.slate.borderLeft {
+/* .slate.borderLeft {
   padding-left:1em;
   border-left: 1px solid #576f7f;
-}
+} */
 
 .slate.borderLeft:after {
   font-family: "Font Awesome 5 Pro";
