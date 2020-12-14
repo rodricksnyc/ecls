@@ -565,13 +565,13 @@ align-items: center;
   z-index: 999999999;
 }
 
-.modal-backdrop {
-  z-index: 9999;
+/* .modal-backdrop {
+z-index: 999999999  !important;
 }
 
 .updates{
-  z-index: 999999;
-}
+  z-index: 999999999999999999999999 !important;
+} */
 
 .updates .title {
   display: block;
@@ -2946,7 +2946,7 @@ z-index:999999;
   position: fixed;
   top: 30%;
   left: 0px;
-  z-index: 9999;
+  z-index: 998;
 }
 
 .greenSide .yellow {
@@ -4776,7 +4776,7 @@ transform: scale(0.9);
 #slideOut {
   height: 100vh;
   top: 0;
-  z-index: 999999999;
+  z-index: 999;
 }
 #slideOut {
   position: fixed;
