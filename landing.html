@@ -123,27 +123,29 @@
 							<div class="modal-content">
 								<div class="modal-header">
 
-									<button role="button" class="close" data-dismiss="modal" aria-label="Close">
+									<!-- <button role="button" class="close" data-dismiss="modal" aria-label="Close">
 										<h3>Dismiss</h3>
 										<span aria-hidden="true">&times;</span>
-									</button>
+									</button> -->
 
 								</div>
 								<div class="modal-body">
 									<div class="redLeftBar"></div>
 									<div class="row d-flex align-items-center">
-										<div class="col-lg-10 col-md-10">
+										<div class="col-12">
 											<h4 class="modal-title">Coronavirus Message</h4>
 											<p>The coronavirus pandemic continues to pose significant challenges for state agencies, districts, and schools, while also affecting us all personally. We recognize these challenges and we are implementing approaches to conduct ECLS activities in schools in a manner that aims to protect the health and safety of students, school staff, and ECLS staff. We will follow recommended guidance from health experts and school-specific safety precautions when our staff visit schools in fall 2021.</p>
 										</div>
-										<div class="col-lg-2 col-md-2">
-											<img src="images/covid.svg" class="img-responsive">
 
-										</div>
 
 									</div>
 
+									<div class="d-flex justify-content-center">
+										<button class="btn blueButton" tabindex="0" aria-hidden="false" role="button" class="close" data-dismiss="modal" aria-label="Close">DISMISS</button>
+									</div>
+
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -159,24 +161,7 @@
 							<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="U.S. Department of Education seal"></a>
 						</div>
 
-						<!-- <div class="end">
-							<div class="whiteBox d-flex justify-content-between align-items-center">
 
-								<a class="slate" href="" role="button" tabindex="0" aria-describedby="Access ECLS home" aria-label="Access ECLS home">
-									<p class="slate">my ECLSHome</p>
-								</a>
-								<a href="" role="button" tabindex="0" aria-describedby="Access portal" aria-label="Access portal">
-									<div class="tangerineBox">
-										<p class="plum">Portal</p>
-									</div>
-								</a>
-
-								<a class="slate" href="" role="button" tabindex="0" aria-describedby="Logout" aria-label="Logout">
-									<p class="slate borderLeft">Logout<p>
-									</a>
-
-								</div>
-							</div> -->
 
 						<div class="end logoutOptions">
 
@@ -461,33 +446,6 @@
 											</button>
 										</div>
 
-										<!-- <form id="signup-form" action="login" method="post">
-  <div class="top-row">
-    <div class="form-group has-feedback field-wrap">
-      <label id="lbl_paswd" class="control-label" for="password">
-        Password
-        <span class="req">*
-        </span>
-      </label>
-      <input type="password" name="password" id="password_reg" class="" required autocomplete="off" />
-      <span class="glyphicon form-control-feedback" id="password_reg1">
-      </span>
-    </div>
-    <div class="form-group has-feedback field-wrap">
-      <label class="control-label" for="confirmPassword">
-        Confirm Password
-        <span class="req">*
-        </span>
-      </label>
-      <input type="password" name="confirmPassword" id="confirmPassword" class="" disabled required autocomplete="off" />
-      <span class="glyphicon form-control-feedback" id="confirmPassword1">
-      </span>
-    </div>
-  </div>
-  <button type="submit" class="button button-block">SIGN UP
-  </button>
-</form> -->
-
 										<form id="signup-form" action="login" method="post">
 											<div class="modal-body">
 												<legend>
@@ -538,22 +496,6 @@
 							</div>
 
 
-							<!-- <form method="post" role="form" autocomplete="off" name="createAccountForm" id="createAccountForm">
-						 <div class="alert alert-danger changepassword-error hidden">
-						 </div>
-						 <div class="form-group">
-								 <label for="password">password</label>
-								 <input type="password" class="form-control" name="password" id="password" placeholder="password">
-						 </div>
-						 <div class="form-group reg-form col-sm-7 padLeft">
-								 <label for="confirmpassword">Confirm Password</label>
-								 <input type="password" class="form-control noradius" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
-						 </div>
-						 <div class="btn-toolbar">
-								 <button type="submit" class="btn">Submit</button>
-						 </div>
-				 </form> -->
-
 
 							<div class="modal fade errorModal" id="returningUserModal" tabindex="-1" role="dialog" aria-labelledby="Returning User" aria-hidden="true">
 								<div class="modal-dialog" role="document">
@@ -573,9 +515,9 @@
 											<p>The password you entered does not meet the minimum requirements. Your password must be at least 8 characters in length and must contain a combination of 3 of the following 4 types: upper case letters, lower case letters, numbers, or special characters. It must not be identical to a previous password.</p>
 										</div>
 										<div class="modal-footer">
-
-											<button type="submit" class="btn continue" data-dismiss="modal">DISMISS</button>
-
+											<div class="d-flex justify-content-center mt-1">
+												<button class="btn blueButton" tabindex="0" aria-hidden="false" role="button" class="close" data-dismiss="modal" aria-label="Close">CONTINUE</button>
+											</div>
 
 										</div>
 									</form>

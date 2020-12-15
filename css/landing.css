@@ -12,13 +12,26 @@
 }
 
 
-
 .form-control:disabled, .form-control[readonly] {
     background-color: transparent;
     opacity: 1;
 }
 
 /* covid style */
+
+.blueButton {
+    font-family: 'Public Sans', sans-serif;
+    background: #00539f;
+    border-color: transparent;
+    width: auto;
+    padding: .2rem 1.6rem;
+    border-radius: 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+
+}
 .covid-modal p {
   color: black;
   font-family: 'Public Sans', sans-serif;
@@ -142,7 +155,7 @@
 
 .errorModal .redInfo{
   color:#AF2828;
-
+  font-size:20px;
 }
 
 .errorModal .modal-body {

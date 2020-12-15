@@ -209,6 +209,8 @@ textarea::placeholder {
   padding-top:25px;
   font-family: kepler-std, serif;
   font-weight: 700;
+  text-align: center;
+
 }
 
 .contactUsOverlay{
@@ -7776,6 +7778,12 @@ transform: scale(0.8);
     padding-left: 1em;
   }
 
+  .title{
+
+      font-size: 35px;
+
+    }
+
   .tabletBottomLess {
     padding-bottom:5em;
   }
@@ -7864,11 +7872,24 @@ transform: scale(0.8);
   .schoolBanner {
     margin-top: 0em;
   }
+  h3.landing-sec-H {
+    font-size: 24px;
+    border-bottom: none;
+    margin-bottom: 1em;
+    margin-top: 1em !important;
+}
 
   .school-coordinator-to-do .grayBox.sc.second .nav-tabs .nav-item {
       margin-bottom: 0px;
       width: 100%;
   }
+  .school-coordinator-to-do .box-outer{
+    padding: 0em 0em;
+  }
+
+    .school-coordinator-to-do .lightGreen.p-5 {
+    padding: 1em !important;
+}
 
   h5 {
       font-size: 1rem;
