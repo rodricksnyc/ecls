@@ -125,6 +125,30 @@
 
 }
 
+.greenOutline {
+    font-family: 'Public Sans', sans-serif;
+    background: white;
+    border-color: #00843D;
+    width: auto;
+    padding: .2rem 1.6rem;
+    border-radius: 2rem;
+    color:#00843D;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.greenOutline:hover {
+    font-family: 'Public Sans', sans-serif;
+    background: #00843D;
+    border-color: #00843D;
+    width: auto;
+    padding: .2rem 1.6rem;
+    border-radius: 2rem;
+    color:white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
 .errorModal {
   top:10%;
 }
@@ -150,7 +174,7 @@
 }
 
 .errorModal .modal-content{
-  border: 3px solid #AF2828;
+  /* border: 3px solid #AF2828; */
 }
 
 .errorModal .redInfo{

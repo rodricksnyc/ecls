@@ -572,7 +572,7 @@ z-index: 999999999  !important;
 }
 
 .updates{
-  z-index: 999999999999999999999999 !important;
+z-index: 999999999999999999999999 !important;
 } */
 
 .updates .title {
@@ -2140,6 +2140,53 @@ span.heading {
   background-position: 0px 100%;
 }
 
+.whiteBlocks {
+  margin-bottom: 1em;
+  background: white;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
+  min-height: 15em;
+  border-top-right-radius: 1.5rem;
+}
+
+.blueCircle3 {
+  position: relative;
+  border-radius: 50%;
+  background: #00539f;
+  height: 3rem;
+  width: 3rem;
+  top: -10px;
+  right: -10px;
+}
+
+.grayAbsoluteLine {
+  position:absolute;
+  left:0;
+  right:0;
+  height:1px;
+  background: #dedede;
+  top:4em;
+}
+
+.blueCircle3 i {
+  position: absolute;
+  color: white;
+
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  color: white;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+
+
+}
+
 /*
 .survey-container {
 width: 100%;
@@ -3262,11 +3309,11 @@ h6.plum {
 }
 
 .school-coordinator-to-do .darkGreen {
-    color: #00843D;
-    font-size: 20px;
-    margin: 0em;
-    font-weight: 600;
-    font-family: kepler-std, serif;
+  color: #00843D;
+  font-size: 20px;
+  margin: 0em;
+  font-weight: 600;
+  font-family: kepler-std, serif;
 }
 
 .school-coordinator-to-do li {
@@ -3274,33 +3321,33 @@ h6.plum {
 }
 
 .greenFont {
-    color: #00843D;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    line-height: 30px;
-    font-size: 18px;
+  color: #00843D;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
 }
 
 .inner  {
   list-style-type: none;
   font-family: 'Public Sans', sans-serif;
 
-font-weight: 300;
-line-height: 30px;
-font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
 
 }
 
 .inner li::before {
-    font-family: "Font Awesome 5 Pro";
-    content: "\f111";
-    color: #00843D;
-    font-size: 12px;
-    display: inline-block;
-    width: .5em;
-    margin-left: 0em;
-    margin-right: 1.2em;
-    font-weight: 500;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f111";
+  color: #00843D;
+  font-size: 12px;
+  display: inline-block;
+  width: .5em;
+  margin-left: 0em;
+  margin-right: 1.2em;
+  font-weight: 500;
 
 }
 
@@ -7780,9 +7827,9 @@ transform: scale(0.8);
 
   .title{
 
-      font-size: 35px;
+    font-size: 35px;
 
-    }
+  }
 
   .tabletBottomLess {
     padding-bottom:5em;
@@ -7841,14 +7888,14 @@ transform: scale(0.8);
   }
 
   .school-coordinator-to-do .grayBox.sc.second .nav-tabs .nav-item {
-      margin-bottom: 0px;
-      width: 50%;
+    margin-bottom: 0px;
+    width: 50%;
   }
 
   .school-coordinator-to-do .grayBox.sc.second .nav-tabs .nav-item:last-child {
-      margin-bottom: 0px;
-      width: 50%;
-      margin-left:25%
+    margin-bottom: 0px;
+    width: 50%;
+    margin-left:25%
   }
 
 
@@ -7877,31 +7924,31 @@ transform: scale(0.8);
     border-bottom: none;
     margin-bottom: 1em;
     margin-top: 1em !important;
-}
+  }
 
   .school-coordinator-to-do .grayBox.sc.second .nav-tabs .nav-item {
-      margin-bottom: 0px;
-      width: 100%;
+    margin-bottom: 0px;
+    width: 100%;
   }
   .school-coordinator-to-do .box-outer{
     padding: 0em 0em;
   }
 
-    .school-coordinator-to-do .lightGreen.p-5 {
+  .school-coordinator-to-do .lightGreen.p-5 {
     padding: 1em !important;
-}
-
-  h5 {
-      font-size: 1rem;
   }
 
-.grayBox.second .nav-tabs .nav-link {
-  height:2.5em
-}
+  h5 {
+    font-size: 1rem;
+  }
 
-.row.p-1{
-  padding:0rem !important
-}
+  .grayBox.second .nav-tabs .nav-link {
+    height:2.5em
+  }
+
+  .row.p-1{
+    padding:0rem !important
+  }
 
 
   .block5 .d-flex.justify-content-between.flex-wrap{
