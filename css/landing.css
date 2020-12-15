@@ -395,7 +395,7 @@ body {
 
 .navbar{
   padding-bottom:0rem;
-  z-index: 9999999;
+  z-index: 99;
 }
 
 .contactUsOverlay{

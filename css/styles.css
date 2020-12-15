@@ -2159,11 +2159,13 @@ span.heading {
     line-height: 30px;
     font-size: 16px;
     line-height: 1.5;
-    margin-top:2em
+    margin-top:1em
 }
 .whiteBlocks .plum {
-    width: 60%;
+    width: 70%;
+    line-height: 1.2
 }
+
 .blueCircle3 {
   position: relative;
   border-radius: 50%;
