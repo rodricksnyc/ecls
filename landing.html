@@ -140,8 +140,8 @@
 
 									</div>
 
-									<div class="d-flex justify-content-center">
-										<button class="btn blueButton" tabindex="0" aria-hidden="false" role="button" class="close" data-dismiss="modal" aria-label="Close">DISMISS</button>
+									<div class="d-flex justify-content-center mb-3">
+										<button class="btn grayOutline" tabindex="0" aria-hidden="false" role="button" class="close" data-dismiss="modal" aria-label="Close">DISMISS</button>
 									</div>
 
 								</div>
@@ -387,7 +387,7 @@
 																		<div id="eye" tabindex="0" aria-hidden="false"><i class="fas fa-eye darkBlue"></i></div>
 																	</div>
 																	<div class="d-flex justify-content-center mt-4 mb-3">
-																		<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false" role="button" data-toggle="modal" data-target="#newUserModal" tabindex="0" aria-describedby="New User" aria-label="New User" onclick="(function(e){e.preventDefault();})(event)">Submit</button>
+																		<button type="submit" class="btn btn-info button-outlined" id="new-user" tabindex="0" aria-hidden="false" role="button" data-toggle="modal" data-target="#newUserModal" tabindex="0" aria-describedby="New User" aria-label="New User" onclick="(function(e){e.preventDefault();})(event)" disabled="disabled">Submit</button>
 																	</div>
 																</form>
 															</div>
@@ -415,7 +415,7 @@
 																</div>
 																<a href=""><p class="formFont">Forgot password?</p></a>
 																<div class="d-flex justify-content-center mt-4 mb-3">
-																	<button class="btn btn-info button-outlined" id="returning" tabindex="0" aria-hidden="false" data-toggle="modal" data-target="#returningUserModal" aria-label="Returning User" onclick="(function(e){e.preventDefault();})(event)">Submit</button>
+																	<button class="btn btn-info button-outlined" id="returning" tabindex="0" aria-hidden="false" data-toggle="modal" data-target="#returningUserModal" aria-label="Returning User" onclick="(function(e){e.preventDefault();})(event)" disabled="disabled">Submit</button>
 																</div>
 															</form>
 														</div>
@@ -469,7 +469,7 @@
 												<div class="form-group">
 													<label id="lbl_paswd" class="control-label" for="password">Password</label>
 
-													<input type="password" name="password" id="password_reg" class="form-control" required autocomplete="off">
+													<input type="password" name="password" id="password" class="form-control" required autocomplete="off">
 													<span class="form-control-feedback" id="password_reg1">
 													</span>
 
@@ -483,9 +483,11 @@
 												</div>
 
 											</div>
-											<div class="modal-footer">
 
-												<button type="submit" class="btn continue">CONTINUE</button>
+
+											<div class="modal-footer">
+												<button type="submit" class="btn createAccount">Submit</button>
+
 
 
 											</div>
@@ -502,7 +504,7 @@
 
 									<div class="modal-content">
 										<div class="modal-header">
-											<h4 class="modal-title">Error <i class="fas fa-exclamation-circle redInfo"></i> </h4>
+											<h4 class="modal-title"><i class="fas fa-exclamation-circle redInfo"></i> Error</h4>
 											<button role="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
@@ -512,7 +514,7 @@
 										</div>
 										<div class="modal-footer">
 											<div class="d-flex justify-content-center mt-1">
-												<button class="btn greenOutline" tabindex="0" aria-hidden="false" role="button" class="close" data-dismiss="modal" aria-label="Close">CONTINUE</button>
+												<button class="btn grayOutline" tabindex="0" aria-hidden="false" role="button" class="close" data-dismiss="modal" aria-label="Close">OK</button>
 											</div>
 
 										</div>

@@ -3694,6 +3694,7 @@ $(document).ready(function () {
 	});
 
 	$('#accessCode2').keydown(function (event) {
+		$('#returning').removeAttr('disabled', 'disabled');
 		$('#returning').css({
 			'background': '#00843D',
 			'color': 'white'
@@ -3702,6 +3703,7 @@ $(document).ready(function () {
 	});
 
 	$('#accessCode1').keydown(function (event) {
+		$('#new-user').removeAttr('disabled', 'disabled');
 		$('#new-user').css({
 			'background': '#00843D',
 			'color': 'white'

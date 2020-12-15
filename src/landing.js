@@ -35,7 +35,7 @@
 // };
 
 
-var value = $("#password_reg").val();
+var value = $("#password").val();
 
 $.validator.addMethod("checklower", function(value) {
   return /[a-z]/.test(value);
@@ -46,9 +46,9 @@ $.validator.addMethod("checkupper", function(value) {
 $.validator.addMethod("checkdigit", function(value) {
   return /[0-9]/.test(value);
 });
-$.validator.addMethod("pwcheck", function(value) {
-  return /^[A-Za-z0-9\d=!\-@._*]*$/.test(value) && /[a-z]/.test(value) && /\d/.test(value) && /[A-Z]/.test(value);
-});
+// $.validator.addMethod("pwcheck", function(value) {
+//   return /^[A-Za-z0-9\d=!\-@._*]*$/.test(value) && /[a-z]/.test(value) && /\d/.test(value) && /[A-Z]/.test(value);
+// });
 
 $('#signup-form').validate({
   rules: {
@@ -62,12 +62,12 @@ $('#signup-form').validate({
       checkdigit: true
     },
     confirmPassword: {
-      equalTo: "#passwd_reg",
+      equalTo: "#password",
     },
   },
   messages: {
     password: {
-      pwcheck: "Password is not strong enough",
+      // pwcheck: "Password is not strong enough",
       checklower: "Need at least 1 lowercase letter",
       checkupper: "Need at least 1 uppercase letter",
       checkdigit: "Need at least 1 digit"
@@ -97,3 +97,42 @@ $('#signup-form').validate({
   }
 
 });
+
+
+$('#password, #confirmPassword').on('keyup', function () {
+  if ($('#password').val() == $('#confirmPassword').val() && !$('#confirmPassword').val() == '') {
+
+     $('.createAccount').addClass('greenButton')
+  }
+
+
+  else {
+     $('.createAccount').removeClass('greenButton')
+  }
+
+});
+
+// $('#newUserModal .form-control').keydown(function (event) {
+//   if (!$('#newUserModal .form-group').val() == '')  {
+//
+//   console.log("yes")
+//   }
+//
+//   if ($('#newUserModal .form-control').val() == '' &&  $('#password').val() == $('#confirmPassword').val())  {
+//   console.log("no")
+//     $('.continue').addClass('greenButton')
+//
+//
+//   }
+//
+// })
+
+//
+// $('.continue').click(function() {
+//   if ($('.validate_cus').length == 0){
+//     console.log("yes")
+//   }
+//   else {
+//     console.log("yes")
+//   }
+// })

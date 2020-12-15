@@ -4442,6 +4442,7 @@ $(".scrollIt").on("click", function(event) {
 
 
 	$('#accessCode2').keydown(function (event) {
+		$('#returning').removeAttr('disabled','disabled')
 		$('#returning').css({
 			'background': '#00843D',
 			'color' :'white'
@@ -4451,6 +4452,7 @@ $(".scrollIt").on("click", function(event) {
 	});
 
 	$('#accessCode1').keydown(function (event) {
+		$('#new-user').removeAttr('disabled','disabled')
 		$('#new-user').css({
 			'background': '#00843D',
 			'color' :'white'
