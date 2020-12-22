@@ -2185,7 +2185,7 @@ span.heading {
   line-height: 1
 }
 
-.childrenBlocks, .consentBlocks, .parentInfoBlocks {
+.childrenBlocks, .consentBlocks, .parentInfoBlocks, .teacherListBlocks, .teacherSurveyBlocks  {
     margin-bottom: 1em;
     background: white;
     padding: 1em 0em;
@@ -2213,6 +2213,20 @@ span.heading {
   line-height:1.7 !important
 }
 
+.teacherSurveyBlocks p.surveyStatus {
+    line-height: 1.7 !important;
+}
+
+.school-coordinator-to-do
+.tlModals .btn-primary:not(:disabled):not(.disabled) {
+    color: #00539f !important;
+}
+
+.school-coordinator-to-do
+.tlModals .btn-primary:not(:disabled):not(.disabled).active {
+    color: white !important;
+}
+
 
 @media (min-width: 992px) {
  .consentBlocks .wider {
@@ -2220,12 +2234,15 @@ span.heading {
     flex: 0 0 10.333333%;
     max-width: 10.333333%;
 }
+.marginLeft2 {
+  margin-left:2em
+}
 
 .marginLeft2 {
   margin-left:2em
 }
 .mLnegative1 {
-  margin-left:-1em
+  margin-left:-1em !important
 }
 
 .eightyPercent {
@@ -2235,6 +2252,12 @@ margin-left: 20% !important;
 
 .ml1 {
   margin-left:1em !important
+}
+
+.moveLeft{
+  text-align: center;
+  margin-left: -7em;
+margin-right: 5.5em;
 }
 
 .seventyPercent {
@@ -2249,28 +2272,25 @@ margin-left: 20% !important;
 .mlHalf{
   margin-left:.5em
 }
-.parentInfoBlocks p{
+.parentInfoBlocks p, .teacherSurveyBlocks p{
   line-height: 1 !important
+}
+
+.teacherSurveyBlocks p.surveyStatus {
+    line-height: 1.7 !important;
 }
 
 .parentInfoBlocks p.surveyStatus{
   line-height:1.7 !important
 }
 
+.marginNegPos2{
+margin-left: -2em;
+margin-right: 2em;
 }
 
 
-.school-coordinator-to-do
-.tlModals .btn-primary:not(:disabled):not(.disabled) {
-    color: #00539f !important;
-}
 
-.school-coordinator-to-do
-.tlModals .btn-primary:not(:disabled):not(.disabled).active {
-    color: white !important;
-}
-
-@media (min-width:992px){
 /* .childrenAttr .col-lg-2, .childrenBlocks .col-lg-2, .parentInfo .col-lg-2, .parentInfoBlocks  .col-lg-2 {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 20.666667%;
@@ -2286,20 +2306,17 @@ margin-left: 20% !important;
   flex-wrap: nowrap;
 }
 
-.parentInfoBlocks, .parentInfo {
+.parentInfoBlocks, .parentInfo   {
   min-width:130%
 }
 
-.childrenAttr, .childrenBlocks  {
+.childrenAttr, .childrenBlocks, .teacherSurvey, .teacherSurveyBlocks  {
   min-width:150%
 }
 
 }
 
 
-.school-coordinator-to-do{
-
-}
 
 
 .whiteBlocks .plum {
