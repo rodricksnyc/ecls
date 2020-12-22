@@ -2431,11 +2431,11 @@ $(document).ready(function () {
 
 
 	var Opt01 = "";
-	$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete, .dStatus, .sStatus, .participationStatus, .consentStatus').each(function () {
+	$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete, .dStatus, .sStatus, .participationStatus, .consentStatus, .surveyStatus').each(function () {
 		Opt01 = $(this).html();
 
 		if ($(this).html() > 50 && $(this).html() <= 75 || $(this).html() == 'Special Handling– In Progress') {
-			$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fbb03b');
+			$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css('background', '#fbb03b');
 			$(this).closest('.newBlocks').find('.progressBarFull').css({
 				'background': '#fbb03b',
 				'width': '75%'
@@ -2447,7 +2447,7 @@ $(document).ready(function () {
 		}
 
 		if ($(this).html() > 75 && $(this).html() <= 100 || $(this).html() == 'Approval Received' || $(this).html() == 'Complete' || $(this).html() == 'Consented') {
-			$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#71d82e');
+			$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css('background', '#71d82e');
 			$(this).closest('.newBlocks').find('.progressBarFull').css({
 				'background': '#71d82e',
 				'width': '100%'
@@ -2470,7 +2470,7 @@ $(document).ready(function () {
 		}
 
 		if ($(this).html() > 25 && $(this).html() <= 50) {
-			$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#fc7b75');
+			$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css('background', '#fc7b75');
 			$(this).closest('.newBlocks').find('.progressBarFull').css({
 				'background': '#fc7b75',
 				'width': '50%'
@@ -2484,7 +2484,7 @@ $(document).ready(function () {
 		}
 
 		if ($(this).html() >= 0 && $(this).html() <= 25 || $(this).html() == 'Opted Out') {
-			$(this).closest('.col-lg-2').find('.percentageCircle').css({
+			$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css({
 				'background': '#f7ebe7',
 				'border': '2px solid #fc7b75'
 			});

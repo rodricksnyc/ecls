@@ -2209,6 +2209,10 @@ span.heading {
   max-width:400px;
 
 }
+.parentInfoBlocks p.surveyStatus{
+  line-height:1.7 !important
+}
+
 
 @media (min-width: 992px) {
  .consentBlocks .wider {
@@ -2229,6 +2233,15 @@ width: 80%;
 margin-left: 20% !important;
 }
 
+.ml1 {
+  margin-left:1em !important
+}
+
+.seventyPercent {
+width: 80%;
+margin-left: 20% !important;
+}
+
 .biggerWidth{
   width:115%;
 }
@@ -2238,6 +2251,10 @@ margin-left: 20% !important;
 }
 .parentInfoBlocks p{
   line-height: 1 !important
+}
+
+.parentInfoBlocks p.surveyStatus{
+  line-height:1.7 !important
 }
 
 }
@@ -2271,6 +2288,10 @@ margin-left: 20% !important;
 
 .parentInfoBlocks, .parentInfo {
   min-width:130%
+}
+
+.childrenAttr, .childrenBlocks  {
+  min-width:150%
 }
 
 }
@@ -3308,7 +3329,7 @@ width:20%
   font-weight:600;
 }
 
-.teacherComplete, .childComplete {
+.teacherComplete, .childComplete, .surveyStatus {
   position: absolute;
   display: flex;
   justify-content: center;
