@@ -5189,7 +5189,10 @@ if ( !$('.casePage #tabs-2  .customRadio input').is(':checked')) {
 			$('#tabs-5 .invalid-feedback').hide()
 	})
 
-
+// $('.tab2Active').click(function() {
+//
+//
+// })
 
 
 

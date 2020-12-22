@@ -4282,6 +4282,12 @@ $(document).ready(function () {
 		$('#tabs-5 .invalid-feedback').hide();
 	});
 
+	// $('.tab2Active').click(function() {
+	//
+	//
+	// })
+
+
 	$(window).scroll(function () {
 		var sticky = $('.position-rel'),
 		    scroll = $(window).scrollTop();

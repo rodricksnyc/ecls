@@ -4044,15 +4044,15 @@ footer a.white:hover {
   text-decoration: none;
   cursor:grab
 }
-#privacyModal .modal-dialog {
+.mainModal .modal-dialog {
   max-width: 900px !important;
 
 }
 
-#privacyModal {
+.mainModal {
   top:10%;
 }
-#privacyModal .modal-footer {
+.mainModal .modal-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4544,7 +4544,7 @@ footer a.white:hover {
   color: #00843D;
 }
 
-#privacyModal .modal-body {
+.mainModal .modal-body {
   padding: 2em !important;
 }
 
@@ -6437,7 +6437,7 @@ html, body{
 
 }
 
-#privacyModal .modal-header {
+.mainModal .modal-header {
   background: #e6eaec;
   padding-top:1em;
 
@@ -6591,7 +6591,7 @@ h6.black {
 }
 
 #feedbackModal  .form-check label {
-  padding: 0px 0px 0px 0px;
+  padding: 2px 0px 0px 0px;
   font-size: 17px !important;
   font-weight: 400 !important;
 
@@ -9770,7 +9770,7 @@ body{
     padding-bottom: 4em;
   }
 
-  #privacyModal {
+  .mainModal {
     top: 0%;
   }
   .mobile {
