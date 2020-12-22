@@ -326,13 +326,13 @@
 
 
 												<div class="d-flex justify-content-center mt-3">
-													<button type="submit" class="btn blueButton uploadChildList" tabindex="0" aria-hidden="false" role="button" aria-describedby="Submit Consent Signature">UPLOAD CHILD LIST <i class="fas fa-upload"></i></button>
+													<button type="submit" class="btn blueButton uploadChildList" tabindex="0" aria-hidden="false" role="button" aria-describedby="Upload Child List" onclick="jQuery('.given').removeClass('hidden')">UPLOAD CHILD LIST <i class="fas fa-upload"></i></button>
 												</div>
 
 												<p class="charcoal">If you cannot submit your child list with this information in an Excel file, please email the ECLS team at <a href="mailto:ECLS@westat.com" class="darkBlue"><i class="fas fa-envelope"></i> ECLS@westat.com</a> or call <span class="darkBlue">1-855-898-2018</span>.</p>
 
 
-												<div class="given">
+												<div class="given hidden">
 													<div class="d-flex justify-content-center align-items-center mb-3">
 
 														<img src="images/check-complete.svg" class="img-responsive">
@@ -471,290 +471,1176 @@
 									</div>
 
 
-										<div class="row">
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
+									<div class="row">
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
 													<p class="plum">School Coordinator Letter</p>
 													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal">This letter welcomes you to the ECLS.</p>
-
 												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">This letter welcomes you to the ECLS.</p>
 
 											</div>
-
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">School Coordinator Responsibilities</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal">This document details your responsibilities as school coordinator.</p>
-
-												</div>
-
-											</div>
-
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">ECLS Child List Upload Instructions</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal">Instructions for uploading the completed child list for selection by the ECLS staff for participation.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">ECLS Child List Template</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">This excel file contains the column headers required for completing your school’s child list for sampling.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">Guide for Encouraging Participation</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">This document contains tips for the school coordinator to encourage study participation by school staff and parents.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">ECLS Presentation for School Staff</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">Use these PowerPoint slides to present an overview of the ECLS to school staff.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">ECLS Presentation for Parents</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">Use these PowerPoint slides to present an overview of the ECLS to parents of participating children.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">School Administrator Survey Worksheet</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">This worksheet presents an overview of the School Administrator Survey so that the school administrator can see what kinds of questions will be asked, in case he or she would like help from another knowledgeable school staff member to complete the survey.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">Parent Welcome Letter</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">This letter welcomes parents of selected children to the ECLS. You may print this letter on school letterhead.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">ECLS Parent Fact Sheet</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">This document provides answers to common questions from parents of selected children such as what their child can expect during the school visit and what is involved for parents.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">Parent Consent Form</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">The parent consent form for parents who request to complete a paper consent form.</p>
-
-												</div>
-
-											</div>
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">Parent Consent Reminder Email Template</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">Use this email template to follow up with parents on outstanding consent forms. </p>
-												</div>
-											</div>
-
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">Parent Consent Reminder Letter</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">Use this letter to follow up with parents on outstanding consent forms.</p>
-												</div>
-											</div>
-
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">Parent Survey Reminder Email Templates</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">Use these email templates to follow up with parents on outstanding surveys.</p>
-												</div>
-											</div>
-
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">Teacher Welcome Letter</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">This letter welcomes teachers to the ECLS. You may print this letter on school letterhead.</p>
-												</div>
-											</div>
-
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">ECLS Teacher Fact Sheet</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">ECLS-related information tailored to teachers</p>
-												</div>
-											</div>
-
-											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-												<div class="whiteBlocks">
-													<div class="d-flex justify-content-between align-items-center">
-													<p class="plum">Teacher Survey Reminder Email Templates</p>
-													<div class="blueCircle3"><i class="fas fa-download"></i></div>
-													</div>
-													<div class="grayAbsoluteLine"></div>
-
-													<p class="charcoal small mt-4">Use these email templates to follow up with teachers on outstanding surveys.</p>
-												</div>
-											</div>
-
 
 										</div>
+
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">School Coordinator Responsibilities</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">This document details your responsibilities as school coordinator.</p>
+
+											</div>
+
+										</div>
+
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">ECLS Child List Upload Instructions</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">Instructions for uploading the completed child list for selection by the ECLS staff for participation.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">ECLS Child List Template</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">This excel file contains the column headers required for completing your school’s child list for sampling.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">Guide for Encouraging Participation</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">This document contains tips for the school coordinator to encourage study participation by school staff and parents.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">ECLS Presentation for School Staff</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">Use these PowerPoint slides to present an overview of the ECLS to school staff.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">ECLS Presentation for Parents</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">Use these PowerPoint slides to present an overview of the ECLS to parents of participating children.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">School Administrator Survey Worksheet</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">This worksheet presents an overview of the School Administrator Survey so that the school administrator can see what kinds of questions will be asked, in case he or she would like help from another knowledgeable school staff member to complete the survey.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">Parent Welcome Letter</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">This letter welcomes parents of selected children to the ECLS. You may print this letter on school letterhead.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">ECLS Parent Fact Sheet</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">This document provides answers to common questions from parents of selected children such as what their child can expect during the school visit and what is involved for parents.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">Parent Consent Form</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">The parent consent form for parents who request to complete a paper consent form.</p>
+
+											</div>
+
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">Parent Consent Reminder Email Template</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">Use this email template to follow up with parents on outstanding consent forms. </p>
+											</div>
+										</div>
+
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">Parent Consent Reminder Letter</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">Use this letter to follow up with parents on outstanding consent forms.</p>
+											</div>
+										</div>
+
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">Parent Survey Reminder Email Templates</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">Use these email templates to follow up with parents on outstanding surveys.</p>
+											</div>
+										</div>
+
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">Teacher Welcome Letter</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">This letter welcomes teachers to the ECLS. You may print this letter on school letterhead.</p>
+											</div>
+										</div>
+
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">ECLS Teacher Fact Sheet</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">ECLS-related information tailored to teachers</p>
+											</div>
+										</div>
+
+										<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+											<div class="whiteBlocks">
+												<div class="d-flex justify-content-between align-items-center">
+													<p class="plum">Teacher Survey Reminder Email Templates</p>
+													<div class="blueCircle3"><i class="fas fa-download"></i></div>
+												</div>
+												<div class="grayAbsoluteLine"></div>
+
+												<p class="charcoal">Use these email templates to follow up with teachers on outstanding surveys.</p>
+											</div>
+										</div>
+
+
+									</div>
 
 
 								</div>
 								<div class="tab-pane" id="tab4" role="tabpanel">
 
-									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+									<div class="lightGreen tabletBottomLess container-fluid p-2 mb-5">
+										<p class="charcoal text-center mb-0">This screen has three sections: School Information, School Administrator Survey, and Assessment Information.</p>
+									</div>
+									<div class="outside">
+										<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0"  aria-label="Shows Less"></i>
+
+
+										<h2 class="landing-sec-H padding-0">School Information</h2>
+
+
+										<div class="row">
+											<div class="col-xs-12 col-lg-12 col-md-12">
+
+												<div class="toggleDiv">
+													<p class="charcoal pt-3">Please confirm the information in the fields below. If any of this information has changed, please alert the ECLS representative when he or she contacts you.</p>
+													<form class="informationForm" novalidate role="form" method="POST" id="newInfo">
+
+														<fieldset>
+															<legend>Update Your Information</legend>
+															<div class="row position-relative">
+																<div class="col-lg-6">
+																	<div class="lightGrayBox">
+																		<div class="form-group">
+																			<label for="school-name" class="disabled">School Name</label>
+																			<input type="text" name="info" class="form-control disabled" id="school-name" placeholder="">
+
+																		</div>
+
+																		<div class="form-group">
+																			<label for="school-id" class="disabled">School ID</label>
+																			<input type="text" name="info" class="form-control disabled" id="school-id" placeholder="">
+																		</div>
+
+
+																		<div class="form-group">
+																			<label for="address1" class="disabled">Address (street)</label>
+																			<input type="text" name="info" class="form-control disabled" id="address1" placeholder="">
+																		</div>
+
+
+
+																		<div class="row noWrapRow">
+																			<div class="col-md-5 col-xs-12">
+																				<div class="form-group">
+																					<label for="city" class="disabled">City</label>
+																					<input type="text" name="info" class="form-control disabled" id="city" placeholder="">
+																				</div>
+																			</div>
+																			<div class="col-md-3 col-xs-12">
+																				<div class="form-group">
+																					<label for="state" class="disabled">State</label>
+																					<input type="text" name="info" class="form-control disabled" id="state" placeholder="">
+																				</div>
+																			</div>
+																			<div class="col-md-4 col-xs-12">
+																				<div class="form-group">
+																					<label for="zip" class="disabled">ZIP</label>
+																					<input type="text" name="info" class="form-control disabled" id="zip" placeholder="">
+																				</div>
+																			</div>
+
+																		</div>
+
+
+
+																		<div class="form-group">
+
+																			<label for="phoneNumber" class="disabled">School Phone</label>
+																			<input id="phoneNumber" type="text" name="phoneNumber" class="form-control disabled"  maxlength="10">
+
+
+																		</div>
+
+																		<div class="form-group">
+																			<label for="website" class="disabled">School Website</label>
+																			<input type="text" name="info" class="form-control disabled" id="website" placeholder="">
+																		</div>
+
+																	</div>
+
+
+																	<div class="lightGrayBox">
+
+																		<div class="form-group">
+																			<label for="SA-ID" class="disabled">School Administrator ID</label>
+																			<input type="text" name="info" class="form-control disabled" id="SA-ID" placeholder="">
+																		</div>
+																		<div class="form-group">
+																			<label for="SA-name" class="disabled">School Administrator Name</label>
+																			<input type="text" name="info" class="form-control disabled" id="SA-name" placeholder="">
+																		</div>
+
+
+																		<div class="form-group">
+																			<label for="SA-title" class="disabled">School Administrator Title</label>
+																			<input type="text" name="info" class="form-control disabled" id="SA-title" placeholder="">
+																		</div>
+
+
+																		<div class="row noWrapRow">
+																			<div class="col-md-8 col-xs-12">
+																				<div class="form-group">
+																					<label for="SA-phone" class="disabled">School Administrator Phone</label>
+																					<input type="text" name="phoneNumber" class="form-control disabled" id="SA-phone" placeholder="">
+																				</div>
+																			</div>
+																			<div class="col-md-4 col-xs-12">
+																				<div class="form-group">
+																					<label for="ext2" class="disabled">Ext.</label>
+																					<input type="text" name="info" class="form-control disabled" id="ext2" placeholder="">
+																				</div>
+																			</div>
+
+
+																		</div>
+
+																		<div class="form-group">
+																			<label for="SA-email" class="disabled">School Administrator Email</label>
+																			<input type="email" name="email" class="form-control disabled" id="SA-email" placeholder="">
+																		</div>
+
+																	</div>
+
+
+																</div>
+
+																<div class="col-lg-6">
+
+																	<div class="lightGrayBox">
+
+																		<div class="form-group">
+																			<label for="district-id" class="disabled">District ID</label>
+																			<input type="text" name="info" class="form-control disabled" id="district-id" placeholder="">
+																		</div>
+																		<div class="form-group">
+																			<label for="district-name" class="disabled">District Name</label>
+																			<input type="text" name="info" class="form-control disabled" id="district-name" placeholder="">
+																		</div>
+
+
+																		<div class="form-group">
+																			<label for="district-approver-name" class="disabled">District Approver Name</label>
+																			<input type="text" name="phoneNumber" class="form-control disabled" id="district-approver-name" placeholder="">
+																		</div>
+
+																		<div class="form-group">
+																			<label for="district-approver-title" class="disabled">District Approver Title</label>
+																			<input type="text" name="info" class="form-control disabled" id="district-approver-title" placeholder="">
+																		</div>
+
+																	</div>
+
+
+
+
+																	<div class="lightGrayBox">
+
+																		<div class="form-group">
+																			<label for="SC-ID" class="disabled">School Coordinator ID</label>
+																			<input type="text" name="info" class="form-control disabled" id="SC-ID" placeholder="">
+																		</div>
+																		<div class="form-group">
+																			<label for="SC-name" class="disabled">School Coordinator Name</label>
+																			<input type="text" name="info" class="form-control disabled" id="SC-name" placeholder="">
+																		</div>
+
+
+																		<div class="form-group">
+																			<label for="SC-title" class="disabled">School Coordinator Title</label>
+																			<input type="text" name="info" class="form-control disabled" id="SC-title" placeholder="">
+																		</div>
+
+
+
+																		<div class="row noWrapRow">
+																			<div class="col-md-8 col-xs-12">
+																				<div class="form-group">
+																					<label for="SC-phone" class="disabled">School Coordinator Phone</label>
+																					<input type="text" name="phoneNumber" class="form-control disabled" id="SC-phone" placeholder="">
+																				</div>
+																			</div>
+																			<div class="col-md-4 col-xs-12">
+																				<div class="form-group">
+																					<label for="ext3" class="disabled">Ext.</label>
+																					<input type="text" name="info" class="form-control disabled" id="ext3" placeholder="">
+																				</div>
+																			</div>
+
+
+																		</div>
+
+																		<div class="form-group">
+																			<label for="SC-email" class="disabled">School Coordinator Email</label>
+																			<input type="email" name="email" class="form-control disabled" id="SC-email" placeholder="">
+																		</div>
+
+
+																	</div>
+
+																</div>
+
+															</div>
+
+														</fieldset>
+
+
+													</form>
+												</div>
+
+												<div class="blueLine2">
+													<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+												</div>
+
+											</div>
+
+										</div>
+									</div>
+
+
+
+									<div class="outside">
+										<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
+
+										<h2 class="landing-sec-H padding-0 margin-0">School Administrator Survey Status</h2>
+										<p class="charcoal pt-3">Here you can monitor completion of the School Administrator Survey.</p>
+
+
+										<div class="row">
+											<div class="col-xs-12 col-lg-12 col-md-12">
+
+												<div class="toggleDiv">
+
+													<div class="sAdminAttr d-flex align-items-center">
+														<div class="col-lg-3 margin3">
+															<h6 class="gray">SECTION</h6>
+														</div>
+
+														<div class="col-lg-1">
+															<h6 class="gray">STATUS</h6>
+														</div>
+														<div class="col-lg-2 margin4">
+															<h6 class="gray">% COMPLETE</h6>
+														</div>
+														<div class="col-lg-2">
+															<h6 class="gray">DATE LAST ACCESSED</h6>
+														</div>
+														<div class="col-lg-3">
+															<h6 class="gray">COMPLETED BY</h6>
+														</div>
+
+													</div>
+
+													<div class="sAdminBlocks schoolPage">
+
+
+													</div>
+
+
+												</div>
+
+
+												<div class="blueLine2">
+													<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+
+									<div class="outside">
+										<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less"></i>
+
+										<h2 class="landing-sec-H padding-0 margin-0">School Assessment Information</h2>
+										<div class="assessment">
+
+											<div class="row">
+												<div class="col-xs-12 col-lg-12 col-md-12">
+
+													<div class="toggleDiv">
+
+														<p class="charcoal pt-3"><span class="darkGreen">1. </span>Consent type: <span class="consentType">Explicit</span></p>
+														<p class="charcoal"><span class="darkGreen">2. </span>Consent Collection Mode: <span class="consentCollectionMode">Electronic</span></p>
+														<p class="charcoal"><span class="darkGreen">3. </span>Consent Distribution Method: <span class="consentDistributionMethod">ECLS Staff</span></p>
+														<p class="charcoal"><span class="darkGreen">4. </span>First day of Assessments: <span class="firstDay">MM/DD/2020</span></p>
+														<p class="charcoal"><span class="darkGreen">5. </span>Last day of Assessments: <span class="lastDay">MM/DD/2020</span></p>
+														<p class="charcoal"><span class="darkGreen">6. </span>Assessment Start Time: <span class="startTime">XX:XX xm</span></p>
+
+
+													</div>
+													<div class="blueLine2">
+														<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+
+
+									</div>
 
 
 
 								</div>
 								<div class="tab-pane" id="tab5" role="tabpanel">
 
-									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+									<div class="guide-overlay container">
+										<div class="lightGreen tabletBottomLess container-fluid p-2 mb-5">
+											<p class="charcoal text-center mb-0 pl-5 pr-5">Review the list of children selected for the study and their assessment-related information below. Let the ECLS representative know if you need to make any corrections.</p>
+										</div>
+
+											<div class="barWrapper">
+
+										<div class="topAttr childrenAttr d-flex align-items-center">
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray">CHILD ID</h6>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray">CHILD NAME</h6>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray">PARTICIPATION<br>STATUS</h6>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray">GRADE</h6>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray">IEP ACCOMMODATIONS TO<br>HELP THE CHILD COMPLETE<br>THE ASSESSMENT</h6>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray">IEP EXCLUSIONS<br>(ACCOMMODATIONS THE<br>STUDY IS UNABLE TO PROVIDE)</h6>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray">OTHER<br>ASSIGNMENT<br>NEEDS</h6>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray">HOME<br>LANGUAGE</h6>
+											</div>
+
+										</div>
 
 
+										<div class="childrenBlocks d-flex align-items-center row">
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD ID</div>
+												<p class="black childid">9999991C</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD NAME</div>
+												<p class="black childName">Keone Young</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARTICIPATION STATUS</div>
+												<p class="black participationStatus">Complete</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">GRADE</div>
+												<p class="black grade">2</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP ACCOMMODATIONS TO HELP THE CHILD COMPLETE THE ASSESSMENT</div>
 
+												<p class="black">Lorem ipsum dolor</p>
+
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP EXCLUSIONS (ACCOMMODATIONS THE STUDY IS UNABLE TO PROVIDE)</div>
+												<p class="black teacherDate">Lorem ipsum dolor</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">OTHER ASSIGNMENT NEEDS</div>
+												<p class="black">Lorem ipsum dolor</p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">HOME LANGUAGE</div>
+												<p class="black">English</p>
+											</div>
+											<div class="progressBarEmpty"></div>
+											<div class="progressBarFull">
+											</div>
+										</div>
+
+										<div class="childrenBlocks d-flex align-items-center row">
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD ID</div>
+												<p class="black childid">9999991C</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD NAME</div>
+												<p class="black childName">Keone Young</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARTICIPATION STATUS</div>
+												<p class="black participationStatus">Complete</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">GRADE</div>
+												<p class="black grade">2</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP ACCOMMODATIONS TO HELP THE CHILD COMPLETE THE ASSESSMENT</div>
+
+												<p class="black">Lorem ipsum dolor</p>
+
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP EXCLUSIONS (ACCOMMODATIONS THE STUDY IS UNABLE TO PROVIDE)</div>
+												<p class="black teacherDate">Lorem ipsum dolor</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">OTHER ASSIGNMENT NEEDS</div>
+												<p class="black">Lorem ipsum dolor</p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">HOME LANGUAGE</div>
+												<p class="black">English</p>
+											</div>
+											<div class="progressBarEmpty"></div>
+											<div class="progressBarFull">
+											</div>
+										</div>
+
+										<div class="childrenBlocks d-flex align-items-center row">
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD ID</div>
+												<p class="black childid">9999991C</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD NAME</div>
+												<p class="black childName">Keone Young</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARTICIPATION STATUS</div>
+												<p class="black participationStatus">Complete</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">GRADE</div>
+												<p class="black grade">2</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP ACCOMMODATIONS TO HELP THE CHILD COMPLETE THE ASSESSMENT</div>
+
+												<p class="black">Lorem ipsum dolor</p>
+
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP EXCLUSIONS (ACCOMMODATIONS THE STUDY IS UNABLE TO PROVIDE)</div>
+												<p class="black teacherDate">Lorem ipsum dolor</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">OTHER ASSIGNMENT NEEDS</div>
+												<p class="black">Lorem ipsum dolor</p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">HOME LANGUAGE</div>
+												<p class="black">English</p>
+											</div>
+											<div class="progressBarEmpty"></div>
+											<div class="progressBarFull">
+											</div>
+										</div>
+
+										<div class="childrenBlocks d-flex align-items-center row">
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD ID</div>
+												<p class="black childid">9999991C</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD NAME</div>
+												<p class="black childName">Keone Young</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARTICIPATION STATUS</div>
+												<p class="black participationStatus">Complete</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">GRADE</div>
+												<p class="black grade">2</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP ACCOMMODATIONS TO HELP THE CHILD COMPLETE THE ASSESSMENT</div>
+
+												<p class="black">Lorem ipsum dolor</p>
+
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP EXCLUSIONS (ACCOMMODATIONS THE STUDY IS UNABLE TO PROVIDE)</div>
+												<p class="black teacherDate">Lorem ipsum dolor</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">OTHER ASSIGNMENT NEEDS</div>
+												<p class="black">Lorem ipsum dolor</p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">HOME LANGUAGE</div>
+												<p class="black">English</p>
+											</div>
+											<div class="progressBarEmpty"></div>
+											<div class="progressBarFull">
+											</div>
+										</div>
+
+										<div class="childrenBlocks d-flex align-items-center row">
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD ID</div>
+												<p class="black childid">9999991C</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD NAME</div>
+												<p class="black childName">Keone Young</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARTICIPATION STATUS</div>
+												<p class="black participationStatus">Complete</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">GRADE</div>
+												<p class="black grade">2</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP ACCOMMODATIONS TO HELP THE CHILD COMPLETE THE ASSESSMENT</div>
+
+												<p class="black">Lorem ipsum dolor</p>
+
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">IEP EXCLUSIONS (ACCOMMODATIONS THE STUDY IS UNABLE TO PROVIDE)</div>
+												<p class="black teacherDate">Lorem ipsum dolor</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">OTHER ASSIGNMENT NEEDS</div>
+												<p class="black">Lorem ipsum dolor</p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">HOME LANGUAGE</div>
+												<p class="black">English</p>
+											</div>
+											<div class="progressBarEmpty"></div>
+											<div class="progressBarFull">
+											</div>
+										</div>
+									</div>
+									</div>
 								</div>
 								<div class="tab-pane" id="tab6" role="tabpanel">
 
-									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+									<div class="outside pt-3">
+										<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
+
+										<h2 class="landing-sec-H padding-0 margin-0">Parent Consent</h2>
+										<p class="charcoal pt-3">Here you can monitor completion of the School Administrator Survey.</p>
+
+
+										<div class="row">
+											<div class="col-xs-12 col-lg-12 col-md-12">
+
+												<div class="toggleDiv">
+
+													<div class="lightGreen tabletBottomLess container-fluid p-2 mb-3 mt-0">
+														<p class="charcoal text-center mb-0 pl-5 pr-5">This page is designed to assist with the parent consent process.</p>
+													</div>
+													<p class="charcoal">Your school administrator indicated that your school requires {EXPLICIT/IMPLICIT} consent for children’s participation in the study. This means that a signed consent form, either electronically or on paper, must be collected from the parent or guardian of each selected child before he or she may participate in the study. [IF EXPLICIT, DISPLAY: This means that a signed consent form must be collected, either electronically or on paper, from the parent or guardian of each selected child before he or she may participate in the study.] [IF IMPLICIT, DISPLAY: This means that parents will be notified about their child’s selection for the study and they will be able to opt out if they would prefer that their child not participate.]</p>
+
+													<p class="charcoal">The Parent Portal on the MyECLS website has an electronic consent module to collect and track parent consent. Our records show that you will distribute and collect consent forms [ELECTRONICALLY / ON PAPER]. [IF ELECTRONIC CONSENT SELECTED, DISPLAY:] If any of the parents request or would prefer to complete a paper consent form, you can change the mode in the table below. Be sure to send the parent or guardian a paper consent form. You can download this form from the <a href="" class="darkBlue">Documents</a> page. If you have additional consent requirements or need other materials, let the ECLS representative know.</p>
+
+													<p class="charcoal">Use the table below to track each child’s consent status for either electronic or paper consent. If you are collecting paper consent forms from any parents, please update the consent status manually for the associated children. (Consent provided by parents electronically will automatically be updated on this table.) Please update and monitor consent statuses on a regular basis. The ECLS team can help follow up with parents if you or the parent provide the parent’s contact information.</p>
+
+													<div class="d-flex justify-content-between align-items-center mt-5">
+														<p class="charcoal m-0">CHANGE STATUS:</p>
+														<div class="btn-group parentConsentButtons m-0" data-toggle="buttons">
+															<label class="btn btn-primary">
+																<input type="radio" name="options" id="option1" autocomplete="off">PENDING
+															</label>
+															<label class="btn btn-primary">
+																<input type="radio" name="options" id="option2" autocomplete="off">REFUSED
+															</label>
+															<label class="btn btn-primary active">
+																<input type="radio" name="options" id="option3" autocomplete="off">OBTAINED
+															</label>
+														</div>
+														<button type="submit" class="btn blueButton updateParentConsent m-0" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update Parent Consent">UPDATE</button>
+
+														<button class="btn btn-info steelColor m-0" tabindex="0" aria-hidden="false" role="button" aria-label="Consent Forms"><i class="far fa-print"></i> CONSENT FORMS</button>
+													</div>
+
+
+													<div class="topAttr  d-flex align-items-center">
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+															<h6 class="gray">ALL</h6>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+															<h6 class="gray">CHILD ID</h6>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 margin4">
+															<h6 class="gray">CHILD NAME</h6>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+															<h6 class="gray text-center">CONTENT<br>STATUS</h6>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+															<h6 class="gray text-center">ELECTRONIC/PAPER</h6>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mlHalf">
+															<h6 class="gray">PARENT ID</h6>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
+															<h6 class="gray">PARENT NAME</h6>
+														</div>
+
+													</div>
+
+													<div class="consentBlocks d-flex align-items-center row">
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">ALL</div>
+															<div class="one ml-3 mb-4">
+																<input class="form-check-input" type="checkbox" name="validation" id="custom101">
+																<label class="form-check-label fontZero" tabindex="0" for="custom101">something</label>
+															</div>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+															<div class="mobile">CHILD ID</div>
+															<p class="black childid">9999991C</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 marginLeft2">
+															<div class="mobile">CHILD NAME</div>
+															<p class="black childName">Keone Young</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">CONSENT STATUS</div>
+															<p class="black consentStatus">Consented</p>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+															<div class="mobile">ELECTRONIC/PAPER</div>
+															<p class="black electronicOrPaper">Electronic</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 marginLeft2">
+															<div class="mobile">PARENT ID</div>
+
+															<p class="black parentid">9999991C</p>
+
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
+															<div class="mobile">PARENT NAME</div>
+															<p class="black parentName">Marc Young</p>
+														</div>
+
+														<div class="progressBarEmpty"></div>
+														<div class="progressBarFull">
+														</div>
+													</div>
+
+													<div class="consentBlocks d-flex align-items-center row">
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">ALL</div>
+															<div class="one ml-3 mb-4">
+																<input class="form-check-input" type="checkbox" name="validation" id="custom102">
+																<label class="form-check-label fontZero" tabindex="0" for="custom102">something</label>
+															</div>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+															<div class="mobile">CHILD ID</div>
+															<p class="black childid">9999991C</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 marginLeft2">
+															<div class="mobile">CHILD NAME</div>
+															<p class="black childName">Keone Young</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">CONSENT STATUS</div>
+															<p class="black consentStatus">Consented</p>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+															<div class="mobile">ELECTRONIC/PAPER</div>
+															<p class="black electronicOrPaper">Electronic</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 marginLeft2">
+															<div class="mobile">PARENT ID</div>
+
+															<p class="black parentid">9999991C</p>
+
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
+															<div class="mobile">PARENT NAME</div>
+															<p class="black parentName">Marc Young</p>
+														</div>
+
+														<div class="progressBarEmpty"></div>
+														<div class="progressBarFull">
+														</div>
+													</div>
+													<div class="consentBlocks d-flex align-items-center row">
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">ALL</div>
+															<div class="one ml-3 mb-4">
+																<input class="form-check-input" type="checkbox" name="validation" id="custom103">
+																<label class="form-check-label fontZero" tabindex="0" for="custom103">something</label>
+															</div>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+															<div class="mobile">CHILD ID</div>
+															<p class="black childid">9999991C</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 marginLeft2">
+															<div class="mobile">CHILD NAME</div>
+															<p class="black childName">Keone Young</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">CONSENT STATUS</div>
+															<p class="black consentStatus">Consented</p>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+															<div class="mobile">ELECTRONIC/PAPER</div>
+															<p class="black electronicOrPaper">Electronic</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 marginLeft2">
+															<div class="mobile">PARENT ID</div>
+
+															<p class="black parentid">9999991C</p>
+
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
+															<div class="mobile">PARENT NAME</div>
+															<p class="black parentName">Marc Young</p>
+														</div>
+
+														<div class="progressBarEmpty"></div>
+														<div class="progressBarFull">
+														</div>
+													</div>
+
+													<div class="consentBlocks d-flex align-items-center row">
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">ALL</div>
+															<div class="one ml-3 mb-4">
+																<input class="form-check-input" type="checkbox" name="validation" id="custom104">
+																<label class="form-check-label fontZero" tabindex="0" for="custom104">something</label>
+															</div>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+															<div class="mobile">CHILD ID</div>
+															<p class="black childid">9999991C</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 marginLeft2">
+															<div class="mobile">CHILD NAME</div>
+															<p class="black childName">Keone Young</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">CONSENT STATUS</div>
+															<p class="black consentStatus">Opted Out</p>
+														</div>
+														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+															<div class="mobile">ELECTRONIC/PAPER</div>
+															<p class="black electronicOrPaper">Electronic</p>
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 marginLeft2">
+															<div class="mobile">PARENT ID</div>
+
+															<p class="black parentid">9999991C</p>
+
+														</div>
+														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
+															<div class="mobile">PARENT NAME</div>
+															<p class="black parentName">Marc Young</p>
+														</div>
+
+														<div class="progressBarEmpty"></div>
+														<div class="progressBarFull">
+														</div>
+													</div>
+
+
+
+												</div>
+
+
+												<div class="blueLine2">
+													<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+
+									<div class="outside">
+										<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
+
+										<h2 class="landing-sec-H padding-0 margin-0">Parent Information and Survey Tracking</h2>
+										<p class="charcoal pt-3">In this section, please provide the ECLS with parent contact information if you would like for ECLS staff to follow up with parents directly about the return of consent forms or to remind parents to complete their surveys. If the parent has already made updates to his or her information, you will not be allowed to further revise the information here.</p>
+
+
+										<div class="row">
+											<div class="col-xs-12 col-lg-12 col-md-12">
+
+												<div class="toggleDiv">
+													<div class="barWrapper">
+													<div class="topAttr parentInfo d-flex align-items-center">
+																<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray">CHILD ID/NAME</h6>
+																</div>
+																<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray text-center">PARENT ID/<br>NAME</h6>
+																</div>
+																<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray text-center">PARENT ADDRESS</h6>
+																</div>
+																<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray text-center">PARENT PHONE</h6>
+																</div>
+																<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray">PARENT EMAIL</h6>
+																</div>
+																<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray">LANGUAGE</h6>
+																</div>
+																<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray text-center">SURVEY<br>STATUS</h6>
+																</div>
+																<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray text-center">DATE LAST<br>ACCESSED</h6>
+																</div>
+																<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																	<h6 class="gray">EDIT</h6>
+																</div>
+
+															</div>
+
+															<div class="parentInfoBlocks d-flex align-items-center row">
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">CHILD ID/NAME</div>
+												<p class="black childid">9999991C</p>
+												<p class="black childName">Michaela Murphy</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARENT ID/<br>NAME</div>
+												<p class="black parentId biggerWidth">9999991P</p>
+												<p class="black parentName biggerWidth">Bobby Blue</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARENT ADDRESS</div>
+												<p class="black parentAddress eightyPercent">145 Beach Blvd Hollywood, FL 12345</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARENT PHONE</div>
+												<p class="black parentPhone eightyPercent">908-313-6000</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">PARENT EMAIL</div>
+
+												<p class="black parentEmail biggerWidth">erodricks@email.com</p>
+
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">LANGUAGE</div>
+												<p class="black language biggerWidth">English</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">SURVEY STATUS</div>
+												<div class="percentageCircle"><p class="black surveyStatus">100</p></div>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">DATE LAST ACCESSED</div>
+												<p class="black date biggerWidth">07/15/2020</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">EDIT</div>
+												<p class="black edit eightyPercent"><i class="fas fa-pencil-alt darkBlue"></i></p>
+											</div>
+											<div class="progressBarEmpty"></div>
+											<div class="progressBarFull" style="background: rgb(113, 216, 46); width: 100%;">
+											</div>
+										</div>
+</div>
+
+
+
+													<div class="blueLine2">
+														<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+													</div>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div class="tab-pane" id="tab7" role="tabpanel">
+
+										<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
+
+									</div>
+
+
 
 								</div>
-								<div class="tab-pane" id="tab7" role="tabpanel">
-
-									<p class="charcoal">The ECLS needs to collect a list of all kindergarten, first-grade, and second-grade students from your school in order to select children to participate in the study.</p>
-
-								</div>
-
-
 
 							</div>
-
 						</div>
+
 					</div>
 
 				</div>
 
-			</div>
-
-		</section>
+			</section>
 
 
 
 
 
+
+		</div>
+
+		<!-- <section class="block50" id="info">
+		<div class="lightGreen tabletBottomLess d-flex flex-column align-items-center heros container-fluid">
+		<div class="greenBottom"></div>
+
+
+		<div class="guide-overlay container">
+
+
+
+		<p class="purple text-center greenUnderline">Privacy & Authorization</p>
+		<p class="dark">The National Center for Education Statistics (NCES) is authorized to conduct the Early Childhood Longitudinal Study (ECLS) by the Education Sciences Reform Act of 2002 (ESRA 2002, 20 U.S.C. §9543). The data are being collected for NCES by Westat, a U.S.-based research organization. All of the information you provide may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151).</p>
+		<p class="dark">Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff. According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. The time required to complete this information collection is estimated to average approximately <span class="strong">5 minutes per respondent</span> for completion of the feedback questions. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
+		<p class="dark">OMB No. 1850-0750, Approval Expires XX/XX/XXXX</p>
+		<p class="dark">v.X</p>
 
 	</div>
-
-	<!-- <section class="block50" id="info">
-	<div class="lightGreen tabletBottomLess d-flex flex-column align-items-center heros container-fluid">
-	<div class="greenBottom"></div>
-
-
-	<div class="guide-overlay container">
-
-
-
-	<p class="purple text-center greenUnderline">Privacy & Authorization</p>
-	<p class="dark">The National Center for Education Statistics (NCES) is authorized to conduct the Early Childhood Longitudinal Study (ECLS) by the Education Sciences Reform Act of 2002 (ESRA 2002, 20 U.S.C. §9543). The data are being collected for NCES by Westat, a U.S.-based research organization. All of the information you provide may be used only for statistical purposes and may not be disclosed, or used, in identifiable form for any other purpose except as required by law (20 U.S.C. §9573 and 6 U.S.C. §151).</p>
-	<p class="dark">Information from multiple individuals will be combined to produce statistical reports; no information that identifies you will be included in any reports or provided to students, their parents, or other school staff. According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number. The valid OMB control number for this voluntary information collection is 1850-0750. The time required to complete this information collection is estimated to average approximately <span class="strong">5 minutes per respondent</span> for completion of the feedback questions. If you have any comments concerning the accuracy of the time estimate, suggestions for improving this information collection, or any comments or concerns regarding the status of your individual submission of these data, please write directly to: Early Childhood Longitudinal Study, National Center for Education Statistics, PCP, 550 12th St., SW, 4th floor, Washington, DC 20202.</p>
-	<p class="dark">OMB No. 1850-0750, Approval Expires XX/XX/XXXX</p>
-	<p class="dark">v.X</p>
-
-</div>
 </div>
 
 </section> -->

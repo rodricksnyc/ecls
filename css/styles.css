@@ -559,10 +559,10 @@ align-items: center;
   overflow-x: hidden;
 
 }
-.tlModals ::-webkit-scrollbar {
+/* .tlModals ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-}
+} */
 #eRocModal {
   z-index: 999999999;
 }
@@ -983,8 +983,8 @@ select {
   width: 33%;
 }
 .erocs  .btn-group> .btn:last-child{
-  border-top-right-radius: .3em !important;
-  border-bottom-right-radius: .3em !important;
+  border-top-right-radius: 0em !important;
+  border-bottom-right-radius: 0em !important;
 }
 
 i.moveLeft{
@@ -2157,10 +2157,130 @@ span.heading {
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
     line-height: 30px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
-    margin-top:1em
+    position: relative;
+
+      width: 100%;
+      margin-top: 0px !important;
+
+
 }
+
+.whiteBlocks .justify-content-between{
+  margin-bottom: .5em;
+      height: auto;
+      min-height: 4em;
+
+}
+
+
+.childrenAttr .gray{
+  text-align:center;
+
+}
+
+.childrenBlocks p.black{
+  text-align: center;
+  line-height: 1
+}
+
+.childrenBlocks, .consentBlocks, .parentInfoBlocks {
+    margin-bottom: 1em;
+    background: white;
+    padding: 1em 0em;
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+    -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+    box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+    position: relative;
+}
+ /* .childrenAttr, .childrenBlocks, .parentInfo, .parentInfoBlocks {
+  overflow-x: scroll;
+ overflow-y: hidden;
+} */
+
+.barWrapper  {
+  overflow-x: scroll;
+ overflow-y: hidden;
+ padding: 0em 2em;
+}
+
+ .btn-group.parentConsentButtons {
+  max-width:400px;
+
+}
+
+@media (min-width: 992px) {
+ .consentBlocks .wider {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 10.333333%;
+    max-width: 10.333333%;
+}
+
+.marginLeft2 {
+  margin-left:2em
+}
+.mLnegative1 {
+  margin-left:-1em
+}
+
+.eightyPercent {
+width: 80%;
+margin-left: 20% !important;
+}
+
+.biggerWidth{
+  width:115%;
+}
+
+.mlHalf{
+  margin-left:.5em
+}
+.parentInfoBlocks p{
+  line-height: 1 !important
+}
+
+}
+
+
+.school-coordinator-to-do
+.tlModals .btn-primary:not(:disabled):not(.disabled) {
+    color: #00539f !important;
+}
+
+.school-coordinator-to-do
+.tlModals .btn-primary:not(:disabled):not(.disabled).active {
+    color: white !important;
+}
+
+@media (min-width:992px){
+/* .childrenAttr .col-lg-2, .childrenBlocks .col-lg-2, .parentInfo .col-lg-2, .parentInfoBlocks  .col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 20.666667%;
+    max-width: 20.666667%;
+}
+
+.childrenAttr .col-lg-1, .childrenBlocks .col-lg-1,  .parentInfo .col-lg-1, .parentInfoBlocks  .col-lg-1{
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 12.333333%;
+    max-width: 12.333333%;
+} */
+.childrenBlocks, .parentInfoBlocks {
+  flex-wrap: nowrap;
+}
+
+.parentInfoBlocks, .parentInfo {
+  min-width:130%
+}
+
+}
+
+
+.school-coordinator-to-do{
+
+}
+
+
 .whiteBlocks .plum {
     width: 70%;
     line-height: 1.2
@@ -6890,6 +7010,21 @@ font-family: 'Public Sans', sans-serif;
     margin-bottom:1em
   }
 
+  .addBlocks p.black {
+      text-align: left;
+      line-height: 1.1;
+      margin-bottom: 1em;
+  }
+  .updateBlocks p.black {
+    text-align: left;
+    margin-bottom: 1em;
+}
+.box-outer {
+
+    overflow: visible;
+    overflow-x: visible;
+}
+
 }
 
 
@@ -7929,6 +8064,10 @@ transform: scale(0.8);
     padding-right: 1em;
     padding-top: 1em;
   }
+  .addBlocks p.black {
+    text-align: left;
+    line-height: 1.1;
+}
 
   .schoolBanner {
     margin-top: 0em;
@@ -9432,6 +9571,7 @@ body{
   .container_0, .container_1 {
     max-width: 960px!important;
     margin: 0 auto;
+    min-height: 80vh;
   }
 
 }

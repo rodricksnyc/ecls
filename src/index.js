@@ -2880,7 +2880,7 @@ $('.sortParentID').on('click', function() {
 
 
 var Opt01 = "";
-$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete, .dStatus, .sStatus').each(function() {
+$('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksComplete, .parentComplete, .sAdminComplete, .dStatus, .sStatus, .participationStatus, .consentStatus').each(function() {
 	Opt01 = $(this).html();
 
 
@@ -2896,9 +2896,11 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 		})
 
 
+
+
 	}
 
-	if ($(this).html() > 75 && $(this).html() <= 100 || $(this).html() == 'Approval Received') {
+	if ($(this).html() > 75 && $(this).html() <= 100 || $(this).html() == 'Approval Received' || $(this).html() == 'Complete' || $(this).html() == 'Consented') {
 		$(this).closest('.col-lg-2').find('.percentageCircle').css('background', '#71d82e')
 		$(this).closest('.newBlocks').find('.progressBarFull').css({
 			'background' : '#71d82e',
@@ -2906,6 +2908,16 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 		})
 
 		$(this).closest('.addBlocks').find('.progressBarFull').css({
+			'background' : '#71d82e',
+			'width': '100%'
+		})
+
+		$(this).closest('.childrenBlocks').find('.progressBarFull').css({
+			'background' : '#71d82e',
+			'width': '100%'
+		})
+
+		$(this).closest('.consentBlocks').find('.progressBarFull').css({
 			'background' : '#71d82e',
 			'width': '100%'
 		})
@@ -2918,12 +2930,21 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 			'width': '50%'
 		})
 	}
+	if ($(this).html() == 'Opted Out') {
+	$(this).closest('.consentBlocks').find('.progressBarFull').css({
+		'background' : '#fc7b75',
+		'width': '100%'
+	})
 
-	if ($(this).html() >= 0 && $(this).html() <= 25) {
+}
+
+	if ($(this).html() >= 0 && $(this).html() <= 25 || $(this).html() == 'Opted Out') {
 		$(this).closest('.col-lg-2').find('.percentageCircle').css( {
 			'background': '#f7ebe7',
 			'border': '2px solid #fc7b75'
 		})
+
+
 	}
 
 });
