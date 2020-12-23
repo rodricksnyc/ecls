@@ -2257,7 +2257,7 @@ span.heading {
   .percentMargin {
     margin-left: 2em;
     margin-right: -1em;
-}
+  }
 
   .eightyPercent {
     width: 80%;
@@ -2270,8 +2270,8 @@ span.heading {
 
   .moveLeft{
     text-align: center;
-    margin-left: -5em;
-    margin-right: 6.4em;
+    margin-left: -4em;
+    margin-right: -1.4em;
 
   }
 
@@ -2308,40 +2308,40 @@ span.heading {
     margin-right: 2em;
   }
 
-.childTeacher .mobile {
+  .childTeacher .mobile {
     display: inline-block;
     color: #576f7f;
     font-family: 'Public Sans', sans-serif;
     font-weight: 500;
     font-size: .88em;
     margin-right: 0em;
-}
-.childrenBlocks, .parentInfoBlocks {
-  flex-wrap: nowrap;
-}
+  }
+  .childrenBlocks, .parentInfoBlocks {
+    flex-wrap: nowrap;
+  }
 
-.parentInfoBlocks, .parentInfo   {
-  min-width:130%
-}
+  .parentInfoBlocks, .parentInfo, .teacherSurvey, .teacherSurveyBlocks   {
+    min-width:130%
+  }
 
-.childrenAttr, .childrenBlocks, .teacherSurvey, .teacherSurveyBlocks  {
-  min-width:150%
-}
+  .childrenAttr, .childrenBlocks  {
+    min-width:150%
+  }
 
-.childTeacher {
-  padding:1em;
-}
+  .childTeacher {
+    padding:1em;
+  }
 
-.childTeacher .bothChild, .childTeacher .grade, .childTeacher .consentStatus{
-  line-height: 1;
-  margin-bottom:1em;
-}
+  .childTeacher .bothChild, .childTeacher .grade, .childTeacher .consentStatus{
+    line-height: 1;
+    margin-bottom:1em;
+  }
 
-.grayColor{
-background: #eeeeee;
-padding: .5em .2em .5em 1em;
-margin-bottom:1em
-}
+  .grayColor{
+    background: #eeeeee;
+    padding: .5em .2em .5em 1em;
+    margin-bottom:1em
+  }
 
 
 }
@@ -6574,13 +6574,13 @@ html, body{
 }
 
 .scFeedback .carousel-inner {
-    position: relative;
-    height: 640px !important;
+  position: relative;
+  height: 640px !important;
 }
 
 .scFeedback  .carousel {
-    position: relative;
-    height: 640px !important;
+  position: relative;
+  height: 640px !important;
 }
 
 .rightMove{
@@ -6595,7 +6595,7 @@ html, body{
 
 .rangeButtons.marginSide{
   margin-left: 2em;
-margin-right: 2em;
+  margin-right: 2em;
 }
 
 h6.black {
@@ -8286,8 +8286,8 @@ transform: scale(0.8);
 
 
   .infoBar.greenBar .white.pl-4 {
-  padding-left:0em !important
-}
+    padding-left:0em !important
+  }
 
   .school-coordinator-to-do .sAdmin .col-xs-6 {
     display: flex;

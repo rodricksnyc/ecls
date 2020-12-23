@@ -2844,7 +2844,7 @@ $('.sortParentID').on('click', function() {
 		}, 100)
 
 		$('.topAttr  i').each(function() {
-		$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>')
+			$('.topAttr  i').replaceWith('<i class="far fa-sort darkBlue"></i>')
 		})
 
 		$(this).find('i').replaceWith('<i class="fad fa-sort-up darkBlue"></i>')
@@ -2904,7 +2904,7 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 	}
 
 	if ($(this).html() > 75 && $(this).html() <= 100 || $(this).html() == 'Approval Received' || $(this).html() == 'Complete' || $(this).html() == 'Consented' || $(this).html() == 'Ready to Access') {
-	$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css('background', '#71d82e')
+		$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css('background', '#71d82e')
 		$(this).closest('.newBlocks, .teacherSurveyBlocks').find('.progressBarFull').css({
 			'background' : '#71d82e',
 			'width': '100%'
@@ -2939,12 +2939,12 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 		})
 	}
 	if ($(this).html() == 'Opted Out') {
-	$(this).closest('.consentBlocks').find('.progressBarFull').css({
-		'background' : '#fc7b75',
-		'width': '100%'
-	})
+		$(this).closest('.consentBlocks').find('.progressBarFull').css({
+			'background' : '#fc7b75',
+			'width': '100%'
+		})
 
-}
+	}
 
 	if ($(this).html() >= 0 && $(this).html() <= 25 || $(this).html() == 'Opted Out') {
 		$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css( {
@@ -3442,9 +3442,9 @@ if ($(document).innerWidth() <= 1200) {
 
 
 
-$('.logoutOptions .tangerineBox .plum').html('<i class="fas fa-user slate"></i>')
-$('.logoutOptions .slate:eq(0)').html('<i class="fas fa-home slate"></i>')
-$('.logoutOptions  .slate.borderLeft').html('<i class="fas fa-sign-out-alt slate"></i>')
+	$('.logoutOptions .tangerineBox .plum').html('<i class="fas fa-user slate"></i>')
+	$('.logoutOptions .slate:eq(0)').html('<i class="fas fa-home slate"></i>')
+	$('.logoutOptions  .slate.borderLeft').html('<i class="fas fa-sign-out-alt slate"></i>')
 
 
 }
@@ -5104,15 +5104,15 @@ $(".scrollIt").on("click", function(event) {
 		yourFormElement1.checkValidity();
 		yourFormElement1.reportValidity();
 
-if ( !$('.casePage #tabs-2  .customRadio input').is(':checked')) {
-		$('#tabs-2 .invalid-feedback').show()
+		if ( !$('.casePage #tabs-2  .customRadio input').is(':checked')) {
+			$('#tabs-2 .invalid-feedback').show()
 
 
-	}
+		}
 		if ( $('.casePage #tabs-2  .customRadio input').is(':checked'))   {
-		$('.updateDistrictModal').modal('show')
+			$('.updateDistrictModal').modal('show')
 
-	}
+		}
 
 	})
 
@@ -5127,15 +5127,15 @@ if ( !$('.casePage #tabs-2  .customRadio input').is(':checked')) {
 		yourFormElement1.reportValidity();
 
 		if ( !$('.casePage #tabs-3  .customRadio input').is(':checked')) {
-				$('#tabs-3 .invalid-feedback').show()
+			$('#tabs-3 .invalid-feedback').show()
 
 
-			}
+		}
 		if ( $('.casePage #tabs-3  .customRadio input').is(':checked'))   {
-		$('.updateSchoolModal').modal('show')
+			$('.updateSchoolModal').modal('show')
 
 
-	}
+		}
 
 	})
 
@@ -5147,15 +5147,15 @@ if ( !$('.casePage #tabs-2  .customRadio input').is(':checked')) {
 		yourFormElement1.reportValidity();
 
 		if ( !$('.casePage #tabs-4  .customRadio input').is(':checked')) {
-				$('#tabs-4 .invalid-feedback').show()
+			$('#tabs-4 .invalid-feedback').show()
 
 
-			}
+		}
 		if ( $('.casePage #tabs-4  .customRadio input').is(':checked'))   {
-		$('.updateChildModal').modal('show')
+			$('.updateChildModal').modal('show')
 
 
-	}
+		}
 
 	})
 
@@ -5167,68 +5167,68 @@ if ( !$('.casePage #tabs-2  .customRadio input').is(':checked')) {
 		yourFormElement1.reportValidity();
 
 		if ( !$('.casePage #tabs-5  .customRadio input').is(':checked')) {
-				$('#tabs-5 .invalid-feedback').show()
+			$('#tabs-5 .invalid-feedback').show()
 
 
-			}
+		}
 		if ( $('.casePage #tabs-5  .customRadio input').is(':checked'))   {
-		$('.updateParentModal').modal('show')
+			$('.updateParentModal').modal('show')
 
 
-	}
+		}
 
 	})
 
 
 
 	$('.casePage #tabs-2  .customRadio input').change(function() {
-			$('#tabs-2 .invalid-feedback').hide()
+		$('#tabs-2 .invalid-feedback').hide()
 	})
 
 
 	$('.casePage #tabs-3  .customRadio input').change(function() {
-			$('#tabs-3 .invalid-feedback').hide()
+		$('#tabs-3 .invalid-feedback').hide()
 	})
 
 	$('.casePage #tabs-4  .customRadio input').change(function() {
-			$('#tabs-4 .invalid-feedback').hide()
+		$('#tabs-4 .invalid-feedback').hide()
 	})
 
 
 	$('.casePage #tabs-5  .customRadio input').change(function() {
-			$('#tabs-5 .invalid-feedback').hide()
+		$('#tabs-5 .invalid-feedback').hide()
 	})
 
 
-$('.seeSchool').click(function (){
+	$('.seeSchool').click(function (){
 
-$('[href="#tab4"]').tab('show');
+		$('[href="#tab4"]').tab('show');
 
-})
+	})
 
-$('.seeDocuments').click(function (){
+	$('.seeDocuments').click(function (){
 
-$('[href="#tab3"]').tab('show');
+		$('[href="#tab3"]').tab('show');
 
-})
+	})
 
-$('.seeCInfo').click(function (){
+	$('.seeCInfo').click(function (){
 
-$('[href="#tab5"]').tab('show');
+		$('[href="#tab5"]').tab('show');
 
-})
-$('.seePInfo').click(function (){
+	})
+	$('.seePInfo').click(function (){
 
-$('[href="#tab6"]').tab('show');
+		$('[href="#tab6"]').tab('show');
 
-})
+	})
 
 
-$('.seeTInfo').click(function (){
+	$('.seeTInfo').click(function (){
 
-$('[href="#tab7"]').tab('show');
+		$('[href="#tab7"]').tab('show');
 
-})
+	})
 
 
 
