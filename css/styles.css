@@ -2185,7 +2185,7 @@ span.heading {
   line-height: 1
 }
 
-.childrenBlocks, .consentBlocks, .parentInfoBlocks, .teacherListBlocks, .teacherSurveyBlocks  {
+.childrenBlocks, .consentBlocks, .parentInfoBlocks, .teacherListBlocks, .teacherSurveyBlocks, .childTeacher  {
   margin-bottom: 1em;
   background: white;
   padding: 1em 0em;
@@ -2194,15 +2194,17 @@ span.heading {
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   position: relative;
 }
-/* .childrenAttr, .childrenBlocks, .parentInfo, .parentInfoBlocks {
-overflow-x: scroll;
-overflow-y: hidden;
-} */
+
+.childTeacher {
+  padding:1em;
+}
+
+
 
 .barWrapper  {
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 0em 2em;
+  padding: 0em 1em;
 }
 
 .btn-group.parentConsentButtons {
@@ -2251,6 +2253,11 @@ overflow-y: hidden;
   .mLnegative2{
     margin-left:-2em !important
   }
+
+  .percentMargin {
+    margin-left: 2em;
+    margin-right: -1em;
+}
 
   .eightyPercent {
     width: 80%;
@@ -2301,19 +2308,14 @@ overflow-y: hidden;
     margin-right: 2em;
   }
 
-
-
-  /* .childrenAttr .col-lg-2, .childrenBlocks .col-lg-2, .parentInfo .col-lg-2, .parentInfoBlocks  .col-lg-2 {
-  -ms-flex: 0 0 16.666667%;
-  flex: 0 0 20.666667%;
-  max-width: 20.666667%;
+.childTeacher .mobile {
+    display: inline-block;
+    color: #576f7f;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: .88em;
+    margin-right: 0em;
 }
-
-.childrenAttr .col-lg-1, .childrenBlocks .col-lg-1,  .parentInfo .col-lg-1, .parentInfoBlocks  .col-lg-1{
--ms-flex: 0 0 8.333333%;
-flex: 0 0 12.333333%;
-max-width: 12.333333%;
-} */
 .childrenBlocks, .parentInfoBlocks {
   flex-wrap: nowrap;
 }
@@ -2325,6 +2327,22 @@ max-width: 12.333333%;
 .childrenAttr, .childrenBlocks, .teacherSurvey, .teacherSurveyBlocks  {
   min-width:150%
 }
+
+.childTeacher {
+  padding:1em;
+}
+
+.childTeacher .bothChild, .childTeacher .grade, .childTeacher .consentStatus{
+  line-height: 1;
+  margin-bottom:1em;
+}
+
+.grayColor{
+background: #eeeeee;
+padding: .5em .2em .5em 1em;
+margin-bottom:1em
+}
+
 
 }
 
@@ -6480,6 +6498,17 @@ html, body{
   font-family: 'Public Sans', sans-serif;
   font-weight:300;
 }
+
+
+
+
+
+.mlHalf{
+  margin-bottom:.5em !important
+}
+
+
+
 .skip {
   position: absolute;
   top:94%;
@@ -6501,13 +6530,7 @@ html, body{
 .strong {
   font-weight:600 !important;
 }
-/* #feedbackModal .carousel-inner {
-padding: 8px 20px;
-} */
 
-/* #feedbackModal .modal-body{
-padding-top:2em;
-} */
 
 #feedbackModal .carousel-control-next, .carousel-control-prev  {
   z-index:99999
@@ -6515,25 +6538,24 @@ padding-top:2em;
 
 #feedbackModal .carousel {
   position: relative;
-  height: 440px !important;
+  height: 440px;
 }
 
 #feedbackModal .carousel-inner {
   position: relative;
-  height: 440px !important;
+  height: 440px;
 }
 
 
 #feedbackModal .carousel-item {
-  height:400px !important;
-  margin:0em !important;
-  /* padding:0em !important; */
+  height:400px;
+  margin:0em;
 }
 
 #feedbackModal .carousel-item.active {
-  height:400px !important;
-  margin:0em !important;
-  /* padding:0em !important; */
+  height:400px;
+  margin:0em;
+
 }
 #feedbackModal ::placeholder {
   font-family: 'Public Sans', sans-serif;
@@ -6546,6 +6568,35 @@ padding-top:2em;
   padding: 0rem 2em 2em 2em !important;
 }
 
+
+.scFeedback .carousel-item.active {
+  height:640px !important
+}
+
+.scFeedback .carousel-inner {
+    position: relative;
+    height: 640px !important;
+}
+
+.scFeedback  .carousel {
+    position: relative;
+    height: 640px !important;
+}
+
+.rightMove{
+  text-align: center;
+  right: -34px !important;
+}
+
+.leftMove{
+  text-align: center;
+  left: -34px !important;
+}
+
+.rangeButtons.marginSide{
+  margin-left: 2em;
+margin-right: 2em;
+}
 
 h6.black {
   color: black;
@@ -8233,6 +8284,11 @@ transform: scale(0.8);
     line-height: 1.1;
   }
 
+
+  .infoBar.greenBar .white.pl-4 {
+  padding-left:0em !important
+}
+
   .school-coordinator-to-do .sAdmin .col-xs-6 {
     display: flex;
     flex-direction: column;
@@ -8297,6 +8353,11 @@ transform: scale(0.8);
     display: flex;
     flex-direction: column;
     width: 50%;
+  }
+
+
+  .childTeacher p.black{
+    margin-bottom:1em
   }
   .school-coordinator-to-do .margin2 {
 

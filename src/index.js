@@ -2884,7 +2884,7 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 	Opt01 = $(this).html();
 
 
-	if ($(this).html() > 50 && $(this).html() <= 75 || $(this).html() == 'Special Handling– In Progress') {
+	if ($(this).html() > 50 && $(this).html() <= 75 || $(this).html() == 'Special Handling– In Progress' || $(this).html() == 'Consent Pending') {
 		$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css('background', '#fbb03b')
 		$(this).closest('.newBlocks, .teacherSurveyBlocks').find('.progressBarFull').css({
 			'background' : '#fbb03b',
@@ -2895,10 +2895,15 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 			'width': '100%'
 		})
 
+		$(this).closest('.childTeacher').find('.progressBarFull').css({
+			'background' : '#fbb03b',
+			'width': '100%'
+		})
+
 
 	}
 
-	if ($(this).html() > 75 && $(this).html() <= 100 || $(this).html() == 'Approval Received' || $(this).html() == 'Complete' || $(this).html() == 'Consented') {
+	if ($(this).html() > 75 && $(this).html() <= 100 || $(this).html() == 'Approval Received' || $(this).html() == 'Complete' || $(this).html() == 'Consented' || $(this).html() == 'Ready to Access') {
 	$(this).closest('.col-lg-2, .col-lg-1').find('.percentageCircle').css('background', '#71d82e')
 		$(this).closest('.newBlocks, .teacherSurveyBlocks').find('.progressBarFull').css({
 			'background' : '#71d82e',
@@ -2916,6 +2921,11 @@ $('.teacherComplete , .childComplete , .childBlocksComplete, .teacherBlocksCompl
 		})
 
 		$(this).closest('.consentBlocks').find('.progressBarFull').css({
+			'background' : '#71d82e',
+			'width': '100%'
+		})
+
+		$(this).closest('.childTeacher').find('.progressBarFull').css({
 			'background' : '#71d82e',
 			'width': '100%'
 		})
@@ -5189,10 +5199,40 @@ if ( !$('.casePage #tabs-2  .customRadio input').is(':checked')) {
 			$('#tabs-5 .invalid-feedback').hide()
 	})
 
-// $('.tab2Active').click(function() {
-//
-//
-// })
+
+$('.seeSchool').click(function (){
+
+$('[href="#tab4"]').tab('show');
+
+})
+
+$('.seeDocuments').click(function (){
+
+$('[href="#tab3"]').tab('show');
+
+})
+
+$('.seeCInfo').click(function (){
+
+$('[href="#tab5"]').tab('show');
+
+})
+$('.seePInfo').click(function (){
+
+$('[href="#tab6"]').tab('show');
+
+})
+
+
+$('.seeTInfo').click(function (){
+
+$('[href="#tab7"]').tab('show');
+
+})
+
+
+
+
 
 
 

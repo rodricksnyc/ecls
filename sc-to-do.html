@@ -243,27 +243,27 @@
 						<div class="grayBox sc second mt-5">
 							<ul class="nav nav-tabs" role="tablist" id="mytabs">
 								<li class="nav-item">
-									<a class="nav-link active text-center" data-toggle="tab" href="#tab1" role="tab">Submit Child List</a>
+									<a class="nav-link active text-center" data-toggle="tab" href="#tab1" data-type="school" role="tab">Submit Child List</a>
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link text-center" data-toggle="tab" href="#tab2" role="tab">Prepare for the School Visit</a>
+									<a class="nav-link text-center" data-type="prepare" data-toggle="tab" href="#tab2" role="tab">Prepare for the School Visit</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link  text-center" data-toggle="tab" href="#tab3" role="tab">Documents</a>
+									<a class="nav-link  text-center" data-type="documents" data-toggle="tab" href="#tab3" role="tab">Documents</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link  text-center" data-toggle="tab" href="#tab4" role="tab">School Info</a>
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab4" role="tab" data-type="sInfo">School Info</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link  text-center" data-toggle="tab" href="#tab5" role="tab">Child Info</a>
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab5" role="tab" data-type="cInfo">Child Info</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link  text-center" data-toggle="tab" href="#tab6" role="tab">Parent Info</a>
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab6" role="tab" data-type="pInfo">Parent Info</a>
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link  text-center" data-toggle="tab" href="#tab7" role="tab">Teacher Info</a>
+									<a class="nav-link  text-center" data-toggle="tab" href="#tab7" role="tab" data-type="tInfo">Teacher Info</a>
 								</li>
 
 
@@ -272,7 +272,7 @@
 
 							<div class="tab-content">
 
-								<div class="tab-pane active" id="tab1" role="tabpanel">
+								<div class="tab-pane active" id="tab1" role="tabpanel" data-type="school">
 									<div class="container pt-3">
 										<div class="row p-1">
 											<div class="col-lg-12">
@@ -360,7 +360,7 @@
 
 								</div>
 
-								<div class="tab-pane" id="tab2" role="tabpanel">
+								<div class="tab-pane" id="tab2" role="tabpanel" data-type="prepare">
 									<div class="container pt-3">
 										<div class="row">
 											<div class="col-lg-12">
@@ -374,8 +374,8 @@
 													<h3 class="landing-sec-H noBorder">Prior to the call</h3>
 													<ul class="greenDots mb-1">
 
-														<li>Confirm the <a href="" class="darkBlue">information</a> collected about your school during our initial contact.</li>
-														<li>Download the list of selected children, called the <a href="" class="darkBlue">Child Tracking Form</a>, from the “Documents” section of this website</li>
+														<li>Confirm the <a class="seeSchool"><span class="darkBlue">information</span></a> collected about your school during our initial contact.</li>
+														<li>Download the list of selected children, called the <a class="seeDocuments"><span class="darkBlue">Child Tracking Form</span></a>, from the “Documents” section of this website</li>
 														<li>Review the Child Tracking Form to:</li>
 													</ul>
 													<ul class="inner mt-0 mb-1">
@@ -412,11 +412,11 @@
 													<p class="charcoal">Use the tabs on this website to do the following:</p>
 													<ul class="greenDots mb-1">
 
-														<li>Confirm the <a href="" class="darkBlue">child information</a> that the ECLS representative recorded.</li>
+														<li>Confirm the <a class="seeCInfo"><span class="darkBlue">child information</span></a> that the ECLS representative recorded.</li>
 														<li>Receive a FedEx package with your instructions, a school administrator packet, parent packets, and teacher packets.</li>
-														<li>Distribute the parent packets to the <a href="" class="darkBlue">parents of the selected children</a> so that they can provide consent and complete the parent web survey.</li>
+														<li>Distribute the parent packets to the <a class="seePInfo"><span class="darkBlue">parents of the selected children</span></a> so that they can provide consent and complete the parent web survey.</li>
 														<li>Continue to follow up on parent consent as necessary.</li>
-														<li>View the <a href="" class="darkBlue">Teacher List</a> to identify the primary classroom and special education teachers selected to complete the teacher web surveys.</li>
+														<li>View the <a class="seeTInfo"><span class="darkBlue">Teacher List</span></a> to identify the primary classroom and special education teachers selected to complete the teacher web surveys.</li>
 														<li>Distribute the teacher packets to each of the identified teachers and encourage them to complete the teacher web survey.</li>
 
 													</ul>
@@ -452,7 +452,7 @@
 
 
 								</div>
-								<div class="tab-pane" id="tab3" role="tabpanel">
+								<div class="tab-pane" id="tab3" role="tabpanel" data-type="documents">
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="lightGreen tabletBottomLess container-fluid p-2">
@@ -698,7 +698,7 @@
 
 
 								</div>
-								<div class="tab-pane" id="tab4" role="tabpanel">
+								<div class="tab-pane" id="tab4" role="tabpanel" data-type="sInfo">
 
 									<div class="lightGreen tabletBottomLess container-fluid p-2 mb-5">
 										<p class="charcoal text-center mb-0">This screen has three sections: School Information, School Administrator Survey, and Assessment Information.</p>
@@ -942,7 +942,7 @@
 														<div class="col-lg-1">
 															<h6 class="gray">STATUS</h6>
 														</div>
-														<div class="col-lg-2 margin4">
+														<div class="col-lg-2 percentMargin">
 															<h6 class="gray">% COMPLETE</h6>
 														</div>
 														<div class="col-lg-2">
@@ -1012,7 +1012,7 @@
 
 
 								</div>
-								<div class="tab-pane" id="tab5" role="tabpanel">
+								<div class="tab-pane" id="tab5" role="tabpanel" data-type="cInfo">
 
 									<div class="container">
 										<div class="lightGreen tabletBottomLess container-fluid p-2 mb-5">
@@ -1257,7 +1257,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane" id="tab6" role="tabpanel">
+								<div class="tab-pane" id="tab6" role="tabpanel" data-type="pInfo">
 
 									<div class="outside pt-3">
 										<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
@@ -1785,7 +1785,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane" id="tab7" role="tabpanel">
+								<div class="tab-pane" id="tab7" role="tabpanel" data-type="tInfo">
 									<div class="outside pt-3">
 										<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
 
@@ -1987,190 +1987,87 @@
 													<p class="charcoal pt-3">Please review the teachers we have recorded for each child and let the ECLS representative know if any of this information is <span class="strong">not</span> accurate.</p>
 
 
-
-													<div class="topAttr  d-flex align-items-center">
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-															<h6 class="gray">ALL</h6>
+													<div class="childTeacher">
+														<div class="row">
+														<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">CHILD ID - CHILD NAME</div>
+															<p class="black bothChild">9999991C - Kim Possible</p>
+															<div class="mobile">GRADE</div>
+															<p class="black grade">2</p>
+															<div class="mobile">PARTICIPATION STATUS</div>
+															<p class="black consentStatus">Consent Pending</p>
 														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-															<h6 class="gray">CHILD ID</h6>
+														<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6">
+															<div class="grayColor">
+															<div class="mobile">PRIMARY TEACHER</div>
+															<p class="black primaryTeacher">99999TO1 - Bill Scucci</p>
 														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 margin4">
-															<h6 class="gray">CHILD NAME</h6>
+														<div class="grayColor">
+															<div class="mobile">SPECIAL ED TEACHER</div>
+															<p class="black specialTeacher">99999TO1 - Mike Seteven</p>
 														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-															<h6 class="gray text-center">CONTENT<br>STATUS</h6>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-															<h6 class="gray text-center">ELECTRONIC/PAPER</h6>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mlHalf">
-															<h6 class="gray">PARENT ID</h6>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
-															<h6 class="gray">PARENT NAME</h6>
 														</div>
 
 													</div>
-
-													<div class="consentBlocks d-flex align-items-center flex-wrap">
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-															<div class="mobile">ALL</div>
-															<div class="one ml-3 mb-4">
-																<input class="form-check-input" type="checkbox" name="validation" id="custom101">
-																<label class="form-check-label fontZero" tabindex="0" for="custom101">something</label>
-															</div>
-														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
-															<div class="mobile">CHILD ID</div>
-															<p class="black childid">9999991C</p>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-															<div class="mobile">CHILD NAME</div>
-															<p class="black childName">Keone Young</p>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-															<div class="mobile">CONSENT STATUS</div>
-															<p class="black consentStatus">Consented</p>
-														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
-															<div class="mobile">ELECTRONIC/PAPER</div>
-															<p class="black electronicOrPaper">Electronic</p>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-															<div class="mobile">PARENT ID</div>
-
-															<p class="black parentid">9999991C</p>
-
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
-															<div class="mobile">PARENT NAME</div>
-															<p class="black parentName">Marc Young</p>
-														</div>
-
 														<div class="progressBarEmpty"></div>
-														<div class="progressBarFull" style="background: rgb(113, 216, 46); width: 100%;">
+														<div class="progressBarFull">
 														</div>
 													</div>
 
-													<div class="consentBlocks d-flex align-items-center flex-wrap">
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-															<div class="mobile">ALL</div>
-															<div class="one ml-3 mb-4">
-																<input class="form-check-input" type="checkbox" name="validation" id="custom102">
-																<label class="form-check-label fontZero" tabindex="0" for="custom102">something</label>
-															</div>
+													<div class="childTeacher">
+														<div class="row">
+														<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">CHILD ID - CHILD NAME</div>
+															<p class="black bothChild">9999991C - Kim Possible</p>
+															<div class="mobile">GRADE</div>
+															<p class="black grade">2</p>
+															<div class="mobile">PARTICIPATION STATUS</div>
+															<p class="black consentStatus">Consent Pending</p>
 														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
-															<div class="mobile">CHILD ID</div>
-															<p class="black childid">9999991C</p>
+														<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6">
+															<div class="grayColor">
+															<div class="mobile">PRIMARY TEACHER</div>
+															<p class="black primaryTeacher">99999TO1 - Bill Scucci</p>
 														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-															<div class="mobile">CHILD NAME</div>
-															<p class="black childName">Keone Young</p>
+														<div class="grayColor">
+															<div class="mobile">SPECIAL ED TEACHER</div>
+															<p class="black specialTeacher">99999TO1 - Mike Seteven</p>
 														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-															<div class="mobile">CONSENT STATUS</div>
-															<p class="black consentStatus">Consented</p>
-														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
-															<div class="mobile">ELECTRONIC/PAPER</div>
-															<p class="black electronicOrPaper">Electronic</p>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-															<div class="mobile">PARENT ID</div>
-
-															<p class="black parentid">9999991C</p>
-
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
-															<div class="mobile">PARENT NAME</div>
-															<p class="black parentName">Marc Young</p>
 														</div>
 
+													</div>
 														<div class="progressBarEmpty"></div>
-														<div class="progressBarFull" style="background: rgb(113, 216, 46); width: 100%;">
+														<div class="progressBarFull">
 														</div>
 													</div>
-													<div class="consentBlocks d-flex align-items-center flex-wrap">
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-															<div class="mobile">ALL</div>
-															<div class="one ml-3 mb-4">
-																<input class="form-check-input" type="checkbox" name="validation" id="custom103">
-																<label class="form-check-label fontZero" tabindex="0" for="custom103">something</label>
-															</div>
+													<div class="childTeacher">
+														<div class="row">
+														<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+															<div class="mobile">CHILD ID - CHILD NAME</div>
+															<p class="black bothChild">9999991C - Kim Possible</p>
+															<div class="mobile">GRADE</div>
+															<p class="black grade">2</p>
+															<div class="mobile">PARTICIPATION STATUS</div>
+															<p class="black consentStatus">Ready to Access</p>
 														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
-															<div class="mobile">CHILD ID</div>
-															<p class="black childid">9999991C</p>
+														<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6">
+															<div class="grayColor">
+															<div class="mobile">PRIMARY TEACHER</div>
+															<p class="black primaryTeacher">99999TO1 - Bill Scucci</p>
 														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-															<div class="mobile">CHILD NAME</div>
-															<p class="black childName">Keone Young</p>
+														<div class="grayColor">
+															<div class="mobile">SPECIAL ED TEACHER</div>
+															<p class="black specialTeacher">99999TO1 - Mike Seteven</p>
 														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-															<div class="mobile">CONSENT STATUS</div>
-															<p class="black consentStatus">Consented</p>
-														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
-															<div class="mobile">ELECTRONIC/PAPER</div>
-															<p class="black electronicOrPaper">Electronic</p>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-															<div class="mobile">PARENT ID</div>
-
-															<p class="black parentid">9999991C</p>
-
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
-															<div class="mobile">PARENT NAME</div>
-															<p class="black parentName">Marc Young</p>
 														</div>
 
+													</div>
 														<div class="progressBarEmpty"></div>
-														<div class="progressBarFull" style="background: rgb(113, 216, 46); width: 100%;">
+														<div class="progressBarFull">
 														</div>
 													</div>
 
-													<div class="consentBlocks d-flex align-items-center flex-wrap">
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-															<div class="mobile">ALL</div>
-															<div class="one ml-3 mb-4">
-																<input class="form-check-input" type="checkbox" name="validation" id="custom104">
-																<label class="form-check-label fontZero" tabindex="0" for="custom104">something</label>
-															</div>
-														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
-															<div class="mobile">CHILD ID</div>
-															<p class="black childid">9999991C</p>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-															<div class="mobile">CHILD NAME</div>
-															<p class="black childName">Keone Young</p>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-															<div class="mobile">CONSENT STATUS</div>
-															<p class="black consentStatus">Opted Out</p>
-														</div>
-														<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
-															<div class="mobile">ELECTRONIC/PAPER</div>
-															<p class="black electronicOrPaper">Electronic</p>
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-															<div class="mobile">PARENT ID</div>
 
-															<p class="black parentid">9999991C</p>
-
-														</div>
-														<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
-															<div class="mobile">PARENT NAME</div>
-															<p class="black parentName">Marc Young</p>
-														</div>
-
-														<div class="progressBarEmpty"></div>
-														<div class="progressBarFull" style="background: rgb(252, 123, 117); width: 100%;">
-														</div>
-													</div>
 
 
 
