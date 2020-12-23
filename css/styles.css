@@ -560,8 +560,8 @@ align-items: center;
 
 }
 /* .tlModals ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+width: 0px;
+background: transparent;
 } */
 #eRocModal {
   z-index: 999999999;
@@ -2153,24 +2153,24 @@ span.heading {
 }
 
 .whiteBlocks p.charcoal {
-    color: black;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    line-height: 30px;
-    font-size: 15px;
-    line-height: 1.5;
-    position: relative;
+  color: black;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  position: relative;
 
-      width: 100%;
-      margin-top: 0px !important;
+  width: 100%;
+  margin-top: 0px !important;
 
 
 }
 
 .whiteBlocks .justify-content-between{
   margin-bottom: .5em;
-      height: auto;
-      min-height: 4em;
+  height: auto;
+  min-height: 4em;
 
 }
 
@@ -2186,26 +2186,26 @@ span.heading {
 }
 
 .childrenBlocks, .consentBlocks, .parentInfoBlocks, .teacherListBlocks, .teacherSurveyBlocks  {
-    margin-bottom: 1em;
-    background: white;
-    padding: 1em 0em;
-    -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    position: relative;
+  margin-bottom: 1em;
+  background: white;
+  padding: 1em 0em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
 }
- /* .childrenAttr, .childrenBlocks, .parentInfo, .parentInfoBlocks {
-  overflow-x: scroll;
- overflow-y: hidden;
+/* .childrenAttr, .childrenBlocks, .parentInfo, .parentInfoBlocks {
+overflow-x: scroll;
+overflow-y: hidden;
 } */
 
 .barWrapper  {
   overflow-x: scroll;
- overflow-y: hidden;
- padding: 0em 2em;
+  overflow-y: hidden;
+  padding: 0em 2em;
 }
 
- .btn-group.parentConsentButtons {
+.btn-group.parentConsentButtons {
   max-width:400px;
 
 }
@@ -2214,105 +2214,105 @@ span.heading {
 }
 
 .teacherSurveyBlocks p.surveyStatus {
-    line-height: 1.7 !important;
+  line-height: 1.7 !important;
 }
 
 .school-coordinator-to-do
 .tlModals .btn-primary:not(:disabled):not(.disabled) {
-    color: #00539f !important;
+  color: #00539f !important;
 }
 
 .school-coordinator-to-do
 .tlModals .btn-primary:not(:disabled):not(.disabled).active {
-    color: white !important;
+  color: white !important;
 }
 
 
 @media (min-width: 992px) {
- .consentBlocks .wider {
+  .consentBlocks .wider {
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 10.333333%;
     max-width: 10.333333%;
-}
+  }
 
-.paddingLeft2 {
-  padding-left:2em
-}
-.paddingLeft3 {
-  padding-left:3em
-}
+  .paddingLeft2 {
+    padding-left:2em
+  }
+  .paddingLeft3 {
+    padding-left:3em
+  }
 
-.paddingLeft4 {
-  padding-left:4em
-}
-.mLnegative1 {
-  margin-left:-1em !important
-}
-.mLnegative2{
+  .paddingLeft4 {
+    padding-left:4em
+  }
+  .mLnegative1 {
+    margin-left:-1em !important
+  }
+  .mLnegative2{
     margin-left:-2em !important
-}
+  }
 
-.eightyPercent {
-width: 80%;
-margin-left: 20% !important;
-}
+  .eightyPercent {
+    width: 80%;
+    margin-left: 20% !important;
+  }
 
-.ml1 {
-  margin-left:.4em !important
-}
+  .ml1 {
+    margin-left:.4em !important
+  }
 
-.moveLeft{
-  text-align: center;
-  margin-left: -5em;
-  margin-right: 6.4em;
+  .moveLeft{
+    text-align: center;
+    margin-left: -5em;
+    margin-right: 6.4em;
 
-}
+  }
 
-.teacherSurveyBlocks .percentageCircle {
+  .teacherSurveyBlocks .percentageCircle {
     margin-left: 0em;
-}
+  }
 
-.seventyPercent {
-width: 80%;
-margin-left: 20% !important;
-}
+  .seventyPercent {
+    width: 80%;
+    margin-left: 20% !important;
+  }
 
-.biggerWidth{
-  width:115%;
-}
+  .biggerWidth{
+    width:115%;
+  }
 
-.mlHalf{
-  margin-left:.5em
-}
-.parentInfoBlocks p, .teacherSurveyBlocks p{
-  line-height: 1 !important
-}
+  .mlHalf{
+    margin-left:.5em
+  }
+  .parentInfoBlocks p, .teacherSurveyBlocks p{
+    line-height: 1 !important
+  }
 
-.teacherSurveyBlocks p.surveyStatus {
+  .teacherSurveyBlocks p.surveyStatus {
     line-height: 1.7 !important;
-}
+  }
 
-.parentInfoBlocks p.surveyStatus{
-  line-height:1.7 !important
-}
+  .parentInfoBlocks p.surveyStatus{
+    line-height:1.7 !important
+  }
 
-.marginNegPos2{
-margin-left: -2em;
-margin-right: 2em;
-}
+  .marginNegPos2{
+    margin-left: -2em;
+    margin-right: 2em;
+  }
 
 
 
-/* .childrenAttr .col-lg-2, .childrenBlocks .col-lg-2, .parentInfo .col-lg-2, .parentInfoBlocks  .col-lg-2 {
-    -ms-flex: 0 0 16.666667%;
-    flex: 0 0 20.666667%;
-    max-width: 20.666667%;
+  /* .childrenAttr .col-lg-2, .childrenBlocks .col-lg-2, .parentInfo .col-lg-2, .parentInfoBlocks  .col-lg-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 20.666667%;
+  max-width: 20.666667%;
 }
 
 .childrenAttr .col-lg-1, .childrenBlocks .col-lg-1,  .parentInfo .col-lg-1, .parentInfoBlocks  .col-lg-1{
-    -ms-flex: 0 0 8.333333%;
-    flex: 0 0 12.333333%;
-    max-width: 12.333333%;
+-ms-flex: 0 0 8.333333%;
+flex: 0 0 12.333333%;
+max-width: 12.333333%;
 } */
 .childrenBlocks, .parentInfoBlocks {
   flex-wrap: nowrap;
@@ -2332,8 +2332,8 @@ margin-right: 2em;
 
 
 .whiteBlocks .plum {
-    width: 70%;
-    line-height: 1.2
+  width: 70%;
+  line-height: 1.2
 }
 
 .blueCircle3 {
@@ -3434,14 +3434,14 @@ h6.plum {
 
 }
 .infoBar.greenBar img {
-    max-width: 7em;
-    margin-left: 4em;
+  max-width: 7em;
+  margin-left: 4em;
 }
 
 
 .infoBar.greenBar .white {
-    color: white;
-    width: 80%;
+  color: white;
+  width: 80%;
 }
 
 
@@ -7072,19 +7072,19 @@ font-family: 'Public Sans', sans-serif;
   }
 
   .addBlocks p.black {
-      text-align: left;
-      line-height: 1.1;
-      margin-bottom: 1em;
+    text-align: left;
+    line-height: 1.1;
+    margin-bottom: 1em;
   }
   .updateBlocks p.black {
     text-align: left;
     margin-bottom: 1em;
-}
-.box-outer {
+  }
+  .box-outer {
 
     overflow: visible;
     overflow-x: visible;
-}
+  }
 
 }
 
@@ -8019,27 +8019,27 @@ transform: scale(0.8);
 
   .lightGreen.p-5 {
     padding: 1rem 2rem !important;
-}
-.whiteBlocks .plum {
+  }
+  .whiteBlocks .plum {
     width: 80%;
     line-height: 1.2;
-}
+  }
 
-.grayAbsoluteLine {
+  .grayAbsoluteLine {
     top: 5em;
-}
-.moveLeft {
+  }
+  .moveLeft {
     text-align: center;
     margin-left: -4em;
     margin-right: 5.5em;
-}
+  }
 
-.school-coordinator-to-do  .sAdminDate, .teacherEmail{
-  width:135%;
-}
-.btn-group.parentConsentButtons {
+  .school-coordinator-to-do  .sAdminDate, .teacherEmail{
+    width:135%;
+  }
+  .btn-group.parentConsentButtons {
     max-width: 300px;
-}
+  }
 
 
 }
@@ -8058,41 +8058,41 @@ transform: scale(0.8);
 
   .lightGreen.p-5 {
     padding: 1rem 2rem !important;
-}
-.whiteBlocks .plum {
+  }
+  .whiteBlocks .plum {
     width: 80%;
     line-height: 1.2;
-}
-.barWrapper {
+  }
+  .barWrapper {
     overflow-x: visible;
     overflow-y: visible;
     padding: 0em 0em;
-}
+  }
 
-.childrenBlocks p.black {
+  .childrenBlocks p.black {
     text-align: left;
     line-height: 1;
     margin-bottom: 1em;
-}
+  }
 
-.optionGroup {
+  .optionGroup {
     flex-direction: column !important;
     margin-bottom: 2em !important;
     margin-top: 1em !important;
-}
+  }
 
-.consentBlocks .ml-3 {
+  .consentBlocks .ml-3 {
     margin-left: 0rem !important;
-}
+  }
 
-.updateParentConsent {
+  .updateParentConsent {
     margin: 1em 0em !important;
-}
+  }
 
-.school-coordinator-to-do .appendedName, .school-coordinator-to-do .appendedTitle{
+  .school-coordinator-to-do .appendedName, .school-coordinator-to-do .appendedTitle{
 
-  margin-bottom:0em !important
-}
+    margin-bottom:0em !important
+  }
 
   .renderSchoolList .addBlocks {
     display: flex !important;
@@ -8172,37 +8172,44 @@ transform: scale(0.8);
     margin-left:25%
   }
 
-  .consentBlocks .one {
+  .consentBlocks .one, .teacherSurveyBlocks .one {
     margin-bottom: 1em;
     margin: 0em !important;
-}
-.consentBlocks .one label::before{
-  top: -10px;
-}
+  }
+  .consentBlocks .one label::before, .teacherSurveyBlocks .one label::before{
+    top: -10px;
+  }
 
-.consentBlocks .one label::after{
-  top: -15px;
-}
+  .consentBlocks .one label::after, .teacherSurveyBlocks .one label::after{
+    top: -15px;
+  }
 
-.consentBlocks .col-md-6{
-  margin-bottom:1em
-}
-.childrenBlocks .col-md-6 {
-
-    margin-bottom: 1em;
-}
-
-.parentInfoBlocks .col-md-6 {
+  .consentBlocks .col-md-6{
+    margin-bottom:1em
+  }
+  .childrenBlocks .col-md-6 {
 
     margin-bottom: 1em;
-}
-.parentInfoBlocks .percentageCircle {
+  }
+
+  .parentInfoBlocks .col-md-6 {
+
+    margin-bottom: 1em;
+  }
+  .teacherSurveyBlocks .col-md-6 {
+
+    margin-bottom: 1em;
+  }
+  .parentInfoBlocks .percentageCircle, .teacherSurveyBlocks .percentageCircle{
     margin-bottom: -2.4em;
     margin-top: 0em;
-}
-.parentInfoBlocks  .col-md-6:nth-of-type(9){
-  margin-top:2.4em !important
-}
+  }
+
+
+
+  .parentInfoBlocks  .col-md-6:nth-of-type(9){
+    margin-top:2.4em !important
+  }
 
 
 }
@@ -8224,7 +8231,77 @@ transform: scale(0.8);
   .addBlocks p.black {
     text-align: left;
     line-height: 1.1;
-}
+  }
+
+  .school-coordinator-to-do .sAdmin .col-xs-6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .consentBlocks .one, .teacherSurveyBlocks .one {
+    margin-bottom: 1em;
+    margin: 0em !important;
+  }
+  .consentBlocks .one label::before, .teacherSurveyBlocks .one label::before{
+    top: -10px;
+  }
+
+  .consentBlocks .one label::after, .teacherSurveyBlocks .one label::after{
+    top: -15px;
+  }
+
+  .consentBlocks .col-md-6{
+    margin-bottom:1em
+  }
+  .childrenBlocks .col-md-6 {
+
+    margin-bottom: 1em;
+  }
+
+  .parentInfoBlocks .col-md-6 {
+
+    margin-bottom: 1em;
+  }
+  .teacherSurveyBlocks .col-md-6 {
+
+    margin-bottom: 1em;
+  }
+  .teacherListBlocks .col-md-6 {
+
+    margin-bottom: 1em;
+  }
+
+
+  .teacherSurveyBlocks .percentageCircle{
+    margin-bottom: 0em;
+    margin-top: 0em;
+  }
+
+  .parentAddress, .parentEmail, .teacherEmail{
+    line-height:1 !important
+  }
+  .parentInfoBlocks .childid{
+    margin-bottom:0em !important
+  }
+
+
+  .parentInfoBlocks .col-xs-6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .teacherListBlocks .col-xs-6 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .school-coordinator-to-do .margin2 {
+
+    margin-top: 0em !important;
+  }
 
   .schoolBanner {
     margin-top: 0em;
@@ -8304,8 +8381,8 @@ transform: scale(0.8);
     max-width: 7em;
     margin-left: 0em;
     margin-top: 1em;
-}
-.infoBar.greenBar {
+  }
+  .infoBar.greenBar {
     margin-bottom: 0em;
     background: #00843D;
     padding: 2.5em 1em 1em 1em;
@@ -8314,22 +8391,22 @@ transform: scale(0.8);
     flex-direction: column;
     align-items: center !important;
     margin-top: 4em !important;
-}
-.infoBar.greenBar .white {
+  }
+  .infoBar.greenBar .white {
     color: white;
     width: 100%;
     text-align: center;
-}
-.infoBar.greenBar:first-of-type{
-  margin-top:2em !important
-}
+  }
+  .infoBar.greenBar:first-of-type{
+    margin-top:2em !important
+  }
 
-.inner {
+  .inner {
     line-height: 27px;
 
-}
+  }
 
-.greenCircle.whiteColor {
+  .greenCircle.whiteColor {
     position: absolute;
     border-radius: 50%;
     border: 4px solid #00843D;
@@ -8339,7 +8416,7 @@ transform: scale(0.8);
     left: calc(50% - 2rem);
     box-shadow: none;
     top: -2em;
-}
+  }
 
   .assessment .l2 {
     margin-left: 0;
@@ -9939,7 +10016,7 @@ body{
     font-family: 'Public Sans', sans-serif;
     font-weight: 500;
 
-  font-size: .88em;
+    font-size: .88em;
     margin-right:0em;
   }
 
@@ -9958,21 +10035,21 @@ body{
     width: 60px;
   }
 
-.lightGreen .pl-5 {
+  .lightGreen .pl-5 {
     padding-left: 1rem !important;
-}
-.lightGreen .pr-5 {
+  }
+  .lightGreen .pr-5 {
     padding-right: 1rem !important;
-}
+  }
 
   .newBlocks .col-xs-6 {
     display: flex;
     align-items: baseline;
   }
-.optionGroup{
+  .optionGroup{
     flex-direction: column !important;
-      margin-bottom: 2em !important;
-      margin-top:1em !important
+    margin-bottom: 2em !important;
+    margin-top:1em !important
   }
 
   .filter-attr-list .flip {
@@ -10088,40 +10165,40 @@ body{
   }
 
   /* .newBlocks {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-} */
-.appendedName, .appendedTitle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  } */
+  .appendedName, .appendedTitle {
     margin-bottom: 0em !important;
-}
+  }
 
-.updateParentConsent{
-      margin: 1em 0em !important;
-}
+  .updateParentConsent{
+    margin: 1em 0em !important;
+  }
 
-.consentBlocks .col-xs-6, .parentInfoBlocks .col-xs-6 {
+  .consentBlocks .col-xs-6 {
     display: flex;
     flex-direction: column;
     width: 50%;
-}
+  }
 
-.consentBlocks .ml-3{
-  margin-left:0em !important
-}
-.childrenBlocks p.black {
+  .consentBlocks .ml-3{
+    margin-left:0em !important
+  }
+  .childrenBlocks p.black {
     text-align: left;
     line-height: 1;
     margin-bottom: 1em;
-}
-.barWrapper {
+  }
+  .barWrapper {
     overflow-x: visible;
     overflow-y: visible;
     padding: 0em 0em;
-}
+  }
 
 
   .teacherAttr, .childAttr, .topAttr {
