@@ -2234,15 +2234,22 @@ span.heading {
     flex: 0 0 10.333333%;
     max-width: 10.333333%;
 }
-.marginLeft2 {
-  margin-left:2em
+
+.paddingLeft2 {
+  padding-left:2em
+}
+.paddingLeft3 {
+  padding-left:3em
 }
 
-.marginLeft2 {
-  margin-left:2em
+.paddingLeft4 {
+  padding-left:4em
 }
 .mLnegative1 {
   margin-left:-1em !important
+}
+.mLnegative2{
+    margin-left:-2em !important
 }
 
 .eightyPercent {
@@ -2251,13 +2258,18 @@ margin-left: 20% !important;
 }
 
 .ml1 {
-  margin-left:1em !important
+  margin-left:.4em !important
 }
 
 .moveLeft{
   text-align: center;
-  margin-left: -7em;
-margin-right: 5.5em;
+  margin-left: -5em;
+  margin-right: 6.4em;
+
+}
+
+.teacherSurveyBlocks .percentageCircle {
+    margin-left: 0em;
 }
 
 .seventyPercent {
@@ -3416,11 +3428,22 @@ h6.plum {
 .infoBar.greenBar {
   margin-bottom:1em;
   background: #00843D;
-  padding: 2em .5em 2em 1.5em;
+  padding: 1em .5em 1em 1.5em;
   box-shadow:none;
   position: relative;
 
 }
+.infoBar.greenBar img {
+    max-width: 7em;
+    margin-left: 4em;
+}
+
+
+.infoBar.greenBar .white {
+    color: white;
+    width: 80%;
+}
+
 
 .greenCircle.whiteColor {
   position: absolute;
@@ -8181,6 +8204,47 @@ transform: scale(0.8);
 
   }
 
+  .infoBar.greenBar img {
+    max-width: 7em;
+    margin-left: 0em;
+    margin-top: 1em;
+}
+.infoBar.greenBar {
+    margin-bottom: 0em;
+    background: #00843D;
+    padding: 2.5em 1em 1em 1em;
+    box-shadow: none;
+    position: relative;
+    flex-direction: column;
+    align-items: center !important;
+    margin-top: 4em !important;
+}
+.infoBar.greenBar .white {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.infoBar.greenBar:first-of-type{
+  margin-top:2em !important
+}
+
+.inner {
+    line-height: 27px;
+
+}
+
+.greenCircle.whiteColor {
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #00843D;
+    background: white;
+    height: 4rem;
+    width: 4rem;
+    left: calc(50% - 2rem);
+    box-shadow: none;
+    top: -2em;
+}
+
   .assessment .l2 {
     margin-left: 0;
   }
@@ -9779,7 +9843,7 @@ body{
     font-family: 'Public Sans', sans-serif;
     font-weight: 500;
 
-    font-size: .74em;
+  font-size: .88em;
     margin-right:0em;
   }
 
@@ -9798,14 +9862,22 @@ body{
     width: 60px;
   }
 
-
+.lightGreen .pl-5 {
+    padding-left: 1rem !important;
+}
+.lightGreen .pr-5 {
+    padding-right: 1rem !important;
+}
 
   .newBlocks .col-xs-6 {
     display: flex;
     align-items: baseline;
   }
-
-
+.optionGroup{
+    flex-direction: column !important;
+      margin-bottom: 2em !important;
+      margin-top:1em !important
+  }
 
   .filter-attr-list .flip {
     display: none;
@@ -9896,7 +9968,8 @@ body{
   }
 
   .back-to-top {
-    display: none;
+    /* display: none; */
+    right:.4rem
   }
 
   h6.white {
@@ -9917,6 +9990,43 @@ body{
     top: 37px;
     width: 100%;
   }
+
+  /* .newBlocks {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} */
+.appendedName, .appendedTitle {
+    margin-bottom: 0em !important;
+}
+
+.updateParentConsent{
+      margin: 1em 0em !important;
+}
+
+.consentBlocks .col-xs-6, .parentInfoBlocks .col-xs-6 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.consentBlocks .ml-3{
+  margin-left:0em !important
+}
+.childrenBlocks p.black {
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+.barWrapper {
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0em 0em;
+}
+
 
   .teacherAttr, .childAttr, .topAttr {
 
