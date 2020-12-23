@@ -8017,6 +8017,31 @@ transform: scale(0.8);
 
   }
 
+  .lightGreen.p-5 {
+    padding: 1rem 2rem !important;
+}
+.whiteBlocks .plum {
+    width: 80%;
+    line-height: 1.2;
+}
+
+.grayAbsoluteLine {
+    top: 5em;
+}
+.moveLeft {
+    text-align: center;
+    margin-left: -4em;
+    margin-right: 5.5em;
+}
+
+.school-coordinator-to-do  .sAdminDate, .teacherEmail{
+  width:135%;
+}
+.btn-group.parentConsentButtons {
+    max-width: 300px;
+}
+
+
 }
 
 
@@ -8030,6 +8055,45 @@ transform: scale(0.8);
 }
 
 @media (max-width:991px) and (min-width:768px) {
+
+  .lightGreen.p-5 {
+    padding: 1rem 2rem !important;
+}
+.whiteBlocks .plum {
+    width: 80%;
+    line-height: 1.2;
+}
+.barWrapper {
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0em 0em;
+}
+
+.childrenBlocks p.black {
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+.optionGroup {
+    flex-direction: column !important;
+    margin-bottom: 2em !important;
+    margin-top: 1em !important;
+}
+
+.consentBlocks .ml-3 {
+    margin-left: 0rem !important;
+}
+
+.updateParentConsent {
+    margin: 1em 0em !important;
+}
+
+.school-coordinator-to-do .appendedName, .school-coordinator-to-do .appendedTitle{
+
+  margin-bottom:0em !important
+}
+
   .renderSchoolList .addBlocks {
     display: flex !important;
     padding-left: 1em;
@@ -8107,6 +8171,38 @@ transform: scale(0.8);
     width: 50%;
     margin-left:25%
   }
+
+  .consentBlocks .one {
+    margin-bottom: 1em;
+    margin: 0em !important;
+}
+.consentBlocks .one label::before{
+  top: -10px;
+}
+
+.consentBlocks .one label::after{
+  top: -15px;
+}
+
+.consentBlocks .col-md-6{
+  margin-bottom:1em
+}
+.childrenBlocks .col-md-6 {
+
+    margin-bottom: 1em;
+}
+
+.parentInfoBlocks .col-md-6 {
+
+    margin-bottom: 1em;
+}
+.parentInfoBlocks .percentageCircle {
+    margin-bottom: -2.4em;
+    margin-top: 0em;
+}
+.parentInfoBlocks  .col-md-6:nth-of-type(9){
+  margin-top:2.4em !important
+}
 
 
 }
