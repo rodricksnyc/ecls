@@ -1878,6 +1878,10 @@ a.darkBlue:hover{
   text-decoration: underline;
 }
 
+a:hover .darkBlue{
+  text-decoration: underline;
+}
+
 .logo {
   min-width: 15em;
 }
