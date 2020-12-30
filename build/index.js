@@ -2899,12 +2899,17 @@ $(document).ready(function () {
 		$('.showBlocks').children().show();
 	}
 
-	if ($(document).innerWidth() <= 1200) {
+	// if ($(document).innerWidth() <= 1200) {
+	//
+	//
+	//
+	// 	$('.logoutOptions .tangerineBox .plum').html('<i class="fas fa-user slate"></i>')
+	// 	$('.logoutOptions .slate:eq(0)').html('<i class="fas fa-home slate"></i>')
+	// 	$('.logoutOptions  .slate.borderLeft').html('<i class="fas fa-sign-out-alt slate"></i>')
+	//
+	//
+	// }
 
-		$('.logoutOptions .tangerineBox .plum').html('<i class="fas fa-user slate"></i>');
-		$('.logoutOptions .slate:eq(0)').html('<i class="fas fa-home slate"></i>');
-		$('.logoutOptions  .slate.borderLeft').html('<i class="fas fa-sign-out-alt slate"></i>');
-	}
 
 	if ($(document).innerWidth() <= 767) {
 		$('#feedbackModal').on('hidden.bs.modal', function (e) {
@@ -2919,19 +2924,13 @@ $(document).ready(function () {
 
 		$('li[data-target="#overview"]').removeClass('activated');
 
-		$('.logo:eq(1)').css({
-			'max-width': '3em',
-			'margin-left': '-.7em'
-		});
-
-		$('.openTab .plum').html('<i class="fas fa-envelope"></i>');
 		$('#one').css('right', '-20px');
 
-		$('.tangerineBox .plum').html('<i class="fas fa-user slate"></i>');
-		$('.whiteBox .slate:eq(0)').html('<i class="fas fa-home slate"></i>');
-		$('.whiteBox .slate.borderLeft').html('<i class="fas fa-sign-out-alt slate"></i>');
-		$('.logo:eq(0)').attr('src', "images/ies-mobile.svg");
-		$('.logo:eq(1)').attr('src', "images/ed-mobile.svg");
+		// $('.tangerineBox .plum').html('<i class="fas fa-user slate"></i>')
+		// $('.whiteBox .slate:eq(0)').html('<i class="fas fa-home slate"></i>')
+		// $('.whiteBox .slate.borderLeft').html('<i class="fas fa-sign-out-alt slate"></i>')
+		// $('.openTab .plum').html('<i class="fas fa-envelope"></i>')
+
 
 		$(window).on('scroll', function () {
 
@@ -3016,14 +3015,6 @@ $(document).ready(function () {
 				$('li[data-target="#info"]').removeClass('activated');
 				$('li[data-target="#info"]').removeClass('activated');
 			}
-		});
-	}
-
-	if ($(document).innerWidth() <= 320) {
-
-		$('.logo:eq(1)').css({
-			'max-width': '3em',
-			'margin-left': '-.3em'
 		});
 	}
 

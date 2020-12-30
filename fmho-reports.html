@@ -73,15 +73,25 @@
 				<section class="block0">
 					<div class="heros" id="home">
 						<header class="landing d-flex">
-							<div class="logos d-flex justify-content-start align-items-center">
+							<div class="logos desktopOnly d-flex justify-content-start align-items-center">
 								<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
 
-								<div class="flipTop"></div>
+									<div class="flipTop"></div>
 
 								<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
 							</div>
 
-							<div class="end">
+							<div class="logos mobileOnly d-flex justify-content-start align-items-center">
+								<a tabindex="0" href="https://ies.ed.gov/" target="_blank">
+									<img src="images/ies-mobile.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo">
+								</a>
+
+									<div class="flipTop"></div>
+
+								<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ed-mobile.svg" class="img-responsive logo" alt="US Department of Education Logo" style="max-width: 3em; margin-left: -0.7em;"></a>
+							</div>
+
+							<div class="end desktopOnly">
 								<div class="whiteBox d-flex justify-content-between align-items-center">
 
 									<a class="slate" href="" role="button" tabindex="0" aria-label="Access ECLS home">
@@ -93,9 +103,26 @@
 										</div>
 									</a>
 
-									<a class="slate" href="" role="button" tabindex="0" aria-label="Logout"><p class="slate borderLeft">Logout<p></a>
+									<a class="slate" href="" role="button" tabindex="0"  aria-label="Logout"><p class="slate borderLeft">Logout<p></a>
 
 									</div>
+								</div>
+
+								<div class="end mobileOnly">
+								<div class="whiteBox d-flex justify-content-between align-items-center">
+
+									<a class="slate" href="" role="button" tabindex="0" aria-label="Access ECLS home">
+										<i class="fas fa-home slate"></i>
+									</a>
+									<a href="" role="button" tabindex="0" aria-label="Access portal">
+										<div class="tangerineBox">
+											<p class="plum"><i class="fas fa-user slate"></i></p>
+										</div>
+									</a>
+
+									<a class="slate" href="" role="button" tabindex="0" aria-label="Logout"><p class="slate borderLeft"><i class="fas fa-sign-out-alt slate"></i></p></a><p><a class="slate" href="" role="button" tabindex="0" aria-label="Logout"></a>
+
+									</p></div>
 								</div>
 							</header>
 							<div class="tlBanner blue noMargin">

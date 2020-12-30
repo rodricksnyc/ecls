@@ -309,7 +309,7 @@ textarea::placeholder {
 }
 
 .noMargin {
-  margin-top:0em
+  margin-top:0em !important
 }
 
 
@@ -1863,15 +1863,20 @@ h2 {
 
 
 body  {
-  /* font-family: "Times New Roman", Times, serif; */
-  /* font-family: 'PublicoText'; */
+
   word-break: break-word;
   transition: 0.4s all;
   font-family: kepler-std, serif;
   font-weight: 500;
   font-style: normal;
 }
+.mobileOnly{
+  display: none !important;
+}
 
+a.darkBlue:hover{
+  text-decoration: underline;
+}
 
 .logo {
   min-width: 15em;
@@ -5054,8 +5059,8 @@ transform: scale(0.9);
 }
 #slideOut {
   position: fixed;
-  /* right:-100%; */
-  right: -505px;
+
+  right: -800px;
   transition-property: all;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -8107,6 +8112,15 @@ transform: scale(0.8);
 
 @media (max-width:991px) and (min-width:768px) {
 
+  .flipTop {
+    height: 37px;
+
+  }
+
+  .landing{
+    padding-bottom: .5em !important;
+  }
+
   .lightGreen.p-5 {
     padding: 1rem 2rem !important;
   }
@@ -10028,6 +10042,19 @@ body{
   .across {
     flex-direction: column;
   }
+
+  .mobileOnly{
+    display: flex !important;
+  }
+
+  .mobileOnly .logo:nth-of-type(2){
+    max-width:3em
+  }
+
+  .desktopOnly{
+    display: none !important
+  }
+
 
   .sAdminAttr {
     display: none !important;

@@ -153,19 +153,27 @@
 
 
 					<header class="landing d-flex">
-						<div class="logos d-flex justify-content-start align-items-center">
+						<div class="logos desktopOnly d-flex justify-content-start align-items-center">
 							<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
 
 							<div class="flipTop"></div>
 
 							<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="U.S. Department of Education seal"></a>
 						</div>
+						<div class="logos mobileOnly d-flex justify-content-start align-items-center">
+							<a tabindex="0" href="https://ies.ed.gov/" target="_blank">
+								<img src="images/ies-mobile.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo">
+							</a>
+
+								<div class="flipTop"></div>
+
+							<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ed-mobile.svg" class="img-responsive logo" alt="US Department of Education Logo" style="max-width: 3em; margin-left: -0.7em;"></a>
+						</div>
 
 
+					 <div class="end desktopOnly notOnTablet logoutOptions">
 
-						<div class="end logoutOptions">
-
-							<div class=" d-flex justify-content-between align-items-center">
+							<div class="d-flex justify-content-between align-items-center">
 
 								<a class="slate" href="" role="button" tabindex="0" aria-describedby="Access ECLS home" aria-label="Access ECLS home">
 									<p class="slate">my ECLSHome</p>
@@ -193,6 +201,40 @@
 								<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
 
 									<p class="language">Espa&ntilde;ol</p>
+
+								</a>
+
+							</div>
+						</div>
+
+						<div class="end largeTablet logoutOptions">
+
+							<div class="d-flex justify-content-between align-items-center">
+
+								<a class="slate" href="" role="button" tabindex="0" aria-describedby="Access ECLS home" aria-label="Access ECLS home"><i class="fas fa-home slate"></i></a>
+								<a href="" role="button" tabindex="0" aria-describedby="Access portal" aria-label="Access portal">
+									<div class="tangerineBox">
+										<p class="plum"><i class="fas fa-user slate"></i></p>
+									</div>
+								</a>
+
+								<a class="slate" href="" role="button" tabindex="0" aria-describedby="Logout" aria-label="Logout">
+									<p class="slate borderLeft"><i class="fas fa-sign-out-alt slate"></i></p></a><p><a class="slate" href="" role="button" tabindex="0" aria-describedby="Logout" aria-label="Logout">
+									</a>
+
+								</p></div>
+							<div class="d-flex justify-content-between align-items-center">
+
+
+								<a id="ingles" href="file:///Users/elizabeth/Documents/ecls/landing.html" class="english activeDot notranslate" data-lang="en" tabindex="0" aria-hidden="false" role="button" translate="no" onclick="loadGoogleTranslate()">
+
+									<p class="language notranslate" translate="no">EN</p>
+
+								</a>
+
+								<a id="espanol" href="#googtrans(en|es)" class="lang-es lang-select spanish inactiveDot" data-lang="es" tabindex="0" aria-hidden="false" role="button" onclick="loadGoogleTranslate()">
+
+									<p class="language">ES</p>
 
 								</a>
 
