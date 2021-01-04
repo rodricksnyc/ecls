@@ -3465,7 +3465,7 @@ if ($(document).innerWidth() <= 767) {
 
 	$('li[data-target="#overview"]').removeClass('activated')
 
-
+	$('.openTab .plum').html('<i class="fas fa-envelope"></i>')
 
 	$('#one').css('right', '-20px')
 

@@ -2924,6 +2924,8 @@ $(document).ready(function () {
 
 		$('li[data-target="#overview"]').removeClass('activated');
 
+		$('.openTab .plum').html('<i class="fas fa-envelope"></i>');
+
 		$('#one').css('right', '-20px');
 
 		// $('.tangerineBox .plum').html('<i class="fas fa-user slate"></i>')
