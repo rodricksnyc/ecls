@@ -2218,7 +2218,7 @@ span.heading {
 
 .btn-group.parentConsentButtons {
   max-width:400px;
-
+  margin:0em 1em
 }
 .parentInfoBlocks p.surveyStatus{
   line-height:1.7 !important
@@ -2277,6 +2277,10 @@ span.heading {
     margin-left:.4em !important
   }
 
+  .ml15{
+        margin-left: 15% !important;
+  }
+
   .moveLeft{
     text-align: center;
     margin-left: -4em;
@@ -2288,10 +2292,19 @@ span.heading {
     margin-left: 0em;
   }
 
-  .seventyPercent {
-    width: 80%;
-    margin-left: 20% !important;
+  .seventyEight {
+    width: 78%;
+    margin-left: 22% !important;
   }
+
+  .margin43 {
+    margin-left: 4em;
+    margin-right: -3em;
+}
+  .margin31 {
+margin-left: 3em;
+margin-right: -1em;
+}
 
   .biggerWidth{
     width:115%;

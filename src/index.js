@@ -5185,31 +5185,36 @@ $(".scrollIt").on("click", function(event) {
 
 
 	$('.seeSchool').click(function (){
-
+		var divPosition = $('#anchorPoint').offset();
+		$('html, body').animate({scrollTop: divPosition.top}, 800);
 		$('[href="#tab4"]').tab('show');
 
 	})
 
 	$('.seeDocuments').click(function (){
-
+		var divPosition = $('#anchorPoint').offset();
+		$('html, body').animate({scrollTop: divPosition.top}, 800);
 		$('[href="#tab3"]').tab('show');
 
 	})
 
 	$('.seeCInfo').click(function (){
-
+		var divPosition = $('#anchorPoint').offset();
+		$('html, body').animate({scrollTop: divPosition.top}, 800);
 		$('[href="#tab5"]').tab('show');
 
 	})
 	$('.seePInfo').click(function (){
-
+		var divPosition = $('#anchorPoint').offset();
+		$('html, body').animate({scrollTop: divPosition.top}, 800);
 		$('[href="#tab6"]').tab('show');
 
 	})
 
 
 	$('.seeTInfo').click(function (){
-
+		var divPosition = $('#anchorPoint').offset();
+		$('html, body').animate({scrollTop: divPosition.top}, 800);
 		$('[href="#tab7"]').tab('show');
 
 	})

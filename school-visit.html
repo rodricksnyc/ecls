@@ -166,7 +166,6 @@
 								<div class="modal-body">
 
 									<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
-
 										<div class="form-group">
 											<label for="formControl1">Name</label>
 											<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
@@ -233,8 +232,6 @@
 						</div>
 
 						<div class="contactUsOverlay"></div>
-
-
 						<div class="container_0">
 
 							<section class="school-coordinator-to-do">
@@ -247,6 +244,7 @@
 
 
 										<div class="box-outer tlModals">
+												<div id="anchorPoint"></div>
 
 											<div class="grayBox sc second mt-5">
 												<ul class="nav nav-tabs" role="tablist" id="mytabs">
@@ -258,16 +256,16 @@
 														<a class="nav-link active text-center" data-type="prepare" data-toggle="tab" href="#tab2" role="tab">Prepare for the School Visit</a>
 													</li>
 													<li class="nav-item">
-														<a class="nav-link  text-center" data-type="documents" data-toggle="tab" href="#tab3" role="tab">Documents</a>
+														<a class="nav-link text-center" data-type="documents" data-toggle="tab" href="#tab3" role="tab">Documents</a>
 													</li>
 													<li class="nav-item">
-														<a class="nav-link  text-center" data-toggle="tab" href="#tab4" role="tab" data-type="sInfo">School Info</a>
+														<a class="nav-link text-center" data-toggle="tab" href="#tab4" role="tab" data-type="sInfo">School Info</a>
 													</li>
 													<li class="nav-item">
-														<a class="nav-link  text-center" data-toggle="tab" href="#tab5" role="tab" data-type="cInfo">Child Info</a>
+														<a class="nav-link text-center" data-toggle="tab" href="#tab5" role="tab" data-type="cInfo">Child Info</a>
 													</li>
 													<li class="nav-item">
-														<a class="nav-link  text-center" data-toggle="tab" href="#tab6" role="tab" data-type="pInfo">Parent Info</a>
+														<a class="nav-link text-center" data-toggle="tab" href="#tab6" role="tab" data-type="pInfo">Parent Info</a>
 													</li>
 
 													<li class="nav-item">
@@ -341,7 +339,7 @@
 																		<button type="submit" class="btn blueButton uploadChildList" tabindex="0" aria-hidden="false" role="button" aria-describedby="Upload Child List" onclick="jQuery('.given').removeClass('hidden')">UPLOAD CHILD LIST <i class="fas fa-upload"></i></button>
 																	</div>
 
-																	<p class="charcoal">If you cannot submit your child list with this information in an Excel file, please email the ECLS team at <a href="mailto:ECLS@westat.com" class="darkBlue"><i class="fas fa-envelope"></i> ECLS@westat.com</a> or call <span class="darkBlue">1-855-898-2018</span>.</p>
+																	<p class="charcoal">If you cannot submit your child list with this information in an Excel file, please email the ECLS team at <a class="darkBlue" href="mailto:ECLS@westat.com"><i class="fas fa-envelope"></i> ECLS@westat.com</a> or call <span class="darkBlue"><i class="fas fa-phone"></i> 1-855-898-2018</span></p>
 
 
 																	<div class="given hidden">
@@ -354,9 +352,6 @@
 
 																		<p class="charcoal text-center">You will receive an email when the list of children selected for the study has been uploaded to the system.</p>
 																		<p class="charcoal text-center">If you would like to modify your submission or have problems with your list, please contact the ECLS team at <a href="mailto:ECLS@westat.com" class="darkBlue"> ECLS@westat.com</a> or <span class="darkBlue">1-855-898-2018</span>.</p>
-
-
-
 
 
 																	</div>
@@ -442,12 +437,12 @@
 																	<p class="greenFont"><b>Encouraging school administrator and teacher support:</b></p>
 																	<ul class="greenDots">
 																		<li>Share informational materials from the ECLS with staff selected for the study.</li>
-																		<li>Encourage the school administrator [DISPLAY LINK TO SCHOOL INFO TAB] and teachers [DISPLAY LINK TO TEACHER INFO TAB] to complete their web surveys.</li>
+																		<li>Encourage the <a class="seeSchool"><span class="darkBlue">school administrator</span></a> and <a class="seeTInfo"><span class="darkBlue">teachers</span></a> to complete their web surveys.</li>
 																	</ul>
 
 																	<p class="greenFont"><b>Motivating parents to participate:</b></p>
 																	<ul class="greenDots">
-																		<li>Reach out to <a href="" class="darkBlue">parents</a> who have not provided consent to discuss the importance of the study and of providing consent prior to the school visit.</li>
+																		<li>Reach out to <a class="seePInfo"><span class="darkBlue">parents</span></a> who have not provided consent to discuss the importance of the study and of providing consent prior to the school visit.</li>
 																		<li>Encourage parents to complete their web surveys.</li>
 																	</ul>
 
@@ -943,14 +938,14 @@
 																	<div class="toggleDiv">
 
 																		<div class="sAdminAttr d-flex align-items-center">
-																			<div class="col-lg-3 margin3">
+																			<div class="col-lg-3 margin43">
 																				<h6 class="gray">SECTION</h6>
 																			</div>
 
 																			<div class="col-lg-1">
 																				<h6 class="gray">STATUS</h6>
 																			</div>
-																			<div class="col-lg-2 percentMargin">
+																			<div class="col-lg-2 margin31">
 																				<h6 class="gray">% COMPLETE</h6>
 																			</div>
 																			<div class="col-lg-2">
@@ -1276,20 +1271,19 @@
 																<div class="col-xs-12 col-lg-12 col-md-12">
 
 																	<div class="toggleDiv">
-																		<p class="charcoal pt-3">Here you can monitor completion of the School Administrator Survey.</p>
 
-																		<div class="lightGreen tabletBottomLess container-fluid p-2 mb-3 mt-0">
+																		<div class="lightGreen tabletBottomLess container-fluid p-2 mb-3 mt-3">
 																			<p class="charcoal text-center mb-0 pl-5 pr-5">This page is designed to assist with the parent consent process.</p>
 																		</div>
-																		<p class="charcoal">Your school administrator indicated that your school requires {EXPLICIT/IMPLICIT} consent for children’s participation in the study. This means that a signed consent form, either electronically or on paper, must be collected from the parent or guardian of each selected child before he or she may participate in the study. [IF EXPLICIT, DISPLAY: This means that a signed consent form must be collected, either electronically or on paper, from the parent or guardian of each selected child before he or she may participate in the study.] [IF IMPLICIT, DISPLAY: This means that parents will be notified about their child’s selection for the study and they will be able to opt out if they would prefer that their child not participate.]</p>
+																		<p class="charcoal">Your school administrator indicated that your school requires {EXPLICIT/IMPLICIT} consent for children’s participation in the study.  [IF EXPLICIT, DISPLAY: This means that a signed consent form must be collected, either electronically or on paper, from the parent or guardian of each selected child before he or she may participate in the study.] [IF IMPLICIT, DISPLAY: This means that parents will be notified about their child’s selection for the study and they will be able to opt out if they would prefer that their child not participate.]</p>
 
-																		<p class="charcoal">The Parent Portal on the MyECLS website has an electronic consent module to collect and track parent consent. Our records show that you will distribute and collect consent forms [ELECTRONICALLY / ON PAPER]. [IF ELECTRONIC CONSENT SELECTED, DISPLAY:] If any of the parents request or would prefer to complete a paper consent form, you can change the mode in the table below. Be sure to send the parent or guardian a paper consent form. You can download this form from the <a href="" class="darkBlue">Documents</a> page. If you have additional consent requirements or need other materials, let the ECLS representative know.</p>
+																		<p class="charcoal">The Parent Portal on the MyECLS website has an electronic consent module to collect and track parent consent. Our records show that you will distribute and collect consent forms [ELECTRONICALLY / ON PAPER]. [IF ELECTRONIC CONSENT SELECTED, DISPLAY:] If any of the parents request or would prefer to complete a paper consent form, you can change the mode in the table below. Be sure to send the parent or guardian a paper consent form. You can download this form from the <a class="seeDocuments"><span class="darkBlue">Documents</span></a> page. If you have additional consent requirements or need other materials, let the ECLS representative know.</p>
 
 																		<p class="charcoal">Use the table below to track each child’s consent status for either electronic or paper consent. If you are collecting paper consent forms from any parents, please update the consent status manually for the associated children. (Consent provided by parents electronically will automatically be updated on this table.) Please update and monitor consent statuses on a regular basis. The ECLS team can help follow up with parents if you or the parent provide the parent’s contact information.</p>
 
-																		<div class="d-flex justify-content-between align-items-center mt-5 optionGroup">
+																		<div class="d-flex justify-content-start align-items-center mt-5 optionGroup">
 																			<p class="charcoal m-0">CHANGE STATUS:</p>
-																			<div class="btn-group parentConsentButtons m-0" data-toggle="buttons">
+																			<div class="btn-group parentConsentButtons" data-toggle="buttons">
 																				<label class="btn btn-primary">
 																					<input type="radio" name="options" id="option1" autocomplete="off">PENDING
 																				</label>
@@ -1302,7 +1296,7 @@
 																			</div>
 																			<button type="submit" class="btn blueButton updateParentConsent m-0" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update Parent Consent">UPDATE</button>
 
-																			<button class="btn btn-info steelColor m-0" tabindex="0" aria-hidden="false" role="button" aria-label="Consent Forms"><i class="far fa-print"></i> CONSENT FORMS</button>
+																			<!-- <button class="btn btn-info steelColor m-0" tabindex="0" aria-hidden="false" role="button" aria-label="Consent Forms"><i class="far fa-print"></i> CONSENT FORMS</button> -->
 																		</div>
 
 
@@ -1568,6 +1562,12 @@
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<h6 class="gray text-center">PARENT ID/<br>NAME</h6>
 																				</div>
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<h6 class="gray text-center">SURVEY<br>STATUS</h6>
+																				</div>
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<h6 class="gray text-center">DATE LAST<br>ACCESSED</h6>
+																				</div>
 																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 																					<h6 class="gray text-center">PARENT ADDRESS</h6>
 																				</div>
@@ -1580,12 +1580,7 @@
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<h6 class="gray">LANGUAGE</h6>
 																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<h6 class="gray text-center">SURVEY<br>STATUS</h6>
-																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<h6 class="gray text-center">DATE LAST<br>ACCESSED</h6>
-																				</div>
+
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<h6 class="gray">EDIT</h6>
 																				</div>
@@ -1603,13 +1598,22 @@
 																					<p class="black parentId biggerWidth">9999991P</p>
 																					<p class="black parentName biggerWidth">Bobby Blue</p>
 																				</div>
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">SURVEY STATUS</div>
+																					<div class="percentageCircle ml1"><p class="black surveyStatus">100</p></div>
+																				</div>
+
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">DATE LAST ACCESSED</div>
+																					<p class="black date biggerWidth">07/15/2020</p>
+																				</div>
 																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">PARENT ADDRESS</div>
-																					<p class="black parentAddress seventyPercent">145 Beach Blvd Hollywood, FL 12345</p>
+																					<p class="black parentAddress ml15">145 Beach Blvd Hollywood, FL 12345</p>
 																				</div>
 																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">PARENT PHONE</div>
-																					<p class="black parentPhone eightyPercent">908-313-6000</p>
+																					<p class="black parentPhone seventyEight">908-313-6000</p>
 																				</div>
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">PARENT EMAIL</div>
@@ -1621,15 +1625,7 @@
 																					<div class="mobile">LANGUAGE</div>
 																					<p class="black language biggerWidth ml1">English</p>
 																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">SURVEY STATUS</div>
-																					<div class="percentageCircle ml1"><p class="black surveyStatus">100</p></div>
-																				</div>
 
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">DATE LAST ACCESSED</div>
-																					<p class="black date biggerWidth ml1">07/15/2020</p>
-																				</div>
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">EDIT</div>
 																					<p class="black edit eightyPercent"><i class="fas fa-pencil-alt darkBlue"></i></p>
@@ -1649,24 +1645,6 @@
 																					<div class="mobile">PARENT ID/NAME</div>
 																					<p class="black parentId biggerWidth">9999991P</p>
 																					<p class="black parentName biggerWidth">Bobby Blue</p>
-																				</div>
-																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">PARENT ADDRESS</div>
-																					<p class="black parentAddress seventyPercent">145 Beach Blvd Hollywood, FL 12345</p>
-																				</div>
-																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">PARENT PHONE</div>
-																					<p class="black parentPhone eightyPercent">908-313-6000</p>
-																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">PARENT EMAIL</div>
-
-																					<p class="black parentEmail biggerWidth">erodricks@email.com</p>
-
-																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">LANGUAGE</div>
-																					<p class="black language biggerWidth ml1">English</p>
 																				</div>
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">SURVEY STATUS</div>
@@ -1677,6 +1655,25 @@
 																					<div class="mobile">DATE LAST ACCESSED</div>
 																					<p class="black date biggerWidth ml1">07/15/2020</p>
 																				</div>
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">PARENT ADDRESS</div>
+																					<p class="black parentAddress ml15">145 Beach Blvd Hollywood, FL 12345</p>
+																				</div>
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">PARENT PHONE</div>
+																					<p class="black parentPhone eightyPercent">908-313-6000</p>
+																				</div>
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">PARENT EMAIL</div>
+
+																					<p class="black parentEmail biggerWidth">erodricks@email.com</p>
+
+																				</div>
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">LANGUAGE</div>
+																					<p class="black language biggerWidth ml1">English</p>
+																				</div>
+
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">EDIT</div>
 																					<p class="black edit eightyPercent"><i class="fas fa-pencil-alt darkBlue"></i></p>
@@ -1696,24 +1693,6 @@
 																					<div class="mobile">PARENT ID/NAME</div>
 																					<p class="black parentId biggerWidth">9999991P</p>
 																					<p class="black parentName biggerWidth">Bobby Blue</p>
-																				</div>
-																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">PARENT ADDRESS</div>
-																					<p class="black parentAddress seventyPercent">145 Beach Blvd Hollywood, FL 12345</p>
-																				</div>
-																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">PARENT PHONE</div>
-																					<p class="black parentPhone eightyPercent">908-313-6000</p>
-																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">PARENT EMAIL</div>
-
-																					<p class="black parentEmail biggerWidth">erodricks@email.com</p>
-
-																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">LANGUAGE</div>
-																					<p class="black language biggerWidth ml1">English</p>
 																				</div>
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">SURVEY STATUS</div>
@@ -1724,28 +1703,9 @@
 																					<div class="mobile">DATE LAST ACCESSED</div>
 																					<p class="black date biggerWidth ml1">07/15/2020</p>
 																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">EDIT</div>
-																					<p class="black edit eightyPercent"><i class="fas fa-pencil-alt darkBlue"></i></p>
-																				</div>
-																				<div class="progressBarEmpty"></div>
-																				<div class="progressBarFull">
-																				</div>
-																			</div>
-																			<div class="parentInfoBlocks d-flex align-items-center flex-wrap">
-																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">CHILD ID/NAME</div>
-																					<p class="black childid">9999991C</p>
-																					<p class="black childName">Michaela Murphy</p>
-																				</div>
-																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																					<div class="mobile">PARENT ID/NAME</div>
-																					<p class="black parentId biggerWidth">9999991P</p>
-																					<p class="black parentName biggerWidth">Bobby Blue</p>
-																				</div>
 																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">PARENT ADDRESS</div>
-																					<p class="black parentAddress seventyPercent">145 Beach Blvd Hollywood, FL 12345</p>
+																					<p class="black parentAddress ml15">145 Beach Blvd Hollywood, FL 12345</p>
 																				</div>
 																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">PARENT PHONE</div>
@@ -1761,6 +1721,27 @@
 																					<div class="mobile">LANGUAGE</div>
 																					<p class="black language biggerWidth ml1">English</p>
 																				</div>
+
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">EDIT</div>
+																					<p class="black edit eightyPercent"><i class="fas fa-pencil-alt darkBlue"></i></p>
+																				</div>
+																				<div class="progressBarEmpty"></div>
+																				<div class="progressBarFull">
+																				</div>
+																			</div>
+
+																			<div class="parentInfoBlocks d-flex align-items-center flex-wrap">
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">CHILD ID/NAME</div>
+																					<p class="black childid">9999991C</p>
+																					<p class="black childName">Michaela Murphy</p>
+																				</div>
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">PARENT ID/NAME</div>
+																					<p class="black parentId biggerWidth">9999991P</p>
+																					<p class="black parentName biggerWidth">Bobby Blue</p>
+																				</div>
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">SURVEY STATUS</div>
 																					<div class="percentageCircle ml1"><p class="black surveyStatus">75</p></div>
@@ -1770,6 +1751,25 @@
 																					<div class="mobile">DATE LAST ACCESSED</div>
 																					<p class="black date biggerWidth ml1">07/15/2020</p>
 																				</div>
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">PARENT ADDRESS</div>
+																					<p class="black parentAddress ml15">145 Beach Blvd Hollywood, FL 12345</p>
+																				</div>
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">PARENT PHONE</div>
+																					<p class="black parentPhone eightyPercent">908-313-6000</p>
+																				</div>
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">PARENT EMAIL</div>
+
+																					<p class="black parentEmail biggerWidth">erodricks@email.com</p>
+
+																				</div>
+																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">LANGUAGE</div>
+																					<p class="black language biggerWidth ml1">English</p>
+																				</div>
+
 																				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																					<div class="mobile">EDIT</div>
 																					<p class="black edit eightyPercent"><i class="fas fa-pencil-alt darkBlue"></i></p>
