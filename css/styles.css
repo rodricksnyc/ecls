@@ -1882,6 +1882,10 @@ a:hover .darkBlue{
   text-decoration: underline;
 }
 
+a:hover .feedbackBar .darkBlue{
+  text-decoration: none;
+}
+
 .logo {
   min-width: 15em;
 }
