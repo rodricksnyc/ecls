@@ -5252,6 +5252,18 @@ $(".scrollIt").on("click", function(event) {
 	});
 
 
+	var hash = 1;
+
+$(".editChild").each(function(i){
+	var count = "editModal" + (++hash)
+
+ 	$(this).attr("data-target",  "#" + count);
+	// $(this).attr("aria-controls", count);
+
+	$(this).find('.modal').attr("id", count);
+});
+
+
 
 
 })
