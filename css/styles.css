@@ -1318,7 +1318,7 @@ textarea {
   left: 100px;
   top: 38px;
   text-transform: lowercase !important;
-  z-index: 99999999999999999999999999999999999999;
+  z-index: 9;
 
 }
 
