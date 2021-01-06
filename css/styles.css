@@ -509,6 +509,13 @@ text-decoration: none !important;
     position: relative;
 }
 
+.workGrid .form-group label{
+  font-size: 0px !important
+}
+.workGrid .form-group{
+  margin-bottom:0px
+}
+
 .powderBlue{
   background: #e8eff6
 }

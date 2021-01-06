@@ -3750,6 +3750,19 @@ $(".cube").on('focusout', function() {
 })
 
 
+
+$("a").on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).find('.feedbackBar').css('outline', 'dashed 3px #4599ff')
+	}
+
+})
+$("a").on('focusout', function() {
+	$(this).find('.feedbackBar').css('outline', 'none')
+})
+
+
 $(".toTL").on("keyup", function (e) {
 	var code = (e.keyCode ? e.keyCode : e.which);
 	if (code == 9) {
@@ -5262,6 +5275,12 @@ $(".editChild").each(function(i){
 
 	$(this).find('.modal').attr("id", count);
 });
+
+
+
+$('.stop').click(function(e) {
+
+})
 
 
 

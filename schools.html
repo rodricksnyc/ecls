@@ -1619,63 +1619,88 @@
 														<div class="mobile">HOME LANGUAGE</div>
 														<p class="black">English</p>
 													</div>
-												<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 editChild" type="button" data-toggle="modal" data-target="#">
+													<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 stop editChild" type="button" data-toggle="modal" data-target="#">
 														<div class="mobile">EDIT</div>
 														<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
-														<div class="modal fade editChild" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-														<div class="modal-dialog" role="document">
-															<div class="modal-content">
-																<div class="modal-header">
-																	<h5 class="modal-title">Edit Child Work Grid</h5>
-																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																		<span aria-hidden="true">&times;</span>
-																	</button>
-																</div>
-																<div class="modal-body">
-																	<div class="powderBlue">
-																		<div class="topAttr d-flex align-items-center">
+														<div class="modal fade editChild" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true">
+															<div class="modal-dialog" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h5 class="modal-title">Edit Child Info</h5>
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body">
+																		<div class="powderBlue">
+																			<div class="topAttr d-flex justify-content-between align-items-center">
 
-																			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-																				<h6 class="gray text-center">CHILD ID</h6>
-																			</div>
-																			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-																				<h6 class="gray text-center">CHILD NAME</h6>
-																			</div>
-																			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-																				<h6 class="gray text-center">ASSESSMENT STATUS</h6>
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<h6 class="gray text-center">CHILD ID</h6>
+																				</div>
+																				<div class="col-lg-2 mx-2 col-md-6 col-sm-6 col-xs-6">
+																					<h6 class="gray text-center">CHILD NAME</h6>
+																				</div>
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<h6 class="gray text-center">ASSESSMENT STATUS</h6>
+																				</div>
+
 																			</div>
 
+																			<div class="workGrid d-flex align-items-center justify-content-between flex-wrap">
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">CHILD ID</div>
+																					<p class="black childid">9999991C</p>
+																				</div>
+																				<div class="col-lg-2 mx-2 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">CHILD NAME</div>
+																					<p class="black childName">Keone Young</p>
+																				</div>
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																					<div class="mobile">ASSESSMENT STATUS</div>
+																					<div class="form-group assessment">
+																						<label for="as">Assessment Status</label>
+																						<input type="text" name="" class="form-control" id="as" placeholder="">
+																					</div>
+																				</div>
+
+
+																			</div>
+																			<div class="row">
+																				<div class="col-lg-2">
+																			<h6 class="gray larger">SCHOOL ID </h6>
 																		</div>
-
-																		<div class="workGrid d-flex align-items-center flex-wrap">
-																			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-																				<div class="mobile">CHILD ID</div>
-																				<p class="black childid">9999991C</p>
-																			</div>
-																			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-																				<div class="mobile">CHILD NAME</div>
-																				<p class="black childName">Keone Young</p>
-																			</div>
-																			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-																				<div class="mobile">ASSESSMENT STATUS</div>
-																				<p class="black participationStatus">Complete</p>
-																			</div>
-
-
-																		</div>
-
-
-
 																	</div>
 
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-																	<button type="button" class="btn btn-primary">Save changes</button>
+																			<div class="row">
+																				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+
+																			<div class="form-check customRadio">
+																				<input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="phone">
+																				<label class="form-check-label blue" for="inlineRadio1">Yes</label>
+																			</div>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<div class="form-check customRadio">
+																				<input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="phone">
+																				<label class="form-check-label blue" for="inlineRadio2">No</label>
+																			</div>
+																		</div>
+
+																		</div>
+
+
+
+																		</div>
+
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																		<button type="button" class="btn btn-primary">Save changes</button>
+																	</div>
 																</div>
 															</div>
 														</div>
-													</div>
 													</div>
 													<div class="progressBarEmpty"></div>
 													<div class="progressBarFull">
@@ -1733,24 +1758,24 @@
 														<div class="mobile">EDIT</div>
 														<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
 														<div class="modal fade editChild" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-														<div class="modal-dialog" role="document">
-															<div class="modal-content">
-																<div class="modal-header">
-																	<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																		<span aria-hidden="true">&times;</span>
-																	</button>
-																</div>
-																<div class="modal-body">
+															<div class="modal-dialog" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body">
 
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-																	<button type="button" class="btn btn-primary">Save changes</button>
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																		<button type="button" class="btn btn-primary">Save changes</button>
+																	</div>
 																</div>
 															</div>
 														</div>
-													</div>
 													</div>
 													<div class="progressBarEmpty"></div>
 													<div class="progressBarFull">
@@ -1809,24 +1834,24 @@
 														<div class="mobile">EDIT</div>
 														<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
 														<div class="modal fade editChild" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-														<div class="modal-dialog" role="document">
-															<div class="modal-content">
-																<div class="modal-header">
-																	<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																		<span aria-hidden="true">&times;</span>
-																	</button>
-																</div>
-																<div class="modal-body">
+															<div class="modal-dialog" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body">
 
-																</div>
-																<div class="modal-footer">
-																	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-																	<button type="button" class="btn btn-primary">Save changes</button>
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																		<button type="button" class="btn btn-primary">Save changes</button>
+																	</div>
 																</div>
 															</div>
 														</div>
-													</div>
 													</div>
 													<div class="progressBarEmpty"></div>
 													<div class="progressBarFull">
