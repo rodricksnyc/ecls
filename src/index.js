@@ -5280,6 +5280,12 @@ $(".editChild").each(function(i){
 
 $('.stop').click(function(e) {
 
+	if ($('.modal.editChild').hasClass('show')){
+		e.preventDefault()
+		e.stopPropagation()
+		
+	}
+
 })
 
 

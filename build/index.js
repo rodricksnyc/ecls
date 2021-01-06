@@ -4357,5 +4357,11 @@ $(document).ready(function () {
 		$(this).find('.modal').attr("id", count);
 	});
 
-	$('.stop').click(function (e) {});
+	$('.stop').click(function (e) {
+
+		if ($('.modal.editChild').hasClass('show')) {
+			e.preventDefault();
+			e.stopPropagation();
+		}
+	});
 });
