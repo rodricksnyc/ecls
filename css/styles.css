@@ -517,7 +517,8 @@ text-decoration: none !important;
 }
 
 .powderBlue{
-  background: #e8eff6
+  background: #e8eff6;
+  padding: 0em 1em;
 }
 
 .activeCube{
@@ -1569,7 +1570,7 @@ padding: 0em 2em
 
 
 .customRadio input:checked + label::after {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 
@@ -3068,6 +3069,16 @@ h6.gray {
   margin-top: 2em;
   margin-bottom: 2em;
 
+}
+.edit:hover{
+  cursor: grab;
+}
+
+#tabs-3 .lightGrayBox.submitChildList {
+    background: #f6f8f8;
+    padding: 1em 2em;
+    margin-top: 2em;
+    margin-bottom: 0em;
 }
 
 .submitChildList p.purple {
@@ -4827,7 +4838,7 @@ padding-top: 0px;
 }
 
 
-.menu-buttons-floating-list li:focus,
+/* .menu-buttons-floating-list li:focus,
 .btn-guide:focus  {
   font-weight: 800;
   box-shadow: 0px 2px 3px rgba(0,0,0,0.3), 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
@@ -4838,7 +4849,7 @@ padding-top: 0px;
   transform: scale(1.13);
   outline: none;
 
-}
+} */
 
 .menu-buttons-floating-list li:active,
 .btn-guide:active  {
