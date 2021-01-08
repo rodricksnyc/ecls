@@ -496,17 +496,17 @@ align-items: center;
 
 .seeDistricts:hover i {
   cursor:grab;
-text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .workGrid {
-    margin-bottom: 1em;
-    background: white;
-    padding: 1em .5em 1em .5em;
-    -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-    position: relative;
+  margin-bottom: 1em;
+  background: white;
+  padding: 1em .5em 1em .5em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
 }
 
 .workGrid .form-group label{
@@ -742,6 +742,27 @@ overflow-y: initial !important;
 }
 .tlModals .modal-content {
   padding: 1em 3em;
+}
+
+.parentUpdate .modal-content{
+  padding: 1em 1em;
+  background: #f6f8f8;
+
+}
+.parentUpdate .modal-header{
+  padding-top: 0em;
+}
+
+.parentUpdate{
+  z-index: 99999;
+}
+
+.parentUpdate .modal-dialog {
+  max-width: 60% !important;
+}
+
+.parentUpdate .modal-footer{
+ justify-content: center !important;
 }
 
 .grayBox.second .landing-sec-H, .grayBox.third .landing-sec-H {
@@ -2304,7 +2325,7 @@ span.heading {
   }
 
   .marginLeft15{
-        margin-left: 15% !important;
+    margin-left: 15% !important;
   }
 
   .leftMove{
@@ -2326,11 +2347,11 @@ span.heading {
   .margin43 {
     margin-left: 4em;
     margin-right: -3em;
-}
+  }
   .margin31 {
-margin-left: 3em;
-margin-right: -1em;
-}
+    margin-left: 3em;
+    margin-right: -1em;
+  }
 
   .biggerWidth{
     width:115%;
@@ -2378,20 +2399,20 @@ margin-right: -1em;
 
 
 
-.tl-schools .childrenAttr, .tl-schools .childrenBlocks {
+  .tl-schools .childrenAttr, .tl-schools .childrenBlocks {
     min-width: 200%;
-}
+  }
 
-.half-width{
-  flex: 0 0 4.333333%;
-  max-width: 4.333333%;
-}
+  .half-width{
+    flex: 0 0 4.333333%;
+    max-width: 4.333333%;
+  }
 
-.double-width{
-flex: 0 0 12.333333%;
-max-width: 12.333333%;
+  .double-width{
+    flex: 0 0 12.333333%;
+    max-width: 12.333333%;
 
-}
+  }
 
   .childTeacher {
     padding:1em;
@@ -3075,10 +3096,10 @@ h6.gray {
 }
 
 #tabs-3 .lightGrayBox.submitChildList {
-    background: #f6f8f8;
-    padding: 1em 2em;
-    margin-top: 2em;
-    margin-bottom: 0em;
+  background: #f6f8f8;
+  padding: 1em 2em;
+  margin-top: 2em;
+  margin-bottom: 0em;
 }
 
 .submitChildList p.purple {
@@ -4840,14 +4861,14 @@ padding-top: 0px;
 
 /* .menu-buttons-floating-list li:focus,
 .btn-guide:focus  {
-  font-weight: 800;
-  box-shadow: 0px 2px 3px rgba(0,0,0,0.3), 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
-  opacity: 1;
-  background: #fbb03b;
-  color: #071D49;
-  transform: scale(1.13);
-  outline: none;
+font-weight: 800;
+box-shadow: 0px 2px 3px rgba(0,0,0,0.3), 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+opacity: 1;
+background: #fbb03b;
+color: #071D49;
+transform: scale(1.13);
+outline: none;
 
 } */
 
@@ -8337,7 +8358,7 @@ transform: scale(0.8);
 
     margin-bottom: 1em;
   }
- .teacherSurveyBlocks .percentageCircle{
+  .teacherSurveyBlocks .percentageCircle{
     margin-bottom: -2.4em;
     margin-top: 0em;
   }
@@ -8345,11 +8366,11 @@ transform: scale(0.8);
   .btn-group.parentConsentButtons {
     max-width: 400px;
     margin: 1em 0em 0em 0em;
-}
+  }
 
-.childTeacher p.black{
-  margin-bottom:1em
-}
+  .childTeacher p.black{
+    margin-bottom:1em
+  }
 
   .parentInfoBlocks  .col-md-6:nth-of-type(4){
     margin-top:-4em !important
