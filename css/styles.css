@@ -581,10 +581,18 @@ align-items: center;
   overflow-x: hidden;
 
 }
-/* .tlModals ::-webkit-scrollbar {
-width: 0px;
-background: transparent;
-} */
+.tlModals ::-webkit-scrollbar {
+width: 1px;
+height:auto;
+max-height:6px;
+border-radius: 1rem;
+background: #cccccc
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 #eRocModal {
   z-index: 999999999;
 }

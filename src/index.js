@@ -3780,6 +3780,18 @@ $(".toTL").on('focusout', function() {
 })
 
 
+// $(".editTool").on("keyup", function (e) {
+// 	var code = (e.keyCode ? e.keyCode : e.which);
+// 	if (code == 9) {
+// 		$(this).find('i').css('outline', 'dashed 3px #4599ff')
+// 	}
+//
+// })
+// $(".editTool").on('focusout', function() {
+// 	$(this).find('i').css('outline', 'none')
+// })
+
+
 $(".form-check").on("keyup", function (e) {
 
 	var code = (e.keyCode ? e.keyCode : e.which);
@@ -3902,6 +3914,16 @@ $('.feedbackBar').on("keyup", function (e) {
 		$('#feedbackModal').modal('show')
 	}
 });
+
+
+$('.editTool').on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+
+		$(this).find('.parentUpdate').modal('show')
+	}
+});
+
 
 
 $('.cube').on("keyup", function (e) {
