@@ -321,7 +321,7 @@ textarea::placeholder {
   width: 34px;
   border-radius: 50%;
   background: #007536;
-  left: 1.5em;
+  left: 1.75em;
   top: calc(50% - 17px)
 
 }
