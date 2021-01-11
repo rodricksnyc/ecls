@@ -186,6 +186,8 @@ textarea::placeholder {
   font-weight:300 !important;
 }
 
+
+
 .flipTop {
   background: #00539f;
   writing-mode: tb-rl;
@@ -521,6 +523,11 @@ align-items: center;
   padding: 0em 1em;
 }
 
+.smallInput {
+    max-width: 180px;
+    margin-left: 5%;
+}
+
 .activeCube{
   background: transparent;
   box-shadow:none;
@@ -697,10 +704,6 @@ height: auto;
 overflow-y: initial !important;
 } */
 
-.noWrapRow {
-  margin-top:-2em;
-  margin-bottom:-2em
-}
 
 
 .disabled{
@@ -753,7 +756,7 @@ overflow-y: initial !important;
 }
 
 .parentUpdate .modal-content{
-  padding: 1em 1em;
+  padding: 0em;
   background: #f6f8f8;
 
 }
@@ -772,6 +775,22 @@ overflow-y: initial !important;
 .parentUpdate .modal-footer{
  justify-content: center !important;
 }
+
+.noWrapRow {
+  margin-top:-2em;
+  margin-bottom:-2em
+}
+
+.noWrapRow ::placeholder{
+  color:black;
+  font-size:15px;
+}
+
+.parentUpdate .modal-header {
+    background: #e6eaec;
+    padding: 1em;
+}
+
 
 .grayBox.second .landing-sec-H, .grayBox.third .landing-sec-H {
 

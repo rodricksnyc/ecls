@@ -5292,7 +5292,7 @@ $(".scrollIt").on("click", function(event) {
 	});
 
 
-	var hash = 1;
+var hash = 1;
 
 $(".editTool").each(function(i){
 	var count = "editModal" + (++hash)
