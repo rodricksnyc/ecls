@@ -520,7 +520,7 @@ align-items: center;
 
 .powderBlue{
   background: #e8eff6;
-  padding: 0em 1em;
+  padding: 0em 1em 3em 1em;
 }
 
 .smallInput {
@@ -594,6 +594,22 @@ height:auto;
 max-height:8px;
 border-radius: 1rem;
 background: #cccccc
+}
+
+label.gray{
+color: #576f7f;
+font-family: 'Public Sans', sans-serif;
+font-weight: 500;
+min-width:4em
+}
+
+.sortSelect{
+min-width:12em
+}
+
+.tlModals ::-webkit-scrollbar-thumb {
+  background-color: #9c9c9c;
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -3359,7 +3375,7 @@ z-index:999999;
   height: auto;
   background: #e6e6e6;
   top: 30%;
-  z-index: 99999999;
+  z-index: -10;
   left: 0;
   border-top-right-radius: .5rem;
   border-bottom-right-radius: .5rem;
