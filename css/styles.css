@@ -976,6 +976,10 @@ select {
 
 }
 
+.minimumWidth{
+  min-width:9em
+}
+
 .floatRight{
   float:right
 }
@@ -1804,7 +1808,7 @@ header a:hover {
 }
 
 .stop {
-  background-color: white;
+  background-color: transparent;
   min-height: 10%;
   background-size: cover;
   background-attachment: fixed;
@@ -2440,7 +2444,23 @@ span.heading {
     min-width:150%
   }
 
+  .parentInfoBlocks.two, .parentInfo.two{
+      min-width:148%
+  }
 
+
+  .teacherListBlocks.two, .teacherList{
+      min-width:130%
+  }
+
+
+
+
+
+
+  .parentInfoBlocks.two .launchStatus i,   .parentInfoBlocks.two .edit i{
+    font-size:22px
+  }
 
   .tl-schools .childrenAttr, .tl-schools .childrenBlocks {
     min-width: 200%;
@@ -3125,6 +3145,17 @@ h6.gray {
 .submitChildList .d-flex{
   min-height:3em;
   margin-top:1em
+}
+
+
+.lightBox {
+    background: #f6f8f8;
+    padding: 1em;
+    margin-top: 1em;
+
+    display: flex;
+    align-items: baseline;
+
 }
 
 .lightGrayBox.submitChildList {
@@ -3952,6 +3983,15 @@ p.scBlock{
   border: none;
 }
 
+
+.leftAdd {
+    position: relative;
+    left: 200px;
+    top: 38px;
+    text-transform: lowercase !important;
+    z-index: 9;
+}
+
 .greenButton:hover {
   background: #00843D !important;
   background-color: #00843D !important;
@@ -3965,6 +4005,39 @@ p.scBlock{
 }
 
 
+.clearGreen {
+    background: transparent !important;
+
+    border: 2px solid #00843D !important;
+    font-family: 'Public Sans', sans-serif;
+    width: 8rem;
+    border-radius: 2rem !important;
+    color: #00843D !important;
+    text-transform: uppercase;
+    height: 2.4rem;
+    outline: none;
+    border: none;
+}
+
+.clearGreen:hover {
+    background: #00843D !important;
+
+    border: 2px solid #00843D !important;
+    font-family: 'Public Sans', sans-serif;
+    width: 8rem;
+    border-radius: 2rem !important;
+    color: white !important;
+    text-transform: uppercase;
+    height: 2.4rem;
+    outline: none;
+    border: none;
+}
+
+.absoluteCheck{
+position: absolute;
+left: -5px;
+top: -10px;
+}
 
 
 .greenBlocks {

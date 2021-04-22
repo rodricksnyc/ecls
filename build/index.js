@@ -4392,4 +4392,15 @@ $(document).ready(function () {
 			e.stopPropagation();
 		}
 	});
+
+	//click checkbox and make bar green
+
+
+	$('.parentInfoBlocks.two .one input').change(function () {
+		if ($(this).is(":checked")) {
+			$(this).closest('.parentInfoBlocks').css('background', '#E5F9ED');
+		} else {
+			$(this).closest('.parentInfoBlocks').css('background', 'white');
+		}
+	});
 });
