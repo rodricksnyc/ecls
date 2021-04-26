@@ -3240,9 +3240,9 @@
 
 					<div class="outside pt-3">
 						<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
-						<button type="button" class="btn greenButton leftAdd" role="button" tabindex="0" aria-label="Add New"><i class="far fa-plus"></i>&nbsp;new</button>
-						<h2 class="landing-sec-H padding-0 margin-0">Teacher List</h2>
+						<button type="button" class="btn greenButton leftAdd addTeacherInfo"><i class="far fa-plus"></i>&nbsp;new</button>
 
+						<h2 class="landing-sec-H padding-0 margin-0">Teacher List</h2>
 
 						<div class="row">
 							<div class="col-xs-12 col-lg-12 col-md-12">
@@ -3268,161 +3268,95 @@
 									</div>
 
 									<div class="barWrapper">
-									<div class="topAttr teacherList d-flex align-items-center">
+										<div class="topAttr teacherList d-flex align-items-center">
 
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray teacherName">TEACHER ID-<br>LINK ID</h6>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray teacherName">TEACHER ID-<br>LINK ID</h6>
+											</div>
+
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray teacherName">TEACHER NAME</h6>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray teacherEmail">EMAIL</h6>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray type">TYPE</h6>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray grade">GRADE</h6>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray room">ROOM</h6>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray room">ADD LINK</h6>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray room">DELETE</h6>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<h6 class="gray room">EDIT</h6>
+											</div>
+
 										</div>
 
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray teacherName">TEACHER NAME</h6>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray teacherEmail">EMAIL</h6>
-										</div>
-										<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray type">TYPE</h6>
-										</div>
-										<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray grade">GRADE</h6>
-										</div>
-										<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray room">ROOM</h6>
+										<div class="teacherListBlocks two d-flex align-items-center flex-wrap">
+
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">TEACHER ID-<br>LINK ID</div>
+												<p class="black teacherID">9999T01-T98</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">TEACHER NAME</div>
+												<p class="black teacherName">Vincent Van Gogh</p>
+											</div>
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">EMAIL</div>
+												<p class="black teacherEmail">vvangogh@artschool.edu</p>
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile type">TYPE</div>
+
+												<p class="black type">Primary</p>
+
+											</div>
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">GRADE</div>
+												<p class="black grade">K</p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">ROOM</div>
+												<p class="black room">1834</p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">ADD LINK</div>
+												<p class="black link"><i class="fas fa-link darkBlue"></i></p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">DELETE</div>
+												<p class="black delete"><i class="fas fa-trash-alt redColor"></i></p>
+											</div>
+
+											<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+												<div class="mobile">EDIT</div>
+												<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
+											</div>
+
+											<div class="progressBarEmpty"></div>
+											<div class="progressBarFull">
+											</div>
 										</div>
 
-										<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray room">ADD LINK</h6>
-										</div>
 
-										<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray room">DELETE</h6>
-										</div>
-
-										<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-											<h6 class="gray room">EDIT</h6>
-										</div>
 
 									</div>
-
-									<div class="teacherListBlocks two d-flex align-items-center flex-wrap">
-
-										<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">TEACHER NAME</div>
-											<p class="black teacherListName">Jackson Pollock</p>
-										</div>
-										<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">EMAIL</div>
-											<p class="black teacherEmail">jacksonpollock@school.edu</p>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">TYPE</div>
-											<p class="black type">Primary</p>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-											<div class="mobile">GRADE</div>
-
-											<p class="black grade">2</p>
-
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">ROOM</div>
-											<p class="black room">1837</p>
-										</div>
-
-										<div class="progressBarEmpty"></div>
-										<div class="progressBarFull">
-										</div>
-									</div>
-
-									<div class="teacherListBlocks two d-flex align-items-center flex-wrap">
-
-										<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">TEACHER NAME</div>
-											<p class="black teacherListName">Jackson Pollock</p>
-										</div>
-										<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">EMAIL</div>
-											<p class="black teacherEmail">jacksonpollock@school.edu</p>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">TYPE</div>
-											<p class="black type">Primary</p>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-											<div class="mobile">GRADE</div>
-
-											<p class="black grade">3</p>
-
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">ROOM</div>
-											<p class="black room">1837</p>
-										</div>
-
-										<div class="progressBarEmpty"></div>
-										<div class="progressBarFull">
-										</div>
-									</div>
-									<div class="teacherListBlocks two d-flex align-items-center flex-wrap">
-
-										<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">TEACHER NAME</div>
-											<p class="black teacherListName">Jackson Pollock</p>
-										</div>
-										<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">EMAIL</div>
-											<p class="black teacherEmail">jacksonpollock@school.edu</p>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">TYPE</div>
-											<p class="black type">Primary</p>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-											<div class="mobile">GRADE</div>
-
-											<p class="black grade">2</p>
-
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">ROOM</div>
-											<p class="black room">1837</p>
-										</div>
-
-										<div class="progressBarEmpty"></div>
-										<div class="progressBarFull">
-										</div>
-									</div>
-									<div class="teacherListBlocks two d-flex align-items-center flex-wrap">
-
-										<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">TEACHER NAME</div>
-											<p class="black teacherListName">Jackson Pollock</p>
-										</div>
-										<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">EMAIL</div>
-											<p class="black teacherEmail">jacksonpollock@school.edu</p>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">TYPE</div>
-											<p class="black type">Primary</p>
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
-											<div class="mobile">GRADE</div>
-
-											<p class="black grade">2</p>
-
-										</div>
-										<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-											<div class="mobile">ROOM</div>
-											<p class="black room">1837</p>
-										</div>
-
-										<div class="progressBarEmpty"></div>
-										<div class="progressBarFull">
-										</div>
-									</div>
-
-								</div>
 
 
 								</div>
@@ -3575,7 +3509,7 @@
 											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
 												<h6 class="gray">CHILD ID<br>& NAME</h6>
 											</div>
-											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 leftMove">
+											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
 												<h6 class="gray">PAPER SURVEY<br>DISTRIBUTED</h6>
 											</div>
 											<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
@@ -3788,6 +3722,7 @@
 			</div>
 		</div>
 	</section>
+
 
 
 
@@ -4099,3 +4034,4 @@
 </body>
 
 </html>
+
