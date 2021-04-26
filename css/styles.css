@@ -2450,11 +2450,8 @@ span.heading {
 
 
   .teacherListBlocks.two, .teacherList{
-      min-width:130%
+      min-width:148%
   }
-
-
-
 
 
 
@@ -3145,6 +3142,10 @@ h6.gray {
 .submitChildList .d-flex{
   min-height:3em;
   margin-top:1em
+}
+
+.redColor{
+  color:#CC473A
 }
 
 
