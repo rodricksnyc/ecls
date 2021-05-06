@@ -4490,38 +4490,50 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.addTeacherInfo').click(function () {
+	// $('.addTeacherInfo').click(function() {
+	//
+	//
+	// $('.appendedTeacher').removeClass('hidden')
+	//
+	// })
+	//
+	//
+	//
+	//
+	// var saveTeacher = function() {
+	//
+	// 	var fullName = `${prefix} ${firstName}  ${lastName}`
+	//
+	// 	var prefix = $(this).closest('.appendedTeacher').find('#prefix').val();
+	//
+	// 	var firstName = $(this).closest('.appendedTeacher').find('#firstName').val();
+	//
+	// 	var lastName = $(this).closest('.appendedTeacher').find('#lastName').val();
+	//
+	// 	$(this).closest('.appendedTeacher').find('.black.teacherName').show().html(fullName)
+	//
+	// 	$('.appendType').addClass('hidden')
+	// 	$('.appendRoom').addClass('hidden')
+	// 	$('.appendSave').addClass('hidden')
+	//
+	// 	// var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
+	// 	//
+	// 	// $(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
+	// 	//
+	// 	// $(this).closest('.teacherListBlocks').find('.black.link').show()
+	// 	// $(this).closest('.teacherListBlocks').find('.black.edit').show()
+	// 	// $(this).closest('.teacherListBlocks').find('.black.delete').show()
+	//
+	//
+	// }
+	//
+	// $('.saveTeacher').keypress(
+	// 	saveTeacher
+	//
+	// ).click(
+	// 		saveTeacher
+	// );
 
-		$('.appendedTeacher').removeClass('hidden');
-	});
-
-	var saveTeacher = function saveTeacher() {
-
-		var fullName = prefix + " " + firstName + "  " + lastName;
-
-		var prefix = $(this).closest('.appendedTeacher').find('#prefix').val();
-
-		var firstName = $(this).closest('.appendedTeacher').find('#firstName').val();
-
-		var lastName = $(this).closest('.appendedTeacher').find('#lastName').val();
-
-		$(this).closest('.appendedTeacher').find('.black.teacherName').show().html(fullName);
-
-		$('.appendType').addClass('hidden');
-		$('.appendRoom').addClass('hidden');
-		$('.appendSave').addClass('hidden');
-
-		// var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
-		//
-		// $(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
-		//
-		// $(this).closest('.teacherListBlocks').find('.black.link').show()
-		// $(this).closest('.teacherListBlocks').find('.black.edit').show()
-		// $(this).closest('.teacherListBlocks').find('.black.delete').show()
-
-	};
-
-	$('.saveTeacher').keypress(saveTeacher).click(saveTeacher);
 
 	$('.appendedTeacher input').on('keypress', function () {
 
@@ -4539,5 +4551,11 @@ $(document).ready(function () {
 
 		$(this).closest('.parentUpdate').find('.saveInformation').removeClass('lightGrayColor').addClass('greenButton');
 		$(this).closest('.parentUpdate').find('.saveInformation').removeAttr('disabled', 'disabled');
+	});
+
+	$('.addTeacherModal input').on('keypress', function () {
+
+		$(this).closest('.addTeacherModal').find('.saveInformation').removeClass('lightGrayColor').addClass('greenButton');
+		$(this).closest('.addTeacherModal').find('.saveInformation').removeAttr('disabled', 'disabled');
 	});
 });

@@ -782,16 +782,19 @@ overflow-y: initial !important;
   padding: 1em 3em;
 }
 
-.parentUpdate .modal-content{
+.parentUpdate .modal-content,
+.addTeacherModal .modal-content{
   padding: 0em;
   background: #f6f8f8;
 
 }
-.parentUpdate .modal-header{
+.parentUpdate .modal-header,
+.addTeacherModal .modal-header{
   padding-top: 0em;
 }
 
-.parentUpdate{
+.parentUpdate,
+.addTeacherModal {
   z-index: 99999;
 }
 
@@ -799,7 +802,12 @@ overflow-y: initial !important;
   max-width: 60% !important;
 }
 
-.parentUpdate .modal-footer{
+.addTeacherModal .modal-dialog {
+  max-width: 75% !important;
+}
+
+.parentUpdate .modal-footer,
+.addTeacherModal .modal-footer{
   justify-content: center !important;
 }
 
@@ -813,7 +821,8 @@ overflow-y: initial !important;
   font-size:15px;
 }
 
-.parentUpdate .modal-header {
+.parentUpdate .modal-header,
+.addTeacherModal .modal-header {
   background: #e6eaec;
   padding: 1em;
 }
@@ -1578,6 +1587,7 @@ display: flex !important
   margin-bottom:1em
 }
 
+
 .closeDiv{
   color: #00539f;
   float: right;
@@ -2084,7 +2094,8 @@ i{
 
 
 .appendSave i{
-  color:#71d82e
+  color:#71d82e;
+  font-size: 26px !important;
 }
 
 .appendSave:hover{
@@ -2568,9 +2579,9 @@ span.heading {
 
   .appendedTeacher .appendEmail{
     margin-left: -1em;
-      margin-right: 9em;
-      padding-top: 0em;
-      margin-bottom: -1em;
+    margin-right: 9em;
+    padding-top: 0em;
+    margin-bottom: -1em;
 
   }
 
@@ -2590,9 +2601,9 @@ span.heading {
   }
   .appendedTeacher .appendType{
     margin-left: -9em;
-margin-right: 8em;
-padding-top: 0em;
-margin-bottom: -1em;
+    margin-right: 8em;
+    padding-top: 0em;
+    margin-bottom: -1em;
   }
 
   .appendedTeacher .appendGrade{
@@ -4187,6 +4198,22 @@ p.scBlock{
 }
 
 
+.greenButton.big{
+  padding: 0em 2em;
+  min-height: 3em;
+  min-width: 15em;
+  font-size:25px;
+  border-radius: 6rem !important;
+}
+
+.greenButton.big:hover{
+  padding: 0em 2em;
+  min-height: 3em;
+  min-width: 15em;
+  font-size:25px;
+  border-radius: 6rem !important;
+}
+
 .leftAdd {
   position: relative;
   left: 200px;
@@ -4200,7 +4227,8 @@ p.scBlock{
   background-color: #00843D !important;
   border-color: #00843D !important;
   font-family: 'Public Sans', sans-serif;
-  width: 8rem;
+  min-width: 8rem;
+  width:auto;
   border-radius: 2rem !important;
   color: white !important;
   text-transform: uppercase;
@@ -4891,15 +4919,15 @@ footer a.white:hover {
 .menu-buttons-floating-list li, .btn-guide{
   background: #00843D;
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  margin-bottom: 40px;
-  /* box-shadow: 0px 2px 3px rgba(0,0,0,0.3), 0px 0px 20px 0px rgba(0, 0, 0, 0.3); */
+  height: 60px;
+  width: 60px;
+  margin-bottom: 30px;
+
   text-align: center;
-  font-size: 26px;
-  padding-top: 17px;
+  font-size: 27px;
+  padding-top: 13px;
   cursor: pointer;
-  /* transition: all 0.3s; */
+
   color: white;
   position: relative;
 }
@@ -4910,16 +4938,17 @@ footer a.white:hover {
 .menu-buttons-floating-list li[data-target="#overview"]:after {
   content: "OVERVIEW";
   font-size: 12px;
-  /* margin-top: 7em; */
+
   position: absolute;
-  bottom: -28%;
+  bottom: -30%;
   color: black;
   width: 100%;
   margin-bottom: 0em;
-  left: 0;
+  left: -18px;
   font-family: 'Public Sans', sans-serif;
   color: #00843D;
   font-weight: 700;
+  min-width: 8em;
 
 }
 
@@ -5150,17 +5179,18 @@ li.greenConsent[data-target="#feedback2"]:after {
 .menu-buttons-floating-list li:first-child, .btn-guide {
   background: #00843D;
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  margin-bottom: 40px;
-  /* box-shadow: 0px 2px 3px rgba(0,0,0,0.3), 0px 0px 20px 0px rgba(0, 0, 0, 0.3); */
+  height: 60px;
+  width: 60px;
+  margin-bottom: 30px;
+
   text-align: center;
-  font-size: 26px;
-  padding-top: 17px;
+  font-size: 27px;
+  padding-top: 13px;
   cursor: pointer;
-  /* transition: all 0.3s; */
+
   color: white;
   position: relative;
+
 }
 
 /* .menu-buttons-floating-list li:last-child {
@@ -8870,9 +8900,9 @@ transform: scale(0.8);
     color: #071D49 !important;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
     opacity: 1;
-    transform: scale(1.2) !important;
+    transform: scale(1.22) !important;
+    outline: none;
     margin-bottom: 0px !important;
-
   }
 
   .infoBar.greenBar img {
