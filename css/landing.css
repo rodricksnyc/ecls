@@ -1,5 +1,6 @@
 /* jquery validate error message in create account */
 
+
 .validate_cus {
   font-size: 12px !important;
   color: #CC473A !important;
@@ -3085,7 +3086,7 @@ color: #0071ba;
   font-weight: 800;
   background: #fbb03b !important;
   color: #071D49 !important;
-box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, .85);
   opacity: 1;
   transform: scale(1.22) !important;
   outline: none;

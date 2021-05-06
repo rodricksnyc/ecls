@@ -524,8 +524,8 @@ align-items: center;
 }
 
 .smallInput {
-    max-width: 180px;
-    margin-left: 5%;
+  max-width: 180px;
+  margin-left: 5%;
 }
 
 .activeCube{
@@ -589,22 +589,22 @@ align-items: center;
 
 }
 .tlModals ::-webkit-scrollbar {
-width: 1px;
-height:auto;
-max-height:8px;
-border-radius: 1rem;
-background: #cccccc
+  width: 1px;
+  height:auto;
+  max-height:8px;
+  border-radius: 1rem;
+  background: #cccccc
 }
 
 label.gray{
-color: #576f7f;
-font-family: 'Public Sans', sans-serif;
-font-weight: 500;
-min-width:4em
+  color: #576f7f;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  min-width:4em
 }
 
 .sortSelect{
-min-width:12em
+  min-width:12em
 }
 
 .tlModals ::-webkit-scrollbar-thumb {
@@ -613,7 +613,7 @@ min-width:12em
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 #eRocModal {
@@ -759,6 +759,10 @@ overflow-y: initial !important;
   display: block;
 }
 
+.grayBox.parent.second {
+  display: block;
+}
+
 .grayBox.third {
 
   /* top: 0;
@@ -767,6 +771,13 @@ overflow-y: initial !important;
 
   padding: 2em 2em; */
 }
+
+.steelBackground{
+  background: #576f7f;
+  padding:2em 1em
+}
+
+
 .tlModals .modal-content {
   padding: 1em 3em;
 }
@@ -789,7 +800,7 @@ overflow-y: initial !important;
 }
 
 .parentUpdate .modal-footer{
- justify-content: center !important;
+  justify-content: center !important;
 }
 
 .noWrapRow {
@@ -803,8 +814,8 @@ overflow-y: initial !important;
 }
 
 .parentUpdate .modal-header {
-    background: #e6eaec;
-    padding: 1em;
+  background: #e6eaec;
+  padding: 1em;
 }
 
 
@@ -914,6 +925,7 @@ select {
   background-repeat: no-repeat;
   -webkit-appearance: none;
   -moz-appearance: none;
+  min-width:120px
 }
 
 .saveInformation{
@@ -942,6 +954,7 @@ select {
   text-transform: uppercase;
   height: auto !important;
   border: 2px solid #576f7f !important;
+  min-height:2em
 }
 
 
@@ -2048,11 +2061,93 @@ i{
   color: black;
 }
 
-/* .spaceBetween {
-display:flex;
-justify-content: space-around;
-align-items: center;
-} */
+.appendTeacher{
+  border:2px solid #CC473A;
+  min-height: 9rem
+}
+.teacherListBlocks p.black i.lightGray{
+  color: #576f7f !important;
+}
+
+
+.teacherListBlocks .off i:hover{
+  cursor:default
+}
+
+.teacherListBlocks .off:hover{
+  cursor:default
+}
+
+
+.appendSave i{
+  color:#71d82e
+}
+
+.appendSave:hover{
+  cursor:pointer;
+}
+
+.teacherListBlocks i{
+  font-size: 1.3em;
+}
+
+.teacherListBlocks:hover i{
+  cursor:pointer;
+}
+
+.appendType .form-control{
+  margin-left: -3em;
+}
+
+.appendRoom .form-control{
+  margin-left: -2em;
+}
+
+
+.eighteen{
+  width:18%
+}
+
+.infoDelete{
+  background: rgb(247, 235, 231);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width:100%;
+  left:0;
+  right:0;
+  bottom:0;
+  top: 46%;
+  align-items: center;
+  padding: 1em .5em 0em .5em;
+}
+
+.deleteButton {
+  position: relative;
+  outline: none;
+  border: none;
+  background: #CC473A;
+  position: relative;
+  z-index: 9999999999999;
+  border-color: #CC473A !important;
+  font-family: 'Public Sans', sans-serif;
+  width: 8rem;
+  border-radius: 2rem !important;
+  color: white;
+  text-transform: uppercase;
+  height: auto !important;
+  min-height: 2em;
+}
+
+.form-check-inline label{
+  min-width: 3em;
+}
+
+
+.appendTeacher p.black{
+  margin-top:-3.5em
+}
+
 
 span.heading {
   color:#00559b;
@@ -2440,17 +2535,118 @@ span.heading {
     min-width:130%
   }
 
+
+  .parentData, .parentBars .parentUpdateBlocks {
+    min-width: 241%;
+    padding-left:4em;
+    padding-right:4em;
+  }
+
+  .parentBars .absoluteCheckbox {
+
+    left: 2%;
+
+  }
+
+
+  .absoluteRight{
+    position: absolute;
+    right:1%;
+    top:calc(50% - 13px)
+  }
+
+  .appendedTeacher .appendName{
+    display: flex;
+    align-items: center;
+    margin-left: -15em;
+    margin-top: 0em;
+  }
+
+  .appendedTeacher .appendEmail{
+    margin-left: -1em;
+      margin-right: 9em;
+      padding-top: 0em;
+      margin-bottom: -1em;
+
+  }
+
+  .appendedTeacher label{
+    background: white !important
+  }
+
+  .appendedTeacher{
+    min-width:200% !important
+  }
+  .appendedTeacher .appendName .form-group{
+    margin:0em .5em !important
+  }
+
+  .updateBlocks .absoluteRight i {
+    font-size: 26px;
+  }
+  .appendedTeacher .appendType{
+    margin-left: -9em;
+margin-right: 8em;
+padding-top: 0em;
+margin-bottom: -1em;
+  }
+
+  .appendedTeacher .appendGrade{
+    margin-left: -8em;
+    margin-right: 9em;
+    margin-bottom: -1em;
+  }
+
+  .appendedTeacher .appendRoom{
+    margin-left: -9em;
+    margin-right: 9em;
+    margin-bottom: -1em;
+
+
+  }
+
+  .appendedTeacher{
+    margin-bottom: 1em;
+    background: white;
+    padding: 1em 0em;
+    -webkit-box-shadow: 0px 0px 19px -1px rgb(175 175 175 / 67%);
+    -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+    box-shadow: 0px 0px 19px -1px rgb(175 175 175 / 67%);
+    position: relative;
+  }
+
+  .absoluteOptions{
+    position: absolute;
+    right: 18%;
+  }
+
+  .absoluteOptions button{
+    max-height: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .appendedTeacher .appendRoom .form-control {
+    margin-left: 0em;
+  }
+
+  .appendedTeacher .appendType .form-control {
+    margin-left: 0em;
+  }
+
+
   .childrenAttr, .childrenBlocks  {
     min-width:150%
   }
 
   .parentInfoBlocks.two, .parentInfo.two{
-      min-width:148%
+    min-width:148%
   }
 
 
   .teacherListBlocks.two, .teacherList{
-      min-width:148%
+    min-width:148%
   }
 
 
@@ -3150,12 +3346,12 @@ h6.gray {
 
 
 .lightBox {
-    background: #f6f8f8;
-    padding: 1em;
-    margin-top: 1em;
+  background: #f6f8f8;
+  padding: 1em;
+  margin-top: 1em;
 
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 
 }
 
@@ -3925,7 +4121,8 @@ p.scBlock{
   background: #d1d3d4;
   border-color: : #d1d3d4;
   border-color: transparent;
-  width: 8rem;
+  width:auto;
+  min-width: 8rem;
   padding: .4rem 1.6rem;
   border-radius: 2rem;
   color: #6F6F6F;
@@ -3975,7 +4172,8 @@ p.scBlock{
   background-color: #00843D !important;
   border-color: #00843D !important;
   font-family: 'Public Sans', sans-serif;
-  width: 8rem;
+  min-width: 8rem;
+  width:auto;
   border-radius: 2rem !important;
   color: white !important;
   text-transform: uppercase;
@@ -3986,11 +4184,11 @@ p.scBlock{
 
 
 .leftAdd {
-    position: relative;
-    left: 200px;
-    top: 38px;
-    text-transform: lowercase !important;
-    z-index: 9;
+  position: relative;
+  left: 200px;
+  top: 38px;
+  text-transform: lowercase !important;
+  z-index: 9;
 }
 
 .greenButton:hover {
@@ -4007,37 +4205,37 @@ p.scBlock{
 
 
 .clearGreen {
-    background: transparent !important;
+  background: transparent !important;
 
-    border: 2px solid #00843D !important;
-    font-family: 'Public Sans', sans-serif;
-    width: 8rem;
-    border-radius: 2rem !important;
-    color: #00843D !important;
-    text-transform: uppercase;
-    height: 2.4rem;
-    outline: none;
-    border: none;
+  border: 2px solid #00843D !important;
+  font-family: 'Public Sans', sans-serif;
+  width: 8rem;
+  border-radius: 2rem !important;
+  color: #00843D !important;
+  text-transform: uppercase;
+  height: 2.4rem;
+  outline: none;
+  border: none;
 }
 
 .clearGreen:hover {
-    background: #00843D !important;
+  background: #00843D !important;
 
-    border: 2px solid #00843D !important;
-    font-family: 'Public Sans', sans-serif;
-    width: 8rem;
-    border-radius: 2rem !important;
-    color: white !important;
-    text-transform: uppercase;
-    height: 2.4rem;
-    outline: none;
-    border: none;
+  border: 2px solid #00843D !important;
+  font-family: 'Public Sans', sans-serif;
+  width: 8rem;
+  border-radius: 2rem !important;
+  color: white !important;
+  text-transform: uppercase;
+  height: 2.4rem;
+  outline: none;
+  border: none;
 }
 
 .absoluteCheck{
-position: absolute;
-left: -5px;
-top: -10px;
+  position: absolute;
+  left: -5px;
+  top: -10px;
 }
 
 

@@ -5304,46 +5304,267 @@ $(".scrollIt").on("click", function(event) {
 	});
 
 
-	var hash = 1;
-
-	$(".editTool").each(function(i){
-		var count = "editModal" + (++hash)
-
-		$(this).attr("data-target",  "#" + count);
-		// $(this).attr("aria-controls", count);
-
-		$(this).find('.modal').attr("id", count);
-	});
-
-
-
-	$('.stop').click(function(e) {
-
-		if ($('.modal.editTool').hasClass('show')){
-			e.preventDefault()
-			e.stopPropagation()
-
-		}
-
-	})
+	// var hash = 1;
+	//
+	// $(".editTool").each(function(i){
+	// 	var count = "editModal" + (++hash)
+	//
+	// 	$(this).attr("data-target",  "#" + count);
+	//
+	//
+	// 	$(this).find('.modal').attr("id", count);
+	// });
+	//
+	//
+	//
+	// $('.stop').click(function(e) {
+	//
+	// 	if ($('.modal.editTool').hasClass('show')){
+	// 		e.preventDefault()
+	// 		e.stopPropagation()
+	//
+	//
+	// 	}
+	//
+	// })
 
 
 
 	//click checkbox and make bar green
 
 
-
-
-
 	$('.parentInfoBlocks.two .one input').change(function() {
 		if($(this).is(":checked")) {
-		$(this).closest('.parentInfoBlocks').css('background', '#E5F9ED')
+			$(this).closest('.parentInfoBlocks').css('background', '#E5F9ED')
 		}
 		else{
-				$(this).closest('.parentInfoBlocks').css('background', 'white')
+			$(this).closest('.parentInfoBlocks').css('background', 'white')
 		}
-});
+	});
 
+
+
+	//teacher info bars actions on non-priority schools pages
+	var deleteTeacher = function() {
+
+		$(this).closest('.teacherListBlocks').addClass('appendTeacher')
+		$(this).closest('.teacherListBlocks').find('.infoDelete').removeClass('hidden')
+
+	}
+
+	$('.teacherListBlocks .delete').keypress(
+		deleteTeacher
+
+	).click(
+		deleteTeacher
+	);
+
+
+	var deleteOption = function() {
+
+		$(this).closest('.teacherListBlocks').remove()
+
+	}
+
+
+	$('.teacherListBlocks .deleteOption').keypress(
+		deleteOption
+
+	).click(
+		deleteOption
+	);
+
+
+	var cancelOption = function() {
+
+
+		$(this).closest('.teacherListBlocks').removeClass('appendTeacher')
+		$(this).closest('.teacherListBlocks').find('.infoDelete').addClass('hidden')
+
+	}
+	$('.teacherListBlocks .cancelOption').keypress(
+		cancelOption
+
+	).click(
+		cancelOption
+	);
+
+
+	var linkEdit = function() {
+
+
+		$(this).closest('.teacherListBlocks').find('.appendType').removeClass('hidden')
+		$(this).closest('.teacherListBlocks').find('.black.type').hide()
+
+
+
+
+		$(this).closest('.teacherListBlocks').find('.appendRoom').removeClass('hidden')
+		$(this).closest('.teacherListBlocks').find('.black.room').hide()
+
+
+
+
+
+		$(this).closest('.teacherListBlocks').find('.appendSave').removeClass('hidden')
+		$(this).closest('.teacherListBlocks').find('.black.link').hide()
+		$(this).closest('.teacherListBlocks').find('.black.edit').hide()
+		$(this).closest('.teacherListBlocks').find('.black.delete').hide()
+
+	}
+
+
+	$('.teacherListBlocks .link').keypress(
+		linkEdit
+
+	).click(
+		linkEdit
+	);
+
+
+
+	$('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
+
+
+
+
+	var saveNew = function() {
+
+
+		var typeTerm = $(this).closest('.teacherListBlocks').find('#type').val();
+
+		$(this).closest('.teacherListBlocks').find('.black.type').show().html(typeTerm)
+
+		$('.appendType').addClass('hidden')
+		$('.appendRoom').addClass('hidden')
+		$('.appendSave').addClass('hidden')
+
+		var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
+
+		$(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
+
+		$(this).closest('.teacherListBlocks').find('.black.link').show()
+		$(this).closest('.teacherListBlocks').find('.black.edit').show()
+		$(this).closest('.teacherListBlocks').find('.black.delete').show()
+
+
+	}
+
+	$('.teacherListBlocks .saveNew').keypress(
+		saveNew
+
+	).click(
+		saveNew
+	);
+
+
+
+	$('.enterID').keydown(function (event) {
+		$('.sendID').removeClass('lightGrayBox').addClass('greenButton')
+		$('.sendID').removeAttr('disabled','disabled')
+		$('.sendID i').addClass('white')
+	});
+
+
+
+	$('.parentBars .absoluteCheckbox input').on('change',function() {
+		if ($(this).is(':checked')) {
+			$(this).closest('.updateBlocks').addClass('lightGreenBackgrdound')
+			$(this).closest('.updateBlocks').find('.goldLeftBar').addClass('newGreenBar')
+			$(this).closest('.row').find('.updateButton').removeClass('lightGrayColor').addClass('greenButton')
+			$(this).closest('.row').find('.disabledSave').removeAttr('disabled','disabled')
+
+
+		}
+		else {
+			$(this).closest('.updateBlocks').removeClass('lightGreenBackgrdound')
+			$(this).closest('.updateBlocks').find('.goldLeftBar').removeClass('newGreenBar')
+
+		}
+
+
+
+	})
+
+
+
+
+$('.addTeacherInfo').click(function() {
+
+
+$('.appendedTeacher').removeClass('hidden')
+
+})
+
+
+
+
+var saveTeacher = function() {
+
+	var fullName = `${prefix} ${firstName}  ${lastName}`
+
+	var prefix = $(this).closest('.appendedTeacher').find('#prefix').val();
+
+	var firstName = $(this).closest('.appendedTeacher').find('#firstName').val();
+
+	var lastName = $(this).closest('.appendedTeacher').find('#lastName').val();
+
+	$(this).closest('.appendedTeacher').find('.black.teacherName').show().html(fullName)
+
+	$('.appendType').addClass('hidden')
+	$('.appendRoom').addClass('hidden')
+	$('.appendSave').addClass('hidden')
+
+	// var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
+	//
+	// $(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
+	//
+	// $(this).closest('.teacherListBlocks').find('.black.link').show()
+	// $(this).closest('.teacherListBlocks').find('.black.edit').show()
+	// $(this).closest('.teacherListBlocks').find('.black.delete').show()
+
+
+}
+
+$('.saveTeacher').keypress(
+	saveTeacher
+
+).click(
+		saveTeacher
+);
+
+
+
+
+$('.appendedTeacher input').on('keypress',function() {
+
+$(this).closest('.appendedTeacher').find('.saveTeacher').removeClass('lightGrayColor').addClass('greenButton')
+$(this).closest('.appendedTeacher').find('.saveTeacher').removeAttr('disabled','disabled')
+
+
+
+
+})
+
+
+$('.powderBlue input').on('keypress',function() {
+
+	$(this).closest('.powderBlue').find('.saveInformation').removeClass('lightGrayColor').addClass('greenButton')
+	$(this).closest('.powderBlue').find('.saveInformation').removeAttr('disabled','disabled')
+
+
+
+})
+
+
+$('.parentUpdate input').on('keypress',function() {
+
+	$(this).closest('.parentUpdate').find('.saveInformation').removeClass('lightGrayColor').addClass('greenButton')
+	$(this).closest('.parentUpdate').find('.saveInformation').removeAttr('disabled','disabled')
+
+
+
+})
 
 
 
