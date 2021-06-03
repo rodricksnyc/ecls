@@ -1396,6 +1396,9 @@ textarea {
   border-radius: 0
 }
 
+.tlModals .btn-group.parentConsentButtons>.btn:not(.dropdown-toggle) {
+color: #00539f;
+}
 
 .tlModals .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
   border-top-right-radius: 0;
