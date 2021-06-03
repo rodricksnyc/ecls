@@ -640,7 +640,7 @@ $(document).ready(function () {
 			var elementTop = $(this).offset().top;
 			var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-			if ((screenBottom > elementTop + ($(this).find('.heros').height() / 2 )) && (screenTop < elementBottom)) {
+			if ((screenBottom > elementTop + ($(this).find('.heros').height()  )) && (screenTop < elementBottom)) {
 				$('section').removeClass('active')
 				$(this).addClass('active')
 			}
@@ -678,17 +678,6 @@ $(document).ready(function () {
 		}
 
 
-				//
-				// if ($('.block111').hasClass('active')) {
-				// 	$('li[data-target="#info2"]').addClass('activated')
-				// 	$('li[data-target="#info2"]').addClass('activated')
-				// }
-				//
-				// else {
-				// 	$('li[data-target="#info2"]').removeClass('activated')
-				// 	$('li[data-target="#info2"]').removeClass('activated')
-				// }
-
 
 
 		if ($('.block444').hasClass('active')) {
@@ -723,42 +712,54 @@ $(document).ready(function () {
 			$('li[data-target="#feedback2"]').removeClass('activated')
 		}
 
+
+		if ($('.block111').hasClass('active')) {
+			$('li[data-target="#info2"]').addClass('activated')
+			$('li[data-target="#info2"]').addClass('activated')
+		}
+
+		else {
+			$('li[data-target="#info2"]').removeClass('activated')
+			$('li[data-target="#info2"]').removeClass('activated')
+		}
+
+
 	})
 
 
 
 
 
-	$(window).on('scroll', function() {
-
-		var screenTop = $(window).scrollTop();
-		var screenBottom = $(window).scrollTop() + window.innerHeight;
-
-		$('section').each(function() {
-			var elementTop = $(this).offset().top;
-			var elementBottom = $(this).offset().top + $(this).outerHeight();
-
-			if ((screenBottom > elementTop + ($(this).find('.heros2').height() / 5 )) && (screenTop < elementBottom)) {
-				$('section').removeClass('active')
-				$(this).addClass('active')
-			}
-			else {
-				$(this).removeClass('active')
-			}
-		})
-
-
-				if ($('.block111').hasClass('active')) {
-					$('li[data-target="#info2"]').addClass('activated')
-					$('li[data-target="#info2"]').addClass('activated')
-				}
-
-				else {
-					$('li[data-target="#info2"]').removeClass('activated')
-					$('li[data-target="#info2"]').removeClass('activated')
-				}
-
-	})
+	// $(window).on('scroll', function() {
+	//
+	// 	var screenTop = $(window).scrollTop();
+	// 	var screenBottom = $(window).scrollTop() + window.innerHeight;
+	//
+	// 	$('section').each(function() {
+	// 		var elementTop = $(this).offset().top;
+	// 		var elementBottom = $(this).offset().top + $(this).outerHeight();
+	//
+	// 		if ((screenBottom > elementTop + ($(this).find('.heros2').height() / 10 )) && (screenTop < elementBottom)) {
+	// 			$('section').removeClass('active')
+	// 			$(this).addClass('active')
+	// 		}
+	// 		else {
+	// 			$(this).removeClass('active')
+	// 		}
+	// 	})
+	//
+	//
+	// 			if ($('.block111').hasClass('active')) {
+	// 				$('li[data-target="#info2"]').addClass('activated')
+	// 				$('li[data-target="#info2"]').addClass('activated')
+	// 			}
+	//
+	// 			else {
+	// 				$('li[data-target="#info2"]').removeClass('activated')
+	// 				$('li[data-target="#info2"]').removeClass('activated')
+	// 			}
+	//
+	// })
 
 
 
