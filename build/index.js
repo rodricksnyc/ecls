@@ -4451,26 +4451,38 @@ $(document).ready(function () {
 
 	$('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
 
-	var saveNew = function saveNew() {
+	// $('.teacherListBlocks .mobile br, .parentInfoBlocks .mobile br, .childrenBlocks .mobile br').remove();
 
-		var typeTerm = $(this).closest('.teacherListBlocks').find('#type').val();
+	//
+	// var saveNew = function() {
+	//
+	//
+	// 	var typeTerm = $(this).closest('.teacherListBlocks').find('#type').val();
+	//
+	// 	$(this).closest('.teacherListBlocks').find('.black.type').show().html(typeTerm)
+	//
+	// 	$('.appendType').addClass('hidden')
+	// 	$('.appendRoom').addClass('hidden')
+	// 	$('.appendSave').addClass('hidden')
+	//
+	// 	var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
+	//
+	// 	$(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
+	//
+	// 	$(this).closest('.teacherListBlocks').find('.black.link').show()
+	// 	$(this).closest('.teacherListBlocks').find('.black.edit').show()
+	// 	$(this).closest('.teacherListBlocks').find('.black.delete').show()
+	//
+	//
+	// }
+	//
+	// $('.teacherListBlocks .saveNew').keypress(
+	// 	saveNew
+	//
+	// ).click(
+	// 	saveNew
+	// );
 
-		$(this).closest('.teacherListBlocks').find('.black.type').show().html(typeTerm);
-
-		$('.appendType').addClass('hidden');
-		$('.appendRoom').addClass('hidden');
-		$('.appendSave').addClass('hidden');
-
-		var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
-
-		$(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm);
-
-		$(this).closest('.teacherListBlocks').find('.black.link').show();
-		$(this).closest('.teacherListBlocks').find('.black.edit').show();
-		$(this).closest('.teacherListBlocks').find('.black.delete').show();
-	};
-
-	$('.teacherListBlocks .saveNew').keypress(saveNew).click(saveNew);
 
 	$('.enterID').keydown(function (event) {
 		$('.sendID').removeClass('lightGrayBox').addClass('greenButton');
@@ -4490,15 +4502,13 @@ $(document).ready(function () {
 		}
 	});
 
+	//joey I commented this out
+
 	// $('.addTeacherInfo').click(function() {
-	//
 	//
 	// $('.appendedTeacher').removeClass('hidden')
 	//
 	// })
-	//
-	//
-	//
 	//
 	// var saveTeacher = function() {
 	//

@@ -937,13 +937,16 @@ select {
   min-width:120px
 }
 
+
+/* edit this joey start */
+
 .saveInformation{
   position: relative;
   outline: none;
   border: none;
   background: transparent;
   position:relative;
-  z-index: 99999999999999999999999999999999999999;
+  z-index: 999;
   height: auto !important;
 }
 
@@ -953,7 +956,7 @@ select {
   border: none;
   background: transparent;
   position:relative;
-  z-index: 99999999999999999999999999999999999999;
+  z-index: 999;
 
   border-color: #576f7f !important;
   font-family: 'Public Sans', sans-serif;
@@ -965,6 +968,8 @@ select {
   border: 2px solid #576f7f !important;
   min-height:2em
 }
+
+/* edit this joey end */
 
 
 .saveInfo{
@@ -1397,7 +1402,7 @@ textarea {
 }
 
 .tlModals .btn-group.parentConsentButtons>.btn:not(.dropdown-toggle) {
-color: #00539f;
+  color: #00539f;
 }
 
 .tlModals .btn-primary:not(:disabled):not(.disabled).active, .lightGrayBox .btn-primary:not(:disabled):not(.disabled):active, .lightGrayBox .show>.btn-primary.dropdown-toggle {
@@ -2113,32 +2118,39 @@ i{
   cursor:pointer;
 }
 
-.appendType .form-control{
-  margin-left: -3em;
+/* comment out joey start*/
+
+/* .appendType .form-control{
+margin-left: -3em;
 }
 
 .appendRoom .form-control{
-  margin-left: -2em;
-}
-
+margin-left: -2em;
+} */
+/* comment out joey end*/
 
 .eighteen{
   width:18%
 }
 
+
+/* edit this joey start*/
 .infoDelete{
   background: rgb(247, 235, 231);
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  width:100%;
-  left:0;
-  right:0;
-  bottom:0;
-  top: 46%;
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -1em;
+  top: auto;
   align-items: center;
   padding: 1em .5em 0em .5em;
+
 }
+
+/* edit this joey end*/
 
 .deleteButton {
   position: relative;
@@ -2161,11 +2173,11 @@ i{
   min-width: 3em;
 }
 
-
-.appendTeacher p.black{
-  margin-top:-3.5em
-}
-
+/* comment out joey start*/
+/* .appendTeacher p.black{
+margin-top:-3.5em
+} */
+/* comment out joey end*/
 
 span.heading {
   color:#00559b;
@@ -2415,13 +2427,15 @@ span.heading {
   padding:1em;
 }
 
+/* comment out joey start*/
 
+/* .barWrapper  {
+overflow-x: scroll;
+overflow-y: hidden;
+padding: 0em 1em;
+} */
 
-.barWrapper  {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  padding: 0em 1em;
-}
+/* comment out joey end*/
 
 .btn-group.parentConsentButtons {
   max-width:400px;
@@ -2447,11 +2461,16 @@ span.heading {
 
 
 @media (min-width: 992px) {
+
+  /* edit this joey start */
+
   .consentBlocks .wider {
-    -ms-flex: 0 0 8.333333%;
-    flex: 0 0 10.333333%;
-    max-width: 10.333333%;
+
+    flex: 0 0 11.333333%;
+    max-width: 11.333333%;
   }
+
+  /* edit this joey end */
 
   .paddingLeft2 {
     padding-left:2em
@@ -2549,23 +2568,31 @@ span.heading {
     flex-wrap: nowrap;
   }
 
-  .parentInfoBlocks, .parentInfo, .teacherSurvey, .teacherSurveyBlocks   {
-    min-width:130%
-  }
+  /* comment out joey start*/
+
+  /* .parentInfoBlocks, .parentInfo, .teacherSurvey, .teacherSurveyBlocks   {
+  min-width:130%
+  } */
 
 
-  .parentData, .parentBars .parentUpdateBlocks {
-    min-width: 241%;
-    padding-left:4em;
-    padding-right:4em;
-  }
+
+  /* .parentData, .parentBars .parentUpdateBlocks {
+  min-width: 241%;
+  padding-left:4em;
+  padding-right:4em;
+  } */
+
+  /* comment out joey end*/
+
+
+  /* joey edit this start*/
 
   .parentBars .absoluteCheckbox {
 
-    left: 2%;
+    left: 2.5%;
 
   }
-
+  /* joey edit this end*/
 
   .absoluteRight{
     position: absolute;
@@ -2653,55 +2680,224 @@ span.heading {
     margin-left: 0em;
   }
 
+  /* comment out joey start*/
 
+  /*
   .childrenAttr, .childrenBlocks  {
-    min-width:150%
-  }
+  min-width:150%
+}
 
-  .parentInfoBlocks.two, .parentInfo.two{
-    min-width:148%
-  }
-
-
-  .teacherListBlocks.two, .teacherList{
-    min-width:148%
-  }
+.parentInfoBlocks.two, .parentInfo.two{
+min-width:148%
+}
 
 
+.teacherListBlocks.two, .teacherList{
+min-width:148%
+} */
 
-  .parentInfoBlocks.two .launchStatus i,   .parentInfoBlocks.two .edit i{
-    font-size:22px
-  }
+/* comment out joey end*/
 
-  .tl-schools .childrenAttr, .tl-schools .childrenBlocks {
-    min-width: 200%;
-  }
+.parentInfoBlocks.two .launchStatus i,   .parentInfoBlocks.two .edit i{
+  font-size:22px
+}
 
-  .half-width{
-    flex: 0 0 4.333333%;
-    max-width: 4.333333%;
-  }
+/* comment out joey start*/
 
-  .double-width{
-    flex: 0 0 12.333333%;
-    max-width: 12.333333%;
+/* .tl-schools .childrenAttr, .tl-schools .childrenBlocks {
+min-width: 200%;
+} */
 
-  }
+/* comment out joey end*/
 
-  .childTeacher {
-    padding:1em;
-  }
 
-  .childTeacher .bothChild, .childTeacher .grade, .childTeacher .consentStatus{
-    line-height: 1;
-    margin-bottom:1em;
-  }
 
-  .grayColor{
-    background: #eeeeee;
-    padding: .5em .2em .5em 1em;
-    margin-bottom:1em
-  }
+/* add this joey start*/
+
+.childrenBlocks .col-lg-1,
+.childrenBlocks .col-lg-2,
+.parentInfoBlocks .col-lg-1,
+.parentInfoBlocks .col-lg-2,
+.teacherListBlocks .col-lg-1,
+.teacherListBlocks .col-lg-2,
+.teacherListBlocks .col-lg-3,
+.teacherSurveyBlocks .col-lg-1,
+.teacherSurveyBlocks .col-lg-2,
+.parentUpdateBlocks .col-lg-2,
+.parentUpdateBlocks .col-lg-1 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.parentInfoBlocks .percentageCircle {
+  margin-bottom: 1em;
+  margin-top: .5em;
+}
+
+.childrenBlocks .mobile,
+.parentInfoBlocks .mobile,
+.teacherListBlocks .mobile,
+.teacherSurveyBlocks .mobile,
+.parentUpdateBlocks .mobile {
+  display: block !important;
+  color: #576f7f;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  font-size: .88em;
+}
+
+.childrenBlocks .mobile br,
+.parentInfoBlocks .mobile br,
+.teacherListBlocks .mobile br,
+.teacherSurveyBlocks .mobile br{
+  display: none;
+}
+.parentInfoBlocks .col-lg-1,
+.parentInfoBlocks .col-lg-2,
+.teacherSurveyBlocks .col-lg-1,
+.teacherSurveyBlocks .col-lg-2,
+.parentUpdateBlocks .col-lg-1,
+.parentUpdateBlocks .col-lg-2,
+.teacherListBlocks .col-lg-1,
+.teacherListBlocks .col-lg-2,
+.teacherListBlocks .col-lg-3{
+
+  margin-bottom: 1em;
+}
+
+.teacherSurveyBlocks .mLnegative1 {
+  margin-left: 0em !important;
+}
+
+.parentInfoBlocks .ml-4 {
+  margin-left: 0rem !important;
+}
+
+.teacherListBlocks .paddingLeft2 {
+  padding-left: 1em;
+}
+
+.parentInfoBlocks .seventyEight {
+  width: 100%;
+  margin-left: 0% !important;
+}
+
+.parentInfoBlocks .eightyPercent {
+  width: 100%;
+  margin-left: 00% !important;
+}
+
+.parentInfoBlocks .marginLeft15 {
+  margin-left: 0% !important;
+}
+
+.childrenBlocks p.black {
+  text-align: left;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+.childrenAttr, .parentInfo, .teacherList, .teacherSurvey {
+  display: none !important;
+}
+.optionGroup{
+  margin-bottom:1em
+}
+
+.powderBlue .topAttr{
+  display: flex !important
+}
+
+.childrenBlocks:first-child{
+  margin-top:1em
+}
+.barWrapper{
+  padding-top:1em
+}
+.topAttr.eRocAttr.d-flex.align-items-center{
+  display: flex
+}
+
+.renderParentUpdate .parentUpdateBlocks{
+  padding-left:0em !important
+}
+
+.renderParentUpdate  .parentUpdateBlocks .mobile {
+  display: none !important;
+
+}
+
+
+.parentUpdateBlocks{
+  padding-left:2em !important
+}
+
+
+.assessment legend {
+  width:auto !important
+}
+
+.schoolPage .appendedName, .appendedTitle{
+  white-space: pre-wrap !important
+}
+
+.sAdminDate{
+  word-break: normal;
+}
+
+
+.black.language.biggerWidth.ml1{
+  margin-left: 0em !important
+}
+
+/* .parentInfoBlocks {
+padding-left: 1.5em;
+} */
+
+.parentInfoBlocks .absoluteCheck {
+  position: relative !important;
+  left: 0;
+  top: 0;
+  margin-left: 0em !important;
+  margin-top: -1em !important;
+}
+
+.parentBars .updateBlocks.parentUpdateBlocks p.black {
+  text-align: left;
+  line-height: 1.1;
+  font-size: .98em;
+}
+
+
+
+/* add this joey end*/
+
+
+
+.half-width{
+  flex: 0 0 4.333333%;
+  max-width: 4.333333%;
+}
+
+.double-width{
+  flex: 0 0 12.333333%;
+  max-width: 12.333333%;
+
+}
+
+.childTeacher {
+  padding:1em;
+}
+
+.childTeacher .bothChild, .childTeacher .grade, .childTeacher .consentStatus{
+  line-height: 1;
+  margin-bottom:1em;
+}
+
+.grayColor{
+  background: #eeeeee;
+  padding: .5em .2em .5em 1em;
+  margin-bottom:1em
+}
 
 
 }
@@ -3453,11 +3649,15 @@ ul.greenDot{
   text-align: center;
 }
 
+
+
 .updateBlocks p.black{
   text-align: center;
   line-height: 1.1;
 
 }
+
+
 
 @media (min-width:1781px) {
   .fixedDiv {
@@ -5497,11 +5697,17 @@ transform: scale(0.9);
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
+
+/* joey edit this start */
+
 #slideOut {
   height: 100vh;
   top: 0;
-  z-index: 999;
+  z-index: 9999999;
 }
+
+/* joey edit this end */
+
 #slideOut {
   position: fixed;
 
@@ -10246,9 +10452,27 @@ body{
 
   }
 
+  /* add this joey start*/
+
+  .childrenBlocks p.black {
+    font-size: .98em;
+  }
+
+  .parentInfoBlocks p.black {
+    font-size: .98em;
+  }
+
+  .teacherListBlocks p.black {
+    font-size: .98em;
+  }
+
+  /* add this joey end*/
+
   p.black {
     font-size: .8em;
   }
+
+
 
 
   .addBlocks p.black, .toggleDiv p.black {

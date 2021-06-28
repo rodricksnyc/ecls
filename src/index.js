@@ -52,6 +52,7 @@ for(var j in teacher.teachers) {
 
 }
 
+
 //create and append child divs with objects
 
 var child = {"children": [{
@@ -5423,39 +5424,39 @@ $(".scrollIt").on("click", function(event) {
 
 
 
-	$('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
+$('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
 
+// $('.teacherListBlocks .mobile br, .parentInfoBlocks .mobile br, .childrenBlocks .mobile br').remove();
 
-
-
-	var saveNew = function() {
-
-
-		var typeTerm = $(this).closest('.teacherListBlocks').find('#type').val();
-
-		$(this).closest('.teacherListBlocks').find('.black.type').show().html(typeTerm)
-
-		$('.appendType').addClass('hidden')
-		$('.appendRoom').addClass('hidden')
-		$('.appendSave').addClass('hidden')
-
-		var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
-
-		$(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
-
-		$(this).closest('.teacherListBlocks').find('.black.link').show()
-		$(this).closest('.teacherListBlocks').find('.black.edit').show()
-		$(this).closest('.teacherListBlocks').find('.black.delete').show()
-
-
-	}
-
-	$('.teacherListBlocks .saveNew').keypress(
-		saveNew
-
-	).click(
-		saveNew
-	);
+	//
+	// var saveNew = function() {
+	//
+	//
+	// 	var typeTerm = $(this).closest('.teacherListBlocks').find('#type').val();
+	//
+	// 	$(this).closest('.teacherListBlocks').find('.black.type').show().html(typeTerm)
+	//
+	// 	$('.appendType').addClass('hidden')
+	// 	$('.appendRoom').addClass('hidden')
+	// 	$('.appendSave').addClass('hidden')
+	//
+	// 	var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
+	//
+	// 	$(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
+	//
+	// 	$(this).closest('.teacherListBlocks').find('.black.link').show()
+	// 	$(this).closest('.teacherListBlocks').find('.black.edit').show()
+	// 	$(this).closest('.teacherListBlocks').find('.black.delete').show()
+	//
+	//
+	// }
+	//
+	// $('.teacherListBlocks .saveNew').keypress(
+	// 	saveNew
+	//
+	// ).click(
+	// 	saveNew
+	// );
 
 
 
@@ -5487,17 +5488,13 @@ $(".scrollIt").on("click", function(event) {
 	})
 
 
-
+//joey I commented this out
 
 	// $('.addTeacherInfo').click(function() {
-	//
 	//
 	// $('.appendedTeacher').removeClass('hidden')
 	//
 	// })
-	//
-	//
-	//
 	//
 	// var saveTeacher = function() {
 	//
