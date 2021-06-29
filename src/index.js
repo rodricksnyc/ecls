@@ -5345,7 +5345,14 @@ $(".scrollIt").on("click", function(event) {
 
 
 
+
+	//joey I added this
+
+
+
 	//teacher info bars actions on non-priority schools pages
+
+
 	var deleteTeacher = function() {
 
 		$(this).closest('.teacherListBlocks').addClass('appendTeacher')
@@ -5398,17 +5405,17 @@ $(".scrollIt").on("click", function(event) {
 		$(this).closest('.teacherListBlocks').find('.black.type').hide()
 
 
-
-
 		$(this).closest('.teacherListBlocks').find('.appendRoom').removeClass('hidden')
 		$(this).closest('.teacherListBlocks').find('.black.room').hide()
-			$(this).closest('.teacherListBlocks').find('.black.link').hide()
+		$(this).closest('.teacherListBlocks').find('.black.link').hide()
+		$(this).closest('.teacherListBlocks').find('.black.grade').hide()
 
 
-
+		$(this).closest('.teacherListBlocks').find('.appendGrade').removeClass('hidden')
 
 
 		$(this).closest('.teacherListBlocks').find('.appendSave').removeClass('hidden')
+
 		$(this).closest('.teacherListBlocks').find('.black.edit').addClass('off')
 		$(this).closest('.teacherListBlocks').find('.black.edit i').addClass('lightGray')
 		// $(this).closest('.teacherListBlocks').find('.black.edit').hide()
@@ -5427,21 +5434,22 @@ $(".scrollIt").on("click", function(event) {
 
 
 
-$('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
+	$('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
 
-// $('.teacherListBlocks .mobile br, .parentInfoBlocks .mobile br, .childrenBlocks .mobile br').remove();
+	// $('.teacherListBlocks .mobile br, .parentInfoBlocks .mobile br, .childrenBlocks .mobile br').remove();
 
 
 	var saveNew = function() {
 
-		//
+		$(this).closest('.teacherListBlocks').find('.appendType').addClass('hidden')
+		$(this).closest('.teacherListBlocks').find('.appendRoom').addClass('hidden')
+		$(this).closest('.teacherListBlocks').find('.appendGrade').addClass('hidden')
+		$(this).closest('.teacherListBlocks').find('.appendSave').addClass('hidden')
 		// var typeTerm = $(this).closest('.teacherListBlocks').find('#type').val();
 		//
 		// $(this).closest('.teacherListBlocks').find('.black.type').show().html(typeTerm)
 
-		$('.appendType').addClass('hidden')
-		$('.appendRoom').addClass('hidden')
-		$('.appendSave').addClass('hidden')
+
 
 		// var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
 		//
@@ -5449,6 +5457,7 @@ $('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
 
 		$(this).closest('.teacherListBlocks').find('.black.type').show()
 		$(this).closest('.teacherListBlocks').find('.black.room').show()
+		$(this).closest('.teacherListBlocks').find('.black.grade').show()
 		// $(this).closest('.teacherListBlocks').find('.black.delete').show()
 		$(this).closest('.teacherListBlocks').find('.black.link').show()
 		// $(this).closest('.teacherListBlocks').find('.black.edit').show()
@@ -5499,7 +5508,7 @@ $('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
 	})
 
 
-//joey I commented this out
+	//joey I commented this out
 
 	// $('.addTeacherInfo').click(function() {
 	//
@@ -5542,14 +5551,10 @@ $('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
 	// );
 
 
-
-
 	$('.appendedTeacher input').on('keypress',function() {
 
 		$(this).closest('.appendedTeacher').find('.saveTeacher').removeClass('lightGrayColor').addClass('greenButton')
 		$(this).closest('.appendedTeacher').find('.saveTeacher').removeAttr('disabled','disabled')
-
-
 
 
 	})

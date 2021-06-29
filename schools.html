@@ -2706,9 +2706,6 @@
 
 																	<div class="teacherInfoBlocks">
 
-
-
-
 																		<!-- joey, here is the blank one with all the options start -->
 
 																		<div class="teacherListBlocks two d-flex align-items-center flex-wrap">
@@ -2743,6 +2740,14 @@
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																				<div class="mobile">GRADE</div>
 																				<p class="black grade">K</p>
+																				<div class="appendGrade hidden">
+																					<label class="hidden" for="grade"></label>
+																					<select id="grade" class="form-control">
+																						<option value="k">K</option>
+																						<option value="1">1</option>
+																						<option value="2">2</option>
+																					</select>
+																				</div>
 																			</div>
 
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
@@ -2771,7 +2776,7 @@
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																				<div class="mobile">EDIT</div>
 
-																				<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
+																				<p class="black edit" data-toggle="modal" data-target="#addTeacherModal"><i class="fas fa-pencil-alt darkBlue"></i></p>
 
 																			</div>
 
@@ -2808,10 +2813,10 @@
 																				<p class="black teacherEmail">vvangogh@artschool.edu</p>
 																			</div>
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-																				<div class="mobile type">TYPE</div>
+																				<div class="mobile type" style="display:none;">TYPE</div>
 
 																				<p class="black type">Primary</p>
-																				<div class="appendType hidden">
+																				<div class="appendType">
 																					<label class="hidden" for="type"></label>
 																					<select id="type" class="form-control">
 																						<option value="Special">Special</option>
@@ -2824,13 +2829,21 @@
 																			</div>
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																				<div class="mobile">GRADE</div>
-																				<p class="black grade">K</p>
+																				<p class="black grade" style="display:none;">K</p>
+																				<div class="appendGrade">
+																					<label class="hidden" for="grade"></label>
+																					<select id="grade" class="form-control">
+																						<option value="k">K</option>
+																						<option value="1">1</option>
+																						<option value="2">2</option>
+																					</select>
+																				</div>
 																			</div>
 
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																				<div class="mobile">ROOM</div>
-																				<p class="black room">1834</p>
-																				<div class="appendRoom hidden">
+																				<p class="black room" style="display:none;">1834</p>
+																				<div class="appendRoom">
 																					<label for="room" class="hidden"></label>
 																					<input type="text" name="room" class="form-control" id="room" value="">
 
@@ -2839,20 +2852,20 @@
 
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																				<div class="mobile">ADD LINK</div>
-																				<p class="black link"><i class="fas fa-link darkBlue"></i></p>
-																				<div class="appendSave hidden">
+																				<p class="black link" style="display:none;"><i class="fas fa-link darkBlue"></i></p>
+																				<div class="appendSave">
 																					<p class="saveNew mb-0"><i class="far fa-save"></i></p>
 																				</div>
 																			</div>
 
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																				<div class="mobile">DELETE</div>
-																				<p class="black delete"><i class="fas fa-trash-alt redColor" tabindex="0"></i></p>
+																				<p class="black delete off"><i class="fas fa-trash-alt redColor lightGray" tabindex="0"></i></p>
 																			</div>
 
 																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
 																				<div class="mobile">EDIT</div>
-																				<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
+																				<p class="black edit off" data-toggle="modal" data-target="#addTeacherModal"><i class="fas fa-pencil-alt darkBlue lightGray"></i></p>
 
 																			</div>
 

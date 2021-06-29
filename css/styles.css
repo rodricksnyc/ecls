@@ -2867,7 +2867,11 @@ padding-left: 1.5em;
   font-size: .98em;
 }
 
-
+.appendGrade .form-control,
+.appendType .form-control,
+.appendRoom .form-control{
+  margin-top:0em !important
+}
 
 /* add this joey end*/
 
