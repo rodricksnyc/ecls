@@ -5408,14 +5408,16 @@ $(".scrollIt").on("click", function(event) {
 
 
 		$(this).closest('.teacherListBlocks').find('.appendSave').removeClass('hidden')
-		$(this).closest('.teacherListBlocks').find('.black.link').hide()
+		$(this).closest('.teacherListBlocks').find('.black.link').addClass('off')
+		$(this).closest('.teacherListBlocks').find('.black.link i').addClass('lightGray')
 		$(this).closest('.teacherListBlocks').find('.black.edit').hide()
-		$(this).closest('.teacherListBlocks').find('.black.delete').hide()
+		$(this).closest('.teacherListBlocks').find('.black.delete').addClass('off')
+		$(this).closest('.teacherListBlocks').find('.black.delete i').addClass('lightGray')
 
 	}
 
 
-	$('.teacherListBlocks .link').keypress(
+	$('.teacherListBlocks .edit').keypress(
 		linkEdit
 
 	).click(
@@ -5428,35 +5430,43 @@ $('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
 
 // $('.teacherListBlocks .mobile br, .parentInfoBlocks .mobile br, .childrenBlocks .mobile br').remove();
 
-	//
-	// var saveNew = function() {
-	//
-	//
-	// 	var typeTerm = $(this).closest('.teacherListBlocks').find('#type').val();
-	//
-	// 	$(this).closest('.teacherListBlocks').find('.black.type').show().html(typeTerm)
-	//
-	// 	$('.appendType').addClass('hidden')
-	// 	$('.appendRoom').addClass('hidden')
-	// 	$('.appendSave').addClass('hidden')
-	//
-	// 	var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
-	//
-	// 	$(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
-	//
-	// 	$(this).closest('.teacherListBlocks').find('.black.link').show()
-	// 	$(this).closest('.teacherListBlocks').find('.black.edit').show()
-	// 	$(this).closest('.teacherListBlocks').find('.black.delete').show()
-	//
-	//
-	// }
-	//
-	// $('.teacherListBlocks .saveNew').keypress(
-	// 	saveNew
-	//
-	// ).click(
-	// 	saveNew
-	// );
+
+	var saveNew = function() {
+
+		//
+		// var typeTerm = $(this).closest('.teacherListBlocks').find('#type').val();
+		//
+		// $(this).closest('.teacherListBlocks').find('.black.type').show().html(typeTerm)
+
+		$('.appendType').addClass('hidden')
+		$('.appendRoom').addClass('hidden')
+		$('.appendSave').addClass('hidden')
+
+		// var roomTerm = $(this).closest('.teacherListBlocks').find('#room').val();
+		//
+		// $(this).closest('.teacherListBlocks').find('.black.room').show().html(roomTerm)
+
+		$(this).closest('.teacherListBlocks').find('.black.type').show()
+		$(this).closest('.teacherListBlocks').find('.black.room').show()
+		// $(this).closest('.teacherListBlocks').find('.black.delete').show()
+		// $(this).closest('.teacherListBlocks').find('.black.link').show()
+		$(this).closest('.teacherListBlocks').find('.black.edit').show()
+
+		$(this).closest('.teacherListBlocks').find('.black.link').removeClass('off')
+		$(this).closest('.teacherListBlocks').find('.black.link i').removeClass('lightGray')
+
+		$(this).closest('.teacherListBlocks').find('.black.delete').removeClass('off')
+		$(this).closest('.teacherListBlocks').find('.black.delete i').removeClass('lightGray')
+
+
+	}
+
+	$('.teacherListBlocks .saveNew').keypress(
+		saveNew
+
+	).click(
+		saveNew
+	);
 
 
 
