@@ -4440,16 +4440,17 @@ $(document).ready(function () {
 
 		$(this).closest('.teacherListBlocks').find('.appendRoom').removeClass('hidden');
 		$(this).closest('.teacherListBlocks').find('.black.room').hide();
+		$(this).closest('.teacherListBlocks').find('.black.link').hide();
 
 		$(this).closest('.teacherListBlocks').find('.appendSave').removeClass('hidden');
-		$(this).closest('.teacherListBlocks').find('.black.link').addClass('off');
-		$(this).closest('.teacherListBlocks').find('.black.link i').addClass('lightGray');
-		$(this).closest('.teacherListBlocks').find('.black.edit').hide();
+		$(this).closest('.teacherListBlocks').find('.black.edit').addClass('off');
+		$(this).closest('.teacherListBlocks').find('.black.edit i').addClass('lightGray');
+		// $(this).closest('.teacherListBlocks').find('.black.edit').hide()
 		$(this).closest('.teacherListBlocks').find('.black.delete').addClass('off');
 		$(this).closest('.teacherListBlocks').find('.black.delete i').addClass('lightGray');
 	};
 
-	$('.teacherListBlocks .edit').keypress(linkEdit).click(linkEdit);
+	$('.teacherListBlocks .link').keypress(linkEdit).click(linkEdit);
 
 	$('.teacherListBlocks .off').attr("disabled", "disabled").off('click');
 
@@ -4474,11 +4475,11 @@ $(document).ready(function () {
 		$(this).closest('.teacherListBlocks').find('.black.type').show();
 		$(this).closest('.teacherListBlocks').find('.black.room').show();
 		// $(this).closest('.teacherListBlocks').find('.black.delete').show()
-		// $(this).closest('.teacherListBlocks').find('.black.link').show()
-		$(this).closest('.teacherListBlocks').find('.black.edit').show();
+		$(this).closest('.teacherListBlocks').find('.black.link').show();
+		// $(this).closest('.teacherListBlocks').find('.black.edit').show()
 
-		$(this).closest('.teacherListBlocks').find('.black.link').removeClass('off');
-		$(this).closest('.teacherListBlocks').find('.black.link i').removeClass('lightGray');
+		$(this).closest('.teacherListBlocks').find('.black.edit').removeClass('off');
+		$(this).closest('.teacherListBlocks').find('.black.edit i').removeClass('lightGray');
 
 		$(this).closest('.teacherListBlocks').find('.black.delete').removeClass('off');
 		$(this).closest('.teacherListBlocks').find('.black.delete i').removeClass('lightGray');
