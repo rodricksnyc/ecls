@@ -4452,8 +4452,8 @@ $(document).ready(function () {
 
 		$(this).closest('.teacherListBlocks').find('.appendSave').removeClass('hidden');
 
-		$(this).closest('.teacherListBlocks').find('.black.edit').addClass('off');
-		$(this).closest('.teacherListBlocks').find('.black.edit i').addClass('lightGray');
+		// $(this).closest('.teacherListBlocks').find('.black.edit').addClass('off')
+		// $(this).closest('.teacherListBlocks').find('.black.edit i').addClass('lightGray')
 		// $(this).closest('.teacherListBlocks').find('.black.edit').hide()
 		$(this).closest('.teacherListBlocks').find('.black.delete').addClass('off');
 		$(this).closest('.teacherListBlocks').find('.black.delete i').addClass('lightGray');
@@ -4488,8 +4488,8 @@ $(document).ready(function () {
 		$(this).closest('.teacherListBlocks').find('.black.link').show();
 		// $(this).closest('.teacherListBlocks').find('.black.edit').show()
 
-		$(this).closest('.teacherListBlocks').find('.black.edit').removeClass('off');
-		$(this).closest('.teacherListBlocks').find('.black.edit i').removeClass('lightGray');
+		// $(this).closest('.teacherListBlocks').find('.black.edit').removeClass('off')
+		// $(this).closest('.teacherListBlocks').find('.black.edit i').removeClass('lightGray')
 
 		$(this).closest('.teacherListBlocks').find('.black.delete').removeClass('off');
 		$(this).closest('.teacherListBlocks').find('.black.delete i').removeClass('lightGray');
