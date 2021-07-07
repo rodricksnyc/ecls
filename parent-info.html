@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/iwp5gli.css">
+<link rel="stylesheet" href="https://use.typekit.net/koi5ueb.css">
+<title>ECLS</title>
+<link rel="shortcut icon" href="images/square.png">
+<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.0.1/sweetalert.min.css">
+<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+
+</head>
+
+
+
+<body>
+
+<div class="container-fluid overflow-hidden position-relative">
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close Browser Recommendations Modal">
+					<span aria-hidden="true" style="font-size:25px;">&times;</span></button>
+					<h4 class="modal-title">Browser Recommendations</h4>
+
+				</div>
+				<div class="modal-body">
+					<h6 class="black">We recommend using a desktop or laptop computer to complete the study activities. For the best
+						experience, use <span class="strong">Chrome, Edge, Safari, or Firefox.</span> If you don’t have one of the recommended browsers,
+						you can select one of the browser icons below to download the installer.</h6>
+						<div class="flex">
+							<div class="vertical2">
+								<img src="images/google.png" class="img-responsive icon" height="70" width="70" alt="">
+								<p>Chrome</p>
+							</div>
+							<div class="vertical2">
+								<img src="images/edge.png" class="img-responsive icon" height="70" width="70" alt="">
+								<p>Edge</p>
+							</div>
+							<div class="vertical2">
+								<img src="images/safari.png" class="img-responsive icon" height="70" width="70" alt="">
+								<p>Safari</p>
+							</div>
+							<div class="vertical2">
+								<img src="images/firefox.png" class="img-responsive icon" height="70" width="73" alt="">
+								<p>Firefox</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<center>
+							<button type="button" class="btn browser" data-dismiss="modal">DONE</button>
+						</center>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="block0">
+			<div class="heros" id="home">
+				<header class="landing d-flex">
+					<div class="logos desktopOnly d-flex justify-content-start align-items-center">
+						<a tabindex="0" href="https://ies.ed.gov/" target="_blank"><img src="images/IES.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo"></a>
+
+						<div class="flipTop"></div>
+
+						<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ED.svg" class="img-responsive logo" alt="US Department of Education Logo"></a>
+					</div>
+
+					<div class="logos mobileOnly d-flex justify-content-start align-items-center">
+						<a tabindex="0" href="https://ies.ed.gov/" target="_blank">
+							<img src="images/ies-mobile.svg" class="img-responsive logo" alt="Institute of Education Sciences Logo">
+						</a>
+
+						<div class="flipTop"></div>
+
+						<a tabindex="0" href="https://www.ed.gov/" target="_blank"><img src="images/ed-mobile.svg" class="img-responsive logo" alt="US Department of Education Logo" style="max-width: 3em; margin-left: -0.7em;"></a>
+					</div>
+
+					<div class="end desktopOnly">
+						<div class="whiteBox d-flex justify-content-between align-items-center">
+
+							<a class="slate" href="" role="button" tabindex="0" aria-label="Access ECLS home">
+								<p class="slate">my ECLSHome</p>
+							</a>
+							<a href="" role="button" tabindex="0" aria-label="Access portal">
+								<div class="tangerineBox">
+									<p class="plum">Portal</p>
+								</div>
+							</a>
+
+							<a class="slate" href="" role="button" tabindex="0"  aria-label="Logout"><p class="slate borderLeft">Logout<p></a>
+
+							</div>
+						</div>
+
+						<div class="end mobileOnly">
+							<div class="whiteBox d-flex justify-content-between align-items-center">
+
+								<a class="slate" href="" role="button" tabindex="0" aria-label="Access ECLS home">
+									<i class="fas fa-home slate"></i>
+								</a>
+								<a href="" role="button" tabindex="0" aria-label="Access portal">
+									<div class="tangerineBox">
+										<p class="plum"><i class="fas fa-user slate"></i></p>
+									</div>
+								</a>
+
+								<a class="slate" href="" role="button" tabindex="0" aria-label="Logout"><p class="slate borderLeft"><i class="fas fa-sign-out-alt slate"></i></p></a><p><a class="slate" href="" role="button" tabindex="0" aria-label="Logout"></a>
+
+								</p></div>
+							</div>
+						</header>
+						<div class="tlBanner noMargin">
+							<a href="tl.html" class="toTL"><div class="green-circle circle"><i class="far fa-angle-left yellow"></i></div></a>
+							<div class="d-flex justify-content-center align-items-center pt-1">
+								<img src="images/img_school.svg" class="img-fluid topBannerImg"> <h1 class="white title pt-0 mb-0">Schools</h1>
+							</div>
+						</div>
+
+					</section>
+
+
+					<div id="slideOut" class="content-top">
+
+						<div id="one" class="openTab" role="button" data-toggle="tab" tabindex="0" aria-label="Contact">
+							<p class="plum"><i class="fas fa-envelope plum"></i>&nbsp;&nbsp;Contact Us</p>
+
+						</div>
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<div class="closeThisPlease" id="close">
+									<button role="button" role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+										<span aria-hidden="true">
+											<div class="circCont">
+												<div class="circleClose" data-animation="magnify" data-remove="3000">
+													<span></span>
+												</div>
+											</div>
+										</span>
+									</button>
+								</div>
+								<br>
+
+								<p class="whiteLarge">How to Contact Us</p>
+
+							</div>
+							<div class="modal-body">
+
+								<form method="post" data-form-title="CONTACT US" class="slideForm" id="theform">
+									<!-- <p class="modalFooter">*Required Field</p> -->
+									<div class="form-group">
+										<label for="formControl1">Name</label>
+										<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
+									</div>
+									<div class="form-group">
+										<label for="formControl2">Email</label>
+										<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+									</div>
+
+									<div class="form-group">
+										<fieldset>
+											<label for="general-inquiry">Reason for Contact</label>
+											<div class="around">
+												<div class="vertical">
+													<i class="fas fa-info-circle"></i>
+													<legend>Reason for Contact</legend>
+													<label class="radio-inline">
+														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false" id="general-inquiry" checked>General<br>Inquiry
+													</label>
+												</div>
+												<div class="vertical">
+													<i class="fas fa-question-circle"></i>
+													<label class="radio-inline">
+														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Questions
+													</label>
+												</div>
+												<div class="vertical">
+													<i class="fas fa-user-headset"></i>
+													<label class="radio-inline">
+														<input type="radio" name="optradio" class="required mandatoryfields checks" tabindex="-1" aria-hidden="false">Technical<br>Issues
+													</label>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+									<div class="form-group">
+										<label for="formControl4">Message</label>
+										<textarea class="form-control thirdOne required mandatoryfields" id="formControl4" tabindex="-1" aria-hidden="false" name="message"  rows="4" data-form-field="Message"></textarea>
+									</div>
+									<center>
+										<button type="submit" class="btn btn-info button-outlined" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+									</center>
+									<div class="emailInfo">
+										<h6 class="white pt1">Email</h6>
+										<p class="white"><i class="fal fa-envelope"></i>&nbsp;<a  href="mailto:ecls@westat.com">ecls@Westat.com</a></p>
+									</div>
+								</form>
+
+							</div>
+							<div class="modal-footer">
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+						&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+					</div>
+
+					<div class="toast2 transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+						&#x2713;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saved successfully.
+					</div>
+
+					<div class="contactUsOverlay"></div>
+
+					<div class="rel">
+						<div class="greenSide projects" tabindex="0" role="button" aria-expanded="false">
+							<i class="far fa-bars yellow mb-2"></i>
+							<p class="white small">MENU</p>
+						</div>
+
+						<div class="slideOutLeft">
+
+							<div class="d-flex align-items-center justify-content-around menuClass">
+
+								<h6 class="gray text-center">MENU</h6>
+								<div class="close-project" aria-expanded="false" role="button" aria-hidden="true" tabindex="-1">
+
+									<i class="far fa-angle-double-left darkBlue"></i>
+									<div class="grayBackground"></div>
+
+								</div>
+							</div>
+							<div class="hoverOnly"><i class="fas fa-thumbtack darkBlue"></i></div>
+
+							<div class="d-flex align-items-center flex-column columnCubes">
+
+
+
+								<a href="districts.html" class="cube">
+									<div class="greenCube districts">
+										<img src="images/img_districts.svg" class="img-fluid">
+										<p class="white twenty mt-0 mb-0">Districts</p>
+
+									</div>
+								</a>
+
+
+								<div class="activeCube">
+									<img src="images/img_school-hover.svg" class="img-fluid">
+									<p class="white twenty mt-0 mb-0">Schools</p>
+
+								</div>
+
+
+								<a href="parents.html" class="cube">
+									<div class="greenCube parents">
+										<img src="images/img_parents.svg" class="img-fluid">
+										<p class="white twenty mt-0 mb-0">Parents</p>
+
+									</div>
+								</a>
+
+								<a href="tl-documents.html" class="cube">
+									<div class="blueCube documents">
+										<img src="images/img_documents.svg" class="img-fluid">
+										<p class="white twenty mt-0 mb-0">Documents</p>
+
+									</div>
+								</a>
+
+								<a href="transmission.html" class="cube">
+									<div class="blueCube transmission">
+										<img src="images/img_transmission.svg" class="img-fluid">
+										<p class="white twenty mt-0 mb-0">Transmission</p>
+
+									</div>
+								</a>
+								<a href="message.html" class="cube">
+									<div class="blueCube messaging">
+										<img src="images/img_messaging.svg" class="img-fluid">
+										<p class="white twenty mt-0 mb-0">Message Center</p>
+
+									</div>
+								</a>
+
+								<a href="reports.html" class="cube">
+									<div class="blueCube reports">
+										<img src="images/img_reports.svg" class="img-fluid">
+										<p class="white twenty mt-0 mb-0">Reports</p>
+
+									</div>
+								</a>
+
+
+							</div>
+
+
+						</div>
+					</div>
+
+
+
+					<section class="block99 mt-5">
+						<div id="overview" class="container-fluid heros">
+
+							<div id="anchorPoint"></div>
+
+							<div class="container">
+
+								<div class="box-outer tlModals">
+
+
+										<div class="grayBox second" style="display:block">
+
+											<ul class="nav nav-tabs" role="tablist">
+												<li class="nav-item">
+													<a class="nav-link text-center" href="tl-school-info.html">School Info</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link text-center" href="submit-child-list.html">Submit Child List</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link text-center" href="child-info.html">Child Info</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link active text-center" href="parent-info.html">Parent Info</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link  text-center" href="teacher-info.html">Teacher Info</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link  text-center" href="school-materials.html">School Materials</a>
+												</li>
+
+											</ul>
+											<div class="tab-content">
+							
+
+												<div class="tab-pane active" id="tabs-4" role="tabpanel">
+
+													<div class="lightGrayBox submitChildList">
+														<div class="row">
+															<div class="col-lg-4">
+																<div class="d-flex justify-content-start align-items-baseline">
+																	<p class="purple">REGION</p>
+																	<p class="black largest">Lehigh Valley</p>
+
+																</div>
+																<div class="d-flex justify-content-start align-items-baseline">
+																	<p class="purple">SCHOOL<br>NAME</p>
+
+																	<p class="black largest">123EASD</p>
+																</div>
+
+															</div>
+															<div class="col-lg-4">
+																<div class="d-flex justify-content-start align-items-baseline">
+																	<p class="purple">WORK AREA</p>
+																	<p class="black largest">Easton Area School District</p>
+
+
+																</div>
+																<div class="d-flex justify-content-start align-items-baseline">
+																	<p class="purple">SCHOOL ID</p>
+																	<p class="black largest">123EASD</p>
+																</div>
+
+															</div>
+															<div class="col-lg-4">
+																<div class="d-flex justify-content-start align-items-baseline">
+																	<p class="purple">SCHOOL<br>RECRUITMENT CODE</p>
+																	<p class="black largest">1237065409</p>
+
+
+																</div>
+																<div class="d-flex justify-content-start align-items-baseline">
+																	<p class="purple">SCHOOL<br>COMPLETION CODE</p>
+																	<p class="black largest">123489987</p>
+																</div>
+
+															</div>
+
+														</div>
+
+													</div>
+
+													<div class="outside pt-3">
+														<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
+
+														<h2 class="landing-sec-H padding-0 margin-0">Parent Consent</h2>
+
+														<div class="row">
+															<div class="col-xs-12 col-lg-12 col-md-12">
+
+																<div class="toggleDiv">
+																	<div class="d-flex justify-content-between align-items-baseline">
+																		<div class="d-flex justify-content-start align-items-baseline mt-5 optionGroup">
+																			<p class="charcoal m-0 minimumWidth">CHANGE STATUS:</p>
+																			<div class="btn-group parentConsentButtons" data-toggle="buttons">
+																				<label class="btn btn-primary">
+																					<input type="radio" name="options" id="option1" autocomplete="off">PENDING
+																				</label>
+																				<label class="btn btn-primary">
+																					<input type="radio" name="options" id="option2" autocomplete="off">REFUSED
+																				</label>
+																				<label class="btn btn-primary active">
+																					<input type="radio" name="options" id="option3" autocomplete="off">OBTAINED
+																				</label>
+																			</div>
+																			<button type="submit" class="btn blueButton updateParentConsent m-0" tabindex="0" aria-hidden="false" role="button" aria-describedby="Update Parent Consent">UPDATE</button>
+																		</div>
+
+																		<button class="btn btn-info steelColor m-0" tabindex="0" aria-hidden="false" role="button" aria-label="Consent Forms"><i class="far fa-print"></i> CONSENT FORMS</button>
+																	</div>
+
+
+																	<div class="topAttr  d-flex align-items-center">
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<h6 class="gray text-center">ALL</h6>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 paddingLeft2 wider">
+																			<h6 class="gray text-center">CHILD ID</h6>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 margin4">
+																			<h6 class="gray">CHILD NAME</h6>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 mLnegative1">
+																			<h6 class="gray text-center">CONTENT<br>STATUS</h6>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<h6 class="gray text-center">ELECTRONIC/PAPER</h6>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 ml-2">
+																			<h6 class="gray">PARENT ID</h6>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<h6 class="gray">PARENT NAME</h6>
+																		</div>
+
+																	</div>
+
+																	<div class="consentBlocks d-flex align-items-center flex-wrap">
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">ALL</div>
+																			<div class="one ml-3 mb-4">
+																				<input class="form-check-input" type="checkbox" name="validation" id="custom101">
+																				<label class="form-check-label fontZero" tabindex="0" for="custom101">something</label>
+																			</div>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childid">9999991C</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Keone Young</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">CONSENT STATUS</div>
+																			<p class="black consentStatus">Consented</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">ELECTRONIC/PAPER</div>
+																			<p class="black electronicOrPaper">Electronic</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT ID</div>
+
+																			<p class="black parentid">9999991C</p>
+
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Marc Young</p>
+																		</div>
+
+																		<div class="progressBarEmpty"></div>
+																		<div class="progressBarFull">
+																		</div>
+																	</div>
+
+																	<div class="consentBlocks d-flex align-items-center flex-wrap">
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">ALL</div>
+																			<div class="one ml-3 mb-4">
+																				<input class="form-check-input" type="checkbox" name="validation" id="custom101">
+																				<label class="form-check-label fontZero" tabindex="0" for="custom101">something</label>
+																			</div>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childid">9999991C</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Keone Young</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">CONSENT STATUS</div>
+																			<p class="black consentStatus">Consented</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">ELECTRONIC/PAPER</div>
+																			<p class="black electronicOrPaper">Electronic</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT ID</div>
+
+																			<p class="black parentid">9999991C</p>
+
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Marc Young</p>
+																		</div>
+
+																		<div class="progressBarEmpty"></div>
+																		<div class="progressBarFull">
+																		</div>
+																	</div>
+
+
+																	<div class="consentBlocks d-flex align-items-center flex-wrap">
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">ALL</div>
+																			<div class="one ml-3 mb-4">
+																				<input class="form-check-input" type="checkbox" name="validation" id="custom101">
+																				<label class="form-check-label fontZero" tabindex="0" for="custom101">something</label>
+																			</div>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childid">9999991C</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Doug Jackson</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">CONSENT STATUS</div>
+																			<p class="black consentStatus">Opted Out</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">ELECTRONIC/PAPER</div>
+																			<p class="black electronicOrPaper">Electronic</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT ID</div>
+
+																			<p class="black parentid">9999991C</p>
+
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Joe Jackson</p>
+																		</div>
+
+																		<div class="progressBarEmpty"></div>
+																		<div class="progressBarFull">
+																		</div>
+																	</div>
+																	<div class="consentBlocks d-flex align-items-center flex-wrap">
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">ALL</div>
+																			<div class="one ml-3 mb-4">
+																				<input class="form-check-input" type="checkbox" name="validation" id="custom101">
+																				<label class="form-check-label fontZero" tabindex="0" for="custom101">something</label>
+																			</div>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childid">9999991C</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Sienna Sam</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">CONSENT STATUS</div>
+																			<p class="black consentStatus">Consented</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">ELECTRONIC/PAPER</div>
+																			<p class="black electronicOrPaper">Electronic</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT ID</div>
+
+																			<p class="black parentid">9999991C</p>
+
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">Bo Sam</p>
+																		</div>
+
+																		<div class="progressBarEmpty"></div>
+																		<div class="progressBarFull">
+																		</div>
+																	</div>
+																	<div class="consentBlocks d-flex align-items-center flex-wrap">
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">ALL</div>
+																			<div class="one ml-3 mb-4">
+																				<input class="form-check-input" type="checkbox" name="validation" id="custom101">
+																				<label class="form-check-label fontZero" tabindex="0" for="custom101">something</label>
+																			</div>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">CHILD ID</div>
+																			<p class="black childid">9999991C</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft2">
+																			<div class="mobile">CHILD NAME</div>
+																			<p class="black childName">Tim Young</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">CONSENT STATUS</div>
+																			<p class="black consentStatus">Opted Out</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 wider">
+																			<div class="mobile">ELECTRONIC/PAPER</div>
+																			<p class="black electronicOrPaper">Electronic</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT ID</div>
+
+																			<p class="black parentid">9999991C</p>
+
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 paddingLeft3">
+																			<div class="mobile">PARENT NAME</div>
+																			<p class="black parentName">John Young</p>
+																		</div>
+
+																		<div class="progressBarEmpty"></div>
+																		<div class="progressBarFull">
+																		</div>
+																	</div>
+
+																</div>
+
+																<div class="blueLine2">
+																	<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+																</div>
+
+															</div>
+														</div>
+
+													</div>
+
+													<div class="outside">
+														<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-describedby="Shows Less" aria-label="Shows Less"></i>
+
+														<h2 class="landing-sec-H padding-0 margin-0">Parent Information and Survey Tracking</h2>
+
+														<div class="d-flex justify-content-between align-items-baseline mt-3 mb-3">
+															<p class="purple">View parent contact information, provided by the parent or by the school coordinator.</p>
+
+
+															<button type="submit" class="btn clearGreen" role="button" tabindex="0" aria-label="Assign">ASSIGN</button>
+
+														</div>
+
+
+														<div class="row">
+															<div class="col-xs-12 col-lg-12 col-md-12">
+
+																<div class="toggleDiv">
+																	<div class="barWrapper">
+																		<div class="topAttr parentInfo two d-flex align-items-center">
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray">CHILD ID/NAME</h6>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray text-center">PARENT ID/<br>NAME</h6>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray text-center">SURVEY<br>STATUS</h6>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray text-center">DATE LAST<br>ACCESSED</h6>
+																			</div>
+																			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray text-center">PARENT ADDRESS</h6>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray text-center">PARENT PHONE</h6>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray">PARENT EMAIL</h6>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray">LANGUAGE</h6>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray">SURVEY<br>TYPE</h6>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray">LAUNCH</h6>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<h6 class="gray">EDIT</h6>
+																			</div>
+
+																		</div>
+
+																		<div class="parentInfoBlocks two d-flex align-items-center flex-wrap">
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="one absoluteCheck ml-3 mb-4">
+																					<input class="form-check-input" type="checkbox" name="validation" id="custom22">
+																					<label class="form-check-label fontZero" tabindex="0" for="custom22">something</label>
+																				</div>
+
+																				<div class="mobile">CHILD ID/NAME</div>
+																				<p class="black childid ml-4">9999991C</p>
+																				<p class="black childName ml-4">Michaela Murphy</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT ID/NAME</div>
+																				<p class="black parentId biggerWidth">9999991P</p>
+																				<p class="black parentName biggerWidth">Bobby Blue</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">SURVEY STATUS</div>
+																				<div class="percentageCircle ml1"><p class="black surveyStatus">100</p></div>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">DATE LAST ACCESSED</div>
+																				<p class="black date biggerWidth">07/15/2020</p>
+																			</div>
+																			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT ADDRESS</div>
+																				<p class="black parentAddress marginLeft15">145 Beach Blvd Hollywood, FL 12345</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT PHONE</div>
+																				<p class="black parentPhone seventyEight">908-313-6000</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT EMAIL</div>
+
+																				<p class="black parentEmail biggerWidth">erodricks@email.com</p>
+
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">LANGUAGE</div>
+																				<p class="black language biggerWidth ml1">English</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">SURVEY TYPE</div>
+																				<p class="black type">Fall K</p>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">LAUNCH</div>
+																				<div class="launchStatus">
+																					<i class="fas fa-arrow-right darkBlue"></i>
+																				</div>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 stop editTool" type="button" data-toggle="modal" data-target="#openParentEditModal" tabindex="0">
+
+																				<div class="mobile">EDIT</div>
+																				<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
+
+																			</div>
+
+																			<div class="progressBarEmpty"></div>
+																			<div class="progressBarFull">
+																			</div>
+																		</div>
+
+																		<div class="parentInfoBlocks two d-flex align-items-center flex-wrap">
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="one absoluteCheck ml-3 mb-4">
+																					<input class="form-check-input" type="checkbox" name="validation" id="custom23">
+																					<label class="form-check-label fontZero" tabindex="0" for="custom23">something</label>
+																				</div>
+																				<div class="mobile">CHILD ID/NAME</div>
+																				<p class="black ml-4 childid">9999991C</p>
+																				<p class="black ml-4 childName">Michaela Murphy</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT ID/NAME</div>
+																				<p class="black parentId biggerWidth">9999991P</p>
+																				<p class="black parentName biggerWidth">Bobby Blue</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">SURVEY STATUS</div>
+																				<div class="percentageCircle ml1"><p class="black surveyStatus">0</p></div>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">DATE LAST ACCESSED</div>
+																				<p class="black date biggerWidth ml1">07/15/2020</p>
+																			</div>
+																			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT ADDRESS</div>
+																				<p class="black parentAddress marginLeft15">145 Beach Blvd Hollywood, FL 12345</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT PHONE</div>
+																				<p class="black parentPhone eightyPercent">908-313-6000</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT EMAIL</div>
+
+																				<p class="black parentEmail biggerWidth">erodricks@email.com</p>
+
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">LANGUAGE</div>
+																				<p class="black language biggerWidth ml1">English</p>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">SURVEY TYPE</div>
+																				<p class="black type">Fall K</p>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">LAUNCH</div>
+																				<div class="launchStatus">
+																					<i class="fas fa-arrow-right darkBlue"></i>
+																				</div>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 stop editTool" type="button" data-toggle="modal" data-target="#" tabindex="0">
+
+																				<div class="mobile">EDIT</div>
+																				<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
+
+																			</div>
+																			<div class="progressBarEmpty"></div>
+																			<div class="progressBarFull">
+																			</div>
+																		</div>
+
+																		<div class="parentInfoBlocks two d-flex align-items-center flex-wrap">
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="one absoluteCheck ml-3 mb-4">
+																					<input class="form-check-input" type="checkbox" name="validation" id="custom24">
+																					<label class="form-check-label fontZero" tabindex="0" for="custom24">something</label>
+																				</div>
+																				<div class="mobile">CHILD ID/NAME</div>
+																				<p class="black ml-4 childid">9999991C</p>
+																				<p class="black ml-4 childName">Michaela Murphy</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT ID/NAME</div>
+																				<p class="black parentId biggerWidth">9999991P</p>
+																				<p class="black parentName biggerWidth">Bobby Blue</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">SURVEY STATUS</div>
+																				<div class="percentageCircle ml1"><p class="black surveyStatus">50</p></div>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">DATE LAST ACCESSED</div>
+																				<p class="black date biggerWidth ml1">07/15/2020</p>
+																			</div>
+																			<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT ADDRESS</div>
+																				<p class="black parentAddress marginLeft15">145 Beach Blvd Hollywood, FL 12345</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT PHONE</div>
+																				<p class="black parentPhone eightyPercent">908-313-6000</p>
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">PARENT EMAIL</div>
+
+																				<p class="black parentEmail biggerWidth">erodricks@email.com</p>
+
+																			</div>
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">LANGUAGE</div>
+																				<p class="black language biggerWidth ml1">English</p>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">SURVEY TYPE</div>
+																				<p class="black type">Fall K</p>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																				<div class="mobile">LAUNCH</div>
+																				<div class="launchStatus">
+																					<i class="fas fa-arrow-right darkBlue"></i>
+																				</div>
+																			</div>
+
+																			<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 stop editTool" type="button" data-toggle="modal" data-target="#" tabindex="0">
+
+																				<div class="mobile">EDIT</div>
+																				<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
+																				<div class="modal fade editTool parentUpdate" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true">
+																					<div class="modal-dialog" role="document">
+																						<div class="modal-content">
+																							<form>
+																								<div class="modal-header">
+
+																									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																										<span aria-hidden="true">&times;</span>
+																									</button>
+																									<h4 class="modal-title">Edit Parent Information</h4>
+																								</div>
+																								<div class="modal-body">
+
+																									<legend>Update Information</legend>
+																									<div class="lightGrayBox">
+
+
+
+																										<div class="row noWrapRow">
+																											<div class="col-md-5 col-xs-12">
+																												<div class="form-group">
+																													<label for="parent-name">Parent Name</label>
+																													<input type="text" name="parent-name" class="form-control" id="parent-name" placeholder="">
+																												</div>
+																											</div>
+
+																										</div>
+																										<div class="row noWrapRow">
+																											<div class="col-md-12 col-xs-12">
+																												<div class="form-group">
+																													<label for="address1">Address (street)</label>
+																													<input type="text" name="info" class="form-control" id="address1" placeholder="">
+																												</div>
+																											</div>
+																										</div>
+																										<div class="row noWrapRow">
+																											<div class="col-md-6 col-xs-12">
+																												<div class="form-group">
+																													<label for="city">City</label>
+																													<input type="text" name="info" class="form-control" id="city" placeholder="">
+																												</div>
+																											</div>
+																											<div class="col-md-2 col-xs-12">
+																												<div class="form-group">
+																													<label for="state">State</label>
+																													<input type="text" name="info" class="form-control" id="state" placeholder="">
+																												</div>
+																											</div>
+																											<div class="col-md-4 col-xs-12">
+																												<div class="form-group">
+																													<label for="zip">ZIP</label>
+																													<input type="text" name="info" class="form-control" id="zip" placeholder="">
+																												</div>
+																											</div>
+
+																										</div>
+
+																										<div class="row noWrapRow">
+																											<div class="col-md-6 col-xs-12">
+																												<div class="form-group">
+																													<label for="parent-phone">Parent Phone</label>
+																													<input type="text" name="parent-phone" class="form-control" id="parent-email" placeholder="">
+																												</div>
+																											</div>
+																											<div class="col-md-6 col-xs-12">
+																												<div class="form-group">
+																													<label for="parent-email">Parent Email</label>
+																													<input type="email" name="parent-email" class="form-control" id="parent-email" placeholder="">
+																												</div>
+																											</div>
+																										</div>
+
+																									</div>
+																								</fieldset>
+
+
+																							</div>
+																							<div class="modal-footer mt-1 mb-3">
+
+																								<button type="button" class="btn greenButton mr-1">SAVE</button>
+																								<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving" data-dismiss="modal">CANCEL <i class="fas fa-ban stop"></i>
+																								</button>
+
+																							</div>
+																						</form>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="progressBarEmpty"></div>
+																		<div class="progressBarFull">
+																		</div>
+																	</div>
+
+																	<div class="parentInfoBlocks two d-flex align-items-center flex-wrap">
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="one absoluteCheck ml-3 mb-4">
+																				<input class="form-check-input" type="checkbox" name="validation" id="custom25">
+																				<label class="form-check-label fontZero" tabindex="0" for="custom25">something</label>
+																			</div>
+																			<div class="mobile">CHILD ID/NAME</div>
+																			<p class="black ml-4 childid">9999991C</p>
+																			<p class="black ml-4 childName">Michaela Murphy</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">PARENT ID/NAME</div>
+																			<p class="black parentId biggerWidth">9999991P</p>
+																			<p class="black parentName biggerWidth">Bobby Blue</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">SURVEY STATUS</div>
+																			<div class="percentageCircle ml1"><p class="black surveyStatus">75</p></div>
+																		</div>
+
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">DATE LAST ACCESSED</div>
+																			<p class="black date biggerWidth ml1">07/15/2020</p>
+																		</div>
+																		<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">PARENT ADDRESS</div>
+																			<p class="black parentAddress marginLeft15">145 Beach Blvd Hollywood, FL 12345</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">PARENT PHONE</div>
+																			<p class="black parentPhone eightyPercent">908-313-6000</p>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">PARENT EMAIL</div>
+
+																			<p class="black parentEmail biggerWidth">erodricks@email.com</p>
+
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">LANGUAGE</div>
+																			<p class="black language biggerWidth ml1">English</p>
+																		</div>
+
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">SURVEY TYPE</div>
+																			<p class="black type">Fall K</p>
+																		</div>
+
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+																			<div class="mobile">LAUNCH</div>
+																			<div class="launchStatus">
+																				<i class="fas fa-arrow-right darkBlue"></i>
+																			</div>
+																		</div>
+																		<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 stop editTool" type="button" data-toggle="modal" data-target="#" tabindex="0">
+
+																			<div class="mobile">EDIT</div>
+																			<p class="black edit"><i class="fas fa-pencil-alt darkBlue"></i></p>
+
+																		</div>
+																		<div class="progressBarEmpty"></div>
+																		<div class="progressBarFull">
+																		</div>
+																	</div>
+																</div>
+
+
+
+																<div class="blueLine2">
+																	<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less" data-original-title="" title="">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+																</div>
+
+
+
+
+
+
+															</div>
+														</div>
+
+													</div>
+
+
+
+												</div>
+
+
+
+												<div class="outside">
+													<i class="fas fa-chevron-circle-up closeDiv" role="button" tabindex="0" aria-label="Shows Less" style="margin-top: 2.75em;"></i>
+
+													<button type="button" class="btn greenButton addEroc" role="button" tabindex="0" aria-label="Add Eroc" data-toggle="modal" data-target="#eRocModal"><i class="far fa-plus"></i>&nbsp;new</button>
+
+													<h2 class="landing-sec-H padding-0 margin-0">EROC</h2>
+
+
+													<div class="row">
+														<div class="col-xs-12 col-lg-12 col-md-12">
+
+															<div class="toggleDiv">
+
+																<div class="grayBoxEmpty">
+																	<p class="black"><b>select a parent to add an EROC</b></p>
+																</div>
+
+																<div class="topAttr eRocAttr d-flex align-items-center hidden">
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">CONTACT DATE<br>& TIME
+
+																		</h6>
+																	</div>
+																	<div class="col-lg-1">
+																		<h6 class="gray larger">MODE</h6>
+																	</div>
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">RESULT</h6>
+																	</div>
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">CONTACT NAME</h6>
+																	</div>
+
+																	<div class="col-lg-1">
+																		<h6 class="gray larger">CONTACT<br>TITLE/<br>POSITION</h6>
+																	</div>
+
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">COMMENTS/<br>INSTRUCTIONS</h6>
+																	</div>
+
+																	<div class="col-lg-2">
+																		<h6 class="gray larger">PERSON WHO MADE<br>CONTACT ATTEMPT</h6>
+																	</div>
+
+																</div>
+																<div class="renderErocs hidden">
+
+
+																</div>
+
+
+															</div>
+															<div class="blueLine2">
+																<i class="far fa-chevron-up tooltips-elements seeLess" role="button" tabindex="0" aria-label="Shows Less">&nbsp;<span class="darkBlue">collapse section</span></i>
+
+
+															</div>
+
+														</div>
+
+													</div>
+
+
+
+
+												</div>
+
+
+											</div>
+
+
+											</div>
+
+
+										</div>
+
+
+															<!-- joey here's the child edit modal -->
+
+															<div class="modal fade editTool" id="openChildEditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true">
+																<div class="modal-dialog" role="document">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<h4 class="modal-title text-center">Edit Child Info</h4>
+																			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																				<span aria-hidden="true">&times;</span>
+																			</button>
+																		</div>
+																		<div class="modal-body">
+																			<div class="powderBlue">
+																				<form>
+																					<fieldset>
+																						<legend>Edit Child information</legend>
+																						<div class="topAttr d-flex justify-content-between align-items-center">
+
+																							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																								<h6 class="gray larger text-center">CHILD ID</h6>
+																							</div>
+																							<div class="col-lg-2 mx-2 col-md-6 col-sm-6 col-xs-6">
+																								<h6 class="gray larger text-center">CHILD NAME</h6>
+																							</div>
+																							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																								<h6 class="gray larger text-center">ASSESSMENT STATUS</h6>
+																							</div>
+
+																						</div>
+
+																						<div class="workGrid d-flex align-items-center justify-content-between flex-wrap">
+																							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																								<div class="mobile">CHILD ID</div>
+																								<p class="black childid">9999991C</p>
+																							</div>
+																							<div class="col-lg-2 mx-2 col-md-6 col-sm-6 col-xs-6">
+																								<div class="mobile">CHILD NAME</div>
+																								<p class="black childName">Keone Young</p>
+																							</div>
+																							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																								<div class="mobile">ASSESSMENT STATUS</div>
+																								<div class="form-group assessment">
+																									<label for="as">Assessment Status</label>
+																									<input type="text" name="" class="form-control" id="as" placeholder="">
+																								</div>
+																							</div>
+
+
+																						</div>
+																						<div class="row">
+																							<div class="col-lg-2 ml-5">
+																								<h6 class="gray larger text-left">SEX</h6>
+																							</div>
+																						</div>
+																						<div class="row">
+
+																							<div class="col-lg-2 offset-lg-1 offset-md-0 col-md-12 col-sm-12 col-xs-12">
+
+																								<div class="form-check form-check-inline customRadio">
+																									<input class="form-check-input" type="radio" id="choice11" name="choice">
+																									<label class="form-check-label blue" for="choice11">Male</label>
+																								</div>
+																							</div>
+																							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																								<div class="form-check form-check-inline customRadio">
+																									<input class="form-check-input" type="radio" id="choice12" name="choice">
+																									<label class="form-check-label blue" for="choice12">Female</label>
+																								</div>
+																							</div>
+
+																						</div>
+
+
+
+																						<div class="row">
+																							<div class="col-lg-2 ml-5">
+																								<h6 class="gray larger text-left">ETHNICITY</h6>
+																							</div>
+																						</div>
+																						<div class="row">
+
+																							<div class="col-lg-2 offset-lg-1 offset-md-0 col-md-12 col-sm-12 col-xs-12">
+
+																								<div class="form-check form-check-inline customRadio">
+																									<input class="form-check-input" type="radio" id="inlineRadio013" name="choice2">
+																									<label class="form-check-label blue" for="inlineRadio013">Hispanic</label>
+																								</div>
+																							</div>
+																							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+																								<div class="form-check form-check-inline customRadio">
+																									<input class="form-check-input" type="radio" id="inlineRadio023" name="choice2">
+																									<label class="form-check-label blue" for="inlineRadio023">Non-Hispanic</label>
+																								</div>
+																							</div>
+
+																						</div>
+
+																						<div class="row">
+																							<div class="col-lg-2 ml-5">
+																								<h6 class="gray larger text-left">RACE</h6>
+																							</div>
+																						</div>
+
+																						<div class="row">
+
+																							<div class="col-lg-4 offset-lg-1 offset-md-0 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="custom800" value="">
+																									<label class="form-check-label" tabindex="0" for="custom800">American Indian or Alaska Native</label>
+																								</div>
+
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="custom801" value="">
+																									<label class="form-check-label" tabindex="0" for="custom801">Asian</label>
+																								</div>
+
+																							</div>
+
+																							<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="custom802" value="">
+																									<label class="form-check-label" tabindex="0" for="custom802">Black or African American</label>
+																								</div>
+
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="custom803" value="">
+																									<label class="form-check-label" tabindex="0" for="custom803">Native Hawaiian or other Pacific Islander</label>
+																								</div>
+
+																							</div>
+
+																							<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="custom804" value="">
+																									<label class="form-check-label" tabindex="0" for="custom804">White</label>
+																								</div>
+
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="custom805" value="">
+																									<label class="form-check-label" tabindex="0" for="custom805">Don't know/refused</label>
+																								</div>
+
+																							</div>
+
+																						</div>
+
+																						<div class="row">
+																							<div class="col-lg-2 ml-5">
+																								<h6 class="gray larger text-left">LANGUAGE</h6>
+																							</div>
+																						</div>
+
+																						<div class="form-row">
+
+																							<select class="form-control col-lg-4 offset-lg-1" name="language">
+
+																								<option value="one">English</option>
+																								<option value="two">Spanish</option>
+																								<option value="three">Other</option>
+
+
+
+																							</select>
+
+																						</div>
+
+																						<div class="row">
+																							<div class="col-lg-3 ml-5">
+																								<h6 class="gray larger text-left">IEP/ACCOMMODATIONS</h6>
+																							</div>
+																						</div>
+																						<div class="row">
+
+																							<div class="col-lg-2 offset-lg-1 offset-md-0 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation800" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation800">IEP</label>
+																								</div>
+
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation801" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation801">AD Device</label>
+																								</div>
+
+																							</div>
+
+																							<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation802" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation802">SE-setting</label>
+																								</div>
+
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation803" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation803">Breaks during testing</label>
+																								</div>
+
+																							</div>
+
+																							<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation804" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation804">SC-Schedule/Timing</label>
+																								</div>
+
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation805" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation805">Extended Time</label>
+																								</div>
+
+																							</div>
+																							<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation806" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation806">HCA-Aide</label>
+																								</div>
+
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation807" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation807">School Staff</label>
+																								</div>
+
+																							</div>
+
+																						</div>
+
+																						<div class="row">
+																							<div class="col-lg-3 ml-5">
+																								<h6 class="gray larger text-left">IEP/EXCLUSIONS</h6>
+																							</div>
+																						</div>
+																						<div class="row">
+
+																							<div class="col-lg-2 offset-lg-1 offset-md-0 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation808" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation808">IEP</label>
+																								</div>
+
+																							</div>
+
+																							<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation809" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation809">Braille</label>
+																								</div>
+
+
+																							</div>
+
+																							<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation810" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation810">Large Print</label>
+																								</div>
+
+
+																							</div>
+																							<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation811" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation811">Sign Language</label>
+																								</div>
+
+
+																							</div>
+
+																						</div>
+
+																						<div class="row">
+																							<div class="col-lg-3 ml-5">
+																								<h6 class="gray larger text-left">OTHER ASSESSMENT NEEDS</h6>
+																							</div>
+																						</div>
+																						<div class="row d-flex align-items-center">
+
+																							<div class="col-lg-2 offset-lg-1 offset-md-0 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation812" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation812">G-Glasses</label>
+																								</div>
+
+																							</div>
+
+																							<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation813" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation813">HA-Hearing Aid</label>
+																								</div>
+
+
+																							</div>
+
+																							<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+																								<div class="one d-flex justify-content-start align-items-center">
+																									<input class="form-check-input checks" type="checkbox" name="validation" id="customControlValidation814" value="">
+																									<label class="form-check-label" tabindex="0" for="customControlValidation814">Other Specify</label>
+																									<input type="text" name="" class="form-control smallInput" placeholder="">
+																								</div>
+
+
+
+																							</div>
+
+
+																						</div>
+
+																						<div class="row">
+																							<div class="col-lg-3 ml-5">
+																								<h6 class="gray larger text-left">COMMENTS</h6>
+																							</div>
+																						</div>
+
+																						<div class="row">
+
+																							<div class="col-lg-10 offset-lg-1 offset-md-0 col-md-12 col-sm-12 col-xs-12">
+																								<div class=" d-flex justify-content-start align-items-center mb-5">
+
+																									<label class="form-check-label fontZero" tabindex="0" for="customControlValidation816">Comments</label>
+																									<input type="text" name="" class="form-control" placeholder="" id="customControlValidation816">
+																								</div>
+
+
+																							</div>
+																						</div>
+
+																					</fieldset>
+
+
+																					<div class="d-flex justify-content-center">
+
+																						<button type="submit" form="newInfo" class="disabledSave lightGrayColor saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information" disabled="disabled">SAVE <i class="fas fa-save"></i>
+																						</button>
+
+																						<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving" data-dismiss="modal">CANCEL <i class="fas fa-ban stop"></i>
+																						</button>
+
+																					</div>
+
+																				</form>
+
+																			</div>
+
+																		</div>
+																		<div class="modal-footer">
+																			<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																			<button type="button" class="btn btn-primary">Save changes</button> -->
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<!-- joey here's the parent edit modal -->
+
+															<div class="modal fade editTool parentUpdate" id="openParentEditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="true">
+																<div class="modal-dialog" role="document">
+																	<div class="modal-content">
+																		<form>
+																			<div class="modal-header">
+
+																				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																					<span aria-hidden="true">&times;</span>
+																				</button>
+																				<h4 class="modal-title">Edit Parent Information</h4>
+																			</div>
+																			<div class="modal-body">
+
+																				<legend>Update Information</legend>
+																				<div class="lightGrayBox">
+
+
+
+																					<div class="row noWrapRow">
+																						<div class="col-md-5 col-xs-12">
+																							<div class="form-group">
+																								<label for="parent-name">Parent Name</label>
+																								<input type="text" name="parent-name" class="form-control" id="parent-name" placeholder="">
+																							</div>
+																						</div>
+
+																					</div>
+																					<div class="row noWrapRow">
+																						<div class="col-md-12 col-xs-12">
+																							<div class="form-group">
+																								<label for="address1">Address (street)</label>
+																								<input type="text" name="info" class="form-control" id="address1" placeholder="">
+																							</div>
+																						</div>
+																					</div>
+																					<div class="row noWrapRow">
+																						<div class="col-md-6 col-xs-12">
+																							<div class="form-group">
+																								<label for="city">City</label>
+																								<input type="text" name="info" class="form-control" id="city" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-2 col-xs-12">
+																							<div class="form-group">
+																								<label for="state">State</label>
+																								<input type="text" name="info" class="form-control" id="state" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-4 col-xs-12">
+																							<div class="form-group">
+																								<label for="zip">ZIP</label>
+																								<input type="text" name="info" class="form-control" id="zip" placeholder="">
+																							</div>
+																						</div>
+
+																					</div>
+
+																					<div class="row noWrapRow">
+																						<div class="col-md-6 col-xs-12">
+																							<div class="form-group">
+																								<label for="parent-phone">Parent Phone</label>
+																								<input type="text" name="parent-phone" class="form-control" id="parent-email" placeholder="">
+																							</div>
+																						</div>
+																						<div class="col-md-6 col-xs-12">
+																							<div class="form-group">
+																								<label for="parent-email">Parent Email</label>
+																								<input type="email" name="parent-email" class="form-control" id="parent-email" placeholder="">
+																							</div>
+																						</div>
+																					</div>
+
+																				</div>
+																			</fieldset>
+
+																			<div class="d-flex justify-content-center">
+
+																				<button type="submit" form="newInfo" class="disabledSave lightGrayColor saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information" disabled="disabled">SAVE <i class="fas fa-save"></i>
+																				</button>
+
+																				<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving" data-dismiss="modal">CANCEL <i class="fas fa-ban stop"></i>
+																				</button>
+
+																			</div>
+
+
+																		</div>
+																		<div class="modal-footer">
+
+
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+
+
+									</div>
+								</section>
+
+
+								<!-- joey here's the add teacher modal -->
+
+								<div class="modal fade tlModals addTeacherModal" id="addTeacherModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<form>
+												<div class="modal-header">
+
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">×</span>
+													</button>
+													<h4 class="modal-title">Add Teacher</h4>
+												</div>
+												<div class="modal-body">
+
+													<legend>Add Teacher</legend>
+													<fieldset>
+														<div class="lightGrayBox">
+
+															<div class="row noWrapRow">
+																<div class="col-md-2 col-xs-12">
+																	<div class="form-group">
+																		<label for="tID" style="background: #f6f8f8;">Teacher ID</label>
+																		<input type="text" name="tID" class="form-control disabled" id="tID" placeholder="" disabled="disabled">
+																	</div>
+																</div>
+
+																<div class="col-md-2 col-xs-12">
+																	<div class="form-group">
+																		<label for="prefix">Prefix</label>
+																		<select id="prefix" class="form-control">
+
+																			<option value="Dr.">Dr.</option>
+																			<option value="Miss">Miss</option>
+																			<option value="Mr.">Mr.</option>
+																			<option value="Mrs.">Mrs.</option>
+																			<option value="Ms.">Ms.</option>
+																			<option value="Sr.">Sr.</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="col-md-4 col-xs-12">
+																	<div class="form-group">
+																		<label for="tFirstName">First Name</label>
+																		<input type="text" name="tFirstName" class="form-control" id="tName" placeholder="">
+																	</div>
+																</div>
+
+																<div class="col-md-4 col-xs-12">
+																	<div class="form-group">
+																		<label for="tLastName">Last Name</label>
+																		<input type="text" name="tLastName" class="form-control" id="tLastName" placeholder="">
+																	</div>
+																</div>
+
+
+															</div>
+
+
+															<div class="row noWrapRow">
+																<div class="col-md-4 col-xs-12">
+																	<div class="form-group">
+																		<label for="type">Type</label>
+																		<select id="type" class="form-control">
+																			<option value="Special">Special</option>
+																			<option value="Primary">Primary</option>
+																			<option value="Something">Something</option>
+																		</select>
+
+																	</div>
+
+																</div>
+																<div class="col-md-4 col-xs-12">
+																	<div class="form-group">
+																		<label for="grade">Grade</label>
+																		<select id="grade" class="form-control">
+																			<option value="K">K</option>
+																			<option value="1">1</option>
+																			<option value="2">2</option>
+																		</select>
+																	</div>
+
+																</div>
+																<div class="col-md-4 col-xs-12">
+																	<div class="form-group">
+																		<label for="room">Room</label>
+																		<input type="text" name="room" class="form-control" id="room" value="">
+																	</div>
+
+																</div>
+
+															</div>
+
+															<div class="row noWrapRow">
+
+																<div class="col-md-4 col-xs-12">
+																	<div class="form-group">
+																		<label for="tEmail">Email</label>
+																		<input type="email" name="tEmail" class="form-control" id="tEmail" placeholder="">
+																	</div>
+																</div>
+
+															</div>
+
+
+
+
+														</div>
+
+													</fieldset>
+
+
+													<div class="d-flex justify-content-center mb-3">
+
+														<button type="submit" form="newInfo" class="disabledSave lightGrayColor saveInformation mr-1" tabindex="0" aria-hidden="false" role="button" aria-label="Save Information" disabled="disabled">SAVE <i class="fas fa-save"></i>
+														</button>
+
+														<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving" data-dismiss="modal">CANCEL <i class="fas fa-ban stop"></i>
+														</button>
+
+													</div>
+
+
+												</div>
+												<div class="modal-footer">
+
+
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+
+
+								<!-- here's the eroc modal -->
+
+
+								<div class="tlModals modal fade" id="eRocModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<div class="grayBox third">
+													<h2 class="landing-sec-H padding-0 margin-0">Add EROC</h2>
+													<!-- <a role="button" tabindex="0" aria-label="Go back to District Information"><i class="far fa-angle-left darkBlue"></i></a> Add EROC</h2> -->
+
+													<form class="erocs" novalidate role="form">
+														<fieldset>
+															<legend>Add Eroc</legend>
+															<p class="blackFont mt-5">Date and Time</p>
+															<div class="row">
+																<div class="col-lg-6 col-md-12">
+																	<div class="form-row">
+																		<div class="col-lg-6 position-relative">
+																			<label for="datepicker">Date</label>
+
+																			<div class="form-group input-group date">
+																				<input type="text" class="form-control datepicker position-relative" placeholder="Select date" autocomplete="off" autofill="off" name="date" required>
+																				<span class="input-group-text">
+																					<i class="fal fa-calendar-alt darkBlue moveLeft"></i>
+																				</span>
+																			</div>
+
+
+
+																		</div>
+																		<div class="col-lg-6">
+																			<label for="timepicker">Time</label>
+																			<div class="form-group input-group time" id="timepicker">
+																				<input type="text" class="form-control timepicker" placeholder="HH:MM AM/PM" autocomplete="off" autofill="off" name="time" required>
+																				<span class="input-group-append input-group-addon">
+																					<span class="input-group-text">
+																						<i class="far fa-clock darkBlue moveLeft"></i>
+																					</span>
+																				</span>
+																			</div>
+																		</div>
+
+																	</div>
+
+
+																	<p class="blackFont">Mode</p>
+
+																	<div class="btn-group mode" data-toggle="buttons">
+																		<label class="btn btn-primary">
+																			<input type="radio" name="mode" id="option7" autocomplete="off"><i class="fas fa-phone" required></i>&nbsp;PHONE
+																		</label>
+																		<label class="btn btn-primary active">
+																			<input type="radio" name="mode" id="option8" autocomplete="off"><i class="fas fa-envelope"></i>&nbsp;EMAIL
+																		</label>
+																		<label class="btn btn-primary">
+																			<input type="radio" name="mode" id="option9" autocomplete="off"><i class="fas fa-user"></i>&nbsp;IN-PERSON
+																		</label>
+
+																	</div>
+
+
+																	<p class="blackFont">Result</p>
+
+																	<div class="form-group">
+																		<label for="result">Select Result</label>
+																		<select id="result" class="form-control result required" name="result" required>
+																			<option value="">Select Result</option>
+																			<option value="one">No answer / VM - no message left</option>
+																			<option value="two">Left voicemail</option>
+																			<option value="three">Left message with person</option>
+																			<option value="four">Callback</option>
+																			<option value="five">Appointment Made</option>
+																			<option value="six">Gatekeeper / Avoidance</option>
+																			<option value="seven">Special Handling packet submitted (to keep record of submission date)</option>
+																			<option value="eight">Special Handling – In Progress</option>
+																			<option value="nine">Wrong / Nonworking phone number</option>
+																			<option value="ten">Initial Refusal</option>
+																			<option value="eleven">Approval Received</option>
+
+																		</select>
+
+																	</div>
+
+																</div>
+															</div>
+
+
+															<div class="lightGrayBox">
+																<div class="row">
+																	<div class="col-lg-6 col-md-12">
+																		<p class="blackFont">Refusal Reason</p>
+
+																		<div class="form-group">
+																			<label for="refusalReason">Refusal Reason</label>
+																			<select id="refusalReason" class="form-control valid" name="result">
+																				<option selected="selected"></option>
+																				<option value="1">Too much testing</option>
+																				<option value="2">No direct benefit to district/schools/children</option>
+																				<option value="3">Too much of a commitment (time/space)</option>
+																				<option value="4">Confidentiality/consent concerns</option>
+																				<option value="5">Missed special handling deadline</option>
+																				<option value="6">Special handling proposal rejected – no reason given</option>
+																				<option value="7">District does not participate in external research studies</option>
+
+																			</select>
+																		</div>
+
+																		<p class="blackFont">Refusal Severity</p>
+
+																		<div class="form-group">
+																			<label for="refusalSeverity">Refusal Severity</label>
+																			<select id="refusalSeverity" class="form-control valid" name="result">
+																				<option selected="selected"></option>
+																				<option value="1">Adamant</option>
+																				<option value="2">Determined</option>
+																				<option value="3">Firm</option>
+																				<option value="4">Mild</option>
+
+
+																			</select>
+																		</div>
+
+																		<p class="blackFont">Would participate if:</p>
+
+																		<div class="form-group">
+																			<label for="participate">Would participate if:</label>
+																			<select id="participate" class="form-control valid" name="result">
+																				<option selected="selected"></option>
+																				<option value="1">Not indicated</option>
+																				<option value="2">Not under any circumstances</option>
+																				<option value="3">If assessments were conducted outside school hours</option>
+																				<option value="4">If assessments were at a different time of year</option>
+																				<option value="5">Need to get onto district calendar earlier</option>
+																				<option value="6">Personal visit/presentation from ECLS representative</option>
+																				<option value="7">Increased compensation</option>
+																				<option value="8">Feedback on district/school/student performance</option>
+																				<option value="9">Reduce the amount of time required</option>
+																				<option value="10">Other, Specify</option>
+
+
+																			</select>
+																		</div>
+
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="col-lg-12 col-md-12">
+
+																		<p class="blackFont">Ideas for conversion:</p>
+																		<textarea name="message" tabindex="0" aria-hidden="false" rows="5" data-form-field="Message"></textarea>
+
+																	</div>
+																</div>
+
+															</div>
+
+
+															<div class="row">
+																<div class="col-lg-6 col-md-12">
+																	<p class="blackFont">Contact Name</p>
+																	<div class="form-group">
+																		<label for="contactName">Contact Name</label>
+																		<input type="text" name="info1" class="form-control" id="contactName">
+
+																	</div>
+
+
+																	<p class="blackFont">Contact Title/Position</p>
+																	<div class="form-group">
+																		<label for="contactTitle">Contact Title/Position</label>
+																		<input type="text" name="info2" class="form-control" id="contactTitle" >
+
+																	</div>
+
+																	<p class="blackFont">Contact Made By</p>
+																	<div class="form-group">
+																		<label for="firstname">First Name</label>
+																		<input type="text" name="info3" class="form-control info" id="firstname">
+
+																	</div>
+
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="col-lg-12 col-md-12">
+
+																	<p class="blackFont">Comments</p>
+																	<textarea tabindex="0" aria-hidden="false" rows="5" data-form-field="Message"></textarea>
+
+
+
+																</div>
+															</div>
+
+
+															<div class="d-flex justify-content-center align-items-center mt-3">
+																<button type="submit" dismiss="modal" class="btn greenButton doneEroc mr-1" role="button" tabindex="0" aria-label="Add Eroc">Submit</button>
+																<button class="cancel ml-1" tabindex="0" aria-hidden="false" role="button" aria-label="Leave without saving" data-dismiss="modal">CANCEL <i class="fas fa-ban stop"></i>
+																</button>
+
+
+															</div>
+
+														</fieldset>
+													</form>
+
+
+												</div>
+											</div>
+											<div class="modal-footer">
+												<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button> -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="back-to-top">
+									<i class="far fa-angle-up"></i>
+								</div>
+
+
+
+								<div class="content-spacer"></div>
+
+							</div>
+						</div>
+						<footer>
+							<div class="footer-wrapper">
+								<div class="abso">
+									<img src="images/sunshine.png" class="img-responsive">
+								</div>
+
+								<div class="d-flex">
+
+									<a class="white" href="https://get.adobe.com/reader/otherversions/" target="_blank"><p class="white">PDF Reader</p></a>&nbsp;
+									<i class="fas fa-external-link-square white"></i>
+								</div>
+
+							</div>
+						</footer>
+
+
+
+						<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+						<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+						<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+						<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+						<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+						<script type="text/javascript" src="build/index.js"></script>
+
+						<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+						<script type="text/javascript" src="src/tl.js"></script>
+
+						<script>
+
+
+						</script>
+
+					</body>
+
+					</html>
